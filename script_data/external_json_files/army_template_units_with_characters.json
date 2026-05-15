@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-15T16:18:56+00:00",
+  "generated_at_utc": "2026-05-15T16:34:15+00:00",
   "source": {
     "repo_root": "/home/soundskrit/work/WH3-Dump",
     "tables": [
@@ -4495,7 +4495,7 @@
         "wh3_main_kho",
         "wh3_main_pro_kho"
       ],
-      "unit_count": 44,
+      "unit_count": 42,
       "units": [
         {
           "unit_key": "wh3_main_kho_veh_skullcannon_0",
@@ -4522,14 +4522,6 @@
           "caste": "hero"
         },
         {
-          "unit_key": "wh3_main_pro_kho_cha_cultist_0",
-          "land_unit_key": "wh3_main_pro_kho_cha_cultist_0",
-          "name": "Cultist of Khorne",
-          "category": "character_hero",
-          "category_raw": "inf_melee",
-          "caste": "hero"
-        },
-        {
           "unit_key": "wh3_dlc26_kho_cha_bloodspeaker",
           "land_unit_key": "wh3_dlc26_kho_cha_bloodspeaker",
           "name": "Bloodspeaker",
@@ -4540,14 +4532,6 @@
         {
           "unit_key": "wh3_main_kho_cha_herald_of_khorne_0",
           "land_unit_key": "wh3_main_kho_cha_herald_of_khorne_0",
-          "name": "Herald of Khorne",
-          "category": "character_lord",
-          "category_raw": "inf_melee",
-          "caste": "lord"
-        },
-        {
-          "unit_key": "wh3_main_pro_kho_cha_herald_of_khorne_0",
-          "land_unit_key": "wh3_main_pro_kho_cha_herald_of_khorne_0",
           "name": "Herald of Khorne",
           "category": "character_lord",
           "category_raw": "inf_melee",
@@ -4856,13 +4840,11 @@
         ],
         "character_hero": [
           "wh3_main_kho_cha_bloodreaper_0",
-          "wh3_main_kho_cha_cultist_0",
-          "wh3_main_pro_kho_cha_cultist_0"
+          "wh3_main_kho_cha_cultist_0"
         ],
         "character_lord": [
           "wh3_dlc26_kho_cha_bloodspeaker",
-          "wh3_main_kho_cha_herald_of_khorne_0",
-          "wh3_main_pro_kho_cha_herald_of_khorne_0"
+          "wh3_main_kho_cha_herald_of_khorne_0"
         ],
         "chariot": [
           "wh3_main_kho_veh_blood_shrine_0",
@@ -6737,7 +6719,7 @@
         "wh3_main_pro_tze",
         "wh3_main_tze"
       ],
-      "unit_count": 44,
+      "unit_count": 42,
       "units": [
         {
           "unit_key": "wh_main_emp_veh_steam_tank",
@@ -6746,14 +6728,6 @@
           "category": "artillery",
           "category_raw": "artillery",
           "caste": "chariot"
-        },
-        {
-          "unit_key": "wh3_main_pro_tze_cha_cultist_0",
-          "land_unit_key": "wh3_main_pro_tze_cha_cultist_0",
-          "name": "Cultist of Tzeentch",
-          "category": "character_hero",
-          "category_raw": "inf_melee",
-          "caste": "hero"
         },
         {
           "unit_key": "wh3_main_tze_cha_cultist_0",
@@ -6783,14 +6757,6 @@
           "unit_key": "wh3_main_tze_cha_herald_of_tzeentch_metal_0",
           "land_unit_key": "wh3_main_tze_cha_herald_of_tzeentch_metal_0",
           "name": "Herald of Tzeentch (Metal)",
-          "category": "character_lord",
-          "category_raw": "inf_melee",
-          "caste": "lord"
-        },
-        {
-          "unit_key": "wh3_main_pro_tze_cha_herald_of_tzeentch_tzeentch_0",
-          "land_unit_key": "wh3_main_pro_tze_cha_herald_of_tzeentch_tzeentch_0",
-          "name": "Herald of Tzeentch (Tzeentch)",
           "category": "character_lord",
           "category_raw": "inf_melee",
           "caste": "lord"
@@ -7097,14 +7063,12 @@
           "wh_main_emp_veh_steam_tank"
         ],
         "character_hero": [
-          "wh3_main_pro_tze_cha_cultist_0",
           "wh3_main_tze_cha_cultist_0",
           "wh3_main_tze_cha_iridescent_horror_metal_0",
           "wh3_main_tze_cha_iridescent_horror_tzeentch_0"
         ],
         "character_lord": [
           "wh3_main_tze_cha_herald_of_tzeentch_metal_0",
-          "wh3_main_pro_tze_cha_herald_of_tzeentch_tzeentch_0",
           "wh3_main_tze_cha_herald_of_tzeentch_tzeentch_0"
         ],
         "chariot": [
@@ -7580,7 +7544,7 @@
         "wh2_dlc16_group_drycha",
         "wh_dlc05_group_wood_elves"
       ],
-      "unit_count": 47,
+      "unit_count": 46,
       "units": [
         {
           "unit_key": "wh2_twa02_wef_cha_glade_captain_0",
@@ -7636,14 +7600,6 @@
           "name": "Ancient Treeman",
           "category": "character_lord",
           "category_raw": "inf_melee",
-          "caste": "lord"
-        },
-        {
-          "unit_key": "wh_dlc05_wef_cha_female_glade_lord_0",
-          "land_unit_key": "wh_dlc05_wef_cha_female_glade_lord_0",
-          "name": "Glade Lord",
-          "category": "character_lord",
-          "category_raw": "inf_ranged",
           "caste": "lord"
         },
         {
@@ -7970,7 +7926,6 @@
         ],
         "character_lord": [
           "wh_dlc05_wef_cha_ancient_treeman_0",
-          "wh_dlc05_wef_cha_female_glade_lord_0",
           "wh_dlc05_wef_cha_glade_lord_0",
           "wh2_dlc16_wef_cha_malicious_ancient_treeman_beasts_0",
           "wh2_dlc16_wef_cha_malicious_ancient_treeman_life_0",
@@ -10376,7 +10331,7 @@
         "wh_main_group_empire_reikland",
         "wh_main_group_teb"
       ],
-      "unit_count": 51,
+      "unit_count": 50,
       "units": [
         {
           "unit_key": "wh3_dlc25_emp_veh_marienburg_land_ship_morr",
@@ -10417,14 +10372,6 @@
           "category": "artillery",
           "category_raw": "artillery",
           "caste": "chariot"
-        },
-        {
-          "unit_key": "wh_main_emp_cha_wizard_fire_0",
-          "land_unit_key": "wh_main_emp_cha_wizard_fire_0",
-          "name": "Bright Wizard",
-          "category": "character_hero",
-          "category_raw": "inf_melee",
-          "caste": "hero"
         },
         {
           "unit_key": "wh_main_teb_cha_wizard_0",
@@ -10796,7 +10743,6 @@
           "wh3_dlc25_emp_veh_steam_tank_volley_gun"
         ],
         "character_hero": [
-          "wh_main_emp_cha_wizard_fire_0",
           "wh_main_teb_cha_wizard_0",
           "wh_main_teb_cha_captain_0",
           "wh_main_emp_cha_wizard_heavens_0",

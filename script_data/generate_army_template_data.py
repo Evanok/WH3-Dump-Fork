@@ -40,6 +40,18 @@ class UnitRecord:
     is_naval: bool
 
 
+def character_dedupe_score(record: UnitRecord) -> tuple[int, int, str]:
+    key = record.unit_key
+    penalty = 0
+    if "_pro_" in key:
+        penalty += 100
+    if "_survival_" in key:
+        penalty += 100
+    if "_spawned_" in key:
+        penalty += 100
+    return (penalty, len(key), key)
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUTPUT, help="JSON output path")
@@ -265,7 +277,21 @@ def main() -> int:
 
     races: dict[str, Any] = {}
     for culture in sorted(units_by_culture):
-        records = sorted(units_by_culture[culture].values(), key=lambda item: (item.category, item.name, item.unit_key))
+        records = list(units_by_culture[culture].values())
+
+        deduped_character_records: dict[tuple[str, str], UnitRecord] = {}
+        non_character_records: list[UnitRecord] = []
+        for record in records:
+            if record.category in {"character_lord", "character_hero"}:
+                dedupe_key = (record.category, record.name)
+                existing = deduped_character_records.get(dedupe_key)
+                if existing is None or character_dedupe_score(record) < character_dedupe_score(existing):
+                    deduped_character_records[dedupe_key] = record
+            else:
+                non_character_records.append(record)
+
+        records = non_character_records + list(deduped_character_records.values())
+        records = sorted(records, key=lambda item: (item.category, item.name, item.unit_key))
         units_payload = [
             {
                 "unit_key": record.unit_key,
