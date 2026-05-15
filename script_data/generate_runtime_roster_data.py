@@ -28,6 +28,7 @@ DEFAULT_LUA_OUTPUT = ROOT / "script" / "_lib" / "mod" / "runtime_roster_unit_dat
 class UnitRecord:
     unit_key: str
     land_unit_key: str
+    agent_subtype: str
     name: str
     category: str
     category_raw: str
@@ -182,6 +183,7 @@ def main() -> int:
     }
 
     valid_runtime_character_units: set[str] = set()
+    character_unit_to_agent_subtype: dict[str, str] = {}
     for row in read_tsv(DB_DIR / "agent_subtypes_tables" / "data__.tsv"):
         unit_key = row.get("associated_unit_override", "").strip()
         if not unit_key:
@@ -201,6 +203,7 @@ def main() -> int:
         if row.get("contributes_to_agent_cap", "").strip().lower() != "true":
             continue
         valid_runtime_character_units.add(unit_key)
+        character_unit_to_agent_subtype.setdefault(unit_key, subtype_key)
 
     factions_payload: dict[str, dict[str, Any]] = {}
     military_groups_to_factions: dict[str, list[str]] = defaultdict(list)
@@ -247,6 +250,7 @@ def main() -> int:
         record = UnitRecord(
             unit_key=unit_key,
             land_unit_key=land_unit_key,
+            agent_subtype=character_unit_to_agent_subtype.get(unit_key, ""),
             name=unit_names.get(land_unit_key, unit_key),
             category=category,
             category_raw=category_raw,
@@ -277,6 +281,7 @@ def main() -> int:
             {
                 "unit_key": record.unit_key,
                 "land_unit_key": record.land_unit_key,
+                "agent_subtype": record.agent_subtype,
                 "name": record.name,
                 "category": record.category,
                 "category_raw": record.category_raw,

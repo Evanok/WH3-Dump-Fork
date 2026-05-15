@@ -1,7 +1,7 @@
 return {
-  generated_at_utc = "2026-05-15T16:43:27+00:00",
+  generated_at_utc = "2026-05-15T22:37:36+00:00",
   source = {
-    repo_root = "/home/soundskrit/work/WH3-Dump",
+    repo_root = "C:\\Users\\User\\work\\mode_warhammer3\\WH3-Dump-Fork",
     tables = {
       "db/cultures_subcultures_tables/data__.tsv",
       "db/factions_tables/data__.tsv",
@@ -5186,6 +5186,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_art_casket_of_souls_0",
           land_unit_key = "wh2_dlc09_tmb_art_casket_of_souls_0",
+          agent_subtype = "",
           name = "Casket of Souls",
           category = "artillery",
           category_raw = "artillery",
@@ -5194,6 +5195,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_liche_priest_death_0",
           land_unit_key = "wh2_dlc09_tmb_cha_liche_priest_death_0",
+          agent_subtype = "wh2_dlc09_tmb_liche_priest_death",
           name = "Liche Priest (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5202,6 +5204,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_liche_priest_light_0",
           land_unit_key = "wh2_dlc09_tmb_cha_liche_priest_light_0",
+          agent_subtype = "wh2_dlc09_tmb_liche_priest_light",
           name = "Liche Priest (Light)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5210,6 +5213,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_liche_priest_nehekhara_0",
           land_unit_key = "wh2_dlc09_tmb_cha_liche_priest_nehekhara_0",
+          agent_subtype = "wh2_dlc09_tmb_liche_priest_nehekhara",
           name = "Liche Priest (Nehekhara)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5218,6 +5222,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_liche_priest_shadow_0",
           land_unit_key = "wh2_dlc09_tmb_cha_liche_priest_shadow_0",
+          agent_subtype = "wh2_dlc09_tmb_liche_priest_shadow",
           name = "Liche Priest (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5226,6 +5231,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_necrotect_0",
           land_unit_key = "wh2_dlc09_tmb_cha_necrotect_0",
+          agent_subtype = "wh2_dlc09_tmb_necrotect",
           name = "Necrotect",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5234,6 +5240,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_tomb_prince_0",
           land_unit_key = "wh2_dlc09_tmb_cha_tomb_prince_0",
+          agent_subtype = "wh2_dlc09_tmb_tomb_prince",
           name = "Tomb Prince",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5242,6 +5249,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_veh_skeleton_chariot_0",
           land_unit_key = "wh2_dlc09_tmb_veh_skeleton_chariot_0",
+          agent_subtype = "",
           name = "Skeleton Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -5250,6 +5258,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_nehekhara_horsemen_0",
           land_unit_key = "wh2_dlc09_tmb_cav_nehekhara_horsemen_0",
+          agent_subtype = "",
           name = "Nehekharan Horsemen",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -5258,6 +5267,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_0",
           land_unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_0",
+          agent_subtype = "",
           name = "Skeleton Horsemen",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -5266,6 +5276,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_nehekhara_warriors_0",
           land_unit_key = "wh2_dlc09_tmb_inf_nehekhara_warriors_0",
+          agent_subtype = "",
           name = "Nehekharan Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5274,6 +5285,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_skeleton_spearmen_0",
           land_unit_key = "wh2_dlc09_tmb_inf_skeleton_spearmen_0",
+          agent_subtype = "",
           name = "Skeleton Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5282,6 +5294,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_skeleton_warriors_0",
           land_unit_key = "wh2_dlc09_tmb_inf_skeleton_warriors_0",
+          agent_subtype = "",
           name = "Skeleton Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5290,6 +5303,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_tomb_guard_0",
           land_unit_key = "wh2_dlc09_tmb_inf_tomb_guard_0",
+          agent_subtype = "",
           name = "Tomb Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5298,6 +5312,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_tomb_guard_1",
           land_unit_key = "wh2_dlc09_tmb_inf_tomb_guard_1",
+          agent_subtype = "",
           name = "Tomb Guard (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5306,6 +5321,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_archers_0",
           land_unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_archers_0",
+          agent_subtype = "",
           name = "Skeleton Horse Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -5314,6 +5330,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_veh_skeleton_archer_chariot_0",
           land_unit_key = "wh2_dlc09_tmb_veh_skeleton_archer_chariot_0",
+          agent_subtype = "",
           name = "Skeleton Archer Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -5322,6 +5339,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_skeleton_archers_0",
           land_unit_key = "wh2_dlc09_tmb_inf_skeleton_archers_0",
+          agent_subtype = "",
           name = "Skeleton Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -5330,6 +5348,7 @@ return {
         {
           unit_key = "wh2_pro06_tmb_mon_bone_giant_0",
           land_unit_key = "wh2_pro06_tmb_mon_bone_giant_0",
+          agent_subtype = "",
           name = "Bone Giant",
           category = "monster",
           category_raw = "inf_ranged",
@@ -5338,6 +5357,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_heirotitan_0",
           land_unit_key = "wh2_dlc09_tmb_mon_heirotitan_0",
+          agent_subtype = "",
           name = "Hierotitan",
           category = "monster",
           category_raw = "inf_melee",
@@ -5346,6 +5366,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_veh_khemrian_warsphinx_0",
           land_unit_key = "wh2_dlc09_tmb_mon_khemrian_warsphinx_0",
+          agent_subtype = "",
           name = "Khemrian Warsphinx",
           category = "monster",
           category_raw = "war_beast",
@@ -5354,6 +5375,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_necrosphinx_0",
           land_unit_key = "wh2_dlc09_tmb_mon_necrosphinx_0",
+          agent_subtype = "",
           name = "Necrosphinx",
           category = "monster",
           category_raw = "inf_melee",
@@ -5362,6 +5384,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_tomb_scorpion_0",
           land_unit_key = "wh2_dlc09_tmb_mon_tomb_scorpion_0",
+          agent_subtype = "",
           name = "Tomb Scorpion",
           category = "monster",
           category_raw = "inf_melee",
@@ -5370,6 +5393,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_0",
           land_unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_0",
+          agent_subtype = "",
           name = "Necropolis Knights",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -5378,6 +5402,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_1",
           land_unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_1",
+          agent_subtype = "",
           name = "Necropolis Knights (Halberds)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -5386,6 +5411,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_sepulchral_stalkers_0",
           land_unit_key = "wh2_dlc09_tmb_mon_sepulchral_stalkers_0",
+          agent_subtype = "",
           name = "Sepulchral Stalkers",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -5394,6 +5420,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_ushabti_0",
           land_unit_key = "wh2_dlc09_tmb_mon_ushabti_0",
+          agent_subtype = "",
           name = "Ushabti",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -5402,6 +5429,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_ushabti_1",
           land_unit_key = "wh2_dlc09_tmb_mon_ushabti_1",
+          agent_subtype = "",
           name = "Ushabti (Great Bows)",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -5410,6 +5438,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_carrion_0",
           land_unit_key = "wh2_dlc09_tmb_mon_carrion_0",
+          agent_subtype = "",
           name = "Carrion",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -5418,6 +5447,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_art_screaming_skull_catapult_0",
           land_unit_key = "wh2_dlc09_tmb_art_screaming_skull_catapult_0",
+          agent_subtype = "",
           name = "Screaming Skull Catapults",
           category = "war_machine",
           category_raw = "artillery",
@@ -5501,6 +5531,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_art_casket_of_souls_0",
           land_unit_key = "wh2_dlc09_tmb_art_casket_of_souls_0",
+          agent_subtype = "",
           name = "Casket of Souls",
           category = "artillery",
           category_raw = "artillery",
@@ -5509,6 +5540,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_liche_priest_death_0",
           land_unit_key = "wh2_dlc09_tmb_cha_liche_priest_death_0",
+          agent_subtype = "wh2_dlc09_tmb_liche_priest_death",
           name = "Liche Priest (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5517,6 +5549,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_liche_priest_light_0",
           land_unit_key = "wh2_dlc09_tmb_cha_liche_priest_light_0",
+          agent_subtype = "wh2_dlc09_tmb_liche_priest_light",
           name = "Liche Priest (Light)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5525,6 +5558,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_liche_priest_nehekhara_0",
           land_unit_key = "wh2_dlc09_tmb_cha_liche_priest_nehekhara_0",
+          agent_subtype = "wh2_dlc09_tmb_liche_priest_nehekhara",
           name = "Liche Priest (Nehekhara)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5533,6 +5567,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_liche_priest_shadow_0",
           land_unit_key = "wh2_dlc09_tmb_cha_liche_priest_shadow_0",
+          agent_subtype = "wh2_dlc09_tmb_liche_priest_shadow",
           name = "Liche Priest (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5541,6 +5576,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_necrotect_0",
           land_unit_key = "wh2_dlc09_tmb_cha_necrotect_0",
+          agent_subtype = "wh2_dlc09_tmb_necrotect",
           name = "Necrotect",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5549,6 +5585,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cha_tomb_prince_0",
           land_unit_key = "wh2_dlc09_tmb_cha_tomb_prince_0",
+          agent_subtype = "wh2_dlc09_tmb_tomb_prince",
           name = "Tomb Prince",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5557,6 +5594,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_veh_skeleton_chariot_0",
           land_unit_key = "wh2_dlc09_tmb_veh_skeleton_chariot_0",
+          agent_subtype = "",
           name = "Skeleton Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -5565,6 +5603,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_hexwraiths",
           land_unit_key = "wh2_dlc09_tmb_cav_hexwraiths",
+          agent_subtype = "",
           name = "Hexwraiths",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -5573,6 +5612,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_nehekhara_horsemen_0",
           land_unit_key = "wh2_dlc09_tmb_cav_nehekhara_horsemen_0",
+          agent_subtype = "",
           name = "Nehekharan Horsemen",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -5581,6 +5621,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_0",
           land_unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_0",
+          agent_subtype = "",
           name = "Skeleton Horsemen",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -5589,6 +5630,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_crypt_ghouls",
           land_unit_key = "wh2_dlc09_tmb_inf_crypt_ghouls",
+          agent_subtype = "",
           name = "Crypt Ghouls",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5597,6 +5639,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_nehekhara_warriors_0",
           land_unit_key = "wh2_dlc09_tmb_inf_nehekhara_warriors_0",
+          agent_subtype = "",
           name = "Nehekharan Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5605,6 +5648,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_skeleton_spearmen_0",
           land_unit_key = "wh2_dlc09_tmb_inf_skeleton_spearmen_0",
+          agent_subtype = "",
           name = "Skeleton Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5613,6 +5657,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_skeleton_warriors_0",
           land_unit_key = "wh2_dlc09_tmb_inf_skeleton_warriors_0",
+          agent_subtype = "",
           name = "Skeleton Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5621,6 +5666,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_tomb_guard_0",
           land_unit_key = "wh2_dlc09_tmb_inf_tomb_guard_0",
+          agent_subtype = "",
           name = "Tomb Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5629,6 +5675,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_tomb_guard_1",
           land_unit_key = "wh2_dlc09_tmb_inf_tomb_guard_1",
+          agent_subtype = "",
           name = "Tomb Guard (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5637,6 +5684,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_archers_0",
           land_unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_archers_0",
+          agent_subtype = "",
           name = "Skeleton Horse Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -5645,6 +5693,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_veh_skeleton_archer_chariot_0",
           land_unit_key = "wh2_dlc09_tmb_veh_skeleton_archer_chariot_0",
+          agent_subtype = "",
           name = "Skeleton Archer Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -5653,6 +5702,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_inf_skeleton_archers_0",
           land_unit_key = "wh2_dlc09_tmb_inf_skeleton_archers_0",
+          agent_subtype = "",
           name = "Skeleton Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -5661,6 +5711,7 @@ return {
         {
           unit_key = "wh2_pro06_tmb_mon_bone_giant_0",
           land_unit_key = "wh2_pro06_tmb_mon_bone_giant_0",
+          agent_subtype = "",
           name = "Bone Giant",
           category = "monster",
           category_raw = "inf_ranged",
@@ -5669,6 +5720,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_heirotitan_0",
           land_unit_key = "wh2_dlc09_tmb_mon_heirotitan_0",
+          agent_subtype = "",
           name = "Hierotitan",
           category = "monster",
           category_raw = "inf_melee",
@@ -5677,6 +5729,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_veh_khemrian_warsphinx_0",
           land_unit_key = "wh2_dlc09_tmb_mon_khemrian_warsphinx_0",
+          agent_subtype = "",
           name = "Khemrian Warsphinx",
           category = "monster",
           category_raw = "war_beast",
@@ -5685,6 +5738,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_necrosphinx_0",
           land_unit_key = "wh2_dlc09_tmb_mon_necrosphinx_0",
+          agent_subtype = "",
           name = "Necrosphinx",
           category = "monster",
           category_raw = "inf_melee",
@@ -5693,6 +5747,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_tomb_scorpion_0",
           land_unit_key = "wh2_dlc09_tmb_mon_tomb_scorpion_0",
+          agent_subtype = "",
           name = "Tomb Scorpion",
           category = "monster",
           category_raw = "inf_melee",
@@ -5701,6 +5756,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_0",
           land_unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_0",
+          agent_subtype = "",
           name = "Necropolis Knights",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -5709,6 +5765,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_1",
           land_unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_1",
+          agent_subtype = "",
           name = "Necropolis Knights (Halberds)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -5717,6 +5774,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_sepulchral_stalkers_0",
           land_unit_key = "wh2_dlc09_tmb_mon_sepulchral_stalkers_0",
+          agent_subtype = "",
           name = "Sepulchral Stalkers",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -5725,6 +5783,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_ushabti_0",
           land_unit_key = "wh2_dlc09_tmb_mon_ushabti_0",
+          agent_subtype = "",
           name = "Ushabti",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -5733,6 +5792,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_ushabti_1",
           land_unit_key = "wh2_dlc09_tmb_mon_ushabti_1",
+          agent_subtype = "",
           name = "Ushabti (Great Bows)",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -5741,6 +5801,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_carrion_0",
           land_unit_key = "wh2_dlc09_tmb_mon_carrion_0",
+          agent_subtype = "",
           name = "Carrion",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -5749,6 +5810,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_dire_wolves",
           land_unit_key = "wh2_dlc09_tmb_mon_dire_wolves",
+          agent_subtype = "",
           name = "Dire Wolves",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -5757,6 +5819,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_mon_fell_bats",
           land_unit_key = "wh2_dlc09_tmb_mon_fell_bats",
+          agent_subtype = "",
           name = "Fell Bats",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -5765,6 +5828,7 @@ return {
         {
           unit_key = "wh2_dlc09_tmb_art_screaming_skull_catapult_0",
           land_unit_key = "wh2_dlc09_tmb_art_screaming_skull_catapult_0",
+          agent_subtype = "",
           name = "Screaming Skull Catapults",
           category = "war_machine",
           category_raw = "artillery",
@@ -5886,6 +5950,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cha_gunnery_wight_0",
           land_unit_key = "wh2_dlc11_cst_cha_gunnery_wight_0",
+          agent_subtype = "wh2_dlc11_cst_gunnery_wight",
           name = "Gunnery Wight",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -5894,6 +5959,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cha_mourngul_haunter",
           land_unit_key = "wh2_dlc11_cst_cha_mourngul_haunter",
+          agent_subtype = "wh2_dlc11_cst_mourngul",
           name = "Mourngul Haunter",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5902,6 +5968,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cha_vampire_fleet_captain_0",
           land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_captain_0",
+          agent_subtype = "wh2_dlc11_cst_fleet_captain_vampires",
           name = "Vampire Fleet Captain (Vampires)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -5910,6 +5977,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_depth_guard_0",
           land_unit_key = "wh2_dlc11_cst_inf_depth_guard_0",
+          agent_subtype = "",
           name = "Depth Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5918,6 +5986,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_depth_guard_1",
           land_unit_key = "wh2_dlc11_cst_inf_depth_guard_1",
+          agent_subtype = "",
           name = "Depth Guard (Polearms)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5926,6 +5995,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_syreens",
           land_unit_key = "wh2_dlc11_cst_inf_syreens",
+          agent_subtype = "",
           name = "Syreens",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5934,6 +6004,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_0",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_0",
+          agent_subtype = "",
           name = "Zombie Pirate Deckhand Mob",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5942,6 +6013,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_1",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_1",
+          agent_subtype = "",
           name = "Zombie Pirate Deckhand Mob (Polearms)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -5950,6 +6022,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_deck_gunners_0",
           land_unit_key = "wh2_dlc11_cst_inf_deck_gunners_0",
+          agent_subtype = "",
           name = "Deck Gunners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -5958,6 +6031,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_0",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_0",
+          agent_subtype = "",
           name = "Zombie Pirate Gunnery Mob",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -5966,6 +6040,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_3",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_3",
+          agent_subtype = "",
           name = "Zombie Pirate Gunnery Mob (Bombers)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -5974,6 +6049,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_2",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_2",
+          agent_subtype = "",
           name = "Zombie Pirate Gunnery Mob (Hand Cannons)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -5982,6 +6058,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_1",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_1",
+          agent_subtype = "",
           name = "Zombie Pirate Gunnery Mob (Handgunners)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -5990,6 +6067,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_bloated_corpse_0",
           land_unit_key = "wh2_dlc11_cst_mon_bloated_corpse_0",
+          agent_subtype = "",
           name = "Bloated Corpse",
           category = "monster",
           category_raw = "inf_melee",
@@ -5998,6 +6076,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_terrorgheist",
           land_unit_key = "wh2_dlc11_cst_mon_terrorgheist",
+          agent_subtype = "",
           name = "Death Shriek Terrorgheist",
           category = "monster",
           category_raw = "inf_melee",
@@ -6006,6 +6085,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_necrofex_colossus_0",
           land_unit_key = "wh2_dlc11_cst_mon_necrofex_colossus_0",
+          agent_subtype = "",
           name = "Necrofex Colossus",
           category = "monster",
           category_raw = "war_beast",
@@ -6014,6 +6094,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_rotting_leviathan_0",
           land_unit_key = "wh2_dlc11_cst_mon_rotting_leviathan_0",
+          agent_subtype = "",
           name = "Rotting Leviathan",
           category = "monster",
           category_raw = "war_beast",
@@ -6022,6 +6103,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_animated_hulks_0",
           land_unit_key = "wh2_dlc11_cst_mon_animated_hulks_0",
+          agent_subtype = "",
           name = "Animated Hulks",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -6030,6 +6112,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_mournguls_0",
           land_unit_key = "wh2_dlc11_cst_mon_mournguls_0",
+          agent_subtype = "",
           name = "Mournguls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -6038,6 +6121,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_0",
           land_unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_0",
+          agent_subtype = "",
           name = "Rotting Prometheans",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -6046,6 +6130,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_gunnery_mob_0",
           land_unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_gunnery_mob_0",
+          agent_subtype = "",
           name = "Rotting Prometheans (Gunnery Mob)",
           category = "monstrous_infantry",
           category_raw = "war_beast",
@@ -6054,6 +6139,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cav_deck_droppers_0",
           land_unit_key = "wh2_dlc11_cst_cav_deck_droppers_0",
+          agent_subtype = "",
           name = "Deck Droppers",
           category = "war_beast",
           category_raw = "cavalry",
@@ -6062,6 +6148,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cav_deck_droppers_1",
           land_unit_key = "wh2_dlc11_cst_cav_deck_droppers_1",
+          agent_subtype = "",
           name = "Deck Droppers (Bombers)",
           category = "war_beast",
           category_raw = "cavalry",
@@ -6070,6 +6157,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cav_deck_droppers_2",
           land_unit_key = "wh2_dlc11_cst_cav_deck_droppers_2",
+          agent_subtype = "",
           name = "Deck Droppers (Handgunners)",
           category = "war_beast",
           category_raw = "cavalry",
@@ -6078,6 +6166,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_fell_bats",
           land_unit_key = "wh2_dlc11_cst_mon_fell_bats",
+          agent_subtype = "",
           name = "Fell Bats",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -6086,6 +6175,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_scurvy_dogs",
           land_unit_key = "wh2_dlc11_cst_mon_scurvy_dogs",
+          agent_subtype = "",
           name = "Scurvy Dogs",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -6094,6 +6184,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_art_carronade",
           land_unit_key = "wh2_dlc11_cst_art_carronade",
+          agent_subtype = "",
           name = "Carronades",
           category = "war_machine",
           category_raw = "artillery",
@@ -6102,6 +6193,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_art_mortar",
           land_unit_key = "wh2_dlc11_cst_art_mortar",
+          agent_subtype = "",
           name = "Mortars",
           category = "war_machine",
           category_raw = "artillery",
@@ -6169,6 +6261,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cha_gunnery_wight_0",
           land_unit_key = "wh2_dlc11_cst_cha_gunnery_wight_0",
+          agent_subtype = "wh2_dlc11_cst_gunnery_wight",
           name = "Gunnery Wight",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -6177,6 +6270,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cha_mourngul_haunter",
           land_unit_key = "wh2_dlc11_cst_cha_mourngul_haunter",
+          agent_subtype = "wh2_dlc11_cst_mourngul",
           name = "Mourngul Haunter",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -6185,6 +6279,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cha_vampire_fleet_captain_0",
           land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_captain_0",
+          agent_subtype = "wh2_dlc11_cst_fleet_captain_vampires",
           name = "Vampire Fleet Captain (Vampires)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -6193,6 +6288,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_depth_guard_0",
           land_unit_key = "wh2_dlc11_cst_inf_depth_guard_0",
+          agent_subtype = "",
           name = "Depth Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6201,6 +6297,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_depth_guard_1",
           land_unit_key = "wh2_dlc11_cst_inf_depth_guard_1",
+          agent_subtype = "",
           name = "Depth Guard (Polearms)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6209,6 +6306,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_sartosa_free_company_0",
           land_unit_key = "wh2_dlc11_cst_inf_sartosa_free_company_0",
+          agent_subtype = "",
           name = "Sartosa Free Company",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6217,6 +6315,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_syreens",
           land_unit_key = "wh2_dlc11_cst_inf_syreens",
+          agent_subtype = "",
           name = "Syreens",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6225,6 +6324,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_0",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_0",
+          agent_subtype = "",
           name = "Zombie Pirate Deckhand Mob",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6233,6 +6333,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_1",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_1",
+          agent_subtype = "",
           name = "Zombie Pirate Deckhand Mob (Polearms)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6241,6 +6342,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_deck_gunners_0",
           land_unit_key = "wh2_dlc11_cst_inf_deck_gunners_0",
+          agent_subtype = "",
           name = "Deck Gunners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6249,6 +6351,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_sartosa_militia_0",
           land_unit_key = "wh2_dlc11_cst_inf_sartosa_militia_0",
+          agent_subtype = "",
           name = "Sartosa Militia",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6257,6 +6360,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_0",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_0",
+          agent_subtype = "",
           name = "Zombie Pirate Gunnery Mob",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6265,6 +6369,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_3",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_3",
+          agent_subtype = "",
           name = "Zombie Pirate Gunnery Mob (Bombers)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6273,6 +6378,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_2",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_2",
+          agent_subtype = "",
           name = "Zombie Pirate Gunnery Mob (Hand Cannons)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6281,6 +6387,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_1",
           land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_1",
+          agent_subtype = "",
           name = "Zombie Pirate Gunnery Mob (Handgunners)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6289,6 +6396,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_bloated_corpse_0",
           land_unit_key = "wh2_dlc11_cst_mon_bloated_corpse_0",
+          agent_subtype = "",
           name = "Bloated Corpse",
           category = "monster",
           category_raw = "inf_melee",
@@ -6297,6 +6405,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_terrorgheist",
           land_unit_key = "wh2_dlc11_cst_mon_terrorgheist",
+          agent_subtype = "",
           name = "Death Shriek Terrorgheist",
           category = "monster",
           category_raw = "inf_melee",
@@ -6305,6 +6414,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_necrofex_colossus_0",
           land_unit_key = "wh2_dlc11_cst_mon_necrofex_colossus_0",
+          agent_subtype = "",
           name = "Necrofex Colossus",
           category = "monster",
           category_raw = "war_beast",
@@ -6313,6 +6423,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_rotting_leviathan_0",
           land_unit_key = "wh2_dlc11_cst_mon_rotting_leviathan_0",
+          agent_subtype = "",
           name = "Rotting Leviathan",
           category = "monster",
           category_raw = "war_beast",
@@ -6321,6 +6432,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_animated_hulks_0",
           land_unit_key = "wh2_dlc11_cst_mon_animated_hulks_0",
+          agent_subtype = "",
           name = "Animated Hulks",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -6329,6 +6441,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_maneaters_0",
           land_unit_key = "wh3_main_ogr_inf_maneaters_0",
+          agent_subtype = "",
           name = "Maneaters",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -6337,6 +6450,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_maneaters_3",
           land_unit_key = "wh3_main_ogr_inf_maneaters_3",
+          agent_subtype = "",
           name = "Maneaters (Ogre Pistols)",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -6345,6 +6459,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_mournguls_0",
           land_unit_key = "wh2_dlc11_cst_mon_mournguls_0",
+          agent_subtype = "",
           name = "Mournguls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -6353,6 +6468,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_0",
           land_unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_0",
+          agent_subtype = "",
           name = "Rotting Prometheans",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -6361,6 +6477,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_gunnery_mob_0",
           land_unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_gunnery_mob_0",
+          agent_subtype = "",
           name = "Rotting Prometheans (Gunnery Mob)",
           category = "monstrous_infantry",
           category_raw = "war_beast",
@@ -6369,6 +6486,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cav_deck_droppers_0",
           land_unit_key = "wh2_dlc11_cst_cav_deck_droppers_0",
+          agent_subtype = "",
           name = "Deck Droppers",
           category = "war_beast",
           category_raw = "cavalry",
@@ -6377,6 +6495,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cav_deck_droppers_1",
           land_unit_key = "wh2_dlc11_cst_cav_deck_droppers_1",
+          agent_subtype = "",
           name = "Deck Droppers (Bombers)",
           category = "war_beast",
           category_raw = "cavalry",
@@ -6385,6 +6504,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_cav_deck_droppers_2",
           land_unit_key = "wh2_dlc11_cst_cav_deck_droppers_2",
+          agent_subtype = "",
           name = "Deck Droppers (Handgunners)",
           category = "war_beast",
           category_raw = "cavalry",
@@ -6393,6 +6513,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_fell_bats",
           land_unit_key = "wh2_dlc11_cst_mon_fell_bats",
+          agent_subtype = "",
           name = "Fell Bats",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -6401,6 +6522,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_scurvy_dogs",
           land_unit_key = "wh2_dlc11_cst_mon_scurvy_dogs",
+          agent_subtype = "",
           name = "Scurvy Dogs",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -6409,6 +6531,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_art_carronade",
           land_unit_key = "wh2_dlc11_cst_art_carronade",
+          agent_subtype = "",
           name = "Carronades",
           category = "war_machine",
           category_raw = "artillery",
@@ -6417,6 +6540,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_art_mortar",
           land_unit_key = "wh2_dlc11_cst_art_mortar",
+          agent_subtype = "",
           name = "Mortars",
           category = "war_machine",
           category_raw = "artillery",
@@ -6490,6 +6614,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_orc_boar_chariot",
           land_unit_key = "wh_main_grn_cav_orc_boar_chariot",
+          agent_subtype = "",
           name = "Orc Boar Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -6498,6 +6623,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_0",
           land_unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_0",
+          agent_subtype = "",
           name = "Forest Goblin Spider Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -6506,6 +6632,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_goblin_wolf_riders_0",
           land_unit_key = "wh_main_grn_cav_goblin_wolf_riders_0",
+          agent_subtype = "",
           name = "Goblin Wolf Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -6514,6 +6641,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_orc_boar_boy_big_uns",
           land_unit_key = "wh_main_grn_cav_orc_boar_boy_big_uns",
+          agent_subtype = "",
           name = "Orc Boar Boy Big 'Uns",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -6522,6 +6650,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_orc_boar_boyz",
           land_unit_key = "wh_main_grn_cav_orc_boar_boyz",
+          agent_subtype = "",
           name = "Orc Boar Boyz",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -6530,6 +6659,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
           land_unit_key = "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
+          agent_subtype = "",
           name = "Savage Orc Boar Boy Big 'Uns",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -6538,6 +6668,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_savage_orc_boar_boyz",
           land_unit_key = "wh_main_grn_cav_savage_orc_boar_boyz",
+          agent_subtype = "",
           name = "Savage Orc Boar Boyz",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -6546,6 +6677,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_black_orcs",
           land_unit_key = "wh_main_grn_inf_black_orcs",
+          agent_subtype = "",
           name = "Black Orcs (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6554,6 +6686,7 @@ return {
         {
           unit_key = "wh3_main_grn_inf_goblins_sword_shield",
           land_unit_key = "wh3_main_grn_inf_goblins_sword_shield",
+          agent_subtype = "",
           name = "Goblins",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6562,6 +6695,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_goblin_spearmen",
           land_unit_key = "wh_main_grn_inf_goblin_spearmen",
+          agent_subtype = "",
           name = "Goblins (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6570,6 +6704,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblins",
           land_unit_key = "wh_main_grn_inf_night_goblins",
+          agent_subtype = "",
           name = "Night Goblins",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6578,6 +6713,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblin_fanatics",
           land_unit_key = "wh_main_grn_inf_night_goblin_fanatics",
+          agent_subtype = "",
           name = "Night Goblins (Fanatics)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6586,6 +6722,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_orc_big_uns",
           land_unit_key = "wh_main_grn_inf_orc_big_uns",
+          agent_subtype = "",
           name = "Orc Big 'Uns",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6594,6 +6731,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_orc_boyz",
           land_unit_key = "wh_main_grn_inf_orc_boyz",
+          agent_subtype = "",
           name = "Orc Boyz",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6602,6 +6740,7 @@ return {
         {
           unit_key = "wh3_main_grn_inf_orc_boyz_spear_shield",
           land_unit_key = "wh3_main_grn_inf_orc_boyz_spear_shield",
+          agent_subtype = "",
           name = "Orc Boyz (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6610,6 +6749,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_savage_orc_big_uns",
           land_unit_key = "wh_main_grn_inf_savage_orc_big_uns",
+          agent_subtype = "",
           name = "Savage Orc Big 'Uns",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6618,6 +6758,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_savage_orcs",
           land_unit_key = "wh_main_grn_inf_savage_orcs",
+          agent_subtype = "",
           name = "Savage Orcs",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6626,6 +6767,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_1",
           land_unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_1",
+          agent_subtype = "",
           name = "Forest Goblin Spider Rider Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -6634,6 +6776,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_goblin_wolf_riders_1",
           land_unit_key = "wh_main_grn_cav_goblin_wolf_riders_1",
+          agent_subtype = "",
           name = "Goblin Wolf Rider Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -6642,6 +6785,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_goblin_wolf_chariot",
           land_unit_key = "wh_main_grn_cav_goblin_wolf_chariot",
+          agent_subtype = "",
           name = "Goblin Wolf Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -6650,6 +6794,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_goblin_archers",
           land_unit_key = "wh_main_grn_inf_goblin_archers",
+          agent_subtype = "",
           name = "Goblin Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6658,6 +6803,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblin_archers",
           land_unit_key = "wh_main_grn_inf_night_goblin_archers",
+          agent_subtype = "",
           name = "Night Goblin Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6666,6 +6812,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_orc_arrer_boyz",
           land_unit_key = "wh_main_grn_inf_orc_arrer_boyz",
+          agent_subtype = "",
           name = "Orc Arrer Boyz",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6674,6 +6821,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_savage_orc_arrer_boyz",
           land_unit_key = "wh_main_grn_inf_savage_orc_arrer_boyz",
+          agent_subtype = "",
           name = "Savage Orc Arrer Boyz",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6682,6 +6830,7 @@ return {
         {
           unit_key = "wh_main_grn_mon_trolls",
           land_unit_key = "wh_main_grn_mon_trolls",
+          agent_subtype = "",
           name = "Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -6690,6 +6839,7 @@ return {
         {
           unit_key = "wh_main_grn_art_doom_diver_catapult",
           land_unit_key = "wh_main_grn_art_doom_diver_catapult",
+          agent_subtype = "",
           name = "Doom Diver Catapults",
           category = "war_machine",
           category_raw = "artillery",
@@ -6698,6 +6848,7 @@ return {
         {
           unit_key = "wh_main_grn_art_goblin_rock_lobber",
           land_unit_key = "wh_main_grn_art_goblin_rock_lobber",
+          agent_subtype = "",
           name = "Goblin Rock Lobbers",
           category = "war_machine",
           category_raw = "artillery",
@@ -6768,6 +6919,7 @@ return {
         {
           unit_key = "wh2_twa02_wef_cha_glade_captain_0",
           land_unit_key = "wh2_twa02_wef_cha_glade_captain_0",
+          agent_subtype = "wh2_twa02_wef_glade_captain",
           name = "Glade Captain",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -6776,6 +6928,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_cha_malicious_branchwraith_beasts_0",
           land_unit_key = "wh2_dlc16_wef_cha_malicious_branchwraith_beasts_0",
+          agent_subtype = "wh2_dlc16_wef_malicious_branchwraith_beasts",
           name = "Malevolent Branchwraith (Beasts)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -6784,6 +6937,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_ancient_treeman_0",
           land_unit_key = "wh_dlc05_wef_cha_ancient_treeman_0",
+          agent_subtype = "wh_dlc05_wef_ancient_treeman",
           name = "Ancient Treeman",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -6792,6 +6946,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_glade_lord_0",
           land_unit_key = "wh_dlc05_wef_cha_glade_lord_0",
+          agent_subtype = "wh_dlc05_wef_glade_lord",
           name = "Glade Lord",
           category = "character_lord",
           category_raw = "inf_ranged",
@@ -6800,6 +6955,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_beasts_0",
           land_unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_beasts_0",
+          agent_subtype = "wh2_dlc16_wef_malicious_ancient_treeman_beasts",
           name = "Malevolent Ancient Treeman (Beasts)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -6808,6 +6964,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_life_0",
           land_unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_life_0",
+          agent_subtype = "wh2_dlc16_wef_malicious_ancient_treeman_life",
           name = "Malevolent Ancient Treeman (Life)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -6816,6 +6973,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_shadows_0",
           land_unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_shadows_0",
+          agent_subtype = "wh2_dlc16_wef_malicious_ancient_treeman_shadows",
           name = "Malevolent Ancient Treeman (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -6824,6 +6982,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_cav_glade_riders_2",
           land_unit_key = "wh2_dlc16_wef_cav_glade_riders_2",
+          agent_subtype = "",
           name = "Glade Riders (Spears)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -6832,6 +6991,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_eternal_guard_0",
           land_unit_key = "wh_dlc05_wef_inf_eternal_guard_0",
+          agent_subtype = "",
           name = "Eternal Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6840,6 +7000,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_eternal_guard_1",
           land_unit_key = "wh_dlc05_wef_inf_eternal_guard_1",
+          agent_subtype = "",
           name = "Eternal Guard (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6848,6 +7009,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_inf_malicious_dryads_0",
           land_unit_key = "wh2_dlc16_wef_inf_malicious_dryads_0",
+          agent_subtype = "",
           name = "Malevolent Dryads",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6856,6 +7018,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_wardancers_0",
           land_unit_key = "wh_dlc05_wef_inf_wardancers_0",
+          agent_subtype = "",
           name = "Wardancers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6864,6 +7027,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_wardancers_1",
           land_unit_key = "wh_dlc05_wef_inf_wardancers_1",
+          agent_subtype = "",
           name = "Wardancers (Asrai Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6872,6 +7036,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_wildwood_rangers_0",
           land_unit_key = "wh_dlc05_wef_inf_wildwood_rangers_0",
+          agent_subtype = "",
           name = "Wildwood Rangers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -6880,6 +7045,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cav_glade_riders_0",
           land_unit_key = "wh_dlc05_wef_cav_glade_riders_0",
+          agent_subtype = "",
           name = "Glade Riders",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -6888,6 +7054,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cav_glade_riders_1",
           land_unit_key = "wh_dlc05_wef_cav_glade_riders_1",
+          agent_subtype = "",
           name = "Glade Riders (Hagbane Tips)",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -6896,6 +7063,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cav_hawk_riders_0",
           land_unit_key = "wh_dlc05_wef_cav_hawk_riders_0",
+          agent_subtype = "",
           name = "Hawk Riders",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -6904,6 +7072,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_deepwood_scouts_0",
           land_unit_key = "wh_dlc05_wef_inf_deepwood_scouts_0",
+          agent_subtype = "",
           name = "Deepwood Scouts",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6912,6 +7081,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_deepwood_scouts_1",
           land_unit_key = "wh_dlc05_wef_inf_deepwood_scouts_1",
+          agent_subtype = "",
           name = "Deepwood Scouts (Swiftshiver Shards)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6920,6 +7090,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_glade_guard_0",
           land_unit_key = "wh_dlc05_wef_inf_glade_guard_0",
+          agent_subtype = "",
           name = "Glade Guard",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6928,6 +7099,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_glade_guard_2",
           land_unit_key = "wh_dlc05_wef_inf_glade_guard_2",
+          agent_subtype = "",
           name = "Glade Guard (Hagbane Tips)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6936,6 +7108,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_glade_guard_1",
           land_unit_key = "wh_dlc05_wef_inf_glade_guard_1",
+          agent_subtype = "",
           name = "Glade Guard (Starfire Shafts)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -6944,6 +7117,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_feral_manticore",
           land_unit_key = "wh2_dlc16_wef_mon_feral_manticore",
+          agent_subtype = "",
           name = "Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -6952,6 +7126,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_forest_dragon_0",
           land_unit_key = "wh_dlc05_wef_forest_dragon_0",
+          agent_subtype = "",
           name = "Forest Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -6960,6 +7135,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_mon_great_eagle_0",
           land_unit_key = "wh_dlc05_wef_mon_great_eagle_0",
+          agent_subtype = "",
           name = "Great Eagle",
           category = "monster",
           category_raw = "inf_melee",
@@ -6968,6 +7144,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_hawks_0",
           land_unit_key = "wh2_dlc16_wef_mon_hawks_0",
+          agent_subtype = "",
           name = "Great Hawks",
           category = "monster",
           category_raw = "inf_melee",
@@ -6976,6 +7153,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_malicious_treeman_0",
           land_unit_key = "wh2_dlc16_wef_mon_malicious_treeman_0",
+          agent_subtype = "",
           name = "Malevolent Treeman",
           category = "monster",
           category_raw = "inf_melee",
@@ -6984,6 +7162,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_giant_spiders_0",
           land_unit_key = "wh2_dlc16_wef_mon_giant_spiders_0",
+          agent_subtype = "",
           name = "Giant Spiders",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -6992,6 +7171,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_harpies_0",
           land_unit_key = "wh2_dlc16_wef_mon_harpies_0",
+          agent_subtype = "",
           name = "Harpies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -7000,6 +7180,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_malicious_treekin_0",
           land_unit_key = "wh2_dlc16_wef_mon_malicious_treekin_0",
+          agent_subtype = "",
           name = "Malevolent Tree Kin",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -7008,6 +7189,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_zoats",
           land_unit_key = "wh2_dlc16_wef_mon_zoats",
+          agent_subtype = "",
           name = "Zoats",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -7016,6 +7198,7 @@ return {
         {
           unit_key = "wh3_main_monster_feral_bears",
           land_unit_key = "wh3_main_monster_feral_bears",
+          agent_subtype = "",
           name = "Feral Bears",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -7024,6 +7207,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_wolves_0",
           land_unit_key = "wh2_dlc16_wef_mon_wolves_0",
+          agent_subtype = "",
           name = "Giant Wolves",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -7158,6 +7342,7 @@ return {
         {
           unit_key = "wh2_main_def_cha_death_hag_0",
           land_unit_key = "wh2_main_def_cha_death_hag_0",
+          agent_subtype = "wh2_main_def_death_hag",
           name = "Death Hag",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -7166,6 +7351,7 @@ return {
         {
           unit_key = "wh2_main_def_cha_khainite_assassin_0",
           land_unit_key = "wh2_main_def_cha_khainite_assassin_0",
+          agent_subtype = "wh2_main_def_khainite_assassin",
           name = "Khainite Assassin",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -7174,6 +7360,7 @@ return {
         {
           unit_key = "wh2_dlc14_def_cha_master_0",
           land_unit_key = "wh2_dlc14_def_cha_master_0",
+          agent_subtype = "wh2_dlc14_def_master",
           name = "Master",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -7182,6 +7369,7 @@ return {
         {
           unit_key = "wh2_main_def_cha_sorceress_dark_0",
           land_unit_key = "wh2_main_def_cha_sorceress_dark_0",
+          agent_subtype = "wh2_main_def_sorceress_dark",
           name = "Sorceress (Dark)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -7190,6 +7378,7 @@ return {
         {
           unit_key = "wh2_main_def_cha_dreadlord_0",
           land_unit_key = "wh2_main_def_cha_dreadlord_0",
+          agent_subtype = "wh2_main_def_dreadlord",
           name = "Dreadlord (Sword & Crossbow)",
           category = "character_lord",
           category_raw = "inf_ranged",
@@ -7198,6 +7387,7 @@ return {
         {
           unit_key = "wh2_dlc14_def_cha_high_beastmaster_0",
           land_unit_key = "wh2_dlc14_def_cha_high_beastmaster_0",
+          agent_subtype = "wh2_dlc14_def_high_beastmaster",
           name = "High Beastmaster",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -7206,6 +7396,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_cha_supreme_sorceress_dark_0",
           land_unit_key = "wh2_dlc10_def_cha_supreme_sorceress_dark_0",
+          agent_subtype = "wh2_dlc10_def_supreme_sorceress_dark",
           name = "Supreme Sorceress (Dark)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -7214,6 +7405,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_cha_supreme_sorceress_fire_0",
           land_unit_key = "wh2_dlc10_def_cha_supreme_sorceress_fire_0",
+          agent_subtype = "wh2_dlc10_def_supreme_sorceress_fire",
           name = "Supreme Sorceress (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -7222,6 +7414,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_cha_supreme_sorceress_shadow_0",
           land_unit_key = "wh2_dlc10_def_cha_supreme_sorceress_shadow_0",
+          agent_subtype = "wh2_dlc10_def_supreme_sorceress_shadow",
           name = "Supreme Sorceress (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -7230,6 +7423,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_cold_one_knights_1",
           land_unit_key = "wh2_main_def_cav_cold_one_knights_1",
+          agent_subtype = "",
           name = "Cold One Dread Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -7238,6 +7432,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_cold_one_knights_0",
           land_unit_key = "wh2_main_def_cav_cold_one_knights_0",
+          agent_subtype = "",
           name = "Cold One Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -7246,6 +7441,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_dark_riders_0",
           land_unit_key = "wh2_main_def_cav_dark_riders_0",
+          agent_subtype = "",
           name = "Dark Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -7254,6 +7450,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_dark_riders_1",
           land_unit_key = "wh2_main_def_cav_dark_riders_1",
+          agent_subtype = "",
           name = "Dark Riders (Shields)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -7262,6 +7459,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_cav_doomfire_warlocks_0",
           land_unit_key = "wh2_dlc10_def_cav_doomfire_warlocks_0",
+          agent_subtype = "",
           name = "Doomfire Warlocks",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -7270,6 +7468,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_black_ark_corsairs_0",
           land_unit_key = "wh2_main_def_inf_black_ark_corsairs_0",
+          agent_subtype = "",
           name = "Black Ark Corsairs",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7278,6 +7477,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_black_guard_0",
           land_unit_key = "wh2_main_def_inf_black_guard_0",
+          agent_subtype = "",
           name = "Black Guard of Naggarond",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7286,6 +7486,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_bleakswords_0",
           land_unit_key = "wh2_main_def_inf_bleakswords_0",
+          agent_subtype = "",
           name = "Bleakswords",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7294,6 +7495,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_dreadspears_0",
           land_unit_key = "wh2_main_def_inf_dreadspears_0",
+          agent_subtype = "",
           name = "Dreadspears",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7302,6 +7504,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_har_ganeth_executioners_0",
           land_unit_key = "wh2_main_def_inf_har_ganeth_executioners_0",
+          agent_subtype = "",
           name = "Har Ganeth Executioners",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7310,6 +7513,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_inf_sisters_of_slaughter",
           land_unit_key = "wh2_dlc10_def_inf_sisters_of_slaughter",
+          agent_subtype = "",
           name = "Sisters of Slaughter",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7318,6 +7522,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_witch_elves_0",
           land_unit_key = "wh2_main_def_inf_witch_elves_0",
+          agent_subtype = "",
           name = "Witch Elves",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7326,6 +7531,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_dark_riders_2",
           land_unit_key = "wh2_main_def_cav_dark_riders_2",
+          agent_subtype = "",
           name = "Dark Riders (Repeater Crossbows)",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -7334,6 +7540,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_cold_one_chariot",
           land_unit_key = "wh2_main_def_cav_cold_one_chariot",
+          agent_subtype = "",
           name = "Cold One Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -7342,6 +7549,7 @@ return {
         {
           unit_key = "wh2_dlc14_def_cav_scourgerunner_chariot_0",
           land_unit_key = "wh2_dlc14_def_cav_scourgerunner_chariot_0",
+          agent_subtype = "",
           name = "Scourgerunner Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -7350,6 +7558,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_black_ark_corsairs_1",
           land_unit_key = "wh2_main_def_inf_black_ark_corsairs_1",
+          agent_subtype = "",
           name = "Black Ark Corsairs (Handbows)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7358,6 +7567,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_darkshards_0",
           land_unit_key = "wh2_main_def_inf_darkshards_0",
+          agent_subtype = "",
           name = "Darkshards",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7366,6 +7576,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_darkshards_1",
           land_unit_key = "wh2_main_def_inf_darkshards_1",
+          agent_subtype = "",
           name = "Darkshards (Shields)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7374,6 +7585,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_shades_0",
           land_unit_key = "wh2_main_def_inf_shades_0",
+          agent_subtype = "",
           name = "Shades",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7382,6 +7594,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_shades_1",
           land_unit_key = "wh2_main_def_inf_shades_1",
+          agent_subtype = "",
           name = "Shades (Dual Weapons)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7390,6 +7603,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_shades_2",
           land_unit_key = "wh2_main_def_inf_shades_2",
+          agent_subtype = "",
           name = "Shades (Greatswords)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7398,6 +7612,7 @@ return {
         {
           unit_key = "wh2_main_def_mon_black_dragon",
           land_unit_key = "wh2_main_def_mon_black_dragon",
+          agent_subtype = "",
           name = "Black Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -7406,6 +7621,7 @@ return {
         {
           unit_key = "wh2_dlc14_def_mon_bloodwrack_medusa_0",
           land_unit_key = "wh2_dlc14_def_mon_bloodwrack_medusa_0",
+          agent_subtype = "",
           name = "Bloodwrack Medusa",
           category = "monster",
           category_raw = "inf_melee",
@@ -7414,6 +7630,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_mon_feral_manticore_0",
           land_unit_key = "wh2_dlc10_def_mon_feral_manticore_0",
+          agent_subtype = "",
           name = "Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -7422,6 +7639,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_mon_kharibdyss_0",
           land_unit_key = "wh2_dlc10_def_mon_kharibdyss_0",
+          agent_subtype = "",
           name = "Kharibdyss",
           category = "monster",
           category_raw = "inf_melee",
@@ -7430,6 +7648,7 @@ return {
         {
           unit_key = "wh2_main_def_mon_war_hydra",
           land_unit_key = "wh2_main_def_mon_war_hydra_0",
+          agent_subtype = "",
           name = "War Hydra",
           category = "monster",
           category_raw = "inf_melee",
@@ -7438,6 +7657,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_harpies",
           land_unit_key = "wh2_main_def_inf_harpies",
+          agent_subtype = "",
           name = "Harpies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -7446,6 +7666,7 @@ return {
         {
           unit_key = "wh2_dlc14_def_veh_bloodwrack_shrine_0",
           land_unit_key = "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+          agent_subtype = "",
           name = "Bloodwrack Shrine",
           category = "war_machine",
           category_raw = "war_machine",
@@ -7454,6 +7675,7 @@ return {
         {
           unit_key = "wh2_main_def_art_reaper_bolt_thrower",
           land_unit_key = "wh2_main_def_art_reaper_bolt_thrower",
+          agent_subtype = "",
           name = "Reaper Bolt Throwers",
           category = "war_machine",
           category_raw = "artillery",
@@ -7595,6 +7817,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_cha_handmaiden_0",
           land_unit_key = "wh2_dlc10_hef_cha_handmaiden_0",
+          agent_subtype = "wh2_dlc10_hef_handmaiden",
           name = "Handmaiden of the Everqueen",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -7603,6 +7826,7 @@ return {
         {
           unit_key = "wh2_main_hef_cha_loremaster_of_hoeth_0",
           land_unit_key = "wh2_main_hef_cha_loremaster_of_hoeth_0",
+          agent_subtype = "wh2_main_hef_loremaster_of_hoeth",
           name = "Loremaster of Hoeth",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -7611,6 +7835,7 @@ return {
         {
           unit_key = "wh2_main_hef_cha_mage_high_0",
           land_unit_key = "wh2_main_hef_cha_mage_high_0",
+          agent_subtype = "wh2_main_hef_mage_high",
           name = "Mage (High)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -7619,6 +7844,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_cha_mist_mage",
           land_unit_key = "wh3_dlc27_hef_cha_mist_mage",
+          agent_subtype = "wh3_dlc27_hef_mist_mage",
           name = "Mist Mage",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -7627,6 +7853,7 @@ return {
         {
           unit_key = "wh2_main_hef_cha_noble_0",
           land_unit_key = "wh2_main_hef_cha_noble_0",
+          agent_subtype = "wh2_main_hef_noble",
           name = "Noble",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -7635,6 +7862,7 @@ return {
         {
           unit_key = "wh2_main_hef_cha_prince_0",
           land_unit_key = "wh2_main_hef_cha_prince_0",
+          agent_subtype = "wh2_main_hef_prince",
           name = "Prince",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -7643,6 +7871,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_cha_sea_helm",
           land_unit_key = "wh3_dlc27_hef_cha_sea_helm",
+          agent_subtype = "wh3_dlc27_hef_sea_helm",
           name = "Sea Helm",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -7651,6 +7880,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_ithilmar_chariot",
           land_unit_key = "wh2_main_hef_cav_ithilmar_chariot",
+          agent_subtype = "",
           name = "Ithilmar Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -7659,6 +7889,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_veh_lion_chariot_of_chrace_0",
           land_unit_key = "wh2_dlc15_hef_veh_lion_chariot_of_chrace_0",
+          agent_subtype = "",
           name = "Lion Chariots of Chrace",
           category = "chariot",
           category_raw = "melee",
@@ -7667,6 +7898,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_dragon_princes",
           land_unit_key = "wh2_main_hef_cav_dragon_princes",
+          agent_subtype = "",
           name = "Dragon Princes",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -7675,6 +7907,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_ellyrian_reavers_0",
           land_unit_key = "wh2_main_hef_cav_ellyrian_reavers_0",
+          agent_subtype = "",
           name = "Ellyrian Reavers",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -7683,6 +7916,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_silver_helms_0",
           land_unit_key = "wh2_main_hef_cav_silver_helms_0",
+          agent_subtype = "",
           name = "Silver Helms",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -7691,6 +7925,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_silver_helms_1",
           land_unit_key = "wh2_main_hef_cav_silver_helms_1",
+          agent_subtype = "",
           name = "Silver Helms (Shields)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -7699,6 +7934,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_mistwalkers_faithbearers_0",
           land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_faithbearers_0",
+          agent_subtype = "",
           name = "Athel Tamarha Faithbearers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7707,6 +7943,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_inf_dryads_0",
           land_unit_key = "wh2_dlc10_hef_inf_dryads_0",
+          agent_subtype = "",
           name = "Dryads",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7715,6 +7952,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_gate_guard",
           land_unit_key = "wh2_main_hef_inf_gate_guard",
+          agent_subtype = "",
           name = "Gate Guard",
           category = "melee_infantry",
           category_raw = "inf_ranged",
@@ -7723,6 +7961,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_phoenix_guard",
           land_unit_key = "wh2_main_hef_inf_phoenix_guard",
+          agent_subtype = "",
           name = "Phoenix Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7731,6 +7970,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_rangers_0",
           land_unit_key = "wh2_dlc15_hef_inf_rangers_0",
+          agent_subtype = "",
           name = "Rangers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7739,6 +7979,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_inf_ships_company",
           land_unit_key = "wh3_dlc27_hef_inf_ships_company",
+          agent_subtype = "",
           name = "Ship's Company",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7747,6 +7988,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_silverin_guard_0",
           land_unit_key = "wh2_dlc15_hef_inf_silverin_guard_0",
+          agent_subtype = "",
           name = "Silverin Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7755,6 +7997,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_spearmen_0",
           land_unit_key = "wh2_main_hef_inf_spearmen_0",
+          agent_subtype = "",
           name = "Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7763,6 +8006,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_swordmasters_of_hoeth_0",
           land_unit_key = "wh2_main_hef_inf_swordmasters_of_hoeth_0",
+          agent_subtype = "",
           name = "Swordmasters of Hoeth",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7771,6 +8015,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_white_lions_of_chrace_0",
           land_unit_key = "wh2_main_hef_inf_white_lions_of_chrace_0",
+          agent_subtype = "",
           name = "White Lions of Chrace",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -7779,6 +8024,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_ellyrian_reavers_1",
           land_unit_key = "wh2_main_hef_cav_ellyrian_reavers_1",
+          agent_subtype = "",
           name = "Ellyrian Reaver Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -7787,6 +8033,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_veh_skycutter_bows",
           land_unit_key = "wh3_dlc27_hef_veh_skycutter_bows",
+          agent_subtype = "",
           name = "Lothern Skycutters",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -7795,6 +8042,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_veh_skycutter_bolt_thrower",
           land_unit_key = "wh3_dlc27_hef_veh_skycutter_bolt_thrower",
+          agent_subtype = "",
           name = "Lothern Skycutters (Bolt Throwers)",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -7803,6 +8051,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_tiranoc_chariot",
           land_unit_key = "wh2_main_hef_cav_tiranoc_chariot",
+          agent_subtype = "",
           name = "Tiranoc Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -7811,6 +8060,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_archers_0",
           land_unit_key = "wh2_main_hef_inf_archers_0",
+          agent_subtype = "",
           name = "Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7819,6 +8069,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_archers_1",
           land_unit_key = "wh2_main_hef_inf_archers_1",
+          agent_subtype = "",
           name = "Archers (Light Armour)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7827,6 +8078,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_lothern_sea_guard_0",
           land_unit_key = "wh2_main_hef_inf_lothern_sea_guard_0",
+          agent_subtype = "",
           name = "Lothern Sea Guard",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7835,6 +8087,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_lothern_sea_guard_1",
           land_unit_key = "wh2_main_hef_inf_lothern_sea_guard_1",
+          agent_subtype = "",
           name = "Lothern Sea Guard (Shields)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7843,6 +8096,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_mistwalkers_sentinels_0",
           land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_sentinels_0",
+          agent_subtype = "",
           name = "Sentinels of Astaril",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7851,6 +8105,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_inf_shadow_warriors_0",
           land_unit_key = "wh2_dlc10_hef_inf_shadow_warriors_0",
+          agent_subtype = "",
           name = "Shadow Warriors",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7859,6 +8114,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_inf_shadow_walkers_0",
           land_unit_key = "wh2_dlc10_hef_inf_shadow_walkers_0",
+          agent_subtype = "",
           name = "Shadow-walkers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7867,6 +8123,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
           land_unit_key = "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
+          agent_subtype = "",
           name = "Sisters of Avelorn",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7875,6 +8132,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_mistwalkers_spireguard_0",
           land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_spireguard_0",
+          agent_subtype = "",
           name = "Spire Guard of Tor Yvresse",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7883,6 +8141,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_mistwalkers_skyhawks_0",
           land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_skyhawks_0",
+          agent_subtype = "",
           name = "The Skyhawks",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -7891,6 +8150,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_mon_arcane_phoenix_0",
           land_unit_key = "wh2_dlc15_hef_mon_arcane_phoenix_0",
+          agent_subtype = "",
           name = "Arcane Phoenix",
           category = "monster",
           category_raw = "inf_melee",
@@ -7899,6 +8159,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_phoenix_flamespyre",
           land_unit_key = "wh2_main_hef_mon_phoenix_flamespyre",
+          agent_subtype = "",
           name = "Flamespyre Phoenix",
           category = "monster",
           category_raw = "inf_melee",
@@ -7907,6 +8168,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_phoenix_frostheart",
           land_unit_key = "wh2_main_hef_mon_phoenix_frostheart",
+          agent_subtype = "",
           name = "Frostheart Phoenix",
           category = "monster",
           category_raw = "inf_melee",
@@ -7915,6 +8177,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_great_eagle",
           land_unit_key = "wh2_main_hef_mon_great_eagle",
+          agent_subtype = "",
           name = "Great Eagle",
           category = "monster",
           category_raw = "inf_melee",
@@ -7923,6 +8186,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_mon_merwyrm",
           land_unit_key = "wh3_dlc27_hef_mon_merwyrm",
+          agent_subtype = "",
           name = "Merwyrm",
           category = "monster",
           category_raw = "inf_melee",
@@ -7931,6 +8195,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_moon_dragon",
           land_unit_key = "wh2_main_hef_mon_moon_dragon",
+          agent_subtype = "",
           name = "Moon Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -7939,6 +8204,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_mon_sea_elemental",
           land_unit_key = "wh3_dlc27_hef_mon_sea_elemental",
+          agent_subtype = "",
           name = "Sea Elemental",
           category = "monster",
           category_raw = "inf_melee",
@@ -7947,6 +8213,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_star_dragon",
           land_unit_key = "wh2_main_hef_mon_star_dragon",
+          agent_subtype = "",
           name = "Star Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -7955,6 +8222,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_sun_dragon",
           land_unit_key = "wh2_main_hef_mon_sun_dragon",
+          agent_subtype = "",
           name = "Sun Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -7963,6 +8231,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_mon_treeman_0",
           land_unit_key = "wh2_dlc10_hef_mon_treeman_0",
+          agent_subtype = "",
           name = "Treeman",
           category = "monster",
           category_raw = "inf_melee",
@@ -7971,6 +8240,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0",
           land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0",
+          agent_subtype = "",
           name = "Knights of Tor Gaval",
           category = "monstrous_cavalry",
           category_raw = "war_beast",
@@ -7979,6 +8249,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_inf_oceanids",
           land_unit_key = "wh3_dlc27_hef_inf_oceanids",
+          agent_subtype = "",
           name = "Oceanids",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -7987,6 +8258,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_mon_treekin_0",
           land_unit_key = "wh2_dlc10_hef_mon_treekin_0",
+          agent_subtype = "",
           name = "Tree Kin",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -7995,6 +8267,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_mon_war_lions_of_chrace_0",
           land_unit_key = "wh2_dlc15_hef_mon_war_lions_of_chrace_0",
+          agent_subtype = "",
           name = "War Lions of Chrace",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -8003,6 +8276,7 @@ return {
         {
           unit_key = "wh2_main_hef_art_eagle_claw_bolt_thrower",
           land_unit_key = "wh2_main_hef_art_eagle_claw_bolt_thrower",
+          agent_subtype = "",
           name = "Eagle Claw Bolt Throwers",
           category = "war_machine",
           category_raw = "artillery",
@@ -8106,6 +8380,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_cha_handmaiden_0",
           land_unit_key = "wh2_dlc10_hef_cha_handmaiden_0",
+          agent_subtype = "wh2_dlc10_hef_handmaiden",
           name = "Handmaiden of the Everqueen",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -8114,6 +8389,7 @@ return {
         {
           unit_key = "wh2_main_hef_cha_loremaster_of_hoeth_0",
           land_unit_key = "wh2_main_hef_cha_loremaster_of_hoeth_0",
+          agent_subtype = "wh2_main_hef_loremaster_of_hoeth",
           name = "Loremaster of Hoeth",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -8122,6 +8398,7 @@ return {
         {
           unit_key = "wh2_main_hef_cha_mage_high_0",
           land_unit_key = "wh2_main_hef_cha_mage_high_0",
+          agent_subtype = "wh2_main_hef_mage_high",
           name = "Mage (High)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -8130,6 +8407,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_cha_mist_mage",
           land_unit_key = "wh3_dlc27_hef_cha_mist_mage",
+          agent_subtype = "wh3_dlc27_hef_mist_mage",
           name = "Mist Mage",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -8138,6 +8416,7 @@ return {
         {
           unit_key = "wh2_main_hef_cha_noble_0",
           land_unit_key = "wh2_main_hef_cha_noble_0",
+          agent_subtype = "wh2_main_hef_noble",
           name = "Noble",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -8146,6 +8425,7 @@ return {
         {
           unit_key = "wh2_main_hef_cha_prince_0",
           land_unit_key = "wh2_main_hef_cha_prince_0",
+          agent_subtype = "wh2_main_hef_prince",
           name = "Prince",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -8154,6 +8434,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_ithilmar_chariot",
           land_unit_key = "wh2_main_hef_cav_ithilmar_chariot",
+          agent_subtype = "",
           name = "Ithilmar Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -8162,6 +8443,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_veh_lion_chariot_of_chrace_0",
           land_unit_key = "wh2_dlc15_hef_veh_lion_chariot_of_chrace_0",
+          agent_subtype = "",
           name = "Lion Chariots of Chrace",
           category = "chariot",
           category_raw = "melee",
@@ -8170,6 +8452,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_dragon_princes",
           land_unit_key = "wh2_main_hef_cav_dragon_princes",
+          agent_subtype = "",
           name = "Dragon Princes",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -8178,6 +8461,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_ellyrian_reavers_0",
           land_unit_key = "wh2_main_hef_cav_ellyrian_reavers_0",
+          agent_subtype = "",
           name = "Ellyrian Reavers",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -8186,6 +8470,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_silver_helms_0",
           land_unit_key = "wh2_main_hef_cav_silver_helms_0",
+          agent_subtype = "",
           name = "Silver Helms",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -8194,6 +8479,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_silver_helms_1",
           land_unit_key = "wh2_main_hef_cav_silver_helms_1",
+          agent_subtype = "",
           name = "Silver Helms (Shields)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -8202,6 +8488,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_mistwalkers_faithbearers_0",
           land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_faithbearers_0",
+          agent_subtype = "",
           name = "Athel Tamarha Faithbearers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8210,6 +8497,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_inf_dryads_0",
           land_unit_key = "wh2_dlc10_hef_inf_dryads_0",
+          agent_subtype = "",
           name = "Dryads",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8218,6 +8506,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_gate_guard",
           land_unit_key = "wh2_main_hef_inf_gate_guard",
+          agent_subtype = "",
           name = "Gate Guard",
           category = "melee_infantry",
           category_raw = "inf_ranged",
@@ -8226,6 +8515,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_phoenix_guard",
           land_unit_key = "wh2_main_hef_inf_phoenix_guard",
+          agent_subtype = "",
           name = "Phoenix Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8234,6 +8524,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_rangers_0",
           land_unit_key = "wh2_dlc15_hef_inf_rangers_0",
+          agent_subtype = "",
           name = "Rangers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8242,6 +8533,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_inf_ships_company",
           land_unit_key = "wh3_dlc27_hef_inf_ships_company",
+          agent_subtype = "",
           name = "Ship's Company",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8250,6 +8542,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_silverin_guard_0",
           land_unit_key = "wh2_dlc15_hef_inf_silverin_guard_0",
+          agent_subtype = "",
           name = "Silverin Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8258,6 +8551,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_spearmen_0",
           land_unit_key = "wh2_main_hef_inf_spearmen_0",
+          agent_subtype = "",
           name = "Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8266,6 +8560,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_swordmasters_of_hoeth_0",
           land_unit_key = "wh2_main_hef_inf_swordmasters_of_hoeth_0",
+          agent_subtype = "",
           name = "Swordmasters of Hoeth",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8274,6 +8569,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_white_lions_of_chrace_0",
           land_unit_key = "wh2_main_hef_inf_white_lions_of_chrace_0",
+          agent_subtype = "",
           name = "White Lions of Chrace",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8282,6 +8578,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_ellyrian_reavers_1",
           land_unit_key = "wh2_main_hef_cav_ellyrian_reavers_1",
+          agent_subtype = "",
           name = "Ellyrian Reaver Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -8290,6 +8587,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_veh_skycutter_bows",
           land_unit_key = "wh3_dlc27_hef_veh_skycutter_bows",
+          agent_subtype = "",
           name = "Lothern Skycutters",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -8298,6 +8596,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_veh_skycutter_bolt_thrower",
           land_unit_key = "wh3_dlc27_hef_veh_skycutter_bolt_thrower",
+          agent_subtype = "",
           name = "Lothern Skycutters (Bolt Throwers)",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -8306,6 +8605,7 @@ return {
         {
           unit_key = "wh2_main_hef_cav_tiranoc_chariot",
           land_unit_key = "wh2_main_hef_cav_tiranoc_chariot",
+          agent_subtype = "",
           name = "Tiranoc Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -8314,6 +8614,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_archers_0",
           land_unit_key = "wh2_main_hef_inf_archers_0",
+          agent_subtype = "",
           name = "Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8322,6 +8623,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_archers_1",
           land_unit_key = "wh2_main_hef_inf_archers_1",
+          agent_subtype = "",
           name = "Archers (Light Armour)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8330,6 +8632,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_lothern_sea_guard_0",
           land_unit_key = "wh2_main_hef_inf_lothern_sea_guard_0",
+          agent_subtype = "",
           name = "Lothern Sea Guard",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8338,6 +8641,7 @@ return {
         {
           unit_key = "wh2_main_hef_inf_lothern_sea_guard_1",
           land_unit_key = "wh2_main_hef_inf_lothern_sea_guard_1",
+          agent_subtype = "",
           name = "Lothern Sea Guard (Shields)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8346,6 +8650,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_mistwalkers_sentinels_0",
           land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_sentinels_0",
+          agent_subtype = "",
           name = "Sentinels of Astaril",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8354,6 +8659,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_inf_shadow_warriors_0",
           land_unit_key = "wh2_dlc10_hef_inf_shadow_warriors_0",
+          agent_subtype = "",
           name = "Shadow Warriors",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8362,6 +8668,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_inf_shadow_walkers_0",
           land_unit_key = "wh2_dlc10_hef_inf_shadow_walkers_0",
+          agent_subtype = "",
           name = "Shadow-walkers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8370,6 +8677,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
           land_unit_key = "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
+          agent_subtype = "",
           name = "Sisters of Avelorn",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8378,6 +8686,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_mistwalkers_spireguard_0",
           land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_spireguard_0",
+          agent_subtype = "",
           name = "Spire Guard of Tor Yvresse",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8386,6 +8695,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_mistwalkers_skyhawks_0",
           land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_skyhawks_0",
+          agent_subtype = "",
           name = "The Skyhawks",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8394,6 +8704,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_mon_arcane_phoenix_0",
           land_unit_key = "wh2_dlc15_hef_mon_arcane_phoenix_0",
+          agent_subtype = "",
           name = "Arcane Phoenix",
           category = "monster",
           category_raw = "inf_melee",
@@ -8402,6 +8713,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_phoenix_flamespyre",
           land_unit_key = "wh2_main_hef_mon_phoenix_flamespyre",
+          agent_subtype = "",
           name = "Flamespyre Phoenix",
           category = "monster",
           category_raw = "inf_melee",
@@ -8410,6 +8722,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_mon_forest_dragon_0",
           land_unit_key = "wh2_dlc15_hef_mon_forest_dragon_0",
+          agent_subtype = "",
           name = "Forest Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -8418,6 +8731,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_phoenix_frostheart",
           land_unit_key = "wh2_main_hef_mon_phoenix_frostheart",
+          agent_subtype = "",
           name = "Frostheart Phoenix",
           category = "monster",
           category_raw = "inf_melee",
@@ -8426,6 +8740,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_great_eagle",
           land_unit_key = "wh2_main_hef_mon_great_eagle",
+          agent_subtype = "",
           name = "Great Eagle",
           category = "monster",
           category_raw = "inf_melee",
@@ -8434,6 +8749,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_mon_merwyrm",
           land_unit_key = "wh3_dlc27_hef_mon_merwyrm",
+          agent_subtype = "",
           name = "Merwyrm",
           category = "monster",
           category_raw = "inf_melee",
@@ -8442,6 +8758,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_moon_dragon",
           land_unit_key = "wh2_main_hef_mon_moon_dragon",
+          agent_subtype = "",
           name = "Moon Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -8450,6 +8767,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_mon_sea_elemental",
           land_unit_key = "wh3_dlc27_hef_mon_sea_elemental",
+          agent_subtype = "",
           name = "Sea Elemental",
           category = "monster",
           category_raw = "inf_melee",
@@ -8458,6 +8776,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_star_dragon",
           land_unit_key = "wh2_main_hef_mon_star_dragon",
+          agent_subtype = "",
           name = "Star Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -8466,6 +8785,7 @@ return {
         {
           unit_key = "wh2_main_hef_mon_sun_dragon",
           land_unit_key = "wh2_main_hef_mon_sun_dragon",
+          agent_subtype = "",
           name = "Sun Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -8474,6 +8794,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_mon_treeman_0",
           land_unit_key = "wh2_dlc10_hef_mon_treeman_0",
+          agent_subtype = "",
           name = "Treeman",
           category = "monster",
           category_raw = "inf_melee",
@@ -8482,6 +8803,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0",
           land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0",
+          agent_subtype = "",
           name = "Knights of Tor Gaval",
           category = "monstrous_cavalry",
           category_raw = "war_beast",
@@ -8490,6 +8812,7 @@ return {
         {
           unit_key = "wh3_dlc27_hef_inf_oceanids",
           land_unit_key = "wh3_dlc27_hef_inf_oceanids",
+          agent_subtype = "",
           name = "Oceanids",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -8498,6 +8821,7 @@ return {
         {
           unit_key = "wh2_dlc10_hef_mon_treekin_0",
           land_unit_key = "wh2_dlc10_hef_mon_treekin_0",
+          agent_subtype = "",
           name = "Tree Kin",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -8506,6 +8830,7 @@ return {
         {
           unit_key = "wh2_dlc15_hef_mon_war_lions_of_chrace_0",
           land_unit_key = "wh2_dlc15_hef_mon_war_lions_of_chrace_0",
+          agent_subtype = "",
           name = "War Lions of Chrace",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -8514,6 +8839,7 @@ return {
         {
           unit_key = "wh2_main_hef_art_eagle_claw_bolt_thrower",
           land_unit_key = "wh2_main_hef_art_eagle_claw_bolt_thrower",
+          agent_subtype = "",
           name = "Eagle Claw Bolt Throwers",
           category = "war_machine",
           category_raw = "artillery",
@@ -8665,6 +8991,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cha_saurus_scar_veteran_0",
           land_unit_key = "wh2_main_lzd_cha_saurus_scar_veteran_0",
+          agent_subtype = "wh2_main_lzd_saurus_scar_veteran",
           name = "Saurus Scar-Veteran",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -8673,6 +9000,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cha_skink_chief_0",
           land_unit_key = "wh2_main_lzd_cha_skink_chief_0",
+          agent_subtype = "wh2_dlc12_lzd_tlaqua_skink_chief",
           name = "Skink Chief",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -8681,6 +9009,7 @@ return {
         {
           unit_key = "wh2_dlc17_lzd_cha_skink_oracle_troglodon_0",
           land_unit_key = "wh2_dlc17_lzd_cha_skink_oracle_troglodon_0",
+          agent_subtype = "wh2_dlc17_lzd_skink_oracle_troglodon",
           name = "Skink Oracle",
           category = "character_hero",
           category_raw = "war_beast",
@@ -8689,6 +9018,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cha_skink_priest_beasts_0",
           land_unit_key = "wh2_main_lzd_cha_skink_priest_beasts_0",
+          agent_subtype = "wh2_dlc12_lzd_tlaqua_skink_priest_beasts",
           name = "Skink Priest (Beasts)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -8697,6 +9027,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cha_skink_priest_heavens_0",
           land_unit_key = "wh2_main_lzd_cha_skink_priest_heavens_0",
+          agent_subtype = "wh2_dlc12_lzd_tlaqua_skink_priest_heavens",
           name = "Skink Priest (Heavens)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -8705,6 +9036,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
           land_unit_key = "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
+          agent_subtype = "",
           name = "Blessed Cold One Spear-Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -8713,6 +9045,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_horned_ones_blessed_0",
           land_unit_key = "wh2_main_lzd_cav_horned_ones_blessed_0",
+          agent_subtype = "",
           name = "Blessed Horned Ones",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -8721,6 +9054,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_cold_ones_1",
           land_unit_key = "wh2_main_lzd_cav_cold_ones_1",
+          agent_subtype = "",
           name = "Cold One Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -8729,6 +9063,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_cold_one_spearmen_1",
           land_unit_key = "wh2_main_lzd_cav_cold_one_spearriders_1",
+          agent_subtype = "",
           name = "Cold One Spear-Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -8737,6 +9072,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_cold_ones_feral_0",
           land_unit_key = "wh2_main_lzd_cav_cold_ones_feral_0",
+          agent_subtype = "",
           name = "Feral Cold Ones",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -8745,6 +9081,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_horned_ones_0",
           land_unit_key = "wh2_main_lzd_cav_horned_ones_0",
+          agent_subtype = "",
           name = "Horned Ones",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -8753,6 +9090,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_horned_ones_0_nakai",
           land_unit_key = "wh2_main_lzd_cav_horned_ones_0",
+          agent_subtype = "",
           name = "Horned Ones",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -8761,6 +9099,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_saurus_spearmen_blessed_1",
           land_unit_key = "wh2_main_lzd_inf_saurus_spearmen_blessed_1",
+          agent_subtype = "",
           name = "Blessed Saurus Spears (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8769,6 +9108,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_saurus_warriors_blessed_1",
           land_unit_key = "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+          agent_subtype = "",
           name = "Blessed Saurus Warriors (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8777,6 +9117,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_temple_guards_blessed",
           land_unit_key = "wh2_main_lzd_inf_temple_guards_blessed",
+          agent_subtype = "",
           name = "Blessed Temple Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8785,6 +9126,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_inf_skink_red_crested_0",
           land_unit_key = "wh2_dlc12_lzd_inf_skink_red_crested_0",
+          agent_subtype = "",
           name = "Red Crested Skinks",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8793,6 +9135,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_saurus_spearmen_0",
           land_unit_key = "wh2_main_lzd_inf_saurus_spearmen_0",
+          agent_subtype = "",
           name = "Saurus Spears",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8801,6 +9144,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_saurus_spearmen_1",
           land_unit_key = "wh2_main_lzd_inf_saurus_spearmen_1",
+          agent_subtype = "",
           name = "Saurus Spears (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8809,6 +9153,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_saurus_warriors_0",
           land_unit_key = "wh2_main_lzd_inf_saurus_warriors_0",
+          agent_subtype = "",
           name = "Saurus Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8817,6 +9162,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_saurus_warriors_1",
           land_unit_key = "wh2_main_lzd_inf_saurus_warriors_1",
+          agent_subtype = "",
           name = "Saurus Warriors (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8825,6 +9171,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_skink_cohort_0",
           land_unit_key = "wh2_main_lzd_inf_skink_cohort_0",
+          agent_subtype = "",
           name = "Skink Cohort",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8833,6 +9180,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_temple_guards",
           land_unit_key = "wh2_main_lzd_inf_temple_guards",
+          agent_subtype = "",
           name = "Temple Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8841,6 +9189,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_temple_guards_nakai",
           land_unit_key = "wh2_main_lzd_inf_temple_guards",
+          agent_subtype = "",
           name = "Temple Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -8849,6 +9198,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
           land_unit_key = "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+          agent_subtype = "",
           name = "Blessed Chameleon Skinks",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8857,6 +9207,7 @@ return {
         {
           unit_key = "wh2_dlc17_lzd_inf_chameleon_stalkers_0_blessed",
           land_unit_key = "wh2_dlc17_lzd_inf_chameleon_stalkers_0_blessed",
+          agent_subtype = "",
           name = "Blessed Chameleon Stalkers",
           category = "missile_infantry",
           category_raw = "inf_melee",
@@ -8865,6 +9216,7 @@ return {
         {
           unit_key = "wh2_dlc13_lzd_mon_razordon_pack_0_blessed",
           land_unit_key = "wh2_dlc13_lzd_mon_razordon_pack_0_blessed",
+          agent_subtype = "",
           name = "Blessed Razordon Hunting Pack",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8873,6 +9225,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_mon_salamander_pack_0_blessed",
           land_unit_key = "wh2_dlc12_lzd_mon_salamander_pack_0_blessed",
+          agent_subtype = "",
           name = "Blessed Salamander Hunting Pack",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8881,6 +9234,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_skink_cohort_1_blessed",
           land_unit_key = "wh2_main_lzd_inf_skink_cohort_1_blessed",
+          agent_subtype = "",
           name = "Blessed Skink Cohort (Javelins)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8889,6 +9243,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_skink_skirmishers_blessed_0",
           land_unit_key = "wh2_main_lzd_inf_skink_skirmishers_blessed_0",
+          agent_subtype = "",
           name = "Blessed Skink Skirmishers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8897,6 +9252,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_chameleon_skinks_0",
           land_unit_key = "wh2_main_lzd_inf_chameleon_skinks_0",
+          agent_subtype = "",
           name = "Chameleon Skinks",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8905,6 +9261,7 @@ return {
         {
           unit_key = "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
           land_unit_key = "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+          agent_subtype = "",
           name = "Chameleon Stalkers",
           category = "missile_infantry",
           category_raw = "inf_melee",
@@ -8913,6 +9270,7 @@ return {
         {
           unit_key = "wh2_dlc13_lzd_mon_razordon_pack_0",
           land_unit_key = "wh2_dlc13_lzd_mon_razordon_pack_0",
+          agent_subtype = "",
           name = "Razordon Hunting Pack",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8921,6 +9279,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_mon_salamander_pack_0",
           land_unit_key = "wh2_dlc12_lzd_mon_salamander_pack_0",
+          agent_subtype = "",
           name = "Salamander Hunting Pack",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8929,6 +9288,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_skink_cohort_1",
           land_unit_key = "wh2_main_lzd_inf_skink_cohort_1",
+          agent_subtype = "",
           name = "Skink Cohort (Javelins)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8937,6 +9297,7 @@ return {
         {
           unit_key = "wh2_main_lzd_inf_skink_skirmishers_0",
           land_unit_key = "wh2_main_lzd_inf_skink_skirmishers_0",
+          agent_subtype = "",
           name = "Skink Skirmishers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -8945,6 +9306,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_mon_ancient_salamander_0",
           land_unit_key = "wh2_dlc12_lzd_mon_ancient_salamander_0",
+          agent_subtype = "",
           name = "Ancient Salamander",
           category = "monster",
           category_raw = "inf_ranged",
@@ -8953,6 +9315,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_ancient_stegadon",
           land_unit_key = "wh2_main_lzd_mon_ancient_stegadon",
+          agent_subtype = "",
           name = "Ancient Stegadon",
           category = "monster",
           category_raw = "war_beast",
@@ -8961,6 +9324,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_mon_ancient_stegadon_1",
           land_unit_key = "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+          agent_subtype = "",
           name = "Ancient Stegadon (Engine of the Gods)",
           category = "monster",
           category_raw = "war_beast",
@@ -8969,6 +9333,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_mon_ancient_stegadon_1_nakai",
           land_unit_key = "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+          agent_subtype = "",
           name = "Ancient Stegadon (Engine of the Gods)",
           category = "monster",
           category_raw = "war_beast",
@@ -8977,6 +9342,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_mon_bastiladon_3",
           land_unit_key = "wh2_dlc12_lzd_mon_bastiladon_3",
+          agent_subtype = "",
           name = "Bastiladon (Ark of Sotek)",
           category = "monster",
           category_raw = "war_beast",
@@ -8985,6 +9351,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_mon_bastiladon_3_nakai",
           land_unit_key = "wh2_dlc12_lzd_mon_bastiladon_3",
+          agent_subtype = "",
           name = "Bastiladon (Ark of Sotek)",
           category = "monster",
           category_raw = "war_beast",
@@ -8993,6 +9360,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_bastiladon_1",
           land_unit_key = "wh2_main_lzd_mon_bastiladon_1",
+          agent_subtype = "",
           name = "Bastiladon (Revivification Crystal)",
           category = "monster",
           category_raw = "war_beast",
@@ -9001,6 +9369,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_bastiladon_2",
           land_unit_key = "wh2_main_lzd_mon_bastiladon_2",
+          agent_subtype = "",
           name = "Bastiladon (Solar Engine)",
           category = "monster",
           category_raw = "war_beast",
@@ -9009,6 +9378,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_mon_ancient_salamander_0_blessed",
           land_unit_key = "wh2_dlc12_lzd_mon_ancient_salamander_0_blessed",
+          agent_subtype = "",
           name = "Blessed Ancient Salamander",
           category = "monster",
           category_raw = "inf_ranged",
@@ -9017,6 +9387,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_ancient_stegadon_blessed",
           land_unit_key = "wh2_main_lzd_mon_ancient_stegadon_blessed",
+          agent_subtype = "",
           name = "Blessed Ancient Stegadon",
           category = "monster",
           category_raw = "war_beast",
@@ -9025,6 +9396,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_bastiladon_blessed_2",
           land_unit_key = "wh2_main_lzd_mon_bastiladon_blessed_2",
+          agent_subtype = "",
           name = "Blessed Bastiladon (Solar Engine)",
           category = "monster",
           category_raw = "war_beast",
@@ -9033,6 +9405,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_carnosaur_blessed_0",
           land_unit_key = "wh2_main_lzd_mon_carnosaur_blessed_0",
+          agent_subtype = "",
           name = "Blessed Carnosaur",
           category = "monster",
           category_raw = "inf_melee",
@@ -9041,6 +9414,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_stegadon_blessed_1",
           land_unit_key = "wh2_main_lzd_mon_stegadon_blessed_1",
+          agent_subtype = "",
           name = "Blessed Stegadon",
           category = "monster",
           category_raw = "war_beast",
@@ -9049,6 +9423,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_terradon_riders_0_blessed",
           land_unit_key = "wh2_main_lzd_cav_terradon_riders_0_blessed",
+          agent_subtype = "",
           name = "Blessed Terradon Riders",
           category = "monster",
           category_raw = "cavalry",
@@ -9057,6 +9432,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_terradon_riders_blessed_1",
           land_unit_key = "wh2_main_lzd_cav_terradon_riders_blessed_1",
+          agent_subtype = "",
           name = "Blessed Terradon Riders (Fireleech Bolas)",
           category = "monster",
           category_raw = "cavalry",
@@ -9065,6 +9441,7 @@ return {
         {
           unit_key = "wh2_dlc17_lzd_mon_coatl_0",
           land_unit_key = "wh2_dlc17_lzd_mon_coatl_0",
+          agent_subtype = "",
           name = "Coatl",
           category = "monster",
           category_raw = "inf_melee",
@@ -9073,6 +9450,7 @@ return {
         {
           unit_key = "wh2_dlc13_lzd_mon_dread_saurian_1",
           land_unit_key = "wh2_dlc13_lzd_mon_dread_saurian_1",
+          agent_subtype = "",
           name = "Dread Saurian",
           category = "monster",
           category_raw = "war_beast",
@@ -9081,6 +9459,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_bastiladon_0",
           land_unit_key = "wh2_main_lzd_mon_bastiladon_0",
+          agent_subtype = "",
           name = "Feral Bastiladon",
           category = "monster",
           category_raw = "inf_melee",
@@ -9089,6 +9468,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_carnosaur_0",
           land_unit_key = "wh2_main_lzd_mon_carnosaur_0",
+          agent_subtype = "",
           name = "Feral Carnosaur",
           category = "monster",
           category_raw = "inf_melee",
@@ -9097,6 +9477,7 @@ return {
         {
           unit_key = "wh2_dlc13_lzd_mon_dread_saurian_0",
           land_unit_key = "wh2_dlc13_lzd_mon_dread_saurian_0",
+          agent_subtype = "",
           name = "Feral Dread Saurian",
           category = "monster",
           category_raw = "inf_melee",
@@ -9105,6 +9486,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_stegadon_0",
           land_unit_key = "wh2_main_lzd_mon_stegadon_0",
+          agent_subtype = "",
           name = "Feral Stegadon",
           category = "monster",
           category_raw = "inf_melee",
@@ -9113,6 +9495,7 @@ return {
         {
           unit_key = "wh2_dlc17_lzd_mon_troglodon_0",
           land_unit_key = "wh2_dlc17_lzd_mon_troglodon_0",
+          agent_subtype = "",
           name = "Feral Troglodon",
           category = "monster",
           category_raw = "inf_melee",
@@ -9121,6 +9504,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_stegadon_1",
           land_unit_key = "wh2_main_lzd_mon_stegadon_1",
+          agent_subtype = "",
           name = "Stegadon",
           category = "monster",
           category_raw = "war_beast",
@@ -9129,6 +9513,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_terradon_riders_0",
           land_unit_key = "wh2_main_lzd_cav_terradon_riders_0",
+          agent_subtype = "",
           name = "Terradon Riders",
           category = "monster",
           category_raw = "cavalry",
@@ -9137,6 +9522,7 @@ return {
         {
           unit_key = "wh2_main_lzd_cav_terradon_riders_1",
           land_unit_key = "wh2_main_lzd_cav_terradon_riders_1",
+          agent_subtype = "",
           name = "Terradon Riders (Fireleech Bolas)",
           category = "monster",
           category_raw = "cavalry",
@@ -9145,6 +9531,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_cav_ripperdactyl_riders_0_blessed",
           land_unit_key = "wh2_dlc12_lzd_cav_ripperdactyl_riders_0_blessed",
+          agent_subtype = "",
           name = "Blessed Ripperdactyl Riders",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -9153,6 +9540,7 @@ return {
         {
           unit_key = "wh2_dlc12_lzd_cav_ripperdactyl_riders_0",
           land_unit_key = "wh2_dlc12_lzd_cav_ripperdactyl_riders_0",
+          agent_subtype = "",
           name = "Ripperdactyl Riders",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -9161,6 +9549,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_kroxigors_blessed",
           land_unit_key = "wh2_main_lzd_mon_kroxigors_blessed",
+          agent_subtype = "",
           name = "Blessed Kroxigor",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -9169,6 +9558,7 @@ return {
         {
           unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0_blessed",
           land_unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0_blessed",
+          agent_subtype = "",
           name = "Blessed Sacred Kroxigor",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -9177,6 +9567,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_kroxigors",
           land_unit_key = "wh2_main_lzd_mon_kroxigors",
+          agent_subtype = "",
           name = "Kroxigor",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -9185,6 +9576,7 @@ return {
         {
           unit_key = "wh2_main_lzd_mon_kroxigors_nakai",
           land_unit_key = "wh2_main_lzd_mon_kroxigors",
+          agent_subtype = "",
           name = "Kroxigor",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -9193,6 +9585,7 @@ return {
         {
           unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0",
           land_unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0",
+          agent_subtype = "",
           name = "Sacred Kroxigor",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -9201,6 +9594,7 @@ return {
         {
           unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0_nakai",
           land_unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0",
+          agent_subtype = "",
           name = "Sacred Kroxigor",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -9209,6 +9603,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_zoats",
           land_unit_key = "wh2_dlc16_wef_mon_zoats",
+          agent_subtype = "",
           name = "Zoats",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -9397,6 +9792,7 @@ return {
         {
           unit_key = "wh2_main_skv_cha_assassin",
           land_unit_key = "wh2_main_skv_cha_assassin",
+          agent_subtype = "wh2_main_skv_assassin",
           name = "Assassin",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -9405,6 +9801,7 @@ return {
         {
           unit_key = "wh2_dlc14_skv_cha_eshin_sorcerer_0",
           land_unit_key = "wh2_dlc14_skv_cha_eshin_sorcerer_0",
+          agent_subtype = "wh2_dlc14_skv_eshin_sorcerer",
           name = "Eshin Sorcerer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -9413,6 +9810,7 @@ return {
         {
           unit_key = "wh2_main_skv_cha_plague_priest_0",
           land_unit_key = "wh2_main_skv_cha_plague_priest_0",
+          agent_subtype = "wh2_main_skv_plague_priest",
           name = "Plague Priest",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -9421,6 +9819,7 @@ return {
         {
           unit_key = "wh2_main_skv_cha_warlock_engineer",
           land_unit_key = "wh2_main_skv_cha_warlock_engineer",
+          agent_subtype = "wh2_main_skv_warlock_engineer",
           name = "Warlock Engineer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -9429,6 +9828,7 @@ return {
         {
           unit_key = "wh2_main_skv_cha_grey_seer_plague_0",
           land_unit_key = "wh2_main_skv_cha_grey_seer_plague_0",
+          agent_subtype = "wh2_main_skv_grey_seer_plague",
           name = "Grey Seer (Plague)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -9437,6 +9837,7 @@ return {
         {
           unit_key = "wh2_dlc14_skv_cha_master_assassin_0",
           land_unit_key = "wh2_dlc14_skv_cha_master_assassin_0",
+          agent_subtype = "wh2_dlc14_skv_master_assassin",
           name = "Master Assassin",
           category = "character_lord",
           category_raw = "inf_ranged",
@@ -9445,6 +9846,7 @@ return {
         {
           unit_key = "wh2_main_skv_cha_warlord_0",
           land_unit_key = "wh2_main_skv_cha_warlord_0",
+          agent_subtype = "wh2_main_skv_warlord",
           name = "Warlord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -9453,6 +9855,7 @@ return {
         {
           unit_key = "wh2_dlc12_skv_veh_doom_flayer_0",
           land_unit_key = "wh2_dlc12_skv_veh_doom_flayer_0",
+          agent_subtype = "",
           name = "Doom-Flayers",
           category = "chariot",
           category_raw = "melee",
@@ -9461,6 +9864,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_clanrat_spearmen_0",
           land_unit_key = "wh2_main_skv_inf_clanrat_spearmen_0",
+          agent_subtype = "",
           name = "Clanrat Spears",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9469,6 +9873,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_clanrat_spearmen_1",
           land_unit_key = "wh2_main_skv_inf_clanrat_spearmen_1",
+          agent_subtype = "",
           name = "Clanrat Spears (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9477,6 +9882,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_clanrats_0",
           land_unit_key = "wh2_main_skv_inf_clanrats_0",
+          agent_subtype = "",
           name = "Clanrats",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9485,6 +9891,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_clanrats_1",
           land_unit_key = "wh2_main_skv_inf_clanrats_1",
+          agent_subtype = "",
           name = "Clanrats (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9493,6 +9900,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_death_runners_0",
           land_unit_key = "wh2_main_skv_inf_death_runners_0",
+          agent_subtype = "",
           name = "Death Runners",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9501,6 +9909,7 @@ return {
         {
           unit_key = "wh2_dlc14_skv_inf_eshin_triads_0",
           land_unit_key = "wh2_dlc14_skv_inf_eshin_triads_0",
+          agent_subtype = "",
           name = "Eshin Triads",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9509,6 +9918,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_plague_monk_censer_bearer",
           land_unit_key = "wh2_main_skv_inf_plague_monk_censer_bearer",
+          agent_subtype = "",
           name = "Plague Monk Censer Bearers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9517,6 +9927,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_plague_monks",
           land_unit_key = "wh2_main_skv_inf_plague_monks",
+          agent_subtype = "",
           name = "Plague Monks",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9525,6 +9936,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_skavenslave_spearmen_0",
           land_unit_key = "wh2_main_skv_inf_skavenslave_spearmen_0",
+          agent_subtype = "",
           name = "Skavenslave Spears",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9533,6 +9945,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_skavenslaves_0",
           land_unit_key = "wh2_main_skv_inf_skavenslaves_0",
+          agent_subtype = "",
           name = "Skavenslaves",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9541,6 +9954,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_stormvermin_0",
           land_unit_key = "wh2_main_skv_inf_stormvermin_0",
+          agent_subtype = "",
           name = "Stormvermin (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9549,6 +9963,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_stormvermin_1",
           land_unit_key = "wh2_main_skv_inf_stormvermin_1",
+          agent_subtype = "",
           name = "Stormvermin (Swords & Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9557,6 +9972,7 @@ return {
         {
           unit_key = "wh2_dlc14_skv_inf_warp_grinder_0",
           land_unit_key = "wh2_dlc14_skv_inf_warp_grinder_0",
+          agent_subtype = "",
           name = "Warp-Grinders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9565,6 +9981,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_death_globe_bombardiers",
           land_unit_key = "wh2_main_skv_inf_death_globe_bombardiers",
+          agent_subtype = "",
           name = "Death Globe Bombardiers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9573,6 +9990,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_gutter_runner_slingers_0",
           land_unit_key = "wh2_main_skv_inf_gutter_runner_slingers_0",
+          agent_subtype = "",
           name = "Gutter Runner Slingers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9581,6 +9999,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_gutter_runner_slingers_1",
           land_unit_key = "wh2_main_skv_inf_gutter_runner_slingers_1",
+          agent_subtype = "",
           name = "Gutter Runner Slingers (Poison)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9589,6 +10008,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_gutter_runners_0",
           land_unit_key = "wh2_main_skv_inf_gutter_runners_0",
+          agent_subtype = "",
           name = "Gutter Runners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9597,6 +10017,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_gutter_runners_1",
           land_unit_key = "wh2_main_skv_inf_gutter_runners_1",
+          agent_subtype = "",
           name = "Gutter Runners (Poison)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9605,6 +10026,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_night_runners_0",
           land_unit_key = "wh2_main_skv_inf_night_runners_0",
+          agent_subtype = "",
           name = "Night Runners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9613,6 +10035,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_night_runners_1",
           land_unit_key = "wh2_main_skv_inf_night_runners_1",
+          agent_subtype = "",
           name = "Night Runners (Slings)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9621,6 +10044,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_poison_wind_globadiers",
           land_unit_key = "wh2_main_skv_inf_poison_wind_globadiers",
+          agent_subtype = "",
           name = "Poisoned Wind Globadiers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9629,6 +10053,7 @@ return {
         {
           unit_key = "wh2_dlc14_skv_inf_poison_wind_mortar_0",
           land_unit_key = "wh2_dlc14_skv_inf_poison_wind_mortar_0",
+          agent_subtype = "",
           name = "Poisoned Wind Mortars",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9637,6 +10062,7 @@ return {
         {
           unit_key = "wh2_dlc12_skv_inf_ratling_gun_0",
           land_unit_key = "wh2_dlc12_skv_inf_ratling_gun_0",
+          agent_subtype = "",
           name = "Ratling Guns",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9645,6 +10071,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_skavenslave_slingers_0",
           land_unit_key = "wh2_main_skv_inf_skavenslave_slingers_0",
+          agent_subtype = "",
           name = "Skavenslave Slingers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9653,6 +10080,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_warpfire_thrower",
           land_unit_key = "wh2_main_skv_inf_warpfire_thrower",
+          agent_subtype = "",
           name = "Warpfire Throwers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9661,6 +10089,7 @@ return {
         {
           unit_key = "wh2_dlc12_skv_inf_warplock_jezzails_0",
           land_unit_key = "wh2_dlc12_skv_inf_warplock_jezzails_0",
+          agent_subtype = "",
           name = "Warplock Jezzails",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9669,6 +10098,7 @@ return {
         {
           unit_key = "wh2_dlc16_skv_mon_brood_horror_0",
           land_unit_key = "wh2_dlc16_skv_mon_brood_horror_0",
+          agent_subtype = "",
           name = "Brood Horror",
           category = "monster",
           category_raw = "inf_melee",
@@ -9677,6 +10107,7 @@ return {
         {
           unit_key = "wh2_main_skv_mon_hell_pit_abomination",
           land_unit_key = "wh2_main_skv_mon_hell_pit_abomination",
+          agent_subtype = "",
           name = "Hell Pit Abomination",
           category = "monster",
           category_raw = "inf_melee",
@@ -9685,6 +10116,7 @@ return {
         {
           unit_key = "wh2_dlc16_skv_mon_rat_ogre_mutant",
           land_unit_key = "wh2_dlc16_skv_mon_rat_ogre_mutant",
+          agent_subtype = "",
           name = "Mutant Rat Ogre",
           category = "monster",
           category_raw = "inf_melee",
@@ -9693,6 +10125,7 @@ return {
         {
           unit_key = "wh2_main_skv_mon_rat_ogres",
           land_unit_key = "wh2_main_skv_mon_rat_ogres",
+          agent_subtype = "",
           name = "Rat Ogres",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -9701,6 +10134,7 @@ return {
         {
           unit_key = "wh2_dlc16_skv_mon_wolf_rats_0",
           land_unit_key = "wh2_dlc16_skv_mon_wolf_rats_0",
+          agent_subtype = "",
           name = "Wolf Rats",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -9709,6 +10143,7 @@ return {
         {
           unit_key = "wh2_dlc16_skv_mon_wolf_rats_1",
           land_unit_key = "wh2_dlc16_skv_mon_wolf_rats_1",
+          agent_subtype = "",
           name = "Wolf Rats (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -9717,6 +10152,7 @@ return {
         {
           unit_key = "wh2_main_skv_veh_doomwheel",
           land_unit_key = "wh2_main_skv_veh_doomwheel",
+          agent_subtype = "",
           name = "Doomwheel",
           category = "war_machine",
           category_raw = "war_machine",
@@ -9725,6 +10161,7 @@ return {
         {
           unit_key = "wh2_main_skv_art_plagueclaw_catapult",
           land_unit_key = "wh2_main_skv_art_plagueclaw_catapult",
+          agent_subtype = "",
           name = "Plagueclaw Catapults",
           category = "war_machine",
           category_raw = "artillery",
@@ -9733,6 +10170,7 @@ return {
         {
           unit_key = "wh2_main_skv_art_warp_lightning_cannon",
           land_unit_key = "wh2_main_skv_art_warp_lightning_cannon",
+          agent_subtype = "",
           name = "Warp Lightning Cannons",
           category = "war_machine",
           category_raw = "artillery",
@@ -9819,6 +10257,7 @@ return {
         {
           unit_key = "wh2_main_skv_cha_assassin",
           land_unit_key = "wh2_main_skv_cha_assassin",
+          agent_subtype = "wh2_main_skv_assassin",
           name = "Assassin",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -9827,6 +10266,7 @@ return {
         {
           unit_key = "wh2_dlc14_skv_cha_eshin_sorcerer_0",
           land_unit_key = "wh2_dlc14_skv_cha_eshin_sorcerer_0",
+          agent_subtype = "wh2_dlc14_skv_eshin_sorcerer",
           name = "Eshin Sorcerer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -9835,6 +10275,7 @@ return {
         {
           unit_key = "wh2_main_skv_cha_plague_priest_0",
           land_unit_key = "wh2_main_skv_cha_plague_priest_0",
+          agent_subtype = "wh2_main_skv_plague_priest",
           name = "Plague Priest",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -9843,6 +10284,7 @@ return {
         {
           unit_key = "wh2_main_skv_cha_warlock_engineer",
           land_unit_key = "wh2_main_skv_cha_warlock_engineer",
+          agent_subtype = "wh2_main_skv_warlock_engineer",
           name = "Warlock Engineer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -9851,6 +10293,7 @@ return {
         {
           unit_key = "wh2_main_skv_cha_grey_seer_plague_0",
           land_unit_key = "wh2_main_skv_cha_grey_seer_plague_0",
+          agent_subtype = "wh2_main_skv_grey_seer_plague",
           name = "Grey Seer (Plague)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -9859,6 +10302,7 @@ return {
         {
           unit_key = "wh2_dlc14_skv_cha_master_assassin_0",
           land_unit_key = "wh2_dlc14_skv_cha_master_assassin_0",
+          agent_subtype = "wh2_dlc14_skv_master_assassin",
           name = "Master Assassin",
           category = "character_lord",
           category_raw = "inf_ranged",
@@ -9867,6 +10311,7 @@ return {
         {
           unit_key = "wh2_main_skv_cha_warlord_0",
           land_unit_key = "wh2_main_skv_cha_warlord_0",
+          agent_subtype = "wh2_main_skv_warlord",
           name = "Warlord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -9875,6 +10320,7 @@ return {
         {
           unit_key = "wh2_dlc12_skv_veh_doom_flayer_0",
           land_unit_key = "wh2_dlc12_skv_veh_doom_flayer_0",
+          agent_subtype = "",
           name = "Doom-Flayers",
           category = "chariot",
           category_raw = "melee",
@@ -9883,6 +10329,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_clanrat_spearmen_0",
           land_unit_key = "wh2_main_skv_inf_clanrat_spearmen_0",
+          agent_subtype = "",
           name = "Clanrat Spears",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9891,6 +10338,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_clanrat_spearmen_1",
           land_unit_key = "wh2_main_skv_inf_clanrat_spearmen_1",
+          agent_subtype = "",
           name = "Clanrat Spears (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9899,6 +10347,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_clanrats_0",
           land_unit_key = "wh2_main_skv_inf_clanrats_0",
+          agent_subtype = "",
           name = "Clanrats",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9907,6 +10356,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_clanrats_1",
           land_unit_key = "wh2_main_skv_inf_clanrats_1",
+          agent_subtype = "",
           name = "Clanrats (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9915,6 +10365,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_death_runners_0",
           land_unit_key = "wh2_main_skv_inf_death_runners_0",
+          agent_subtype = "",
           name = "Death Runners",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9923,6 +10374,7 @@ return {
         {
           unit_key = "wh2_dlc14_skv_inf_eshin_triads_0",
           land_unit_key = "wh2_dlc14_skv_inf_eshin_triads_0",
+          agent_subtype = "",
           name = "Eshin Triads",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9931,6 +10383,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_plague_monk_censer_bearer",
           land_unit_key = "wh2_main_skv_inf_plague_monk_censer_bearer",
+          agent_subtype = "",
           name = "Plague Monk Censer Bearers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9939,6 +10392,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_plague_monks",
           land_unit_key = "wh2_main_skv_inf_plague_monks",
+          agent_subtype = "",
           name = "Plague Monks",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9947,6 +10401,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_skavenslave_spearmen_0",
           land_unit_key = "wh2_main_skv_inf_skavenslave_spearmen_0",
+          agent_subtype = "",
           name = "Skavenslave Spears",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9955,6 +10410,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_skavenslaves_0",
           land_unit_key = "wh2_main_skv_inf_skavenslaves_0",
+          agent_subtype = "",
           name = "Skavenslaves",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9963,6 +10419,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_stormvermin_0",
           land_unit_key = "wh2_main_skv_inf_stormvermin_0",
+          agent_subtype = "",
           name = "Stormvermin (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9971,6 +10428,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_stormvermin_1",
           land_unit_key = "wh2_main_skv_inf_stormvermin_1",
+          agent_subtype = "",
           name = "Stormvermin (Swords & Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9979,6 +10437,7 @@ return {
         {
           unit_key = "wh2_dlc14_skv_inf_warp_grinder_0",
           land_unit_key = "wh2_dlc14_skv_inf_warp_grinder_0",
+          agent_subtype = "",
           name = "Warp-Grinders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -9987,6 +10446,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_death_globe_bombardiers",
           land_unit_key = "wh2_main_skv_inf_death_globe_bombardiers",
+          agent_subtype = "",
           name = "Death Globe Bombardiers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -9995,6 +10455,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_gutter_runner_slingers_0",
           land_unit_key = "wh2_main_skv_inf_gutter_runner_slingers_0",
+          agent_subtype = "",
           name = "Gutter Runner Slingers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10003,6 +10464,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_gutter_runner_slingers_1",
           land_unit_key = "wh2_main_skv_inf_gutter_runner_slingers_1",
+          agent_subtype = "",
           name = "Gutter Runner Slingers (Poison)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10011,6 +10473,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_gutter_runners_0",
           land_unit_key = "wh2_main_skv_inf_gutter_runners_0",
+          agent_subtype = "",
           name = "Gutter Runners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10019,6 +10482,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_gutter_runners_1",
           land_unit_key = "wh2_main_skv_inf_gutter_runners_1",
+          agent_subtype = "",
           name = "Gutter Runners (Poison)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10027,6 +10491,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_night_runners_0",
           land_unit_key = "wh2_main_skv_inf_night_runners_0",
+          agent_subtype = "",
           name = "Night Runners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10035,6 +10500,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_night_runners_1",
           land_unit_key = "wh2_main_skv_inf_night_runners_1",
+          agent_subtype = "",
           name = "Night Runners (Slings)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10043,6 +10509,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_poison_wind_globadiers",
           land_unit_key = "wh2_main_skv_inf_poison_wind_globadiers",
+          agent_subtype = "",
           name = "Poisoned Wind Globadiers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10051,6 +10518,7 @@ return {
         {
           unit_key = "wh2_dlc14_skv_inf_poison_wind_mortar_0",
           land_unit_key = "wh2_dlc14_skv_inf_poison_wind_mortar_0",
+          agent_subtype = "",
           name = "Poisoned Wind Mortars",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10059,6 +10527,7 @@ return {
         {
           unit_key = "wh2_dlc12_skv_inf_ratling_gun_0",
           land_unit_key = "wh2_dlc12_skv_inf_ratling_gun_0",
+          agent_subtype = "",
           name = "Ratling Guns",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10067,6 +10536,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_skavenslave_slingers_0",
           land_unit_key = "wh2_main_skv_inf_skavenslave_slingers_0",
+          agent_subtype = "",
           name = "Skavenslave Slingers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10075,6 +10545,7 @@ return {
         {
           unit_key = "wh2_main_skv_inf_warpfire_thrower",
           land_unit_key = "wh2_main_skv_inf_warpfire_thrower",
+          agent_subtype = "",
           name = "Warpfire Throwers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10083,6 +10554,7 @@ return {
         {
           unit_key = "wh2_dlc12_skv_inf_warplock_jezzails_0",
           land_unit_key = "wh2_dlc12_skv_inf_warplock_jezzails_0",
+          agent_subtype = "",
           name = "Warplock Jezzails",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -10091,6 +10563,7 @@ return {
         {
           unit_key = "wh2_dlc16_skv_mon_brood_horror_0",
           land_unit_key = "wh2_dlc16_skv_mon_brood_horror_0",
+          agent_subtype = "",
           name = "Brood Horror",
           category = "monster",
           category_raw = "inf_melee",
@@ -10099,6 +10572,7 @@ return {
         {
           unit_key = "wh2_main_skv_mon_hell_pit_abomination",
           land_unit_key = "wh2_main_skv_mon_hell_pit_abomination",
+          agent_subtype = "",
           name = "Hell Pit Abomination",
           category = "monster",
           category_raw = "inf_melee",
@@ -10107,6 +10581,7 @@ return {
         {
           unit_key = "wh2_dlc16_skv_mon_rat_ogre_mutant",
           land_unit_key = "wh2_dlc16_skv_mon_rat_ogre_mutant",
+          agent_subtype = "",
           name = "Mutant Rat Ogre",
           category = "monster",
           category_raw = "inf_melee",
@@ -10115,6 +10590,7 @@ return {
         {
           unit_key = "wh2_main_skv_mon_rat_ogres",
           land_unit_key = "wh2_main_skv_mon_rat_ogres",
+          agent_subtype = "",
           name = "Rat Ogres",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -10123,6 +10599,7 @@ return {
         {
           unit_key = "wh2_dlc16_skv_mon_wolf_rats_0",
           land_unit_key = "wh2_dlc16_skv_mon_wolf_rats_0",
+          agent_subtype = "",
           name = "Wolf Rats",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -10131,6 +10608,7 @@ return {
         {
           unit_key = "wh2_dlc16_skv_mon_wolf_rats_1",
           land_unit_key = "wh2_dlc16_skv_mon_wolf_rats_1",
+          agent_subtype = "",
           name = "Wolf Rats (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -10139,6 +10617,7 @@ return {
         {
           unit_key = "wh2_main_skv_veh_doomwheel",
           land_unit_key = "wh2_main_skv_veh_doomwheel",
+          agent_subtype = "",
           name = "Doomwheel",
           category = "war_machine",
           category_raw = "war_machine",
@@ -10147,6 +10626,7 @@ return {
         {
           unit_key = "wh2_main_skv_art_plagueclaw_catapult",
           land_unit_key = "wh2_main_skv_art_plagueclaw_catapult",
+          agent_subtype = "",
           name = "Plagueclaw Catapults",
           category = "war_machine",
           category_raw = "artillery",
@@ -10155,6 +10635,7 @@ return {
         {
           unit_key = "wh2_main_skv_art_warp_lightning_cannon",
           land_unit_key = "wh2_main_skv_art_warp_lightning_cannon",
+          agent_subtype = "",
           name = "Warp Lightning Cannons",
           category = "war_machine",
           category_raw = "artillery",
@@ -10241,6 +10722,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_death",
           name = "Chaos Sorcerer (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10249,6 +10731,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_fire",
           name = "Chaos Sorcerer (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10257,6 +10740,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_metal",
           name = "Chaos Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10265,6 +10749,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
+          agent_subtype = "wh_dlc07_chs_chaos_sorcerer_shadow",
           name = "Chaos Sorcerer (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10273,6 +10758,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_shadows_msla",
           land_unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_shadows_msla",
+          agent_subtype = "wh3_dlc20_chs_sorcerer_shadows_msla",
           name = "Chaos Sorcerer of Slaanesh (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10281,6 +10767,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_slaanesh_msla",
           land_unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_slaanesh_msla",
+          agent_subtype = "wh3_dlc20_chs_sorcerer_slaanesh_msla",
           name = "Chaos Sorcerer of Slaanesh (Slaanesh)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10289,6 +10776,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_exalted_hero_0",
           land_unit_key = "wh_main_chs_cha_exalted_hero_0",
+          agent_subtype = "wh_main_chs_exalted_hero",
           name = "Exalted Hero",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10297,6 +10785,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_lord_0",
           land_unit_key = "wh_main_chs_cha_chaos_lord_0",
+          agent_subtype = "wh_dlc08_chs_challenger_khorne",
           name = "Chaos Lord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10305,6 +10794,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_chaos_lord_msla",
           land_unit_key = "wh3_dlc20_chs_cha_chaos_lord_msla",
+          agent_subtype = "wh3_dlc20_chs_lord_msla",
           name = "Chaos Lord of Slaanesh",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10313,6 +10803,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_death",
           name = "Chaos Sorcerer Lord (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10321,6 +10812,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_fire",
           name = "Chaos Sorcerer Lord (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10329,6 +10821,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_metal",
           name = "Chaos Sorcerer Lord (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10337,6 +10830,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
+          agent_subtype = "wh_dlc07_chs_sorcerer_lord_shadow",
           name = "Chaos Sorcerer Lord (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10345,6 +10839,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_chariot",
           land_unit_key = "wh_main_chs_cav_chaos_chariot",
+          agent_subtype = "",
           name = "Chaos Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -10353,6 +10848,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
+          agent_subtype = "",
           name = "Chaos Chariots of Slaanesh",
           category = "chariot",
           category_raw = "melee",
@@ -10361,6 +10857,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
           land_unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -10369,6 +10866,7 @@ return {
         {
           unit_key = "wh3_main_sla_veh_seeker_chariot_0",
           land_unit_key = "wh3_main_sla_veh_seeker_chariot_0",
+          agent_subtype = "",
           name = "Seeker Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -10377,6 +10875,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_0",
           land_unit_key = "wh_main_chs_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -10385,6 +10884,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_1",
           land_unit_key = "wh_main_chs_cav_chaos_knights_1",
+          agent_subtype = "",
           name = "Chaos Knights (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -10393,6 +10893,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
+          agent_subtype = "",
           name = "Chaos Knights of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -10401,6 +10902,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Slaanesh (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -10409,6 +10911,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_hellstriders_0",
           land_unit_key = "wh3_main_sla_cav_hellstriders_0",
+          agent_subtype = "",
           name = "Hellstriders of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -10417,6 +10920,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_hellstriders_1",
           land_unit_key = "wh3_main_sla_cav_hellstriders_1",
+          agent_subtype = "",
           name = "Hellstriders of Slaanesh (Hellscourges)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -10425,6 +10929,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          agent_subtype = "",
           name = "Marauder Horsemen of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -10433,6 +10938,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
           land_unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          agent_subtype = "",
           name = "Pleasureseekers",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -10441,6 +10947,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
           land_unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
+          agent_subtype = "",
           name = "Aspiring Champions",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10449,6 +10956,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_0",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10457,6 +10965,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
           land_unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10465,6 +10974,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_1",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10473,6 +10983,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
+          agent_subtype = "",
           name = "Chaos Warriors of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10481,6 +10992,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          agent_subtype = "",
           name = "Chaos Warriors of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10489,6 +11001,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_0",
           land_unit_key = "wh_main_chs_inf_chosen_0",
+          agent_subtype = "",
           name = "Chosen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10497,6 +11010,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_1",
           land_unit_key = "wh_main_chs_inf_chosen_1",
+          agent_subtype = "",
           name = "Chosen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10505,6 +11019,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chosen_2",
           land_unit_key = "wh_dlc01_chs_inf_chosen_2",
+          agent_subtype = "",
           name = "Chosen (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10513,6 +11028,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_msla",
+          agent_subtype = "",
           name = "Chosen of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10521,6 +11037,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+          agent_subtype = "",
           name = "Chosen of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10529,6 +11046,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_daemonette_0",
           land_unit_key = "wh3_main_sla_inf_daemonette_0",
+          agent_subtype = "",
           name = "Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10537,6 +11055,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_daemonette_1",
           land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          agent_subtype = "",
           name = "Exalted Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10545,6 +11064,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_forsaken_0",
           land_unit_key = "wh_dlc01_chs_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10553,6 +11073,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
           land_unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          agent_subtype = "",
           name = "Forsaken of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10561,6 +11082,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          agent_subtype = "",
           name = "Marauder Bearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10569,6 +11091,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          agent_subtype = "",
           name = "Marauder Bearmen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10577,6 +11100,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_0",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_0",
+          agent_subtype = "",
           name = "Marauders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10585,6 +11109,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_1",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_1",
+          agent_subtype = "",
           name = "Marauders (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10593,6 +11118,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla",
+          agent_subtype = "",
           name = "Marauders of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10601,6 +11127,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges",
+          agent_subtype = "",
           name = "Marauders of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10609,6 +11136,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_slaangors",
           land_unit_key = "wh3_dlc27_sla_inf_slaangors",
+          agent_subtype = "",
           name = "Slaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -10617,6 +11145,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
           land_unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
+          agent_subtype = "",
           name = "Marauder Horsemasters",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -10625,6 +11154,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_0",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_0",
+          agent_subtype = "",
           name = "Marauder Horsemen",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -10633,6 +11163,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_1",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_1",
+          agent_subtype = "",
           name = "Marauder Horsemen (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -10641,6 +11172,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_feral_manticore",
           land_unit_key = "wh_dlc06_chs_feral_manticore",
+          agent_subtype = "",
           name = "Chaos Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -10649,6 +11181,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_giant",
           land_unit_key = "wh_main_chs_mon_giant",
+          agent_subtype = "",
           name = "Chaos Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -10657,6 +11190,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          agent_subtype = "",
           name = "Chaos Warshrine of Slaanesh",
           category = "monster",
           category_raw = "war_beast",
@@ -10665,6 +11199,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_chimera",
           land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          agent_subtype = "",
           name = "Chimera",
           category = "monster",
           category_raw = "inf_melee",
@@ -10673,6 +11208,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -10681,6 +11217,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -10689,6 +11226,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
           land_unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          agent_subtype = "",
           name = "Keeper of Secrets",
           category = "monster",
           category_raw = "inf_melee",
@@ -10697,6 +11235,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_soul_grinder_0",
           land_unit_key = "wh3_main_sla_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Slaanesh",
           category = "monster",
           category_raw = "inf_melee",
@@ -10705,6 +11244,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
           land_unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          agent_subtype = "",
           name = "Champions Of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -10713,6 +11253,7 @@ return {
         {
           unit_key = "wh3_main_dae_inf_chaos_furies_0",
           land_unit_key = "wh3_main_dae_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -10721,6 +11262,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_spawn",
           land_unit_key = "wh_main_chs_mon_chaos_spawn",
+          agent_subtype = "",
           name = "Chaos Spawn",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -10729,6 +11271,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_trolls",
           land_unit_key = "wh_main_chs_mon_trolls",
+          agent_subtype = "",
           name = "Chaos Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -10737,6 +11280,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_mon_trolls_1",
           land_unit_key = "wh_dlc01_chs_mon_trolls_1",
+          agent_subtype = "",
           name = "Chaos Trolls (Armoured)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -10745,6 +11289,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          agent_subtype = "",
           name = "Fiends of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -10753,6 +11298,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          agent_subtype = "",
           name = "Spawn of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -10761,6 +11307,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_0",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -10769,6 +11316,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Chaos Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -10879,6 +11427,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_death",
           name = "Chaos Sorcerer (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10887,6 +11436,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_fire",
           name = "Chaos Sorcerer (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10895,6 +11445,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_metal",
           name = "Chaos Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10903,6 +11454,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
+          agent_subtype = "wh_dlc07_chs_chaos_sorcerer_shadow",
           name = "Chaos Sorcerer (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10911,6 +11463,7 @@ return {
         {
           unit_key = "wh3_dlc25_chs_cha_chaos_sorcerer_death_mnur",
           land_unit_key = "wh3_dlc25_chs_cha_chaos_sorcerer_death_mnur",
+          agent_subtype = "wh3_dlc25_chs_sorcerer_death_mnur",
           name = "Chaos Sorcerer of Nurgle (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10919,6 +11472,7 @@ return {
         {
           unit_key = "wh3_dlc25_chs_cha_chaos_sorcerer_nurgle_mnur",
           land_unit_key = "wh3_dlc25_chs_cha_chaos_sorcerer_nurgle_mnur",
+          agent_subtype = "wh3_dlc25_chs_sorcerer_nurgle_mnur",
           name = "Chaos Sorcerer of Nurgle (Nurgle)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10927,6 +11481,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_exalted_hero_0",
           land_unit_key = "wh_main_chs_cha_exalted_hero_0",
+          agent_subtype = "wh_main_chs_exalted_hero",
           name = "Exalted Hero",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10935,6 +11490,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_exalted_hero_mnur",
           land_unit_key = "wh3_dlc20_chs_cha_exalted_hero_mnur",
+          agent_subtype = "wh3_dlc20_chs_exalted_hero_mnur",
           name = "Exalted Hero of Nurgle",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -10943,6 +11499,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_lord_0",
           land_unit_key = "wh_main_chs_cha_chaos_lord_0",
+          agent_subtype = "wh_dlc08_chs_challenger_khorne",
           name = "Chaos Lord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10951,6 +11508,7 @@ return {
         {
           unit_key = "wh3_dlc25_chs_cha_chaos_lord_mnur",
           land_unit_key = "wh3_dlc25_chs_cha_chaos_lord_mnur",
+          agent_subtype = "wh3_dlc25_chs_lord_mnur",
           name = "Chaos Lord of Nurgle",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10959,6 +11517,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_death",
           name = "Chaos Sorcerer Lord (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10967,6 +11526,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_fire",
           name = "Chaos Sorcerer Lord (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10975,6 +11535,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_metal",
           name = "Chaos Sorcerer Lord (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10983,6 +11544,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
+          agent_subtype = "wh_dlc07_chs_sorcerer_lord_shadow",
           name = "Chaos Sorcerer Lord (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10991,6 +11553,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_lord_death_mnur",
           land_unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_lord_death_mnur",
+          agent_subtype = "wh3_dlc20_chs_sorcerer_lord_death_mnur",
           name = "Chaos Sorcerer Lord of Nurgle (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -10999,6 +11562,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_lord_nurgle_mnur",
           land_unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_lord_nurgle_mnur",
+          agent_subtype = "wh3_dlc20_chs_sorcerer_lord_nurgle_mnur",
           name = "Chaos Sorcerer Lord of Nurgle (Nurgle)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -11007,6 +11571,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_chariot",
           land_unit_key = "wh_main_chs_cav_chaos_chariot",
+          agent_subtype = "",
           name = "Chaos Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -11015,6 +11580,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
+          agent_subtype = "",
           name = "Chaos Chariots of Nurgle",
           category = "chariot",
           category_raw = "melee",
@@ -11023,6 +11589,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
           land_unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -11031,6 +11598,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_0",
           land_unit_key = "wh_main_chs_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -11039,6 +11607,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_1",
           land_unit_key = "wh_main_chs_cav_chaos_knights_1",
+          agent_subtype = "",
           name = "Chaos Knights (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -11047,6 +11616,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          agent_subtype = "",
           name = "Chaos Knights of Nurgle",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -11055,6 +11625,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Nurgle (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -11063,6 +11634,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_cav_rot_knights",
           land_unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          agent_subtype = "",
           name = "Rot Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -11071,6 +11643,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
           land_unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
+          agent_subtype = "",
           name = "Aspiring Champions",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11079,6 +11652,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_0",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11087,6 +11661,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
           land_unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11095,6 +11670,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_1",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11103,6 +11679,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11111,6 +11688,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11119,6 +11697,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_0",
           land_unit_key = "wh_main_chs_inf_chosen_0",
+          agent_subtype = "",
           name = "Chosen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11127,6 +11706,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_1",
           land_unit_key = "wh_main_chs_inf_chosen_1",
+          agent_subtype = "",
           name = "Chosen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11135,6 +11715,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chosen_2",
           land_unit_key = "wh_dlc01_chs_inf_chosen_2",
+          agent_subtype = "",
           name = "Chosen (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11143,6 +11724,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
+          agent_subtype = "",
           name = "Chosen of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11151,6 +11733,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chosen of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11159,6 +11742,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_plaguebearers_1",
           land_unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          agent_subtype = "",
           name = "Exalted Plaguebearers of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11167,6 +11751,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_forsaken_0",
           land_unit_key = "wh_dlc01_chs_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11175,6 +11760,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_forsaken_0_warriors",
           land_unit_key = "wh3_main_nur_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11183,6 +11769,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          agent_subtype = "",
           name = "Marauder Bearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11191,6 +11778,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          agent_subtype = "",
           name = "Marauder Bearmen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11199,6 +11787,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_0",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_0",
+          agent_subtype = "",
           name = "Marauders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11207,6 +11796,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_1",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_1",
+          agent_subtype = "",
           name = "Marauders (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11215,6 +11805,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          agent_subtype = "",
           name = "Marauders of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11223,6 +11814,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          agent_subtype = "",
           name = "Marauders of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11231,6 +11823,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_nurglings_0",
           land_unit_key = "wh3_main_nur_inf_nurglings_0",
+          agent_subtype = "",
           name = "Nurglings",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11239,6 +11832,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_pestigors",
           land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          agent_subtype = "",
           name = "Pestigors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11247,6 +11841,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_plaguebearers_0",
           land_unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          agent_subtype = "",
           name = "Plaguebearers of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11255,6 +11850,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
           land_unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
+          agent_subtype = "",
           name = "Marauder Horsemasters",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -11263,6 +11859,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_0",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_0",
+          agent_subtype = "",
           name = "Marauder Horsemen",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -11271,6 +11868,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_1",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_1",
+          agent_subtype = "",
           name = "Marauder Horsemen (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -11279,6 +11877,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
+          agent_subtype = "",
           name = "Marauder Horsemen of Nurgle (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -11287,6 +11886,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_soul_grinder_0",
           land_unit_key = "wh3_main_nur_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Nurgle",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -11295,6 +11895,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
           land_unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
+          agent_subtype = "",
           name = "Beast of Nurgle",
           category = "monster",
           category_raw = "inf_melee",
@@ -11303,6 +11904,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_feral_manticore",
           land_unit_key = "wh_dlc06_chs_feral_manticore",
+          agent_subtype = "",
           name = "Chaos Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -11311,6 +11913,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_giant",
           land_unit_key = "wh_main_chs_mon_giant",
+          agent_subtype = "",
           name = "Chaos Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -11319,6 +11922,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          agent_subtype = "",
           name = "Chaos Warshrine of Nurgle",
           category = "monster",
           category_raw = "war_beast",
@@ -11327,6 +11931,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_chimera",
           land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          agent_subtype = "",
           name = "Chimera",
           category = "monster",
           category_raw = "inf_melee",
@@ -11335,6 +11940,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -11343,6 +11949,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -11351,6 +11958,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_great_unclean_one_0",
           land_unit_key = "wh3_main_nur_mon_great_unclean_one_0",
+          agent_subtype = "",
           name = "Great Unclean One",
           category = "monster",
           category_raw = "inf_melee",
@@ -11359,6 +11967,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_toad_dragon",
           land_unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          agent_subtype = "",
           name = "Toad Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -11367,6 +11976,7 @@ return {
         {
           unit_key = "wh3_main_nur_cav_plague_drones_0",
           land_unit_key = "wh3_main_nur_cav_plague_drones_0",
+          agent_subtype = "",
           name = "Plague Drones of Nurgle",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -11375,6 +11985,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_bile_trolls",
           land_unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          agent_subtype = "",
           name = "Bile Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -11383,6 +11994,7 @@ return {
         {
           unit_key = "wh3_main_dae_inf_chaos_furies_0",
           land_unit_key = "wh3_main_dae_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -11391,6 +12003,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_spawn",
           land_unit_key = "wh_main_chs_mon_chaos_spawn",
+          agent_subtype = "",
           name = "Chaos Spawn",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -11399,6 +12012,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_trolls",
           land_unit_key = "wh_main_chs_mon_trolls",
+          agent_subtype = "",
           name = "Chaos Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -11407,6 +12021,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_mon_trolls_1",
           land_unit_key = "wh_dlc01_chs_mon_trolls_1",
+          agent_subtype = "",
           name = "Chaos Trolls (Armoured)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -11415,6 +12030,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          agent_subtype = "",
           name = "Plague Ogres",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -11423,6 +12039,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          agent_subtype = "",
           name = "Plague Ogres (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -11431,6 +12048,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0_warriors",
           land_unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          agent_subtype = "",
           name = "Spawn of Nurgle",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -11439,6 +12057,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_0",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -11447,6 +12066,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Chaos Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -11566,6 +12186,7 @@ return {
         {
           unit_key = "wh3_main_kho_veh_skullcannon_0",
           land_unit_key = "wh3_main_kho_veh_skullcannon_0",
+          agent_subtype = "",
           name = "Skullcannon",
           category = "artillery",
           category_raw = "artillery",
@@ -11574,6 +12195,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_death",
           name = "Chaos Sorcerer (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -11582,6 +12204,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_fire",
           name = "Chaos Sorcerer (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -11590,6 +12213,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_metal",
           name = "Chaos Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -11598,6 +12222,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
+          agent_subtype = "wh_dlc07_chs_chaos_sorcerer_shadow",
           name = "Chaos Sorcerer (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -11606,6 +12231,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_exalted_hero_0",
           land_unit_key = "wh_main_chs_cha_exalted_hero_0",
+          agent_subtype = "wh_main_chs_exalted_hero",
           name = "Exalted Hero",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -11614,6 +12240,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_exalted_hero_mkho",
           land_unit_key = "wh3_dlc20_chs_cha_exalted_hero_mkho",
+          agent_subtype = "wh3_dlc20_chs_exalted_hero_mkho",
           name = "Exalted Hero of Khorne",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -11622,6 +12249,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_lord_0",
           land_unit_key = "wh_main_chs_cha_chaos_lord_0",
+          agent_subtype = "wh_dlc08_chs_challenger_khorne",
           name = "Chaos Lord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -11630,6 +12258,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_chaos_lord_mkho",
           land_unit_key = "wh3_dlc20_chs_cha_chaos_lord_mkho",
+          agent_subtype = "wh3_dlc20_chs_lord_mkho",
           name = "Chaos Lord of Khorne",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -11638,6 +12267,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_death",
           name = "Chaos Sorcerer Lord (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -11646,6 +12276,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_fire",
           name = "Chaos Sorcerer Lord (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -11654,6 +12285,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_metal",
           name = "Chaos Sorcerer Lord (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -11662,6 +12294,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
+          agent_subtype = "wh_dlc07_chs_sorcerer_lord_shadow",
           name = "Chaos Sorcerer Lord (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -11670,6 +12303,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_chariot",
           land_unit_key = "wh_main_chs_cav_chaos_chariot",
+          agent_subtype = "",
           name = "Chaos Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -11678,6 +12312,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
+          agent_subtype = "",
           name = "Chaos Chariots of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -11686,6 +12321,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
           land_unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -11694,6 +12330,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_gorebeast_chariot",
           land_unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -11702,6 +12339,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_0",
           land_unit_key = "wh_main_chs_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -11710,6 +12348,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_1",
           land_unit_key = "wh_main_chs_cav_chaos_knights_1",
+          agent_subtype = "",
           name = "Chaos Knights (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -11718,6 +12357,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
+          agent_subtype = "",
           name = "Chaos Knights of Khorne",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -11726,6 +12366,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Khorne (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -11734,6 +12375,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
           land_unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
+          agent_subtype = "",
           name = "Aspiring Champions",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11742,6 +12384,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_bloodletters_0",
           land_unit_key = "wh3_main_kho_inf_bloodletters_0",
+          agent_subtype = "",
           name = "Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11750,6 +12393,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_0",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11758,6 +12402,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
           land_unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11766,6 +12411,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_1",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11774,6 +12420,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_0",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11782,6 +12429,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_2",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11790,6 +12438,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_1",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11798,6 +12447,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_0",
           land_unit_key = "wh_main_chs_inf_chosen_0",
+          agent_subtype = "",
           name = "Chosen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11806,6 +12456,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_1",
           land_unit_key = "wh_main_chs_inf_chosen_1",
+          agent_subtype = "",
           name = "Chosen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11814,6 +12465,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chosen_2",
           land_unit_key = "wh_dlc01_chs_inf_chosen_2",
+          agent_subtype = "",
           name = "Chosen (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11822,6 +12474,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
+          agent_subtype = "",
           name = "Chosen of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11830,6 +12483,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
+          agent_subtype = "",
           name = "Chosen of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11838,6 +12492,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_bloodletters_1",
           land_unit_key = "wh3_main_kho_inf_bloodletters_1",
+          agent_subtype = "",
           name = "Exalted Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11846,6 +12501,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_forsaken_0",
           land_unit_key = "wh_dlc01_chs_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11854,6 +12510,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          agent_subtype = "",
           name = "Forsaken of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11862,6 +12519,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_khorngors",
           land_unit_key = "wh3_dlc26_kho_inf_khorngors",
+          agent_subtype = "",
           name = "Khorngors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11870,6 +12528,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          agent_subtype = "",
           name = "Marauder Bearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11878,6 +12537,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          agent_subtype = "",
           name = "Marauder Bearmen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11886,6 +12546,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_0",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_0",
+          agent_subtype = "",
           name = "Marauders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11894,6 +12555,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_1",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_1",
+          agent_subtype = "",
           name = "Marauders (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11902,6 +12564,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
+          agent_subtype = "",
           name = "Marauders of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11910,6 +12573,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          agent_subtype = "",
           name = "Marauders of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11918,6 +12582,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_skullreapers",
           land_unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          agent_subtype = "",
           name = "Skullreapers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11926,6 +12591,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_wrathmongers",
           land_unit_key = "wh3_dlc26_kho_inf_wrathmongers",
+          agent_subtype = "",
           name = "Wrathmongers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -11934,6 +12600,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
           land_unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
+          agent_subtype = "",
           name = "Marauder Horsemasters",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -11942,6 +12609,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_0",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_0",
+          agent_subtype = "",
           name = "Marauder Horsemen",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -11950,6 +12618,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_1",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_1",
+          agent_subtype = "",
           name = "Marauder Horsemen (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -11958,6 +12627,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
+          agent_subtype = "",
           name = "Marauder Horsemen of Khorne (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -11966,6 +12636,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_bloodthirster_0",
           land_unit_key = "wh3_main_kho_mon_bloodthirster_0",
+          agent_subtype = "",
           name = "Bloodthirster",
           category = "monster",
           category_raw = "inf_melee",
@@ -11974,6 +12645,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_feral_manticore",
           land_unit_key = "wh_dlc06_chs_feral_manticore",
+          agent_subtype = "",
           name = "Chaos Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -11982,6 +12654,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_giant",
           land_unit_key = "wh_main_chs_mon_giant",
+          agent_subtype = "",
           name = "Chaos Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -11990,6 +12663,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          agent_subtype = "",
           name = "Chaos Warshrine of Khorne",
           category = "monster",
           category_raw = "war_beast",
@@ -11998,6 +12672,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_chimera",
           land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          agent_subtype = "",
           name = "Chimera",
           category = "monster",
           category_raw = "inf_melee",
@@ -12006,6 +12681,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -12014,6 +12690,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -12022,6 +12699,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_soul_grinder_0",
           land_unit_key = "wh3_main_kho_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Khorne",
           category = "monster",
           category_raw = "inf_ranged",
@@ -12030,6 +12708,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_skullcrushers_0",
           land_unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          agent_subtype = "",
           name = "Skullcrushers of Khorne",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -12038,6 +12717,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
           land_unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          agent_subtype = "",
           name = "Bloodbeasts of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12046,6 +12726,7 @@ return {
         {
           unit_key = "wh3_main_dae_inf_chaos_furies_0",
           land_unit_key = "wh3_main_dae_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12054,6 +12735,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_spawn",
           land_unit_key = "wh_main_chs_mon_chaos_spawn",
+          agent_subtype = "",
           name = "Chaos Spawn",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12062,6 +12744,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_trolls",
           land_unit_key = "wh_main_chs_mon_trolls",
+          agent_subtype = "",
           name = "Chaos Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12070,6 +12753,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_mon_trolls_1",
           land_unit_key = "wh_dlc01_chs_mon_trolls_1",
+          agent_subtype = "",
           name = "Chaos Trolls (Armoured)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12078,6 +12762,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
           land_unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          agent_subtype = "",
           name = "Slaughterbrute",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12086,6 +12771,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
           land_unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          agent_subtype = "",
           name = "Spawn of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12094,6 +12780,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_0",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -12102,6 +12789,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Chaos Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -12110,6 +12798,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
           land_unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
+          agent_subtype = "",
           name = "Flesh Hounds of Khorne",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -12226,6 +12915,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_death",
           name = "Chaos Sorcerer (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12234,6 +12924,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_fire",
           name = "Chaos Sorcerer (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12242,6 +12933,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_metal",
           name = "Chaos Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12250,6 +12942,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
+          agent_subtype = "wh_dlc07_chs_chaos_sorcerer_shadow",
           name = "Chaos Sorcerer (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12258,6 +12951,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_metal_mtze",
           land_unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_metal_mtze",
+          agent_subtype = "wh3_dlc20_chs_sorcerer_metal_mtze",
           name = "Chaos Sorcerer of Tzeentch (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12266,6 +12960,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_tzeentch_mtze",
           land_unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_tzeentch_mtze",
+          agent_subtype = "wh3_dlc20_chs_sorcerer_tzeentch_mtze",
           name = "Chaos Sorcerer of Tzeentch (Tzeentch)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12274,6 +12969,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_exalted_hero_0",
           land_unit_key = "wh_main_chs_cha_exalted_hero_0",
+          agent_subtype = "wh_main_chs_exalted_hero",
           name = "Exalted Hero",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12282,6 +12978,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_lord_0",
           land_unit_key = "wh_main_chs_cha_chaos_lord_0",
+          agent_subtype = "wh_dlc08_chs_challenger_khorne",
           name = "Chaos Lord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12290,6 +12987,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_death",
           name = "Chaos Sorcerer Lord (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12298,6 +12996,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_fire",
           name = "Chaos Sorcerer Lord (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12306,6 +13005,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_metal",
           name = "Chaos Sorcerer Lord (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12314,6 +13014,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
+          agent_subtype = "wh_dlc07_chs_sorcerer_lord_shadow",
           name = "Chaos Sorcerer Lord (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12322,6 +13023,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_lord_metal_mtze",
           land_unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_lord_metal_mtze",
+          agent_subtype = "wh3_dlc20_chs_sorcerer_lord_metal_mtze",
           name = "Chaos Sorcerer Lord of Tzeentch (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12330,6 +13032,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_lord_tzeentch_mtze",
           land_unit_key = "wh3_dlc20_chs_cha_chaos_sorcerer_lord_tzeentch_mtze",
+          agent_subtype = "wh3_dlc20_chs_sorcerer_lord_tzeentch_mtze",
           name = "Chaos Sorcerer Lord of Tzeentch (Tzeentch)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12338,6 +13041,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_chariot",
           land_unit_key = "wh_main_chs_cav_chaos_chariot",
+          agent_subtype = "",
           name = "Chaos Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -12346,6 +13050,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
+          agent_subtype = "",
           name = "Chaos Chariots of Tzeentch",
           category = "chariot",
           category_raw = "melee",
@@ -12354,6 +13059,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
           land_unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -12362,6 +13068,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
           land_unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          agent_subtype = "",
           name = "Centigors of Tzeentch",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -12370,6 +13077,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_0",
           land_unit_key = "wh_main_chs_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -12378,6 +13086,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_1",
           land_unit_key = "wh_main_chs_cav_chaos_knights_1",
+          agent_subtype = "",
           name = "Chaos Knights (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -12386,6 +13095,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_chaos_knights_0",
           land_unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights of Tzeentch",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -12394,6 +13104,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Tzeentch (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -12402,6 +13113,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
           land_unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
+          agent_subtype = "",
           name = "Aspiring Champions",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12410,6 +13122,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_0",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12418,6 +13131,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
           land_unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12426,6 +13140,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_1",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12434,6 +13149,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
+          agent_subtype = "",
           name = "Chaos Warriors of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12442,6 +13158,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          agent_subtype = "",
           name = "Chaos Warriors of Tzeentch (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12450,6 +13167,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_0",
           land_unit_key = "wh_main_chs_inf_chosen_0",
+          agent_subtype = "",
           name = "Chosen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12458,6 +13176,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_1",
           land_unit_key = "wh_main_chs_inf_chosen_1",
+          agent_subtype = "",
           name = "Chosen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12466,6 +13185,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chosen_2",
           land_unit_key = "wh_dlc01_chs_inf_chosen_2",
+          agent_subtype = "",
           name = "Chosen (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12474,6 +13194,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
+          agent_subtype = "",
           name = "Chosen of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12482,6 +13203,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
+          agent_subtype = "",
           name = "Chosen of Tzeentch (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12490,6 +13212,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_forsaken_0",
           land_unit_key = "wh_dlc01_chs_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12498,6 +13221,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_forsaken_0",
           land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12506,6 +13230,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          agent_subtype = "",
           name = "Marauder Bearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12514,6 +13239,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          agent_subtype = "",
           name = "Marauder Bearmen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12522,6 +13248,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_0",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_0",
+          agent_subtype = "",
           name = "Marauders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12530,6 +13257,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_1",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_1",
+          agent_subtype = "",
           name = "Marauders (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12538,6 +13266,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
+          agent_subtype = "",
           name = "Marauders of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12546,6 +13275,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          agent_subtype = "",
           name = "Marauders of Tzeentch (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12554,6 +13284,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_inf_tzaangors",
           land_unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          agent_subtype = "",
           name = "Tzaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -12562,6 +13293,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
           land_unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
+          agent_subtype = "",
           name = "Marauder Horsemasters",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -12570,6 +13302,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_0",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_0",
+          agent_subtype = "",
           name = "Marauder Horsemen",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -12578,6 +13311,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_1",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_1",
+          agent_subtype = "",
           name = "Marauder Horsemen (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -12586,6 +13320,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
+          agent_subtype = "",
           name = "Marauder Horsemen of Tzeentch",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -12594,6 +13329,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_pink_horrors_1",
           land_unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          agent_subtype = "",
           name = "Exalted Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -12602,6 +13338,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_pink_horrors_0",
           land_unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          agent_subtype = "",
           name = "Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -12610,6 +13347,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_soul_grinder_0",
           land_unit_key = "wh3_main_tze_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -12618,6 +13356,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_feral_manticore",
           land_unit_key = "wh_dlc06_chs_feral_manticore",
+          agent_subtype = "",
           name = "Chaos Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -12626,6 +13365,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_giant",
           land_unit_key = "wh_main_chs_mon_giant",
+          agent_subtype = "",
           name = "Chaos Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -12634,6 +13374,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          agent_subtype = "",
           name = "Chaos Warshrine of Tzeentch",
           category = "monster",
           category_raw = "war_beast",
@@ -12642,6 +13383,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_chimera",
           land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          agent_subtype = "",
           name = "Chimera",
           category = "monster",
           category_raw = "inf_melee",
@@ -12650,6 +13392,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_cockatrice",
           land_unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          agent_subtype = "",
           name = "Cockatrice",
           category = "monster",
           category_raw = "inf_melee",
@@ -12658,6 +13401,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -12666,6 +13410,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -12674,6 +13419,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_lord_of_change_0",
           land_unit_key = "wh3_main_tze_mon_lord_of_change_0",
+          agent_subtype = "",
           name = "Lord of Change",
           category = "monster",
           category_raw = "inf_melee",
@@ -12682,6 +13428,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
           land_unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          agent_subtype = "",
           name = "Mutalith Vortex Beast",
           category = "monster",
           category_raw = "inf_melee",
@@ -12690,6 +13437,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_doom_knights_0",
           land_unit_key = "wh3_main_tze_cav_doom_knights_0",
+          agent_subtype = "",
           name = "Doom Knights of Tzeentch",
           category = "monstrous_cavalry",
           category_raw = "inf_melee",
@@ -12698,6 +13446,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
           land_unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          agent_subtype = "",
           name = "Changebringers",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12706,6 +13455,7 @@ return {
         {
           unit_key = "wh3_main_dae_inf_chaos_furies_0",
           land_unit_key = "wh3_main_dae_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12714,6 +13464,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_spawn",
           land_unit_key = "wh_main_chs_mon_chaos_spawn",
+          agent_subtype = "",
           name = "Chaos Spawn",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12722,6 +13473,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_trolls",
           land_unit_key = "wh_main_chs_mon_trolls",
+          agent_subtype = "",
           name = "Chaos Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12730,6 +13482,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_mon_trolls_1",
           land_unit_key = "wh_dlc01_chs_mon_trolls_1",
+          agent_subtype = "",
           name = "Chaos Trolls (Armoured)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12738,6 +13491,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_flamers_0",
           land_unit_key = "wh3_main_tze_mon_flamers_0",
+          agent_subtype = "",
           name = "Flamers of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -12746,6 +13500,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
           land_unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          agent_subtype = "",
           name = "Spawn of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -12754,6 +13509,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_0",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -12762,6 +13518,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Chaos Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -12897,6 +13654,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_bull_centaur_taurruk",
           land_unit_key = "wh3_dlc23_chd_cha_bull_centaur_taurruk",
+          agent_subtype = "wh3_dlc23_chd_bull_centaur_taurruk",
           name = "Bull Centaur Taur'ruk",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12905,6 +13663,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_daemonsmith_sorcerer_death",
           land_unit_key = "wh3_dlc23_chd_cha_daemonsmith_sorcerer_death",
+          agent_subtype = "wh3_dlc23_chd_daemonsmith_sorcerer_death",
           name = "Daemonsmith Sorcerer (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12913,6 +13672,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_daemonsmith_sorcerer_fire",
           land_unit_key = "wh3_dlc23_chd_cha_daemonsmith_sorcerer_fire",
+          agent_subtype = "wh3_dlc23_chd_daemonsmith_sorcerer_fire",
           name = "Daemonsmith Sorcerer (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12921,6 +13681,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_daemonsmith_sorcerer_hashut",
           land_unit_key = "wh3_dlc23_chd_cha_daemonsmith_sorcerer_hashut",
+          agent_subtype = "wh3_dlc23_chd_daemonsmith_sorcerer_hashut",
           name = "Daemonsmith Sorcerer (Hashut)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12929,6 +13690,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_daemonsmith_sorcerer_metal",
           land_unit_key = "wh3_dlc23_chd_cha_daemonsmith_sorcerer_metal",
+          agent_subtype = "wh3_dlc23_chd_daemonsmith_sorcerer_metal",
           name = "Daemonsmith Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -12937,6 +13699,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_infernal_castellan",
           land_unit_key = "wh3_dlc23_chd_cha_infernal_castellan",
+          agent_subtype = "wh3_dlc23_chd_infernal_castellan",
           name = "Infernal Castellan",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -12945,6 +13708,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_overseer",
           land_unit_key = "wh3_dlc23_chd_cha_overseer",
+          agent_subtype = "wh3_dlc23_chd_overseer",
           name = "Overseer",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12953,6 +13717,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_sorcerer_prophet_death",
           land_unit_key = "wh3_dlc23_chd_cha_sorcerer_prophet_death",
+          agent_subtype = "wh3_dlc23_chd_sorcerer_prophet_death",
           name = "Sorcerer-Prophet (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12961,6 +13726,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_sorcerer_prophet_fire",
           land_unit_key = "wh3_dlc23_chd_cha_sorcerer_prophet_fire",
+          agent_subtype = "wh3_dlc23_chd_sorcerer_prophet_fire",
           name = "Sorcerer-Prophet (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12969,6 +13735,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_sorcerer_prophet_hashut",
           land_unit_key = "wh3_dlc23_chd_cha_sorcerer_prophet_hashut",
+          agent_subtype = "wh3_dlc23_chd_sorcerer_prophet_hashut",
           name = "Sorcerer-Prophet (Hashut)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12977,6 +13744,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cha_sorcerer_prophet_metal",
           land_unit_key = "wh3_dlc23_chd_cha_sorcerer_prophet_metal",
+          agent_subtype = "wh3_dlc23_chd_sorcerer_prophet_metal",
           name = "Sorcerer-Prophet (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -12985,6 +13753,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cav_bull_centaurs_axe",
           land_unit_key = "wh3_dlc23_chd_cav_bull_centaurs_axe",
+          agent_subtype = "",
           name = "Bull Centaur Renders",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -12993,6 +13762,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cav_bull_centaurs_dual_axe",
           land_unit_key = "wh3_dlc23_chd_cav_bull_centaurs_dual_axe",
+          agent_subtype = "",
           name = "Bull Centaur Renders (Dual Axes)",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -13001,6 +13771,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cav_bull_centaurs_greatweapons",
           land_unit_key = "wh3_dlc23_chd_cav_bull_centaurs_greatweapons",
+          agent_subtype = "",
           name = "Bull Centaur Renders (Great Weapons)",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -13009,6 +13780,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows",
           land_unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows",
+          agent_subtype = "",
           name = "Hobgoblin Wolf Raiders (Bows)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -13017,6 +13789,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears",
           land_unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears",
+          agent_subtype = "",
           name = "Hobgoblin Wolf Raiders (Spears)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -13025,6 +13798,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_warriors",
           land_unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_warriors",
+          agent_subtype = "",
           name = "Chaos Dwarf Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13033,6 +13807,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_warriors_great_weapons",
           land_unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_warriors_great_weapons",
+          agent_subtype = "",
           name = "Chaos Dwarf Warriors (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13041,6 +13816,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_goblin_labourers",
           land_unit_key = "wh3_dlc23_chd_inf_goblin_labourers",
+          agent_subtype = "",
           name = "Goblin Labourers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13049,6 +13825,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_hobgoblin_cutthroats",
           land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_cutthroats",
+          agent_subtype = "",
           name = "Hobgoblin Cutthroats",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13057,6 +13834,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_hobgoblin_sneaky_gits",
           land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_sneaky_gits",
+          agent_subtype = "",
           name = "Hobgoblin Sneaky Gits",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13065,6 +13843,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_infernal_guard",
           land_unit_key = "wh3_dlc23_chd_inf_infernal_guard",
+          agent_subtype = "",
           name = "Infernal Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13073,6 +13852,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_infernal_guard_great_weapons",
           land_unit_key = "wh3_dlc23_chd_inf_infernal_guard_great_weapons",
+          agent_subtype = "",
           name = "Infernal Guard (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13081,6 +13861,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_infernal_ironsworn",
           land_unit_key = "wh3_dlc23_chd_inf_infernal_ironsworn",
+          agent_subtype = "",
           name = "Infernal Ironsworn",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13089,6 +13870,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_orc_labourers",
           land_unit_key = "wh3_dlc23_chd_inf_orc_labourers",
+          agent_subtype = "",
           name = "Orc Labourers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13097,6 +13879,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses",
           land_unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses",
+          agent_subtype = "",
           name = "Chaos Dwarf Blunderbusses",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13105,6 +13888,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_hobgoblin_archers",
           land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_archers",
+          agent_subtype = "",
           name = "Hobgoblin Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13113,6 +13897,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_infernal_guard_fireglaives",
           land_unit_key = "wh3_dlc23_chd_inf_infernal_guard_fireglaives",
+          agent_subtype = "",
           name = "Infernal Guard (Fireglaives)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13121,6 +13906,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_mon_bale_taurus",
           land_unit_key = "wh3_dlc23_chd_mon_bale_taurus",
+          agent_subtype = "",
           name = "Bale Taurus",
           category = "monster",
           category_raw = "inf_melee",
@@ -13129,6 +13915,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_mon_great_taurus",
           land_unit_key = "wh3_dlc23_chd_mon_great_taurus",
+          agent_subtype = "",
           name = "Great Taurus",
           category = "monster",
           category_raw = "inf_melee",
@@ -13137,6 +13924,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_mon_kdaai_destroyer",
           land_unit_key = "wh3_dlc23_chd_mon_kdaai_destroyer",
+          agent_subtype = "",
           name = "K'daai Destroyer",
           category = "monster",
           category_raw = "inf_melee",
@@ -13145,6 +13933,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_mon_lammasu",
           land_unit_key = "wh3_dlc23_chd_mon_lammasu",
+          agent_subtype = "",
           name = "Lammasu",
           category = "monster",
           category_raw = "inf_melee",
@@ -13153,6 +13942,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_mon_kdaai_fireborn",
           land_unit_key = "wh3_dlc23_chd_mon_kdaai_fireborn",
+          agent_subtype = "",
           name = "K'daai Fireborn",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -13161,6 +13951,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_veh_deathshrieker_rocket_launcher",
           land_unit_key = "wh3_dlc23_chd_veh_deathshrieker_rocket_launcher",
+          agent_subtype = "",
           name = "Deathshrieker Rocket Launcher",
           category = "war_machine",
           category_raw = "war_machine",
@@ -13169,6 +13960,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_veh_dreadquake_mortar",
           land_unit_key = "wh3_dlc23_chd_veh_dreadquake_mortar",
+          agent_subtype = "",
           name = "Dreadquake Mortar",
           category = "war_machine",
           category_raw = "war_machine",
@@ -13177,6 +13969,7 @@ return {
         {
           unit_key = "wh_main_chs_art_hellcannon",
           land_unit_key = "wh_main_chs_art_hellcannon",
+          agent_subtype = "",
           name = "Hellcannon",
           category = "war_machine",
           category_raw = "artillery",
@@ -13185,6 +13978,7 @@ return {
         {
           unit_key = "wh3_main_chd_art_hobgob_bolt_thrower",
           land_unit_key = "wh3_main_chd_art_hobgob_bolt_thrower",
+          agent_subtype = "",
           name = "Hobgoblin Bolt Thrower",
           category = "war_machine",
           category_raw = "artillery",
@@ -13193,6 +13987,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_veh_iron_daemon",
           land_unit_key = "wh3_dlc23_chd_veh_iron_daemon",
+          agent_subtype = "",
           name = "Iron Daemon",
           category = "war_machine",
           category_raw = "war_machine",
@@ -13201,6 +13996,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_veh_iron_daemon_1dreadquake",
           land_unit_key = "wh3_dlc23_chd_veh_iron_daemon_1dreadquake",
+          agent_subtype = "",
           name = "Iron Daemon – Dreadquake Mortar",
           category = "war_machine",
           category_raw = "war_machine",
@@ -13209,6 +14005,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_veh_magma_cannon",
           land_unit_key = "wh3_dlc23_chd_veh_magma_cannon",
+          agent_subtype = "",
           name = "Magma Cannon",
           category = "war_machine",
           category_raw = "war_machine",
@@ -13217,6 +14014,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_veh_skullcracker",
           land_unit_key = "wh3_dlc23_chd_veh_skullcracker",
+          agent_subtype = "",
           name = "Skullcracker",
           category = "war_machine",
           category_raw = "war_machine",
@@ -13225,6 +14023,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_veh_skullcracker_1dreadquake",
           land_unit_key = "wh3_dlc23_chd_veh_skullcracker_1dreadquake",
+          agent_subtype = "",
           name = "Skullcracker – Dreadquake Mortar",
           category = "war_machine",
           category_raw = "war_machine",
@@ -13308,6 +14107,7 @@ return {
         {
           unit_key = "wh2_pro09_grn_cha_black_orc_big_boss_0",
           land_unit_key = "wh2_pro09_grn_cha_black_orc_big_boss_0",
+          agent_subtype = "wh2_pro09_grn_black_orc_big_boss",
           name = "Black Orc Big Boss",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13316,6 +14116,7 @@ return {
         {
           unit_key = "wh_main_grn_cha_goblin_big_boss_0",
           land_unit_key = "wh_main_grn_cha_goblin_big_boss_0",
+          agent_subtype = "wh_main_grn_goblin_big_boss",
           name = "Goblin Big Boss",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13324,6 +14125,7 @@ return {
         {
           unit_key = "wh_main_grn_cha_night_goblin_shaman",
           land_unit_key = "wh_main_grn_cha_night_goblin_shaman",
+          agent_subtype = "wh_main_grn_night_goblin_shaman",
           name = "Night Goblin Shaman",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13332,6 +14134,7 @@ return {
         {
           unit_key = "wh_main_grn_cha_orc_shaman_0",
           land_unit_key = "wh_main_grn_cha_orc_shaman_0",
+          agent_subtype = "wh_main_grn_orc_shaman",
           name = "Orc Shaman",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13340,6 +14143,7 @@ return {
         {
           unit_key = "wh_main_grn_cha_goblin_great_shaman_0",
           land_unit_key = "wh_main_grn_cha_goblin_great_shaman_0",
+          agent_subtype = "wh_main_grn_goblin_great_shaman",
           name = "Goblin Great Shaman",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -13348,6 +14152,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows",
           land_unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows",
+          agent_subtype = "",
           name = "Hobgoblin Wolf Raiders (Bows)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -13356,6 +14161,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears",
           land_unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears",
+          agent_subtype = "",
           name = "Hobgoblin Wolf Raiders (Spears)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -13364,6 +14170,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_black_orcs",
           land_unit_key = "wh_main_grn_inf_black_orcs",
+          agent_subtype = "",
           name = "Black Orcs (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13372,6 +14179,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_goblin_labourers",
           land_unit_key = "wh3_dlc23_chd_inf_goblin_labourers",
+          agent_subtype = "",
           name = "Goblin Labourers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13380,6 +14188,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_hobgoblin_cutthroats",
           land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_cutthroats",
+          agent_subtype = "",
           name = "Hobgoblin Cutthroats",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13388,6 +14197,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_hobgoblin_sneaky_gits",
           land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_sneaky_gits",
+          agent_subtype = "",
           name = "Hobgoblin Sneaky Gits",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13396,6 +14206,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_orc_labourers",
           land_unit_key = "wh3_dlc23_chd_inf_orc_labourers",
+          agent_subtype = "",
           name = "Orc Labourers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13404,6 +14215,7 @@ return {
         {
           unit_key = "wh3_dlc23_chd_inf_hobgoblin_archers",
           land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_archers",
+          agent_subtype = "",
           name = "Hobgoblin Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13412,6 +14224,7 @@ return {
         {
           unit_key = "wh_main_grn_art_doom_diver_catapult",
           land_unit_key = "wh_main_grn_art_doom_diver_catapult",
+          agent_subtype = "",
           name = "Doom Diver Catapults",
           category = "war_machine",
           category_raw = "artillery",
@@ -13420,6 +14233,7 @@ return {
         {
           unit_key = "wh_main_grn_art_goblin_rock_lobber",
           land_unit_key = "wh_main_grn_art_goblin_rock_lobber",
+          agent_subtype = "",
           name = "Goblin Rock Lobbers",
           category = "war_machine",
           category_raw = "artillery",
@@ -13472,6 +14286,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship_morr",
           land_unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship_morr",
+          agent_subtype = "",
           name = "Amethyst Land Ship",
           category = "artillery",
           category_raw = "artillery",
@@ -13480,6 +14295,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship",
           land_unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship",
+          agent_subtype = "",
           name = "Land Ship",
           category = "artillery",
           category_raw = "artillery",
@@ -13488,6 +14304,7 @@ return {
         {
           unit_key = "wh_main_emp_veh_luminark_of_hysh_0",
           land_unit_key = "wh_main_emp_veh_luminark_of_hysh_0",
+          agent_subtype = "",
           name = "Luminark of Hysh",
           category = "artillery",
           category_raw = "artillery",
@@ -13496,6 +14313,7 @@ return {
         {
           unit_key = "wh_main_emp_veh_steam_tank",
           land_unit_key = "wh_main_emp_veh_steam_tank_driver",
+          agent_subtype = "",
           name = "Steam Tank",
           category = "artillery",
           category_raw = "artillery",
@@ -13504,6 +14322,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_veh_steam_tank_volley_gun",
           land_unit_key = "wh3_dlc25_emp_veh_steam_tank_volley_gun",
+          agent_subtype = "",
           name = "Steam Tank (Volley Gun)",
           category = "artillery",
           category_raw = "artillery",
@@ -13512,6 +14331,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_fire_0",
           land_unit_key = "wh_main_emp_cha_wizard_fire_0",
+          agent_subtype = "wh_main_emp_bright_wizard",
           name = "Bright Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13520,6 +14340,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_heavens_0",
           land_unit_key = "wh_main_emp_cha_wizard_heavens_0",
+          agent_subtype = "wh_main_emp_celestial_wizard",
           name = "Celestial Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13528,6 +14349,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_captain_0",
           land_unit_key = "wh_main_emp_cha_captain_0",
+          agent_subtype = "wh_main_emp_captain",
           name = "Empire Captain",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13536,6 +14358,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_engineer",
           land_unit_key = "wh3_dlc25_emp_cha_engineer",
+          agent_subtype = "wh3_dlc25_emp_engineer",
           name = "Engineer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13544,6 +14367,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_wizard_metal",
           land_unit_key = "wh3_dlc25_emp_cha_wizard_metal",
+          agent_subtype = "wh3_dlc25_emp_gold_wizard",
           name = "Gold Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13552,6 +14376,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_light_0",
           land_unit_key = "wh_main_emp_cha_wizard_light_0",
+          agent_subtype = "wh_main_emp_light_wizard",
           name = "Light Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13560,6 +14385,7 @@ return {
         {
           unit_key = "wh_main_dwf_cha_thane",
           land_unit_key = "wh_main_dwf_cha_thane",
+          agent_subtype = "wh_main_dwf_thane",
           name = "Thane",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13568,6 +14394,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_warrior_priest_0",
           land_unit_key = "wh_main_emp_cha_warrior_priest_0",
+          agent_subtype = "wh_main_emp_warrior_priest",
           name = "Warrior Priest",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13576,6 +14403,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_waystalker_0",
           land_unit_key = "wh_dlc05_wef_cha_waystalker_0",
+          agent_subtype = "wh_dlc05_wef_waystalker",
           name = "Waystalker",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -13584,6 +14412,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_witch_hunter",
           land_unit_key = "wh_main_emp_cha_witch_hunter",
+          agent_subtype = "wh_main_emp_witch_hunter",
           name = "Witch Hunter",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -13592,6 +14421,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_general_0",
           land_unit_key = "wh_main_emp_cha_general_0",
+          agent_subtype = "wh_main_emp_lord",
           name = "General of the Empire",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -13600,6 +14430,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_master_engineer",
           land_unit_key = "wh3_dlc25_emp_cha_master_engineer",
+          agent_subtype = "wh3_dlc25_emp_master_engineer",
           name = "Master Engineer",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -13608,6 +14439,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cav_outriders_morr",
           land_unit_key = "wh3_dlc25_emp_cav_outriders_morr",
+          agent_subtype = "",
           name = "Amethyst Outriders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -13616,6 +14448,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_empire_knights",
           land_unit_key = "wh_main_emp_cav_empire_knights",
+          agent_subtype = "",
           name = "Empire Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -13624,6 +14457,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
           land_unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
+          agent_subtype = "",
           name = "Knights of the Black Rose",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -13632,6 +14466,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_cav_knights_blazing_sun_0",
           land_unit_key = "wh_dlc04_emp_cav_knights_blazing_sun_0",
+          agent_subtype = "",
           name = "Knights of the Blazing Sun",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -13640,6 +14475,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_reiksguard",
           land_unit_key = "wh_main_emp_cav_reiksguard",
+          agent_subtype = "",
           name = "Reiksguard",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -13648,6 +14484,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_inf_flagellants_0",
           land_unit_key = "wh_dlc04_emp_inf_flagellants_0",
+          agent_subtype = "",
           name = "Flagellants",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13656,6 +14493,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_greatswords",
           land_unit_key = "wh_main_emp_inf_greatswords",
+          agent_subtype = "",
           name = "Greatswords",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13664,6 +14502,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_halberdiers",
           land_unit_key = "wh_main_emp_inf_halberdiers",
+          agent_subtype = "",
           name = "Halberdiers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13672,6 +14511,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_spearmen_0",
           land_unit_key = "wh_main_emp_inf_spearmen_0",
+          agent_subtype = "",
           name = "Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13680,6 +14520,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_spearmen_1",
           land_unit_key = "wh_main_emp_inf_spearmen_1",
+          agent_subtype = "",
           name = "Spearmen (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13688,6 +14529,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_swordsmen",
           land_unit_key = "wh_main_emp_inf_swordsmen",
+          agent_subtype = "",
           name = "Swordsmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -13696,6 +14538,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_outriders_0",
           land_unit_key = "wh_main_emp_cav_outriders_0",
+          agent_subtype = "",
           name = "Outriders",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -13704,6 +14547,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_outriders_1",
           land_unit_key = "wh_main_emp_cav_outriders_1",
+          agent_subtype = "",
           name = "Outriders (Grenade Launchers)",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -13712,6 +14556,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_pistoliers_1",
           land_unit_key = "wh_main_emp_cav_pistoliers_1",
+          agent_subtype = "",
           name = "Pistoliers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -13720,6 +14565,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_veh_war_wagon_0",
           land_unit_key = "wh2_dlc13_emp_veh_war_wagon_0",
+          agent_subtype = "",
           name = "War Wagons",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -13728,6 +14574,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_veh_war_wagon_1",
           land_unit_key = "wh2_dlc13_emp_veh_war_wagon_1",
+          agent_subtype = "",
           name = "War Wagons (Mortars)",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -13736,6 +14583,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_nuln_ironsides_morr",
           land_unit_key = "wh3_dlc25_emp_inf_nuln_ironsides_morr",
+          agent_subtype = "",
           name = "Amethyst Ironsides",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13744,6 +14592,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_inf_archers_0",
           land_unit_key = "wh2_dlc13_emp_inf_archers_0",
+          agent_subtype = "",
           name = "Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13752,6 +14601,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_crossbowmen",
           land_unit_key = "wh_main_emp_inf_crossbowmen",
+          agent_subtype = "",
           name = "Crossbowmen",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13760,6 +14610,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_inf_free_company_militia_0",
           land_unit_key = "wh_dlc04_emp_inf_free_company_militia_0",
+          agent_subtype = "",
           name = "Free Company Militia",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13768,6 +14619,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_handgunners",
           land_unit_key = "wh_main_emp_inf_handgunners",
+          agent_subtype = "",
           name = "Handgunners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13776,6 +14628,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
           land_unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
+          agent_subtype = "",
           name = "Hochland Long Rifles",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13784,6 +14637,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_inf_huntsmen_0",
           land_unit_key = "wh2_dlc13_emp_inf_huntsmen_0",
+          agent_subtype = "",
           name = "Huntsmen",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13792,6 +14646,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
           land_unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
+          agent_subtype = "",
           name = "Nuln Ironsides",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -13800,6 +14655,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_demigryph_knights_0",
           land_unit_key = "wh_main_emp_cav_demigryph_knights_0",
+          agent_subtype = "",
           name = "Demigryph Knights",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -13808,6 +14664,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_demigryph_knights_1",
           land_unit_key = "wh_main_emp_cav_demigryph_knights_1",
+          agent_subtype = "",
           name = "Demigryph Knights (Halberds)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -13816,6 +14673,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_art_helstorm_rocket_battery_morr",
           land_unit_key = "wh3_dlc25_emp_art_helstorm_rocket_battery_morr",
+          agent_subtype = "",
           name = "Amethyst Helstorm Rocket Battery",
           category = "war_machine",
           category_raw = "artillery",
@@ -13824,6 +14682,7 @@ return {
         {
           unit_key = "wh_main_emp_art_great_cannon",
           land_unit_key = "wh_main_emp_art_great_cannon",
+          agent_subtype = "",
           name = "Great Cannons",
           category = "war_machine",
           category_raw = "artillery",
@@ -13832,6 +14691,7 @@ return {
         {
           unit_key = "wh_main_emp_art_helblaster_volley_gun",
           land_unit_key = "wh_main_emp_art_helblaster_volley_gun",
+          agent_subtype = "",
           name = "Helblaster Volley Guns",
           category = "war_machine",
           category_raw = "artillery",
@@ -13840,6 +14700,7 @@ return {
         {
           unit_key = "wh_main_emp_art_helstorm_rocket_battery",
           land_unit_key = "wh_main_emp_art_helstorm_rocket_battery",
+          agent_subtype = "",
           name = "Helstorm Rocket Battery",
           category = "war_machine",
           category_raw = "artillery",
@@ -13848,6 +14709,7 @@ return {
         {
           unit_key = "wh_main_emp_art_mortar",
           land_unit_key = "wh_main_emp_art_mortar",
+          agent_subtype = "",
           name = "Mortars",
           category = "war_machine",
           category_raw = "artillery",
@@ -13856,6 +14718,7 @@ return {
         {
           unit_key = "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0",
           land_unit_key = "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0",
+          agent_subtype = "",
           name = "Obsinite Gyrocopters",
           category = "war_machine",
           category_raw = "inf_ranged",
@@ -13950,6 +14813,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_cultist_0",
           land_unit_key = "wh3_main_nur_cha_cultist_0",
+          agent_subtype = "wh3_main_nur_cultist",
           name = "Cultist of Nurgle",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13958,6 +14822,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_plagueridden_death_0",
           land_unit_key = "wh3_main_nur_cha_plagueridden_death_0",
+          agent_subtype = "wh3_main_nur_plagueridden_death",
           name = "Plagueridden (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13966,6 +14831,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_plagueridden_nurgle_0",
           land_unit_key = "wh3_main_nur_cha_plagueridden_nurgle_0",
+          agent_subtype = "wh3_main_nur_plagueridden_nurgle",
           name = "Plagueridden (Nurgle)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -13974,6 +14840,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_herald_of_nurgle_death_0",
           land_unit_key = "wh3_main_nur_cha_herald_of_nurgle_death_0",
+          agent_subtype = "wh3_main_nur_herald_of_nurgle_death",
           name = "Herald of Nurgle (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -13982,6 +14849,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_herald_of_nurgle_nurgle_0",
           land_unit_key = "wh3_main_nur_cha_herald_of_nurgle_nurgle_0",
+          agent_subtype = "wh3_main_nur_herald_of_nurgle_nurgle",
           name = "Herald of Nurgle (Nurgle)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -13990,6 +14858,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
+          agent_subtype = "",
           name = "Chaos Chariots of Nurgle",
           category = "chariot",
           category_raw = "melee",
@@ -13998,6 +14867,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          agent_subtype = "",
           name = "Chaos Knights of Nurgle",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -14006,6 +14876,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Nurgle (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -14014,6 +14885,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_cav_rot_knights",
           land_unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          agent_subtype = "",
           name = "Rot Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -14022,6 +14894,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14030,6 +14903,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14038,6 +14912,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
+          agent_subtype = "",
           name = "Chosen of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14046,6 +14921,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chosen of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14054,6 +14930,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_plaguebearers_1",
           land_unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          agent_subtype = "",
           name = "Exalted Plaguebearers of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14062,6 +14939,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_forsaken_0",
           land_unit_key = "wh3_main_nur_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14070,6 +14948,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          agent_subtype = "",
           name = "Marauders of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14078,6 +14957,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          agent_subtype = "",
           name = "Marauders of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14086,6 +14966,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_nurglings_0",
           land_unit_key = "wh3_main_nur_inf_nurglings_0",
+          agent_subtype = "",
           name = "Nurglings",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14094,6 +14975,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_pestigors",
           land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          agent_subtype = "",
           name = "Pestigors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14102,6 +14984,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_plague_toads_0",
           land_unit_key = "wh3_main_nur_mon_plague_toads_0",
+          agent_subtype = "",
           name = "Plague Toads of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14110,6 +14993,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_plaguebearers_0",
           land_unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          agent_subtype = "",
           name = "Plaguebearers of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14118,6 +15002,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
+          agent_subtype = "",
           name = "Marauder Horsemen of Nurgle (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -14126,6 +15011,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_soul_grinder_0",
           land_unit_key = "wh3_main_nur_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Nurgle",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14134,6 +15020,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
           land_unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
+          agent_subtype = "",
           name = "Beast of Nurgle",
           category = "monster",
           category_raw = "inf_melee",
@@ -14142,6 +15029,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_chieftain_mon_frost_wyrm_0",
           land_unit_key = "wh_dlc08_nor_mon_frost_wyrm_0",
+          agent_subtype = "",
           name = "Chaos Frost Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -14150,6 +15038,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          agent_subtype = "",
           name = "Chaos Warshrine of Nurgle",
           category = "monster",
           category_raw = "war_beast",
@@ -14158,6 +15047,7 @@ return {
         {
           unit_key = "wh2_dlc17_bst_mon_ghorgon_0",
           land_unit_key = "wh2_dlc17_bst_mon_ghorgon_0",
+          agent_subtype = "",
           name = "Ghorgon",
           category = "monster",
           category_raw = "inf_melee",
@@ -14166,6 +15056,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_great_unclean_one_0",
           land_unit_key = "wh3_main_nur_mon_great_unclean_one_0",
+          agent_subtype = "",
           name = "Great Unclean One",
           category = "monster",
           category_raw = "inf_melee",
@@ -14174,6 +15065,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_toad_dragon",
           land_unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          agent_subtype = "",
           name = "Toad Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -14182,6 +15074,7 @@ return {
         {
           unit_key = "wh3_main_nur_cav_plague_drones_0",
           land_unit_key = "wh3_main_nur_cav_plague_drones_0",
+          agent_subtype = "",
           name = "Plague Drones of Nurgle",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -14190,6 +15083,7 @@ return {
         {
           unit_key = "wh3_main_nur_cav_plague_drones_1",
           land_unit_key = "wh3_main_nur_cav_plague_drones_1",
+          agent_subtype = "",
           name = "Plague Drones of Nurgle (Death's Heads)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -14198,6 +15092,7 @@ return {
         {
           unit_key = "wh3_main_nur_cav_pox_riders_of_nurgle_0",
           land_unit_key = "wh3_main_nur_cav_pox_riders_of_nurgle_0",
+          agent_subtype = "",
           name = "Pox Riders of Nurgle",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -14206,6 +15101,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_bile_trolls",
           land_unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          agent_subtype = "",
           name = "Bile Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -14214,6 +15110,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_chaos_furies_0",
           land_unit_key = "wh3_main_nur_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Nurgle)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -14222,6 +15119,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_chieftain_mon_fimir_0",
           land_unit_key = "wh_dlc08_nor_mon_fimir_0",
+          agent_subtype = "",
           name = "Fimir Warriors",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -14230,6 +15128,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_chieftain_mon_fimir_1",
           land_unit_key = "wh_dlc08_nor_mon_fimir_1",
+          agent_subtype = "",
           name = "Fimir Warriors (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -14238,6 +15137,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          agent_subtype = "",
           name = "Plague Ogres",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -14246,6 +15146,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          agent_subtype = "",
           name = "Plague Ogres (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -14254,6 +15155,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_rot_flies_0",
           land_unit_key = "wh3_main_nur_mon_rot_flies_0",
+          agent_subtype = "",
           name = "Rot Flies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -14262,6 +15164,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
           land_unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          agent_subtype = "",
           name = "Spawn of Nurgle",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -14270,6 +15173,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Chaos Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -14358,6 +15262,7 @@ return {
         {
           unit_key = "wh_main_grn_cha_goblin_big_boss_0",
           land_unit_key = "wh_main_grn_cha_goblin_big_boss_0",
+          agent_subtype = "wh_main_grn_goblin_big_boss",
           name = "Goblin Big Boss",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -14366,6 +15271,7 @@ return {
         {
           unit_key = "wh_main_grn_cha_goblin_great_shaman_0",
           land_unit_key = "wh_main_grn_cha_goblin_great_shaman_0",
+          agent_subtype = "wh_main_grn_goblin_great_shaman",
           name = "Goblin Great Shaman",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -14374,6 +15280,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_0",
           land_unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_0",
+          agent_subtype = "",
           name = "Forest Goblin Spider Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -14382,6 +15289,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_goblin_wolf_riders_0",
           land_unit_key = "wh_main_grn_cav_goblin_wolf_riders_0",
+          agent_subtype = "",
           name = "Goblin Wolf Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -14390,6 +15298,7 @@ return {
         {
           unit_key = "wh_dlc06_grn_cav_squig_hoppers_0",
           land_unit_key = "wh_dlc06_grn_cav_squig_hoppers_0",
+          agent_subtype = "",
           name = "Night Goblin Squig Hoppers",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -14398,6 +15307,7 @@ return {
         {
           unit_key = "wh3_main_grn_inf_goblins_sword_shield",
           land_unit_key = "wh3_main_grn_inf_goblins_sword_shield",
+          agent_subtype = "",
           name = "Goblins",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14406,6 +15316,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_goblin_spearmen",
           land_unit_key = "wh_main_grn_inf_goblin_spearmen",
+          agent_subtype = "",
           name = "Goblins (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14414,6 +15325,7 @@ return {
         {
           unit_key = "wh_dlc06_grn_inf_nasty_skulkers_0",
           land_unit_key = "wh_dlc06_grn_inf_nasty_skulkers_0",
+          agent_subtype = "",
           name = "Nasty Skulkers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14422,6 +15334,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblins",
           land_unit_key = "wh_main_grn_inf_night_goblins",
+          agent_subtype = "",
           name = "Night Goblins",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14430,6 +15343,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblin_fanatics",
           land_unit_key = "wh_main_grn_inf_night_goblin_fanatics",
+          agent_subtype = "",
           name = "Night Goblins (Fanatics)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14438,6 +15352,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_1",
           land_unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_1",
+          agent_subtype = "",
           name = "Forest Goblin Spider Rider Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -14446,6 +15361,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_goblin_wolf_riders_1",
           land_unit_key = "wh_main_grn_cav_goblin_wolf_riders_1",
+          agent_subtype = "",
           name = "Goblin Wolf Rider Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -14454,6 +15370,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_goblin_archers",
           land_unit_key = "wh_main_grn_inf_goblin_archers",
+          agent_subtype = "",
           name = "Goblin Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14462,6 +15379,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblin_archers",
           land_unit_key = "wh_main_grn_inf_night_goblin_archers",
+          agent_subtype = "",
           name = "Night Goblin Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14470,6 +15388,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblin_fanatics_1",
           land_unit_key = "wh_main_grn_inf_night_goblin_fanatics_1",
+          agent_subtype = "",
           name = "Night Goblin Archers (Fanatics)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14478,6 +15397,7 @@ return {
         {
           unit_key = "wh_main_grn_mon_arachnarok_spider_0",
           land_unit_key = "wh_main_grn_mon_arachnarok_spider_0",
+          agent_subtype = "",
           name = "Arachnarok Spider",
           category = "monster",
           category_raw = "war_beast",
@@ -14486,6 +15406,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_spider_hatchlings_0",
           land_unit_key = "wh2_dlc16_wef_mon_spider_hatchlings_0",
+          agent_subtype = "",
           name = "Spider Hatchlings",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -14494,6 +15415,7 @@ return {
         {
           unit_key = "wh_dlc06_grn_mon_spider_hatchlings_0",
           land_unit_key = "wh_dlc06_grn_mon_spider_hatchlings_0",
+          agent_subtype = "",
           name = "Spider Hatchlings",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -14502,6 +15424,7 @@ return {
         {
           unit_key = "wh_dlc06_grn_inf_squig_herd_0",
           land_unit_key = "wh_dlc06_grn_inf_squig_herd_0",
+          agent_subtype = "",
           name = "Squig Herd",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -14510,6 +15433,7 @@ return {
         {
           unit_key = "wh_main_grn_art_doom_diver_catapult",
           land_unit_key = "wh_main_grn_art_doom_diver_catapult",
+          agent_subtype = "",
           name = "Doom Diver Catapults",
           category = "war_machine",
           category_raw = "artillery",
@@ -14518,6 +15442,7 @@ return {
         {
           unit_key = "wh_main_grn_art_goblin_rock_lobber",
           land_unit_key = "wh_main_grn_art_goblin_rock_lobber",
+          agent_subtype = "",
           name = "Goblin Rock Lobbers",
           category = "war_machine",
           category_raw = "artillery",
@@ -14612,6 +15537,7 @@ return {
         {
           unit_key = "wh3_main_cth_cha_alchemist_0",
           land_unit_key = "wh3_main_cth_cha_alchemist_0",
+          agent_subtype = "wh3_main_cth_alchemist",
           name = "Alchemist",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -14620,6 +15546,7 @@ return {
         {
           unit_key = "wh3_main_cth_cha_astromancer_0",
           land_unit_key = "wh3_main_cth_cha_astromancer_0",
+          agent_subtype = "wh3_main_cth_astromancer",
           name = "Astromancer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -14628,6 +15555,7 @@ return {
         {
           unit_key = "wh3_dlc24_cth_cha_gate_master",
           land_unit_key = "wh3_dlc24_cth_cha_gate_master",
+          agent_subtype = "wh3_dlc24_cth_gate_master",
           name = "Gate Master",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -14636,6 +15564,7 @@ return {
         {
           unit_key = "wh3_dlc24_cth_cha_celestial_general_yang",
           land_unit_key = "wh3_dlc24_cth_cha_celestial_general_yang",
+          agent_subtype = "wh3_dlc24_cth_celestial_general_yang",
           name = "Celestial General",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -14644,6 +15573,7 @@ return {
         {
           unit_key = "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yang_0",
           land_unit_key = "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yang_0",
+          agent_subtype = "wh3_main_cth_dragon_blooded_shugengan_yang",
           name = "Dragon-blooded Shugengan Lord (Yang)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -14652,6 +15582,7 @@ return {
         {
           unit_key = "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yin_0",
           land_unit_key = "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yin_0",
+          agent_subtype = "wh3_main_cth_dragon_blooded_shugengan_yin",
           name = "Dragon-blooded Shugengan Lord (Yin)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -14660,6 +15591,7 @@ return {
         {
           unit_key = "wh3_main_cth_cha_lord_magistrate_0",
           land_unit_key = "wh3_main_cth_cha_lord_magistrate_0",
+          agent_subtype = "wh3_main_cth_lord_magistrate_yang",
           name = "Lord Magistrate",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -14668,6 +15600,7 @@ return {
         {
           unit_key = "wh3_main_cth_veh_war_compass_0",
           land_unit_key = "wh3_main_cth_veh_war_compass_0",
+          agent_subtype = "",
           name = "Wu Xing War Compass",
           category = "chariot",
           category_raw = "melee",
@@ -14676,6 +15609,7 @@ return {
         {
           unit_key = "wh3_dlc24_cth_veh_zhangu_war_drum",
           land_unit_key = "wh3_dlc24_cth_veh_zhangu_war_drum",
+          agent_subtype = "",
           name = "Zhangu War Drum",
           category = "chariot",
           category_raw = "melee",
@@ -14684,6 +15618,7 @@ return {
         {
           unit_key = "wh3_main_cth_cav_jade_lancers_0",
           land_unit_key = "wh3_main_cth_cav_jade_lancers_0",
+          agent_subtype = "",
           name = "Jade Lancers",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -14692,6 +15627,7 @@ return {
         {
           unit_key = "wh3_main_cth_cav_peasant_horsemen_0",
           land_unit_key = "wh3_main_cth_cav_peasant_horsemen_0",
+          agent_subtype = "",
           name = "Peasant Horsemen",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -14700,6 +15636,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_dragon_guard_0",
           land_unit_key = "wh3_main_cth_inf_dragon_guard_0",
+          agent_subtype = "",
           name = "Celestial Dragon Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14708,6 +15645,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_jade_warriors_0",
           land_unit_key = "wh3_main_cth_inf_jade_warriors_0",
+          agent_subtype = "",
           name = "Jade Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14716,6 +15654,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_jade_warriors_1",
           land_unit_key = "wh3_main_cth_inf_jade_warriors_1",
+          agent_subtype = "",
           name = "Jade Warriors (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14724,6 +15663,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_peasant_spearmen_1",
           land_unit_key = "wh3_main_cth_inf_peasant_spearmen_1",
+          agent_subtype = "",
           name = "Peasant Long Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -14732,6 +15672,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_dragon_guard_crossbowmen_0",
           land_unit_key = "wh3_main_cth_inf_dragon_guard_crossbowmen_0",
+          agent_subtype = "",
           name = "Celestial Dragon Crossbows",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14740,6 +15681,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_crane_gunners_0",
           land_unit_key = "wh3_main_cth_inf_crane_gunners_0",
+          agent_subtype = "",
           name = "Crane Gunners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14748,6 +15690,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_iron_hail_gunners_0",
           land_unit_key = "wh3_main_cth_inf_iron_hail_gunners_0",
+          agent_subtype = "",
           name = "Iron Hail Gunners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14756,6 +15699,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_jade_warrior_crossbowmen_0",
           land_unit_key = "wh3_main_cth_inf_jade_warrior_crossbowmen_0",
+          agent_subtype = "",
           name = "Jade Warrior Crossbows",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14764,6 +15708,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_jade_warrior_crossbowmen_1",
           land_unit_key = "wh3_main_cth_inf_jade_warrior_crossbowmen_1",
+          agent_subtype = "",
           name = "Jade Warrior Crossbows (Shields)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14772,6 +15717,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_grenadiers",
           land_unit_key = "wh3_main_cth_inf_grenadiers",
+          agent_subtype = "",
           name = "Nan-Gau Grenadiers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14780,6 +15726,7 @@ return {
         {
           unit_key = "wh3_main_cth_inf_peasant_archers_0",
           land_unit_key = "wh3_main_cth_inf_peasant_archers_0",
+          agent_subtype = "",
           name = "Peasant Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -14788,6 +15735,7 @@ return {
         {
           unit_key = "wh3_dlc24_cth_mon_celestial_lion",
           land_unit_key = "wh3_dlc24_cth_mon_celestial_lion",
+          agent_subtype = "",
           name = "Celestial Lion",
           category = "monster",
           category_raw = "inf_melee",
@@ -14796,6 +15744,7 @@ return {
         {
           unit_key = "wh3_dlc24_cth_mon_great_moon_bird",
           land_unit_key = "wh3_dlc24_cth_mon_great_moon_bird",
+          agent_subtype = "",
           name = "Great Moon Bird",
           category = "monster",
           category_raw = "inf_melee",
@@ -14804,6 +15753,7 @@ return {
         {
           unit_key = "wh3_main_cth_mon_terracotta_sentinel_0",
           land_unit_key = "wh3_main_cth_mon_terracotta_sentinel_0",
+          agent_subtype = "",
           name = "Terracotta Sentinel",
           category = "monster",
           category_raw = "inf_melee",
@@ -14812,6 +15762,7 @@ return {
         {
           unit_key = "wh3_main_cth_cav_jade_longma_riders_0",
           land_unit_key = "wh3_main_cth_cav_jade_longma_riders_0",
+          agent_subtype = "",
           name = "Great Longma Riders",
           category = "monstrous_cavalry",
           category_raw = "war_beast",
@@ -14820,6 +15771,7 @@ return {
         {
           unit_key = "wh3_dlc24_cth_inf_onyx_crowmen",
           land_unit_key = "wh3_dlc24_cth_inf_onyx_crowmen",
+          agent_subtype = "",
           name = "Onyx Crowmen",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -14828,6 +15780,7 @@ return {
         {
           unit_key = "wh3_dlc24_cth_mon_jade_lion",
           land_unit_key = "wh3_dlc24_cth_mon_jade_lion",
+          agent_subtype = "",
           name = "Jade Lion",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -14836,6 +15789,7 @@ return {
         {
           unit_key = "wh3_dlc24_cth_mon_jet_lion",
           land_unit_key = "wh3_dlc24_cth_mon_jet_lion",
+          agent_subtype = "",
           name = "Jet Lion",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -14844,6 +15798,7 @@ return {
         {
           unit_key = "wh3_main_cth_art_fire_rain_rocket_battery_0",
           land_unit_key = "wh3_main_cth_art_fire_rain_rocket_battery_0",
+          agent_subtype = "",
           name = "Fire Rain Rocket Battery",
           category = "war_machine",
           category_raw = "artillery",
@@ -14852,6 +15807,7 @@ return {
         {
           unit_key = "wh3_main_cth_art_grand_cannon_0",
           land_unit_key = "wh3_main_cth_art_grand_cannon_0",
+          agent_subtype = "",
           name = "Grand Cannons",
           category = "war_machine",
           category_raw = "artillery",
@@ -14860,6 +15816,7 @@ return {
         {
           unit_key = "wh3_main_cth_veh_sky_lantern_0",
           land_unit_key = "wh3_main_cth_veh_sky_lantern_0",
+          agent_subtype = "",
           name = "Sky Lantern",
           category = "war_machine",
           category_raw = "war_beast",
@@ -14868,6 +15825,7 @@ return {
         {
           unit_key = "wh3_main_cth_veh_sky_junk_0",
           land_unit_key = "wh3_main_cth_veh_sky_junk_0",
+          agent_subtype = "",
           name = "Sky-junk",
           category = "war_machine",
           category_raw = "war_beast",
@@ -14950,6 +15908,7 @@ return {
         {
           unit_key = "wh3_main_kho_veh_skullcannon_0",
           land_unit_key = "wh3_main_kho_veh_skullcannon_0",
+          agent_subtype = "",
           name = "Skullcannon",
           category = "artillery",
           category_raw = "artillery",
@@ -14958,6 +15917,7 @@ return {
         {
           unit_key = "wh3_main_sla_cha_alluress_shadow_0",
           land_unit_key = "wh3_main_sla_cha_alluress_shadow_0",
+          agent_subtype = "wh3_main_sla_alluress_shadow",
           name = "Alluress (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -14966,6 +15926,7 @@ return {
         {
           unit_key = "wh3_main_sla_cha_alluress_slaanesh_0",
           land_unit_key = "wh3_main_sla_cha_alluress_slaanesh_0",
+          agent_subtype = "wh3_main_sla_alluress_slaanesh",
           name = "Alluress (Slaanesh)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -14974,6 +15935,7 @@ return {
         {
           unit_key = "wh3_main_kho_cha_bloodreaper_0",
           land_unit_key = "wh3_main_kho_cha_bloodreaper_0",
+          agent_subtype = "wh3_main_kho_bloodreaper",
           name = "Bloodreaper",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -14982,6 +15944,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_cultist_0",
           land_unit_key = "wh3_main_nur_cha_cultist_0",
+          agent_subtype = "wh3_main_nur_cultist",
           name = "Cultist of Nurgle",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -14990,6 +15953,7 @@ return {
         {
           unit_key = "wh3_main_sla_cha_cultist_0",
           land_unit_key = "wh3_main_sla_cha_cultist_0",
+          agent_subtype = "wh3_main_sla_cultist",
           name = "Cultist of Slaanesh",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -14998,6 +15962,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_cultist_0",
           land_unit_key = "wh3_main_tze_cha_cultist_0",
+          agent_subtype = "wh3_main_tze_cultist",
           name = "Cultist of Tzeentch",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -15006,6 +15971,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_iridescent_horror_metal_0",
           land_unit_key = "wh3_main_tze_cha_iridescent_horror_metal_0",
+          agent_subtype = "wh3_main_tze_iridescent_horror_metal",
           name = "Iridescent Horror (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -15014,6 +15980,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_iridescent_horror_tzeentch_0",
           land_unit_key = "wh3_main_tze_cha_iridescent_horror_tzeentch_0",
+          agent_subtype = "wh3_main_tze_iridescent_horror_tzeentch",
           name = "Iridescent Horror (Tzeentch)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -15022,6 +15989,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_plagueridden_death_0",
           land_unit_key = "wh3_main_nur_cha_plagueridden_death_0",
+          agent_subtype = "wh3_main_nur_plagueridden_death",
           name = "Plagueridden (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -15030,6 +15998,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_plagueridden_nurgle_0",
           land_unit_key = "wh3_main_nur_cha_plagueridden_nurgle_0",
+          agent_subtype = "wh3_main_nur_plagueridden_nurgle",
           name = "Plagueridden (Nurgle)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -15038,6 +16007,7 @@ return {
         {
           unit_key = "wh3_main_kho_cha_herald_of_khorne_0",
           land_unit_key = "wh3_main_kho_cha_herald_of_khorne_0",
+          agent_subtype = "wh3_main_kho_herald_of_khorne",
           name = "Herald of Khorne",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -15046,6 +16016,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_herald_of_nurgle_death_0",
           land_unit_key = "wh3_main_nur_cha_herald_of_nurgle_death_0",
+          agent_subtype = "wh3_main_nur_herald_of_nurgle_death",
           name = "Herald of Nurgle (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -15054,6 +16025,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_herald_of_nurgle_nurgle_0",
           land_unit_key = "wh3_main_nur_cha_herald_of_nurgle_nurgle_0",
+          agent_subtype = "wh3_main_nur_herald_of_nurgle_nurgle",
           name = "Herald of Nurgle (Nurgle)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -15062,6 +16034,7 @@ return {
         {
           unit_key = "wh3_main_sla_cha_herald_of_slaanesh_shadow_0",
           land_unit_key = "wh3_main_sla_cha_herald_of_slaanesh_shadow_0",
+          agent_subtype = "wh3_main_sla_herald_of_slaanesh_shadow",
           name = "Herald of Slaanesh (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -15070,6 +16043,7 @@ return {
         {
           unit_key = "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
           land_unit_key = "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+          agent_subtype = "wh3_main_sla_herald_of_slaanesh_slaanesh",
           name = "Herald of Slaanesh (Slaanesh)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -15078,6 +16052,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_herald_of_tzeentch_metal_0",
           land_unit_key = "wh3_main_tze_cha_herald_of_tzeentch_metal_0",
+          agent_subtype = "wh3_main_tze_herald_of_tzeentch_metal",
           name = "Herald of Tzeentch (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -15086,6 +16061,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_herald_of_tzeentch_tzeentch_0",
           land_unit_key = "wh3_main_tze_cha_herald_of_tzeentch_tzeentch_0",
+          agent_subtype = "wh3_main_tze_herald_of_tzeentch_tzeentch",
           name = "Herald of Tzeentch (Tzeentch)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -15094,6 +16070,7 @@ return {
         {
           unit_key = "wh3_main_kho_veh_blood_shrine_0",
           land_unit_key = "wh3_main_kho_veh_blood_shrine_0",
+          agent_subtype = "",
           name = "Blood Shrine of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -15102,6 +16079,7 @@ return {
         {
           unit_key = "wh3_main_sla_veh_exalted_seeker_chariot_0",
           land_unit_key = "wh3_main_sla_veh_exalted_seeker_chariot_0",
+          agent_subtype = "",
           name = "Exalted Seeker Chariot",
           category = "chariot",
           category_raw = "melee",
@@ -15110,6 +16088,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_gorebeast_chariot",
           land_unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -15118,6 +16097,7 @@ return {
         {
           unit_key = "wh3_main_sla_veh_hellflayer_0",
           land_unit_key = "wh3_main_sla_veh_hellflayer_0",
+          agent_subtype = "",
           name = "Hellflayers",
           category = "chariot",
           category_raw = "melee",
@@ -15126,6 +16106,7 @@ return {
         {
           unit_key = "wh3_main_sla_veh_seeker_chariot_0",
           land_unit_key = "wh3_main_sla_veh_seeker_chariot_0",
+          agent_subtype = "",
           name = "Seeker Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -15134,6 +16115,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
           land_unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          agent_subtype = "",
           name = "Centigors of Tzeentch",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -15142,6 +16124,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_chaos_knights_0",
           land_unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights of Tzeentch",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -15150,6 +16133,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
+          agent_subtype = "",
           name = "Heartseekers of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -15158,6 +16142,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_hellstriders_0",
           land_unit_key = "wh3_main_sla_cav_hellstriders_0",
+          agent_subtype = "",
           name = "Hellstriders of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -15166,6 +16151,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_hellstriders_1",
           land_unit_key = "wh3_main_sla_cav_hellstriders_1",
+          agent_subtype = "",
           name = "Hellstriders of Slaanesh (Hellscourges)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -15174,6 +16160,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          agent_subtype = "",
           name = "Marauder Horsemen of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -15182,6 +16169,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
           land_unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          agent_subtype = "",
           name = "Pleasureseekers",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -15190,6 +16178,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_cav_rot_knights",
           land_unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          agent_subtype = "",
           name = "Rot Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -15198,6 +16187,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_seekers_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_cav_seekers_of_slaanesh_0",
+          agent_subtype = "",
           name = "Seekers of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -15206,6 +16196,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_bloodletters_0",
           land_unit_key = "wh3_main_kho_inf_bloodletters_0",
+          agent_subtype = "",
           name = "Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15214,6 +16205,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_0",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15222,6 +16214,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_2",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15230,6 +16223,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_1",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15238,6 +16232,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15246,6 +16241,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          agent_subtype = "",
           name = "Chaos Warriors of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15254,6 +16250,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          agent_subtype = "",
           name = "Chaos Warriors of Tzeentch (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15262,6 +16259,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_daemonette_0",
           land_unit_key = "wh3_main_sla_inf_daemonette_0",
+          agent_subtype = "",
           name = "Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15270,6 +16268,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_marauders_0",
           land_unit_key = "wh3_main_sla_inf_marauders_0",
+          agent_subtype = "",
           name = "Devoted Marauders of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15278,6 +16277,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_marauders_2",
           land_unit_key = "wh3_main_sla_inf_marauders_2",
+          agent_subtype = "",
           name = "Devoted Marauders of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15286,6 +16286,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_marauders_1",
           land_unit_key = "wh3_main_sla_inf_marauders_1",
+          agent_subtype = "",
           name = "Devoted Marauders of Slaanesh (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15294,6 +16295,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_bloodletters_1",
           land_unit_key = "wh3_main_kho_inf_bloodletters_1",
+          agent_subtype = "",
           name = "Exalted Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15302,6 +16304,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_daemonette_1",
           land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          agent_subtype = "",
           name = "Exalted Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15310,6 +16313,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_plaguebearers_1",
           land_unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          agent_subtype = "",
           name = "Exalted Plaguebearers of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15318,6 +16322,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          agent_subtype = "",
           name = "Forsaken of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15326,6 +16331,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_forsaken_0",
           land_unit_key = "wh3_main_nur_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15334,6 +16340,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
           land_unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          agent_subtype = "",
           name = "Forsaken of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15342,6 +16349,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_forsaken_0",
           land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15350,6 +16358,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_khorngors",
           land_unit_key = "wh3_dlc26_kho_inf_khorngors",
+          agent_subtype = "",
           name = "Khorngors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15358,6 +16367,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          agent_subtype = "",
           name = "Marauders of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15366,6 +16376,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          agent_subtype = "",
           name = "Marauders of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15374,6 +16385,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          agent_subtype = "",
           name = "Marauders of Tzeentch (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15382,6 +16394,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_nurglings_0",
           land_unit_key = "wh3_main_nur_inf_nurglings_0",
+          agent_subtype = "",
           name = "Nurglings",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15390,6 +16403,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_pestigors",
           land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          agent_subtype = "",
           name = "Pestigors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15398,6 +16412,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_plague_toads_0",
           land_unit_key = "wh3_main_nur_mon_plague_toads_0",
+          agent_subtype = "",
           name = "Plague Toads of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15406,6 +16421,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_plaguebearers_0",
           land_unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          agent_subtype = "",
           name = "Plaguebearers of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15414,6 +16430,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_skullreapers",
           land_unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          agent_subtype = "",
           name = "Skullreapers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15422,6 +16439,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_slaangors",
           land_unit_key = "wh3_dlc27_sla_inf_slaangors",
+          agent_subtype = "",
           name = "Slaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15430,6 +16448,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_inf_tzaangors",
           land_unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          agent_subtype = "",
           name = "Tzaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15438,6 +16457,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_wrathmongers",
           land_unit_key = "wh3_dlc26_kho_inf_wrathmongers",
+          agent_subtype = "",
           name = "Wrathmongers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -15446,6 +16466,7 @@ return {
         {
           unit_key = "wh3_main_tze_veh_burning_chariot_0",
           land_unit_key = "wh3_main_tze_veh_burning_chariot_0",
+          agent_subtype = "",
           name = "Burning Chariot of Tzeentch",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -15454,6 +16475,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_blue_horrors_0",
           land_unit_key = "wh3_main_tze_inf_blue_horrors_0",
+          agent_subtype = "",
           name = "Blue Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -15462,6 +16484,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_pink_horrors_1",
           land_unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          agent_subtype = "",
           name = "Exalted Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -15470,6 +16493,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_pink_horrors_0",
           land_unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          agent_subtype = "",
           name = "Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -15478,6 +16502,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_soul_grinder_0",
           land_unit_key = "wh3_main_nur_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Nurgle",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -15486,6 +16511,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_soul_grinder_0",
           land_unit_key = "wh3_main_tze_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -15494,6 +16520,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
           land_unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
+          agent_subtype = "",
           name = "Beast of Nurgle",
           category = "monster",
           category_raw = "inf_melee",
@@ -15502,6 +16529,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_bloodthirster_0",
           land_unit_key = "wh3_main_kho_mon_bloodthirster_0",
+          agent_subtype = "",
           name = "Bloodthirster",
           category = "monster",
           category_raw = "inf_melee",
@@ -15510,6 +16538,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine",
+          agent_subtype = "",
           name = "Chaos Warshrine",
           category = "monster",
           category_raw = "war_beast",
@@ -15518,6 +16547,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          agent_subtype = "",
           name = "Chaos Warshrine of Khorne",
           category = "monster",
           category_raw = "war_beast",
@@ -15526,6 +16556,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          agent_subtype = "",
           name = "Chaos Warshrine of Nurgle",
           category = "monster",
           category_raw = "war_beast",
@@ -15534,6 +16565,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          agent_subtype = "",
           name = "Chaos Warshrine of Slaanesh",
           category = "monster",
           category_raw = "war_beast",
@@ -15542,6 +16574,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          agent_subtype = "",
           name = "Chaos Warshrine of Tzeentch",
           category = "monster",
           category_raw = "war_beast",
@@ -15550,6 +16583,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_cockatrice",
           land_unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          agent_subtype = "",
           name = "Cockatrice",
           category = "monster",
           category_raw = "inf_melee",
@@ -15558,6 +16592,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_exalted_flamers_0",
           land_unit_key = "wh3_main_tze_mon_exalted_flamer_0",
+          agent_subtype = "",
           name = "Exalted Flamer of Tzeentch",
           category = "monster",
           category_raw = "inf_ranged",
@@ -15566,6 +16601,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_great_unclean_one_0",
           land_unit_key = "wh3_main_nur_mon_great_unclean_one_0",
+          agent_subtype = "",
           name = "Great Unclean One",
           category = "monster",
           category_raw = "inf_melee",
@@ -15574,6 +16610,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
           land_unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          agent_subtype = "",
           name = "Keeper of Secrets",
           category = "monster",
           category_raw = "inf_melee",
@@ -15582,6 +16619,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_lord_of_change_0",
           land_unit_key = "wh3_main_tze_mon_lord_of_change_0",
+          agent_subtype = "",
           name = "Lord of Change",
           category = "monster",
           category_raw = "inf_melee",
@@ -15590,6 +16628,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
           land_unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          agent_subtype = "",
           name = "Mutalith Vortex Beast",
           category = "monster",
           category_raw = "inf_melee",
@@ -15598,6 +16637,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_soul_grinder_0",
           land_unit_key = "wh3_main_kho_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Khorne",
           category = "monster",
           category_raw = "inf_ranged",
@@ -15606,6 +16646,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_soul_grinder_0",
           land_unit_key = "wh3_main_sla_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Slaanesh",
           category = "monster",
           category_raw = "inf_melee",
@@ -15614,6 +16655,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_toad_dragon",
           land_unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          agent_subtype = "",
           name = "Toad Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -15622,6 +16664,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_bloodcrushers_0",
           land_unit_key = "wh3_main_kho_cav_bloodcrushers_0",
+          agent_subtype = "",
           name = "Bloodcrushers of Khorne",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -15630,6 +16673,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_doom_knights_0",
           land_unit_key = "wh3_main_tze_cav_doom_knights_0",
+          agent_subtype = "",
           name = "Doom Knights of Tzeentch",
           category = "monstrous_cavalry",
           category_raw = "inf_melee",
@@ -15638,6 +16682,7 @@ return {
         {
           unit_key = "wh3_main_nur_cav_plague_drones_0",
           land_unit_key = "wh3_main_nur_cav_plague_drones_0",
+          agent_subtype = "",
           name = "Plague Drones of Nurgle",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -15646,6 +16691,7 @@ return {
         {
           unit_key = "wh3_main_nur_cav_plague_drones_1",
           land_unit_key = "wh3_main_nur_cav_plague_drones_1",
+          agent_subtype = "",
           name = "Plague Drones of Nurgle (Death's Heads)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -15654,6 +16700,7 @@ return {
         {
           unit_key = "wh3_main_nur_cav_pox_riders_of_nurgle_0",
           land_unit_key = "wh3_main_nur_cav_pox_riders_of_nurgle_0",
+          agent_subtype = "",
           name = "Pox Riders of Nurgle",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -15662,6 +16709,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_skullcrushers_0",
           land_unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          agent_subtype = "",
           name = "Skullcrushers of Khorne",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -15670,6 +16718,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_bile_trolls",
           land_unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          agent_subtype = "",
           name = "Bile Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15678,6 +16727,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
           land_unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          agent_subtype = "",
           name = "Bloodbeasts of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15686,6 +16736,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
           land_unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          agent_subtype = "",
           name = "Champions Of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15694,6 +16745,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
           land_unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          agent_subtype = "",
           name = "Changebringers",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15702,6 +16754,7 @@ return {
         {
           unit_key = "wh3_main_dae_inf_chaos_furies_0",
           land_unit_key = "wh3_main_dae_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15710,6 +16763,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_furies_0",
           land_unit_key = "wh3_main_kho_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Khorne)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15718,6 +16772,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_chaos_furies_0",
           land_unit_key = "wh3_main_nur_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Nurgle)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15726,6 +16781,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_chaos_furies_0",
           land_unit_key = "wh3_main_sla_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Slaanesh)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15734,6 +16790,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_chaos_furies_0",
           land_unit_key = "wh3_main_tze_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Tzeentch)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15742,6 +16799,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          agent_subtype = "",
           name = "Fiends of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15750,6 +16808,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_flamers_0",
           land_unit_key = "wh3_main_tze_mon_flamers_0",
+          agent_subtype = "",
           name = "Flamers of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -15758,6 +16817,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_khornataurs_0",
           land_unit_key = "wh3_main_kho_mon_khornataurs_0",
+          agent_subtype = "",
           name = "Minotaurs of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15766,6 +16826,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_khornataurs_1",
           land_unit_key = "wh3_main_kho_mon_khornataurs_1",
+          agent_subtype = "",
           name = "Minotaurs of Khorne (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15774,6 +16835,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          agent_subtype = "",
           name = "Plague Ogres",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15782,6 +16844,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          agent_subtype = "",
           name = "Plague Ogres (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15790,6 +16853,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_rot_flies_0",
           land_unit_key = "wh3_main_nur_mon_rot_flies_0",
+          agent_subtype = "",
           name = "Rot Flies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15798,6 +16862,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_screamers_0",
           land_unit_key = "wh3_main_tze_mon_screamers_0",
+          agent_subtype = "",
           name = "Screamers of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15806,6 +16871,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
           land_unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          agent_subtype = "",
           name = "Slaughterbrute",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15814,6 +16880,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
           land_unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          agent_subtype = "",
           name = "Spawn of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15822,6 +16889,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
           land_unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          agent_subtype = "",
           name = "Spawn of Nurgle",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15830,6 +16898,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          agent_subtype = "",
           name = "Spawn of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15838,6 +16907,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
           land_unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          agent_subtype = "",
           name = "Spawn of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -15846,6 +16916,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Chaos Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -15854,6 +16925,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warhounds_0",
           land_unit_key = "wh3_main_kho_inf_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds of Khorne",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -15862,6 +16934,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
           land_unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
+          agent_subtype = "",
           name = "Flesh Hounds of Khorne",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -16028,6 +17101,7 @@ return {
         {
           unit_key = "wh2_main_def_cha_death_hag_0",
           land_unit_key = "wh2_main_def_cha_death_hag_0",
+          agent_subtype = "wh2_main_def_death_hag",
           name = "Death Hag",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -16036,6 +17110,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_cha_druchii_anointed",
           land_unit_key = "wh3_dlc27_sla_cha_druchii_anointed",
+          agent_subtype = "wh3_dlc27_sla_druchii_anointed",
           name = "Druchii Anointed",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -16044,6 +17119,7 @@ return {
         {
           unit_key = "wh2_main_def_cha_khainite_assassin_0",
           land_unit_key = "wh2_main_def_cha_khainite_assassin_0",
+          agent_subtype = "wh2_main_def_khainite_assassin",
           name = "Khainite Assassin",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -16052,6 +17128,7 @@ return {
         {
           unit_key = "wh2_dlc14_def_cha_master_0",
           land_unit_key = "wh2_dlc14_def_cha_master_0",
+          agent_subtype = "wh2_dlc14_def_master",
           name = "Master",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -16060,6 +17137,7 @@ return {
         {
           unit_key = "wh2_main_def_cha_sorceress_dark_0",
           land_unit_key = "wh2_main_def_cha_sorceress_dark_0",
+          agent_subtype = "wh2_main_def_sorceress_dark",
           name = "Sorceress (Dark)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -16068,6 +17146,7 @@ return {
         {
           unit_key = "wh2_main_def_cha_dreadlord_0",
           land_unit_key = "wh2_main_def_cha_dreadlord_0",
+          agent_subtype = "wh2_main_def_dreadlord",
           name = "Dreadlord (Sword & Crossbow)",
           category = "character_lord",
           category_raw = "inf_ranged",
@@ -16076,6 +17155,7 @@ return {
         {
           unit_key = "wh2_dlc14_def_cha_high_beastmaster_0",
           land_unit_key = "wh2_dlc14_def_cha_high_beastmaster_0",
+          agent_subtype = "wh2_dlc14_def_high_beastmaster",
           name = "High Beastmaster",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -16084,6 +17164,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_cha_supreme_sorceress_dark_0",
           land_unit_key = "wh2_dlc10_def_cha_supreme_sorceress_dark_0",
+          agent_subtype = "wh2_dlc10_def_supreme_sorceress_dark",
           name = "Supreme Sorceress (Dark)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -16092,6 +17173,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_cha_supreme_sorceress_fire_0",
           land_unit_key = "wh2_dlc10_def_cha_supreme_sorceress_fire_0",
+          agent_subtype = "wh2_dlc10_def_supreme_sorceress_fire",
           name = "Supreme Sorceress (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -16100,6 +17182,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_cha_supreme_sorceress_shadow_0",
           land_unit_key = "wh2_dlc10_def_cha_supreme_sorceress_shadow_0",
+          agent_subtype = "wh2_dlc10_def_supreme_sorceress_shadow",
           name = "Supreme Sorceress (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -16108,6 +17191,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_cold_one_knights_1",
           land_unit_key = "wh2_main_def_cav_cold_one_knights_1",
+          agent_subtype = "",
           name = "Cold One Dread Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -16116,6 +17200,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_cold_one_knights_0",
           land_unit_key = "wh2_main_def_cav_cold_one_knights_0",
+          agent_subtype = "",
           name = "Cold One Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -16124,6 +17209,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_dark_riders_0",
           land_unit_key = "wh2_main_def_cav_dark_riders_0",
+          agent_subtype = "",
           name = "Dark Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -16132,6 +17218,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_dark_riders_1",
           land_unit_key = "wh2_main_def_cav_dark_riders_1",
+          agent_subtype = "",
           name = "Dark Riders (Shields)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -16140,6 +17227,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_cav_doomfire_warlocks_0",
           land_unit_key = "wh2_dlc10_def_cav_doomfire_warlocks_0",
+          agent_subtype = "",
           name = "Doomfire Warlocks",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -16148,6 +17236,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_black_ark_corsairs_0",
           land_unit_key = "wh2_main_def_inf_black_ark_corsairs_0",
+          agent_subtype = "",
           name = "Black Ark Corsairs",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16156,6 +17245,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_black_guard_0",
           land_unit_key = "wh2_main_def_inf_black_guard_0",
+          agent_subtype = "",
           name = "Black Guard of Naggarond",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16164,6 +17254,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_bleakswords_0",
           land_unit_key = "wh2_main_def_inf_bleakswords_0",
+          agent_subtype = "",
           name = "Bleakswords",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16172,6 +17263,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_daemonette_0",
           land_unit_key = "wh3_main_sla_inf_daemonette_0",
+          agent_subtype = "",
           name = "Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16180,6 +17272,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh",
           land_unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh",
+          agent_subtype = "",
           name = "Devotees of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16188,6 +17281,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_dreadspears_0",
           land_unit_key = "wh2_main_def_inf_dreadspears_0",
+          agent_subtype = "",
           name = "Dreadspears",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16196,6 +17290,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_daemonette_1",
           land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          agent_subtype = "",
           name = "Exalted Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16204,6 +17299,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_har_ganeth_executioners_0",
           land_unit_key = "wh2_main_def_inf_har_ganeth_executioners_0",
+          agent_subtype = "",
           name = "Har Ganeth Executioners",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16212,6 +17308,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_inf_sisters_of_slaughter",
           land_unit_key = "wh2_dlc10_def_inf_sisters_of_slaughter",
+          agent_subtype = "",
           name = "Sisters of Slaughter",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16220,6 +17317,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_witch_elves_0",
           land_unit_key = "wh2_main_def_inf_witch_elves_0",
+          agent_subtype = "",
           name = "Witch Elves",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16228,6 +17326,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_dark_riders_2",
           land_unit_key = "wh2_main_def_cav_dark_riders_2",
+          agent_subtype = "",
           name = "Dark Riders (Repeater Crossbows)",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -16236,6 +17335,7 @@ return {
         {
           unit_key = "wh2_main_def_cav_cold_one_chariot",
           land_unit_key = "wh2_main_def_cav_cold_one_chariot",
+          agent_subtype = "",
           name = "Cold One Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -16244,6 +17344,7 @@ return {
         {
           unit_key = "wh2_dlc14_def_cav_scourgerunner_chariot_0",
           land_unit_key = "wh2_dlc14_def_cav_scourgerunner_chariot_0",
+          agent_subtype = "",
           name = "Scourgerunner Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -16252,6 +17353,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_black_ark_corsairs_1",
           land_unit_key = "wh2_main_def_inf_black_ark_corsairs_1",
+          agent_subtype = "",
           name = "Black Ark Corsairs (Handbows)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -16260,6 +17362,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_darkshards_0",
           land_unit_key = "wh2_main_def_inf_darkshards_0",
+          agent_subtype = "",
           name = "Darkshards",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -16268,6 +17371,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_darkshards_1",
           land_unit_key = "wh2_main_def_inf_darkshards_1",
+          agent_subtype = "",
           name = "Darkshards (Shields)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -16276,6 +17380,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh_crossbows",
           land_unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh_crossbows",
+          agent_subtype = "",
           name = "Devotees of Slaanesh (Crossbows)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -16284,6 +17389,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_shades_0",
           land_unit_key = "wh2_main_def_inf_shades_0",
+          agent_subtype = "",
           name = "Shades",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -16292,6 +17398,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_shades_1",
           land_unit_key = "wh2_main_def_inf_shades_1",
+          agent_subtype = "",
           name = "Shades (Dual Weapons)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -16300,6 +17407,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_shades_2",
           land_unit_key = "wh2_main_def_inf_shades_2",
+          agent_subtype = "",
           name = "Shades (Greatswords)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -16308,6 +17416,7 @@ return {
         {
           unit_key = "wh2_main_def_mon_black_dragon",
           land_unit_key = "wh2_main_def_mon_black_dragon",
+          agent_subtype = "",
           name = "Black Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -16316,6 +17425,7 @@ return {
         {
           unit_key = "wh2_dlc14_def_mon_bloodwrack_medusa_0",
           land_unit_key = "wh2_dlc14_def_mon_bloodwrack_medusa_0",
+          agent_subtype = "",
           name = "Bloodwrack Medusa",
           category = "monster",
           category_raw = "inf_melee",
@@ -16324,6 +17434,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_mon_feral_manticore_0",
           land_unit_key = "wh2_dlc10_def_mon_feral_manticore_0",
+          agent_subtype = "",
           name = "Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -16332,6 +17443,7 @@ return {
         {
           unit_key = "wh2_dlc10_def_mon_kharibdyss_0",
           land_unit_key = "wh2_dlc10_def_mon_kharibdyss_0",
+          agent_subtype = "",
           name = "Kharibdyss",
           category = "monster",
           category_raw = "inf_melee",
@@ -16340,6 +17452,7 @@ return {
         {
           unit_key = "wh2_main_def_mon_war_hydra",
           land_unit_key = "wh2_main_def_mon_war_hydra_0",
+          agent_subtype = "",
           name = "War Hydra",
           category = "monster",
           category_raw = "inf_melee",
@@ -16348,6 +17461,7 @@ return {
         {
           unit_key = "wh2_main_def_inf_harpies",
           land_unit_key = "wh2_main_def_inf_harpies",
+          agent_subtype = "",
           name = "Harpies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -16356,6 +17470,7 @@ return {
         {
           unit_key = "wh2_dlc14_def_veh_bloodwrack_shrine_0",
           land_unit_key = "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+          agent_subtype = "",
           name = "Bloodwrack Shrine",
           category = "war_machine",
           category_raw = "war_machine",
@@ -16364,6 +17479,7 @@ return {
         {
           unit_key = "wh2_main_def_art_reaper_bolt_thrower",
           land_unit_key = "wh2_main_def_art_reaper_bolt_thrower",
+          agent_subtype = "",
           name = "Reaper Bolt Throwers",
           category = "war_machine",
           category_raw = "artillery",
@@ -16452,6 +17568,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_death",
           name = "Chaos Sorcerer (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -16460,6 +17577,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_fire",
           name = "Chaos Sorcerer (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -16468,6 +17586,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_metal",
           name = "Chaos Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -16476,6 +17595,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
+          agent_subtype = "wh_dlc07_chs_chaos_sorcerer_shadow",
           name = "Chaos Sorcerer (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -16484,6 +17604,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_exalted_hero_0",
           land_unit_key = "wh_main_chs_cha_exalted_hero_0",
+          agent_subtype = "wh_main_chs_exalted_hero",
           name = "Exalted Hero",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -16492,6 +17613,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_lord_0",
           land_unit_key = "wh_main_chs_cha_chaos_lord_0",
+          agent_subtype = "wh_dlc08_chs_challenger_khorne",
           name = "Chaos Lord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -16500,6 +17622,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_death",
           name = "Chaos Sorcerer Lord (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -16508,6 +17631,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_fire",
           name = "Chaos Sorcerer Lord (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -16516,6 +17640,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_metal",
           name = "Chaos Sorcerer Lord (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -16524,6 +17649,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
+          agent_subtype = "wh_dlc07_chs_sorcerer_lord_shadow",
           name = "Chaos Sorcerer Lord (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -16532,6 +17658,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_chariot",
           land_unit_key = "wh_main_chs_cav_chaos_chariot",
+          agent_subtype = "",
           name = "Chaos Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -16540,6 +17667,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
+          agent_subtype = "",
           name = "Chaos Chariots of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -16548,6 +17676,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
+          agent_subtype = "",
           name = "Chaos Chariots of Nurgle",
           category = "chariot",
           category_raw = "melee",
@@ -16556,6 +17685,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
+          agent_subtype = "",
           name = "Chaos Chariots of Slaanesh",
           category = "chariot",
           category_raw = "melee",
@@ -16564,6 +17694,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
+          agent_subtype = "",
           name = "Chaos Chariots of Tzeentch",
           category = "chariot",
           category_raw = "melee",
@@ -16572,6 +17703,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
           land_unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -16580,6 +17712,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_gorebeast_chariot",
           land_unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -16588,6 +17721,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
           land_unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          agent_subtype = "",
           name = "Centigors of Tzeentch",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -16596,6 +17730,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_0",
           land_unit_key = "wh_main_chs_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16604,6 +17739,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_1",
           land_unit_key = "wh_main_chs_cav_chaos_knights_1",
+          agent_subtype = "",
           name = "Chaos Knights (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16612,6 +17748,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
+          agent_subtype = "",
           name = "Chaos Knights of Khorne",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16620,6 +17757,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Khorne (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16628,6 +17766,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          agent_subtype = "",
           name = "Chaos Knights of Nurgle",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16636,6 +17775,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Nurgle (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16644,6 +17784,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
+          agent_subtype = "",
           name = "Chaos Knights of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16652,6 +17793,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Slaanesh (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16660,6 +17802,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Tzeentch (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16668,6 +17811,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_hellstriders_0",
           land_unit_key = "wh3_main_sla_cav_hellstriders_0",
+          agent_subtype = "",
           name = "Hellstriders of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16676,6 +17820,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_hellstriders_1",
           land_unit_key = "wh3_main_sla_cav_hellstriders_1",
+          agent_subtype = "",
           name = "Hellstriders of Slaanesh (Hellscourges)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16684,6 +17829,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          agent_subtype = "",
           name = "Marauder Horsemen of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16692,6 +17838,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
           land_unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          agent_subtype = "",
           name = "Pleasureseekers",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16700,6 +17847,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_cav_rot_knights",
           land_unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          agent_subtype = "",
           name = "Rot Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -16708,6 +17856,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
           land_unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
+          agent_subtype = "",
           name = "Aspiring Champions",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16716,6 +17865,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_bloodletters_0",
           land_unit_key = "wh3_main_kho_inf_bloodletters_0",
+          agent_subtype = "",
           name = "Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16724,6 +17874,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_0",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16732,6 +17883,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
           land_unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16740,6 +17892,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_1",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16748,6 +17901,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_0",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16756,6 +17910,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_2",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16764,6 +17919,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_1",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16772,6 +17928,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16780,6 +17937,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16788,6 +17946,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
+          agent_subtype = "",
           name = "Chaos Warriors of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16796,6 +17955,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          agent_subtype = "",
           name = "Chaos Warriors of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16804,6 +17964,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
+          agent_subtype = "",
           name = "Chaos Warriors of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16812,6 +17973,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          agent_subtype = "",
           name = "Chaos Warriors of Tzeentch (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16820,6 +17982,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_0",
           land_unit_key = "wh_main_chs_inf_chosen_0",
+          agent_subtype = "",
           name = "Chosen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16828,6 +17991,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_1",
           land_unit_key = "wh_main_chs_inf_chosen_1",
+          agent_subtype = "",
           name = "Chosen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16836,6 +18000,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chosen_2",
           land_unit_key = "wh_dlc01_chs_inf_chosen_2",
+          agent_subtype = "",
           name = "Chosen (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16844,6 +18009,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
+          agent_subtype = "",
           name = "Chosen of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16852,6 +18018,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
+          agent_subtype = "",
           name = "Chosen of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16860,6 +18027,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
+          agent_subtype = "",
           name = "Chosen of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16868,6 +18036,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chosen of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16876,6 +18045,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_msla",
+          agent_subtype = "",
           name = "Chosen of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16884,6 +18054,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+          agent_subtype = "",
           name = "Chosen of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16892,6 +18063,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
+          agent_subtype = "",
           name = "Chosen of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16900,6 +18072,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
+          agent_subtype = "",
           name = "Chosen of Tzeentch (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16908,6 +18081,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_daemonette_0",
           land_unit_key = "wh3_main_sla_inf_daemonette_0",
+          agent_subtype = "",
           name = "Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16916,6 +18090,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_bloodletters_1",
           land_unit_key = "wh3_main_kho_inf_bloodletters_1",
+          agent_subtype = "",
           name = "Exalted Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16924,6 +18099,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_daemonette_1",
           land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          agent_subtype = "",
           name = "Exalted Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16932,6 +18108,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_plaguebearers_1",
           land_unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          agent_subtype = "",
           name = "Exalted Plaguebearers of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16940,6 +18117,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_forsaken_0",
           land_unit_key = "wh_dlc01_chs_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16948,6 +18126,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          agent_subtype = "",
           name = "Forsaken of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16956,6 +18135,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_forsaken_0_warriors",
           land_unit_key = "wh3_main_nur_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16964,6 +18144,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
           land_unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          agent_subtype = "",
           name = "Forsaken of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16972,6 +18153,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_forsaken_0",
           land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16980,6 +18162,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_khorngors",
           land_unit_key = "wh3_dlc26_kho_inf_khorngors",
+          agent_subtype = "",
           name = "Khorngors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16988,6 +18171,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          agent_subtype = "",
           name = "Marauder Bearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -16996,6 +18180,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          agent_subtype = "",
           name = "Marauder Bearmen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17004,6 +18189,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_0",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_0",
+          agent_subtype = "",
           name = "Marauders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17012,6 +18198,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_1",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_1",
+          agent_subtype = "",
           name = "Marauders (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17020,6 +18207,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
+          agent_subtype = "",
           name = "Marauders of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17028,6 +18216,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          agent_subtype = "",
           name = "Marauders of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17036,6 +18225,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          agent_subtype = "",
           name = "Marauders of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17044,6 +18234,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          agent_subtype = "",
           name = "Marauders of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17052,6 +18243,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla",
+          agent_subtype = "",
           name = "Marauders of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17060,6 +18252,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges",
+          agent_subtype = "",
           name = "Marauders of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17068,6 +18261,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
+          agent_subtype = "",
           name = "Marauders of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17076,6 +18270,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          agent_subtype = "",
           name = "Marauders of Tzeentch (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17084,6 +18279,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_pestigors",
           land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          agent_subtype = "",
           name = "Pestigors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17092,6 +18288,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_plaguebearers_0",
           land_unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          agent_subtype = "",
           name = "Plaguebearers of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17100,6 +18297,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_skullreapers",
           land_unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          agent_subtype = "",
           name = "Skullreapers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17108,6 +18306,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_slaangors",
           land_unit_key = "wh3_dlc27_sla_inf_slaangors",
+          agent_subtype = "",
           name = "Slaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17116,6 +18315,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_inf_tzaangors",
           land_unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          agent_subtype = "",
           name = "Tzaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17124,6 +18324,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
           land_unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
+          agent_subtype = "",
           name = "Marauder Horsemasters",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -17132,6 +18333,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_0",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_0",
+          agent_subtype = "",
           name = "Marauder Horsemen",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -17140,6 +18342,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_1",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_1",
+          agent_subtype = "",
           name = "Marauder Horsemen (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -17148,6 +18351,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
+          agent_subtype = "",
           name = "Marauder Horsemen of Khorne (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -17156,6 +18360,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
+          agent_subtype = "",
           name = "Marauder Horsemen of Nurgle (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -17164,6 +18369,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
+          agent_subtype = "",
           name = "Marauder Horsemen of Tzeentch",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -17172,6 +18378,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_pink_horrors_1",
           land_unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          agent_subtype = "",
           name = "Exalted Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -17180,6 +18387,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_pink_horrors_0",
           land_unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          agent_subtype = "",
           name = "Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -17188,6 +18396,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_feral_manticore",
           land_unit_key = "wh_dlc06_chs_feral_manticore",
+          agent_subtype = "",
           name = "Chaos Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -17196,6 +18405,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_giant",
           land_unit_key = "wh_main_chs_mon_giant",
+          agent_subtype = "",
           name = "Chaos Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -17204,6 +18414,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine",
+          agent_subtype = "",
           name = "Chaos Warshrine",
           category = "monster",
           category_raw = "war_beast",
@@ -17212,6 +18423,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          agent_subtype = "",
           name = "Chaos Warshrine of Khorne",
           category = "monster",
           category_raw = "war_beast",
@@ -17220,6 +18432,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          agent_subtype = "",
           name = "Chaos Warshrine of Nurgle",
           category = "monster",
           category_raw = "war_beast",
@@ -17228,6 +18441,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          agent_subtype = "",
           name = "Chaos Warshrine of Slaanesh",
           category = "monster",
           category_raw = "war_beast",
@@ -17236,6 +18450,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          agent_subtype = "",
           name = "Chaos Warshrine of Tzeentch",
           category = "monster",
           category_raw = "war_beast",
@@ -17244,6 +18459,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_chimera",
           land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          agent_subtype = "",
           name = "Chimera",
           category = "monster",
           category_raw = "inf_melee",
@@ -17252,6 +18468,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_cockatrice",
           land_unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          agent_subtype = "",
           name = "Cockatrice",
           category = "monster",
           category_raw = "inf_melee",
@@ -17260,6 +18477,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_mon_dragon_ogre_shaggoth",
           land_unit_key = "wh_dlc01_chs_mon_dragon_ogre_shaggoth",
+          agent_subtype = "",
           name = "Dragon Ogre Shaggoth",
           category = "monster",
           category_raw = "inf_melee",
@@ -17268,6 +18486,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -17276,6 +18495,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -17284,6 +18504,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
           land_unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          agent_subtype = "",
           name = "Mutalith Vortex Beast",
           category = "monster",
           category_raw = "inf_melee",
@@ -17292,6 +18513,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_toad_dragon",
           land_unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          agent_subtype = "",
           name = "Toad Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -17300,6 +18522,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_doom_knights_0",
           land_unit_key = "wh3_main_tze_cav_doom_knights_0",
+          agent_subtype = "",
           name = "Doom Knights of Tzeentch",
           category = "monstrous_cavalry",
           category_raw = "inf_melee",
@@ -17308,6 +18531,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_skullcrushers_0",
           land_unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          agent_subtype = "",
           name = "Skullcrushers of Khorne",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -17316,6 +18540,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_bile_trolls",
           land_unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          agent_subtype = "",
           name = "Bile Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17324,6 +18549,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
           land_unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          agent_subtype = "",
           name = "Bloodbeasts of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17332,6 +18558,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
           land_unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          agent_subtype = "",
           name = "Champions Of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17340,6 +18567,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
           land_unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          agent_subtype = "",
           name = "Changebringers",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17348,6 +18576,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_spawn",
           land_unit_key = "wh_main_chs_mon_chaos_spawn",
+          agent_subtype = "",
           name = "Chaos Spawn",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17356,6 +18585,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_trolls",
           land_unit_key = "wh_main_chs_mon_trolls",
+          agent_subtype = "",
           name = "Chaos Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17364,6 +18594,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_mon_trolls_1",
           land_unit_key = "wh_dlc01_chs_mon_trolls_1",
+          agent_subtype = "",
           name = "Chaos Trolls (Armoured)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17372,6 +18603,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_mon_dragon_ogre",
           land_unit_key = "wh_dlc01_chs_mon_dragon_ogre",
+          agent_subtype = "",
           name = "Dragon Ogres",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17380,6 +18612,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          agent_subtype = "",
           name = "Plague Ogres",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17388,6 +18621,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          agent_subtype = "",
           name = "Plague Ogres (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17396,6 +18630,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
           land_unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          agent_subtype = "",
           name = "Slaughterbrute",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17404,6 +18639,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
           land_unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          agent_subtype = "",
           name = "Spawn of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17412,6 +18648,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0_warriors",
           land_unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          agent_subtype = "",
           name = "Spawn of Nurgle",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17420,6 +18657,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          agent_subtype = "",
           name = "Spawn of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17428,6 +18666,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
           land_unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          agent_subtype = "",
           name = "Spawn of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17436,6 +18675,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_0",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -17444,6 +18684,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Chaos Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -17452,6 +18693,7 @@ return {
         {
           unit_key = "wh_main_chs_art_hellcannon",
           land_unit_key = "wh_main_chs_art_hellcannon",
+          agent_subtype = "",
           name = "Hellcannon",
           category = "war_machine",
           category_raw = "artillery",
@@ -17651,6 +18893,7 @@ return {
         {
           unit_key = "wh3_main_kho_veh_skullcannon_0",
           land_unit_key = "wh3_main_kho_veh_skullcannon_0",
+          agent_subtype = "",
           name = "Skullcannon",
           category = "artillery",
           category_raw = "artillery",
@@ -17659,6 +18902,7 @@ return {
         {
           unit_key = "wh3_main_kho_cha_bloodreaper_0",
           land_unit_key = "wh3_main_kho_cha_bloodreaper_0",
+          agent_subtype = "wh3_main_kho_bloodreaper",
           name = "Bloodreaper",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -17667,6 +18911,7 @@ return {
         {
           unit_key = "wh3_main_kho_cha_cultist_0",
           land_unit_key = "wh3_main_kho_cha_cultist_0",
+          agent_subtype = "wh3_main_kho_cultist",
           name = "Cultist of Khorne",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -17675,6 +18920,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_cha_bloodspeaker",
           land_unit_key = "wh3_dlc26_kho_cha_bloodspeaker",
+          agent_subtype = "wh3_dlc26_kho_bloodspeaker",
           name = "Bloodspeaker",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -17683,6 +18929,7 @@ return {
         {
           unit_key = "wh3_main_kho_cha_herald_of_khorne_0",
           land_unit_key = "wh3_main_kho_cha_herald_of_khorne_0",
+          agent_subtype = "wh3_main_kho_herald_of_khorne",
           name = "Herald of Khorne",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -17691,6 +18938,7 @@ return {
         {
           unit_key = "wh3_main_kho_veh_blood_shrine_0",
           land_unit_key = "wh3_main_kho_veh_blood_shrine_0",
+          agent_subtype = "",
           name = "Blood Shrine of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -17699,6 +18947,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
+          agent_subtype = "",
           name = "Chaos Chariots of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -17707,6 +18956,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_gorebeast_chariot",
           land_unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -17715,6 +18965,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
+          agent_subtype = "",
           name = "Chaos Knights of Khorne",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -17723,6 +18974,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Khorne (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -17731,6 +18983,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_bloodletters_0",
           land_unit_key = "wh3_main_kho_inf_bloodletters_0",
+          agent_subtype = "",
           name = "Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17739,6 +18992,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_0",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17747,6 +19001,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_2",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17755,6 +19010,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_1",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17763,6 +19019,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
+          agent_subtype = "",
           name = "Chosen of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17771,6 +19028,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
+          agent_subtype = "",
           name = "Chosen of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17779,6 +19037,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_bloodletters_1",
           land_unit_key = "wh3_main_kho_inf_bloodletters_1",
+          agent_subtype = "",
           name = "Exalted Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17787,6 +19046,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          agent_subtype = "",
           name = "Forsaken of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17795,6 +19055,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_khorngors",
           land_unit_key = "wh3_dlc26_kho_inf_khorngors",
+          agent_subtype = "",
           name = "Khorngors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17803,6 +19064,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
+          agent_subtype = "",
           name = "Marauders of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17811,6 +19073,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          agent_subtype = "",
           name = "Marauders of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17819,6 +19082,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_skullreapers",
           land_unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          agent_subtype = "",
           name = "Skullreapers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17827,6 +19091,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_wrathmongers",
           land_unit_key = "wh3_dlc26_kho_inf_wrathmongers",
+          agent_subtype = "",
           name = "Wrathmongers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -17835,6 +19100,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
+          agent_subtype = "",
           name = "Marauder Horsemen of Khorne (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -17843,6 +19109,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_bloodthirster_0",
           land_unit_key = "wh3_main_kho_mon_bloodthirster_0",
+          agent_subtype = "",
           name = "Bloodthirster",
           category = "monster",
           category_raw = "inf_melee",
@@ -17851,6 +19118,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          agent_subtype = "",
           name = "Chaos Warshrine of Khorne",
           category = "monster",
           category_raw = "war_beast",
@@ -17859,6 +19127,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_soul_grinder_0",
           land_unit_key = "wh3_main_kho_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Khorne",
           category = "monster",
           category_raw = "inf_ranged",
@@ -17867,6 +19136,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_bloodcrushers_0",
           land_unit_key = "wh3_main_kho_cav_bloodcrushers_0",
+          agent_subtype = "",
           name = "Bloodcrushers of Khorne",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -17875,6 +19145,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_skullcrushers_0",
           land_unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          agent_subtype = "",
           name = "Skullcrushers of Khorne",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -17883,6 +19154,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
           land_unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          agent_subtype = "",
           name = "Bloodbeasts of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17891,6 +19163,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_furies_0",
           land_unit_key = "wh3_main_kho_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Khorne)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17899,6 +19172,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_khornataurs_0",
           land_unit_key = "wh3_main_kho_mon_khornataurs_0",
+          agent_subtype = "",
           name = "Minotaurs of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17907,6 +19181,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_khornataurs_1",
           land_unit_key = "wh3_main_kho_mon_khornataurs_1",
+          agent_subtype = "",
           name = "Minotaurs of Khorne (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17915,6 +19190,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
           land_unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          agent_subtype = "",
           name = "Slaughterbrute",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17923,6 +19199,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
           land_unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          agent_subtype = "",
           name = "Spawn of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -17931,6 +19208,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warhounds_0",
           land_unit_key = "wh3_main_kho_inf_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds of Khorne",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -17939,6 +19217,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
           land_unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
+          agent_subtype = "",
           name = "Flesh Hounds of Khorne",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -18052,6 +19331,7 @@ return {
         {
           unit_key = "wh3_main_ksl_veh_little_grom_0",
           land_unit_key = "wh3_main_ksl_veh_little_grom_0",
+          agent_subtype = "",
           name = "Little Grom",
           category = "artillery",
           category_raw = "artillery",
@@ -18060,6 +19340,7 @@ return {
         {
           unit_key = "wh3_dlc24_ksl_cha_hag_witch_beast",
           land_unit_key = "wh3_dlc24_ksl_cha_hag_witch_beast",
+          agent_subtype = "wh3_dlc24_ksl_hag_witch_beasts",
           name = "Hag Witch (Beasts)",
           category = "character_hero",
           category_raw = "war_machine",
@@ -18068,6 +19349,7 @@ return {
         {
           unit_key = "wh3_dlc24_ksl_cha_hag_witch_death",
           land_unit_key = "wh3_dlc24_ksl_cha_hag_witch_death",
+          agent_subtype = "wh3_dlc24_ksl_hag_witch_death",
           name = "Hag Witch (Death)",
           category = "character_hero",
           category_raw = "war_machine",
@@ -18076,6 +19358,7 @@ return {
         {
           unit_key = "wh3_dlc24_ksl_cha_hag_witch_hag",
           land_unit_key = "wh3_dlc24_ksl_cha_hag_witch_hag",
+          agent_subtype = "wh3_dlc24_ksl_hag_witch_hag",
           name = "Hag Witch (Hag)",
           category = "character_hero",
           category_raw = "war_machine",
@@ -18084,6 +19367,7 @@ return {
         {
           unit_key = "wh3_dlc24_ksl_cha_hag_witch_shadow",
           land_unit_key = "wh3_dlc24_ksl_cha_hag_witch_shadow",
+          agent_subtype = "wh3_dlc24_ksl_hag_witch_shadows",
           name = "Hag Witch (Shadows)",
           category = "character_hero",
           category_raw = "war_machine",
@@ -18092,6 +19376,7 @@ return {
         {
           unit_key = "wh3_main_ksl_cha_patriarch_0",
           land_unit_key = "wh3_main_ksl_cha_patriarch_0",
+          agent_subtype = "wh3_main_ksl_patriarch",
           name = "Patriarch",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18100,6 +19385,7 @@ return {
         {
           unit_key = "wh3_main_ksl_cha_boyar_0",
           land_unit_key = "wh3_main_ksl_cha_boyar_0",
+          agent_subtype = "wh3_main_ksl_boyar",
           name = "Boyar",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -18108,6 +19394,7 @@ return {
         {
           unit_key = "wh3_main_ksl_cav_gryphon_legion_0",
           land_unit_key = "wh3_main_ksl_cav_gryphon_legion_0",
+          agent_subtype = "",
           name = "Gryphon Legion",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -18116,6 +19403,7 @@ return {
         {
           unit_key = "wh3_main_ksl_cav_horse_raiders_0",
           land_unit_key = "wh3_main_ksl_cav_kossovite_dervishes_0",
+          agent_subtype = "",
           name = "Kossovite Dervishes",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -18124,6 +19412,7 @@ return {
         {
           unit_key = "wh3_main_ksl_cav_winged_lancers_0",
           land_unit_key = "wh3_main_ksl_cav_winged_lancers_0",
+          agent_subtype = "",
           name = "Winged Lancers",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -18132,6 +19421,7 @@ return {
         {
           unit_key = "wh3_dlc24_ksl_inf_kislevite_warriors",
           land_unit_key = "wh3_dlc24_ksl_inf_kislevite_warriors",
+          agent_subtype = "",
           name = "Kislevite Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18140,6 +19430,7 @@ return {
         {
           unit_key = "wh3_main_ksl_inf_tzar_guard_0",
           land_unit_key = "wh3_main_ksl_inf_tzar_guard_0",
+          agent_subtype = "",
           name = "Tzar Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18148,6 +19439,7 @@ return {
         {
           unit_key = "wh3_main_ksl_inf_tzar_guard_1",
           land_unit_key = "wh3_main_ksl_inf_tzar_guard_1",
+          agent_subtype = "",
           name = "Tzar Guard (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18156,6 +19448,7 @@ return {
         {
           unit_key = "wh3_main_ksl_cav_horse_archers_0",
           land_unit_key = "wh3_main_ksl_cav_horse_archers_0",
+          agent_subtype = "",
           name = "Horse Archers",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -18164,6 +19457,7 @@ return {
         {
           unit_key = "wh3_main_ksl_veh_heavy_war_sled_0",
           land_unit_key = "wh3_main_ksl_veh_heavy_war_sled_0",
+          agent_subtype = "",
           name = "Heavy War Sleds",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -18172,6 +19466,7 @@ return {
         {
           unit_key = "wh3_main_ksl_veh_light_war_sled_0",
           land_unit_key = "wh3_main_ksl_veh_light_war_sled_0",
+          agent_subtype = "",
           name = "Light War Sleds",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -18180,6 +19475,7 @@ return {
         {
           unit_key = "wh3_dlc24_ksl_inf_akshina_ambushers",
           land_unit_key = "wh3_dlc24_ksl_inf_akshina_ambushers",
+          agent_subtype = "",
           name = "Akshina Ambushers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -18188,6 +19484,7 @@ return {
         {
           unit_key = "wh3_main_ksl_inf_armoured_kossars_0",
           land_unit_key = "wh3_main_ksl_inf_armoured_kossars_0",
+          agent_subtype = "",
           name = "Armoured Kossars",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -18196,6 +19493,7 @@ return {
         {
           unit_key = "wh3_main_ksl_inf_armoured_kossars_1",
           land_unit_key = "wh3_main_ksl_inf_armoured_kossars_1",
+          agent_subtype = "",
           name = "Armoured Kossars (Great Weapons)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -18204,6 +19502,7 @@ return {
         {
           unit_key = "wh3_main_ksl_inf_ice_guard_0",
           land_unit_key = "wh3_main_ksl_inf_ice_guard_0",
+          agent_subtype = "",
           name = "Ice Guard (Glaives)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -18212,6 +19511,7 @@ return {
         {
           unit_key = "wh3_main_ksl_inf_ice_guard_1",
           land_unit_key = "wh3_main_ksl_inf_ice_guard_1",
+          agent_subtype = "",
           name = "Ice Guard (Swords)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -18220,6 +19520,7 @@ return {
         {
           unit_key = "wh3_main_ksl_inf_kossars_0",
           land_unit_key = "wh3_main_ksl_inf_kossars_0",
+          agent_subtype = "",
           name = "Kossars",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -18228,6 +19529,7 @@ return {
         {
           unit_key = "wh3_main_ksl_inf_kossars_1",
           land_unit_key = "wh3_main_ksl_inf_kossars_1",
+          agent_subtype = "",
           name = "Kossars (Spears)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -18236,6 +19538,7 @@ return {
         {
           unit_key = "wh3_main_ksl_inf_streltsi_0",
           land_unit_key = "wh3_main_ksl_inf_streltsi_0",
+          agent_subtype = "",
           name = "Streltsi",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -18244,6 +19547,7 @@ return {
         {
           unit_key = "wh3_main_ksl_mon_elemental_bear_0",
           land_unit_key = "wh3_main_ksl_mon_elemental_bear_0",
+          agent_subtype = "",
           name = "Elemental Bear",
           category = "monster",
           category_raw = "inf_melee",
@@ -18252,6 +19556,7 @@ return {
         {
           unit_key = "wh3_dlc24_ksl_mon_frost_wyrm",
           land_unit_key = "wh3_dlc24_ksl_mon_frost_wyrm",
+          agent_subtype = "",
           name = "Frost Wyrm",
           category = "monster",
           category_raw = "inf_melee",
@@ -18260,6 +19565,7 @@ return {
         {
           unit_key = "wh3_dlc24_ksl_mon_incarnate_elemental_of_beasts",
           land_unit_key = "wh3_dlc24_ksl_mon_incarnate_elemental_of_beasts",
+          agent_subtype = "",
           name = "Incarnate Elemental of Beasts",
           category = "monster",
           category_raw = "inf_melee",
@@ -18268,6 +19574,7 @@ return {
         {
           unit_key = "wh3_main_ksl_mon_snow_leopard_0",
           land_unit_key = "wh3_main_ksl_mon_snow_leopard_0",
+          agent_subtype = "",
           name = "Snow Leopard",
           category = "monster",
           category_raw = "inf_melee",
@@ -18276,6 +19583,7 @@ return {
         {
           unit_key = "wh3_dlc24_ksl_mon_the_things_in_the_woods",
           land_unit_key = "wh3_dlc24_ksl_mon_the_things_in_the_woods",
+          agent_subtype = "",
           name = "The Things in the Woods",
           category = "monstrous_cavalry",
           category_raw = "inf_melee",
@@ -18284,6 +19592,7 @@ return {
         {
           unit_key = "wh3_main_ksl_cav_war_bear_riders_1",
           land_unit_key = "wh3_main_ksl_cav_war_bear_riders_1",
+          agent_subtype = "",
           name = "War Bear Riders",
           category = "monstrous_cavalry",
           category_raw = "war_beast",
@@ -18292,6 +19601,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_giant_spiders_0",
           land_unit_key = "wh2_dlc16_wef_mon_giant_spiders_0",
+          agent_subtype = "",
           name = "Giant Spiders",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -18300,6 +19610,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_cave_bats",
           land_unit_key = "wh2_dlc16_wef_mon_cave_bats",
+          agent_subtype = "",
           name = "Cave Bats",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -18308,6 +19619,7 @@ return {
         {
           unit_key = "wh3_main_monster_feral_bears",
           land_unit_key = "wh3_main_monster_feral_bears",
+          agent_subtype = "",
           name = "Feral Bears",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -18316,6 +19628,7 @@ return {
         {
           unit_key = "wh3_main_monster_feral_ice_bears",
           land_unit_key = "wh3_main_monster_feral_ice_bears",
+          agent_subtype = "",
           name = "Feral Ice Bears",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -18324,6 +19637,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_spider_hatchlings_0",
           land_unit_key = "wh2_dlc16_wef_mon_spider_hatchlings_0",
+          agent_subtype = "",
           name = "Spider Hatchlings",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -18428,6 +19742,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_cultist_0",
           land_unit_key = "wh3_main_nur_cha_cultist_0",
+          agent_subtype = "wh3_main_nur_cultist",
           name = "Cultist of Nurgle",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18436,6 +19751,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_plagueridden_death_0",
           land_unit_key = "wh3_main_nur_cha_plagueridden_death_0",
+          agent_subtype = "wh3_main_nur_plagueridden_death",
           name = "Plagueridden (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18444,6 +19760,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_plagueridden_nurgle_0",
           land_unit_key = "wh3_main_nur_cha_plagueridden_nurgle_0",
+          agent_subtype = "wh3_main_nur_plagueridden_nurgle",
           name = "Plagueridden (Nurgle)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18452,6 +19769,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_herald_of_nurgle_death_0",
           land_unit_key = "wh3_main_nur_cha_herald_of_nurgle_death_0",
+          agent_subtype = "wh3_main_nur_herald_of_nurgle_death",
           name = "Herald of Nurgle (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -18460,6 +19778,7 @@ return {
         {
           unit_key = "wh3_main_nur_cha_herald_of_nurgle_nurgle_0",
           land_unit_key = "wh3_main_nur_cha_herald_of_nurgle_nurgle_0",
+          agent_subtype = "wh3_main_nur_herald_of_nurgle_nurgle",
           name = "Herald of Nurgle (Nurgle)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -18468,6 +19787,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
+          agent_subtype = "",
           name = "Chaos Chariots of Nurgle",
           category = "chariot",
           category_raw = "melee",
@@ -18476,6 +19796,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          agent_subtype = "",
           name = "Chaos Knights of Nurgle",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -18484,6 +19805,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Nurgle (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -18492,6 +19814,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_cav_rot_knights",
           land_unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          agent_subtype = "",
           name = "Rot Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -18500,6 +19823,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18508,6 +19832,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18516,6 +19841,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
+          agent_subtype = "",
           name = "Chosen of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18524,6 +19850,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chosen of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18532,6 +19859,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_plaguebearers_1",
           land_unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          agent_subtype = "",
           name = "Exalted Plaguebearers of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18540,6 +19868,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_forsaken_0",
           land_unit_key = "wh3_main_nur_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18548,6 +19877,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          agent_subtype = "",
           name = "Marauders of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18556,6 +19886,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          agent_subtype = "",
           name = "Marauders of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18564,6 +19895,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_nurglings_0",
           land_unit_key = "wh3_main_nur_inf_nurglings_0",
+          agent_subtype = "",
           name = "Nurglings",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18572,6 +19904,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_pestigors",
           land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          agent_subtype = "",
           name = "Pestigors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18580,6 +19913,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_plague_toads_0",
           land_unit_key = "wh3_main_nur_mon_plague_toads_0",
+          agent_subtype = "",
           name = "Plague Toads of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18588,6 +19922,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_plaguebearers_0",
           land_unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          agent_subtype = "",
           name = "Plaguebearers of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18596,6 +19931,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
+          agent_subtype = "",
           name = "Marauder Horsemen of Nurgle (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -18604,6 +19940,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_soul_grinder_0",
           land_unit_key = "wh3_main_nur_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Nurgle",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -18612,6 +19949,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
           land_unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
+          agent_subtype = "",
           name = "Beast of Nurgle",
           category = "monster",
           category_raw = "inf_melee",
@@ -18620,6 +19958,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          agent_subtype = "",
           name = "Chaos Warshrine of Nurgle",
           category = "monster",
           category_raw = "war_beast",
@@ -18628,6 +19967,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_great_unclean_one_0",
           land_unit_key = "wh3_main_nur_mon_great_unclean_one_0",
+          agent_subtype = "",
           name = "Great Unclean One",
           category = "monster",
           category_raw = "inf_melee",
@@ -18636,6 +19976,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_toad_dragon",
           land_unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          agent_subtype = "",
           name = "Toad Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -18644,6 +19985,7 @@ return {
         {
           unit_key = "wh3_main_nur_cav_plague_drones_0",
           land_unit_key = "wh3_main_nur_cav_plague_drones_0",
+          agent_subtype = "",
           name = "Plague Drones of Nurgle",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -18652,6 +19994,7 @@ return {
         {
           unit_key = "wh3_main_nur_cav_plague_drones_1",
           land_unit_key = "wh3_main_nur_cav_plague_drones_1",
+          agent_subtype = "",
           name = "Plague Drones of Nurgle (Death's Heads)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -18660,6 +20003,7 @@ return {
         {
           unit_key = "wh3_main_nur_cav_pox_riders_of_nurgle_0",
           land_unit_key = "wh3_main_nur_cav_pox_riders_of_nurgle_0",
+          agent_subtype = "",
           name = "Pox Riders of Nurgle",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -18668,6 +20012,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_bile_trolls",
           land_unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          agent_subtype = "",
           name = "Bile Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -18676,6 +20021,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_chaos_furies_0",
           land_unit_key = "wh3_main_nur_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Nurgle)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -18684,6 +20030,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          agent_subtype = "",
           name = "Plague Ogres",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -18692,6 +20039,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          agent_subtype = "",
           name = "Plague Ogres (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -18700,6 +20048,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_rot_flies_0",
           land_unit_key = "wh3_main_nur_mon_rot_flies_0",
+          agent_subtype = "",
           name = "Rot Flies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -18708,6 +20057,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
           land_unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          agent_subtype = "",
           name = "Spawn of Nurgle",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -18716,6 +20066,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Chaos Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -18850,6 +20201,7 @@ return {
         {
           unit_key = "wh3_main_ogr_veh_gnoblar_scraplauncher_0",
           land_unit_key = "wh3_main_ogr_veh_gnoblar_scraplauncher_0",
+          agent_subtype = "",
           name = "Gnoblar Scraplauncher",
           category = "artillery",
           category_raw = "artillery",
@@ -18858,6 +20210,7 @@ return {
         {
           unit_key = "wh3_main_ogr_veh_ironblaster_0",
           land_unit_key = "wh3_main_ogr_veh_ironblaster_0",
+          agent_subtype = "",
           name = "Ironblaster",
           category = "artillery",
           category_raw = "artillery",
@@ -18866,6 +20219,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_cha_bruiser",
           land_unit_key = "wh3_dlc26_ogr_cha_bruiser",
+          agent_subtype = "wh3_dlc26_ogr_bruiser",
           name = "Bruiser",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18874,6 +20228,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cha_butcher_beasts_0",
           land_unit_key = "wh3_main_ogr_cha_butcher_beasts_0",
+          agent_subtype = "wh3_main_ogr_butcher_beasts",
           name = "Butcher (Beasts)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18882,6 +20237,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_cha_butcher_death",
           land_unit_key = "wh3_dlc26_ogr_cha_butcher_death",
+          agent_subtype = "wh3_dlc26_ogr_cha_butcher_death",
           name = "Butcher (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18890,6 +20246,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cha_butcher_great_maw_0",
           land_unit_key = "wh3_main_ogr_cha_butcher_great_maw_0",
+          agent_subtype = "wh3_main_ogr_butcher_great_maw",
           name = "Butcher (Great Maw)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18898,6 +20255,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_cha_butcher_heavens",
           land_unit_key = "wh3_dlc26_ogr_cha_butcher_heavens",
+          agent_subtype = "wh3_dlc26_ogr_cha_butcher_heavens",
           name = "Butcher (Heavens)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18906,6 +20264,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cha_firebelly_0",
           land_unit_key = "wh3_main_ogr_cha_firebelly_0",
+          agent_subtype = "wh3_main_ogr_firebelly",
           name = "Firebelly",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18914,6 +20273,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cha_hunter_0",
           land_unit_key = "wh3_main_ogr_cha_hunter_0",
+          agent_subtype = "wh3_main_ogr_hunter",
           name = "Hunter",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -18922,6 +20282,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_cha_paymaster",
           land_unit_key = "wh3_dlc26_ogr_cha_paymaster",
+          agent_subtype = "wh3_dlc26_ogr_paymaster",
           name = "Ogre Paymaster",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -18930,6 +20291,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cha_slaughtermaster_beasts_0",
           land_unit_key = "wh3_main_ogr_cha_slaughtermaster_beasts_0",
+          agent_subtype = "wh3_main_ogr_slaughtermaster_beasts",
           name = "Slaughtermaster (Beasts)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -18938,6 +20300,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_cha_slaughtermaster_death",
           land_unit_key = "wh3_dlc26_ogr_cha_slaughtermaster_death",
+          agent_subtype = "wh3_dlc26_ogr_cha_slaughtermaster_death",
           name = "Slaughtermaster (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -18946,6 +20309,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cha_slaughtermaster_great_maw_0",
           land_unit_key = "wh3_main_ogr_cha_slaughtermaster_great_maw_0",
+          agent_subtype = "wh3_main_ogr_slaughtermaster_great_maw",
           name = "Slaughtermaster (Great Maw)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -18954,6 +20318,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_cha_slaughtermaster_heavens",
           land_unit_key = "wh3_dlc26_ogr_cha_slaughtermaster_heavens",
+          agent_subtype = "wh3_dlc26_ogr_cha_slaughtermaster_heavens",
           name = "Slaughtermaster (Heavens)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -18962,6 +20327,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cha_tyrant_0",
           land_unit_key = "wh3_main_ogr_cha_tyrant_0",
+          agent_subtype = "wh3_main_ogr_tyrant",
           name = "Tyrant",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -18970,6 +20336,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_gnoblars_0",
           land_unit_key = "wh3_main_ogr_inf_gnoblars_0",
+          agent_subtype = "",
           name = "Gnoblars",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18978,6 +20345,7 @@ return {
         {
           unit_key = "wh3_main_ogr_mon_gorgers_0",
           land_unit_key = "wh3_main_ogr_mon_gorgers_0",
+          agent_subtype = "",
           name = "Gorgers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18986,6 +20354,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_inf_pigback_riders",
           land_unit_key = "wh3_dlc26_ogr_inf_pigback_riders",
+          agent_subtype = "",
           name = "Pigback Riders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -18994,6 +20363,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_gnoblars_flingers",
           land_unit_key = "wh3_main_ogr_inf_gnoblars_flingers",
+          agent_subtype = "",
           name = "Gnoblar Flingers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19002,6 +20372,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_gnoblars_1",
           land_unit_key = "wh3_main_ogr_inf_gnoblars_1",
+          agent_subtype = "",
           name = "Gnoblar Trappers",
           category = "missile_infantry",
           category_raw = "inf_melee",
@@ -19010,6 +20381,7 @@ return {
         {
           unit_key = "wh3_main_ogr_mon_giant_0",
           land_unit_key = "wh3_main_ogr_mon_giant_0",
+          agent_subtype = "",
           name = "Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -19018,6 +20390,7 @@ return {
         {
           unit_key = "wh3_main_ogr_mon_stonehorn_0",
           land_unit_key = "wh3_main_ogr_mon_stonehorn_0",
+          agent_subtype = "",
           name = "Stonehorn",
           category = "monster",
           category_raw = "war_beast",
@@ -19026,6 +20399,7 @@ return {
         {
           unit_key = "wh3_main_ogr_mon_stonehorn_1",
           land_unit_key = "wh3_main_ogr_mon_stonehorn_1",
+          agent_subtype = "",
           name = "Stonehorn (Harpoon Launcher)",
           category = "monster",
           category_raw = "war_beast",
@@ -19034,6 +20408,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_mon_thundertusk",
           land_unit_key = "wh3_dlc26_ogr_mon_thundertusk",
+          agent_subtype = "",
           name = "Thundertusk",
           category = "monster",
           category_raw = "war_beast",
@@ -19042,6 +20417,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cav_crushers_1",
           land_unit_key = "wh3_main_ogr_cav_crushers_1",
+          agent_subtype = "",
           name = "Crushers (Great Weapons)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -19050,6 +20426,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cav_crushers_0",
           land_unit_key = "wh3_main_ogr_cav_crushers_0",
+          agent_subtype = "",
           name = "Crushers (Ironfists)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -19058,6 +20435,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cav_mournfang_cavalry_0",
           land_unit_key = "wh3_main_ogr_cav_mournfang_cavalry_0",
+          agent_subtype = "",
           name = "Mournfang Cavalry",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -19066,6 +20444,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cav_mournfang_cavalry_2",
           land_unit_key = "wh3_main_ogr_cav_mournfang_cavalry_2",
+          agent_subtype = "",
           name = "Mournfang Cavalry (Great Weapons)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -19074,6 +20453,7 @@ return {
         {
           unit_key = "wh3_main_ogr_cav_mournfang_cavalry_1",
           land_unit_key = "wh3_main_ogr_cav_mournfang_cavalry_1",
+          agent_subtype = "",
           name = "Mournfang Cavalry (Ironfists)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -19082,6 +20462,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_inf_golgfags_maneaters",
           land_unit_key = "wh3_dlc26_ogr_inf_golgfags_maneaters",
+          agent_subtype = "",
           name = "Golgfag's Maneaters",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19090,6 +20471,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_ironguts_0",
           land_unit_key = "wh3_main_ogr_inf_ironguts_0",
+          agent_subtype = "",
           name = "Ironguts",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19098,6 +20480,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_leadbelchers_0",
           land_unit_key = "wh3_main_ogr_inf_leadbelchers_0",
+          agent_subtype = "",
           name = "Leadbelchers",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -19106,6 +20489,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_maneaters_0",
           land_unit_key = "wh3_main_ogr_inf_maneaters_0",
+          agent_subtype = "",
           name = "Maneaters",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19114,6 +20498,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_maneaters_2",
           land_unit_key = "wh3_main_ogr_inf_maneaters_2",
+          agent_subtype = "",
           name = "Maneaters (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19122,6 +20507,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_maneaters_1",
           land_unit_key = "wh3_main_ogr_inf_maneaters_1",
+          agent_subtype = "",
           name = "Maneaters (Ironfists)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19130,6 +20516,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_maneaters_3",
           land_unit_key = "wh3_main_ogr_inf_maneaters_3",
+          agent_subtype = "",
           name = "Maneaters (Ogre Pistols)",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -19138,6 +20525,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_ogres_0",
           land_unit_key = "wh3_main_ogr_inf_ogres_0",
+          agent_subtype = "",
           name = "Ogre Bulls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19146,6 +20534,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_ogres_1",
           land_unit_key = "wh3_main_ogr_inf_ogres_1",
+          agent_subtype = "",
           name = "Ogre Bulls (Dual Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19154,6 +20543,7 @@ return {
         {
           unit_key = "wh3_main_ogr_inf_ogres_2",
           land_unit_key = "wh3_main_ogr_inf_ogres_2",
+          agent_subtype = "",
           name = "Ogre Bulls (Ironfists)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19162,6 +20552,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_mon_yhetees",
           land_unit_key = "wh3_dlc26_ogr_mon_yhetees",
+          agent_subtype = "",
           name = "Yhetees",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19170,6 +20561,7 @@ return {
         {
           unit_key = "wh3_dlc26_ogr_mon_blood_vultures",
           land_unit_key = "wh3_dlc26_ogr_mon_blood_vultures",
+          agent_subtype = "",
           name = "Blood Vultures",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -19178,6 +20570,7 @@ return {
         {
           unit_key = "wh3_main_ogr_mon_sabretusk_pack_0",
           land_unit_key = "wh3_main_ogr_mon_sabretusk_pack_0",
+          agent_subtype = "",
           name = "Sabretusk Pack",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -19267,6 +20660,7 @@ return {
         {
           unit_key = "wh3_main_kho_cha_bloodreaper_0",
           land_unit_key = "wh3_main_kho_cha_bloodreaper_0",
+          agent_subtype = "wh3_main_kho_bloodreaper",
           name = "Bloodreaper",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -19275,6 +20669,7 @@ return {
         {
           unit_key = "wh3_main_pro_kho_cha_cultist_0",
           land_unit_key = "wh3_main_pro_kho_cha_cultist_0",
+          agent_subtype = "wh3_main_pro_kho_cultist",
           name = "Cultist of Khorne",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -19283,6 +20678,7 @@ return {
         {
           unit_key = "wh3_main_pro_kho_cha_herald_of_khorne_0",
           land_unit_key = "wh3_main_pro_kho_cha_herald_of_khorne_0",
+          agent_subtype = "wh3_main_pro_kho_herald_of_khorne",
           name = "Herald of Khorne",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -19291,6 +20687,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_bloodletters_0",
           land_unit_key = "wh3_main_kho_inf_bloodletters_0",
+          agent_subtype = "",
           name = "Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19299,6 +20696,7 @@ return {
         {
           unit_key = "wh3_main_pro_kho_inf_bloodletters_0",
           land_unit_key = "wh3_main_pro_kho_inf_bloodletters_0",
+          agent_subtype = "",
           name = "Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19307,6 +20705,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_0",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19315,6 +20714,7 @@ return {
         {
           unit_key = "wh3_main_pro_kho_inf_chaos_warriors_0",
           land_unit_key = "wh3_main_pro_kho_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19323,6 +20723,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_2",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19331,6 +20732,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_1",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19339,6 +20741,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_bloodletters_1",
           land_unit_key = "wh3_main_kho_inf_bloodletters_1",
+          agent_subtype = "",
           name = "Exalted Bloodletters of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19347,6 +20750,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_bloodcrushers_0",
           land_unit_key = "wh3_main_kho_cav_bloodcrushers_0",
+          agent_subtype = "",
           name = "Bloodcrushers of Khorne",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -19355,6 +20759,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_furies_0",
           land_unit_key = "wh3_main_kho_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Khorne)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19363,6 +20768,7 @@ return {
         {
           unit_key = "wh3_main_pro_kho_inf_chaos_furies_0",
           land_unit_key = "wh3_main_pro_kho_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Khorne)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19371,6 +20777,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_khornataurs_0",
           land_unit_key = "wh3_main_kho_mon_khornataurs_0",
+          agent_subtype = "",
           name = "Minotaurs of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19379,6 +20786,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
           land_unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          agent_subtype = "",
           name = "Spawn of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19387,6 +20795,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warhounds_0",
           land_unit_key = "wh3_main_kho_inf_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds of Khorne",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -19395,6 +20804,7 @@ return {
         {
           unit_key = "wh3_main_pro_kho_inf_chaos_warhounds_0",
           land_unit_key = "wh3_main_pro_kho_inf_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds of Khorne",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -19403,6 +20813,7 @@ return {
         {
           unit_key = "wh3_main_pro_kho_inf_flesh_hounds_of_khorne_0",
           land_unit_key = "wh3_main_pro_kho_inf_flesh_hounds_of_khorne_0",
+          agent_subtype = "",
           name = "Flesh Hounds of Khorne",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -19458,6 +20869,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_veh_little_grom_0",
           land_unit_key = "wh3_main_pro_ksl_veh_little_grom_0",
+          agent_subtype = "",
           name = "Little Grom",
           category = "artillery",
           category_raw = "artillery",
@@ -19466,6 +20878,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_cav_gryphon_legion_ror_0",
           land_unit_key = "wh3_main_ksl_cav_gryphon_legion_0",
+          agent_subtype = "",
           name = "Gryphon Legion",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -19474,6 +20887,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_cav_horse_raiders_0",
           land_unit_key = "wh3_main_pro_ksl_cav_kossovite_dervishes_0",
+          agent_subtype = "",
           name = "Kossovite Dervishes",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -19482,6 +20896,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_cav_winged_lancers_0",
           land_unit_key = "wh3_main_pro_ksl_cav_winged_lancers_0",
+          agent_subtype = "",
           name = "Winged Lancers",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -19490,6 +20905,7 @@ return {
         {
           unit_key = "wh3_main_ksl_inf_kossars_tutorial_1",
           land_unit_key = "wh3_main_ksl_inf_kossars_tutorial_1",
+          agent_subtype = "",
           name = "Armoured Kossars (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19498,6 +20914,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_inf_tzar_guard_0",
           land_unit_key = "wh3_main_pro_ksl_inf_tzar_guard_0",
+          agent_subtype = "",
           name = "Tzar Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19506,6 +20923,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_veh_heavy_war_sled_ror_0",
           land_unit_key = "wh3_main_ksl_veh_heavy_war_sled_0",
+          agent_subtype = "",
           name = "Heavy War Sleds",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -19514,6 +20932,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_veh_light_war_sled_ror_0",
           land_unit_key = "wh3_main_ksl_veh_light_war_sled_0",
+          agent_subtype = "",
           name = "Light War Sleds",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -19522,6 +20941,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_inf_armoured_kossars_0",
           land_unit_key = "wh3_main_pro_ksl_inf_armoured_kossars_0",
+          agent_subtype = "",
           name = "Armoured Kossars",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19530,6 +20950,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_inf_ice_guard_ror_0",
           land_unit_key = "wh3_main_ksl_inf_ice_guard_0",
+          agent_subtype = "",
           name = "Ice Guard (Glaives)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19538,6 +20959,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_inf_ice_guard_ror_1",
           land_unit_key = "wh3_main_ksl_inf_ice_guard_1",
+          agent_subtype = "",
           name = "Ice Guard (Swords)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19546,6 +20968,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_inf_kossars_0",
           land_unit_key = "wh3_main_pro_ksl_inf_kossars_0",
+          agent_subtype = "",
           name = "Kossars",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19554,6 +20977,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_inf_kossars_1",
           land_unit_key = "wh3_main_pro_ksl_inf_kossars_1",
+          agent_subtype = "",
           name = "Kossars (Spears)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19562,6 +20986,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_inf_streltsi_0",
           land_unit_key = "wh3_main_pro_ksl_inf_streltsi_0",
+          agent_subtype = "",
           name = "Streltsi",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19570,6 +20995,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_mon_elemental_bear_ror_0",
           land_unit_key = "wh3_main_pro_ksl_mon_elemental_bear_ror_0",
+          agent_subtype = "",
           name = "Elemental Bear",
           category = "monster",
           category_raw = "inf_melee",
@@ -19578,6 +21004,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_mon_snow_leopard_ror_0",
           land_unit_key = "wh3_main_ksl_mon_snow_leopard_0",
+          agent_subtype = "",
           name = "Snow Leopard",
           category = "monster",
           category_raw = "inf_melee",
@@ -19586,6 +21013,7 @@ return {
         {
           unit_key = "wh3_main_pro_ksl_cav_war_bear_riders_1",
           land_unit_key = "wh3_main_pro_ksl_cav_war_bear_riders_1",
+          agent_subtype = "",
           name = "War Bear Riders",
           category = "monstrous_cavalry",
           category_raw = "war_beast",
@@ -19650,6 +21078,7 @@ return {
         {
           unit_key = "wh3_main_pro_tze_cha_cultist_0",
           land_unit_key = "wh3_main_pro_tze_cha_cultist_0",
+          agent_subtype = "wh3_main_pro_tze_cultist",
           name = "Cultist of Tzeentch",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -19658,6 +21087,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_iridescent_horror_metal_0",
           land_unit_key = "wh3_main_tze_cha_iridescent_horror_metal_0",
+          agent_subtype = "wh3_main_tze_iridescent_horror_metal",
           name = "Iridescent Horror (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -19666,6 +21096,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_iridescent_horror_tzeentch_0",
           land_unit_key = "wh3_main_tze_cha_iridescent_horror_tzeentch_0",
+          agent_subtype = "wh3_main_tze_iridescent_horror_tzeentch",
           name = "Iridescent Horror (Tzeentch)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -19674,6 +21105,7 @@ return {
         {
           unit_key = "wh3_main_pro_tze_cha_herald_of_tzeentch_tzeentch_0",
           land_unit_key = "wh3_main_pro_tze_cha_herald_of_tzeentch_tzeentch_0",
+          agent_subtype = "wh3_main_pro_tze_herald_of_tzeentch_tzeentch",
           name = "Herald of Tzeentch (Tzeentch)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -19682,6 +21114,7 @@ return {
         {
           unit_key = "wh3_main_pro_tze_cav_chaos_knights_0",
           land_unit_key = "wh3_main_pro_tze_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights of Tzeentch",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -19690,6 +21123,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_chaos_knights_0",
           land_unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights of Tzeentch",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -19698,6 +21132,7 @@ return {
         {
           unit_key = "wh3_main_pro_tze_inf_forsaken_0",
           land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19706,6 +21141,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_forsaken_0",
           land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -19714,6 +21150,7 @@ return {
         {
           unit_key = "wh3_main_pro_tze_inf_blue_horrors_0",
           land_unit_key = "wh3_main_pro_tze_inf_blue_horrors_0",
+          agent_subtype = "",
           name = "Blue Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19722,6 +21159,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_blue_horrors_0",
           land_unit_key = "wh3_main_tze_inf_blue_horrors_0",
+          agent_subtype = "",
           name = "Blue Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19730,6 +21168,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_pink_horrors_1",
           land_unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          agent_subtype = "",
           name = "Exalted Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19738,6 +21177,7 @@ return {
         {
           unit_key = "wh3_main_pro_tze_inf_pink_horrors_0",
           land_unit_key = "wh3_main_pro_tze_inf_pink_horrors_0",
+          agent_subtype = "",
           name = "Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19746,6 +21186,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_pink_horrors_0",
           land_unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          agent_subtype = "",
           name = "Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -19754,6 +21195,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_exalted_flamers_0",
           land_unit_key = "wh3_main_tze_mon_exalted_flamer_0",
+          agent_subtype = "",
           name = "Exalted Flamer of Tzeentch",
           category = "monster",
           category_raw = "inf_ranged",
@@ -19762,6 +21204,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_lord_of_change_0",
           land_unit_key = "wh3_main_tze_mon_lord_of_change_0",
+          agent_subtype = "",
           name = "Lord of Change",
           category = "monster",
           category_raw = "inf_melee",
@@ -19770,6 +21213,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_doom_knights_0",
           land_unit_key = "wh3_main_tze_cav_doom_knights_0",
+          agent_subtype = "",
           name = "Doom Knights of Tzeentch",
           category = "monstrous_cavalry",
           category_raw = "inf_melee",
@@ -19778,6 +21222,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_chaos_furies_0",
           land_unit_key = "wh3_main_tze_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Tzeentch)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19786,6 +21231,7 @@ return {
         {
           unit_key = "wh3_main_pro_tze_mon_flamers_0",
           land_unit_key = "wh3_main_pro_tze_mon_flamers_0",
+          agent_subtype = "",
           name = "Flamers of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -19794,6 +21240,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_flamers_0",
           land_unit_key = "wh3_main_tze_mon_flamers_0",
+          agent_subtype = "",
           name = "Flamers of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -19802,6 +21249,7 @@ return {
         {
           unit_key = "wh3_main_pro_tze_mon_screamers_0",
           land_unit_key = "wh3_main_pro_tze_mon_screamers_0",
+          agent_subtype = "",
           name = "Screamers of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19810,6 +21258,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
           land_unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          agent_subtype = "",
           name = "Spawn of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -19900,6 +21349,7 @@ return {
         {
           unit_key = "wh3_main_sla_cha_alluress_shadow_0",
           land_unit_key = "wh3_main_sla_cha_alluress_shadow_0",
+          agent_subtype = "wh3_main_sla_alluress_shadow",
           name = "Alluress (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -19908,6 +21358,7 @@ return {
         {
           unit_key = "wh3_main_sla_cha_alluress_slaanesh_0",
           land_unit_key = "wh3_main_sla_cha_alluress_slaanesh_0",
+          agent_subtype = "wh3_main_sla_alluress_slaanesh",
           name = "Alluress (Slaanesh)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -19916,6 +21367,7 @@ return {
         {
           unit_key = "wh3_main_sla_cha_cultist_0",
           land_unit_key = "wh3_main_sla_cha_cultist_0",
+          agent_subtype = "wh3_main_sla_cultist",
           name = "Cultist of Slaanesh",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -19924,6 +21376,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_cha_druchii_anointed",
           land_unit_key = "wh3_dlc27_sla_cha_druchii_anointed",
+          agent_subtype = "wh3_dlc27_sla_druchii_anointed",
           name = "Druchii Anointed",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -19932,6 +21385,7 @@ return {
         {
           unit_key = "wh3_dlc27_chs_cha_exalted_hero_msla",
           land_unit_key = "wh3_dlc27_chs_cha_exalted_hero_msla",
+          agent_subtype = "wh3_dlc27_chs_exalted_hero_msla",
           name = "Exalted Hero of Slaanesh",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -19940,6 +21394,7 @@ return {
         {
           unit_key = "wh3_dlc27_chs_cha_sorcerer_lord_shadows_msla",
           land_unit_key = "wh3_dlc27_chs_cha_sorcerer_lord_shadows_msla",
+          agent_subtype = "wh3_dlc27_chs_sorcerer_lord_shadows_msla",
           name = "Chaos Sorcerer Lord of Slaanesh (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -19948,6 +21403,7 @@ return {
         {
           unit_key = "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
           land_unit_key = "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+          agent_subtype = "wh3_dlc27_chs_sorcerer_lord_slaanesh_msla",
           name = "Chaos Sorcerer Lord of Slaanesh (Slaanesh)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -19956,6 +21412,7 @@ return {
         {
           unit_key = "wh3_main_sla_cha_herald_of_slaanesh_shadow_0",
           land_unit_key = "wh3_main_sla_cha_herald_of_slaanesh_shadow_0",
+          agent_subtype = "wh3_main_sla_herald_of_slaanesh_shadow",
           name = "Herald of Slaanesh (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -19964,6 +21421,7 @@ return {
         {
           unit_key = "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
           land_unit_key = "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+          agent_subtype = "wh3_main_sla_herald_of_slaanesh_slaanesh",
           name = "Herald of Slaanesh (Slaanesh)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -19972,6 +21430,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
+          agent_subtype = "",
           name = "Chaos Chariots of Slaanesh",
           category = "chariot",
           category_raw = "melee",
@@ -19980,6 +21439,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_veh_exalted_seeker_chariot_dechala",
           land_unit_key = "wh3_main_sla_veh_exalted_seeker_chariot_0",
+          agent_subtype = "",
           name = "Exalted Seeker Chariot",
           category = "chariot",
           category_raw = "melee",
@@ -19988,6 +21448,7 @@ return {
         {
           unit_key = "wh3_main_sla_veh_exalted_seeker_chariot_0",
           land_unit_key = "wh3_main_sla_veh_exalted_seeker_chariot_0",
+          agent_subtype = "",
           name = "Exalted Seeker Chariot",
           category = "chariot",
           category_raw = "melee",
@@ -19996,6 +21457,7 @@ return {
         {
           unit_key = "wh3_main_sla_veh_hellflayer_0",
           land_unit_key = "wh3_main_sla_veh_hellflayer_0",
+          agent_subtype = "",
           name = "Hellflayers",
           category = "chariot",
           category_raw = "melee",
@@ -20004,6 +21466,7 @@ return {
         {
           unit_key = "wh3_main_sla_veh_seeker_chariot_0",
           land_unit_key = "wh3_main_sla_veh_seeker_chariot_0",
+          agent_subtype = "",
           name = "Seeker Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -20012,6 +21475,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
+          agent_subtype = "",
           name = "Chaos Knights of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20020,6 +21484,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Slaanesh (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20028,6 +21493,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_cav_heartseekers_of_slaanesh_dechala",
           land_unit_key = "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
+          agent_subtype = "",
           name = "Heartseekers of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20036,6 +21502,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
+          agent_subtype = "",
           name = "Heartseekers of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20044,6 +21511,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_hellstriders_0",
           land_unit_key = "wh3_main_sla_cav_hellstriders_0",
+          agent_subtype = "",
           name = "Hellstriders of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20052,6 +21520,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_hellstriders_1",
           land_unit_key = "wh3_main_sla_cav_hellstriders_1",
+          agent_subtype = "",
           name = "Hellstriders of Slaanesh (Hellscourges)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20060,6 +21529,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          agent_subtype = "",
           name = "Marauder Horsemen of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20068,6 +21538,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
           land_unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          agent_subtype = "",
           name = "Pleasureseekers",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20076,6 +21547,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_cav_pleasureseekers_dechala",
           land_unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          agent_subtype = "",
           name = "Pleasureseekers",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20084,6 +21556,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_seekers_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_cav_seekers_of_slaanesh_0",
+          agent_subtype = "",
           name = "Seekers of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20092,6 +21565,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
+          agent_subtype = "",
           name = "Chaos Warriors of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20100,6 +21574,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          agent_subtype = "",
           name = "Chaos Warriors of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20108,6 +21583,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_msla",
+          agent_subtype = "",
           name = "Chosen of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20116,6 +21592,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+          agent_subtype = "",
           name = "Chosen of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20124,6 +21601,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_daemonette_0",
           land_unit_key = "wh3_main_sla_inf_daemonette_0",
+          agent_subtype = "",
           name = "Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20132,6 +21610,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_marauders_0",
           land_unit_key = "wh3_main_sla_inf_marauders_0",
+          agent_subtype = "",
           name = "Devoted Marauders of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20140,6 +21619,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_marauders_2",
           land_unit_key = "wh3_main_sla_inf_marauders_2",
+          agent_subtype = "",
           name = "Devoted Marauders of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20148,6 +21628,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_marauders_1",
           land_unit_key = "wh3_main_sla_inf_marauders_1",
+          agent_subtype = "",
           name = "Devoted Marauders of Slaanesh (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20156,6 +21637,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh",
           land_unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh",
+          agent_subtype = "",
           name = "Devotees of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20164,6 +21646,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_daemonette_1_dechala",
           land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          agent_subtype = "",
           name = "Exalted Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20172,6 +21655,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_daemonette_1",
           land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          agent_subtype = "",
           name = "Exalted Daemonettes of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20180,6 +21664,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
           land_unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          agent_subtype = "",
           name = "Forsaken of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20188,6 +21673,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_slaangors",
           land_unit_key = "wh3_dlc27_sla_inf_slaangors",
+          agent_subtype = "",
           name = "Slaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20196,6 +21682,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh_crossbows",
           land_unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh_crossbows",
+          agent_subtype = "",
           name = "Devotees of Slaanesh (Crossbows)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -20204,6 +21691,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          agent_subtype = "",
           name = "Chaos Warshrine of Slaanesh",
           category = "monster",
           category_raw = "war_beast",
@@ -20212,6 +21700,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_mon_keeper_of_secrets_dechala",
           land_unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          agent_subtype = "",
           name = "Keeper of Secrets",
           category = "monster",
           category_raw = "inf_melee",
@@ -20220,6 +21709,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
           land_unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          agent_subtype = "",
           name = "Keeper of Secrets",
           category = "monster",
           category_raw = "inf_melee",
@@ -20228,6 +21718,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_mon_preyton",
           land_unit_key = "wh3_dlc27_sla_mon_preyton",
+          agent_subtype = "",
           name = "Preyton",
           category = "monster",
           category_raw = "inf_melee",
@@ -20236,6 +21727,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_soul_grinder_0",
           land_unit_key = "wh3_main_sla_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Slaanesh",
           category = "monster",
           category_raw = "inf_melee",
@@ -20244,6 +21736,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
           land_unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          agent_subtype = "",
           name = "Champions Of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -20252,6 +21745,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_chaos_furies_dechala",
           land_unit_key = "wh3_main_sla_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Slaanesh)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -20260,6 +21754,7 @@ return {
         {
           unit_key = "wh3_main_sla_inf_chaos_furies_0",
           land_unit_key = "wh3_main_sla_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Slaanesh)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -20268,6 +21763,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_mon_fiends_of_slaanesh_dechala",
           land_unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          agent_subtype = "",
           name = "Fiends of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -20276,6 +21772,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          agent_subtype = "",
           name = "Fiends of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -20284,6 +21781,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          agent_subtype = "",
           name = "Spawn of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -20398,6 +21896,7 @@ return {
         {
           unit_key = "wh_main_emp_veh_steam_tank",
           land_unit_key = "wh_main_emp_veh_steam_tank_driver",
+          agent_subtype = "",
           name = "Steam Tank",
           category = "artillery",
           category_raw = "artillery",
@@ -20406,6 +21905,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_cultist_0",
           land_unit_key = "wh3_main_tze_cha_cultist_0",
+          agent_subtype = "wh3_main_tze_cultist",
           name = "Cultist of Tzeentch",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -20414,6 +21914,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_iridescent_horror_metal_0",
           land_unit_key = "wh3_main_tze_cha_iridescent_horror_metal_0",
+          agent_subtype = "wh3_main_tze_iridescent_horror_metal",
           name = "Iridescent Horror (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -20422,6 +21923,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_iridescent_horror_tzeentch_0",
           land_unit_key = "wh3_main_tze_cha_iridescent_horror_tzeentch_0",
+          agent_subtype = "wh3_main_tze_iridescent_horror_tzeentch",
           name = "Iridescent Horror (Tzeentch)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -20430,6 +21932,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_herald_of_tzeentch_metal_0",
           land_unit_key = "wh3_main_tze_cha_herald_of_tzeentch_metal_0",
+          agent_subtype = "wh3_main_tze_herald_of_tzeentch_metal",
           name = "Herald of Tzeentch (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -20438,6 +21941,7 @@ return {
         {
           unit_key = "wh3_main_tze_cha_herald_of_tzeentch_tzeentch_0",
           land_unit_key = "wh3_main_tze_cha_herald_of_tzeentch_tzeentch_0",
+          agent_subtype = "wh3_main_tze_herald_of_tzeentch_tzeentch",
           name = "Herald of Tzeentch (Tzeentch)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -20446,6 +21950,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
+          agent_subtype = "",
           name = "Chaos Chariots of Tzeentch",
           category = "chariot",
           category_raw = "melee",
@@ -20454,6 +21959,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
           land_unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          agent_subtype = "",
           name = "Centigors of Tzeentch",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -20462,6 +21968,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_chaos_knights_0",
           land_unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights of Tzeentch",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20470,6 +21977,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Tzeentch (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -20478,6 +21986,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
+          agent_subtype = "",
           name = "Chaos Warriors of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20486,6 +21995,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          agent_subtype = "",
           name = "Chaos Warriors of Tzeentch (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20494,6 +22004,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
+          agent_subtype = "",
           name = "Chosen of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20502,6 +22013,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
+          agent_subtype = "",
           name = "Chosen of Tzeentch (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20510,6 +22022,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_forsaken_0",
           land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20518,6 +22031,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
+          agent_subtype = "",
           name = "Marauders of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20526,6 +22040,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          agent_subtype = "",
           name = "Marauders of Tzeentch (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20534,6 +22049,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_inf_tzaangors",
           land_unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          agent_subtype = "",
           name = "Tzaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20542,6 +22058,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
+          agent_subtype = "",
           name = "Marauder Horsemen of Tzeentch",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -20550,6 +22067,7 @@ return {
         {
           unit_key = "wh3_main_tze_veh_burning_chariot_0",
           land_unit_key = "wh3_main_tze_veh_burning_chariot_0",
+          agent_subtype = "",
           name = "Burning Chariot of Tzeentch",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -20558,6 +22076,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_blue_horrors_0",
           land_unit_key = "wh3_main_tze_inf_blue_horrors_0",
+          agent_subtype = "",
           name = "Blue Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -20566,6 +22085,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_pink_horrors_1",
           land_unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          agent_subtype = "",
           name = "Exalted Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -20574,6 +22094,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_pink_horrors_0",
           land_unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          agent_subtype = "",
           name = "Pink Horrors of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -20582,6 +22103,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_soul_grinder_0",
           land_unit_key = "wh3_main_tze_mon_soul_grinder_0",
+          agent_subtype = "",
           name = "Soul Grinder of Tzeentch",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -20590,6 +22112,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          agent_subtype = "",
           name = "Chaos Warshrine of Tzeentch",
           category = "monster",
           category_raw = "war_beast",
@@ -20598,6 +22121,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_cockatrice",
           land_unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          agent_subtype = "",
           name = "Cockatrice",
           category = "monster",
           category_raw = "inf_melee",
@@ -20606,6 +22130,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_exalted_flamers_0",
           land_unit_key = "wh3_main_tze_mon_exalted_flamer_0",
+          agent_subtype = "",
           name = "Exalted Flamer of Tzeentch",
           category = "monster",
           category_raw = "inf_ranged",
@@ -20614,6 +22139,7 @@ return {
         {
           unit_key = "wh3_dlc24_lzd_mon_carnosaur_0",
           land_unit_key = "wh2_main_lzd_mon_carnosaur_0",
+          agent_subtype = "",
           name = "Feral Carnosaur",
           category = "monster",
           category_raw = "inf_melee",
@@ -20622,6 +22148,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_lord_of_change_0",
           land_unit_key = "wh3_main_tze_mon_lord_of_change_0",
+          agent_subtype = "",
           name = "Lord of Change",
           category = "monster",
           category_raw = "inf_melee",
@@ -20630,6 +22157,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
           land_unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          agent_subtype = "",
           name = "Mutalith Vortex Beast",
           category = "monster",
           category_raw = "inf_melee",
@@ -20638,6 +22166,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_doom_knights_0",
           land_unit_key = "wh3_main_tze_cav_doom_knights_0",
+          agent_subtype = "",
           name = "Doom Knights of Tzeentch",
           category = "monstrous_cavalry",
           category_raw = "inf_melee",
@@ -20646,6 +22175,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
           land_unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          agent_subtype = "",
           name = "Changebringers",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -20654,6 +22184,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_chaos_furies_0",
           land_unit_key = "wh3_main_tze_inf_chaos_furies_0",
+          agent_subtype = "",
           name = "Chaos Furies (Tzeentch)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -20662,6 +22193,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_flamers_0",
           land_unit_key = "wh3_main_tze_mon_flamers_0",
+          agent_subtype = "",
           name = "Flamers of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_ranged",
@@ -20670,6 +22202,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_screamers_0",
           land_unit_key = "wh3_main_tze_mon_screamers_0",
+          agent_subtype = "",
           name = "Screamers of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -20678,6 +22211,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
           land_unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          agent_subtype = "",
           name = "Spawn of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -20831,6 +22365,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_cha_bray_shaman_beasts_0",
           land_unit_key = "wh_dlc03_bst_cha_bray_shaman_beasts_0",
+          agent_subtype = "wh_dlc03_bst_bray_shaman_beasts",
           name = "Bray-Shaman (Beasts)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -20839,6 +22374,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_cha_bray_shaman_death_0",
           land_unit_key = "wh_dlc03_bst_cha_bray_shaman_death_0",
+          agent_subtype = "wh_dlc03_bst_bray_shaman_death",
           name = "Bray-Shaman (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -20847,6 +22383,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_cha_bray_shaman_shadows_0",
           land_unit_key = "wh_dlc03_bst_cha_bray_shaman_shadows_0",
+          agent_subtype = "wh_dlc03_bst_bray_shaman_shadows",
           name = "Bray-Shaman (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -20855,6 +22392,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_cha_bray_shaman_wild_0",
           land_unit_key = "wh_dlc03_bst_cha_bray_shaman_wild_0",
+          agent_subtype = "wh_dlc03_bst_bray_shaman_wild",
           name = "Bray-Shaman (Wild)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -20863,6 +22401,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_cha_gorebull_0",
           land_unit_key = "wh_dlc03_bst_cha_gorebull_0",
+          agent_subtype = "wh_dlc03_bst_gorebull",
           name = "Gorebull",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -20871,6 +22410,7 @@ return {
         {
           unit_key = "wh2_dlc17_bst_cha_wargor_0",
           land_unit_key = "wh2_dlc17_bst_cha_wargor_0",
+          agent_subtype = "wh2_dlc17_bst_wargor",
           name = "Wargor",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -20879,6 +22419,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_cha_beastlord_0",
           land_unit_key = "wh_dlc03_bst_cha_beastlord_0",
+          agent_subtype = "wh_dlc03_bst_beastlord",
           name = "Beastlord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -20887,6 +22428,7 @@ return {
         {
           unit_key = "wh2_dlc17_bst_cha_doombull_0",
           land_unit_key = "wh2_dlc17_bst_cha_doombull_0",
+          agent_subtype = "wh2_dlc17_bst_doombull",
           name = "Doombull",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -20895,6 +22437,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_cav_razorgor_chariot_0",
           land_unit_key = "wh_dlc03_bst_cav_razorgor_chariot_0",
+          agent_subtype = "",
           name = "Razorgor Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -20903,6 +22446,7 @@ return {
         {
           unit_key = "wh2_dlc17_bst_cav_tuskgor_chariot_0",
           land_unit_key = "wh2_dlc17_bst_cav_tuskgor_chariot_0",
+          agent_subtype = "",
           name = "Tuskgor Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -20911,6 +22455,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_centigors_0",
           land_unit_key = "wh_dlc03_bst_inf_centigors_0",
+          agent_subtype = "",
           name = "Centigors",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -20919,6 +22464,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_centigors_2",
           land_unit_key = "wh_dlc03_bst_inf_centigors_2",
+          agent_subtype = "",
           name = "Centigors (Great Weapons)",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -20927,6 +22473,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_centigors_1",
           land_unit_key = "wh_dlc03_bst_inf_centigors_1",
+          agent_subtype = "",
           name = "Centigors (Throwing Axes)",
           category = "melee_cavalry",
           category_raw = "inf_ranged",
@@ -20935,6 +22482,7 @@ return {
         {
           unit_key = "wh3_dlc24_bst_inf_centigors_great_weapons_mtze",
           land_unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          agent_subtype = "",
           name = "Centigors of Tzeentch",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -20943,6 +22491,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_bestigor_herd_0",
           land_unit_key = "wh_dlc03_bst_inf_bestigor_herd_0",
+          agent_subtype = "",
           name = "Bestigor Herd",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20951,6 +22500,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_gor_herd_0",
           land_unit_key = "wh_dlc03_bst_inf_gor_herd_0",
+          agent_subtype = "",
           name = "Gor Herd",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20959,6 +22509,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_gor_herd_1",
           land_unit_key = "wh_dlc03_bst_inf_gor_herd_1",
+          agent_subtype = "",
           name = "Gor Herd (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20967,6 +22518,7 @@ return {
         {
           unit_key = "wh3_dlc26_bst_inf_khorngors",
           land_unit_key = "wh3_dlc26_kho_inf_khorngors",
+          agent_subtype = "",
           name = "Khorngors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20975,6 +22527,7 @@ return {
         {
           unit_key = "wh3_dlc25_bst_inf_pestigors",
           land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          agent_subtype = "",
           name = "Pestigors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20983,6 +22536,7 @@ return {
         {
           unit_key = "wh3_dlc27_bst_inf_slaangors",
           land_unit_key = "wh3_dlc27_sla_inf_slaangors",
+          agent_subtype = "",
           name = "Slaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20991,6 +22545,7 @@ return {
         {
           unit_key = "wh3_dlc24_bst_inf_tzaangors",
           land_unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          agent_subtype = "",
           name = "Tzaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -20999,6 +22554,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_ungor_herd_1",
           land_unit_key = "wh_dlc03_bst_inf_ungor_herd_1",
+          agent_subtype = "",
           name = "Ungor Herd",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21007,6 +22563,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_ungor_spearmen_0",
           land_unit_key = "wh_dlc03_bst_inf_ungor_spearmen_0",
+          agent_subtype = "",
           name = "Ungor Spearmen Herd",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21015,6 +22572,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_ungor_spearmen_1",
           land_unit_key = "wh_dlc03_bst_inf_ungor_spearmen_1",
+          agent_subtype = "",
           name = "Ungor Spearmen Herd (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21023,6 +22581,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_cygor_0",
           land_unit_key = "wh_dlc03_bst_inf_cygor_0",
+          agent_subtype = "",
           name = "Cygor",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21031,6 +22590,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_ungor_raiders_0",
           land_unit_key = "wh_dlc03_bst_inf_ungor_raiders_0",
+          agent_subtype = "",
           name = "Ungor Raiders",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21039,6 +22599,7 @@ return {
         {
           unit_key = "wh3_dlc27_bst_mon_chimera",
           land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          agent_subtype = "",
           name = "Chimera",
           category = "monster",
           category_raw = "inf_melee",
@@ -21047,6 +22608,7 @@ return {
         {
           unit_key = "wh3_dlc24_bst_mon_cockatrice",
           land_unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          agent_subtype = "",
           name = "Cockatrice",
           category = "monster",
           category_raw = "inf_melee",
@@ -21055,6 +22617,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_feral_manticore",
           land_unit_key = "wh_dlc03_bst_feral_manticore",
+          agent_subtype = "",
           name = "Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -21063,6 +22626,7 @@ return {
         {
           unit_key = "wh2_dlc17_bst_mon_ghorgon_0",
           land_unit_key = "wh2_dlc17_bst_mon_ghorgon_0",
+          agent_subtype = "",
           name = "Ghorgon",
           category = "monster",
           category_raw = "inf_melee",
@@ -21071,6 +22635,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_mon_giant_0",
           land_unit_key = "wh_dlc03_bst_mon_giant_0",
+          agent_subtype = "",
           name = "Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -21079,6 +22644,7 @@ return {
         {
           unit_key = "wh3_dlc24_bst_mon_incarnate_elemental_of_beasts",
           land_unit_key = "wh3_dlc24_ksl_mon_incarnate_elemental_of_beasts",
+          agent_subtype = "",
           name = "Incarnate Elemental of Beasts",
           category = "monster",
           category_raw = "inf_melee",
@@ -21087,6 +22653,7 @@ return {
         {
           unit_key = "wh2_dlc17_bst_mon_jabberslythe_0",
           land_unit_key = "wh2_dlc17_bst_mon_jabberslythe_0",
+          agent_subtype = "",
           name = "Jabberslythe",
           category = "monster",
           category_raw = "inf_melee",
@@ -21095,6 +22662,7 @@ return {
         {
           unit_key = "wh3_dlc27_bst_mon_preyton",
           land_unit_key = "wh3_dlc27_sla_mon_preyton",
+          agent_subtype = "",
           name = "Preyton",
           category = "monster",
           category_raw = "inf_melee",
@@ -21103,6 +22671,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_razorgor_herd_0",
           land_unit_key = "wh_dlc03_bst_inf_razorgor_herd_0",
+          agent_subtype = "",
           name = "Razorgor Herd",
           category = "monstrous_cavalry",
           category_raw = "inf_melee",
@@ -21111,6 +22680,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_mon_chaos_spawn_0",
           land_unit_key = "wh_dlc03_bst_mon_chaos_spawn_0",
+          agent_subtype = "",
           name = "Chaos Spawn",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -21119,6 +22689,7 @@ return {
         {
           unit_key = "wh_dlc05_bst_mon_harpies_0",
           land_unit_key = "wh_dlc05_bst_mon_harpies_0",
+          agent_subtype = "",
           name = "Harpies",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -21127,6 +22698,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_minotaurs_0",
           land_unit_key = "wh_dlc03_bst_inf_minotaurs_0",
+          agent_subtype = "",
           name = "Minotaurs",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -21135,6 +22707,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_minotaurs_2",
           land_unit_key = "wh_dlc03_bst_inf_minotaurs_2",
+          agent_subtype = "",
           name = "Minotaurs (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -21143,6 +22716,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_minotaurs_1",
           land_unit_key = "wh_dlc03_bst_inf_minotaurs_1",
+          agent_subtype = "",
           name = "Minotaurs (Shields)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -21151,6 +22725,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_chaos_warhounds_0",
           land_unit_key = "wh_dlc03_bst_inf_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -21159,6 +22734,7 @@ return {
         {
           unit_key = "wh_dlc03_bst_inf_chaos_warhounds_1",
           land_unit_key = "wh_dlc03_bst_inf_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Chaos Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -21302,6 +22878,7 @@ return {
         {
           unit_key = "wh2_twa02_wef_cha_glade_captain_0",
           land_unit_key = "wh2_twa02_wef_cha_glade_captain_0",
+          agent_subtype = "wh2_twa02_wef_glade_captain",
           name = "Glade Captain",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -21310,6 +22887,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_spellsinger_beasts_0",
           land_unit_key = "wh_dlc05_wef_cha_spellsinger_beasts_0",
+          agent_subtype = "wh_dlc05_wef_spellsinger_beasts",
           name = "Spellsinger (Beasts)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -21318,6 +22896,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_spellsinger_life_0",
           land_unit_key = "wh_dlc05_wef_cha_spellsinger_life_0",
+          agent_subtype = "wh_dlc05_wef_spellsinger_life",
           name = "Spellsinger (Life)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -21326,6 +22905,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_spellsinger_shadows_0",
           land_unit_key = "wh_dlc05_wef_cha_spellsinger_shadows_0",
+          agent_subtype = "wh_dlc05_wef_spellsinger_shadow",
           name = "Spellsinger (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -21334,6 +22914,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_waystalker_0",
           land_unit_key = "wh_dlc05_wef_cha_waystalker_0",
+          agent_subtype = "wh_dlc05_wef_waystalker",
           name = "Waystalker",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -21342,6 +22923,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_ancient_treeman_0",
           land_unit_key = "wh_dlc05_wef_cha_ancient_treeman_0",
+          agent_subtype = "wh_dlc05_wef_ancient_treeman",
           name = "Ancient Treeman",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -21350,6 +22932,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_glade_lord_0",
           land_unit_key = "wh_dlc05_wef_cha_glade_lord_0",
+          agent_subtype = "wh_dlc05_wef_glade_lord",
           name = "Glade Lord",
           category = "character_lord",
           category_raw = "inf_ranged",
@@ -21358,6 +22941,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_beasts_0",
           land_unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_beasts_0",
+          agent_subtype = "wh2_dlc16_wef_malicious_ancient_treeman_beasts",
           name = "Malevolent Ancient Treeman (Beasts)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -21366,6 +22950,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_life_0",
           land_unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_life_0",
+          agent_subtype = "wh2_dlc16_wef_malicious_ancient_treeman_life",
           name = "Malevolent Ancient Treeman (Life)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -21374,6 +22959,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_shadows_0",
           land_unit_key = "wh2_dlc16_wef_cha_malicious_ancient_treeman_shadows_0",
+          agent_subtype = "wh2_dlc16_wef_malicious_ancient_treeman_shadows",
           name = "Malevolent Ancient Treeman (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -21382,6 +22968,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_cav_glade_riders_2",
           land_unit_key = "wh2_dlc16_wef_cav_glade_riders_2",
+          agent_subtype = "",
           name = "Glade Riders (Spears)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -21390,6 +22977,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cav_wild_riders_0",
           land_unit_key = "wh_dlc05_wef_cav_wild_riders_0",
+          agent_subtype = "",
           name = "Wild Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -21398,6 +22986,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cav_wild_riders_1",
           land_unit_key = "wh_dlc05_wef_cav_wild_riders_1",
+          agent_subtype = "",
           name = "Wild Riders (Shields)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -21406,6 +22995,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_inf_bladesingers_0",
           land_unit_key = "wh2_dlc16_wef_inf_bladesingers_0",
+          agent_subtype = "",
           name = "Bladesingers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21414,6 +23004,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_dryads_0",
           land_unit_key = "wh_dlc05_wef_inf_dryads_0",
+          agent_subtype = "",
           name = "Dryads",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21422,6 +23013,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_eternal_guard_0",
           land_unit_key = "wh_dlc05_wef_inf_eternal_guard_0",
+          agent_subtype = "",
           name = "Eternal Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21430,6 +23022,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_eternal_guard_1",
           land_unit_key = "wh_dlc05_wef_inf_eternal_guard_1",
+          agent_subtype = "",
           name = "Eternal Guard (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21438,6 +23031,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_wardancers_0",
           land_unit_key = "wh_dlc05_wef_inf_wardancers_0",
+          agent_subtype = "",
           name = "Wardancers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21446,6 +23040,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_wardancers_1",
           land_unit_key = "wh_dlc05_wef_inf_wardancers_1",
+          agent_subtype = "",
           name = "Wardancers (Asrai Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21454,6 +23049,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_wildwood_rangers_0",
           land_unit_key = "wh_dlc05_wef_inf_wildwood_rangers_0",
+          agent_subtype = "",
           name = "Wildwood Rangers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21462,6 +23058,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cav_glade_riders_0",
           land_unit_key = "wh_dlc05_wef_cav_glade_riders_0",
+          agent_subtype = "",
           name = "Glade Riders",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -21470,6 +23067,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cav_glade_riders_1",
           land_unit_key = "wh_dlc05_wef_cav_glade_riders_1",
+          agent_subtype = "",
           name = "Glade Riders (Hagbane Tips)",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -21478,6 +23076,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cav_hawk_riders_0",
           land_unit_key = "wh_dlc05_wef_cav_hawk_riders_0",
+          agent_subtype = "",
           name = "Hawk Riders",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -21486,6 +23085,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cav_sisters_thorn_0",
           land_unit_key = "wh_dlc05_wef_cav_sisters_thorn_0",
+          agent_subtype = "",
           name = "Sisters of the Thorn",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -21494,6 +23094,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_deepwood_scouts_0",
           land_unit_key = "wh_dlc05_wef_inf_deepwood_scouts_0",
+          agent_subtype = "",
           name = "Deepwood Scouts",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21502,6 +23103,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_deepwood_scouts_1",
           land_unit_key = "wh_dlc05_wef_inf_deepwood_scouts_1",
+          agent_subtype = "",
           name = "Deepwood Scouts (Swiftshiver Shards)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21510,6 +23112,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_glade_guard_0",
           land_unit_key = "wh_dlc05_wef_inf_glade_guard_0",
+          agent_subtype = "",
           name = "Glade Guard",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21518,6 +23121,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_glade_guard_2",
           land_unit_key = "wh_dlc05_wef_inf_glade_guard_2",
+          agent_subtype = "",
           name = "Glade Guard (Hagbane Tips)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21526,6 +23130,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_glade_guard_1",
           land_unit_key = "wh_dlc05_wef_inf_glade_guard_1",
+          agent_subtype = "",
           name = "Glade Guard (Starfire Shafts)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21534,6 +23139,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_inf_waywatchers_0",
           land_unit_key = "wh_dlc05_wef_inf_waywatchers_0",
+          agent_subtype = "",
           name = "Waywatchers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21542,6 +23148,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_forest_dragon_0",
           land_unit_key = "wh_dlc05_wef_forest_dragon_0",
+          agent_subtype = "",
           name = "Forest Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -21550,6 +23157,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_mon_great_eagle_0",
           land_unit_key = "wh_dlc05_wef_mon_great_eagle_0",
+          agent_subtype = "",
           name = "Great Eagle",
           category = "monster",
           category_raw = "inf_melee",
@@ -21558,6 +23166,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_mon_treeman_0",
           land_unit_key = "wh_dlc05_wef_mon_treeman_0",
+          agent_subtype = "",
           name = "Treeman",
           category = "monster",
           category_raw = "inf_melee",
@@ -21566,6 +23175,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_cav_great_stag_knights_0",
           land_unit_key = "wh2_dlc16_wef_cav_great_stag_knights_0",
+          agent_subtype = "",
           name = "Great Stag Knights",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -21574,6 +23184,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_mon_treekin_0",
           land_unit_key = "wh_dlc05_wef_mon_treekin_0",
+          agent_subtype = "",
           name = "Tree Kin",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -21582,6 +23193,7 @@ return {
         {
           unit_key = "wh2_dlc16_wef_mon_zoats",
           land_unit_key = "wh2_dlc16_wef_mon_zoats",
+          agent_subtype = "",
           name = "Zoats",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -21705,6 +23317,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_cha_damsel_beasts_0",
           land_unit_key = "wh_dlc07_brt_cha_damsel_beasts_0",
+          agent_subtype = "wh_dlc07_brt_damsel_beasts",
           name = "Damsel (Beasts)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -21713,6 +23326,7 @@ return {
         {
           unit_key = "wh_main_brt_cha_damsel_0",
           land_unit_key = "wh_main_brt_cha_damsel_0",
+          agent_subtype = "wh_main_brt_damsel_heavens",
           name = "Damsel (Heavens)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -21721,6 +23335,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_cha_damsel_life_0",
           land_unit_key = "wh_dlc07_brt_cha_damsel_life_0",
+          agent_subtype = "wh_dlc07_brt_damsel_life",
           name = "Damsel (Life)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -21729,6 +23344,7 @@ return {
         {
           unit_key = "wh_dlc05_emp_cha_wizard_life_0",
           land_unit_key = "wh_dlc05_emp_cha_wizard_life_0",
+          agent_subtype = "wh_dlc05_emp_jade_wizard",
           name = "Jade Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -21737,6 +23353,7 @@ return {
         {
           unit_key = "wh_main_brt_cha_paladin_0",
           land_unit_key = "wh_main_brt_cha_paladin_0",
+          agent_subtype = "wh_main_brt_paladin",
           name = "Paladin",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -21745,6 +23362,7 @@ return {
         {
           unit_key = "wh_main_brt_cha_lord_0",
           land_unit_key = "wh_main_brt_cha_lord_0",
+          agent_subtype = "wh_main_brt_lord",
           name = "Lord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -21753,6 +23371,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_cha_prophetess_beasts_0",
           land_unit_key = "wh_dlc07_brt_cha_prophetess_beasts_0",
+          agent_subtype = "wh_dlc07_brt_prophetess_beasts",
           name = "Prophetess (Beasts)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -21761,6 +23380,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_cha_prophetess_heavens_0",
           land_unit_key = "wh_dlc07_brt_cha_prophetess_heavens_0",
+          agent_subtype = "wh_dlc07_brt_prophetess_heavens",
           name = "Prophetess (Heavens)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -21769,6 +23389,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_cha_prophetess_0",
           land_unit_key = "wh_dlc07_brt_cha_prophetess_0",
+          agent_subtype = "wh_dlc07_brt_prophetess_life",
           name = "Prophetess (Life)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -21777,6 +23398,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_cav_grail_guardians_0",
           land_unit_key = "wh_dlc07_brt_cav_grail_guardians_0",
+          agent_subtype = "",
           name = "Grail Guardians",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -21785,6 +23407,7 @@ return {
         {
           unit_key = "wh_main_brt_cav_grail_knights",
           land_unit_key = "wh_main_brt_cav_grail_knights",
+          agent_subtype = "",
           name = "Grail Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -21793,6 +23416,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_cav_knights_errant_0",
           land_unit_key = "wh_dlc07_brt_cav_knights_errant_0",
+          agent_subtype = "",
           name = "Knights Errant",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -21801,6 +23425,7 @@ return {
         {
           unit_key = "wh_main_brt_cav_knights_of_the_realm",
           land_unit_key = "wh_main_brt_cav_knights_of_the_realm",
+          agent_subtype = "",
           name = "Knights of the Realm",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -21809,6 +23434,7 @@ return {
         {
           unit_key = "wh_main_brt_cav_mounted_yeomen_0",
           land_unit_key = "wh_main_brt_cav_mounted_yeomen_0",
+          agent_subtype = "",
           name = "Mounted Yeomen",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -21817,6 +23443,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_cav_questing_knights_0",
           land_unit_key = "wh_dlc07_brt_cav_questing_knights_0",
+          agent_subtype = "",
           name = "Questing Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -21825,6 +23452,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_inf_battle_pilgrims_0",
           land_unit_key = "wh_dlc07_brt_inf_battle_pilgrims_0",
+          agent_subtype = "",
           name = "Battle Pilgrims",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21833,6 +23461,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_inf_foot_squires_0",
           land_unit_key = "wh_dlc07_brt_inf_foot_squires_0",
+          agent_subtype = "",
           name = "Foot Squires",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21841,6 +23470,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_inf_grail_reliquae_0",
           land_unit_key = "wh_dlc07_brt_inf_grail_reliquae_0",
+          agent_subtype = "",
           name = "Grail Reliquae",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21849,6 +23479,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_inf_men_at_arms_1",
           land_unit_key = "wh_dlc07_brt_inf_men_at_arms_1",
+          agent_subtype = "",
           name = "Men-at-Arms",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21857,6 +23488,7 @@ return {
         {
           unit_key = "wh_main_brt_inf_men_at_arms",
           land_unit_key = "wh_main_brt_inf_men_at_arms",
+          agent_subtype = "",
           name = "Men-at-Arms (Polearms)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21865,6 +23497,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_inf_men_at_arms_2",
           land_unit_key = "wh_dlc07_brt_inf_men_at_arms_2",
+          agent_subtype = "",
           name = "Men-at-Arms (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21873,6 +23506,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_peasant_mob_0",
           land_unit_key = "wh_dlc07_brt_inf_peasant_mob_0",
+          agent_subtype = "",
           name = "Peasant Mob",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21881,6 +23515,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_inf_spearmen_at_arms_1",
           land_unit_key = "wh_dlc07_brt_inf_spearmen_at_arms_1",
+          agent_subtype = "",
           name = "Spearmen-at-Arms",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21889,6 +23524,7 @@ return {
         {
           unit_key = "wh_main_brt_inf_spearmen_at_arms",
           land_unit_key = "wh_main_brt_inf_spearmen_at_arms",
+          agent_subtype = "",
           name = "Spearmen-at-Arms (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -21897,6 +23533,7 @@ return {
         {
           unit_key = "wh_main_brt_cav_mounted_yeomen_1",
           land_unit_key = "wh_main_brt_cav_mounted_yeomen_1",
+          agent_subtype = "",
           name = "Mounted Yeomen Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -21905,6 +23542,7 @@ return {
         {
           unit_key = "wh_main_brt_inf_peasant_bowmen",
           land_unit_key = "wh_main_brt_inf_peasant_bowmen",
+          agent_subtype = "",
           name = "Peasant Bowmen",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21913,6 +23551,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_inf_peasant_bowmen_1",
           land_unit_key = "wh_dlc07_brt_inf_peasant_bowmen_1",
+          agent_subtype = "",
           name = "Peasant Bowmen (Fire Arrows)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21921,6 +23560,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_inf_peasant_bowmen_2",
           land_unit_key = "wh_dlc07_brt_inf_peasant_bowmen_2",
+          agent_subtype = "",
           name = "Peasant Bowmen (Pox Arrows)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -21929,6 +23569,7 @@ return {
         {
           unit_key = "wh_main_brt_cav_pegasus_knights",
           land_unit_key = "wh_main_brt_cav_pegasus_knights",
+          agent_subtype = "",
           name = "Pegasus Knights",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -21937,6 +23578,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_cav_royal_hippogryph_knights_0",
           land_unit_key = "wh_dlc07_brt_cav_royal_hippogryph_knights_0",
+          agent_subtype = "",
           name = "Royal Hippogryph Knights",
           category = "monstrous_cavalry",
           category_raw = "war_beast",
@@ -21945,6 +23587,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_cav_royal_pegasus_knights_0",
           land_unit_key = "wh_dlc07_brt_cav_royal_pegasus_knights_0",
+          agent_subtype = "",
           name = "Royal Pegasus Knights",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -21953,6 +23596,7 @@ return {
         {
           unit_key = "wh_dlc07_brt_art_blessed_field_trebuchet_0",
           land_unit_key = "wh_dlc07_brt_art_blessed_field_trebuchet_0",
+          agent_subtype = "",
           name = "Blessed Field Trebuchets",
           category = "war_machine",
           category_raw = "artillery",
@@ -21961,6 +23605,7 @@ return {
         {
           unit_key = "wh_main_brt_art_field_trebuchet",
           land_unit_key = "wh_main_brt_art_field_trebuchet",
+          agent_subtype = "",
           name = "Field Trebuchets",
           category = "war_machine",
           category_raw = "artillery",
@@ -22089,6 +23734,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_death_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_death",
           name = "Chaos Sorcerer (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -22097,6 +23743,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_fire_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_fire",
           name = "Chaos Sorcerer (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -22105,6 +23752,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
           land_unit_key = "wh_main_chs_cha_chaos_sorcerer_metal_0",
+          agent_subtype = "wh_main_chs_chaos_sorcerer_metal",
           name = "Chaos Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -22113,6 +23761,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_shadows_0",
+          agent_subtype = "wh_dlc07_chs_chaos_sorcerer_shadow",
           name = "Chaos Sorcerer (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -22121,6 +23770,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_exalted_hero_0",
           land_unit_key = "wh_main_chs_cha_exalted_hero_0",
+          agent_subtype = "wh_main_chs_exalted_hero",
           name = "Exalted Hero",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -22129,6 +23779,7 @@ return {
         {
           unit_key = "wh_main_chs_cha_chaos_lord_0",
           land_unit_key = "wh_main_chs_cha_chaos_lord_0",
+          agent_subtype = "wh_dlc08_chs_challenger_khorne",
           name = "Chaos Lord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -22137,6 +23788,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_death_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_death",
           name = "Chaos Sorcerer Lord (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -22145,6 +23797,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_fire_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_fire",
           name = "Chaos Sorcerer Lord (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -22153,6 +23806,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_metal_0",
+          agent_subtype = "wh_dlc01_chs_sorcerer_lord_metal",
           name = "Chaos Sorcerer Lord (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -22161,6 +23815,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
           land_unit_key = "wh_dlc01_chs_cha_chaos_sorcerer_lord_shadows_0",
+          agent_subtype = "wh_dlc07_chs_sorcerer_lord_shadow",
           name = "Chaos Sorcerer Lord (Shadows)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -22169,6 +23824,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_chariot",
           land_unit_key = "wh_main_chs_cav_chaos_chariot",
+          agent_subtype = "",
           name = "Chaos Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -22177,6 +23833,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
+          agent_subtype = "",
           name = "Chaos Chariots of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -22185,6 +23842,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
+          agent_subtype = "",
           name = "Chaos Chariots of Nurgle",
           category = "chariot",
           category_raw = "melee",
@@ -22193,6 +23851,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
+          agent_subtype = "",
           name = "Chaos Chariots of Slaanesh",
           category = "chariot",
           category_raw = "melee",
@@ -22201,6 +23860,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
+          agent_subtype = "",
           name = "Chaos Chariots of Tzeentch",
           category = "chariot",
           category_raw = "melee",
@@ -22209,6 +23869,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
           land_unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -22217,6 +23878,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_gorebeast_chariot",
           land_unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          agent_subtype = "",
           name = "Gorebeast Chariots of Khorne",
           category = "chariot",
           category_raw = "melee",
@@ -22225,6 +23887,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
           land_unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          agent_subtype = "",
           name = "Centigors of Tzeentch",
           category = "melee_cavalry",
           category_raw = "inf_melee",
@@ -22233,6 +23896,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_0",
           land_unit_key = "wh_main_chs_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22241,6 +23905,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_chaos_knights_1",
           land_unit_key = "wh_main_chs_cav_chaos_knights_1",
+          agent_subtype = "",
           name = "Chaos Knights (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22249,6 +23914,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
+          agent_subtype = "",
           name = "Chaos Knights of Khorne",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22257,6 +23923,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Khorne (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22265,6 +23932,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          agent_subtype = "",
           name = "Chaos Knights of Nurgle",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22273,6 +23941,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Nurgle (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22281,6 +23950,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
+          agent_subtype = "",
           name = "Chaos Knights of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22289,6 +23959,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Slaanesh (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22297,6 +23968,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_chaos_knights_0",
           land_unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          agent_subtype = "",
           name = "Chaos Knights of Tzeentch",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22305,6 +23977,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
           land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
+          agent_subtype = "",
           name = "Chaos Knights of Tzeentch (Lances)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22313,6 +23986,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_hellstriders_0",
           land_unit_key = "wh3_main_sla_cav_hellstriders_0",
+          agent_subtype = "",
           name = "Hellstriders of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22321,6 +23995,7 @@ return {
         {
           unit_key = "wh3_main_sla_cav_hellstriders_1",
           land_unit_key = "wh3_main_sla_cav_hellstriders_1",
+          agent_subtype = "",
           name = "Hellstriders of Slaanesh (Hellscourges)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22329,6 +24004,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          agent_subtype = "",
           name = "Marauder Horsemen of Slaanesh",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22337,6 +24013,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
           land_unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          agent_subtype = "",
           name = "Pleasureseekers",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22345,6 +24022,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_cav_rot_knights",
           land_unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          agent_subtype = "",
           name = "Rot Knights",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -22353,6 +24031,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
           land_unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
+          agent_subtype = "",
           name = "Aspiring Champions",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22361,6 +24040,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_0",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22369,6 +24049,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
           land_unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22377,6 +24058,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_warriors_1",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22385,6 +24067,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_0",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22393,6 +24076,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_2",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22401,6 +24085,7 @@ return {
         {
           unit_key = "wh3_main_kho_inf_chaos_warriors_1",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22409,6 +24094,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22417,6 +24103,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22425,6 +24112,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
+          agent_subtype = "",
           name = "Chaos Warriors of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22433,6 +24121,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          agent_subtype = "",
           name = "Chaos Warriors of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22441,6 +24130,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
+          agent_subtype = "",
           name = "Chaos Warriors of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22449,6 +24139,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          agent_subtype = "",
           name = "Chaos Warriors of Tzeentch (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22457,6 +24148,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_0",
           land_unit_key = "wh_main_chs_inf_chosen_0",
+          agent_subtype = "",
           name = "Chosen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22465,6 +24157,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chosen_1",
           land_unit_key = "wh_main_chs_inf_chosen_1",
+          agent_subtype = "",
           name = "Chosen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22473,6 +24166,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_chosen_2",
           land_unit_key = "wh_dlc01_chs_inf_chosen_2",
+          agent_subtype = "",
           name = "Chosen (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22481,6 +24175,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
+          agent_subtype = "",
           name = "Chosen of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22489,6 +24184,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
+          agent_subtype = "",
           name = "Chosen of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22497,6 +24193,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
+          agent_subtype = "",
           name = "Chosen of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22505,6 +24202,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chosen of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22513,6 +24211,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_msla",
+          agent_subtype = "",
           name = "Chosen of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22521,6 +24220,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+          agent_subtype = "",
           name = "Chosen of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22529,6 +24229,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
+          agent_subtype = "",
           name = "Chosen of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22537,6 +24238,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
           land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
+          agent_subtype = "",
           name = "Chosen of Tzeentch (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22545,6 +24247,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_inf_forsaken_0",
           land_unit_key = "wh_dlc01_chs_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22553,6 +24256,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          agent_subtype = "",
           name = "Forsaken of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22561,6 +24265,7 @@ return {
         {
           unit_key = "wh3_main_nur_inf_forsaken_0_warriors",
           land_unit_key = "wh3_main_nur_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22569,6 +24274,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
           land_unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          agent_subtype = "",
           name = "Forsaken of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22577,6 +24283,7 @@ return {
         {
           unit_key = "wh3_main_tze_inf_forsaken_0",
           land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          agent_subtype = "",
           name = "Forsaken of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22585,6 +24292,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_khorngors",
           land_unit_key = "wh3_dlc26_kho_inf_khorngors",
+          agent_subtype = "",
           name = "Khorngors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22593,6 +24301,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          agent_subtype = "",
           name = "Marauder Bearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22601,6 +24310,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          agent_subtype = "",
           name = "Marauder Bearmen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22609,6 +24319,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_0",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_0",
+          agent_subtype = "",
           name = "Marauders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22617,6 +24328,7 @@ return {
         {
           unit_key = "wh_main_chs_inf_chaos_marauders_1",
           land_unit_key = "wh_main_chs_inf_chaos_marauders_1",
+          agent_subtype = "",
           name = "Marauders (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22625,6 +24337,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
+          agent_subtype = "",
           name = "Marauders of Khorne",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22633,6 +24346,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          agent_subtype = "",
           name = "Marauders of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22641,6 +24355,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          agent_subtype = "",
           name = "Marauders of Nurgle",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22649,6 +24364,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          agent_subtype = "",
           name = "Marauders of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22657,6 +24373,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla",
+          agent_subtype = "",
           name = "Marauders of Slaanesh",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22665,6 +24382,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges",
+          agent_subtype = "",
           name = "Marauders of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22673,6 +24391,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
+          agent_subtype = "",
           name = "Marauders of Tzeentch",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22681,6 +24400,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          agent_subtype = "",
           name = "Marauders of Tzeentch (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22689,6 +24409,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_pestigors",
           land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          agent_subtype = "",
           name = "Pestigors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22697,6 +24418,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_inf_skullreapers",
           land_unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          agent_subtype = "",
           name = "Skullreapers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22705,6 +24427,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_inf_slaangors",
           land_unit_key = "wh3_dlc27_sla_inf_slaangors",
+          agent_subtype = "",
           name = "Slaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22713,6 +24436,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_inf_tzaangors",
           land_unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          agent_subtype = "",
           name = "Tzaangors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -22721,6 +24445,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
           land_unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
+          agent_subtype = "",
           name = "Marauder Horsemasters",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -22729,6 +24454,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_0",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_0",
+          agent_subtype = "",
           name = "Marauder Horsemen",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -22737,6 +24463,7 @@ return {
         {
           unit_key = "wh_main_chs_cav_marauder_horsemen_1",
           land_unit_key = "wh_main_chs_cav_marauder_horsemen_1",
+          agent_subtype = "",
           name = "Marauder Horsemen (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -22745,6 +24472,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
+          agent_subtype = "",
           name = "Marauder Horsemen of Khorne (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -22753,6 +24481,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
+          agent_subtype = "",
           name = "Marauder Horsemen of Nurgle (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -22761,6 +24490,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
           land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
+          agent_subtype = "",
           name = "Marauder Horsemen of Tzeentch",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -22769,6 +24499,7 @@ return {
         {
           unit_key = "wh_dlc06_chs_feral_manticore",
           land_unit_key = "wh_dlc06_chs_feral_manticore",
+          agent_subtype = "",
           name = "Chaos Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -22777,6 +24508,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_giant",
           land_unit_key = "wh_main_chs_mon_giant",
+          agent_subtype = "",
           name = "Chaos Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -22785,6 +24517,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine",
+          agent_subtype = "",
           name = "Chaos Warshrine",
           category = "monster",
           category_raw = "war_beast",
@@ -22793,6 +24526,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          agent_subtype = "",
           name = "Chaos Warshrine of Khorne",
           category = "monster",
           category_raw = "war_beast",
@@ -22801,6 +24535,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          agent_subtype = "",
           name = "Chaos Warshrine of Nurgle",
           category = "monster",
           category_raw = "war_beast",
@@ -22809,6 +24544,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          agent_subtype = "",
           name = "Chaos Warshrine of Slaanesh",
           category = "monster",
           category_raw = "war_beast",
@@ -22817,6 +24553,7 @@ return {
         {
           unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
           land_unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          agent_subtype = "",
           name = "Chaos Warshrine of Tzeentch",
           category = "monster",
           category_raw = "war_beast",
@@ -22825,6 +24562,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_chimera",
           land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          agent_subtype = "",
           name = "Chimera",
           category = "monster",
           category_raw = "inf_melee",
@@ -22833,6 +24571,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_cockatrice",
           land_unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          agent_subtype = "",
           name = "Cockatrice",
           category = "monster",
           category_raw = "inf_melee",
@@ -22841,6 +24580,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_mon_dragon_ogre_shaggoth",
           land_unit_key = "wh_dlc01_chs_mon_dragon_ogre_shaggoth",
+          agent_subtype = "",
           name = "Dragon Ogre Shaggoth",
           category = "monster",
           category_raw = "inf_melee",
@@ -22849,6 +24589,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -22857,6 +24598,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -22865,6 +24607,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
           land_unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          agent_subtype = "",
           name = "Mutalith Vortex Beast",
           category = "monster",
           category_raw = "inf_melee",
@@ -22873,6 +24616,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_toad_dragon",
           land_unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          agent_subtype = "",
           name = "Toad Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -22881,6 +24625,7 @@ return {
         {
           unit_key = "wh3_main_tze_cav_doom_knights_0",
           land_unit_key = "wh3_main_tze_cav_doom_knights_0",
+          agent_subtype = "",
           name = "Doom Knights of Tzeentch",
           category = "monstrous_cavalry",
           category_raw = "inf_melee",
@@ -22889,6 +24634,7 @@ return {
         {
           unit_key = "wh3_main_kho_cav_skullcrushers_0",
           land_unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          agent_subtype = "",
           name = "Skullcrushers of Khorne",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -22897,6 +24643,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_mon_bile_trolls",
           land_unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          agent_subtype = "",
           name = "Bile Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22905,6 +24652,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
           land_unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          agent_subtype = "",
           name = "Bloodbeasts of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22913,6 +24661,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
           land_unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          agent_subtype = "",
           name = "Champions Of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22921,6 +24670,7 @@ return {
         {
           unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
           land_unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          agent_subtype = "",
           name = "Changebringers",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22929,6 +24679,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_spawn",
           land_unit_key = "wh_main_chs_mon_chaos_spawn",
+          agent_subtype = "",
           name = "Chaos Spawn",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22937,6 +24688,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_trolls",
           land_unit_key = "wh_main_chs_mon_trolls",
+          agent_subtype = "",
           name = "Chaos Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22945,6 +24697,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_mon_trolls_1",
           land_unit_key = "wh_dlc01_chs_mon_trolls_1",
+          agent_subtype = "",
           name = "Chaos Trolls (Armoured)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22953,6 +24706,7 @@ return {
         {
           unit_key = "wh_dlc01_chs_mon_dragon_ogre",
           land_unit_key = "wh_dlc01_chs_mon_dragon_ogre",
+          agent_subtype = "",
           name = "Dragon Ogres",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22961,6 +24715,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          agent_subtype = "",
           name = "Plague Ogres",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22969,6 +24724,7 @@ return {
         {
           unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
           land_unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          agent_subtype = "",
           name = "Plague Ogres (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22977,6 +24733,7 @@ return {
         {
           unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
           land_unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          agent_subtype = "",
           name = "Slaughterbrute",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22985,6 +24742,7 @@ return {
         {
           unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
           land_unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          agent_subtype = "",
           name = "Spawn of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -22993,6 +24751,7 @@ return {
         {
           unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0_warriors",
           land_unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          agent_subtype = "",
           name = "Spawn of Nurgle",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -23001,6 +24760,7 @@ return {
         {
           unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          agent_subtype = "",
           name = "Spawn of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -23009,6 +24769,7 @@ return {
         {
           unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
           land_unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          agent_subtype = "",
           name = "Spawn of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -23017,6 +24778,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_0",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Chaos Warhounds",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -23025,6 +24787,7 @@ return {
         {
           unit_key = "wh_main_chs_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Chaos Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -23033,6 +24796,7 @@ return {
         {
           unit_key = "wh_main_chs_art_hellcannon",
           land_unit_key = "wh_main_chs_art_hellcannon",
+          agent_subtype = "",
           name = "Hellcannon",
           category = "war_machine",
           category_raw = "artillery",
@@ -23253,6 +25017,7 @@ return {
         {
           unit_key = "wh3_dlc25_dwf_cha_dragon_slayer",
           land_unit_key = "wh3_dlc25_dwf_cha_dragon_slayer",
+          agent_subtype = "wh3_dlc25_dwf_dragon_slayer",
           name = "Dragon Slayer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23261,6 +25026,7 @@ return {
         {
           unit_key = "wh_main_dwf_cha_master_engineer_0",
           land_unit_key = "wh_main_dwf_cha_master_engineer_0",
+          agent_subtype = "wh_main_dwf_master_engineer",
           name = "Master Engineer",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -23269,6 +25035,7 @@ return {
         {
           unit_key = "wh_main_dwf_cha_rune_smith_0",
           land_unit_key = "wh_main_dwf_cha_rune_smith_0",
+          agent_subtype = "wh_main_dwf_runesmith",
           name = "Runesmith",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23277,6 +25044,7 @@ return {
         {
           unit_key = "wh_main_dwf_cha_thane",
           land_unit_key = "wh_main_dwf_cha_thane",
+          agent_subtype = "wh_main_dwf_thane",
           name = "Thane",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23285,6 +25053,7 @@ return {
         {
           unit_key = "wh3_dlc25_dwf_cha_daemon_slayer",
           land_unit_key = "wh3_dlc25_dwf_cha_daemon_slayer",
+          agent_subtype = "wh3_dlc25_dwf_daemon_slayer",
           name = "Daemon Slayer",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -23293,6 +25062,7 @@ return {
         {
           unit_key = "wh_main_dwf_cha_lord_0",
           land_unit_key = "wh_main_dwf_cha_lord_0",
+          agent_subtype = "wh_main_dwf_lord",
           name = "Lord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -23301,6 +25071,7 @@ return {
         {
           unit_key = "wh3_dlc25_dwf_inf_doomseekers",
           land_unit_key = "wh3_dlc25_dwf_inf_doomseekers",
+          agent_subtype = "",
           name = "Doomseekers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23309,6 +25080,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_dwarf_warrior_0",
           land_unit_key = "wh_main_dwf_inf_dwarf_warrior_0",
+          agent_subtype = "",
           name = "Dwarf Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23317,6 +25089,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_dwarf_warrior_1",
           land_unit_key = "wh_main_dwf_inf_dwarf_warrior_1",
+          agent_subtype = "",
           name = "Dwarf Warriors (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23325,6 +25098,7 @@ return {
         {
           unit_key = "wh2_dlc10_dwf_inf_giant_slayers",
           land_unit_key = "wh2_dlc10_dwf_inf_giant_slayers",
+          agent_subtype = "",
           name = "Giant Slayers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23333,6 +25107,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_hammerers",
           land_unit_key = "wh_main_dwf_inf_hammerers",
+          agent_subtype = "",
           name = "Hammerers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23341,6 +25116,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_hammerers_grudge_reward",
           land_unit_key = "wh3_dlc25_dwf_inf_hammerers_grudge_unit",
+          agent_subtype = "",
           name = "Hammerers (Grudge Settlers)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23349,6 +25125,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_ironbreakers",
           land_unit_key = "wh_main_dwf_inf_ironbreakers",
+          agent_subtype = "",
           name = "Ironbreakers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23357,6 +25134,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_longbeards",
           land_unit_key = "wh_main_dwf_inf_longbeards",
+          agent_subtype = "",
           name = "Longbeards",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23365,6 +25143,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_longbeards_1_grudge_reward",
           land_unit_key = "wh3_dlc25_dwf_inf_longbeards_1_grudge_unit",
+          agent_subtype = "",
           name = "Longbeards (Great Weapons – Grudge Settlers)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23373,6 +25152,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_longbeards_1",
           land_unit_key = "wh_main_dwf_inf_longbeards_1",
+          agent_subtype = "",
           name = "Longbeards (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23381,6 +25161,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_miners_0",
           land_unit_key = "wh_main_dwf_inf_miners_0",
+          agent_subtype = "",
           name = "Miners",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23389,6 +25170,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_miners_1",
           land_unit_key = "wh_main_dwf_inf_miners_1",
+          agent_subtype = "",
           name = "Miners (Blasting Charges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23397,6 +25179,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_slayers",
           land_unit_key = "wh_main_dwf_inf_slayers",
+          agent_subtype = "",
           name = "Slayers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23405,6 +25188,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_slayers_grudge_reward",
           land_unit_key = "wh3_dlc25_dwf_inf_slayers_grudge_unit",
+          agent_subtype = "",
           name = "Slayers (Grudge Settlers)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23413,6 +25197,7 @@ return {
         {
           unit_key = "wh_dlc06_dwf_inf_bugmans_rangers_0",
           land_unit_key = "wh_dlc06_dwf_inf_bugmans_rangers_0",
+          agent_subtype = "",
           name = "Bugman's Rangers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23421,6 +25206,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_irondrakes_0",
           land_unit_key = "wh_main_dwf_inf_irondrakes_0",
+          agent_subtype = "",
           name = "Irondrakes",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23429,6 +25215,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_irondrakes_0_grudge_reward",
           land_unit_key = "wh3_dlc25_dwf_inf_irondrakes_0_grudge_unit",
+          agent_subtype = "",
           name = "Irondrakes (Grudge Settlers)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23437,6 +25224,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_irondrakes_2",
           land_unit_key = "wh_main_dwf_inf_irondrakes_2",
+          agent_subtype = "",
           name = "Irondrakes (Trollhammer Torpedoes)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23445,6 +25233,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_quarrellers_0",
           land_unit_key = "wh_main_dwf_inf_quarrellers_0",
+          agent_subtype = "",
           name = "Quarrellers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23453,6 +25242,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_quarrellers_1_grudge_reward",
           land_unit_key = "wh3_dlc25_dwf_inf_quarrellers_1_grudge_unit",
+          agent_subtype = "",
           name = "Quarrellers (Great Weapons – Grudge Settlers)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23461,6 +25251,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_quarrellers_1",
           land_unit_key = "wh_main_dwf_inf_quarrellers_1",
+          agent_subtype = "",
           name = "Quarrellers (Great Weapons)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23469,6 +25260,7 @@ return {
         {
           unit_key = "wh_dlc06_dwf_inf_rangers_0",
           land_unit_key = "wh_dlc06_dwf_inf_rangers_0",
+          agent_subtype = "",
           name = "Rangers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23477,6 +25269,7 @@ return {
         {
           unit_key = "wh_dlc06_dwf_inf_rangers_1",
           land_unit_key = "wh_dlc06_dwf_inf_rangers_1",
+          agent_subtype = "",
           name = "Rangers (Great Weapons)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23485,6 +25278,7 @@ return {
         {
           unit_key = "wh3_dlc25_dwf_inf_slayer_pirates",
           land_unit_key = "wh3_dlc25_dwf_inf_slayer_pirates",
+          agent_subtype = "",
           name = "Slayer Pirates",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23493,6 +25287,7 @@ return {
         {
           unit_key = "wh_main_dwf_inf_thunderers_0",
           land_unit_key = "wh_main_dwf_inf_thunderers_0",
+          agent_subtype = "",
           name = "Thunderers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23501,6 +25296,7 @@ return {
         {
           unit_key = "wh3_dlc25_dwf_inf_thunderers_grudge_rakers",
           land_unit_key = "wh3_dlc25_dwf_inf_thunderers_grudge_rakers",
+          agent_subtype = "",
           name = "Thunderers (Grudge-Rakers)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23509,6 +25305,7 @@ return {
         {
           unit_key = "wh_dlc06_dwf_art_bolt_thrower_0",
           land_unit_key = "wh_dlc06_dwf_art_bolt_thrower_0",
+          agent_subtype = "",
           name = "Bolt Throwers",
           category = "war_machine",
           category_raw = "artillery",
@@ -23517,6 +25314,7 @@ return {
         {
           unit_key = "wh_main_dwf_art_cannon",
           land_unit_key = "wh_main_dwf_art_cannon",
+          agent_subtype = "",
           name = "Cannons",
           category = "war_machine",
           category_raw = "artillery",
@@ -23525,6 +25323,7 @@ return {
         {
           unit_key = "wh_main_dwf_art_flame_cannon",
           land_unit_key = "wh_main_dwf_art_flame_cannon",
+          agent_subtype = "",
           name = "Flame Cannons",
           category = "war_machine",
           category_raw = "artillery",
@@ -23533,6 +25332,7 @@ return {
         {
           unit_key = "wh_main_dwf_art_flame_cannon_grudge_reward",
           land_unit_key = "wh3_dlc25_dwf_art_flame_cannon_grudge_unit",
+          agent_subtype = "",
           name = "Flame Cannons (Grudge Settlers)",
           category = "war_machine",
           category_raw = "artillery",
@@ -23541,6 +25341,7 @@ return {
         {
           unit_key = "wh3_dlc25_dwf_art_goblin_hewer",
           land_unit_key = "wh3_dlc25_dwf_art_goblin_hewer",
+          agent_subtype = "",
           name = "Goblin Hewers",
           category = "war_machine",
           category_raw = "artillery",
@@ -23549,6 +25350,7 @@ return {
         {
           unit_key = "wh_main_dwf_art_grudge_thrower",
           land_unit_key = "wh_main_dwf_art_grudge_thrower",
+          agent_subtype = "",
           name = "Grudge Throwers",
           category = "war_machine",
           category_raw = "artillery",
@@ -23557,6 +25359,7 @@ return {
         {
           unit_key = "wh3_dlc25_dwf_art_grudge_thrower_grudge_reward",
           land_unit_key = "wh3_dlc25_dwf_art_grudge_thrower_grudge_unit",
+          agent_subtype = "",
           name = "Grudge Throwers (Grudge Settlers)",
           category = "war_machine",
           category_raw = "artillery",
@@ -23565,6 +25368,7 @@ return {
         {
           unit_key = "wh_main_dwf_veh_gyrobomber",
           land_unit_key = "wh_main_dwf_veh_gyrobomber",
+          agent_subtype = "",
           name = "Gyrobombers",
           category = "war_machine",
           category_raw = "inf_ranged",
@@ -23573,6 +25377,7 @@ return {
         {
           unit_key = "wh_main_dwf_veh_gyrocopter_0",
           land_unit_key = "wh_main_dwf_veh_gyrocopter_0",
+          agent_subtype = "",
           name = "Gyrocopters",
           category = "war_machine",
           category_raw = "inf_ranged",
@@ -23581,6 +25386,7 @@ return {
         {
           unit_key = "wh_main_dwf_veh_gyrocopter_1",
           land_unit_key = "wh_main_dwf_veh_gyrocopter_1",
+          agent_subtype = "",
           name = "Gyrocopters (Brimstone Guns)",
           category = "war_machine",
           category_raw = "inf_ranged",
@@ -23589,6 +25395,7 @@ return {
         {
           unit_key = "wh_main_dwf_veh_gyrocopter_1_grudge_reward",
           land_unit_key = "wh3_dlc25_dwf_veh_gyrocopter_1_grudge_unit",
+          agent_subtype = "",
           name = "Gyrocopters (Trollhammers – Grudge Settlers)",
           category = "war_machine",
           category_raw = "inf_ranged",
@@ -23597,6 +25404,7 @@ return {
         {
           unit_key = "wh_main_dwf_art_organ_gun",
           land_unit_key = "wh_main_dwf_art_organ_gun",
+          agent_subtype = "",
           name = "Organ Guns",
           category = "war_machine",
           category_raw = "artillery",
@@ -23605,6 +25413,7 @@ return {
         {
           unit_key = "wh3_dlc25_dwf_veh_thunderbarge",
           land_unit_key = "wh3_dlc25_dwf_veh_thunderbarge",
+          agent_subtype = "",
           name = "Thunderbarge",
           category = "war_machine",
           category_raw = "war_beast",
@@ -23743,6 +25552,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship",
           land_unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship",
+          agent_subtype = "",
           name = "Land Ship",
           category = "artillery",
           category_raw = "artillery",
@@ -23751,6 +25561,7 @@ return {
         {
           unit_key = "wh_main_emp_veh_luminark_of_hysh_0",
           land_unit_key = "wh_main_emp_veh_luminark_of_hysh_0",
+          agent_subtype = "",
           name = "Luminark of Hysh",
           category = "artillery",
           category_raw = "artillery",
@@ -23759,6 +25570,7 @@ return {
         {
           unit_key = "wh_main_emp_veh_steam_tank",
           land_unit_key = "wh_main_emp_veh_steam_tank_driver",
+          agent_subtype = "",
           name = "Steam Tank",
           category = "artillery",
           category_raw = "artillery",
@@ -23767,6 +25579,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_veh_steam_tank_volley_gun",
           land_unit_key = "wh3_dlc25_emp_veh_steam_tank_volley_gun",
+          agent_subtype = "",
           name = "Steam Tank (Volley Gun)",
           category = "artillery",
           category_raw = "artillery",
@@ -23775,6 +25588,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_fire_0",
           land_unit_key = "wh_main_emp_cha_wizard_fire_0",
+          agent_subtype = "wh_main_emp_bright_wizard",
           name = "Bright Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23783,6 +25597,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_heavens_0",
           land_unit_key = "wh_main_emp_cha_wizard_heavens_0",
+          agent_subtype = "wh_main_emp_celestial_wizard",
           name = "Celestial Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23791,6 +25606,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_captain_0",
           land_unit_key = "wh_main_emp_cha_captain_0",
+          agent_subtype = "wh_main_emp_captain",
           name = "Empire Captain",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23799,6 +25615,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_engineer",
           land_unit_key = "wh3_dlc25_emp_cha_engineer",
+          agent_subtype = "wh3_dlc25_emp_engineer",
           name = "Engineer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23807,6 +25624,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_wizard_metal",
           land_unit_key = "wh3_dlc25_emp_cha_wizard_metal",
+          agent_subtype = "wh3_dlc25_emp_gold_wizard",
           name = "Gold Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23815,6 +25633,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_light_0",
           land_unit_key = "wh_main_emp_cha_wizard_light_0",
+          agent_subtype = "wh_main_emp_light_wizard",
           name = "Light Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23823,6 +25642,7 @@ return {
         {
           unit_key = "wh_main_dwf_cha_thane",
           land_unit_key = "wh_main_dwf_cha_thane",
+          agent_subtype = "wh_main_dwf_thane",
           name = "Thane",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23831,6 +25651,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_warrior_priest_0",
           land_unit_key = "wh_main_emp_cha_warrior_priest_0",
+          agent_subtype = "wh_main_emp_warrior_priest",
           name = "Warrior Priest",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -23839,6 +25660,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_waystalker_0",
           land_unit_key = "wh_dlc05_wef_cha_waystalker_0",
+          agent_subtype = "wh_dlc05_wef_waystalker",
           name = "Waystalker",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -23847,6 +25669,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_witch_hunter",
           land_unit_key = "wh_main_emp_cha_witch_hunter",
+          agent_subtype = "wh_main_emp_witch_hunter",
           name = "Witch Hunter",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -23855,6 +25678,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_general_0",
           land_unit_key = "wh_main_emp_cha_general_0",
+          agent_subtype = "wh_main_emp_lord",
           name = "General of the Empire",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -23863,6 +25687,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_master_engineer",
           land_unit_key = "wh3_dlc25_emp_cha_master_engineer",
+          agent_subtype = "wh3_dlc25_emp_master_engineer",
           name = "Master Engineer",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -23871,6 +25696,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_empire_knights",
           land_unit_key = "wh_main_emp_cav_empire_knights",
+          agent_subtype = "",
           name = "Empire Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -23879,6 +25705,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
           land_unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
+          agent_subtype = "",
           name = "Knights of the Black Rose",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -23887,6 +25714,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_cav_knights_blazing_sun_0",
           land_unit_key = "wh_dlc04_emp_cav_knights_blazing_sun_0",
+          agent_subtype = "",
           name = "Knights of the Blazing Sun",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -23895,6 +25723,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_reiksguard",
           land_unit_key = "wh_main_emp_cav_reiksguard",
+          agent_subtype = "",
           name = "Reiksguard",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -23903,6 +25732,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_inf_flagellants_0",
           land_unit_key = "wh_dlc04_emp_inf_flagellants_0",
+          agent_subtype = "",
           name = "Flagellants",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23911,6 +25741,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_greatswords",
           land_unit_key = "wh_main_emp_inf_greatswords",
+          agent_subtype = "",
           name = "Greatswords",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23919,6 +25750,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_halberdiers",
           land_unit_key = "wh_main_emp_inf_halberdiers",
+          agent_subtype = "",
           name = "Halberdiers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23927,6 +25759,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_spearmen_0",
           land_unit_key = "wh_main_emp_inf_spearmen_0",
+          agent_subtype = "",
           name = "Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23935,6 +25768,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_spearmen_1",
           land_unit_key = "wh_main_emp_inf_spearmen_1",
+          agent_subtype = "",
           name = "Spearmen (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23943,6 +25777,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_swordsmen",
           land_unit_key = "wh_main_emp_inf_swordsmen",
+          agent_subtype = "",
           name = "Swordsmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -23951,6 +25786,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_outriders_0",
           land_unit_key = "wh_main_emp_cav_outriders_0",
+          agent_subtype = "",
           name = "Outriders",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -23959,6 +25795,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_outriders_1",
           land_unit_key = "wh_main_emp_cav_outriders_1",
+          agent_subtype = "",
           name = "Outriders (Grenade Launchers)",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -23967,6 +25804,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_pistoliers_1",
           land_unit_key = "wh_main_emp_cav_pistoliers_1",
+          agent_subtype = "",
           name = "Pistoliers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -23975,6 +25813,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_veh_war_wagon_0",
           land_unit_key = "wh2_dlc13_emp_veh_war_wagon_0",
+          agent_subtype = "",
           name = "War Wagons",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -23983,6 +25822,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_veh_war_wagon_1",
           land_unit_key = "wh2_dlc13_emp_veh_war_wagon_1",
+          agent_subtype = "",
           name = "War Wagons (Mortars)",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -23991,6 +25831,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_inf_archers_0",
           land_unit_key = "wh2_dlc13_emp_inf_archers_0",
+          agent_subtype = "",
           name = "Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -23999,6 +25840,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_crossbowmen",
           land_unit_key = "wh_main_emp_inf_crossbowmen",
+          agent_subtype = "",
           name = "Crossbowmen",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24007,6 +25849,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_inf_free_company_militia_0",
           land_unit_key = "wh_dlc04_emp_inf_free_company_militia_0",
+          agent_subtype = "",
           name = "Free Company Militia",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24015,6 +25858,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_handgunners",
           land_unit_key = "wh_main_emp_inf_handgunners",
+          agent_subtype = "",
           name = "Handgunners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24023,6 +25867,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
           land_unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
+          agent_subtype = "",
           name = "Hochland Long Rifles",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24031,6 +25876,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_inf_huntsmen_0",
           land_unit_key = "wh2_dlc13_emp_inf_huntsmen_0",
+          agent_subtype = "",
           name = "Huntsmen",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24039,6 +25885,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
           land_unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
+          agent_subtype = "",
           name = "Nuln Ironsides",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24047,6 +25894,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_demigryph_knights_0",
           land_unit_key = "wh_main_emp_cav_demigryph_knights_0",
+          agent_subtype = "",
           name = "Demigryph Knights",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -24055,6 +25903,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_demigryph_knights_1",
           land_unit_key = "wh_main_emp_cav_demigryph_knights_1",
+          agent_subtype = "",
           name = "Demigryph Knights (Halberds)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -24063,6 +25912,7 @@ return {
         {
           unit_key = "wh_main_emp_art_great_cannon",
           land_unit_key = "wh_main_emp_art_great_cannon",
+          agent_subtype = "",
           name = "Great Cannons",
           category = "war_machine",
           category_raw = "artillery",
@@ -24071,6 +25921,7 @@ return {
         {
           unit_key = "wh_main_emp_art_helblaster_volley_gun",
           land_unit_key = "wh_main_emp_art_helblaster_volley_gun",
+          agent_subtype = "",
           name = "Helblaster Volley Guns",
           category = "war_machine",
           category_raw = "artillery",
@@ -24079,6 +25930,7 @@ return {
         {
           unit_key = "wh_main_emp_art_helstorm_rocket_battery",
           land_unit_key = "wh_main_emp_art_helstorm_rocket_battery",
+          agent_subtype = "",
           name = "Helstorm Rocket Battery",
           category = "war_machine",
           category_raw = "artillery",
@@ -24087,6 +25939,7 @@ return {
         {
           unit_key = "wh_main_emp_art_mortar",
           land_unit_key = "wh_main_emp_art_mortar",
+          agent_subtype = "",
           name = "Mortars",
           category = "war_machine",
           category_raw = "artillery",
@@ -24095,6 +25948,7 @@ return {
         {
           unit_key = "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0",
           land_unit_key = "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0",
+          agent_subtype = "",
           name = "Obsinite Gyrocopters",
           category = "war_machine",
           category_raw = "inf_ranged",
@@ -24185,6 +26039,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship",
           land_unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship",
+          agent_subtype = "",
           name = "Land Ship",
           category = "artillery",
           category_raw = "artillery",
@@ -24193,6 +26048,7 @@ return {
         {
           unit_key = "wh_main_emp_veh_luminark_of_hysh_0",
           land_unit_key = "wh_main_emp_veh_luminark_of_hysh_0",
+          agent_subtype = "",
           name = "Luminark of Hysh",
           category = "artillery",
           category_raw = "artillery",
@@ -24201,6 +26057,7 @@ return {
         {
           unit_key = "wh_main_emp_veh_steam_tank",
           land_unit_key = "wh_main_emp_veh_steam_tank_driver",
+          agent_subtype = "",
           name = "Steam Tank",
           category = "artillery",
           category_raw = "artillery",
@@ -24209,6 +26066,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_veh_steam_tank_volley_gun",
           land_unit_key = "wh3_dlc25_emp_veh_steam_tank_volley_gun",
+          agent_subtype = "",
           name = "Steam Tank (Volley Gun)",
           category = "artillery",
           category_raw = "artillery",
@@ -24217,6 +26075,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_fire_0",
           land_unit_key = "wh_main_emp_cha_wizard_fire_0",
+          agent_subtype = "wh_main_emp_bright_wizard",
           name = "Bright Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24225,6 +26084,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_heavens_0",
           land_unit_key = "wh_main_emp_cha_wizard_heavens_0",
+          agent_subtype = "wh_main_emp_celestial_wizard",
           name = "Celestial Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24233,6 +26093,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_captain_0",
           land_unit_key = "wh_main_emp_cha_captain_0",
+          agent_subtype = "wh_main_emp_captain",
           name = "Empire Captain",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24241,6 +26102,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_engineer",
           land_unit_key = "wh3_dlc25_emp_cha_engineer",
+          agent_subtype = "wh3_dlc25_emp_engineer",
           name = "Engineer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24249,6 +26111,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_wizard_metal",
           land_unit_key = "wh3_dlc25_emp_cha_wizard_metal",
+          agent_subtype = "wh3_dlc25_emp_gold_wizard",
           name = "Gold Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24257,6 +26120,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_light_0",
           land_unit_key = "wh_main_emp_cha_wizard_light_0",
+          agent_subtype = "wh_main_emp_light_wizard",
           name = "Light Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24265,6 +26129,7 @@ return {
         {
           unit_key = "wh_main_dwf_cha_thane",
           land_unit_key = "wh_main_dwf_cha_thane",
+          agent_subtype = "wh_main_dwf_thane",
           name = "Thane",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24273,6 +26138,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_warrior_priest_0",
           land_unit_key = "wh_main_emp_cha_warrior_priest_0",
+          agent_subtype = "wh_main_emp_warrior_priest",
           name = "Warrior Priest",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24281,6 +26147,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_waystalker_0",
           land_unit_key = "wh_dlc05_wef_cha_waystalker_0",
+          agent_subtype = "wh_dlc05_wef_waystalker",
           name = "Waystalker",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -24289,6 +26156,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_witch_hunter",
           land_unit_key = "wh_main_emp_cha_witch_hunter",
+          agent_subtype = "wh_main_emp_witch_hunter",
           name = "Witch Hunter",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -24297,6 +26165,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_general_0",
           land_unit_key = "wh_main_emp_cha_general_0",
+          agent_subtype = "wh_main_emp_lord",
           name = "General of the Empire",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -24305,6 +26174,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_master_engineer",
           land_unit_key = "wh3_dlc25_emp_cha_master_engineer",
+          agent_subtype = "wh3_dlc25_emp_master_engineer",
           name = "Master Engineer",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -24313,6 +26183,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_empire_knights",
           land_unit_key = "wh_main_emp_cav_empire_knights",
+          agent_subtype = "",
           name = "Empire Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -24321,6 +26192,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
           land_unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
+          agent_subtype = "",
           name = "Knights of the Black Rose",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -24329,6 +26201,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_cav_knights_blazing_sun_0",
           land_unit_key = "wh_dlc04_emp_cav_knights_blazing_sun_0",
+          agent_subtype = "",
           name = "Knights of the Blazing Sun",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -24337,6 +26210,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_reiksguard",
           land_unit_key = "wh_main_emp_cav_reiksguard",
+          agent_subtype = "",
           name = "Reiksguard",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -24345,6 +26219,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_inf_flagellants_0",
           land_unit_key = "wh_dlc04_emp_inf_flagellants_0",
+          agent_subtype = "",
           name = "Flagellants",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24353,6 +26228,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_greatswords",
           land_unit_key = "wh_main_emp_inf_greatswords",
+          agent_subtype = "",
           name = "Greatswords",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24361,6 +26237,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_halberdiers",
           land_unit_key = "wh_main_emp_inf_halberdiers",
+          agent_subtype = "",
           name = "Halberdiers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24369,6 +26246,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_spearmen_0",
           land_unit_key = "wh_main_emp_inf_spearmen_0",
+          agent_subtype = "",
           name = "Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24377,6 +26255,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_spearmen_1",
           land_unit_key = "wh_main_emp_inf_spearmen_1",
+          agent_subtype = "",
           name = "Spearmen (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24385,6 +26264,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_swordsmen",
           land_unit_key = "wh_main_emp_inf_swordsmen",
+          agent_subtype = "",
           name = "Swordsmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24393,6 +26273,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_outriders_0",
           land_unit_key = "wh_main_emp_cav_outriders_0",
+          agent_subtype = "",
           name = "Outriders",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -24401,6 +26282,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_outriders_1",
           land_unit_key = "wh_main_emp_cav_outriders_1",
+          agent_subtype = "",
           name = "Outriders (Grenade Launchers)",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -24409,6 +26291,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_pistoliers_1",
           land_unit_key = "wh_main_emp_cav_pistoliers_1",
+          agent_subtype = "",
           name = "Pistoliers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -24417,6 +26300,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_veh_war_wagon_0",
           land_unit_key = "wh2_dlc13_emp_veh_war_wagon_0",
+          agent_subtype = "",
           name = "War Wagons",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -24425,6 +26309,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_veh_war_wagon_1",
           land_unit_key = "wh2_dlc13_emp_veh_war_wagon_1",
+          agent_subtype = "",
           name = "War Wagons (Mortars)",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -24433,6 +26318,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_inf_archers_0",
           land_unit_key = "wh2_dlc13_emp_inf_archers_0",
+          agent_subtype = "",
           name = "Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24441,6 +26327,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_crossbowmen",
           land_unit_key = "wh_main_emp_inf_crossbowmen",
+          agent_subtype = "",
           name = "Crossbowmen",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24449,6 +26336,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_inf_free_company_militia_0",
           land_unit_key = "wh_dlc04_emp_inf_free_company_militia_0",
+          agent_subtype = "",
           name = "Free Company Militia",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24457,6 +26345,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_handgunners",
           land_unit_key = "wh_main_emp_inf_handgunners",
+          agent_subtype = "",
           name = "Handgunners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24465,6 +26354,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
           land_unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
+          agent_subtype = "",
           name = "Hochland Long Rifles",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24473,6 +26363,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_inf_huntsmen_0",
           land_unit_key = "wh2_dlc13_emp_inf_huntsmen_0",
+          agent_subtype = "",
           name = "Huntsmen",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24481,6 +26372,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
           land_unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
+          agent_subtype = "",
           name = "Nuln Ironsides",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24489,6 +26381,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_demigryph_knights_0",
           land_unit_key = "wh_main_emp_cav_demigryph_knights_0",
+          agent_subtype = "",
           name = "Demigryph Knights",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -24497,6 +26390,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_demigryph_knights_1",
           land_unit_key = "wh_main_emp_cav_demigryph_knights_1",
+          agent_subtype = "",
           name = "Demigryph Knights (Halberds)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -24505,6 +26399,7 @@ return {
         {
           unit_key = "wh_main_emp_art_great_cannon",
           land_unit_key = "wh_main_emp_art_great_cannon",
+          agent_subtype = "",
           name = "Great Cannons",
           category = "war_machine",
           category_raw = "artillery",
@@ -24513,6 +26408,7 @@ return {
         {
           unit_key = "wh_main_emp_art_helblaster_volley_gun",
           land_unit_key = "wh_main_emp_art_helblaster_volley_gun",
+          agent_subtype = "",
           name = "Helblaster Volley Guns",
           category = "war_machine",
           category_raw = "artillery",
@@ -24521,6 +26417,7 @@ return {
         {
           unit_key = "wh_main_emp_art_helstorm_rocket_battery",
           land_unit_key = "wh_main_emp_art_helstorm_rocket_battery",
+          agent_subtype = "",
           name = "Helstorm Rocket Battery",
           category = "war_machine",
           category_raw = "artillery",
@@ -24529,6 +26426,7 @@ return {
         {
           unit_key = "wh_main_emp_art_mortar",
           land_unit_key = "wh_main_emp_art_mortar",
+          agent_subtype = "",
           name = "Mortars",
           category = "war_machine",
           category_raw = "artillery",
@@ -24537,6 +26435,7 @@ return {
         {
           unit_key = "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0",
           land_unit_key = "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0",
+          agent_subtype = "",
           name = "Obsinite Gyrocopters",
           category = "war_machine",
           category_raw = "inf_ranged",
@@ -24631,6 +26530,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship",
           land_unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship",
+          agent_subtype = "",
           name = "Land Ship",
           category = "artillery",
           category_raw = "artillery",
@@ -24639,6 +26539,7 @@ return {
         {
           unit_key = "wh_main_emp_veh_luminark_of_hysh_0",
           land_unit_key = "wh_main_emp_veh_luminark_of_hysh_0",
+          agent_subtype = "",
           name = "Luminark of Hysh",
           category = "artillery",
           category_raw = "artillery",
@@ -24647,6 +26548,7 @@ return {
         {
           unit_key = "wh_main_emp_veh_steam_tank",
           land_unit_key = "wh_main_emp_veh_steam_tank_driver",
+          agent_subtype = "",
           name = "Steam Tank",
           category = "artillery",
           category_raw = "artillery",
@@ -24655,6 +26557,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_veh_steam_tank_volley_gun",
           land_unit_key = "wh3_dlc25_emp_veh_steam_tank_volley_gun",
+          agent_subtype = "",
           name = "Steam Tank (Volley Gun)",
           category = "artillery",
           category_raw = "artillery",
@@ -24663,6 +26566,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_fire_0",
           land_unit_key = "wh_main_emp_cha_wizard_fire_0",
+          agent_subtype = "wh_main_emp_bright_wizard",
           name = "Bright Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24671,6 +26575,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_heavens_0",
           land_unit_key = "wh_main_emp_cha_wizard_heavens_0",
+          agent_subtype = "wh_main_emp_celestial_wizard",
           name = "Celestial Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24679,6 +26584,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_captain_0",
           land_unit_key = "wh_main_emp_cha_captain_0",
+          agent_subtype = "wh_main_emp_captain",
           name = "Empire Captain",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24687,6 +26593,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_engineer",
           land_unit_key = "wh3_dlc25_emp_cha_engineer",
+          agent_subtype = "wh3_dlc25_emp_engineer",
           name = "Engineer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24695,6 +26602,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_wizard_metal",
           land_unit_key = "wh3_dlc25_emp_cha_wizard_metal",
+          agent_subtype = "wh3_dlc25_emp_gold_wizard",
           name = "Gold Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24703,6 +26611,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_wizard_light_0",
           land_unit_key = "wh_main_emp_cha_wizard_light_0",
+          agent_subtype = "wh_main_emp_light_wizard",
           name = "Light Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24711,6 +26620,7 @@ return {
         {
           unit_key = "wh_main_dwf_cha_thane",
           land_unit_key = "wh_main_dwf_cha_thane",
+          agent_subtype = "wh_main_dwf_thane",
           name = "Thane",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24719,6 +26629,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_warrior_priest_0",
           land_unit_key = "wh_main_emp_cha_warrior_priest_0",
+          agent_subtype = "wh_main_emp_warrior_priest",
           name = "Warrior Priest",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -24727,6 +26638,7 @@ return {
         {
           unit_key = "wh_dlc05_wef_cha_waystalker_0",
           land_unit_key = "wh_dlc05_wef_cha_waystalker_0",
+          agent_subtype = "wh_dlc05_wef_waystalker",
           name = "Waystalker",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -24735,6 +26647,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_witch_hunter",
           land_unit_key = "wh_main_emp_cha_witch_hunter",
+          agent_subtype = "wh_main_emp_witch_hunter",
           name = "Witch Hunter",
           category = "character_hero",
           category_raw = "inf_ranged",
@@ -24743,6 +26656,7 @@ return {
         {
           unit_key = "wh_main_emp_cha_general_0",
           land_unit_key = "wh_main_emp_cha_general_0",
+          agent_subtype = "wh_main_emp_lord",
           name = "General of the Empire",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -24751,6 +26665,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cha_master_engineer",
           land_unit_key = "wh3_dlc25_emp_cha_master_engineer",
+          agent_subtype = "wh3_dlc25_emp_master_engineer",
           name = "Master Engineer",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -24759,6 +26674,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_empire_knights",
           land_unit_key = "wh_main_emp_cav_empire_knights",
+          agent_subtype = "",
           name = "Empire Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -24767,6 +26683,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
           land_unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
+          agent_subtype = "",
           name = "Knights of the Black Rose",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -24775,6 +26692,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_cav_knights_blazing_sun_0",
           land_unit_key = "wh_dlc04_emp_cav_knights_blazing_sun_0",
+          agent_subtype = "",
           name = "Knights of the Blazing Sun",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -24783,6 +26701,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_reiksguard",
           land_unit_key = "wh_main_emp_cav_reiksguard",
+          agent_subtype = "",
           name = "Reiksguard",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -24791,6 +26710,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_inf_flagellants_0",
           land_unit_key = "wh_dlc04_emp_inf_flagellants_0",
+          agent_subtype = "",
           name = "Flagellants",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24799,6 +26719,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_greatswords",
           land_unit_key = "wh_main_emp_inf_greatswords",
+          agent_subtype = "",
           name = "Greatswords",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24807,6 +26728,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_halberdiers",
           land_unit_key = "wh_main_emp_inf_halberdiers",
+          agent_subtype = "",
           name = "Halberdiers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24815,6 +26737,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_spearmen_0",
           land_unit_key = "wh_main_emp_inf_spearmen_0",
+          agent_subtype = "",
           name = "Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24823,6 +26746,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_spearmen_1",
           land_unit_key = "wh_main_emp_inf_spearmen_1",
+          agent_subtype = "",
           name = "Spearmen (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24831,6 +26755,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_swordsmen",
           land_unit_key = "wh_main_emp_inf_swordsmen",
+          agent_subtype = "",
           name = "Swordsmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -24839,6 +26764,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_outriders_0",
           land_unit_key = "wh_main_emp_cav_outriders_0",
+          agent_subtype = "",
           name = "Outriders",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -24847,6 +26773,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_outriders_1",
           land_unit_key = "wh_main_emp_cav_outriders_1",
+          agent_subtype = "",
           name = "Outriders (Grenade Launchers)",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -24855,6 +26782,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_pistoliers_1",
           land_unit_key = "wh_main_emp_cav_pistoliers_1",
+          agent_subtype = "",
           name = "Pistoliers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -24863,6 +26791,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_veh_war_wagon_0",
           land_unit_key = "wh2_dlc13_emp_veh_war_wagon_0",
+          agent_subtype = "",
           name = "War Wagons",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -24871,6 +26800,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_veh_war_wagon_1",
           land_unit_key = "wh2_dlc13_emp_veh_war_wagon_1",
+          agent_subtype = "",
           name = "War Wagons (Mortars)",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -24879,6 +26809,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_inf_archers_0",
           land_unit_key = "wh2_dlc13_emp_inf_archers_0",
+          agent_subtype = "",
           name = "Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24887,6 +26818,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_crossbowmen",
           land_unit_key = "wh_main_emp_inf_crossbowmen",
+          agent_subtype = "",
           name = "Crossbowmen",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24895,6 +26827,7 @@ return {
         {
           unit_key = "wh_dlc04_emp_inf_free_company_militia_0",
           land_unit_key = "wh_dlc04_emp_inf_free_company_militia_0",
+          agent_subtype = "",
           name = "Free Company Militia",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24903,6 +26836,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_handgunners",
           land_unit_key = "wh_main_emp_inf_handgunners",
+          agent_subtype = "",
           name = "Handgunners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24911,6 +26845,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
           land_unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
+          agent_subtype = "",
           name = "Hochland Long Rifles",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24919,6 +26854,7 @@ return {
         {
           unit_key = "wh2_dlc13_emp_inf_huntsmen_0",
           land_unit_key = "wh2_dlc13_emp_inf_huntsmen_0",
+          agent_subtype = "",
           name = "Huntsmen",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24927,6 +26863,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
           land_unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
+          agent_subtype = "",
           name = "Nuln Ironsides",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -24935,6 +26872,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_demigryph_knights_0",
           land_unit_key = "wh_main_emp_cav_demigryph_knights_0",
+          agent_subtype = "",
           name = "Demigryph Knights",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -24943,6 +26881,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_demigryph_knights_1",
           land_unit_key = "wh_main_emp_cav_demigryph_knights_1",
+          agent_subtype = "",
           name = "Demigryph Knights (Halberds)",
           category = "monstrous_cavalry",
           category_raw = "cavalry",
@@ -24951,6 +26890,7 @@ return {
         {
           unit_key = "wh_main_emp_art_great_cannon",
           land_unit_key = "wh_main_emp_art_great_cannon",
+          agent_subtype = "",
           name = "Great Cannons",
           category = "war_machine",
           category_raw = "artillery",
@@ -24959,6 +26899,7 @@ return {
         {
           unit_key = "wh_main_emp_art_helblaster_volley_gun",
           land_unit_key = "wh_main_emp_art_helblaster_volley_gun",
+          agent_subtype = "",
           name = "Helblaster Volley Guns",
           category = "war_machine",
           category_raw = "artillery",
@@ -24967,6 +26908,7 @@ return {
         {
           unit_key = "wh_main_emp_art_helstorm_rocket_battery",
           land_unit_key = "wh_main_emp_art_helstorm_rocket_battery",
+          agent_subtype = "",
           name = "Helstorm Rocket Battery",
           category = "war_machine",
           category_raw = "artillery",
@@ -24975,6 +26917,7 @@ return {
         {
           unit_key = "wh_main_emp_art_mortar",
           land_unit_key = "wh_main_emp_art_mortar",
+          agent_subtype = "",
           name = "Mortars",
           category = "war_machine",
           category_raw = "artillery",
@@ -24983,6 +26926,7 @@ return {
         {
           unit_key = "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0",
           land_unit_key = "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0",
+          agent_subtype = "",
           name = "Obsinite Gyrocopters",
           category = "war_machine",
           category_raw = "inf_ranged",
@@ -25187,6 +27131,7 @@ return {
         {
           unit_key = "wh2_pro09_grn_cha_black_orc_big_boss_0",
           land_unit_key = "wh2_pro09_grn_cha_black_orc_big_boss_0",
+          agent_subtype = "wh2_pro09_grn_black_orc_big_boss",
           name = "Black Orc Big Boss",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25195,6 +27140,7 @@ return {
         {
           unit_key = "wh_main_grn_cha_goblin_big_boss_0",
           land_unit_key = "wh_main_grn_cha_goblin_big_boss_0",
+          agent_subtype = "wh_main_grn_goblin_big_boss",
           name = "Goblin Big Boss",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25203,6 +27149,7 @@ return {
         {
           unit_key = "wh3_dlc26_grn_cha_night_goblin_big_boss",
           land_unit_key = "wh3_dlc26_grn_cha_night_goblin_big_boss",
+          agent_subtype = "wh3_dlc26_grn_night_goblin_big_boss",
           name = "Night Goblin Big Boss",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25211,6 +27158,7 @@ return {
         {
           unit_key = "wh_main_grn_cha_night_goblin_shaman",
           land_unit_key = "wh_main_grn_cha_night_goblin_shaman",
+          agent_subtype = "wh_main_grn_night_goblin_shaman",
           name = "Night Goblin Shaman",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25219,6 +27167,7 @@ return {
         {
           unit_key = "wh_main_grn_cha_orc_shaman_0",
           land_unit_key = "wh_main_grn_cha_orc_shaman_0",
+          agent_subtype = "wh_main_grn_orc_shaman",
           name = "Orc Shaman",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25227,6 +27176,7 @@ return {
         {
           unit_key = "wh_main_grn_cha_goblin_great_shaman_0",
           land_unit_key = "wh_main_grn_cha_goblin_great_shaman_0",
+          agent_subtype = "wh_main_grn_goblin_great_shaman",
           name = "Goblin Great Shaman",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -25235,6 +27185,7 @@ return {
         {
           unit_key = "wh3_dlc26_grn_cha_savage_orc_great_shaman",
           land_unit_key = "wh3_dlc26_grn_cha_savage_orc_great_shaman",
+          agent_subtype = "wh3_dlc26_grn_savage_orc_great_shaman",
           name = "Savage Orc Great Shaman",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -25243,6 +27194,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_orc_boar_chariot",
           land_unit_key = "wh_main_grn_cav_orc_boar_chariot",
+          agent_subtype = "",
           name = "Orc Boar Chariots",
           category = "chariot",
           category_raw = "melee",
@@ -25251,6 +27203,7 @@ return {
         {
           unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_0",
           land_unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_0",
+          agent_subtype = "",
           name = "Snotling Pump Wagons",
           category = "chariot",
           category_raw = "melee",
@@ -25259,6 +27212,7 @@ return {
         {
           unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_flappas_0",
           land_unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_flappas_0",
+          agent_subtype = "",
           name = "Snotling Pump Wagons (Flappas)",
           category = "chariot",
           category_raw = "melee",
@@ -25267,6 +27221,7 @@ return {
         {
           unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_roller_0",
           land_unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_roller_0",
+          agent_subtype = "",
           name = "Snotling Pump Wagons (Spiky Rollers)",
           category = "chariot",
           category_raw = "melee",
@@ -25275,6 +27230,7 @@ return {
         {
           unit_key = "wh2_dlc15_grn_cav_squig_hoppers_waaagh_0",
           land_unit_key = "wh2_dlc15_grn_cav_squig_hoppers_waaagh_0",
+          agent_subtype = "",
           name = "Armoured Squig Hoppers",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -25283,6 +27239,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_0",
           land_unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_0",
+          agent_subtype = "",
           name = "Forest Goblin Spider Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -25291,6 +27248,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_goblin_wolf_riders_0",
           land_unit_key = "wh_main_grn_cav_goblin_wolf_riders_0",
+          agent_subtype = "",
           name = "Goblin Wolf Riders",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -25299,6 +27257,7 @@ return {
         {
           unit_key = "wh_dlc06_grn_cav_squig_hoppers_0",
           land_unit_key = "wh_dlc06_grn_cav_squig_hoppers_0",
+          agent_subtype = "",
           name = "Night Goblin Squig Hoppers",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -25307,6 +27266,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_orc_boar_boy_big_uns",
           land_unit_key = "wh_main_grn_cav_orc_boar_boy_big_uns",
+          agent_subtype = "",
           name = "Orc Boar Boy Big 'Uns",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -25315,6 +27275,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_orc_boar_boyz",
           land_unit_key = "wh_main_grn_cav_orc_boar_boyz",
+          agent_subtype = "",
           name = "Orc Boar Boyz",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -25323,6 +27284,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
           land_unit_key = "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
+          agent_subtype = "",
           name = "Savage Orc Boar Boy Big 'Uns",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -25331,6 +27293,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_savage_orc_boar_boyz",
           land_unit_key = "wh_main_grn_cav_savage_orc_boar_boyz",
+          agent_subtype = "",
           name = "Savage Orc Boar Boyz",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -25339,6 +27302,7 @@ return {
         {
           unit_key = "wh3_dlc26_grn_inf_black_orcs_shield",
           land_unit_key = "wh3_dlc26_grn_inf_black_orcs_shield",
+          agent_subtype = "",
           name = "Black Orcs",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25347,6 +27311,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_black_orcs",
           land_unit_key = "wh_main_grn_inf_black_orcs",
+          agent_subtype = "",
           name = "Black Orcs (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25355,6 +27320,7 @@ return {
         {
           unit_key = "wh3_main_grn_inf_goblins_sword_shield",
           land_unit_key = "wh3_main_grn_inf_goblins_sword_shield",
+          agent_subtype = "",
           name = "Goblins",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25363,6 +27329,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_goblin_spearmen",
           land_unit_key = "wh_main_grn_inf_goblin_spearmen",
+          agent_subtype = "",
           name = "Goblins (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25371,6 +27338,7 @@ return {
         {
           unit_key = "wh_dlc06_grn_inf_nasty_skulkers_0",
           land_unit_key = "wh_dlc06_grn_inf_nasty_skulkers_0",
+          agent_subtype = "",
           name = "Nasty Skulkers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25379,6 +27347,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblins",
           land_unit_key = "wh_main_grn_inf_night_goblins",
+          agent_subtype = "",
           name = "Night Goblins",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25387,6 +27356,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblin_fanatics",
           land_unit_key = "wh_main_grn_inf_night_goblin_fanatics",
+          agent_subtype = "",
           name = "Night Goblins (Fanatics)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25395,6 +27365,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_orc_big_uns",
           land_unit_key = "wh_main_grn_inf_orc_big_uns",
+          agent_subtype = "",
           name = "Orc Big 'Uns",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25403,6 +27374,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_orc_boyz",
           land_unit_key = "wh_main_grn_inf_orc_boyz",
+          agent_subtype = "",
           name = "Orc Boyz",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25411,6 +27383,7 @@ return {
         {
           unit_key = "wh3_main_grn_inf_orc_boyz_spear_shield",
           land_unit_key = "wh3_main_grn_inf_orc_boyz_spear_shield",
+          agent_subtype = "",
           name = "Orc Boyz (Spears)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25419,6 +27392,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_savage_orc_big_uns",
           land_unit_key = "wh_main_grn_inf_savage_orc_big_uns",
+          agent_subtype = "",
           name = "Savage Orc Big 'Uns",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25427,6 +27401,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_savage_orcs",
           land_unit_key = "wh_main_grn_inf_savage_orcs",
+          agent_subtype = "",
           name = "Savage Orcs",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25435,6 +27410,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_1",
           land_unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_1",
+          agent_subtype = "",
           name = "Forest Goblin Spider Rider Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -25443,6 +27419,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_goblin_wolf_riders_1",
           land_unit_key = "wh_main_grn_cav_goblin_wolf_riders_1",
+          agent_subtype = "",
           name = "Goblin Wolf Rider Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -25451,6 +27428,7 @@ return {
         {
           unit_key = "wh2_dlc15_grn_cav_forest_goblin_spider_riders_waaagh_0",
           land_unit_key = "wh2_dlc15_grn_cav_forest_goblin_spider_riders_waaagh_0",
+          agent_subtype = "",
           name = "Lava Spider Rider Archers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -25459,6 +27437,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_goblin_wolf_chariot",
           land_unit_key = "wh_main_grn_cav_goblin_wolf_chariot",
+          agent_subtype = "",
           name = "Goblin Wolf Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -25467,6 +27446,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_goblin_archers",
           land_unit_key = "wh_main_grn_inf_goblin_archers",
+          agent_subtype = "",
           name = "Goblin Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -25475,6 +27455,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblin_archers",
           land_unit_key = "wh_main_grn_inf_night_goblin_archers",
+          agent_subtype = "",
           name = "Night Goblin Archers",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -25483,6 +27464,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_night_goblin_fanatics_1",
           land_unit_key = "wh_main_grn_inf_night_goblin_fanatics_1",
+          agent_subtype = "",
           name = "Night Goblin Archers (Fanatics)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -25491,6 +27473,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_orc_arrer_boyz",
           land_unit_key = "wh_main_grn_inf_orc_arrer_boyz",
+          agent_subtype = "",
           name = "Orc Arrer Boyz",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -25499,6 +27482,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_savage_orc_arrer_boyz",
           land_unit_key = "wh_main_grn_inf_savage_orc_arrer_boyz",
+          agent_subtype = "",
           name = "Savage Orc Arrer Boyz",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -25507,6 +27491,7 @@ return {
         {
           unit_key = "wh_main_grn_mon_arachnarok_spider_0",
           land_unit_key = "wh_main_grn_mon_arachnarok_spider_0",
+          agent_subtype = "",
           name = "Arachnarok Spider",
           category = "monster",
           category_raw = "war_beast",
@@ -25515,6 +27500,7 @@ return {
         {
           unit_key = "wh3_dlc26_grn_mon_arachnarok_spider_flinger",
           land_unit_key = "wh3_dlc26_grn_mon_arachnarok_spider_flinger",
+          agent_subtype = "",
           name = "Arachnarok Spider (Flinger)",
           category = "monster",
           category_raw = "war_beast",
@@ -25523,6 +27509,7 @@ return {
         {
           unit_key = "wh3_dlc26_grn_mon_colossal_squig",
           land_unit_key = "wh3_dlc26_grn_mon_colossal_squig",
+          agent_subtype = "",
           name = "Colossal Squig",
           category = "monster",
           category_raw = "inf_melee",
@@ -25531,6 +27518,7 @@ return {
         {
           unit_key = "wh2_dlc15_grn_mon_feral_hydra_waaagh_0",
           land_unit_key = "wh2_dlc15_grn_mon_feral_hydra_waaagh_0",
+          agent_subtype = "",
           name = "Feral Hydra",
           category = "monster",
           category_raw = "inf_melee",
@@ -25539,6 +27527,7 @@ return {
         {
           unit_key = "wh2_dlc15_grn_mon_wyvern_waaagh_0",
           land_unit_key = "wh2_dlc15_grn_mon_wyvern_waaagh_0",
+          agent_subtype = "",
           name = "Feral Wyvern",
           category = "monster",
           category_raw = "inf_melee",
@@ -25547,6 +27536,7 @@ return {
         {
           unit_key = "wh_main_grn_mon_giant",
           land_unit_key = "wh_main_grn_mon_giant",
+          agent_subtype = "",
           name = "Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -25555,6 +27545,7 @@ return {
         {
           unit_key = "wh_dlc15_grn_mon_arachnarok_spider_waaagh_0",
           land_unit_key = "wh2_dlc15_grn_mon_arachnarok_spider_waaagh_0",
+          agent_subtype = "",
           name = "Lava Arachnarok Spider",
           category = "monster",
           category_raw = "war_beast",
@@ -25563,6 +27554,7 @@ return {
         {
           unit_key = "wh3_dlc26_grn_cav_mangler_squig",
           land_unit_key = "wh3_dlc26_grn_cav_mangler_squig",
+          agent_subtype = "",
           name = "Mangler Squigs",
           category = "monster",
           category_raw = "inf_melee",
@@ -25571,6 +27563,7 @@ return {
         {
           unit_key = "wh2_dlc15_grn_mon_rogue_idol_0",
           land_unit_key = "wh2_dlc15_grn_mon_rogue_idol_0",
+          agent_subtype = "",
           name = "Rogue Idol",
           category = "monster",
           category_raw = "inf_melee",
@@ -25579,6 +27572,7 @@ return {
         {
           unit_key = "wh2_dlc15_grn_mon_river_trolls_0",
           land_unit_key = "wh2_dlc15_grn_mon_river_trolls_0",
+          agent_subtype = "",
           name = "River Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -25587,6 +27581,7 @@ return {
         {
           unit_key = "wh2_dlc15_grn_mon_stone_trolls_0",
           land_unit_key = "wh2_dlc15_grn_mon_stone_trolls_0",
+          agent_subtype = "",
           name = "Stone Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -25595,6 +27590,7 @@ return {
         {
           unit_key = "wh_main_grn_mon_trolls",
           land_unit_key = "wh_main_grn_mon_trolls",
+          agent_subtype = "",
           name = "Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -25603,6 +27599,7 @@ return {
         {
           unit_key = "wh_dlc06_grn_inf_squig_explosive_0",
           land_unit_key = "wh_dlc06_grn_inf_squig_explosive_0",
+          agent_subtype = "",
           name = "Soopa-Squig!",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -25611,6 +27608,7 @@ return {
         {
           unit_key = "wh_dlc06_grn_mon_spider_hatchlings_0",
           land_unit_key = "wh_dlc06_grn_mon_spider_hatchlings_0",
+          agent_subtype = "",
           name = "Spider Hatchlings",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -25619,6 +27617,7 @@ return {
         {
           unit_key = "wh_dlc06_grn_inf_squig_herd_0",
           land_unit_key = "wh_dlc06_grn_inf_squig_herd_0",
+          agent_subtype = "",
           name = "Squig Herd",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -25627,6 +27626,7 @@ return {
         {
           unit_key = "wh_main_grn_art_doom_diver_catapult",
           land_unit_key = "wh_main_grn_art_doom_diver_catapult",
+          agent_subtype = "",
           name = "Doom Diver Catapults",
           category = "war_machine",
           category_raw = "artillery",
@@ -25635,6 +27635,7 @@ return {
         {
           unit_key = "wh3_dlc26_grn_art_bolt_throwa",
           land_unit_key = "wh3_dlc26_grn_art_bolt_throwa",
+          agent_subtype = "",
           name = "Goblin Bolt Throwa",
           category = "war_machine",
           category_raw = "artillery",
@@ -25643,6 +27644,7 @@ return {
         {
           unit_key = "wh_main_grn_art_goblin_rock_lobber",
           land_unit_key = "wh_main_grn_art_goblin_rock_lobber",
+          agent_subtype = "",
           name = "Goblin Rock Lobbers",
           category = "war_machine",
           category_raw = "artillery",
@@ -25837,6 +27839,7 @@ return {
         {
           unit_key = "wh_main_nor_cha_chaos_sorcerer_0",
           land_unit_key = "wh_main_nor_cha_chaos_sorcerer_0",
+          agent_subtype = "wh_main_nor_chaos_sorcerer_metal",
           name = "Chaos Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25845,6 +27848,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_fimir_balefiend_fire_0",
           land_unit_key = "wh_dlc08_nor_cha_fimir_balefiend_fire_0",
+          agent_subtype = "wh_dlc08_nor_fimir_balefiend_fire",
           name = "Fimir Balefiend (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25853,6 +27857,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_fimir_balefiend_shadow_0",
           land_unit_key = "wh_dlc08_nor_cha_fimir_balefiend_shadow_0",
+          agent_subtype = "wh_dlc08_nor_fimir_balefiend_shadow",
           name = "Fimir Balefiend (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25861,6 +27866,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cha_fimir_noble",
           land_unit_key = "wh3_dlc27_nor_cha_fimir_noble",
+          agent_subtype = "wh3_dlc27_nor_fimir_noble",
           name = "Fimir Noble",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25869,6 +27875,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_death_0",
           land_unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_death_0",
+          agent_subtype = "wh_dlc08_nor_shaman_sorcerer_death",
           name = "Shaman-Sorcerer (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25877,6 +27884,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_fire_0",
           land_unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_fire_0",
+          agent_subtype = "wh_dlc08_nor_shaman_sorcerer_fire",
           name = "Shaman-Sorcerer (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25885,6 +27893,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_metal_0",
           land_unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_metal_0",
+          agent_subtype = "wh_dlc08_nor_shaman_sorcerer_metal",
           name = "Shaman-Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25893,6 +27902,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_skin_wolf_werekin_0",
           land_unit_key = "wh_dlc08_nor_cha_skin_wolf_werekin_0",
+          agent_subtype = "wh_dlc08_nor_skin_wolf_werekin",
           name = "Skin Wolf Werekin",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -25901,6 +27911,7 @@ return {
         {
           unit_key = "wh_dlc01_nor_cha_chaos_sorcerer_lord_0",
           land_unit_key = "wh_dlc01_nor_cha_chaos_sorcerer_lord_0",
+          agent_subtype = "wh_dlc01_nor_sorcerer_lord_metal",
           name = "Chaos Sorcerer Lord (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -25909,6 +27920,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_death",
           land_unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_death",
+          agent_subtype = "wh3_dlc27_nor_great_shaman_sorcerer_death",
           name = "Great Shaman-Sorcerer (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -25917,6 +27929,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_fire",
           land_unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_fire",
+          agent_subtype = "wh3_dlc27_nor_great_shaman_sorcerer_fire",
           name = "Great Shaman-Sorcerer (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -25925,6 +27938,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
           land_unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+          agent_subtype = "wh3_dlc27_nor_great_shaman_sorcerer_metal",
           name = "Great Shaman-Sorcerer (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -25933,6 +27947,7 @@ return {
         {
           unit_key = "wh_main_nor_cha_marauder_chieftan_0",
           land_unit_key = "wh_main_nor_cha_marauder_chieftan_0",
+          agent_subtype = "wh_main_nor_marauder_chieftain",
           name = "Marauder Chieftain",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -25941,6 +27956,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_dualweapons",
           land_unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_dualweapons",
+          agent_subtype = "",
           name = "Kurgan Horsemen (Dual Weapons)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -25949,6 +27965,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_greatweapons",
           land_unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_greatweapons",
+          agent_subtype = "",
           name = "Kurgan Horsemen (Great Weapons)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -25957,6 +27974,7 @@ return {
         {
           unit_key = "wh_main_nor_cav_marauder_horsemen_0",
           land_unit_key = "wh_main_nor_cav_marauder_horsemen_0",
+          agent_subtype = "",
           name = "Marauder Horsemen",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -25965,6 +27983,7 @@ return {
         {
           unit_key = "wh3_dlc27_chs_inf_chaos_warriors_0",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_0",
+          agent_subtype = "",
           name = "Chaos Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25973,6 +27992,7 @@ return {
         {
           unit_key = "wh3_dlc27_chs_inf_chaos_warriors_2",
           land_unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25981,6 +28001,7 @@ return {
         {
           unit_key = "wh3_dlc27_chs_inf_chaos_warriors_1",
           land_unit_key = "wh_main_chs_inf_chaos_warriors_1",
+          agent_subtype = "",
           name = "Chaos Warriors (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25989,6 +28010,7 @@ return {
         {
           unit_key = "wh3_dlc27_kho_inf_chaos_warriors_2",
           land_unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          agent_subtype = "",
           name = "Chaos Warriors of Khorne (Dual Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -25997,6 +28019,7 @@ return {
         {
           unit_key = "wh3_dlc27_chs_inf_chaos_warriors_mnur_greatweapons",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          agent_subtype = "",
           name = "Chaos Warriors of Nurgle (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26005,6 +28028,7 @@ return {
         {
           unit_key = "wh3_dlc27_chs_inf_chaos_warriors_msla_hellscourges",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          agent_subtype = "",
           name = "Chaos Warriors of Slaanesh (Hellscourges)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26013,6 +28037,7 @@ return {
         {
           unit_key = "wh3_dlc27_chs_inf_chaos_warriors_mtze_halberds",
           land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          agent_subtype = "",
           name = "Chaos Warriors of Tzeentch (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26021,6 +28046,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          agent_subtype = "",
           name = "Marauder Bearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26029,6 +28055,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          agent_subtype = "",
           name = "Marauder Bearmen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26037,6 +28064,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_berserkers_0",
           land_unit_key = "wh_dlc08_nor_inf_marauder_berserkers_0",
+          agent_subtype = "",
           name = "Marauder Berserkers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26045,6 +28073,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_champions_0",
           land_unit_key = "wh_dlc08_nor_inf_marauder_champions_0",
+          agent_subtype = "",
           name = "Marauder Champions",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26053,6 +28082,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_champions_1",
           land_unit_key = "wh_dlc08_nor_inf_marauder_champions_1",
+          agent_subtype = "",
           name = "Marauder Champions (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26061,6 +28091,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_spearman_0",
           land_unit_key = "wh_dlc08_nor_inf_marauder_spearman_0",
+          agent_subtype = "",
           name = "Marauder Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26069,6 +28100,7 @@ return {
         {
           unit_key = "wh_main_nor_inf_chaos_marauders_0",
           land_unit_key = "wh_main_nor_inf_chaos_marauders_0",
+          agent_subtype = "",
           name = "Marauders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26077,6 +28109,7 @@ return {
         {
           unit_key = "wh_main_nor_inf_chaos_marauders_1",
           land_unit_key = "wh_main_nor_inf_chaos_marauders_1",
+          agent_subtype = "",
           name = "Marauders (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26085,6 +28118,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_skinwolves_0",
           land_unit_key = "wh_dlc08_nor_mon_skinwolves_0",
+          agent_subtype = "",
           name = "Skin Wolves",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26093,6 +28127,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_skinwolves_1",
           land_unit_key = "wh_dlc08_nor_mon_skinwolves_1",
+          agent_subtype = "",
           name = "Skin Wolves (Armoured)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26101,6 +28136,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cav_marauder_horsemasters_0",
           land_unit_key = "wh_dlc08_nor_cav_marauder_horsemasters_0",
+          agent_subtype = "",
           name = "Marauder Horsemasters",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -26109,6 +28145,7 @@ return {
         {
           unit_key = "wh_main_nor_cav_marauder_horsemen_1",
           land_unit_key = "wh_main_nor_cav_marauder_horsemen_1",
+          agent_subtype = "",
           name = "Marauder Horsemen (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -26117,6 +28154,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_veh_marauder_warwolves_chariot_0",
           land_unit_key = "wh_dlc08_nor_cav_marauder_warwolves_chariot_0",
+          agent_subtype = "",
           name = "Marauder Ice Wolf Chariots",
           category = "missile_chariot",
           category_raw = "skirmish",
@@ -26125,6 +28163,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_hunters_0",
           land_unit_key = "wh_dlc08_nor_inf_marauder_hunters_0",
+          agent_subtype = "",
           name = "Marauder Hunters",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -26133,6 +28172,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_hunters_1",
           land_unit_key = "wh_dlc08_nor_inf_marauder_hunters_1",
+          agent_subtype = "",
           name = "Marauder Hunters (Javelins)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -26141,6 +28181,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_frost_wyrm_0",
           land_unit_key = "wh_dlc08_nor_mon_frost_wyrm_0",
+          agent_subtype = "",
           name = "Chaos Frost Dragon",
           category = "monster",
           category_raw = "inf_melee",
@@ -26149,6 +28190,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_chimera",
           land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          agent_subtype = "",
           name = "Chimera",
           category = "monster",
           category_raw = "inf_melee",
@@ -26157,6 +28199,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_chimera_monst_arcanum_reward",
           land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          agent_subtype = "",
           name = "Chimera",
           category = "monster",
           category_raw = "inf_melee",
@@ -26165,6 +28208,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_cursd_ettin",
           land_unit_key = "wh3_dlc27_nor_mon_cursd_ettin",
+          agent_subtype = "",
           name = "Curs'd Ettin",
           category = "monster",
           category_raw = "inf_melee",
@@ -26173,6 +28217,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_cursd_ettin_runecaller",
           land_unit_key = "wh3_dlc27_nor_mon_cursd_ettin_runecaller",
+          agent_subtype = "",
           name = "Curs'd Ettin (Runecaller)",
           category = "monster",
           category_raw = "inf_melee",
@@ -26181,6 +28226,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -26189,6 +28235,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -26197,6 +28244,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_war_mammoth_0",
           land_unit_key = "wh_dlc08_nor_mon_war_mammoth_0",
+          agent_subtype = "",
           name = "Feral Mammoth",
           category = "monster",
           category_raw = "inf_melee",
@@ -26205,6 +28253,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_feral_manticore",
           land_unit_key = "wh_dlc08_nor_feral_manticore",
+          agent_subtype = "",
           name = "Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -26213,6 +28262,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_norscan_giant_0",
           land_unit_key = "wh_dlc08_nor_mon_norscan_giant_0",
+          agent_subtype = "",
           name = "Norscan Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -26221,6 +28271,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_mon_preyton",
           land_unit_key = "wh3_dlc27_sla_mon_preyton",
+          agent_subtype = "",
           name = "Preyton",
           category = "monster",
           category_raw = "inf_melee",
@@ -26229,6 +28280,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_war_mammoth_1",
           land_unit_key = "wh_dlc08_nor_mon_war_mammoth_1",
+          agent_subtype = "",
           name = "War Mammoth",
           category = "monster",
           category_raw = "war_beast",
@@ -26237,6 +28289,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_war_mammoth_2",
           land_unit_key = "wh_dlc08_nor_mon_war_mammoth_2",
+          agent_subtype = "",
           name = "War Mammoth (Warshrine)",
           category = "monster",
           category_raw = "war_beast",
@@ -26245,6 +28298,7 @@ return {
         {
           unit_key = "wh3_dlc27_throgg_mon_bile_trolls",
           land_unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          agent_subtype = "",
           name = "Bile Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26253,6 +28307,7 @@ return {
         {
           unit_key = "wh3_dlc27_chs_mon_chaos_spawn",
           land_unit_key = "wh_main_chs_mon_chaos_spawn",
+          agent_subtype = "",
           name = "Chaos Spawn",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26261,6 +28316,7 @@ return {
         {
           unit_key = "wh3_dlc27_throgg_mon_chs_trolls_0",
           land_unit_key = "wh_main_chs_mon_trolls",
+          agent_subtype = "",
           name = "Chaos Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26269,6 +28325,7 @@ return {
         {
           unit_key = "wh3_dlc27_throgg_mon_chs_trolls_1",
           land_unit_key = "wh_dlc01_chs_mon_trolls_1",
+          agent_subtype = "",
           name = "Chaos Trolls (Armoured)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26277,6 +28334,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_fimir_0",
           land_unit_key = "wh_dlc08_nor_mon_fimir_0",
+          agent_subtype = "",
           name = "Fimir Warriors",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26285,6 +28343,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_fimir_1",
           land_unit_key = "wh_dlc08_nor_mon_fimir_1",
+          agent_subtype = "",
           name = "Fimir Warriors (Great Weapons)",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26293,6 +28352,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_norscan_ice_trolls_0",
           land_unit_key = "wh_dlc08_nor_mon_norscan_ice_trolls_0",
+          agent_subtype = "",
           name = "Norscan Ice Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26301,6 +28361,7 @@ return {
         {
           unit_key = "wh_main_nor_mon_chaos_trolls",
           land_unit_key = "wh_main_nor_mon_chaos_trolls",
+          agent_subtype = "",
           name = "Norscan Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26309,6 +28370,7 @@ return {
         {
           unit_key = "wh3_dlc27_throgg_mon_river_trolls_0",
           land_unit_key = "wh2_dlc15_grn_mon_river_trolls_0",
+          agent_subtype = "",
           name = "River Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26317,6 +28379,7 @@ return {
         {
           unit_key = "wh3_dlc27_kho_mon_spawn_of_khorne_0",
           land_unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          agent_subtype = "",
           name = "Spawn of Khorne",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26325,6 +28388,7 @@ return {
         {
           unit_key = "wh3_dlc27_nur_mon_spawn_of_nurgle_0",
           land_unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          agent_subtype = "",
           name = "Spawn of Nurgle",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26333,6 +28397,7 @@ return {
         {
           unit_key = "wh3_dlc27_sla_mon_spawn_of_slaanesh_0",
           land_unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          agent_subtype = "",
           name = "Spawn of Slaanesh",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26341,6 +28406,7 @@ return {
         {
           unit_key = "wh3_dlc27_tze_mon_spawn_of_tzeentch_0",
           land_unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          agent_subtype = "",
           name = "Spawn of Tzeentch",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26349,6 +28415,7 @@ return {
         {
           unit_key = "wh3_dlc27_throgg_mon_stone_trolls_0",
           land_unit_key = "wh2_dlc15_grn_mon_stone_trolls_0",
+          agent_subtype = "",
           name = "Stone Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26357,6 +28424,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_warwolves_0",
           land_unit_key = "wh_dlc08_nor_mon_marauder_warwolves_0",
+          agent_subtype = "",
           name = "Norscan Ice Wolves",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -26365,6 +28433,7 @@ return {
         {
           unit_key = "wh_main_nor_mon_chaos_warhounds_0",
           land_unit_key = "wh_main_nor_mon_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Norscan Warhounds",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -26373,6 +28442,7 @@ return {
         {
           unit_key = "wh_main_nor_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_nor_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Norscan Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -26381,6 +28451,7 @@ return {
         {
           unit_key = "wh_main_nor_cav_chaos_chariot",
           land_unit_key = "wh_main_nor_cav_chaos_chariot",
+          agent_subtype = "",
           name = "Marauder Chariots",
           category = "war_machine",
           category_raw = "war_machine",
@@ -26505,6 +28576,7 @@ return {
         {
           unit_key = "wh_main_nor_cha_chaos_sorcerer_0",
           land_unit_key = "wh_main_nor_cha_chaos_sorcerer_0",
+          agent_subtype = "wh_main_nor_chaos_sorcerer_metal",
           name = "Chaos Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -26513,6 +28585,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_fimir_balefiend_fire_0",
           land_unit_key = "wh_dlc08_nor_cha_fimir_balefiend_fire_0",
+          agent_subtype = "wh_dlc08_nor_fimir_balefiend_fire",
           name = "Fimir Balefiend (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -26521,6 +28594,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_fimir_balefiend_shadow_0",
           land_unit_key = "wh_dlc08_nor_cha_fimir_balefiend_shadow_0",
+          agent_subtype = "wh_dlc08_nor_fimir_balefiend_shadow",
           name = "Fimir Balefiend (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -26529,6 +28603,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cha_fimir_noble",
           land_unit_key = "wh3_dlc27_nor_cha_fimir_noble",
+          agent_subtype = "wh3_dlc27_nor_fimir_noble",
           name = "Fimir Noble",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -26537,6 +28612,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_death_0",
           land_unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_death_0",
+          agent_subtype = "wh_dlc08_nor_shaman_sorcerer_death",
           name = "Shaman-Sorcerer (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -26545,6 +28621,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_fire_0",
           land_unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_fire_0",
+          agent_subtype = "wh_dlc08_nor_shaman_sorcerer_fire",
           name = "Shaman-Sorcerer (Fire)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -26553,6 +28630,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_metal_0",
           land_unit_key = "wh_dlc08_nor_cha_shaman_sorcerer_metal_0",
+          agent_subtype = "wh_dlc08_nor_shaman_sorcerer_metal",
           name = "Shaman-Sorcerer (Metal)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -26561,6 +28639,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cha_skin_wolf_werekin_0",
           land_unit_key = "wh_dlc08_nor_cha_skin_wolf_werekin_0",
+          agent_subtype = "wh_dlc08_nor_skin_wolf_werekin",
           name = "Skin Wolf Werekin",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -26569,6 +28648,7 @@ return {
         {
           unit_key = "wh_dlc01_nor_cha_chaos_sorcerer_lord_0",
           land_unit_key = "wh_dlc01_nor_cha_chaos_sorcerer_lord_0",
+          agent_subtype = "wh_dlc01_nor_sorcerer_lord_metal",
           name = "Chaos Sorcerer Lord (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -26577,6 +28657,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_death",
           land_unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_death",
+          agent_subtype = "wh3_dlc27_nor_great_shaman_sorcerer_death",
           name = "Great Shaman-Sorcerer (Death)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -26585,6 +28666,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_fire",
           land_unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_fire",
+          agent_subtype = "wh3_dlc27_nor_great_shaman_sorcerer_fire",
           name = "Great Shaman-Sorcerer (Fire)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -26593,6 +28675,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
           land_unit_key = "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+          agent_subtype = "wh3_dlc27_nor_great_shaman_sorcerer_metal",
           name = "Great Shaman-Sorcerer (Metal)",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -26601,6 +28684,7 @@ return {
         {
           unit_key = "wh_main_nor_cha_marauder_chieftan_0",
           land_unit_key = "wh_main_nor_cha_marauder_chieftan_0",
+          agent_subtype = "wh_main_nor_marauder_chieftain",
           name = "Marauder Chieftain",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -26609,6 +28693,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_dualweapons",
           land_unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_dualweapons",
+          agent_subtype = "",
           name = "Kurgan Horsemen (Dual Weapons)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -26617,6 +28702,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_greatweapons",
           land_unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_greatweapons",
+          agent_subtype = "",
           name = "Kurgan Horsemen (Great Weapons)",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -26625,6 +28711,7 @@ return {
         {
           unit_key = "wh_main_nor_cav_marauder_horsemen_0",
           land_unit_key = "wh_main_nor_cav_marauder_horsemen_0",
+          agent_subtype = "",
           name = "Marauder Horsemen",
           category = "melee_cavalry",
           category_raw = "war_beast",
@@ -26633,6 +28720,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          agent_subtype = "",
           name = "Marauder Bearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26641,6 +28729,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
           land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          agent_subtype = "",
           name = "Marauder Bearmen (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26649,6 +28738,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_berserkers_0",
           land_unit_key = "wh_dlc08_nor_inf_marauder_berserkers_0",
+          agent_subtype = "",
           name = "Marauder Berserkers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26657,6 +28747,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_champions_0",
           land_unit_key = "wh_dlc08_nor_inf_marauder_champions_0",
+          agent_subtype = "",
           name = "Marauder Champions",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26665,6 +28756,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_champions_1",
           land_unit_key = "wh_dlc08_nor_inf_marauder_champions_1",
+          agent_subtype = "",
           name = "Marauder Champions (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26673,6 +28765,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_spearman_0",
           land_unit_key = "wh_dlc08_nor_inf_marauder_spearman_0",
+          agent_subtype = "",
           name = "Marauder Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26681,6 +28774,7 @@ return {
         {
           unit_key = "wh_main_nor_inf_chaos_marauders_0",
           land_unit_key = "wh_main_nor_inf_chaos_marauders_0",
+          agent_subtype = "",
           name = "Marauders",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26689,6 +28783,7 @@ return {
         {
           unit_key = "wh_main_nor_inf_chaos_marauders_1",
           land_unit_key = "wh_main_nor_inf_chaos_marauders_1",
+          agent_subtype = "",
           name = "Marauders (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26697,6 +28792,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_skinwolves_0",
           land_unit_key = "wh_dlc08_nor_mon_skinwolves_0",
+          agent_subtype = "",
           name = "Skin Wolves",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26705,6 +28801,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_skinwolves_1",
           land_unit_key = "wh_dlc08_nor_mon_skinwolves_1",
+          agent_subtype = "",
           name = "Skin Wolves (Armoured)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26713,6 +28810,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_cav_marauder_horsemasters_0",
           land_unit_key = "wh_dlc08_nor_cav_marauder_horsemasters_0",
+          agent_subtype = "",
           name = "Marauder Horsemasters",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -26721,6 +28819,7 @@ return {
         {
           unit_key = "wh_main_nor_cav_marauder_horsemen_1",
           land_unit_key = "wh_main_nor_cav_marauder_horsemen_1",
+          agent_subtype = "",
           name = "Marauder Horsemen (Throwing Axes)",
           category = "missile_cavalry",
           category_raw = "war_beast",
@@ -26729,6 +28828,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_hunters_0",
           land_unit_key = "wh_dlc08_nor_inf_marauder_hunters_0",
+          agent_subtype = "",
           name = "Marauder Hunters",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -26737,6 +28837,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_inf_marauder_hunters_1",
           land_unit_key = "wh_dlc08_nor_inf_marauder_hunters_1",
+          agent_subtype = "",
           name = "Marauder Hunters (Javelins)",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -26745,6 +28846,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_chimera",
           land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          agent_subtype = "",
           name = "Chimera",
           category = "monster",
           category_raw = "inf_melee",
@@ -26753,6 +28855,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_cursd_ettin",
           land_unit_key = "wh3_dlc27_nor_mon_cursd_ettin",
+          agent_subtype = "",
           name = "Curs'd Ettin",
           category = "monster",
           category_raw = "inf_melee",
@@ -26761,6 +28864,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_cursd_ettin_runecaller",
           land_unit_key = "wh3_dlc27_nor_mon_cursd_ettin_runecaller",
+          agent_subtype = "",
           name = "Curs'd Ettin (Runecaller)",
           category = "monster",
           category_raw = "inf_melee",
@@ -26769,6 +28873,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -26777,6 +28882,7 @@ return {
         {
           unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
           land_unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          agent_subtype = "",
           name = "Dread Maw",
           category = "monster",
           category_raw = "inf_melee",
@@ -26785,6 +28891,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_war_mammoth_0",
           land_unit_key = "wh_dlc08_nor_mon_war_mammoth_0",
+          agent_subtype = "",
           name = "Feral Mammoth",
           category = "monster",
           category_raw = "inf_melee",
@@ -26793,6 +28900,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_feral_manticore",
           land_unit_key = "wh_dlc08_nor_feral_manticore",
+          agent_subtype = "",
           name = "Feral Manticore",
           category = "monster",
           category_raw = "inf_melee",
@@ -26801,6 +28909,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_norscan_giant_0",
           land_unit_key = "wh_dlc08_nor_mon_norscan_giant_0",
+          agent_subtype = "",
           name = "Norscan Giant",
           category = "monster",
           category_raw = "inf_melee",
@@ -26809,6 +28918,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_war_mammoth_1",
           land_unit_key = "wh_dlc08_nor_mon_war_mammoth_1",
+          agent_subtype = "",
           name = "War Mammoth",
           category = "monster",
           category_raw = "war_beast",
@@ -26817,6 +28927,7 @@ return {
         {
           unit_key = "wh_dlc08_nor_mon_war_mammoth_2",
           land_unit_key = "wh_dlc08_nor_mon_war_mammoth_2",
+          agent_subtype = "",
           name = "War Mammoth (Warshrine)",
           category = "monster",
           category_raw = "war_beast",
@@ -26825,6 +28936,7 @@ return {
         {
           unit_key = "wh_main_nor_mon_chaos_trolls",
           land_unit_key = "wh_main_nor_mon_chaos_trolls",
+          agent_subtype = "",
           name = "Norscan Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -26833,6 +28945,7 @@ return {
         {
           unit_key = "wh_main_nor_mon_chaos_warhounds_0",
           land_unit_key = "wh_main_nor_mon_chaos_warhounds_0",
+          agent_subtype = "",
           name = "Norscan Warhounds",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -26841,6 +28954,7 @@ return {
         {
           unit_key = "wh_main_nor_mon_chaos_warhounds_1",
           land_unit_key = "wh_main_nor_mon_chaos_warhounds_1",
+          agent_subtype = "",
           name = "Norscan Warhounds (Poison)",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -26849,6 +28963,7 @@ return {
         {
           unit_key = "wh_main_nor_cav_chaos_chariot",
           land_unit_key = "wh_main_nor_cav_chaos_chariot",
+          agent_subtype = "",
           name = "Marauder Chariots",
           category = "war_machine",
           category_raw = "war_machine",
@@ -26956,6 +29071,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
           land_unit_key = "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
+          agent_subtype = "",
           name = "Savage Orc Boar Boy Big 'Uns",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -26964,6 +29080,7 @@ return {
         {
           unit_key = "wh_main_grn_cav_savage_orc_boar_boyz",
           land_unit_key = "wh_main_grn_cav_savage_orc_boar_boyz",
+          agent_subtype = "",
           name = "Savage Orc Boar Boyz",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -26972,6 +29089,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_savage_orc_big_uns",
           land_unit_key = "wh_main_grn_inf_savage_orc_big_uns",
+          agent_subtype = "",
           name = "Savage Orc Big 'Uns",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26980,6 +29098,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_savage_orcs",
           land_unit_key = "wh_main_grn_inf_savage_orcs",
+          agent_subtype = "",
           name = "Savage Orcs",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -26988,6 +29107,7 @@ return {
         {
           unit_key = "wh_main_grn_inf_savage_orc_arrer_boyz",
           land_unit_key = "wh_main_grn_inf_savage_orc_arrer_boyz",
+          agent_subtype = "",
           name = "Savage Orc Arrer Boyz",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -26996,6 +29116,7 @@ return {
         {
           unit_key = "wh_main_grn_mon_trolls",
           land_unit_key = "wh_main_grn_mon_trolls",
+          agent_subtype = "",
           name = "Trolls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -27051,6 +29172,7 @@ return {
         {
           unit_key = "wh_main_teb_cha_wizard_0",
           land_unit_key = "wh_main_teb_cha_wizard_0",
+          agent_subtype = "wh_main_teb_bright_wizard",
           name = "Bright Wizard",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -27059,6 +29181,7 @@ return {
         {
           unit_key = "wh_main_teb_cha_captain_0",
           land_unit_key = "wh_main_teb_cha_captain_0",
+          agent_subtype = "wh_main_teb_captain",
           name = "Captain",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -27067,6 +29190,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_empire_knights",
           land_unit_key = "wh_main_emp_cav_empire_knights",
+          agent_subtype = "",
           name = "Empire Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -27075,6 +29199,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
           land_unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
+          agent_subtype = "",
           name = "Knights of the Black Rose",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -27083,6 +29208,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_greatswords",
           land_unit_key = "wh_main_emp_inf_greatswords",
+          agent_subtype = "",
           name = "Greatswords",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27091,6 +29217,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_halberdiers",
           land_unit_key = "wh_main_emp_inf_halberdiers",
+          agent_subtype = "",
           name = "Halberdiers",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27099,6 +29226,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_spearmen_0",
           land_unit_key = "wh_main_emp_inf_spearmen_0",
+          agent_subtype = "",
           name = "Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27107,6 +29235,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_spearmen_1",
           land_unit_key = "wh_main_emp_inf_spearmen_1",
+          agent_subtype = "",
           name = "Spearmen (Shields)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27115,6 +29244,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_swordsmen",
           land_unit_key = "wh_main_emp_inf_swordsmen",
+          agent_subtype = "",
           name = "Swordsmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27123,6 +29253,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_outriders_0",
           land_unit_key = "wh_main_emp_cav_outriders_0",
+          agent_subtype = "",
           name = "Outriders",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -27131,6 +29262,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_outriders_1",
           land_unit_key = "wh_main_emp_cav_outriders_1",
+          agent_subtype = "",
           name = "Outriders (Grenade Launchers)",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -27139,6 +29271,7 @@ return {
         {
           unit_key = "wh_main_emp_cav_pistoliers_1",
           land_unit_key = "wh_main_emp_cav_pistoliers_1",
+          agent_subtype = "",
           name = "Pistoliers",
           category = "missile_cavalry",
           category_raw = "cavalry",
@@ -27147,6 +29280,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_crossbowmen",
           land_unit_key = "wh_main_emp_inf_crossbowmen",
+          agent_subtype = "",
           name = "Crossbowmen",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -27155,6 +29289,7 @@ return {
         {
           unit_key = "wh_main_emp_inf_handgunners",
           land_unit_key = "wh_main_emp_inf_handgunners",
+          agent_subtype = "",
           name = "Handgunners",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -27163,6 +29298,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
           land_unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
+          agent_subtype = "",
           name = "Hochland Long Rifles",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -27171,6 +29307,7 @@ return {
         {
           unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
           land_unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
+          agent_subtype = "",
           name = "Nuln Ironsides",
           category = "missile_infantry",
           category_raw = "inf_ranged",
@@ -27179,6 +29316,7 @@ return {
         {
           unit_key = "wh_main_emp_art_mortar",
           land_unit_key = "wh_main_emp_art_mortar",
+          agent_subtype = "",
           name = "Mortars",
           category = "war_machine",
           category_raw = "artillery",
@@ -27277,6 +29415,7 @@ return {
         {
           unit_key = "wh_main_vmp_cha_banshee",
           land_unit_key = "wh_main_vmp_cha_banshee",
+          agent_subtype = "wh_main_vmp_banshee",
           name = "Banshee",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -27285,6 +29424,7 @@ return {
         {
           unit_key = "wh_main_vmp_cha_necromancer_0",
           land_unit_key = "wh_main_vmp_cha_necromancer_0",
+          agent_subtype = "wh_main_vmp_necromancer",
           name = "Necromancer",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -27293,6 +29433,7 @@ return {
         {
           unit_key = "wh_main_vmp_cha_vampire_0",
           land_unit_key = "wh_main_vmp_cha_vampire_0",
+          agent_subtype = "wh_main_vmp_vampire_death",
           name = "Vampire (Death)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -27301,6 +29442,7 @@ return {
         {
           unit_key = "wh_dlc05_vmp_cha_vampire_shadows_0",
           land_unit_key = "wh_dlc05_vmp_cha_vampire_shadows_0",
+          agent_subtype = "wh_dlc05_vmp_vampire_shadow",
           name = "Vampire (Shadows)",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -27309,6 +29451,7 @@ return {
         {
           unit_key = "wh_main_vmp_cha_wight_king_0",
           land_unit_key = "wh_main_vmp_cha_wight_king_0",
+          agent_subtype = "wh_main_vmp_wight_king",
           name = "Wight King",
           category = "character_hero",
           category_raw = "inf_melee",
@@ -27317,6 +29460,7 @@ return {
         {
           unit_key = "wh_main_vmp_cha_master_necromancer_0",
           land_unit_key = "wh_main_vmp_cha_master_necromancer_0",
+          agent_subtype = "wh_main_vmp_master_necromancer",
           name = "Master Necromancer",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -27325,6 +29469,7 @@ return {
         {
           unit_key = "wh_main_vmp_cha_vampire_lord_0",
           land_unit_key = "wh_main_vmp_cha_vampire_lord_0",
+          agent_subtype = "wh_main_vmp_lord",
           name = "Vampire Lord",
           category = "character_lord",
           category_raw = "inf_melee",
@@ -27333,6 +29478,7 @@ return {
         {
           unit_key = "wh_main_vmp_veh_black_coach",
           land_unit_key = "wh_main_vmp_veh_black_coach",
+          agent_subtype = "",
           name = "Black Coach",
           category = "chariot",
           category_raw = "melee",
@@ -27341,6 +29487,7 @@ return {
         {
           unit_key = "wh_dlc04_vmp_veh_corpse_cart_0",
           land_unit_key = "wh_dlc04_vmp_veh_corpse_cart_0",
+          agent_subtype = "",
           name = "Corpse Cart",
           category = "chariot",
           category_raw = "melee",
@@ -27349,6 +29496,7 @@ return {
         {
           unit_key = "wh_dlc04_vmp_veh_corpse_cart_1",
           land_unit_key = "wh_dlc04_vmp_veh_corpse_cart_1",
+          agent_subtype = "",
           name = "Corpse Cart (Balefire)",
           category = "chariot",
           category_raw = "melee",
@@ -27357,6 +29505,7 @@ return {
         {
           unit_key = "wh_dlc04_vmp_veh_corpse_cart_2",
           land_unit_key = "wh_dlc04_vmp_veh_corpse_cart_2",
+          agent_subtype = "",
           name = "Corpse Cart (Unholy Lodestone)",
           category = "chariot",
           category_raw = "melee",
@@ -27365,6 +29514,7 @@ return {
         {
           unit_key = "wh_dlc04_vmp_veh_mortis_engine_0",
           land_unit_key = "wh_dlc04_vmp_veh_mortis_engine_0",
+          agent_subtype = "",
           name = "Mortis Engine",
           category = "chariot",
           category_raw = "melee",
@@ -27373,6 +29523,7 @@ return {
         {
           unit_key = "wh_main_vmp_cav_black_knights_0",
           land_unit_key = "wh_main_vmp_cav_black_knights_0",
+          agent_subtype = "",
           name = "Black Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -27381,6 +29532,7 @@ return {
         {
           unit_key = "wh_main_vmp_cav_black_knights_3",
           land_unit_key = "wh_main_vmp_cav_black_knights_3",
+          agent_subtype = "",
           name = "Black Knights (Lances & Barding)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -27389,6 +29541,7 @@ return {
         {
           unit_key = "wh3_main_vmp_blood_knights_sword_shield",
           land_unit_key = "wh3_main_vmp_blood_knights_sword_shield",
+          agent_subtype = "",
           name = "Blood Knights",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -27397,6 +29550,7 @@ return {
         {
           unit_key = "wh_dlc02_vmp_cav_blood_knights_0",
           land_unit_key = "wh_dlc02_vmp_cav_blood_knights_0",
+          agent_subtype = "",
           name = "Blood Knights (Lances)",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -27405,6 +29559,7 @@ return {
         {
           unit_key = "wh_main_vmp_cav_hexwraiths",
           land_unit_key = "wh_main_vmp_cav_hexwraiths",
+          agent_subtype = "",
           name = "Hexwraiths",
           category = "melee_cavalry",
           category_raw = "cavalry",
@@ -27413,6 +29568,7 @@ return {
         {
           unit_key = "wh_main_vmp_inf_cairn_wraiths",
           land_unit_key = "wh_main_vmp_inf_cairn_wraiths",
+          agent_subtype = "",
           name = "Cairn Wraiths",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27421,6 +29577,7 @@ return {
         {
           unit_key = "wh_main_vmp_inf_crypt_ghouls",
           land_unit_key = "wh_main_vmp_inf_crypt_ghouls",
+          agent_subtype = "",
           name = "Crypt Ghouls",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27429,6 +29586,7 @@ return {
         {
           unit_key = "wh_main_vmp_inf_grave_guard_0",
           land_unit_key = "wh_main_vmp_inf_grave_guard_0",
+          agent_subtype = "",
           name = "Grave Guard",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27437,6 +29595,7 @@ return {
         {
           unit_key = "wh_main_vmp_inf_grave_guard_1",
           land_unit_key = "wh_main_vmp_inf_grave_guard_1",
+          agent_subtype = "",
           name = "Grave Guard (Great Weapons)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27445,6 +29604,7 @@ return {
         {
           unit_key = "wh3_main_vmp_inf_grave_guard_2",
           land_unit_key = "wh3_main_vmp_inf_grave_guard_2",
+          agent_subtype = "",
           name = "Grave Guard (Halberds)",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27453,6 +29613,7 @@ return {
         {
           unit_key = "wh_main_vmp_inf_skeleton_warriors_1",
           land_unit_key = "wh_main_vmp_inf_skeleton_warriors_1",
+          agent_subtype = "",
           name = "Skeleton Spearmen",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27461,6 +29622,7 @@ return {
         {
           unit_key = "wh_main_vmp_inf_skeleton_warriors_0",
           land_unit_key = "wh_main_vmp_inf_skeleton_warriors_0",
+          agent_subtype = "",
           name = "Skeleton Warriors",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27469,6 +29631,7 @@ return {
         {
           unit_key = "wh_main_vmp_inf_zombie",
           land_unit_key = "wh_main_vmp_inf_zombie",
+          agent_subtype = "",
           name = "Zombies",
           category = "melee_infantry",
           category_raw = "inf_melee",
@@ -27477,6 +29640,7 @@ return {
         {
           unit_key = "wh_main_vmp_mon_terrorgheist",
           land_unit_key = "wh_main_vmp_mon_terrorgheist",
+          agent_subtype = "",
           name = "Terrorgheist",
           category = "monster",
           category_raw = "inf_melee",
@@ -27485,6 +29649,7 @@ return {
         {
           unit_key = "wh_main_vmp_mon_varghulf",
           land_unit_key = "wh_main_vmp_mon_varghulf",
+          agent_subtype = "",
           name = "Varghulf",
           category = "monster",
           category_raw = "inf_melee",
@@ -27493,6 +29658,7 @@ return {
         {
           unit_key = "wh_main_vmp_mon_crypt_horrors",
           land_unit_key = "wh_main_vmp_mon_crypt_horrors",
+          agent_subtype = "",
           name = "Crypt Horrors",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -27501,6 +29667,7 @@ return {
         {
           unit_key = "wh2_dlc11_cst_mon_mournguls_0",
           land_unit_key = "wh2_dlc11_cst_mon_mournguls_0",
+          agent_subtype = "",
           name = "Mournguls",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -27509,6 +29676,7 @@ return {
         {
           unit_key = "wh_main_vmp_mon_vargheists",
           land_unit_key = "wh_main_vmp_mon_vargheists",
+          agent_subtype = "",
           name = "Vargheists",
           category = "monstrous_infantry",
           category_raw = "inf_melee",
@@ -27517,6 +29685,7 @@ return {
         {
           unit_key = "wh_main_vmp_mon_dire_wolves",
           land_unit_key = "wh_main_vmp_mon_dire_wolves",
+          agent_subtype = "",
           name = "Dire Wolves",
           category = "war_beast",
           category_raw = "inf_melee",
@@ -27525,6 +29694,7 @@ return {
         {
           unit_key = "wh_main_vmp_mon_fell_bats",
           land_unit_key = "wh_main_vmp_mon_fell_bats",
+          agent_subtype = "",
           name = "Fell Bats",
           category = "war_beast",
           category_raw = "inf_melee",

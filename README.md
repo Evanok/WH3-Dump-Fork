@@ -53,6 +53,7 @@ Purpose:
 - derives roster overlap dynamically from CA's own permissions tables
 - filters out legendary, unique, and named characters that should not be duplicated
 - deduplicates technical `main` / `pro` / similar character variants by display name
+- includes `agent_subtype` for runtime character records so generated lords can be spawned with `create_force_with_general()`
 
 Important outputs:
 - [script_data/external_json_files/runtime_roster_unit_data.json](/home/soundskrit/work/WH3-Dump/script_data/external_json_files/runtime_roster_unit_data.json:1)
@@ -306,7 +307,7 @@ The direct `force_list` path is usually simpler.
 
 ## Current Limitations
 
-- no in-game integration has been done yet in the real mod repo
+- initial integration has been copied into `revive_boring_campaign`; live in-game validation is still pending
 - no battle/campaign live validation was run here
 - no Lua parser (`luac`) was available in this environment for syntax checking
 - duplicate unit picks are allowed by design when a category pool is small
