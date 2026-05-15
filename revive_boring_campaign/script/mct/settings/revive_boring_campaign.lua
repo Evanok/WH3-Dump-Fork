@@ -291,6 +291,10 @@ local major_factions = {
     {"wh2_dlc17_bst_taurox", "Taurox"},
 }
 
+table.sort(major_factions, function(a, b)
+    return string.lower(a[2]) < string.lower(b[2])
+end)
+
 -- Add dropdown values
 kill_faction_dropdown:add_dropdown_value("", "-- Select Faction --", "Select a faction from the list")
 for _, faction_data in ipairs(major_factions) do
