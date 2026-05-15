@@ -1,0 +1,9830 @@
+return {
+  generated_at_utc = "2026-05-15T14:48:08+00:00",
+  source = {
+    repo_root = "/home/soundskrit/work/WH3-Dump",
+    tables = {
+      "db/cultures_subcultures_tables/data__.tsv",
+      "db/factions_tables/data__.tsv",
+      "db/main_units_tables/data__.tsv",
+      "db/land_units_tables/data__.tsv",
+      "db/units_to_groupings_military_permissions_tables/data__.tsv",
+      "text/db/cultures__.loc.tsv",
+      "text/db/land_units__.loc.tsv"
+    }
+  },
+  filters = {
+    exclude_ror = true,
+    exclude_characters = true,
+    exclude_rogue_culture = true
+  },
+  race_count = 24,
+  races = {
+    wh2_dlc09_tmb_tomb_kings = {
+      name = "Tomb Kings",
+      culture = "wh2_dlc09_tmb_tomb_kings",
+      military_groups = {
+        "wh2_dlc09_tomb_kings",
+        "wh2_dlc09_tomb_kings_arkhan"
+      },
+      unit_count = 28,
+      units = {
+        {
+          unit_key = "wh2_dlc09_tmb_art_casket_of_souls_0",
+          land_unit_key = "wh2_dlc09_tmb_art_casket_of_souls_0",
+          name = "Casket of Souls",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_veh_skeleton_chariot_0",
+          land_unit_key = "wh2_dlc09_tmb_veh_skeleton_chariot_0",
+          name = "Skeleton Chariots",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_cav_hexwraiths",
+          land_unit_key = "wh2_dlc09_tmb_cav_hexwraiths",
+          name = "Hexwraiths",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_cav_nehekhara_horsemen_0",
+          land_unit_key = "wh2_dlc09_tmb_cav_nehekhara_horsemen_0",
+          name = "Nehekharan Horsemen",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_0",
+          land_unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_0",
+          name = "Skeleton Horsemen",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_inf_crypt_ghouls",
+          land_unit_key = "wh2_dlc09_tmb_inf_crypt_ghouls",
+          name = "Crypt Ghouls",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_inf_nehekhara_warriors_0",
+          land_unit_key = "wh2_dlc09_tmb_inf_nehekhara_warriors_0",
+          name = "Nehekharan Warriors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_inf_skeleton_spearmen_0",
+          land_unit_key = "wh2_dlc09_tmb_inf_skeleton_spearmen_0",
+          name = "Skeleton Spearmen",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_inf_skeleton_warriors_0",
+          land_unit_key = "wh2_dlc09_tmb_inf_skeleton_warriors_0",
+          name = "Skeleton Warriors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_inf_tomb_guard_0",
+          land_unit_key = "wh2_dlc09_tmb_inf_tomb_guard_0",
+          name = "Tomb Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_inf_tomb_guard_1",
+          land_unit_key = "wh2_dlc09_tmb_inf_tomb_guard_1",
+          name = "Tomb Guard (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_archers_0",
+          land_unit_key = "wh2_dlc09_tmb_cav_skeleton_horsemen_archers_0",
+          name = "Skeleton Horse Archers",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_veh_skeleton_archer_chariot_0",
+          land_unit_key = "wh2_dlc09_tmb_veh_skeleton_archer_chariot_0",
+          name = "Skeleton Archer Chariots",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_inf_skeleton_archers_0",
+          land_unit_key = "wh2_dlc09_tmb_inf_skeleton_archers_0",
+          name = "Skeleton Archers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_pro06_tmb_mon_bone_giant_0",
+          land_unit_key = "wh2_pro06_tmb_mon_bone_giant_0",
+          name = "Bone Giant",
+          category = "monster",
+          category_raw = "inf_ranged",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_mon_heirotitan_0",
+          land_unit_key = "wh2_dlc09_tmb_mon_heirotitan_0",
+          name = "Hierotitan",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_veh_khemrian_warsphinx_0",
+          land_unit_key = "wh2_dlc09_tmb_mon_khemrian_warsphinx_0",
+          name = "Khemrian Warsphinx",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_mon_necrosphinx_0",
+          land_unit_key = "wh2_dlc09_tmb_mon_necrosphinx_0",
+          name = "Necrosphinx",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_mon_tomb_scorpion_0",
+          land_unit_key = "wh2_dlc09_tmb_mon_tomb_scorpion_0",
+          name = "Tomb Scorpion",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_0",
+          land_unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_0",
+          name = "Necropolis Knights",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_1",
+          land_unit_key = "wh2_dlc09_tmb_cav_necropolis_knights_1",
+          name = "Necropolis Knights (Halberds)",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_mon_sepulchral_stalkers_0",
+          land_unit_key = "wh2_dlc09_tmb_mon_sepulchral_stalkers_0",
+          name = "Sepulchral Stalkers",
+          category = "monstrous_infantry",
+          category_raw = "inf_ranged",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_mon_ushabti_0",
+          land_unit_key = "wh2_dlc09_tmb_mon_ushabti_0",
+          name = "Ushabti",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_mon_ushabti_1",
+          land_unit_key = "wh2_dlc09_tmb_mon_ushabti_1",
+          name = "Ushabti (Great Bows)",
+          category = "monstrous_infantry",
+          category_raw = "inf_ranged",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_mon_carrion_0",
+          land_unit_key = "wh2_dlc09_tmb_mon_carrion_0",
+          name = "Carrion",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_mon_dire_wolves",
+          land_unit_key = "wh2_dlc09_tmb_mon_dire_wolves",
+          name = "Dire Wolves",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_mon_fell_bats",
+          land_unit_key = "wh2_dlc09_tmb_mon_fell_bats",
+          name = "Fell Bats",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc09_tmb_art_screaming_skull_catapult_0",
+          land_unit_key = "wh2_dlc09_tmb_art_screaming_skull_catapult_0",
+          name = "Screaming Skull Catapults",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        artillery = {
+          "wh2_dlc09_tmb_art_casket_of_souls_0"
+        },
+        chariot = {
+          "wh2_dlc09_tmb_veh_skeleton_chariot_0"
+        },
+        melee_cavalry = {
+          "wh2_dlc09_tmb_cav_hexwraiths",
+          "wh2_dlc09_tmb_cav_nehekhara_horsemen_0",
+          "wh2_dlc09_tmb_cav_skeleton_horsemen_0"
+        },
+        melee_infantry = {
+          "wh2_dlc09_tmb_inf_crypt_ghouls",
+          "wh2_dlc09_tmb_inf_nehekhara_warriors_0",
+          "wh2_dlc09_tmb_inf_skeleton_spearmen_0",
+          "wh2_dlc09_tmb_inf_skeleton_warriors_0",
+          "wh2_dlc09_tmb_inf_tomb_guard_0",
+          "wh2_dlc09_tmb_inf_tomb_guard_1"
+        },
+        missile_cavalry = {
+          "wh2_dlc09_tmb_cav_skeleton_horsemen_archers_0"
+        },
+        missile_chariot = {
+          "wh2_dlc09_tmb_veh_skeleton_archer_chariot_0"
+        },
+        missile_infantry = {
+          "wh2_dlc09_tmb_inf_skeleton_archers_0"
+        },
+        monster = {
+          "wh2_pro06_tmb_mon_bone_giant_0",
+          "wh2_dlc09_tmb_mon_heirotitan_0",
+          "wh2_dlc09_tmb_veh_khemrian_warsphinx_0",
+          "wh2_dlc09_tmb_mon_necrosphinx_0",
+          "wh2_dlc09_tmb_mon_tomb_scorpion_0"
+        },
+        monstrous_cavalry = {
+          "wh2_dlc09_tmb_cav_necropolis_knights_0",
+          "wh2_dlc09_tmb_cav_necropolis_knights_1"
+        },
+        monstrous_infantry = {
+          "wh2_dlc09_tmb_mon_sepulchral_stalkers_0",
+          "wh2_dlc09_tmb_mon_ushabti_0",
+          "wh2_dlc09_tmb_mon_ushabti_1"
+        },
+        war_beast = {
+          "wh2_dlc09_tmb_mon_carrion_0",
+          "wh2_dlc09_tmb_mon_dire_wolves",
+          "wh2_dlc09_tmb_mon_fell_bats"
+        },
+        war_machine = {
+          "wh2_dlc09_tmb_art_screaming_skull_catapult_0"
+        }
+      }
+    },
+    wh2_dlc11_cst_vampire_coast = {
+      name = "Vampire Coast",
+      culture = "wh2_dlc11_cst_vampire_coast",
+      military_groups = {
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa"
+      },
+      unit_count = 29,
+      units = {
+        {
+          unit_key = "wh2_dlc11_cst_inf_depth_guard_0",
+          land_unit_key = "wh2_dlc11_cst_inf_depth_guard_0",
+          name = "Depth Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_depth_guard_1",
+          land_unit_key = "wh2_dlc11_cst_inf_depth_guard_1",
+          name = "Depth Guard (Polearms)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_sartosa_free_company_0",
+          land_unit_key = "wh2_dlc11_cst_inf_sartosa_free_company_0",
+          name = "Sartosa Free Company",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_syreens",
+          land_unit_key = "wh2_dlc11_cst_inf_syreens",
+          name = "Syreens",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_0",
+          land_unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_0",
+          name = "Zombie Pirate Deckhand Mob",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_1",
+          land_unit_key = "wh2_dlc11_cst_inf_zombie_deckhands_mob_1",
+          name = "Zombie Pirate Deckhand Mob (Polearms)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_deck_gunners_0",
+          land_unit_key = "wh2_dlc11_cst_inf_deck_gunners_0",
+          name = "Deck Gunners",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_sartosa_militia_0",
+          land_unit_key = "wh2_dlc11_cst_inf_sartosa_militia_0",
+          name = "Sartosa Militia",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_0",
+          land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_0",
+          name = "Zombie Pirate Gunnery Mob",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_3",
+          land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_3",
+          name = "Zombie Pirate Gunnery Mob (Bombers)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_2",
+          land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_2",
+          name = "Zombie Pirate Gunnery Mob (Hand Cannons)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_1",
+          land_unit_key = "wh2_dlc11_cst_inf_zombie_gunnery_mob_1",
+          name = "Zombie Pirate Gunnery Mob (Handgunners)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_bloated_corpse_0",
+          land_unit_key = "wh2_dlc11_cst_mon_bloated_corpse_0",
+          name = "Bloated Corpse",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_terrorgheist",
+          land_unit_key = "wh2_dlc11_cst_mon_terrorgheist",
+          name = "Death Shriek Terrorgheist",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_necrofex_colossus_0",
+          land_unit_key = "wh2_dlc11_cst_mon_necrofex_colossus_0",
+          name = "Necrofex Colossus",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_rotting_leviathan_0",
+          land_unit_key = "wh2_dlc11_cst_mon_rotting_leviathan_0",
+          name = "Rotting Leviathan",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_animated_hulks_0",
+          land_unit_key = "wh2_dlc11_cst_mon_animated_hulks_0",
+          name = "Animated Hulks",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_maneaters_0",
+          land_unit_key = "wh3_main_ogr_inf_maneaters_0",
+          name = "Maneaters",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_maneaters_3",
+          land_unit_key = "wh3_main_ogr_inf_maneaters_3",
+          name = "Maneaters (Ogre Pistols)",
+          category = "monstrous_infantry",
+          category_raw = "inf_ranged",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_mournguls_0",
+          land_unit_key = "wh2_dlc11_cst_mon_mournguls_0",
+          name = "Mournguls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_0",
+          land_unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_0",
+          name = "Rotting Prometheans",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_gunnery_mob_0",
+          land_unit_key = "wh2_dlc11_cst_mon_rotting_prometheans_gunnery_mob_0",
+          name = "Rotting Prometheans (Gunnery Mob)",
+          category = "monstrous_infantry",
+          category_raw = "war_beast",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cav_deck_droppers_0",
+          land_unit_key = "wh2_dlc11_cst_cav_deck_droppers_0",
+          name = "Deck Droppers",
+          category = "war_beast",
+          category_raw = "cavalry",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cav_deck_droppers_1",
+          land_unit_key = "wh2_dlc11_cst_cav_deck_droppers_1",
+          name = "Deck Droppers (Bombers)",
+          category = "war_beast",
+          category_raw = "cavalry",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cav_deck_droppers_2",
+          land_unit_key = "wh2_dlc11_cst_cav_deck_droppers_2",
+          name = "Deck Droppers (Handgunners)",
+          category = "war_beast",
+          category_raw = "cavalry",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_fell_bats",
+          land_unit_key = "wh2_dlc11_cst_mon_fell_bats",
+          name = "Fell Bats",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_scurvy_dogs",
+          land_unit_key = "wh2_dlc11_cst_mon_scurvy_dogs",
+          name = "Scurvy Dogs",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_art_carronade",
+          land_unit_key = "wh2_dlc11_cst_art_carronade",
+          name = "Carronades",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_art_mortar",
+          land_unit_key = "wh2_dlc11_cst_art_mortar",
+          name = "Mortars",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        melee_infantry = {
+          "wh2_dlc11_cst_inf_depth_guard_0",
+          "wh2_dlc11_cst_inf_depth_guard_1",
+          "wh2_dlc11_cst_inf_sartosa_free_company_0",
+          "wh2_dlc11_cst_inf_syreens",
+          "wh2_dlc11_cst_inf_zombie_deckhands_mob_0",
+          "wh2_dlc11_cst_inf_zombie_deckhands_mob_1"
+        },
+        missile_infantry = {
+          "wh2_dlc11_cst_inf_deck_gunners_0",
+          "wh2_dlc11_cst_inf_sartosa_militia_0",
+          "wh2_dlc11_cst_inf_zombie_gunnery_mob_0",
+          "wh2_dlc11_cst_inf_zombie_gunnery_mob_3",
+          "wh2_dlc11_cst_inf_zombie_gunnery_mob_2",
+          "wh2_dlc11_cst_inf_zombie_gunnery_mob_1"
+        },
+        monster = {
+          "wh2_dlc11_cst_mon_bloated_corpse_0",
+          "wh2_dlc11_cst_mon_terrorgheist",
+          "wh2_dlc11_cst_mon_necrofex_colossus_0",
+          "wh2_dlc11_cst_mon_rotting_leviathan_0"
+        },
+        monstrous_infantry = {
+          "wh2_dlc11_cst_mon_animated_hulks_0",
+          "wh3_main_ogr_inf_maneaters_0",
+          "wh3_main_ogr_inf_maneaters_3",
+          "wh2_dlc11_cst_mon_mournguls_0",
+          "wh2_dlc11_cst_mon_rotting_prometheans_0",
+          "wh2_dlc11_cst_mon_rotting_prometheans_gunnery_mob_0"
+        },
+        war_beast = {
+          "wh2_dlc11_cst_cav_deck_droppers_0",
+          "wh2_dlc11_cst_cav_deck_droppers_1",
+          "wh2_dlc11_cst_cav_deck_droppers_2",
+          "wh2_dlc11_cst_mon_fell_bats",
+          "wh2_dlc11_cst_mon_scurvy_dogs"
+        },
+        war_machine = {
+          "wh2_dlc11_cst_art_carronade",
+          "wh2_dlc11_cst_art_mortar"
+        }
+      }
+    },
+    wh2_main_def_dark_elves = {
+      name = "Dark Elves",
+      culture = "wh2_main_def_dark_elves",
+      military_groups = {
+        "wh2_main_def",
+        "wh3_main_def_morathi"
+      },
+      unit_count = 33,
+      units = {
+        {
+          unit_key = "wh2_main_def_cav_cold_one_knights_1",
+          land_unit_key = "wh2_main_def_cav_cold_one_knights_1",
+          name = "Cold One Dread Knights",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_def_cav_cold_one_knights_0",
+          land_unit_key = "wh2_main_def_cav_cold_one_knights_0",
+          name = "Cold One Knights",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_def_cav_dark_riders_0",
+          land_unit_key = "wh2_main_def_cav_dark_riders_0",
+          name = "Dark Riders",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_def_cav_dark_riders_1",
+          land_unit_key = "wh2_main_def_cav_dark_riders_1",
+          name = "Dark Riders (Shields)",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc10_def_cav_doomfire_warlocks_0",
+          land_unit_key = "wh2_dlc10_def_cav_doomfire_warlocks_0",
+          name = "Doomfire Warlocks",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_black_ark_corsairs_0",
+          land_unit_key = "wh2_main_def_inf_black_ark_corsairs_0",
+          name = "Black Ark Corsairs",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_black_guard_0",
+          land_unit_key = "wh2_main_def_inf_black_guard_0",
+          name = "Black Guard of Naggarond",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_bleakswords_0",
+          land_unit_key = "wh2_main_def_inf_bleakswords_0",
+          name = "Bleakswords",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_daemonette_0",
+          land_unit_key = "wh3_main_sla_inf_daemonette_0",
+          name = "Daemonettes of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh",
+          land_unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh",
+          name = "Devotees of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_dreadspears_0",
+          land_unit_key = "wh2_main_def_inf_dreadspears_0",
+          name = "Dreadspears",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_daemonette_1",
+          land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          name = "Exalted Daemonettes of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_har_ganeth_executioners_0",
+          land_unit_key = "wh2_main_def_inf_har_ganeth_executioners_0",
+          name = "Har Ganeth Executioners",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc10_def_inf_sisters_of_slaughter",
+          land_unit_key = "wh2_dlc10_def_inf_sisters_of_slaughter",
+          name = "Sisters of Slaughter",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_witch_elves_0",
+          land_unit_key = "wh2_main_def_inf_witch_elves_0",
+          name = "Witch Elves",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_cav_dark_riders_2",
+          land_unit_key = "wh2_main_def_cav_dark_riders_2",
+          name = "Dark Riders (Repeater Crossbows)",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh2_main_def_cav_cold_one_chariot",
+          land_unit_key = "wh2_main_def_cav_cold_one_chariot",
+          name = "Cold One Chariots",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc14_def_cav_scourgerunner_chariot_0",
+          land_unit_key = "wh2_dlc14_def_cav_scourgerunner_chariot_0",
+          name = "Scourgerunner Chariots",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_main_def_inf_black_ark_corsairs_1",
+          land_unit_key = "wh2_main_def_inf_black_ark_corsairs_1",
+          name = "Black Ark Corsairs (Handbows)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_darkshards_0",
+          land_unit_key = "wh2_main_def_inf_darkshards_0",
+          name = "Darkshards",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_darkshards_1",
+          land_unit_key = "wh2_main_def_inf_darkshards_1",
+          name = "Darkshards (Shields)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh_crossbows",
+          land_unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh_crossbows",
+          name = "Devotees of Slaanesh (Crossbows)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_shades_0",
+          land_unit_key = "wh2_main_def_inf_shades_0",
+          name = "Shades",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_shades_1",
+          land_unit_key = "wh2_main_def_inf_shades_1",
+          name = "Shades (Dual Weapons)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_inf_shades_2",
+          land_unit_key = "wh2_main_def_inf_shades_2",
+          name = "Shades (Greatswords)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_def_mon_black_dragon",
+          land_unit_key = "wh2_main_def_mon_black_dragon",
+          name = "Black Dragon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc14_def_mon_bloodwrack_medusa_0",
+          land_unit_key = "wh2_dlc14_def_mon_bloodwrack_medusa_0",
+          name = "Bloodwrack Medusa",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc10_def_mon_feral_manticore_0",
+          land_unit_key = "wh2_dlc10_def_mon_feral_manticore_0",
+          name = "Feral Manticore",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc10_def_mon_kharibdyss_0",
+          land_unit_key = "wh2_dlc10_def_mon_kharibdyss_0",
+          name = "Kharibdyss",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_def_mon_war_hydra",
+          land_unit_key = "wh2_main_def_mon_war_hydra_0",
+          name = "War Hydra",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_def_inf_harpies",
+          land_unit_key = "wh2_main_def_inf_harpies",
+          name = "Harpies",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+          land_unit_key = "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+          name = "Bloodwrack Shrine",
+          category = "war_machine",
+          category_raw = "war_machine",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh2_main_def_art_reaper_bolt_thrower",
+          land_unit_key = "wh2_main_def_art_reaper_bolt_thrower",
+          name = "Reaper Bolt Throwers",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        melee_cavalry = {
+          "wh2_main_def_cav_cold_one_knights_1",
+          "wh2_main_def_cav_cold_one_knights_0",
+          "wh2_main_def_cav_dark_riders_0",
+          "wh2_main_def_cav_dark_riders_1",
+          "wh2_dlc10_def_cav_doomfire_warlocks_0"
+        },
+        melee_infantry = {
+          "wh2_main_def_inf_black_ark_corsairs_0",
+          "wh2_main_def_inf_black_guard_0",
+          "wh2_main_def_inf_bleakswords_0",
+          "wh3_main_sla_inf_daemonette_0",
+          "wh3_dlc27_sla_inf_devotees_of_slaanesh",
+          "wh2_main_def_inf_dreadspears_0",
+          "wh3_main_sla_inf_daemonette_1",
+          "wh2_main_def_inf_har_ganeth_executioners_0",
+          "wh2_dlc10_def_inf_sisters_of_slaughter",
+          "wh2_main_def_inf_witch_elves_0"
+        },
+        missile_cavalry = {
+          "wh2_main_def_cav_dark_riders_2"
+        },
+        missile_chariot = {
+          "wh2_main_def_cav_cold_one_chariot",
+          "wh2_dlc14_def_cav_scourgerunner_chariot_0"
+        },
+        missile_infantry = {
+          "wh2_main_def_inf_black_ark_corsairs_1",
+          "wh2_main_def_inf_darkshards_0",
+          "wh2_main_def_inf_darkshards_1",
+          "wh3_dlc27_sla_inf_devotees_of_slaanesh_crossbows",
+          "wh2_main_def_inf_shades_0",
+          "wh2_main_def_inf_shades_1",
+          "wh2_main_def_inf_shades_2"
+        },
+        monster = {
+          "wh2_main_def_mon_black_dragon",
+          "wh2_dlc14_def_mon_bloodwrack_medusa_0",
+          "wh2_dlc10_def_mon_feral_manticore_0",
+          "wh2_dlc10_def_mon_kharibdyss_0",
+          "wh2_main_def_mon_war_hydra"
+        },
+        monstrous_infantry = {
+          "wh2_main_def_inf_harpies"
+        },
+        war_machine = {
+          "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+          "wh2_main_def_art_reaper_bolt_thrower"
+        }
+      }
+    },
+    wh2_main_hef_high_elves = {
+      name = "High Elves",
+      culture = "wh2_main_hef_high_elves",
+      military_groups = {
+        "wh2_main_hef",
+        "wh2_main_hef_imrik"
+      },
+      unit_count = 46,
+      units = {
+        {
+          unit_key = "wh2_main_hef_cav_ithilmar_chariot",
+          land_unit_key = "wh2_main_hef_cav_ithilmar_chariot",
+          name = "Ithilmar Chariots",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_veh_lion_chariot_of_chrace_0",
+          land_unit_key = "wh2_dlc15_hef_veh_lion_chariot_of_chrace_0",
+          name = "Lion Chariots of Chrace",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_main_hef_cav_dragon_princes",
+          land_unit_key = "wh2_main_hef_cav_dragon_princes",
+          name = "Dragon Princes",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_hef_cav_ellyrian_reavers_0",
+          land_unit_key = "wh2_main_hef_cav_ellyrian_reavers_0",
+          name = "Ellyrian Reavers",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_hef_cav_silver_helms_0",
+          land_unit_key = "wh2_main_hef_cav_silver_helms_0",
+          name = "Silver Helms",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_hef_cav_silver_helms_1",
+          land_unit_key = "wh2_main_hef_cav_silver_helms_1",
+          name = "Silver Helms (Shields)",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_inf_mistwalkers_faithbearers_0",
+          land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_faithbearers_0",
+          name = "Athel Tamarha Faithbearers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc10_hef_inf_dryads_0",
+          land_unit_key = "wh2_dlc10_hef_inf_dryads_0",
+          name = "Dryads",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_hef_inf_gate_guard",
+          land_unit_key = "wh2_main_hef_inf_gate_guard",
+          name = "Gate Guard",
+          category = "melee_infantry",
+          category_raw = "inf_ranged",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_hef_inf_phoenix_guard",
+          land_unit_key = "wh2_main_hef_inf_phoenix_guard",
+          name = "Phoenix Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_inf_rangers_0",
+          land_unit_key = "wh2_dlc15_hef_inf_rangers_0",
+          name = "Rangers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_hef_inf_ships_company",
+          land_unit_key = "wh3_dlc27_hef_inf_ships_company",
+          name = "Ship's Company",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_inf_silverin_guard_0",
+          land_unit_key = "wh2_dlc15_hef_inf_silverin_guard_0",
+          name = "Silverin Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_hef_inf_spearmen_0",
+          land_unit_key = "wh2_main_hef_inf_spearmen_0",
+          name = "Spearmen",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_hef_inf_swordmasters_of_hoeth_0",
+          land_unit_key = "wh2_main_hef_inf_swordmasters_of_hoeth_0",
+          name = "Swordmasters of Hoeth",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_hef_inf_white_lions_of_chrace_0",
+          land_unit_key = "wh2_main_hef_inf_white_lions_of_chrace_0",
+          name = "White Lions of Chrace",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_hef_cav_ellyrian_reavers_1",
+          land_unit_key = "wh2_main_hef_cav_ellyrian_reavers_1",
+          name = "Ellyrian Reaver Archers",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc27_hef_veh_skycutter_bows",
+          land_unit_key = "wh3_dlc27_hef_veh_skycutter_bows",
+          name = "Lothern Skycutters",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc27_hef_veh_skycutter_bolt_thrower",
+          land_unit_key = "wh3_dlc27_hef_veh_skycutter_bolt_thrower",
+          name = "Lothern Skycutters (Bolt Throwers)",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_main_hef_cav_tiranoc_chariot",
+          land_unit_key = "wh2_main_hef_cav_tiranoc_chariot",
+          name = "Tiranoc Chariots",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_main_hef_inf_archers_0",
+          land_unit_key = "wh2_main_hef_inf_archers_0",
+          name = "Archers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_hef_inf_archers_1",
+          land_unit_key = "wh2_main_hef_inf_archers_1",
+          name = "Archers (Light Armour)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_hef_inf_lothern_sea_guard_0",
+          land_unit_key = "wh2_main_hef_inf_lothern_sea_guard_0",
+          name = "Lothern Sea Guard",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_hef_inf_lothern_sea_guard_1",
+          land_unit_key = "wh2_main_hef_inf_lothern_sea_guard_1",
+          name = "Lothern Sea Guard (Shields)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_inf_mistwalkers_sentinels_0",
+          land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_sentinels_0",
+          name = "Sentinels of Astaril",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc10_hef_inf_shadow_warriors_0",
+          land_unit_key = "wh2_dlc10_hef_inf_shadow_warriors_0",
+          name = "Shadow Warriors",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc10_hef_inf_shadow_walkers_0",
+          land_unit_key = "wh2_dlc10_hef_inf_shadow_walkers_0",
+          name = "Shadow-walkers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
+          land_unit_key = "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
+          name = "Sisters of Avelorn",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_inf_mistwalkers_spireguard_0",
+          land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_spireguard_0",
+          name = "Spire Guard of Tor Yvresse",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_inf_mistwalkers_skyhawks_0",
+          land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_skyhawks_0",
+          name = "The Skyhawks",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_mon_arcane_phoenix_0",
+          land_unit_key = "wh2_dlc15_hef_mon_arcane_phoenix_0",
+          name = "Arcane Phoenix",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_hef_mon_phoenix_flamespyre",
+          land_unit_key = "wh2_main_hef_mon_phoenix_flamespyre",
+          name = "Flamespyre Phoenix",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_mon_forest_dragon_0",
+          land_unit_key = "wh2_dlc15_hef_mon_forest_dragon_0",
+          name = "Forest Dragon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_hef_mon_phoenix_frostheart",
+          land_unit_key = "wh2_main_hef_mon_phoenix_frostheart",
+          name = "Frostheart Phoenix",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_hef_mon_great_eagle",
+          land_unit_key = "wh2_main_hef_mon_great_eagle",
+          name = "Great Eagle",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_hef_mon_merwyrm",
+          land_unit_key = "wh3_dlc27_hef_mon_merwyrm",
+          name = "Merwyrm",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_hef_mon_moon_dragon",
+          land_unit_key = "wh2_main_hef_mon_moon_dragon",
+          name = "Moon Dragon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_hef_mon_sea_elemental",
+          land_unit_key = "wh3_dlc27_hef_mon_sea_elemental",
+          name = "Sea Elemental",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_hef_mon_star_dragon",
+          land_unit_key = "wh2_main_hef_mon_star_dragon",
+          name = "Star Dragon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_hef_mon_sun_dragon",
+          land_unit_key = "wh2_main_hef_mon_sun_dragon",
+          name = "Sun Dragon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc10_hef_mon_treeman_0",
+          land_unit_key = "wh2_dlc10_hef_mon_treeman_0",
+          name = "Treeman",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0",
+          land_unit_key = "wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0",
+          name = "Knights of Tor Gaval",
+          category = "monstrous_cavalry",
+          category_raw = "war_beast",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc27_hef_inf_oceanids",
+          land_unit_key = "wh3_dlc27_hef_inf_oceanids",
+          name = "Oceanids",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc10_hef_mon_treekin_0",
+          land_unit_key = "wh2_dlc10_hef_mon_treekin_0",
+          name = "Tree Kin",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc15_hef_mon_war_lions_of_chrace_0",
+          land_unit_key = "wh2_dlc15_hef_mon_war_lions_of_chrace_0",
+          name = "War Lions of Chrace",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_main_hef_art_eagle_claw_bolt_thrower",
+          land_unit_key = "wh2_main_hef_art_eagle_claw_bolt_thrower",
+          name = "Eagle Claw Bolt Throwers",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        chariot = {
+          "wh2_main_hef_cav_ithilmar_chariot",
+          "wh2_dlc15_hef_veh_lion_chariot_of_chrace_0"
+        },
+        melee_cavalry = {
+          "wh2_main_hef_cav_dragon_princes",
+          "wh2_main_hef_cav_ellyrian_reavers_0",
+          "wh2_main_hef_cav_silver_helms_0",
+          "wh2_main_hef_cav_silver_helms_1"
+        },
+        melee_infantry = {
+          "wh2_dlc15_hef_inf_mistwalkers_faithbearers_0",
+          "wh2_dlc10_hef_inf_dryads_0",
+          "wh2_main_hef_inf_gate_guard",
+          "wh2_main_hef_inf_phoenix_guard",
+          "wh2_dlc15_hef_inf_rangers_0",
+          "wh3_dlc27_hef_inf_ships_company",
+          "wh2_dlc15_hef_inf_silverin_guard_0",
+          "wh2_main_hef_inf_spearmen_0",
+          "wh2_main_hef_inf_swordmasters_of_hoeth_0",
+          "wh2_main_hef_inf_white_lions_of_chrace_0"
+        },
+        missile_cavalry = {
+          "wh2_main_hef_cav_ellyrian_reavers_1"
+        },
+        missile_chariot = {
+          "wh3_dlc27_hef_veh_skycutter_bows",
+          "wh3_dlc27_hef_veh_skycutter_bolt_thrower",
+          "wh2_main_hef_cav_tiranoc_chariot"
+        },
+        missile_infantry = {
+          "wh2_main_hef_inf_archers_0",
+          "wh2_main_hef_inf_archers_1",
+          "wh2_main_hef_inf_lothern_sea_guard_0",
+          "wh2_main_hef_inf_lothern_sea_guard_1",
+          "wh2_dlc15_hef_inf_mistwalkers_sentinels_0",
+          "wh2_dlc10_hef_inf_shadow_warriors_0",
+          "wh2_dlc10_hef_inf_shadow_walkers_0",
+          "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
+          "wh2_dlc15_hef_inf_mistwalkers_spireguard_0",
+          "wh2_dlc15_hef_inf_mistwalkers_skyhawks_0"
+        },
+        monster = {
+          "wh2_dlc15_hef_mon_arcane_phoenix_0",
+          "wh2_main_hef_mon_phoenix_flamespyre",
+          "wh2_dlc15_hef_mon_forest_dragon_0",
+          "wh2_main_hef_mon_phoenix_frostheart",
+          "wh2_main_hef_mon_great_eagle",
+          "wh3_dlc27_hef_mon_merwyrm",
+          "wh2_main_hef_mon_moon_dragon",
+          "wh3_dlc27_hef_mon_sea_elemental",
+          "wh2_main_hef_mon_star_dragon",
+          "wh2_main_hef_mon_sun_dragon",
+          "wh2_dlc10_hef_mon_treeman_0"
+        },
+        monstrous_cavalry = {
+          "wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0"
+        },
+        monstrous_infantry = {
+          "wh3_dlc27_hef_inf_oceanids",
+          "wh2_dlc10_hef_mon_treekin_0"
+        },
+        war_beast = {
+          "wh2_dlc15_hef_mon_war_lions_of_chrace_0"
+        },
+        war_machine = {
+          "wh2_main_hef_art_eagle_claw_bolt_thrower"
+        }
+      }
+    },
+    wh2_main_lzd_lizardmen = {
+      name = "Lizardmen",
+      culture = "wh2_main_lzd_lizardmen",
+      military_groups = {
+        "wh2_main_lzd"
+      },
+      unit_count = 64,
+      units = {
+        {
+          unit_key = "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
+          land_unit_key = "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
+          name = "Blessed Cold One Spear-Riders",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_lzd_cav_horned_ones_blessed_0",
+          land_unit_key = "wh2_main_lzd_cav_horned_ones_blessed_0",
+          name = "Blessed Horned Ones",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_lzd_cav_cold_ones_1",
+          land_unit_key = "wh2_main_lzd_cav_cold_ones_1",
+          name = "Cold One Riders",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_lzd_cav_cold_one_spearmen_1",
+          land_unit_key = "wh2_main_lzd_cav_cold_one_spearriders_1",
+          name = "Cold One Spear-Riders",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_lzd_cav_cold_ones_feral_0",
+          land_unit_key = "wh2_main_lzd_cav_cold_ones_feral_0",
+          name = "Feral Cold Ones",
+          category = "melee_cavalry",
+          category_raw = "inf_melee",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_lzd_cav_horned_ones_0",
+          land_unit_key = "wh2_main_lzd_cav_horned_ones_0",
+          name = "Horned Ones",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_lzd_cav_horned_ones_0_nakai",
+          land_unit_key = "wh2_main_lzd_cav_horned_ones_0",
+          name = "Horned Ones",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_saurus_spearmen_blessed_1",
+          land_unit_key = "wh2_main_lzd_inf_saurus_spearmen_blessed_1",
+          name = "Blessed Saurus Spears (Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+          land_unit_key = "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+          name = "Blessed Saurus Warriors (Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_temple_guards_blessed",
+          land_unit_key = "wh2_main_lzd_inf_temple_guards_blessed",
+          name = "Blessed Temple Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_inf_skink_red_crested_0",
+          land_unit_key = "wh2_dlc12_lzd_inf_skink_red_crested_0",
+          name = "Red Crested Skinks",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_saurus_spearmen_0",
+          land_unit_key = "wh2_main_lzd_inf_saurus_spearmen_0",
+          name = "Saurus Spears",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_saurus_spearmen_1",
+          land_unit_key = "wh2_main_lzd_inf_saurus_spearmen_1",
+          name = "Saurus Spears (Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_saurus_warriors_0",
+          land_unit_key = "wh2_main_lzd_inf_saurus_warriors_0",
+          name = "Saurus Warriors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_saurus_warriors_1",
+          land_unit_key = "wh2_main_lzd_inf_saurus_warriors_1",
+          name = "Saurus Warriors (Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_skink_cohort_0",
+          land_unit_key = "wh2_main_lzd_inf_skink_cohort_0",
+          name = "Skink Cohort",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_temple_guards",
+          land_unit_key = "wh2_main_lzd_inf_temple_guards",
+          name = "Temple Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_temple_guards_nakai",
+          land_unit_key = "wh2_main_lzd_inf_temple_guards",
+          name = "Temple Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+          land_unit_key = "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+          name = "Blessed Chameleon Skinks",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc17_lzd_inf_chameleon_stalkers_0_blessed",
+          land_unit_key = "wh2_dlc17_lzd_inf_chameleon_stalkers_0_blessed",
+          name = "Blessed Chameleon Stalkers",
+          category = "missile_infantry",
+          category_raw = "inf_melee",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc13_lzd_mon_razordon_pack_0_blessed",
+          land_unit_key = "wh2_dlc13_lzd_mon_razordon_pack_0_blessed",
+          name = "Blessed Razordon Hunting Pack",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_mon_salamander_pack_0_blessed",
+          land_unit_key = "wh2_dlc12_lzd_mon_salamander_pack_0_blessed",
+          name = "Blessed Salamander Hunting Pack",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_skink_cohort_1_blessed",
+          land_unit_key = "wh2_main_lzd_inf_skink_cohort_1_blessed",
+          name = "Blessed Skink Cohort (Javelins)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_skink_skirmishers_blessed_0",
+          land_unit_key = "wh2_main_lzd_inf_skink_skirmishers_blessed_0",
+          name = "Blessed Skink Skirmishers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_chameleon_skinks_0",
+          land_unit_key = "wh2_main_lzd_inf_chameleon_skinks_0",
+          name = "Chameleon Skinks",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+          land_unit_key = "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+          name = "Chameleon Stalkers",
+          category = "missile_infantry",
+          category_raw = "inf_melee",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc13_lzd_mon_razordon_pack_0",
+          land_unit_key = "wh2_dlc13_lzd_mon_razordon_pack_0",
+          name = "Razordon Hunting Pack",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_mon_salamander_pack_0",
+          land_unit_key = "wh2_dlc12_lzd_mon_salamander_pack_0",
+          name = "Salamander Hunting Pack",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_skink_cohort_1",
+          land_unit_key = "wh2_main_lzd_inf_skink_cohort_1",
+          name = "Skink Cohort (Javelins)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_inf_skink_skirmishers_0",
+          land_unit_key = "wh2_main_lzd_inf_skink_skirmishers_0",
+          name = "Skink Skirmishers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_mon_ancient_salamander_0",
+          land_unit_key = "wh2_dlc12_lzd_mon_ancient_salamander_0",
+          name = "Ancient Salamander",
+          category = "monster",
+          category_raw = "inf_ranged",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_ancient_stegadon",
+          land_unit_key = "wh2_main_lzd_mon_ancient_stegadon",
+          name = "Ancient Stegadon",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+          land_unit_key = "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+          name = "Ancient Stegadon (Engine of the Gods)",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_mon_ancient_stegadon_1_nakai",
+          land_unit_key = "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+          name = "Ancient Stegadon (Engine of the Gods)",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_mon_bastiladon_3",
+          land_unit_key = "wh2_dlc12_lzd_mon_bastiladon_3",
+          name = "Bastiladon (Ark of Sotek)",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_mon_bastiladon_3_nakai",
+          land_unit_key = "wh2_dlc12_lzd_mon_bastiladon_3",
+          name = "Bastiladon (Ark of Sotek)",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_bastiladon_1",
+          land_unit_key = "wh2_main_lzd_mon_bastiladon_1",
+          name = "Bastiladon (Revivification Crystal)",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_bastiladon_2",
+          land_unit_key = "wh2_main_lzd_mon_bastiladon_2",
+          name = "Bastiladon (Solar Engine)",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_mon_ancient_salamander_0_blessed",
+          land_unit_key = "wh2_dlc12_lzd_mon_ancient_salamander_0_blessed",
+          name = "Blessed Ancient Salamander",
+          category = "monster",
+          category_raw = "inf_ranged",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_ancient_stegadon_blessed",
+          land_unit_key = "wh2_main_lzd_mon_ancient_stegadon_blessed",
+          name = "Blessed Ancient Stegadon",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_bastiladon_blessed_2",
+          land_unit_key = "wh2_main_lzd_mon_bastiladon_blessed_2",
+          name = "Blessed Bastiladon (Solar Engine)",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_carnosaur_blessed_0",
+          land_unit_key = "wh2_main_lzd_mon_carnosaur_blessed_0",
+          name = "Blessed Carnosaur",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_stegadon_blessed_1",
+          land_unit_key = "wh2_main_lzd_mon_stegadon_blessed_1",
+          name = "Blessed Stegadon",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_cav_terradon_riders_0_blessed",
+          land_unit_key = "wh2_main_lzd_cav_terradon_riders_0_blessed",
+          name = "Blessed Terradon Riders",
+          category = "monster",
+          category_raw = "cavalry",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_cav_terradon_riders_blessed_1",
+          land_unit_key = "wh2_main_lzd_cav_terradon_riders_blessed_1",
+          name = "Blessed Terradon Riders (Fireleech Bolas)",
+          category = "monster",
+          category_raw = "cavalry",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc17_lzd_mon_coatl_0",
+          land_unit_key = "wh2_dlc17_lzd_mon_coatl_0",
+          name = "Coatl",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc13_lzd_mon_dread_saurian_1",
+          land_unit_key = "wh2_dlc13_lzd_mon_dread_saurian_1",
+          name = "Dread Saurian",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_bastiladon_0",
+          land_unit_key = "wh2_main_lzd_mon_bastiladon_0",
+          name = "Feral Bastiladon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_carnosaur_0",
+          land_unit_key = "wh2_main_lzd_mon_carnosaur_0",
+          name = "Feral Carnosaur",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc13_lzd_mon_dread_saurian_0",
+          land_unit_key = "wh2_dlc13_lzd_mon_dread_saurian_0",
+          name = "Feral Dread Saurian",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_stegadon_0",
+          land_unit_key = "wh2_main_lzd_mon_stegadon_0",
+          name = "Feral Stegadon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc17_lzd_mon_troglodon_0",
+          land_unit_key = "wh2_dlc17_lzd_mon_troglodon_0",
+          name = "Feral Troglodon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_stegadon_1",
+          land_unit_key = "wh2_main_lzd_mon_stegadon_1",
+          name = "Stegadon",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_cav_terradon_riders_0",
+          land_unit_key = "wh2_main_lzd_cav_terradon_riders_0",
+          name = "Terradon Riders",
+          category = "monster",
+          category_raw = "cavalry",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_lzd_cav_terradon_riders_1",
+          land_unit_key = "wh2_main_lzd_cav_terradon_riders_1",
+          name = "Terradon Riders (Fireleech Bolas)",
+          category = "monster",
+          category_raw = "cavalry",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_cav_ripperdactyl_riders_0_blessed",
+          land_unit_key = "wh2_dlc12_lzd_cav_ripperdactyl_riders_0_blessed",
+          name = "Blessed Ripperdactyl Riders",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc12_lzd_cav_ripperdactyl_riders_0",
+          land_unit_key = "wh2_dlc12_lzd_cav_ripperdactyl_riders_0",
+          name = "Ripperdactyl Riders",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_kroxigors_blessed",
+          land_unit_key = "wh2_main_lzd_mon_kroxigors_blessed",
+          name = "Blessed Kroxigor",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0_blessed",
+          land_unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0_blessed",
+          name = "Blessed Sacred Kroxigor",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_kroxigors",
+          land_unit_key = "wh2_main_lzd_mon_kroxigors",
+          name = "Kroxigor",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_main_lzd_mon_kroxigors_nakai",
+          land_unit_key = "wh2_main_lzd_mon_kroxigors",
+          name = "Kroxigor",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0",
+          land_unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0",
+          name = "Sacred Kroxigor",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0_nakai",
+          land_unit_key = "wh2_dlc13_lzd_mon_sacred_kroxigors_0",
+          name = "Sacred Kroxigor",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_zoats",
+          land_unit_key = "wh2_dlc16_wef_mon_zoats",
+          name = "Zoats",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        }
+      },
+      units_by_category = {
+        melee_cavalry = {
+          "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
+          "wh2_main_lzd_cav_horned_ones_blessed_0",
+          "wh2_main_lzd_cav_cold_ones_1",
+          "wh2_main_lzd_cav_cold_one_spearmen_1",
+          "wh2_main_lzd_cav_cold_ones_feral_0",
+          "wh2_main_lzd_cav_horned_ones_0",
+          "wh2_main_lzd_cav_horned_ones_0_nakai"
+        },
+        melee_infantry = {
+          "wh2_main_lzd_inf_saurus_spearmen_blessed_1",
+          "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+          "wh2_main_lzd_inf_temple_guards_blessed",
+          "wh2_dlc12_lzd_inf_skink_red_crested_0",
+          "wh2_main_lzd_inf_saurus_spearmen_0",
+          "wh2_main_lzd_inf_saurus_spearmen_1",
+          "wh2_main_lzd_inf_saurus_warriors_0",
+          "wh2_main_lzd_inf_saurus_warriors_1",
+          "wh2_main_lzd_inf_skink_cohort_0",
+          "wh2_main_lzd_inf_temple_guards",
+          "wh2_main_lzd_inf_temple_guards_nakai"
+        },
+        missile_infantry = {
+          "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+          "wh2_dlc17_lzd_inf_chameleon_stalkers_0_blessed",
+          "wh2_dlc13_lzd_mon_razordon_pack_0_blessed",
+          "wh2_dlc12_lzd_mon_salamander_pack_0_blessed",
+          "wh2_main_lzd_inf_skink_cohort_1_blessed",
+          "wh2_main_lzd_inf_skink_skirmishers_blessed_0",
+          "wh2_main_lzd_inf_chameleon_skinks_0",
+          "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+          "wh2_dlc13_lzd_mon_razordon_pack_0",
+          "wh2_dlc12_lzd_mon_salamander_pack_0",
+          "wh2_main_lzd_inf_skink_cohort_1",
+          "wh2_main_lzd_inf_skink_skirmishers_0"
+        },
+        monster = {
+          "wh2_dlc12_lzd_mon_ancient_salamander_0",
+          "wh2_main_lzd_mon_ancient_stegadon",
+          "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+          "wh2_dlc12_lzd_mon_ancient_stegadon_1_nakai",
+          "wh2_dlc12_lzd_mon_bastiladon_3",
+          "wh2_dlc12_lzd_mon_bastiladon_3_nakai",
+          "wh2_main_lzd_mon_bastiladon_1",
+          "wh2_main_lzd_mon_bastiladon_2",
+          "wh2_dlc12_lzd_mon_ancient_salamander_0_blessed",
+          "wh2_main_lzd_mon_ancient_stegadon_blessed",
+          "wh2_main_lzd_mon_bastiladon_blessed_2",
+          "wh2_main_lzd_mon_carnosaur_blessed_0",
+          "wh2_main_lzd_mon_stegadon_blessed_1",
+          "wh2_main_lzd_cav_terradon_riders_0_blessed",
+          "wh2_main_lzd_cav_terradon_riders_blessed_1",
+          "wh2_dlc17_lzd_mon_coatl_0",
+          "wh2_dlc13_lzd_mon_dread_saurian_1",
+          "wh2_main_lzd_mon_bastiladon_0",
+          "wh2_main_lzd_mon_carnosaur_0",
+          "wh2_dlc13_lzd_mon_dread_saurian_0",
+          "wh2_main_lzd_mon_stegadon_0",
+          "wh2_dlc17_lzd_mon_troglodon_0",
+          "wh2_main_lzd_mon_stegadon_1",
+          "wh2_main_lzd_cav_terradon_riders_0",
+          "wh2_main_lzd_cav_terradon_riders_1"
+        },
+        monstrous_cavalry = {
+          "wh2_dlc12_lzd_cav_ripperdactyl_riders_0_blessed",
+          "wh2_dlc12_lzd_cav_ripperdactyl_riders_0"
+        },
+        monstrous_infantry = {
+          "wh2_main_lzd_mon_kroxigors_blessed",
+          "wh2_dlc13_lzd_mon_sacred_kroxigors_0_blessed",
+          "wh2_main_lzd_mon_kroxigors",
+          "wh2_main_lzd_mon_kroxigors_nakai",
+          "wh2_dlc13_lzd_mon_sacred_kroxigors_0",
+          "wh2_dlc13_lzd_mon_sacred_kroxigors_0_nakai",
+          "wh2_dlc16_wef_mon_zoats"
+        }
+      }
+    },
+    wh2_main_skv_skaven = {
+      name = "Skaven",
+      culture = "wh2_main_skv_skaven",
+      military_groups = {
+        "wh2_main_skv",
+        "wh2_main_skv_ikit"
+      },
+      unit_count = 36,
+      units = {
+        {
+          unit_key = "wh2_dlc12_skv_veh_doom_flayer_0",
+          land_unit_key = "wh2_dlc12_skv_veh_doom_flayer_0",
+          name = "Doom-Flayers",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_clanrat_spearmen_0",
+          land_unit_key = "wh2_main_skv_inf_clanrat_spearmen_0",
+          name = "Clanrat Spears",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_clanrat_spearmen_1",
+          land_unit_key = "wh2_main_skv_inf_clanrat_spearmen_1",
+          name = "Clanrat Spears (Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_clanrats_0",
+          land_unit_key = "wh2_main_skv_inf_clanrats_0",
+          name = "Clanrats",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_clanrats_1",
+          land_unit_key = "wh2_main_skv_inf_clanrats_1",
+          name = "Clanrats (Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_death_runners_0",
+          land_unit_key = "wh2_main_skv_inf_death_runners_0",
+          name = "Death Runners",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc14_skv_inf_eshin_triads_0",
+          land_unit_key = "wh2_dlc14_skv_inf_eshin_triads_0",
+          name = "Eshin Triads",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_plague_monk_censer_bearer",
+          land_unit_key = "wh2_main_skv_inf_plague_monk_censer_bearer",
+          name = "Plague Monk Censer Bearers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_plague_monks",
+          land_unit_key = "wh2_main_skv_inf_plague_monks",
+          name = "Plague Monks",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_skavenslave_spearmen_0",
+          land_unit_key = "wh2_main_skv_inf_skavenslave_spearmen_0",
+          name = "Skavenslave Spears",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_skavenslaves_0",
+          land_unit_key = "wh2_main_skv_inf_skavenslaves_0",
+          name = "Skavenslaves",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_stormvermin_0",
+          land_unit_key = "wh2_main_skv_inf_stormvermin_0",
+          name = "Stormvermin (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_stormvermin_1",
+          land_unit_key = "wh2_main_skv_inf_stormvermin_1",
+          name = "Stormvermin (Swords & Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc14_skv_inf_warp_grinder_0",
+          land_unit_key = "wh2_dlc14_skv_inf_warp_grinder_0",
+          name = "Warp-Grinders",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_death_globe_bombardiers",
+          land_unit_key = "wh2_main_skv_inf_death_globe_bombardiers",
+          name = "Death Globe Bombardiers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_gutter_runner_slingers_0",
+          land_unit_key = "wh2_main_skv_inf_gutter_runner_slingers_0",
+          name = "Gutter Runner Slingers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_gutter_runner_slingers_1",
+          land_unit_key = "wh2_main_skv_inf_gutter_runner_slingers_1",
+          name = "Gutter Runner Slingers (Poison)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_gutter_runners_0",
+          land_unit_key = "wh2_main_skv_inf_gutter_runners_0",
+          name = "Gutter Runners",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_gutter_runners_1",
+          land_unit_key = "wh2_main_skv_inf_gutter_runners_1",
+          name = "Gutter Runners (Poison)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_night_runners_0",
+          land_unit_key = "wh2_main_skv_inf_night_runners_0",
+          name = "Night Runners",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_night_runners_1",
+          land_unit_key = "wh2_main_skv_inf_night_runners_1",
+          name = "Night Runners (Slings)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_poison_wind_globadiers",
+          land_unit_key = "wh2_main_skv_inf_poison_wind_globadiers",
+          name = "Poisoned Wind Globadiers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc14_skv_inf_poison_wind_mortar_0",
+          land_unit_key = "wh2_dlc14_skv_inf_poison_wind_mortar_0",
+          name = "Poisoned Wind Mortars",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc12_skv_inf_ratling_gun_0",
+          land_unit_key = "wh2_dlc12_skv_inf_ratling_gun_0",
+          name = "Ratling Guns",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_skavenslave_slingers_0",
+          land_unit_key = "wh2_main_skv_inf_skavenslave_slingers_0",
+          name = "Skavenslave Slingers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_main_skv_inf_warpfire_thrower",
+          land_unit_key = "wh2_main_skv_inf_warpfire_thrower",
+          name = "Warpfire Throwers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc12_skv_inf_warplock_jezzails_0",
+          land_unit_key = "wh2_dlc12_skv_inf_warplock_jezzails_0",
+          name = "Warplock Jezzails",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc16_skv_mon_brood_horror_0",
+          land_unit_key = "wh2_dlc16_skv_mon_brood_horror_0",
+          name = "Brood Horror",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_skv_mon_hell_pit_abomination",
+          land_unit_key = "wh2_main_skv_mon_hell_pit_abomination",
+          name = "Hell Pit Abomination",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc16_skv_mon_rat_ogre_mutant",
+          land_unit_key = "wh2_dlc16_skv_mon_rat_ogre_mutant",
+          name = "Mutant Rat Ogre",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_main_skv_mon_rat_ogres",
+          land_unit_key = "wh2_main_skv_mon_rat_ogres",
+          name = "Rat Ogres",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc16_skv_mon_wolf_rats_0",
+          land_unit_key = "wh2_dlc16_skv_mon_wolf_rats_0",
+          name = "Wolf Rats",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc16_skv_mon_wolf_rats_1",
+          land_unit_key = "wh2_dlc16_skv_mon_wolf_rats_1",
+          name = "Wolf Rats (Poison)",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_main_skv_veh_doomwheel",
+          land_unit_key = "wh2_main_skv_veh_doomwheel",
+          name = "Doomwheel",
+          category = "war_machine",
+          category_raw = "war_machine",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh2_main_skv_art_plagueclaw_catapult",
+          land_unit_key = "wh2_main_skv_art_plagueclaw_catapult",
+          name = "Plagueclaw Catapults",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh2_main_skv_art_warp_lightning_cannon",
+          land_unit_key = "wh2_main_skv_art_warp_lightning_cannon",
+          name = "Warp Lightning Cannons",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        chariot = {
+          "wh2_dlc12_skv_veh_doom_flayer_0"
+        },
+        melee_infantry = {
+          "wh2_main_skv_inf_clanrat_spearmen_0",
+          "wh2_main_skv_inf_clanrat_spearmen_1",
+          "wh2_main_skv_inf_clanrats_0",
+          "wh2_main_skv_inf_clanrats_1",
+          "wh2_main_skv_inf_death_runners_0",
+          "wh2_dlc14_skv_inf_eshin_triads_0",
+          "wh2_main_skv_inf_plague_monk_censer_bearer",
+          "wh2_main_skv_inf_plague_monks",
+          "wh2_main_skv_inf_skavenslave_spearmen_0",
+          "wh2_main_skv_inf_skavenslaves_0",
+          "wh2_main_skv_inf_stormvermin_0",
+          "wh2_main_skv_inf_stormvermin_1",
+          "wh2_dlc14_skv_inf_warp_grinder_0"
+        },
+        missile_infantry = {
+          "wh2_main_skv_inf_death_globe_bombardiers",
+          "wh2_main_skv_inf_gutter_runner_slingers_0",
+          "wh2_main_skv_inf_gutter_runner_slingers_1",
+          "wh2_main_skv_inf_gutter_runners_0",
+          "wh2_main_skv_inf_gutter_runners_1",
+          "wh2_main_skv_inf_night_runners_0",
+          "wh2_main_skv_inf_night_runners_1",
+          "wh2_main_skv_inf_poison_wind_globadiers",
+          "wh2_dlc14_skv_inf_poison_wind_mortar_0",
+          "wh2_dlc12_skv_inf_ratling_gun_0",
+          "wh2_main_skv_inf_skavenslave_slingers_0",
+          "wh2_main_skv_inf_warpfire_thrower",
+          "wh2_dlc12_skv_inf_warplock_jezzails_0"
+        },
+        monster = {
+          "wh2_dlc16_skv_mon_brood_horror_0",
+          "wh2_main_skv_mon_hell_pit_abomination",
+          "wh2_dlc16_skv_mon_rat_ogre_mutant"
+        },
+        monstrous_infantry = {
+          "wh2_main_skv_mon_rat_ogres"
+        },
+        war_beast = {
+          "wh2_dlc16_skv_mon_wolf_rats_0",
+          "wh2_dlc16_skv_mon_wolf_rats_1"
+        },
+        war_machine = {
+          "wh2_main_skv_veh_doomwheel",
+          "wh2_main_skv_art_plagueclaw_catapult",
+          "wh2_main_skv_art_warp_lightning_cannon"
+        }
+      }
+    },
+    wh3_dlc23_chd_chaos_dwarfs = {
+      name = "Chaos Dwarfs",
+      culture = "wh3_dlc23_chd_chaos_dwarfs",
+      military_groups = {
+        "wh3_dlc23_group_chaos_dwarfs"
+      },
+      unit_count = 31,
+      units = {
+        {
+          unit_key = "wh3_dlc23_chd_cav_bull_centaurs_axe",
+          land_unit_key = "wh3_dlc23_chd_cav_bull_centaurs_axe",
+          name = "Bull Centaur Renders",
+          category = "melee_cavalry",
+          category_raw = "inf_melee",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_cav_bull_centaurs_dual_axe",
+          land_unit_key = "wh3_dlc23_chd_cav_bull_centaurs_dual_axe",
+          name = "Bull Centaur Renders (Dual Axes)",
+          category = "melee_cavalry",
+          category_raw = "inf_melee",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_cav_bull_centaurs_greatweapons",
+          land_unit_key = "wh3_dlc23_chd_cav_bull_centaurs_greatweapons",
+          name = "Bull Centaur Renders (Great Weapons)",
+          category = "melee_cavalry",
+          category_raw = "inf_melee",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows",
+          land_unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows",
+          name = "Hobgoblin Wolf Raiders (Bows)",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears",
+          land_unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears",
+          name = "Hobgoblin Wolf Raiders (Spears)",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_warriors",
+          land_unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_warriors",
+          name = "Chaos Dwarf Warriors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_warriors_great_weapons",
+          land_unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_warriors_great_weapons",
+          name = "Chaos Dwarf Warriors (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_goblin_labourers",
+          land_unit_key = "wh3_dlc23_chd_inf_goblin_labourers",
+          name = "Goblin Labourers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_hobgoblin_cutthroats",
+          land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_cutthroats",
+          name = "Hobgoblin Cutthroats",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_hobgoblin_sneaky_gits",
+          land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_sneaky_gits",
+          name = "Hobgoblin Sneaky Gits",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_infernal_guard",
+          land_unit_key = "wh3_dlc23_chd_inf_infernal_guard",
+          name = "Infernal Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_infernal_guard_great_weapons",
+          land_unit_key = "wh3_dlc23_chd_inf_infernal_guard_great_weapons",
+          name = "Infernal Guard (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_infernal_ironsworn",
+          land_unit_key = "wh3_dlc23_chd_inf_infernal_ironsworn",
+          name = "Infernal Ironsworn",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_orc_labourers",
+          land_unit_key = "wh3_dlc23_chd_inf_orc_labourers",
+          name = "Orc Labourers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses",
+          land_unit_key = "wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses",
+          name = "Chaos Dwarf Blunderbusses",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_hobgoblin_archers",
+          land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_archers",
+          name = "Hobgoblin Archers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_infernal_guard_fireglaives",
+          land_unit_key = "wh3_dlc23_chd_inf_infernal_guard_fireglaives",
+          name = "Infernal Guard (Fireglaives)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_mon_bale_taurus",
+          land_unit_key = "wh3_dlc23_chd_mon_bale_taurus",
+          name = "Bale Taurus",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_mon_great_taurus",
+          land_unit_key = "wh3_dlc23_chd_mon_great_taurus",
+          name = "Great Taurus",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_mon_kdaai_destroyer",
+          land_unit_key = "wh3_dlc23_chd_mon_kdaai_destroyer",
+          name = "K'daai Destroyer",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_mon_lammasu",
+          land_unit_key = "wh3_dlc23_chd_mon_lammasu",
+          name = "Lammasu",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_mon_kdaai_fireborn",
+          land_unit_key = "wh3_dlc23_chd_mon_kdaai_fireborn",
+          name = "K'daai Fireborn",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_veh_deathshrieker_rocket_launcher",
+          land_unit_key = "wh3_dlc23_chd_veh_deathshrieker_rocket_launcher",
+          name = "Deathshrieker Rocket Launcher",
+          category = "war_machine",
+          category_raw = "war_machine",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_veh_dreadquake_mortar",
+          land_unit_key = "wh3_dlc23_chd_veh_dreadquake_mortar",
+          name = "Dreadquake Mortar",
+          category = "war_machine",
+          category_raw = "war_machine",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_chs_art_hellcannon",
+          land_unit_key = "wh_main_chs_art_hellcannon",
+          name = "Hellcannon",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_main_chd_art_hobgob_bolt_thrower",
+          land_unit_key = "wh3_main_chd_art_hobgob_bolt_thrower",
+          name = "Hobgoblin Bolt Thrower",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_veh_iron_daemon",
+          land_unit_key = "wh3_dlc23_chd_veh_iron_daemon",
+          name = "Iron Daemon",
+          category = "war_machine",
+          category_raw = "war_machine",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_veh_iron_daemon_1dreadquake",
+          land_unit_key = "wh3_dlc23_chd_veh_iron_daemon_1dreadquake",
+          name = "Iron Daemon – Dreadquake Mortar",
+          category = "war_machine",
+          category_raw = "war_machine",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_veh_magma_cannon",
+          land_unit_key = "wh3_dlc23_chd_veh_magma_cannon",
+          name = "Magma Cannon",
+          category = "war_machine",
+          category_raw = "war_machine",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_veh_skullcracker",
+          land_unit_key = "wh3_dlc23_chd_veh_skullcracker",
+          name = "Skullcracker",
+          category = "war_machine",
+          category_raw = "war_machine",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_veh_skullcracker_1dreadquake",
+          land_unit_key = "wh3_dlc23_chd_veh_skullcracker_1dreadquake",
+          name = "Skullcracker – Dreadquake Mortar",
+          category = "war_machine",
+          category_raw = "war_machine",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        melee_cavalry = {
+          "wh3_dlc23_chd_cav_bull_centaurs_axe",
+          "wh3_dlc23_chd_cav_bull_centaurs_dual_axe",
+          "wh3_dlc23_chd_cav_bull_centaurs_greatweapons",
+          "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows",
+          "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears"
+        },
+        melee_infantry = {
+          "wh3_dlc23_chd_inf_chaos_dwarf_warriors",
+          "wh3_dlc23_chd_inf_chaos_dwarf_warriors_great_weapons",
+          "wh3_dlc23_chd_inf_goblin_labourers",
+          "wh3_dlc23_chd_inf_hobgoblin_cutthroats",
+          "wh3_dlc23_chd_inf_hobgoblin_sneaky_gits",
+          "wh3_dlc23_chd_inf_infernal_guard",
+          "wh3_dlc23_chd_inf_infernal_guard_great_weapons",
+          "wh3_dlc23_chd_inf_infernal_ironsworn",
+          "wh3_dlc23_chd_inf_orc_labourers"
+        },
+        missile_infantry = {
+          "wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses",
+          "wh3_dlc23_chd_inf_hobgoblin_archers",
+          "wh3_dlc23_chd_inf_infernal_guard_fireglaives"
+        },
+        monster = {
+          "wh3_dlc23_chd_mon_bale_taurus",
+          "wh3_dlc23_chd_mon_great_taurus",
+          "wh3_dlc23_chd_mon_kdaai_destroyer",
+          "wh3_dlc23_chd_mon_lammasu"
+        },
+        monstrous_infantry = {
+          "wh3_dlc23_chd_mon_kdaai_fireborn"
+        },
+        war_machine = {
+          "wh3_dlc23_chd_veh_deathshrieker_rocket_launcher",
+          "wh3_dlc23_chd_veh_dreadquake_mortar",
+          "wh_main_chs_art_hellcannon",
+          "wh3_main_chd_art_hobgob_bolt_thrower",
+          "wh3_dlc23_chd_veh_iron_daemon",
+          "wh3_dlc23_chd_veh_iron_daemon_1dreadquake",
+          "wh3_dlc23_chd_veh_magma_cannon",
+          "wh3_dlc23_chd_veh_skullcracker",
+          "wh3_dlc23_chd_veh_skullcracker_1dreadquake"
+        }
+      }
+    },
+    wh3_main_cth_cathay = {
+      name = "Grand Cathay",
+      culture = "wh3_main_cth_cathay",
+      military_groups = {
+        "wh3_main_cth"
+      },
+      unit_count = 26,
+      units = {
+        {
+          unit_key = "wh3_main_cth_veh_war_compass_0",
+          land_unit_key = "wh3_main_cth_veh_war_compass_0",
+          name = "Wu Xing War Compass",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc24_cth_veh_zhangu_war_drum",
+          land_unit_key = "wh3_dlc24_cth_veh_zhangu_war_drum",
+          name = "Zhangu War Drum",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_cth_cav_jade_lancers_0",
+          land_unit_key = "wh3_main_cth_cav_jade_lancers_0",
+          name = "Jade Lancers",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_cth_cav_peasant_horsemen_0",
+          land_unit_key = "wh3_main_cth_cav_peasant_horsemen_0",
+          name = "Peasant Horsemen",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_dragon_guard_0",
+          land_unit_key = "wh3_main_cth_inf_dragon_guard_0",
+          name = "Celestial Dragon Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_jade_warriors_0",
+          land_unit_key = "wh3_main_cth_inf_jade_warriors_0",
+          name = "Jade Warriors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_jade_warriors_1",
+          land_unit_key = "wh3_main_cth_inf_jade_warriors_1",
+          name = "Jade Warriors (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_peasant_spearmen_1",
+          land_unit_key = "wh3_main_cth_inf_peasant_spearmen_1",
+          name = "Peasant Long Spearmen",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_dragon_guard_crossbowmen_0",
+          land_unit_key = "wh3_main_cth_inf_dragon_guard_crossbowmen_0",
+          name = "Celestial Dragon Crossbows",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_crane_gunners_0",
+          land_unit_key = "wh3_main_cth_inf_crane_gunners_0",
+          name = "Crane Gunners",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_iron_hail_gunners_0",
+          land_unit_key = "wh3_main_cth_inf_iron_hail_gunners_0",
+          name = "Iron Hail Gunners",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_jade_warrior_crossbowmen_0",
+          land_unit_key = "wh3_main_cth_inf_jade_warrior_crossbowmen_0",
+          name = "Jade Warrior Crossbows",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_jade_warrior_crossbowmen_1",
+          land_unit_key = "wh3_main_cth_inf_jade_warrior_crossbowmen_1",
+          name = "Jade Warrior Crossbows (Shields)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_grenadiers",
+          land_unit_key = "wh3_main_cth_inf_grenadiers",
+          name = "Nan-Gau Grenadiers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_cth_inf_peasant_archers_0",
+          land_unit_key = "wh3_main_cth_inf_peasant_archers_0",
+          name = "Peasant Archers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc24_cth_mon_celestial_lion",
+          land_unit_key = "wh3_dlc24_cth_mon_celestial_lion",
+          name = "Celestial Lion",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_cth_mon_great_moon_bird",
+          land_unit_key = "wh3_dlc24_cth_mon_great_moon_bird",
+          name = "Great Moon Bird",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_cth_mon_terracotta_sentinel_0",
+          land_unit_key = "wh3_main_cth_mon_terracotta_sentinel_0",
+          name = "Terracotta Sentinel",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_cth_cav_jade_longma_riders_0",
+          land_unit_key = "wh3_main_cth_cav_jade_longma_riders_0",
+          name = "Great Longma Riders",
+          category = "monstrous_cavalry",
+          category_raw = "war_beast",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc24_cth_inf_onyx_crowmen",
+          land_unit_key = "wh3_dlc24_cth_inf_onyx_crowmen",
+          name = "Onyx Crowmen",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc24_cth_mon_jade_lion",
+          land_unit_key = "wh3_dlc24_cth_mon_jade_lion",
+          name = "Jade Lion",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_dlc24_cth_mon_jet_lion",
+          land_unit_key = "wh3_dlc24_cth_mon_jet_lion",
+          name = "Jet Lion",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_main_cth_art_fire_rain_rocket_battery_0",
+          land_unit_key = "wh3_main_cth_art_fire_rain_rocket_battery_0",
+          name = "Fire Rain Rocket Battery",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_main_cth_art_grand_cannon_0",
+          land_unit_key = "wh3_main_cth_art_grand_cannon_0",
+          name = "Grand Cannons",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_main_cth_veh_sky_lantern_0",
+          land_unit_key = "wh3_main_cth_veh_sky_lantern_0",
+          name = "Sky Lantern",
+          category = "war_machine",
+          category_raw = "war_beast",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_main_cth_veh_sky_junk_0",
+          land_unit_key = "wh3_main_cth_veh_sky_junk_0",
+          name = "Sky-junk",
+          category = "war_machine",
+          category_raw = "war_beast",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        chariot = {
+          "wh3_main_cth_veh_war_compass_0",
+          "wh3_dlc24_cth_veh_zhangu_war_drum"
+        },
+        melee_cavalry = {
+          "wh3_main_cth_cav_jade_lancers_0",
+          "wh3_main_cth_cav_peasant_horsemen_0"
+        },
+        melee_infantry = {
+          "wh3_main_cth_inf_dragon_guard_0",
+          "wh3_main_cth_inf_jade_warriors_0",
+          "wh3_main_cth_inf_jade_warriors_1",
+          "wh3_main_cth_inf_peasant_spearmen_1"
+        },
+        missile_infantry = {
+          "wh3_main_cth_inf_dragon_guard_crossbowmen_0",
+          "wh3_main_cth_inf_crane_gunners_0",
+          "wh3_main_cth_inf_iron_hail_gunners_0",
+          "wh3_main_cth_inf_jade_warrior_crossbowmen_0",
+          "wh3_main_cth_inf_jade_warrior_crossbowmen_1",
+          "wh3_main_cth_inf_grenadiers",
+          "wh3_main_cth_inf_peasant_archers_0"
+        },
+        monster = {
+          "wh3_dlc24_cth_mon_celestial_lion",
+          "wh3_dlc24_cth_mon_great_moon_bird",
+          "wh3_main_cth_mon_terracotta_sentinel_0"
+        },
+        monstrous_cavalry = {
+          "wh3_main_cth_cav_jade_longma_riders_0"
+        },
+        monstrous_infantry = {
+          "wh3_dlc24_cth_inf_onyx_crowmen"
+        },
+        war_beast = {
+          "wh3_dlc24_cth_mon_jade_lion",
+          "wh3_dlc24_cth_mon_jet_lion"
+        },
+        war_machine = {
+          "wh3_main_cth_art_fire_rain_rocket_battery_0",
+          "wh3_main_cth_art_grand_cannon_0",
+          "wh3_main_cth_veh_sky_lantern_0",
+          "wh3_main_cth_veh_sky_junk_0"
+        }
+      }
+    },
+    wh3_main_dae_daemons = {
+      name = "Daemons of Chaos",
+      culture = "wh3_main_dae_daemons",
+      military_groups = {
+        "wh3_main_dae"
+      },
+      unit_count = 98,
+      units = {
+        {
+          unit_key = "wh3_main_kho_veh_skullcannon_0",
+          land_unit_key = "wh3_main_kho_veh_skullcannon_0",
+          name = "Skullcannon",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_kho_veh_blood_shrine_0",
+          land_unit_key = "wh3_main_kho_veh_blood_shrine_0",
+          name = "Blood Shrine of Khorne",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_sla_veh_exalted_seeker_chariot_0",
+          land_unit_key = "wh3_main_sla_veh_exalted_seeker_chariot_0",
+          name = "Exalted Seeker Chariot",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          land_unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          name = "Gorebeast Chariots of Khorne",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_sla_veh_hellflayer_0",
+          land_unit_key = "wh3_main_sla_veh_hellflayer_0",
+          name = "Hellflayers",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_sla_veh_seeker_chariot_0",
+          land_unit_key = "wh3_main_sla_veh_seeker_chariot_0",
+          name = "Seeker Chariots",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          land_unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          name = "Centigors of Tzeentch",
+          category = "melee_cavalry",
+          category_raw = "inf_melee",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          land_unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          name = "Chaos Knights of Tzeentch",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
+          land_unit_key = "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
+          name = "Heartseekers of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_sla_cav_hellstriders_0",
+          land_unit_key = "wh3_main_sla_cav_hellstriders_0",
+          name = "Hellstriders of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_sla_cav_hellstriders_1",
+          land_unit_key = "wh3_main_sla_cav_hellstriders_1",
+          name = "Hellstriders of Slaanesh (Hellscourges)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          name = "Marauder Horsemen of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          land_unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          name = "Pleasureseekers",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          land_unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          name = "Rot Knights",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_sla_cav_seekers_of_slaanesh_0",
+          land_unit_key = "wh3_main_sla_cav_seekers_of_slaanesh_0",
+          name = "Seekers of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_bloodletters_0",
+          land_unit_key = "wh3_main_kho_inf_bloodletters_0",
+          name = "Bloodletters of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          land_unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          name = "Chaos Warriors of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          land_unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          name = "Chaos Warriors of Khorne (Dual Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          land_unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          name = "Chaos Warriors of Khorne (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          name = "Chaos Warriors of Nurgle (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          name = "Chaos Warriors of Slaanesh (Hellscourges)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          name = "Chaos Warriors of Tzeentch (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_daemonette_0",
+          land_unit_key = "wh3_main_sla_inf_daemonette_0",
+          name = "Daemonettes of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_marauders_0",
+          land_unit_key = "wh3_main_sla_inf_marauders_0",
+          name = "Devoted Marauders of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_marauders_2",
+          land_unit_key = "wh3_main_sla_inf_marauders_2",
+          name = "Devoted Marauders of Slaanesh (Hellscourges)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_marauders_1",
+          land_unit_key = "wh3_main_sla_inf_marauders_1",
+          name = "Devoted Marauders of Slaanesh (Spears)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_bloodletters_1",
+          land_unit_key = "wh3_main_kho_inf_bloodletters_1",
+          name = "Exalted Bloodletters of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_daemonette_1",
+          land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          name = "Exalted Daemonettes of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          land_unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          name = "Exalted Plaguebearers of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          land_unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          name = "Forsaken of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_forsaken_0",
+          land_unit_key = "wh3_main_nur_inf_forsaken_0",
+          name = "Forsaken of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          land_unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          name = "Forsaken of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_forsaken_0",
+          land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          name = "Forsaken of Tzeentch",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_inf_khorngors",
+          land_unit_key = "wh3_dlc26_kho_inf_khorngors",
+          name = "Khorngors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          name = "Marauders of Khorne (Dual Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          name = "Marauders of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          name = "Marauders of Tzeentch (Spears)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_nurglings_0",
+          land_unit_key = "wh3_main_nur_inf_nurglings_0",
+          name = "Nurglings",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_inf_pestigors",
+          land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          name = "Pestigors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_plague_toads_0",
+          land_unit_key = "wh3_main_nur_mon_plague_toads_0",
+          name = "Plague Toads of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          land_unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          name = "Plaguebearers of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          land_unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          name = "Skullreapers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_inf_slaangors",
+          land_unit_key = "wh3_dlc27_sla_inf_slaangors",
+          name = "Slaangors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          land_unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          name = "Tzaangors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_inf_wrathmongers",
+          land_unit_key = "wh3_dlc26_kho_inf_wrathmongers",
+          name = "Wrathmongers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_veh_burning_chariot_0",
+          land_unit_key = "wh3_main_tze_veh_burning_chariot_0",
+          name = "Burning Chariot of Tzeentch",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_blue_horrors_0",
+          land_unit_key = "wh3_main_tze_inf_blue_horrors_0",
+          name = "Blue Horrors of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          land_unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          name = "Exalted Pink Horrors of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          land_unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          name = "Pink Horrors of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_nur_mon_soul_grinder_0",
+          name = "Soul Grinder of Nurgle",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_tze_mon_soul_grinder_0",
+          name = "Soul Grinder of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
+          land_unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
+          name = "Beast of Nurgle",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_bloodthirster_0",
+          land_unit_key = "wh3_main_kho_mon_bloodthirster_0",
+          name = "Bloodthirster",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine",
+          name = "Chaos Warshrine",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          name = "Chaos Warshrine of Khorne",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          name = "Chaos Warshrine of Nurgle",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          name = "Chaos Warshrine of Slaanesh",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          name = "Chaos Warshrine of Tzeentch",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          land_unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          name = "Cockatrice",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_exalted_flamers_0",
+          land_unit_key = "wh3_main_tze_mon_exalted_flamer_0",
+          name = "Exalted Flamer of Tzeentch",
+          category = "monster",
+          category_raw = "inf_ranged",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_great_unclean_one_0",
+          land_unit_key = "wh3_main_nur_mon_great_unclean_one_0",
+          name = "Great Unclean One",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          land_unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          name = "Keeper of Secrets",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_lord_of_change_0",
+          land_unit_key = "wh3_main_tze_mon_lord_of_change_0",
+          name = "Lord of Change",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          land_unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          name = "Mutalith Vortex Beast",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_kho_mon_soul_grinder_0",
+          name = "Soul Grinder of Khorne",
+          category = "monster",
+          category_raw = "inf_ranged",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_sla_mon_soul_grinder_0",
+          name = "Soul Grinder of Slaanesh",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          land_unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          name = "Toad Dragon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_kho_cav_bloodcrushers_0",
+          land_unit_key = "wh3_main_kho_cav_bloodcrushers_0",
+          name = "Bloodcrushers of Khorne",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_tze_cav_doom_knights_0",
+          land_unit_key = "wh3_main_tze_cav_doom_knights_0",
+          name = "Doom Knights of Tzeentch",
+          category = "monstrous_cavalry",
+          category_raw = "inf_melee",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_nur_cav_plague_drones_0",
+          land_unit_key = "wh3_main_nur_cav_plague_drones_0",
+          name = "Plague Drones of Nurgle",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_nur_cav_plague_drones_1",
+          land_unit_key = "wh3_main_nur_cav_plague_drones_1",
+          name = "Plague Drones of Nurgle (Death's Heads)",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_nur_cav_pox_riders_of_nurgle_0",
+          land_unit_key = "wh3_main_nur_cav_pox_riders_of_nurgle_0",
+          name = "Pox Riders of Nurgle",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          land_unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          name = "Skullcrushers of Khorne",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          land_unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          name = "Bile Trolls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          land_unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          name = "Bloodbeasts of Khorne",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          land_unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          name = "Champions Of Slaanesh",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          land_unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          name = "Changebringers",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_dae_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_dae_inf_chaos_furies_0",
+          name = "Chaos Furies",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_kho_inf_chaos_furies_0",
+          name = "Chaos Furies (Khorne)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_nur_inf_chaos_furies_0",
+          name = "Chaos Furies (Nurgle)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_sla_inf_chaos_furies_0",
+          name = "Chaos Furies (Slaanesh)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_tze_inf_chaos_furies_0",
+          name = "Chaos Furies (Tzeentch)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          land_unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          name = "Fiends of Slaanesh",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_flamers_0",
+          land_unit_key = "wh3_main_tze_mon_flamers_0",
+          name = "Flamers of Tzeentch",
+          category = "monstrous_infantry",
+          category_raw = "inf_ranged",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_khornataurs_0",
+          land_unit_key = "wh3_main_kho_mon_khornataurs_0",
+          name = "Minotaurs of Khorne",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_khornataurs_1",
+          land_unit_key = "wh3_main_kho_mon_khornataurs_1",
+          name = "Minotaurs of Khorne (Great Weapons)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          land_unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          name = "Plague Ogres",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          land_unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          name = "Plague Ogres (Great Weapons)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_rot_flies_0",
+          land_unit_key = "wh3_main_nur_mon_rot_flies_0",
+          name = "Rot Flies",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_screamers_0",
+          land_unit_key = "wh3_main_tze_mon_screamers_0",
+          name = "Screamers of Tzeentch",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          land_unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          name = "Slaughterbrute",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          land_unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          name = "Spawn of Khorne",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          land_unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          name = "Spawn of Nurgle",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          land_unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          name = "Spawn of Slaanesh",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          land_unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          name = "Spawn of Tzeentch",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          name = "Chaos Warhounds (Poison)",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warhounds_0",
+          land_unit_key = "wh3_main_kho_inf_chaos_warhounds_0",
+          name = "Chaos Warhounds of Khorne",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
+          land_unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
+          name = "Flesh Hounds of Khorne",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        }
+      },
+      units_by_category = {
+        artillery = {
+          "wh3_main_kho_veh_skullcannon_0"
+        },
+        chariot = {
+          "wh3_main_kho_veh_blood_shrine_0",
+          "wh3_main_sla_veh_exalted_seeker_chariot_0",
+          "wh3_main_kho_cav_gorebeast_chariot",
+          "wh3_main_sla_veh_hellflayer_0",
+          "wh3_main_sla_veh_seeker_chariot_0"
+        },
+        melee_cavalry = {
+          "wh3_dlc24_tze_inf_centigors_great_weapons",
+          "wh3_main_tze_cav_chaos_knights_0",
+          "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
+          "wh3_main_sla_cav_hellstriders_0",
+          "wh3_main_sla_cav_hellstriders_1",
+          "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          "wh3_dlc27_sla_cav_pleasureseekers",
+          "wh3_dlc25_nur_cav_rot_knights",
+          "wh3_main_sla_cav_seekers_of_slaanesh_0"
+        },
+        melee_infantry = {
+          "wh3_main_kho_inf_bloodletters_0",
+          "wh3_main_kho_inf_chaos_warriors_0",
+          "wh3_main_kho_inf_chaos_warriors_2",
+          "wh3_main_kho_inf_chaos_warriors_1",
+          "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          "wh3_main_sla_inf_daemonette_0",
+          "wh3_main_sla_inf_marauders_0",
+          "wh3_main_sla_inf_marauders_2",
+          "wh3_main_sla_inf_marauders_1",
+          "wh3_main_kho_inf_bloodletters_1",
+          "wh3_main_sla_inf_daemonette_1",
+          "wh3_main_nur_inf_plaguebearers_1",
+          "wh3_dlc20_chs_inf_forsaken_mkho",
+          "wh3_main_nur_inf_forsaken_0",
+          "wh3_dlc20_chs_inf_forsaken_msla",
+          "wh3_main_tze_inf_forsaken_0",
+          "wh3_dlc26_kho_inf_khorngors",
+          "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          "wh3_main_nur_inf_nurglings_0",
+          "wh3_dlc25_nur_inf_pestigors",
+          "wh3_main_nur_mon_plague_toads_0",
+          "wh3_main_nur_inf_plaguebearers_0",
+          "wh3_dlc26_kho_inf_skullreapers",
+          "wh3_dlc27_sla_inf_slaangors",
+          "wh3_dlc24_tze_inf_tzaangors",
+          "wh3_dlc26_kho_inf_wrathmongers"
+        },
+        missile_chariot = {
+          "wh3_main_tze_veh_burning_chariot_0"
+        },
+        missile_infantry = {
+          "wh3_main_tze_inf_blue_horrors_0",
+          "wh3_main_tze_inf_pink_horrors_1",
+          "wh3_main_tze_inf_pink_horrors_0",
+          "wh3_main_nur_mon_soul_grinder_0",
+          "wh3_main_tze_mon_soul_grinder_0"
+        },
+        monster = {
+          "wh3_main_nur_mon_beast_of_nurgle_0",
+          "wh3_main_kho_mon_bloodthirster_0",
+          "wh3_dlc20_chs_mon_warshrine",
+          "wh3_dlc20_chs_mon_warshrine_mkho",
+          "wh3_dlc20_chs_mon_warshrine_mnur",
+          "wh3_dlc20_chs_mon_warshrine_msla",
+          "wh3_dlc20_chs_mon_warshrine_mtze",
+          "wh3_dlc24_tze_mon_cockatrice",
+          "wh3_main_tze_mon_exalted_flamers_0",
+          "wh3_main_nur_mon_great_unclean_one_0",
+          "wh3_main_sla_mon_keeper_of_secrets_0",
+          "wh3_main_tze_mon_lord_of_change_0",
+          "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          "wh3_main_kho_mon_soul_grinder_0",
+          "wh3_main_sla_mon_soul_grinder_0",
+          "wh3_dlc25_nur_mon_toad_dragon"
+        },
+        monstrous_cavalry = {
+          "wh3_main_kho_cav_bloodcrushers_0",
+          "wh3_main_tze_cav_doom_knights_0",
+          "wh3_main_nur_cav_plague_drones_0",
+          "wh3_main_nur_cav_plague_drones_1",
+          "wh3_main_nur_cav_pox_riders_of_nurgle_0",
+          "wh3_main_kho_cav_skullcrushers_0"
+        },
+        monstrous_infantry = {
+          "wh3_dlc25_nur_mon_bile_trolls",
+          "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          "wh3_dlc24_tze_mon_flamers_changebringers",
+          "wh3_main_dae_inf_chaos_furies_0",
+          "wh3_main_kho_inf_chaos_furies_0",
+          "wh3_main_nur_inf_chaos_furies_0",
+          "wh3_main_sla_inf_chaos_furies_0",
+          "wh3_main_tze_inf_chaos_furies_0",
+          "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          "wh3_main_tze_mon_flamers_0",
+          "wh3_main_kho_mon_khornataurs_0",
+          "wh3_main_kho_mon_khornataurs_1",
+          "wh3_dlc25_nur_inf_plague_ogres",
+          "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          "wh3_main_nur_mon_rot_flies_0",
+          "wh3_main_tze_mon_screamers_0",
+          "wh3_dlc26_kho_mon_slaughterbrute",
+          "wh3_main_kho_mon_spawn_of_khorne_0",
+          "wh3_main_nur_mon_spawn_of_nurgle_0",
+          "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          "wh3_main_tze_mon_spawn_of_tzeentch_0"
+        },
+        war_beast = {
+          "wh_main_chs_mon_chaos_warhounds_1",
+          "wh3_main_kho_inf_chaos_warhounds_0",
+          "wh3_main_kho_inf_flesh_hounds_of_khorne_0"
+        }
+      }
+    },
+    wh3_main_kho_khorne = {
+      name = "Khorne",
+      culture = "wh3_main_kho_khorne",
+      military_groups = {
+        "wh3_main_kho",
+        "wh3_main_pro_kho"
+      },
+      unit_count = 38,
+      units = {
+        {
+          unit_key = "wh3_main_kho_veh_skullcannon_0",
+          land_unit_key = "wh3_main_kho_veh_skullcannon_0",
+          name = "Skullcannon",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_kho_veh_blood_shrine_0",
+          land_unit_key = "wh3_main_kho_veh_blood_shrine_0",
+          name = "Blood Shrine of Khorne",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
+          name = "Chaos Chariots of Khorne",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          land_unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          name = "Gorebeast Chariots of Khorne",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
+          name = "Chaos Knights of Khorne",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
+          name = "Chaos Knights of Khorne (Lances)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_bloodletters_0",
+          land_unit_key = "wh3_main_kho_inf_bloodletters_0",
+          name = "Bloodletters of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_kho_inf_bloodletters_0",
+          land_unit_key = "wh3_main_pro_kho_inf_bloodletters_0",
+          name = "Bloodletters of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          land_unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          name = "Chaos Warriors of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_kho_inf_chaos_warriors_0",
+          land_unit_key = "wh3_main_pro_kho_inf_chaos_warriors_0",
+          name = "Chaos Warriors of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          land_unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          name = "Chaos Warriors of Khorne (Dual Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          land_unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          name = "Chaos Warriors of Khorne (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
+          name = "Chosen of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
+          name = "Chosen of Khorne (Dual Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_bloodletters_1",
+          land_unit_key = "wh3_main_kho_inf_bloodletters_1",
+          name = "Exalted Bloodletters of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          land_unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          name = "Forsaken of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_inf_khorngors",
+          land_unit_key = "wh3_dlc26_kho_inf_khorngors",
+          name = "Khorngors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
+          name = "Marauders of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          name = "Marauders of Khorne (Dual Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          land_unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          name = "Skullreapers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_inf_wrathmongers",
+          land_unit_key = "wh3_dlc26_kho_inf_wrathmongers",
+          name = "Wrathmongers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
+          land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
+          name = "Marauder Horsemen of Khorne (Throwing Axes)",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_bloodthirster_0",
+          land_unit_key = "wh3_main_kho_mon_bloodthirster_0",
+          name = "Bloodthirster",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          name = "Chaos Warshrine of Khorne",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_kho_mon_soul_grinder_0",
+          name = "Soul Grinder of Khorne",
+          category = "monster",
+          category_raw = "inf_ranged",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_kho_cav_bloodcrushers_0",
+          land_unit_key = "wh3_main_kho_cav_bloodcrushers_0",
+          name = "Bloodcrushers of Khorne",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          land_unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          name = "Skullcrushers of Khorne",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          land_unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          name = "Bloodbeasts of Khorne",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_kho_inf_chaos_furies_0",
+          name = "Chaos Furies (Khorne)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_kho_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_pro_kho_inf_chaos_furies_0",
+          name = "Chaos Furies (Khorne)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_khornataurs_0",
+          land_unit_key = "wh3_main_kho_mon_khornataurs_0",
+          name = "Minotaurs of Khorne",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_khornataurs_1",
+          land_unit_key = "wh3_main_kho_mon_khornataurs_1",
+          name = "Minotaurs of Khorne (Great Weapons)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          land_unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          name = "Slaughterbrute",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          land_unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          name = "Spawn of Khorne",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warhounds_0",
+          land_unit_key = "wh3_main_kho_inf_chaos_warhounds_0",
+          name = "Chaos Warhounds of Khorne",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_main_pro_kho_inf_chaos_warhounds_0",
+          land_unit_key = "wh3_main_pro_kho_inf_chaos_warhounds_0",
+          name = "Chaos Warhounds of Khorne",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
+          land_unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
+          name = "Flesh Hounds of Khorne",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_main_pro_kho_inf_flesh_hounds_of_khorne_0",
+          land_unit_key = "wh3_main_pro_kho_inf_flesh_hounds_of_khorne_0",
+          name = "Flesh Hounds of Khorne",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        }
+      },
+      units_by_category = {
+        artillery = {
+          "wh3_main_kho_veh_skullcannon_0"
+        },
+        chariot = {
+          "wh3_main_kho_veh_blood_shrine_0",
+          "wh3_dlc20_chs_cav_chaos_chariot_mkho",
+          "wh3_main_kho_cav_gorebeast_chariot"
+        },
+        melee_cavalry = {
+          "wh3_dlc20_chs_cav_chaos_knights_mkho",
+          "wh3_dlc20_chs_cav_chaos_knights_mkho_lances"
+        },
+        melee_infantry = {
+          "wh3_main_kho_inf_bloodletters_0",
+          "wh3_main_pro_kho_inf_bloodletters_0",
+          "wh3_main_kho_inf_chaos_warriors_0",
+          "wh3_main_pro_kho_inf_chaos_warriors_0",
+          "wh3_main_kho_inf_chaos_warriors_2",
+          "wh3_main_kho_inf_chaos_warriors_1",
+          "wh3_dlc20_chs_inf_chosen_mkho",
+          "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
+          "wh3_main_kho_inf_bloodletters_1",
+          "wh3_dlc20_chs_inf_forsaken_mkho",
+          "wh3_dlc26_kho_inf_khorngors",
+          "wh3_dlc20_chs_inf_chaos_marauders_mkho",
+          "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          "wh3_dlc26_kho_inf_skullreapers",
+          "wh3_dlc26_kho_inf_wrathmongers"
+        },
+        missile_cavalry = {
+          "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes"
+        },
+        monster = {
+          "wh3_main_kho_mon_bloodthirster_0",
+          "wh3_dlc20_chs_mon_warshrine_mkho",
+          "wh3_main_kho_mon_soul_grinder_0"
+        },
+        monstrous_cavalry = {
+          "wh3_main_kho_cav_bloodcrushers_0",
+          "wh3_main_kho_cav_skullcrushers_0"
+        },
+        monstrous_infantry = {
+          "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          "wh3_main_kho_inf_chaos_furies_0",
+          "wh3_main_pro_kho_inf_chaos_furies_0",
+          "wh3_main_kho_mon_khornataurs_0",
+          "wh3_main_kho_mon_khornataurs_1",
+          "wh3_dlc26_kho_mon_slaughterbrute",
+          "wh3_main_kho_mon_spawn_of_khorne_0"
+        },
+        war_beast = {
+          "wh3_main_kho_inf_chaos_warhounds_0",
+          "wh3_main_pro_kho_inf_chaos_warhounds_0",
+          "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
+          "wh3_main_pro_kho_inf_flesh_hounds_of_khorne_0"
+        }
+      }
+    },
+    wh3_main_ksl_kislev = {
+      name = "Kislev",
+      culture = "wh3_main_ksl_kislev",
+      military_groups = {
+        "wh3_main_ksl"
+      },
+      unit_count = 29,
+      units = {
+        {
+          unit_key = "wh3_main_ksl_veh_little_grom_0",
+          land_unit_key = "wh3_main_ksl_veh_little_grom_0",
+          name = "Little Grom",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_ksl_cav_gryphon_legion_0",
+          land_unit_key = "wh3_main_ksl_cav_gryphon_legion_0",
+          name = "Gryphon Legion",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_ksl_cav_horse_raiders_0",
+          land_unit_key = "wh3_main_ksl_cav_kossovite_dervishes_0",
+          name = "Kossovite Dervishes",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_ksl_cav_winged_lancers_0",
+          land_unit_key = "wh3_main_ksl_cav_winged_lancers_0",
+          name = "Winged Lancers",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc24_ksl_inf_kislevite_warriors",
+          land_unit_key = "wh3_dlc24_ksl_inf_kislevite_warriors",
+          name = "Kislevite Warriors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_inf_tzar_guard_0",
+          land_unit_key = "wh3_main_ksl_inf_tzar_guard_0",
+          name = "Tzar Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_inf_tzar_guard_1",
+          land_unit_key = "wh3_main_ksl_inf_tzar_guard_1",
+          name = "Tzar Guard (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_cav_horse_archers_0",
+          land_unit_key = "wh3_main_ksl_cav_horse_archers_0",
+          name = "Horse Archers",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh3_main_ksl_veh_heavy_war_sled_0",
+          land_unit_key = "wh3_main_ksl_veh_heavy_war_sled_0",
+          name = "Heavy War Sleds",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_ksl_veh_light_war_sled_0",
+          land_unit_key = "wh3_main_ksl_veh_light_war_sled_0",
+          name = "Light War Sleds",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc24_ksl_inf_akshina_ambushers",
+          land_unit_key = "wh3_dlc24_ksl_inf_akshina_ambushers",
+          name = "Akshina Ambushers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_inf_armoured_kossars_0",
+          land_unit_key = "wh3_main_ksl_inf_armoured_kossars_0",
+          name = "Armoured Kossars",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_inf_armoured_kossars_1",
+          land_unit_key = "wh3_main_ksl_inf_armoured_kossars_1",
+          name = "Armoured Kossars (Great Weapons)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_inf_ice_guard_0",
+          land_unit_key = "wh3_main_ksl_inf_ice_guard_0",
+          name = "Ice Guard (Glaives)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_inf_ice_guard_1",
+          land_unit_key = "wh3_main_ksl_inf_ice_guard_1",
+          name = "Ice Guard (Swords)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_inf_kossars_0",
+          land_unit_key = "wh3_main_ksl_inf_kossars_0",
+          name = "Kossars",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_inf_kossars_1",
+          land_unit_key = "wh3_main_ksl_inf_kossars_1",
+          name = "Kossars (Spears)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_inf_streltsi_0",
+          land_unit_key = "wh3_main_ksl_inf_streltsi_0",
+          name = "Streltsi",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_ksl_mon_elemental_bear_0",
+          land_unit_key = "wh3_main_ksl_mon_elemental_bear_0",
+          name = "Elemental Bear",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_ksl_mon_frost_wyrm",
+          land_unit_key = "wh3_dlc24_ksl_mon_frost_wyrm",
+          name = "Frost Wyrm",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_ksl_mon_incarnate_elemental_of_beasts",
+          land_unit_key = "wh3_dlc24_ksl_mon_incarnate_elemental_of_beasts",
+          name = "Incarnate Elemental of Beasts",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_ksl_mon_snow_leopard_0",
+          land_unit_key = "wh3_main_ksl_mon_snow_leopard_0",
+          name = "Snow Leopard",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_ksl_mon_the_things_in_the_woods",
+          land_unit_key = "wh3_dlc24_ksl_mon_the_things_in_the_woods",
+          name = "The Things in the Woods",
+          category = "monstrous_cavalry",
+          category_raw = "inf_melee",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_ksl_cav_war_bear_riders_1",
+          land_unit_key = "wh3_main_ksl_cav_war_bear_riders_1",
+          name = "War Bear Riders",
+          category = "monstrous_cavalry",
+          category_raw = "war_beast",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_giant_spiders_0",
+          land_unit_key = "wh2_dlc16_wef_mon_giant_spiders_0",
+          name = "Giant Spiders",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_cave_bats",
+          land_unit_key = "wh2_dlc16_wef_mon_cave_bats",
+          name = "Cave Bats",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_main_monster_feral_bears",
+          land_unit_key = "wh3_main_monster_feral_bears",
+          name = "Feral Bears",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_main_monster_feral_ice_bears",
+          land_unit_key = "wh3_main_monster_feral_ice_bears",
+          name = "Feral Ice Bears",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_spider_hatchlings_0",
+          land_unit_key = "wh2_dlc16_wef_mon_spider_hatchlings_0",
+          name = "Spider Hatchlings",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        }
+      },
+      units_by_category = {
+        artillery = {
+          "wh3_main_ksl_veh_little_grom_0"
+        },
+        melee_cavalry = {
+          "wh3_main_ksl_cav_gryphon_legion_0",
+          "wh3_main_ksl_cav_horse_raiders_0",
+          "wh3_main_ksl_cav_winged_lancers_0"
+        },
+        melee_infantry = {
+          "wh3_dlc24_ksl_inf_kislevite_warriors",
+          "wh3_main_ksl_inf_tzar_guard_0",
+          "wh3_main_ksl_inf_tzar_guard_1"
+        },
+        missile_cavalry = {
+          "wh3_main_ksl_cav_horse_archers_0"
+        },
+        missile_chariot = {
+          "wh3_main_ksl_veh_heavy_war_sled_0",
+          "wh3_main_ksl_veh_light_war_sled_0"
+        },
+        missile_infantry = {
+          "wh3_dlc24_ksl_inf_akshina_ambushers",
+          "wh3_main_ksl_inf_armoured_kossars_0",
+          "wh3_main_ksl_inf_armoured_kossars_1",
+          "wh3_main_ksl_inf_ice_guard_0",
+          "wh3_main_ksl_inf_ice_guard_1",
+          "wh3_main_ksl_inf_kossars_0",
+          "wh3_main_ksl_inf_kossars_1",
+          "wh3_main_ksl_inf_streltsi_0"
+        },
+        monster = {
+          "wh3_main_ksl_mon_elemental_bear_0",
+          "wh3_dlc24_ksl_mon_frost_wyrm",
+          "wh3_dlc24_ksl_mon_incarnate_elemental_of_beasts",
+          "wh3_main_ksl_mon_snow_leopard_0"
+        },
+        monstrous_cavalry = {
+          "wh3_dlc24_ksl_mon_the_things_in_the_woods",
+          "wh3_main_ksl_cav_war_bear_riders_1"
+        },
+        monstrous_infantry = {
+          "wh2_dlc16_wef_mon_giant_spiders_0"
+        },
+        war_beast = {
+          "wh2_dlc16_wef_mon_cave_bats",
+          "wh3_main_monster_feral_bears",
+          "wh3_main_monster_feral_ice_bears",
+          "wh2_dlc16_wef_mon_spider_hatchlings_0"
+        }
+      }
+    },
+    wh3_main_nur_nurgle = {
+      name = "Nurgle",
+      culture = "wh3_main_nur_nurgle",
+      military_groups = {
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur"
+      },
+      unit_count = 36,
+      units = {
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
+          name = "Chaos Chariots of Nurgle",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          name = "Chaos Knights of Nurgle",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          name = "Chaos Knights of Nurgle (Lances)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          land_unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          name = "Rot Knights",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          name = "Chaos Warriors of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          name = "Chaos Warriors of Nurgle (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
+          name = "Chosen of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          name = "Chosen of Nurgle (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          land_unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          name = "Exalted Plaguebearers of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_forsaken_0",
+          land_unit_key = "wh3_main_nur_inf_forsaken_0",
+          name = "Forsaken of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          name = "Marauders of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          name = "Marauders of Nurgle (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_nurglings_0",
+          land_unit_key = "wh3_main_nur_inf_nurglings_0",
+          name = "Nurglings",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_inf_pestigors",
+          land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          name = "Pestigors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_plague_toads_0",
+          land_unit_key = "wh3_main_nur_mon_plague_toads_0",
+          name = "Plague Toads of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          land_unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          name = "Plaguebearers of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
+          land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
+          name = "Marauder Horsemen of Nurgle (Throwing Axes)",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_nur_mon_soul_grinder_0",
+          name = "Soul Grinder of Nurgle",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
+          land_unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
+          name = "Beast of Nurgle",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_chieftain_mon_frost_wyrm_0",
+          land_unit_key = "wh_dlc08_nor_mon_frost_wyrm_0",
+          name = "Chaos Frost Dragon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          name = "Chaos Warshrine of Nurgle",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc17_bst_mon_ghorgon_0",
+          land_unit_key = "wh2_dlc17_bst_mon_ghorgon_0",
+          name = "Ghorgon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_great_unclean_one_0",
+          land_unit_key = "wh3_main_nur_mon_great_unclean_one_0",
+          name = "Great Unclean One",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          land_unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          name = "Toad Dragon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_nur_cav_plague_drones_0",
+          land_unit_key = "wh3_main_nur_cav_plague_drones_0",
+          name = "Plague Drones of Nurgle",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_nur_cav_plague_drones_1",
+          land_unit_key = "wh3_main_nur_cav_plague_drones_1",
+          name = "Plague Drones of Nurgle (Death's Heads)",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_nur_cav_pox_riders_of_nurgle_0",
+          land_unit_key = "wh3_main_nur_cav_pox_riders_of_nurgle_0",
+          name = "Pox Riders of Nurgle",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          land_unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          name = "Bile Trolls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_nur_inf_chaos_furies_0",
+          name = "Chaos Furies (Nurgle)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_chieftain_mon_fimir_0",
+          land_unit_key = "wh_dlc08_nor_mon_fimir_0",
+          name = "Fimir Warriors",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_chieftain_mon_fimir_1",
+          land_unit_key = "wh_dlc08_nor_mon_fimir_1",
+          name = "Fimir Warriors (Great Weapons)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          land_unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          name = "Plague Ogres",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          land_unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          name = "Plague Ogres (Great Weapons)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_rot_flies_0",
+          land_unit_key = "wh3_main_nur_mon_rot_flies_0",
+          name = "Rot Flies",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          land_unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          name = "Spawn of Nurgle",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          name = "Chaos Warhounds (Poison)",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        }
+      },
+      units_by_category = {
+        chariot = {
+          "wh3_dlc20_chs_cav_chaos_chariot_mnur"
+        },
+        melee_cavalry = {
+          "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          "wh3_dlc25_nur_cav_rot_knights"
+        },
+        melee_infantry = {
+          "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          "wh3_dlc20_chs_inf_chosen_mnur",
+          "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          "wh3_main_nur_inf_plaguebearers_1",
+          "wh3_main_nur_inf_forsaken_0",
+          "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          "wh3_main_nur_inf_nurglings_0",
+          "wh3_dlc25_nur_inf_pestigors",
+          "wh3_main_nur_mon_plague_toads_0",
+          "wh3_main_nur_inf_plaguebearers_0"
+        },
+        missile_cavalry = {
+          "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes"
+        },
+        missile_infantry = {
+          "wh3_main_nur_mon_soul_grinder_0"
+        },
+        monster = {
+          "wh3_main_nur_mon_beast_of_nurgle_0",
+          "wh3_dlc25_nur_chieftain_mon_frost_wyrm_0",
+          "wh3_dlc20_chs_mon_warshrine_mnur",
+          "wh2_dlc17_bst_mon_ghorgon_0",
+          "wh3_main_nur_mon_great_unclean_one_0",
+          "wh3_dlc25_nur_mon_toad_dragon"
+        },
+        monstrous_cavalry = {
+          "wh3_main_nur_cav_plague_drones_0",
+          "wh3_main_nur_cav_plague_drones_1",
+          "wh3_main_nur_cav_pox_riders_of_nurgle_0"
+        },
+        monstrous_infantry = {
+          "wh3_dlc25_nur_mon_bile_trolls",
+          "wh3_main_nur_inf_chaos_furies_0",
+          "wh3_dlc25_nur_chieftain_mon_fimir_0",
+          "wh3_dlc25_nur_chieftain_mon_fimir_1",
+          "wh3_dlc25_nur_inf_plague_ogres",
+          "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          "wh3_main_nur_mon_rot_flies_0",
+          "wh3_main_nur_mon_spawn_of_nurgle_0"
+        },
+        war_beast = {
+          "wh_main_chs_mon_chaos_warhounds_1"
+        }
+      }
+    },
+    wh3_main_ogr_ogre_kingdoms = {
+      name = "Ogre Kingdoms",
+      culture = "wh3_main_ogr_ogre_kingdoms",
+      military_groups = {
+        "wh3_main_ogr"
+      },
+      unit_count = 29,
+      units = {
+        {
+          unit_key = "wh3_main_ogr_veh_gnoblar_scraplauncher_0",
+          land_unit_key = "wh3_main_ogr_veh_gnoblar_scraplauncher_0",
+          name = "Gnoblar Scraplauncher",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_ogr_veh_ironblaster_0",
+          land_unit_key = "wh3_main_ogr_veh_ironblaster_0",
+          name = "Ironblaster",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_gnoblars_0",
+          land_unit_key = "wh3_main_ogr_inf_gnoblars_0",
+          name = "Gnoblars",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_mon_gorgers_0",
+          land_unit_key = "wh3_main_ogr_mon_gorgers_0",
+          name = "Gorgers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_ogr_inf_pigback_riders",
+          land_unit_key = "wh3_dlc26_ogr_inf_pigback_riders",
+          name = "Pigback Riders",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_gnoblars_flingers",
+          land_unit_key = "wh3_main_ogr_inf_gnoblars_flingers",
+          name = "Gnoblar Flingers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_gnoblars_1",
+          land_unit_key = "wh3_main_ogr_inf_gnoblars_1",
+          name = "Gnoblar Trappers",
+          category = "missile_infantry",
+          category_raw = "inf_melee",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_mon_giant_0",
+          land_unit_key = "wh3_main_ogr_mon_giant_0",
+          name = "Giant",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_ogr_mon_stonehorn_0",
+          land_unit_key = "wh3_main_ogr_mon_stonehorn_0",
+          name = "Stonehorn",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_ogr_mon_stonehorn_1",
+          land_unit_key = "wh3_main_ogr_mon_stonehorn_1",
+          name = "Stonehorn (Harpoon Launcher)",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc26_ogr_mon_thundertusk",
+          land_unit_key = "wh3_dlc26_ogr_mon_thundertusk",
+          name = "Thundertusk",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_ogr_cav_crushers_1",
+          land_unit_key = "wh3_main_ogr_cav_crushers_1",
+          name = "Crushers (Great Weapons)",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_ogr_cav_crushers_0",
+          land_unit_key = "wh3_main_ogr_cav_crushers_0",
+          name = "Crushers (Ironfists)",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_ogr_cav_mournfang_cavalry_0",
+          land_unit_key = "wh3_main_ogr_cav_mournfang_cavalry_0",
+          name = "Mournfang Cavalry",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_ogr_cav_mournfang_cavalry_2",
+          land_unit_key = "wh3_main_ogr_cav_mournfang_cavalry_2",
+          name = "Mournfang Cavalry (Great Weapons)",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_ogr_cav_mournfang_cavalry_1",
+          land_unit_key = "wh3_main_ogr_cav_mournfang_cavalry_1",
+          name = "Mournfang Cavalry (Ironfists)",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc26_ogr_inf_golgfags_maneaters",
+          land_unit_key = "wh3_dlc26_ogr_inf_golgfags_maneaters",
+          name = "Golgfag's Maneaters",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_ironguts_0",
+          land_unit_key = "wh3_main_ogr_inf_ironguts_0",
+          name = "Ironguts",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_leadbelchers_0",
+          land_unit_key = "wh3_main_ogr_inf_leadbelchers_0",
+          name = "Leadbelchers",
+          category = "monstrous_infantry",
+          category_raw = "inf_ranged",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_maneaters_0",
+          land_unit_key = "wh3_main_ogr_inf_maneaters_0",
+          name = "Maneaters",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_maneaters_2",
+          land_unit_key = "wh3_main_ogr_inf_maneaters_2",
+          name = "Maneaters (Great Weapons)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_maneaters_1",
+          land_unit_key = "wh3_main_ogr_inf_maneaters_1",
+          name = "Maneaters (Ironfists)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_maneaters_3",
+          land_unit_key = "wh3_main_ogr_inf_maneaters_3",
+          name = "Maneaters (Ogre Pistols)",
+          category = "monstrous_infantry",
+          category_raw = "inf_ranged",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_ogres_0",
+          land_unit_key = "wh3_main_ogr_inf_ogres_0",
+          name = "Ogre Bulls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_ogres_1",
+          land_unit_key = "wh3_main_ogr_inf_ogres_1",
+          name = "Ogre Bulls (Dual Weapons)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_ogr_inf_ogres_2",
+          land_unit_key = "wh3_main_ogr_inf_ogres_2",
+          name = "Ogre Bulls (Ironfists)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_ogr_mon_yhetees",
+          land_unit_key = "wh3_dlc26_ogr_mon_yhetees",
+          name = "Yhetees",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_ogr_mon_blood_vultures",
+          land_unit_key = "wh3_dlc26_ogr_mon_blood_vultures",
+          name = "Blood Vultures",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_main_ogr_mon_sabretusk_pack_0",
+          land_unit_key = "wh3_main_ogr_mon_sabretusk_pack_0",
+          name = "Sabretusk Pack",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        }
+      },
+      units_by_category = {
+        artillery = {
+          "wh3_main_ogr_veh_gnoblar_scraplauncher_0",
+          "wh3_main_ogr_veh_ironblaster_0"
+        },
+        melee_infantry = {
+          "wh3_main_ogr_inf_gnoblars_0",
+          "wh3_main_ogr_mon_gorgers_0",
+          "wh3_dlc26_ogr_inf_pigback_riders"
+        },
+        missile_infantry = {
+          "wh3_main_ogr_inf_gnoblars_flingers",
+          "wh3_main_ogr_inf_gnoblars_1"
+        },
+        monster = {
+          "wh3_main_ogr_mon_giant_0",
+          "wh3_main_ogr_mon_stonehorn_0",
+          "wh3_main_ogr_mon_stonehorn_1",
+          "wh3_dlc26_ogr_mon_thundertusk"
+        },
+        monstrous_cavalry = {
+          "wh3_main_ogr_cav_crushers_1",
+          "wh3_main_ogr_cav_crushers_0",
+          "wh3_main_ogr_cav_mournfang_cavalry_0",
+          "wh3_main_ogr_cav_mournfang_cavalry_2",
+          "wh3_main_ogr_cav_mournfang_cavalry_1"
+        },
+        monstrous_infantry = {
+          "wh3_dlc26_ogr_inf_golgfags_maneaters",
+          "wh3_main_ogr_inf_ironguts_0",
+          "wh3_main_ogr_inf_leadbelchers_0",
+          "wh3_main_ogr_inf_maneaters_0",
+          "wh3_main_ogr_inf_maneaters_2",
+          "wh3_main_ogr_inf_maneaters_1",
+          "wh3_main_ogr_inf_maneaters_3",
+          "wh3_main_ogr_inf_ogres_0",
+          "wh3_main_ogr_inf_ogres_1",
+          "wh3_main_ogr_inf_ogres_2",
+          "wh3_dlc26_ogr_mon_yhetees"
+        },
+        war_beast = {
+          "wh3_dlc26_ogr_mon_blood_vultures",
+          "wh3_main_ogr_mon_sabretusk_pack_0"
+        }
+      }
+    },
+    wh3_main_pro_ksl_kislev = {
+      name = "Kislev",
+      culture = "wh3_main_pro_ksl_kislev",
+      military_groups = {
+        "wh3_main_pro_ksl"
+      },
+      unit_count = 17,
+      units = {
+        {
+          unit_key = "wh3_main_pro_ksl_veh_little_grom_0",
+          land_unit_key = "wh3_main_pro_ksl_veh_little_grom_0",
+          name = "Little Grom",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_cav_gryphon_legion_ror_0",
+          land_unit_key = "wh3_main_ksl_cav_gryphon_legion_0",
+          name = "Gryphon Legion",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_cav_horse_raiders_0",
+          land_unit_key = "wh3_main_pro_ksl_cav_kossovite_dervishes_0",
+          name = "Kossovite Dervishes",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_cav_winged_lancers_0",
+          land_unit_key = "wh3_main_pro_ksl_cav_winged_lancers_0",
+          name = "Winged Lancers",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_ksl_inf_kossars_tutorial_1",
+          land_unit_key = "wh3_main_ksl_inf_kossars_tutorial_1",
+          name = "Armoured Kossars (Spears)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_inf_tzar_guard_0",
+          land_unit_key = "wh3_main_pro_ksl_inf_tzar_guard_0",
+          name = "Tzar Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_veh_heavy_war_sled_ror_0",
+          land_unit_key = "wh3_main_ksl_veh_heavy_war_sled_0",
+          name = "Heavy War Sleds",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_veh_light_war_sled_ror_0",
+          land_unit_key = "wh3_main_ksl_veh_light_war_sled_0",
+          name = "Light War Sleds",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_inf_armoured_kossars_0",
+          land_unit_key = "wh3_main_pro_ksl_inf_armoured_kossars_0",
+          name = "Armoured Kossars",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_inf_ice_guard_ror_0",
+          land_unit_key = "wh3_main_ksl_inf_ice_guard_0",
+          name = "Ice Guard (Glaives)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_inf_ice_guard_ror_1",
+          land_unit_key = "wh3_main_ksl_inf_ice_guard_1",
+          name = "Ice Guard (Swords)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_inf_kossars_0",
+          land_unit_key = "wh3_main_pro_ksl_inf_kossars_0",
+          name = "Kossars",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_inf_kossars_1",
+          land_unit_key = "wh3_main_pro_ksl_inf_kossars_1",
+          name = "Kossars (Spears)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_inf_streltsi_0",
+          land_unit_key = "wh3_main_pro_ksl_inf_streltsi_0",
+          name = "Streltsi",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_mon_elemental_bear_ror_0",
+          land_unit_key = "wh3_main_pro_ksl_mon_elemental_bear_ror_0",
+          name = "Elemental Bear",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_mon_snow_leopard_ror_0",
+          land_unit_key = "wh3_main_ksl_mon_snow_leopard_0",
+          name = "Snow Leopard",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_pro_ksl_cav_war_bear_riders_1",
+          land_unit_key = "wh3_main_pro_ksl_cav_war_bear_riders_1",
+          name = "War Bear Riders",
+          category = "monstrous_cavalry",
+          category_raw = "war_beast",
+          caste = "monstrous_cavalry"
+        }
+      },
+      units_by_category = {
+        artillery = {
+          "wh3_main_pro_ksl_veh_little_grom_0"
+        },
+        melee_cavalry = {
+          "wh3_main_pro_ksl_cav_gryphon_legion_ror_0",
+          "wh3_main_pro_ksl_cav_horse_raiders_0",
+          "wh3_main_pro_ksl_cav_winged_lancers_0"
+        },
+        melee_infantry = {
+          "wh3_main_ksl_inf_kossars_tutorial_1",
+          "wh3_main_pro_ksl_inf_tzar_guard_0"
+        },
+        missile_chariot = {
+          "wh3_main_pro_ksl_veh_heavy_war_sled_ror_0",
+          "wh3_main_pro_ksl_veh_light_war_sled_ror_0"
+        },
+        missile_infantry = {
+          "wh3_main_pro_ksl_inf_armoured_kossars_0",
+          "wh3_main_pro_ksl_inf_ice_guard_ror_0",
+          "wh3_main_pro_ksl_inf_ice_guard_ror_1",
+          "wh3_main_pro_ksl_inf_kossars_0",
+          "wh3_main_pro_ksl_inf_kossars_1",
+          "wh3_main_pro_ksl_inf_streltsi_0"
+        },
+        monster = {
+          "wh3_main_pro_ksl_mon_elemental_bear_ror_0",
+          "wh3_main_pro_ksl_mon_snow_leopard_ror_0"
+        },
+        monstrous_cavalry = {
+          "wh3_main_pro_ksl_cav_war_bear_riders_1"
+        }
+      }
+    },
+    wh3_main_sla_slaanesh = {
+      name = "Slaanesh",
+      culture = "wh3_main_sla_slaanesh",
+      military_groups = {
+        "wh3_main_sla"
+      },
+      unit_count = 40,
+      units = {
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
+          name = "Chaos Chariots of Slaanesh",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_veh_exalted_seeker_chariot_dechala",
+          land_unit_key = "wh3_main_sla_veh_exalted_seeker_chariot_0",
+          name = "Exalted Seeker Chariot",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_sla_veh_exalted_seeker_chariot_0",
+          land_unit_key = "wh3_main_sla_veh_exalted_seeker_chariot_0",
+          name = "Exalted Seeker Chariot",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_sla_veh_hellflayer_0",
+          land_unit_key = "wh3_main_sla_veh_hellflayer_0",
+          name = "Hellflayers",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_sla_veh_seeker_chariot_0",
+          land_unit_key = "wh3_main_sla_veh_seeker_chariot_0",
+          name = "Seeker Chariots",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
+          name = "Chaos Knights of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+          name = "Chaos Knights of Slaanesh (Lances)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_cav_heartseekers_of_slaanesh_dechala",
+          land_unit_key = "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
+          name = "Heartseekers of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
+          land_unit_key = "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
+          name = "Heartseekers of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_sla_cav_hellstriders_0",
+          land_unit_key = "wh3_main_sla_cav_hellstriders_0",
+          name = "Hellstriders of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_sla_cav_hellstriders_1",
+          land_unit_key = "wh3_main_sla_cav_hellstriders_1",
+          name = "Hellstriders of Slaanesh (Hellscourges)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          name = "Marauder Horsemen of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          land_unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          name = "Pleasureseekers",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_cav_pleasureseekers_dechala",
+          land_unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          name = "Pleasureseekers",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_sla_cav_seekers_of_slaanesh_0",
+          land_unit_key = "wh3_main_sla_cav_seekers_of_slaanesh_0",
+          name = "Seekers of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
+          name = "Chaos Warriors of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          name = "Chaos Warriors of Slaanesh (Hellscourges)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_msla",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_msla",
+          name = "Chosen of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+          name = "Chosen of Slaanesh (Hellscourges)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_daemonette_0",
+          land_unit_key = "wh3_main_sla_inf_daemonette_0",
+          name = "Daemonettes of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_marauders_0",
+          land_unit_key = "wh3_main_sla_inf_marauders_0",
+          name = "Devoted Marauders of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_marauders_2",
+          land_unit_key = "wh3_main_sla_inf_marauders_2",
+          name = "Devoted Marauders of Slaanesh (Hellscourges)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_marauders_1",
+          land_unit_key = "wh3_main_sla_inf_marauders_1",
+          name = "Devoted Marauders of Slaanesh (Spears)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh",
+          land_unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh",
+          name = "Devotees of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_inf_daemonette_1_dechala",
+          land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          name = "Exalted Daemonettes of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_daemonette_1",
+          land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          name = "Exalted Daemonettes of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          land_unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          name = "Forsaken of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_inf_slaangors",
+          land_unit_key = "wh3_dlc27_sla_inf_slaangors",
+          name = "Slaangors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh_crossbows",
+          land_unit_key = "wh3_dlc27_sla_inf_devotees_of_slaanesh_crossbows",
+          name = "Devotees of Slaanesh (Crossbows)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          name = "Chaos Warshrine of Slaanesh",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_mon_keeper_of_secrets_dechala",
+          land_unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          name = "Keeper of Secrets",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          land_unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          name = "Keeper of Secrets",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_mon_preyton",
+          land_unit_key = "wh3_dlc27_sla_mon_preyton",
+          name = "Preyton",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_sla_mon_soul_grinder_0",
+          name = "Soul Grinder of Slaanesh",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          land_unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          name = "Champions Of Slaanesh",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_inf_chaos_furies_dechala",
+          land_unit_key = "wh3_main_sla_inf_chaos_furies_0",
+          name = "Chaos Furies (Slaanesh)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_sla_inf_chaos_furies_0",
+          name = "Chaos Furies (Slaanesh)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_mon_fiends_of_slaanesh_dechala",
+          land_unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          name = "Fiends of Slaanesh",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          land_unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          name = "Fiends of Slaanesh",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          land_unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          name = "Spawn of Slaanesh",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        }
+      },
+      units_by_category = {
+        chariot = {
+          "wh3_dlc20_chs_cav_chaos_chariot_msla",
+          "wh3_dlc27_sla_veh_exalted_seeker_chariot_dechala",
+          "wh3_main_sla_veh_exalted_seeker_chariot_0",
+          "wh3_main_sla_veh_hellflayer_0",
+          "wh3_main_sla_veh_seeker_chariot_0"
+        },
+        melee_cavalry = {
+          "wh3_dlc20_chs_cav_chaos_knights_msla",
+          "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+          "wh3_dlc27_sla_cav_heartseekers_of_slaanesh_dechala",
+          "wh3_main_sla_cav_heartseekers_of_slaanesh_0",
+          "wh3_main_sla_cav_hellstriders_0",
+          "wh3_main_sla_cav_hellstriders_1",
+          "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          "wh3_dlc27_sla_cav_pleasureseekers",
+          "wh3_dlc27_sla_cav_pleasureseekers_dechala",
+          "wh3_main_sla_cav_seekers_of_slaanesh_0"
+        },
+        melee_infantry = {
+          "wh3_dlc20_chs_inf_chaos_warriors_msla",
+          "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          "wh3_dlc20_chs_inf_chosen_msla",
+          "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+          "wh3_main_sla_inf_daemonette_0",
+          "wh3_main_sla_inf_marauders_0",
+          "wh3_main_sla_inf_marauders_2",
+          "wh3_main_sla_inf_marauders_1",
+          "wh3_dlc27_sla_inf_devotees_of_slaanesh",
+          "wh3_dlc27_sla_inf_daemonette_1_dechala",
+          "wh3_main_sla_inf_daemonette_1",
+          "wh3_dlc20_chs_inf_forsaken_msla",
+          "wh3_dlc27_sla_inf_slaangors"
+        },
+        missile_infantry = {
+          "wh3_dlc27_sla_inf_devotees_of_slaanesh_crossbows"
+        },
+        monster = {
+          "wh3_dlc20_chs_mon_warshrine_msla",
+          "wh3_dlc27_sla_mon_keeper_of_secrets_dechala",
+          "wh3_main_sla_mon_keeper_of_secrets_0",
+          "wh3_dlc27_sla_mon_preyton",
+          "wh3_main_sla_mon_soul_grinder_0"
+        },
+        monstrous_infantry = {
+          "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          "wh3_dlc27_sla_inf_chaos_furies_dechala",
+          "wh3_main_sla_inf_chaos_furies_0",
+          "wh3_dlc27_sla_mon_fiends_of_slaanesh_dechala",
+          "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          "wh3_main_sla_mon_spawn_of_slaanesh_0"
+        }
+      }
+    },
+    wh3_main_tze_tzeentch = {
+      name = "Tzeentch",
+      culture = "wh3_main_tze_tzeentch",
+      military_groups = {
+        "wh3_main_pro_tze",
+        "wh3_main_tze"
+      },
+      unit_count = 37,
+      units = {
+        {
+          unit_key = "wh_main_emp_veh_steam_tank",
+          land_unit_key = "wh_main_emp_veh_steam_tank_driver",
+          name = "Steam Tank",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
+          name = "Chaos Chariots of Tzeentch",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          land_unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          name = "Centigors of Tzeentch",
+          category = "melee_cavalry",
+          category_raw = "inf_melee",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_pro_tze_cav_chaos_knights_0",
+          land_unit_key = "wh3_main_pro_tze_cav_chaos_knights_0",
+          name = "Chaos Knights of Tzeentch",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          land_unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          name = "Chaos Knights of Tzeentch",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
+          name = "Chaos Knights of Tzeentch (Lances)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
+          name = "Chaos Warriors of Tzeentch",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          name = "Chaos Warriors of Tzeentch (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
+          name = "Chosen of Tzeentch",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
+          name = "Chosen of Tzeentch (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_tze_inf_forsaken_0",
+          land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          name = "Forsaken of Tzeentch",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_forsaken_0",
+          land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          name = "Forsaken of Tzeentch",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
+          name = "Marauders of Tzeentch",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          name = "Marauders of Tzeentch (Spears)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          land_unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          name = "Tzaangors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
+          land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
+          name = "Marauder Horsemen of Tzeentch",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh3_main_tze_veh_burning_chariot_0",
+          land_unit_key = "wh3_main_tze_veh_burning_chariot_0",
+          name = "Burning Chariot of Tzeentch",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_pro_tze_inf_blue_horrors_0",
+          land_unit_key = "wh3_main_pro_tze_inf_blue_horrors_0",
+          name = "Blue Horrors of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_blue_horrors_0",
+          land_unit_key = "wh3_main_tze_inf_blue_horrors_0",
+          name = "Blue Horrors of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          land_unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          name = "Exalted Pink Horrors of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_tze_inf_pink_horrors_0",
+          land_unit_key = "wh3_main_pro_tze_inf_pink_horrors_0",
+          name = "Pink Horrors of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          land_unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          name = "Pink Horrors of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_tze_mon_soul_grinder_0",
+          name = "Soul Grinder of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          name = "Chaos Warshrine of Tzeentch",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          land_unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          name = "Cockatrice",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_exalted_flamers_0",
+          land_unit_key = "wh3_main_tze_mon_exalted_flamer_0",
+          name = "Exalted Flamer of Tzeentch",
+          category = "monster",
+          category_raw = "inf_ranged",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_lzd_mon_carnosaur_0",
+          land_unit_key = "wh2_main_lzd_mon_carnosaur_0",
+          name = "Feral Carnosaur",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_lord_of_change_0",
+          land_unit_key = "wh3_main_tze_mon_lord_of_change_0",
+          name = "Lord of Change",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          land_unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          name = "Mutalith Vortex Beast",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_tze_cav_doom_knights_0",
+          land_unit_key = "wh3_main_tze_cav_doom_knights_0",
+          name = "Doom Knights of Tzeentch",
+          category = "monstrous_cavalry",
+          category_raw = "inf_melee",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          land_unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          name = "Changebringers",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_tze_inf_chaos_furies_0",
+          name = "Chaos Furies (Tzeentch)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_tze_mon_flamers_0",
+          land_unit_key = "wh3_main_pro_tze_mon_flamers_0",
+          name = "Flamers of Tzeentch",
+          category = "monstrous_infantry",
+          category_raw = "inf_ranged",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_flamers_0",
+          land_unit_key = "wh3_main_tze_mon_flamers_0",
+          name = "Flamers of Tzeentch",
+          category = "monstrous_infantry",
+          category_raw = "inf_ranged",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_pro_tze_mon_screamers_0",
+          land_unit_key = "wh3_main_pro_tze_mon_screamers_0",
+          name = "Screamers of Tzeentch",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_screamers_0",
+          land_unit_key = "wh3_main_tze_mon_screamers_0",
+          name = "Screamers of Tzeentch",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          land_unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          name = "Spawn of Tzeentch",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        }
+      },
+      units_by_category = {
+        artillery = {
+          "wh_main_emp_veh_steam_tank"
+        },
+        chariot = {
+          "wh3_dlc20_chs_cav_chaos_chariot_mtze"
+        },
+        melee_cavalry = {
+          "wh3_dlc24_tze_inf_centigors_great_weapons",
+          "wh3_main_pro_tze_cav_chaos_knights_0",
+          "wh3_main_tze_cav_chaos_knights_0",
+          "wh3_dlc20_chs_cav_chaos_knights_mtze_lances"
+        },
+        melee_infantry = {
+          "wh3_dlc20_chs_inf_chaos_warriors_mtze",
+          "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          "wh3_dlc20_chs_inf_chosen_mtze",
+          "wh3_dlc20_chs_inf_chosen_mtze_halberds",
+          "wh3_main_pro_tze_inf_forsaken_0",
+          "wh3_main_tze_inf_forsaken_0",
+          "wh3_dlc20_chs_inf_chaos_marauders_mtze",
+          "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          "wh3_dlc24_tze_inf_tzaangors"
+        },
+        missile_cavalry = {
+          "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins"
+        },
+        missile_chariot = {
+          "wh3_main_tze_veh_burning_chariot_0"
+        },
+        missile_infantry = {
+          "wh3_main_pro_tze_inf_blue_horrors_0",
+          "wh3_main_tze_inf_blue_horrors_0",
+          "wh3_main_tze_inf_pink_horrors_1",
+          "wh3_main_pro_tze_inf_pink_horrors_0",
+          "wh3_main_tze_inf_pink_horrors_0",
+          "wh3_main_tze_mon_soul_grinder_0"
+        },
+        monster = {
+          "wh3_dlc20_chs_mon_warshrine_mtze",
+          "wh3_dlc24_tze_mon_cockatrice",
+          "wh3_main_tze_mon_exalted_flamers_0",
+          "wh3_dlc24_lzd_mon_carnosaur_0",
+          "wh3_main_tze_mon_lord_of_change_0",
+          "wh3_dlc24_tze_mon_mutalith_vortex_beast"
+        },
+        monstrous_cavalry = {
+          "wh3_main_tze_cav_doom_knights_0"
+        },
+        monstrous_infantry = {
+          "wh3_dlc24_tze_mon_flamers_changebringers",
+          "wh3_main_tze_inf_chaos_furies_0",
+          "wh3_main_pro_tze_mon_flamers_0",
+          "wh3_main_tze_mon_flamers_0",
+          "wh3_main_pro_tze_mon_screamers_0",
+          "wh3_main_tze_mon_screamers_0",
+          "wh3_main_tze_mon_spawn_of_tzeentch_0"
+        }
+      }
+    },
+    wh_dlc03_bst_beastmen = {
+      name = "Beastmen",
+      culture = "wh_dlc03_bst_beastmen",
+      military_groups = {
+        "wh_dlc03_group_beastmen"
+      },
+      unit_count = 34,
+      units = {
+        {
+          unit_key = "wh_dlc03_bst_cav_razorgor_chariot_0",
+          land_unit_key = "wh_dlc03_bst_cav_razorgor_chariot_0",
+          name = "Razorgor Chariots",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc17_bst_cav_tuskgor_chariot_0",
+          land_unit_key = "wh2_dlc17_bst_cav_tuskgor_chariot_0",
+          name = "Tuskgor Chariots",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_centigors_0",
+          land_unit_key = "wh_dlc03_bst_inf_centigors_0",
+          name = "Centigors",
+          category = "melee_cavalry",
+          category_raw = "inf_melee",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_centigors_2",
+          land_unit_key = "wh_dlc03_bst_inf_centigors_2",
+          name = "Centigors (Great Weapons)",
+          category = "melee_cavalry",
+          category_raw = "inf_melee",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_centigors_1",
+          land_unit_key = "wh_dlc03_bst_inf_centigors_1",
+          name = "Centigors (Throwing Axes)",
+          category = "melee_cavalry",
+          category_raw = "inf_ranged",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc24_bst_inf_centigors_great_weapons_mtze",
+          land_unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          name = "Centigors of Tzeentch",
+          category = "melee_cavalry",
+          category_raw = "inf_melee",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_bestigor_herd_0",
+          land_unit_key = "wh_dlc03_bst_inf_bestigor_herd_0",
+          name = "Bestigor Herd",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_gor_herd_0",
+          land_unit_key = "wh_dlc03_bst_inf_gor_herd_0",
+          name = "Gor Herd",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_gor_herd_1",
+          land_unit_key = "wh_dlc03_bst_inf_gor_herd_1",
+          name = "Gor Herd (Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_bst_inf_khorngors",
+          land_unit_key = "wh3_dlc26_kho_inf_khorngors",
+          name = "Khorngors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_bst_inf_pestigors",
+          land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          name = "Pestigors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_bst_inf_slaangors",
+          land_unit_key = "wh3_dlc27_sla_inf_slaangors",
+          name = "Slaangors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc24_bst_inf_tzaangors",
+          land_unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          name = "Tzaangors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_ungor_herd_1",
+          land_unit_key = "wh_dlc03_bst_inf_ungor_herd_1",
+          name = "Ungor Herd",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_ungor_spearmen_0",
+          land_unit_key = "wh_dlc03_bst_inf_ungor_spearmen_0",
+          name = "Ungor Spearmen Herd",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_ungor_spearmen_1",
+          land_unit_key = "wh_dlc03_bst_inf_ungor_spearmen_1",
+          name = "Ungor Spearmen Herd (Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_cygor_0",
+          land_unit_key = "wh_dlc03_bst_inf_cygor_0",
+          name = "Cygor",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_ungor_raiders_0",
+          land_unit_key = "wh_dlc03_bst_inf_ungor_raiders_0",
+          name = "Ungor Raiders",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_bst_mon_chimera",
+          land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          name = "Chimera",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_bst_mon_cockatrice",
+          land_unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          name = "Cockatrice",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc03_bst_feral_manticore",
+          land_unit_key = "wh_dlc03_bst_feral_manticore",
+          name = "Feral Manticore",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc17_bst_mon_ghorgon_0",
+          land_unit_key = "wh2_dlc17_bst_mon_ghorgon_0",
+          name = "Ghorgon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc03_bst_mon_giant_0",
+          land_unit_key = "wh_dlc03_bst_mon_giant_0",
+          name = "Giant",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_bst_mon_incarnate_elemental_of_beasts",
+          land_unit_key = "wh3_dlc24_ksl_mon_incarnate_elemental_of_beasts",
+          name = "Incarnate Elemental of Beasts",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc17_bst_mon_jabberslythe_0",
+          land_unit_key = "wh2_dlc17_bst_mon_jabberslythe_0",
+          name = "Jabberslythe",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_bst_mon_preyton",
+          land_unit_key = "wh3_dlc27_sla_mon_preyton",
+          name = "Preyton",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_razorgor_herd_0",
+          land_unit_key = "wh_dlc03_bst_inf_razorgor_herd_0",
+          name = "Razorgor Herd",
+          category = "monstrous_cavalry",
+          category_raw = "inf_melee",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_mon_chaos_spawn_0",
+          land_unit_key = "wh_dlc03_bst_mon_chaos_spawn_0",
+          name = "Chaos Spawn",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_bst_mon_harpies_0",
+          land_unit_key = "wh_dlc05_bst_mon_harpies_0",
+          name = "Harpies",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_minotaurs_0",
+          land_unit_key = "wh_dlc03_bst_inf_minotaurs_0",
+          name = "Minotaurs",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_minotaurs_2",
+          land_unit_key = "wh_dlc03_bst_inf_minotaurs_2",
+          name = "Minotaurs (Great Weapons)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_minotaurs_1",
+          land_unit_key = "wh_dlc03_bst_inf_minotaurs_1",
+          name = "Minotaurs (Shields)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_chaos_warhounds_0",
+          land_unit_key = "wh_dlc03_bst_inf_chaos_warhounds_0",
+          name = "Chaos Warhounds",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh_dlc03_bst_inf_chaos_warhounds_1",
+          land_unit_key = "wh_dlc03_bst_inf_chaos_warhounds_1",
+          name = "Chaos Warhounds (Poison)",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        }
+      },
+      units_by_category = {
+        chariot = {
+          "wh_dlc03_bst_cav_razorgor_chariot_0",
+          "wh2_dlc17_bst_cav_tuskgor_chariot_0"
+        },
+        melee_cavalry = {
+          "wh_dlc03_bst_inf_centigors_0",
+          "wh_dlc03_bst_inf_centigors_2",
+          "wh_dlc03_bst_inf_centigors_1",
+          "wh3_dlc24_bst_inf_centigors_great_weapons_mtze"
+        },
+        melee_infantry = {
+          "wh_dlc03_bst_inf_bestigor_herd_0",
+          "wh_dlc03_bst_inf_gor_herd_0",
+          "wh_dlc03_bst_inf_gor_herd_1",
+          "wh3_dlc26_bst_inf_khorngors",
+          "wh3_dlc25_bst_inf_pestigors",
+          "wh3_dlc27_bst_inf_slaangors",
+          "wh3_dlc24_bst_inf_tzaangors",
+          "wh_dlc03_bst_inf_ungor_herd_1",
+          "wh_dlc03_bst_inf_ungor_spearmen_0",
+          "wh_dlc03_bst_inf_ungor_spearmen_1"
+        },
+        missile_infantry = {
+          "wh_dlc03_bst_inf_cygor_0",
+          "wh_dlc03_bst_inf_ungor_raiders_0"
+        },
+        monster = {
+          "wh3_dlc27_bst_mon_chimera",
+          "wh3_dlc24_bst_mon_cockatrice",
+          "wh_dlc03_bst_feral_manticore",
+          "wh2_dlc17_bst_mon_ghorgon_0",
+          "wh_dlc03_bst_mon_giant_0",
+          "wh3_dlc24_bst_mon_incarnate_elemental_of_beasts",
+          "wh2_dlc17_bst_mon_jabberslythe_0",
+          "wh3_dlc27_bst_mon_preyton"
+        },
+        monstrous_cavalry = {
+          "wh_dlc03_bst_inf_razorgor_herd_0"
+        },
+        monstrous_infantry = {
+          "wh_dlc03_bst_mon_chaos_spawn_0",
+          "wh_dlc05_bst_mon_harpies_0",
+          "wh_dlc03_bst_inf_minotaurs_0",
+          "wh_dlc03_bst_inf_minotaurs_2",
+          "wh_dlc03_bst_inf_minotaurs_1"
+        },
+        war_beast = {
+          "wh_dlc03_bst_inf_chaos_warhounds_0",
+          "wh_dlc03_bst_inf_chaos_warhounds_1"
+        }
+      }
+    },
+    wh_dlc05_wef_wood_elves = {
+      name = "Wood Elves",
+      culture = "wh_dlc05_wef_wood_elves",
+      military_groups = {
+        "wh2_dlc16_group_drycha",
+        "wh_dlc05_group_wood_elves"
+      },
+      unit_count = 35,
+      units = {
+        {
+          unit_key = "wh2_dlc16_wef_cav_glade_riders_2",
+          land_unit_key = "wh2_dlc16_wef_cav_glade_riders_2",
+          name = "Glade Riders (Spears)",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_cav_wild_riders_0",
+          land_unit_key = "wh_dlc05_wef_cav_wild_riders_0",
+          name = "Wild Riders",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_cav_wild_riders_1",
+          land_unit_key = "wh_dlc05_wef_cav_wild_riders_1",
+          name = "Wild Riders (Shields)",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_inf_bladesingers_0",
+          land_unit_key = "wh2_dlc16_wef_inf_bladesingers_0",
+          name = "Bladesingers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_dryads_0",
+          land_unit_key = "wh_dlc05_wef_inf_dryads_0",
+          name = "Dryads",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_eternal_guard_0",
+          land_unit_key = "wh_dlc05_wef_inf_eternal_guard_0",
+          name = "Eternal Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_eternal_guard_1",
+          land_unit_key = "wh_dlc05_wef_inf_eternal_guard_1",
+          name = "Eternal Guard (Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_inf_malicious_dryads_0",
+          land_unit_key = "wh2_dlc16_wef_inf_malicious_dryads_0",
+          name = "Malevolent Dryads",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_wardancers_0",
+          land_unit_key = "wh_dlc05_wef_inf_wardancers_0",
+          name = "Wardancers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_wardancers_1",
+          land_unit_key = "wh_dlc05_wef_inf_wardancers_1",
+          name = "Wardancers (Asrai Spears)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_wildwood_rangers_0",
+          land_unit_key = "wh_dlc05_wef_inf_wildwood_rangers_0",
+          name = "Wildwood Rangers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_cav_glade_riders_0",
+          land_unit_key = "wh_dlc05_wef_cav_glade_riders_0",
+          name = "Glade Riders",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_cav_glade_riders_1",
+          land_unit_key = "wh_dlc05_wef_cav_glade_riders_1",
+          name = "Glade Riders (Hagbane Tips)",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_cav_hawk_riders_0",
+          land_unit_key = "wh_dlc05_wef_cav_hawk_riders_0",
+          name = "Hawk Riders",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_cav_sisters_thorn_0",
+          land_unit_key = "wh_dlc05_wef_cav_sisters_thorn_0",
+          name = "Sisters of the Thorn",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_deepwood_scouts_0",
+          land_unit_key = "wh_dlc05_wef_inf_deepwood_scouts_0",
+          name = "Deepwood Scouts",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_deepwood_scouts_1",
+          land_unit_key = "wh_dlc05_wef_inf_deepwood_scouts_1",
+          name = "Deepwood Scouts (Swiftshiver Shards)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_glade_guard_0",
+          land_unit_key = "wh_dlc05_wef_inf_glade_guard_0",
+          name = "Glade Guard",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_glade_guard_2",
+          land_unit_key = "wh_dlc05_wef_inf_glade_guard_2",
+          name = "Glade Guard (Hagbane Tips)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_glade_guard_1",
+          land_unit_key = "wh_dlc05_wef_inf_glade_guard_1",
+          name = "Glade Guard (Starfire Shafts)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_inf_waywatchers_0",
+          land_unit_key = "wh_dlc05_wef_inf_waywatchers_0",
+          name = "Waywatchers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_feral_manticore",
+          land_unit_key = "wh2_dlc16_wef_mon_feral_manticore",
+          name = "Feral Manticore",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc05_wef_forest_dragon_0",
+          land_unit_key = "wh_dlc05_wef_forest_dragon_0",
+          name = "Forest Dragon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc05_wef_mon_great_eagle_0",
+          land_unit_key = "wh_dlc05_wef_mon_great_eagle_0",
+          name = "Great Eagle",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_hawks_0",
+          land_unit_key = "wh2_dlc16_wef_mon_hawks_0",
+          name = "Great Hawks",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_malicious_treeman_0",
+          land_unit_key = "wh2_dlc16_wef_mon_malicious_treeman_0",
+          name = "Malevolent Treeman",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc05_wef_mon_treeman_0",
+          land_unit_key = "wh_dlc05_wef_mon_treeman_0",
+          name = "Treeman",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_cav_great_stag_knights_0",
+          land_unit_key = "wh2_dlc16_wef_cav_great_stag_knights_0",
+          name = "Great Stag Knights",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_giant_spiders_0",
+          land_unit_key = "wh2_dlc16_wef_mon_giant_spiders_0",
+          name = "Giant Spiders",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_harpies_0",
+          land_unit_key = "wh2_dlc16_wef_mon_harpies_0",
+          name = "Harpies",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_malicious_treekin_0",
+          land_unit_key = "wh2_dlc16_wef_mon_malicious_treekin_0",
+          name = "Malevolent Tree Kin",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_dlc05_wef_mon_treekin_0",
+          land_unit_key = "wh_dlc05_wef_mon_treekin_0",
+          name = "Tree Kin",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_zoats",
+          land_unit_key = "wh2_dlc16_wef_mon_zoats",
+          name = "Zoats",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_monster_feral_bears",
+          land_unit_key = "wh3_main_monster_feral_bears",
+          name = "Feral Bears",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_wolves_0",
+          land_unit_key = "wh2_dlc16_wef_mon_wolves_0",
+          name = "Giant Wolves",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        }
+      },
+      units_by_category = {
+        melee_cavalry = {
+          "wh2_dlc16_wef_cav_glade_riders_2",
+          "wh_dlc05_wef_cav_wild_riders_0",
+          "wh_dlc05_wef_cav_wild_riders_1"
+        },
+        melee_infantry = {
+          "wh2_dlc16_wef_inf_bladesingers_0",
+          "wh_dlc05_wef_inf_dryads_0",
+          "wh_dlc05_wef_inf_eternal_guard_0",
+          "wh_dlc05_wef_inf_eternal_guard_1",
+          "wh2_dlc16_wef_inf_malicious_dryads_0",
+          "wh_dlc05_wef_inf_wardancers_0",
+          "wh_dlc05_wef_inf_wardancers_1",
+          "wh_dlc05_wef_inf_wildwood_rangers_0"
+        },
+        missile_cavalry = {
+          "wh_dlc05_wef_cav_glade_riders_0",
+          "wh_dlc05_wef_cav_glade_riders_1",
+          "wh_dlc05_wef_cav_hawk_riders_0",
+          "wh_dlc05_wef_cav_sisters_thorn_0"
+        },
+        missile_infantry = {
+          "wh_dlc05_wef_inf_deepwood_scouts_0",
+          "wh_dlc05_wef_inf_deepwood_scouts_1",
+          "wh_dlc05_wef_inf_glade_guard_0",
+          "wh_dlc05_wef_inf_glade_guard_2",
+          "wh_dlc05_wef_inf_glade_guard_1",
+          "wh_dlc05_wef_inf_waywatchers_0"
+        },
+        monster = {
+          "wh2_dlc16_wef_mon_feral_manticore",
+          "wh_dlc05_wef_forest_dragon_0",
+          "wh_dlc05_wef_mon_great_eagle_0",
+          "wh2_dlc16_wef_mon_hawks_0",
+          "wh2_dlc16_wef_mon_malicious_treeman_0",
+          "wh_dlc05_wef_mon_treeman_0"
+        },
+        monstrous_cavalry = {
+          "wh2_dlc16_wef_cav_great_stag_knights_0"
+        },
+        monstrous_infantry = {
+          "wh2_dlc16_wef_mon_giant_spiders_0",
+          "wh2_dlc16_wef_mon_harpies_0",
+          "wh2_dlc16_wef_mon_malicious_treekin_0",
+          "wh_dlc05_wef_mon_treekin_0",
+          "wh2_dlc16_wef_mon_zoats"
+        },
+        war_beast = {
+          "wh3_main_monster_feral_bears",
+          "wh2_dlc16_wef_mon_wolves_0"
+        }
+      }
+    },
+    wh_dlc08_nor_norsca = {
+      name = "Norsca",
+      culture = "wh_dlc08_nor_norsca",
+      military_groups = {
+        "wh_main_group_norsca_steppe"
+      },
+      unit_count = 31,
+      units = {
+        {
+          unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_dualweapons",
+          land_unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_dualweapons",
+          name = "Kurgan Horsemen (Dual Weapons)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_greatweapons",
+          land_unit_key = "wh3_dlc27_nor_cav_kurgan_horsemen_greatweapons",
+          name = "Kurgan Horsemen (Great Weapons)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_nor_cav_marauder_horsemen_0",
+          land_unit_key = "wh_main_nor_cav_marauder_horsemen_0",
+          name = "Marauder Horsemen",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          name = "Marauder Bearmen",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          name = "Marauder Bearmen (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc08_nor_inf_marauder_berserkers_0",
+          land_unit_key = "wh_dlc08_nor_inf_marauder_berserkers_0",
+          name = "Marauder Berserkers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc08_nor_inf_marauder_champions_0",
+          land_unit_key = "wh_dlc08_nor_inf_marauder_champions_0",
+          name = "Marauder Champions",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc08_nor_inf_marauder_champions_1",
+          land_unit_key = "wh_dlc08_nor_inf_marauder_champions_1",
+          name = "Marauder Champions (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc08_nor_inf_marauder_spearman_0",
+          land_unit_key = "wh_dlc08_nor_inf_marauder_spearman_0",
+          name = "Marauder Spearmen",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_nor_inf_chaos_marauders_0",
+          land_unit_key = "wh_main_nor_inf_chaos_marauders_0",
+          name = "Marauders",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_nor_inf_chaos_marauders_1",
+          land_unit_key = "wh_main_nor_inf_chaos_marauders_1",
+          name = "Marauders (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc08_nor_mon_skinwolves_0",
+          land_unit_key = "wh_dlc08_nor_mon_skinwolves_0",
+          name = "Skin Wolves",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc08_nor_mon_skinwolves_1",
+          land_unit_key = "wh_dlc08_nor_mon_skinwolves_1",
+          name = "Skin Wolves (Armoured)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc08_nor_cav_marauder_horsemasters_0",
+          land_unit_key = "wh_dlc08_nor_cav_marauder_horsemasters_0",
+          name = "Marauder Horsemasters",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_main_nor_cav_marauder_horsemen_1",
+          land_unit_key = "wh_main_nor_cav_marauder_horsemen_1",
+          name = "Marauder Horsemen (Throwing Axes)",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_dlc08_nor_inf_marauder_hunters_0",
+          land_unit_key = "wh_dlc08_nor_inf_marauder_hunters_0",
+          name = "Marauder Hunters",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc08_nor_inf_marauder_hunters_1",
+          land_unit_key = "wh_dlc08_nor_inf_marauder_hunters_1",
+          name = "Marauder Hunters (Javelins)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_mon_chimera",
+          land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          name = "Chimera",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_mon_cursd_ettin",
+          land_unit_key = "wh3_dlc27_nor_mon_cursd_ettin",
+          name = "Curs'd Ettin",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_mon_cursd_ettin_runecaller",
+          land_unit_key = "wh3_dlc27_nor_mon_cursd_ettin_runecaller",
+          name = "Curs'd Ettin (Runecaller)",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          land_unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          name = "Dread Maw",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          land_unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          name = "Dread Maw",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc08_nor_mon_war_mammoth_0",
+          land_unit_key = "wh_dlc08_nor_mon_war_mammoth_0",
+          name = "Feral Mammoth",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc08_nor_feral_manticore",
+          land_unit_key = "wh_dlc08_nor_feral_manticore",
+          name = "Feral Manticore",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc08_nor_mon_norscan_giant_0",
+          land_unit_key = "wh_dlc08_nor_mon_norscan_giant_0",
+          name = "Norscan Giant",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc08_nor_mon_war_mammoth_1",
+          land_unit_key = "wh_dlc08_nor_mon_war_mammoth_1",
+          name = "War Mammoth",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc08_nor_mon_war_mammoth_2",
+          land_unit_key = "wh_dlc08_nor_mon_war_mammoth_2",
+          name = "War Mammoth (Warshrine)",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_main_nor_mon_chaos_trolls",
+          land_unit_key = "wh_main_nor_mon_chaos_trolls",
+          name = "Norscan Trolls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_main_nor_mon_chaos_warhounds_0",
+          land_unit_key = "wh_main_nor_mon_chaos_warhounds_0",
+          name = "Norscan Warhounds",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh_main_nor_mon_chaos_warhounds_1",
+          land_unit_key = "wh_main_nor_mon_chaos_warhounds_1",
+          name = "Norscan Warhounds (Poison)",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh_main_nor_cav_chaos_chariot",
+          land_unit_key = "wh_main_nor_cav_chaos_chariot",
+          name = "Marauder Chariots",
+          category = "war_machine",
+          category_raw = "war_machine",
+          caste = "generic"
+        }
+      },
+      units_by_category = {
+        melee_cavalry = {
+          "wh3_dlc27_nor_cav_kurgan_horsemen_dualweapons",
+          "wh3_dlc27_nor_cav_kurgan_horsemen_greatweapons",
+          "wh_main_nor_cav_marauder_horsemen_0"
+        },
+        melee_infantry = {
+          "wh3_dlc27_nor_inf_marauder_bearmen",
+          "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          "wh_dlc08_nor_inf_marauder_berserkers_0",
+          "wh_dlc08_nor_inf_marauder_champions_0",
+          "wh_dlc08_nor_inf_marauder_champions_1",
+          "wh_dlc08_nor_inf_marauder_spearman_0",
+          "wh_main_nor_inf_chaos_marauders_0",
+          "wh_main_nor_inf_chaos_marauders_1",
+          "wh_dlc08_nor_mon_skinwolves_0",
+          "wh_dlc08_nor_mon_skinwolves_1"
+        },
+        missile_cavalry = {
+          "wh_dlc08_nor_cav_marauder_horsemasters_0",
+          "wh_main_nor_cav_marauder_horsemen_1"
+        },
+        missile_infantry = {
+          "wh_dlc08_nor_inf_marauder_hunters_0",
+          "wh_dlc08_nor_inf_marauder_hunters_1"
+        },
+        monster = {
+          "wh3_dlc27_nor_mon_chimera",
+          "wh3_dlc27_nor_mon_cursd_ettin",
+          "wh3_dlc27_nor_mon_cursd_ettin_runecaller",
+          "wh3_dlc27_nor_mon_dread_maw",
+          "wh3_dlc27_nor_mon_dread_maw_underground",
+          "wh_dlc08_nor_mon_war_mammoth_0",
+          "wh_dlc08_nor_feral_manticore",
+          "wh_dlc08_nor_mon_norscan_giant_0",
+          "wh_dlc08_nor_mon_war_mammoth_1",
+          "wh_dlc08_nor_mon_war_mammoth_2"
+        },
+        monstrous_infantry = {
+          "wh_main_nor_mon_chaos_trolls"
+        },
+        war_beast = {
+          "wh_main_nor_mon_chaos_warhounds_0",
+          "wh_main_nor_mon_chaos_warhounds_1"
+        },
+        war_machine = {
+          "wh_main_nor_cav_chaos_chariot"
+        }
+      }
+    },
+    wh_main_chs_chaos = {
+      name = "Warriors of Chaos",
+      culture = "wh_main_chs_chaos",
+      military_groups = {
+        "wh3_dlc20_group_chs_azazel",
+        "wh3_dlc20_group_chs_festus",
+        "wh3_dlc20_group_chs_valkia",
+        "wh3_dlc20_group_chs_vilitch",
+        "wh3_main_group_belakor",
+        "wh_main_group_chaos"
+      },
+      unit_count = 135,
+      units = {
+        {
+          unit_key = "wh3_main_kho_veh_skullcannon_0",
+          land_unit_key = "wh3_main_kho_veh_skullcannon_0",
+          name = "Skullcannon",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_main_chs_cav_chaos_chariot",
+          land_unit_key = "wh_main_chs_cav_chaos_chariot",
+          name = "Chaos Chariots",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mkho",
+          name = "Chaos Chariots of Khorne",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mnur",
+          name = "Chaos Chariots of Nurgle",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_msla",
+          name = "Chaos Chariots of Slaanesh",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_chariot_mtze",
+          name = "Chaos Chariots of Tzeentch",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
+          land_unit_key = "wh_dlc01_chs_cav_gorebeast_chariot",
+          name = "Gorebeast Chariots",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          land_unit_key = "wh3_main_kho_cav_gorebeast_chariot",
+          name = "Gorebeast Chariots of Khorne",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_main_sla_veh_seeker_chariot_0",
+          land_unit_key = "wh3_main_sla_veh_seeker_chariot_0",
+          name = "Seeker Chariots",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          land_unit_key = "wh3_dlc24_tze_inf_centigors_great_weapons",
+          name = "Centigors of Tzeentch",
+          category = "melee_cavalry",
+          category_raw = "inf_melee",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_chs_cav_chaos_knights_0",
+          land_unit_key = "wh_main_chs_cav_chaos_knights_0",
+          name = "Chaos Knights",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_chs_cav_chaos_knights_1",
+          land_unit_key = "wh_main_chs_cav_chaos_knights_1",
+          name = "Chaos Knights (Lances)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho",
+          name = "Chaos Knights of Khorne",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
+          name = "Chaos Knights of Khorne (Lances)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          name = "Chaos Knights of Nurgle",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          name = "Chaos Knights of Nurgle (Lances)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla",
+          name = "Chaos Knights of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+          name = "Chaos Knights of Slaanesh (Lances)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          land_unit_key = "wh3_main_tze_cav_chaos_knights_0",
+          name = "Chaos Knights of Tzeentch",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
+          land_unit_key = "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
+          name = "Chaos Knights of Tzeentch (Lances)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_sla_cav_hellstriders_0",
+          land_unit_key = "wh3_main_sla_cav_hellstriders_0",
+          name = "Hellstriders of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_sla_cav_hellstriders_1",
+          land_unit_key = "wh3_main_sla_cav_hellstriders_1",
+          name = "Hellstriders of Slaanesh (Hellscourges)",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          name = "Marauder Horsemen of Slaanesh",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          land_unit_key = "wh3_dlc27_sla_cav_pleasureseekers",
+          name = "Pleasureseekers",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          land_unit_key = "wh3_dlc25_nur_cav_rot_knights",
+          name = "Rot Knights",
+          category = "melee_cavalry",
+          category_raw = "war_beast",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
+          land_unit_key = "wh_dlc06_chs_inf_aspiring_champions_0",
+          name = "Aspiring Champions",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_bloodletters_0",
+          land_unit_key = "wh3_main_kho_inf_bloodletters_0",
+          name = "Bloodletters of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_inf_chaos_warriors_0",
+          land_unit_key = "wh_main_chs_inf_chaos_warriors_0",
+          name = "Chaos Warriors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
+          land_unit_key = "wh_dlc01_chs_inf_chaos_warriors_2",
+          name = "Chaos Warriors (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_inf_chaos_warriors_1",
+          land_unit_key = "wh_main_chs_inf_chaos_warriors_1",
+          name = "Chaos Warriors (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          land_unit_key = "wh3_main_kho_inf_chaos_warriors_0",
+          name = "Chaos Warriors of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          land_unit_key = "wh3_main_kho_inf_chaos_warriors_2",
+          name = "Chaos Warriors of Khorne (Dual Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          land_unit_key = "wh3_main_kho_inf_chaos_warriors_1",
+          name = "Chaos Warriors of Khorne (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          name = "Chaos Warriors of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          name = "Chaos Warriors of Nurgle (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla",
+          name = "Chaos Warriors of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          name = "Chaos Warriors of Slaanesh (Hellscourges)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze",
+          name = "Chaos Warriors of Tzeentch",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          name = "Chaos Warriors of Tzeentch (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_inf_chosen_0",
+          land_unit_key = "wh_main_chs_inf_chosen_0",
+          name = "Chosen",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_inf_chosen_1",
+          land_unit_key = "wh_main_chs_inf_chosen_1",
+          name = "Chosen (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc01_chs_inf_chosen_2",
+          land_unit_key = "wh_dlc01_chs_inf_chosen_2",
+          name = "Chosen (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho",
+          name = "Chosen of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
+          name = "Chosen of Khorne (Dual Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur",
+          name = "Chosen of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          name = "Chosen of Nurgle (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_msla",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_msla",
+          name = "Chosen of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+          name = "Chosen of Slaanesh (Hellscourges)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze",
+          name = "Chosen of Tzeentch",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
+          land_unit_key = "wh3_dlc20_chs_inf_chosen_mtze_halberds",
+          name = "Chosen of Tzeentch (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_daemonette_0",
+          land_unit_key = "wh3_main_sla_inf_daemonette_0",
+          name = "Daemonettes of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_bloodletters_1",
+          land_unit_key = "wh3_main_kho_inf_bloodletters_1",
+          name = "Exalted Bloodletters of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_inf_daemonette_1",
+          land_unit_key = "wh3_main_sla_inf_daemonette_1",
+          name = "Exalted Daemonettes of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          land_unit_key = "wh3_main_nur_inf_plaguebearers_1",
+          name = "Exalted Plaguebearers of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc01_chs_inf_forsaken_0",
+          land_unit_key = "wh_dlc01_chs_inf_forsaken_0",
+          name = "Forsaken",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          land_unit_key = "wh3_dlc20_chs_inf_forsaken_mkho",
+          name = "Forsaken of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_forsaken_0_warriors",
+          land_unit_key = "wh3_main_nur_inf_forsaken_0",
+          name = "Forsaken of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          land_unit_key = "wh3_dlc20_chs_inf_forsaken_msla",
+          name = "Forsaken of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_forsaken_0",
+          land_unit_key = "wh3_main_tze_inf_forsaken_0",
+          name = "Forsaken of Tzeentch",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_inf_khorngors",
+          land_unit_key = "wh3_dlc26_kho_inf_khorngors",
+          name = "Khorngors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen",
+          name = "Marauder Bearmen",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          land_unit_key = "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          name = "Marauder Bearmen (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_inf_chaos_marauders_0",
+          land_unit_key = "wh_main_chs_inf_chaos_marauders_0",
+          name = "Marauders",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_inf_chaos_marauders_1",
+          land_unit_key = "wh_main_chs_inf_chaos_marauders_1",
+          name = "Marauders (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho",
+          name = "Marauders of Khorne",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          name = "Marauders of Khorne (Dual Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          name = "Marauders of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          name = "Marauders of Nurgle (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla",
+          name = "Marauders of Slaanesh",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges",
+          name = "Marauders of Slaanesh (Hellscourges)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze",
+          name = "Marauders of Tzeentch",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          land_unit_key = "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          name = "Marauders of Tzeentch (Spears)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_nurglings_0",
+          land_unit_key = "wh3_main_nur_inf_nurglings_0",
+          name = "Nurglings",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_inf_pestigors",
+          land_unit_key = "wh3_dlc25_nur_inf_pestigors",
+          name = "Pestigors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          land_unit_key = "wh3_main_nur_inf_plaguebearers_0",
+          name = "Plaguebearers of Nurgle",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          land_unit_key = "wh3_dlc26_kho_inf_skullreapers",
+          name = "Skullreapers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_inf_slaangors",
+          land_unit_key = "wh3_dlc27_sla_inf_slaangors",
+          name = "Slaangors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          land_unit_key = "wh3_dlc24_tze_inf_tzaangors",
+          name = "Tzaangors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_inf_wrathmongers",
+          land_unit_key = "wh3_dlc26_kho_inf_wrathmongers",
+          name = "Wrathmongers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
+          land_unit_key = "wh_dlc06_chs_cav_marauder_horsemasters_0",
+          name = "Marauder Horsemasters",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_main_chs_cav_marauder_horsemen_0",
+          land_unit_key = "wh_main_chs_cav_marauder_horsemen_0",
+          name = "Marauder Horsemen",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_main_chs_cav_marauder_horsemen_1",
+          land_unit_key = "wh_main_chs_cav_marauder_horsemen_1",
+          name = "Marauder Horsemen (Throwing Axes)",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
+          land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
+          name = "Marauder Horsemen of Khorne (Throwing Axes)",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
+          land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
+          name = "Marauder Horsemen of Nurgle (Throwing Axes)",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
+          land_unit_key = "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins",
+          name = "Marauder Horsemen of Tzeentch",
+          category = "missile_cavalry",
+          category_raw = "war_beast",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          land_unit_key = "wh3_main_tze_inf_pink_horrors_1",
+          name = "Exalted Pink Horrors of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          land_unit_key = "wh3_main_tze_inf_pink_horrors_0",
+          name = "Pink Horrors of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_nur_mon_soul_grinder_0",
+          name = "Soul Grinder of Nurgle",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_tze_mon_soul_grinder_0",
+          name = "Soul Grinder of Tzeentch",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
+          land_unit_key = "wh3_main_nur_mon_beast_of_nurgle_0",
+          name = "Beast of Nurgle",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_bloodthirster_0",
+          land_unit_key = "wh3_main_kho_mon_bloodthirster_0",
+          name = "Bloodthirster",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc06_chs_feral_manticore",
+          land_unit_key = "wh_dlc06_chs_feral_manticore",
+          name = "Chaos Feral Manticore",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_main_chs_mon_giant",
+          land_unit_key = "wh_main_chs_mon_giant",
+          name = "Chaos Giant",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine",
+          name = "Chaos Warshrine",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_mkho",
+          name = "Chaos Warshrine of Khorne",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_mnur",
+          name = "Chaos Warshrine of Nurgle",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_msla",
+          name = "Chaos Warshrine of Slaanesh",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          land_unit_key = "wh3_dlc20_chs_mon_warshrine_mtze",
+          name = "Chaos Warshrine of Tzeentch",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_mon_chimera",
+          land_unit_key = "wh3_dlc27_nor_mon_chimera",
+          name = "Chimera",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          land_unit_key = "wh3_dlc24_tze_mon_cockatrice",
+          name = "Cockatrice",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc01_chs_mon_dragon_ogre_shaggoth",
+          land_unit_key = "wh_dlc01_chs_mon_dragon_ogre_shaggoth",
+          name = "Dragon Ogre Shaggoth",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          land_unit_key = "wh3_dlc27_nor_mon_dread_maw",
+          name = "Dread Maw",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          land_unit_key = "wh3_dlc27_nor_mon_dread_maw_underground",
+          name = "Dread Maw",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_great_unclean_one_0",
+          land_unit_key = "wh3_main_nur_mon_great_unclean_one_0",
+          name = "Great Unclean One",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          land_unit_key = "wh3_main_sla_mon_keeper_of_secrets_0",
+          name = "Keeper of Secrets",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_lord_of_change_0",
+          land_unit_key = "wh3_main_tze_mon_lord_of_change_0",
+          name = "Lord of Change",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          land_unit_key = "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          name = "Mutalith Vortex Beast",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_kho_mon_soul_grinder_0",
+          name = "Soul Grinder of Khorne",
+          category = "monster",
+          category_raw = "inf_ranged",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_soul_grinder_0",
+          land_unit_key = "wh3_main_sla_mon_soul_grinder_0",
+          name = "Soul Grinder of Slaanesh",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          land_unit_key = "wh3_dlc25_nur_mon_toad_dragon",
+          name = "Toad Dragon",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_main_tze_cav_doom_knights_0",
+          land_unit_key = "wh3_main_tze_cav_doom_knights_0",
+          name = "Doom Knights of Tzeentch",
+          category = "monstrous_cavalry",
+          category_raw = "inf_melee",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_nur_cav_plague_drones_0",
+          land_unit_key = "wh3_main_nur_cav_plague_drones_0",
+          name = "Plague Drones of Nurgle",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          land_unit_key = "wh3_main_kho_cav_skullcrushers_0",
+          name = "Skullcrushers of Khorne",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          land_unit_key = "wh3_dlc25_nur_mon_bile_trolls",
+          name = "Bile Trolls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          land_unit_key = "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          name = "Bloodbeasts of Khorne",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          land_unit_key = "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          name = "Champions Of Slaanesh",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          land_unit_key = "wh3_dlc24_tze_mon_flamers_changebringers",
+          name = "Changebringers",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_dae_inf_chaos_furies_0",
+          land_unit_key = "wh3_main_dae_inf_chaos_furies_0",
+          name = "Chaos Furies",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_mon_chaos_spawn",
+          land_unit_key = "wh_main_chs_mon_chaos_spawn",
+          name = "Chaos Spawn",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_mon_trolls",
+          land_unit_key = "wh_main_chs_mon_trolls",
+          name = "Chaos Trolls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_dlc01_chs_mon_trolls_1",
+          land_unit_key = "wh_dlc01_chs_mon_trolls_1",
+          name = "Chaos Trolls (Armoured)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_dlc01_chs_mon_dragon_ogre",
+          land_unit_key = "wh_dlc01_chs_mon_dragon_ogre",
+          name = "Dragon Ogres",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          land_unit_key = "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          name = "Fiends of Slaanesh",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_flamers_0",
+          land_unit_key = "wh3_main_tze_mon_flamers_0",
+          name = "Flamers of Tzeentch",
+          category = "monstrous_infantry",
+          category_raw = "inf_ranged",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          land_unit_key = "wh3_dlc25_nur_inf_plague_ogres",
+          name = "Plague Ogres",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          land_unit_key = "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          name = "Plague Ogres (Great Weapons)",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          land_unit_key = "wh3_dlc26_kho_mon_slaughterbrute",
+          name = "Slaughterbrute",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          land_unit_key = "wh3_main_kho_mon_spawn_of_khorne_0",
+          name = "Spawn of Khorne",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0_warriors",
+          land_unit_key = "wh3_main_nur_mon_spawn_of_nurgle_0",
+          name = "Spawn of Nurgle",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          land_unit_key = "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          name = "Spawn of Slaanesh",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          land_unit_key = "wh3_main_tze_mon_spawn_of_tzeentch_0",
+          name = "Spawn of Tzeentch",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_main_chs_mon_chaos_warhounds_0",
+          land_unit_key = "wh_main_chs_mon_chaos_warhounds_0",
+          name = "Chaos Warhounds",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          land_unit_key = "wh_main_chs_mon_chaos_warhounds_1",
+          name = "Chaos Warhounds (Poison)",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
+          land_unit_key = "wh3_main_kho_inf_flesh_hounds_of_khorne_0",
+          name = "Flesh Hounds of Khorne",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh_main_chs_art_hellcannon",
+          land_unit_key = "wh_main_chs_art_hellcannon",
+          name = "Hellcannon",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        artillery = {
+          "wh3_main_kho_veh_skullcannon_0"
+        },
+        chariot = {
+          "wh_main_chs_cav_chaos_chariot",
+          "wh3_dlc20_chs_cav_chaos_chariot_mkho",
+          "wh3_dlc20_chs_cav_chaos_chariot_mnur",
+          "wh3_dlc20_chs_cav_chaos_chariot_msla",
+          "wh3_dlc20_chs_cav_chaos_chariot_mtze",
+          "wh_dlc01_chs_cav_gorebeast_chariot",
+          "wh3_main_kho_cav_gorebeast_chariot",
+          "wh3_main_sla_veh_seeker_chariot_0"
+        },
+        melee_cavalry = {
+          "wh3_dlc24_tze_inf_centigors_great_weapons",
+          "wh_main_chs_cav_chaos_knights_0",
+          "wh_main_chs_cav_chaos_knights_1",
+          "wh3_dlc20_chs_cav_chaos_knights_mkho",
+          "wh3_dlc20_chs_cav_chaos_knights_mkho_lances",
+          "wh3_dlc20_chs_cav_chaos_knights_mnur",
+          "wh3_dlc20_chs_cav_chaos_knights_mnur_lances",
+          "wh3_dlc20_chs_cav_chaos_knights_msla",
+          "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+          "wh3_main_tze_cav_chaos_knights_0",
+          "wh3_dlc20_chs_cav_chaos_knights_mtze_lances",
+          "wh3_main_sla_cav_hellstriders_0",
+          "wh3_main_sla_cav_hellstriders_1",
+          "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+          "wh3_dlc27_sla_cav_pleasureseekers",
+          "wh3_dlc25_nur_cav_rot_knights"
+        },
+        melee_infantry = {
+          "wh_dlc06_chs_inf_aspiring_champions_0",
+          "wh3_main_kho_inf_bloodletters_0",
+          "wh_main_chs_inf_chaos_warriors_0",
+          "wh_dlc01_chs_inf_chaos_warriors_2",
+          "wh_main_chs_inf_chaos_warriors_1",
+          "wh3_main_kho_inf_chaos_warriors_0",
+          "wh3_main_kho_inf_chaos_warriors_2",
+          "wh3_main_kho_inf_chaos_warriors_1",
+          "wh3_dlc20_chs_inf_chaos_warriors_mnur",
+          "wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons",
+          "wh3_dlc20_chs_inf_chaos_warriors_msla",
+          "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+          "wh3_dlc20_chs_inf_chaos_warriors_mtze",
+          "wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds",
+          "wh_main_chs_inf_chosen_0",
+          "wh_main_chs_inf_chosen_1",
+          "wh_dlc01_chs_inf_chosen_2",
+          "wh3_dlc20_chs_inf_chosen_mkho",
+          "wh3_dlc20_chs_inf_chosen_mkho_dualweapons",
+          "wh3_dlc20_chs_inf_chosen_mnur",
+          "wh3_dlc20_chs_inf_chosen_mnur_greatweapons",
+          "wh3_dlc20_chs_inf_chosen_msla",
+          "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+          "wh3_dlc20_chs_inf_chosen_mtze",
+          "wh3_dlc20_chs_inf_chosen_mtze_halberds",
+          "wh3_main_sla_inf_daemonette_0",
+          "wh3_main_kho_inf_bloodletters_1",
+          "wh3_main_sla_inf_daemonette_1",
+          "wh3_main_nur_inf_plaguebearers_1",
+          "wh_dlc01_chs_inf_forsaken_0",
+          "wh3_dlc20_chs_inf_forsaken_mkho",
+          "wh3_main_nur_inf_forsaken_0_warriors",
+          "wh3_dlc20_chs_inf_forsaken_msla",
+          "wh3_main_tze_inf_forsaken_0",
+          "wh3_dlc26_kho_inf_khorngors",
+          "wh3_dlc27_nor_inf_marauder_bearmen",
+          "wh3_dlc27_nor_inf_marauder_bearmen_greatweapons",
+          "wh_main_chs_inf_chaos_marauders_0",
+          "wh_main_chs_inf_chaos_marauders_1",
+          "wh3_dlc20_chs_inf_chaos_marauders_mkho",
+          "wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons",
+          "wh3_dlc20_chs_inf_chaos_marauders_mnur",
+          "wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons",
+          "wh3_dlc20_chs_inf_chaos_marauders_msla",
+          "wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges",
+          "wh3_dlc20_chs_inf_chaos_marauders_mtze",
+          "wh3_dlc20_chs_inf_chaos_marauders_mtze_spears",
+          "wh3_main_nur_inf_nurglings_0",
+          "wh3_dlc25_nur_inf_pestigors",
+          "wh3_main_nur_inf_plaguebearers_0",
+          "wh3_dlc26_kho_inf_skullreapers",
+          "wh3_dlc27_sla_inf_slaangors",
+          "wh3_dlc24_tze_inf_tzaangors",
+          "wh3_dlc26_kho_inf_wrathmongers"
+        },
+        missile_cavalry = {
+          "wh_dlc06_chs_cav_marauder_horsemasters_0",
+          "wh_main_chs_cav_marauder_horsemen_0",
+          "wh_main_chs_cav_marauder_horsemen_1",
+          "wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes",
+          "wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes",
+          "wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins"
+        },
+        missile_infantry = {
+          "wh3_main_tze_inf_pink_horrors_1",
+          "wh3_main_tze_inf_pink_horrors_0",
+          "wh3_main_nur_mon_soul_grinder_0",
+          "wh3_main_tze_mon_soul_grinder_0"
+        },
+        monster = {
+          "wh3_main_nur_mon_beast_of_nurgle_0",
+          "wh3_main_kho_mon_bloodthirster_0",
+          "wh_dlc06_chs_feral_manticore",
+          "wh_main_chs_mon_giant",
+          "wh3_dlc20_chs_mon_warshrine",
+          "wh3_dlc20_chs_mon_warshrine_mkho",
+          "wh3_dlc20_chs_mon_warshrine_mnur",
+          "wh3_dlc20_chs_mon_warshrine_msla",
+          "wh3_dlc20_chs_mon_warshrine_mtze",
+          "wh3_dlc27_nor_mon_chimera",
+          "wh3_dlc24_tze_mon_cockatrice",
+          "wh_dlc01_chs_mon_dragon_ogre_shaggoth",
+          "wh3_dlc27_nor_mon_dread_maw",
+          "wh3_dlc27_nor_mon_dread_maw_underground",
+          "wh3_main_nur_mon_great_unclean_one_0",
+          "wh3_main_sla_mon_keeper_of_secrets_0",
+          "wh3_main_tze_mon_lord_of_change_0",
+          "wh3_dlc24_tze_mon_mutalith_vortex_beast",
+          "wh3_main_kho_mon_soul_grinder_0",
+          "wh3_main_sla_mon_soul_grinder_0",
+          "wh3_dlc25_nur_mon_toad_dragon"
+        },
+        monstrous_cavalry = {
+          "wh3_main_tze_cav_doom_knights_0",
+          "wh3_main_nur_cav_plague_drones_0",
+          "wh3_main_kho_cav_skullcrushers_0"
+        },
+        monstrous_infantry = {
+          "wh3_dlc25_nur_mon_bile_trolls",
+          "wh3_dlc26_kho_mon_bloodbeast_of_khorne",
+          "wh3_dlc27_sla_mon_champions_of_slaanesh",
+          "wh3_dlc24_tze_mon_flamers_changebringers",
+          "wh3_main_dae_inf_chaos_furies_0",
+          "wh_main_chs_mon_chaos_spawn",
+          "wh_main_chs_mon_trolls",
+          "wh_dlc01_chs_mon_trolls_1",
+          "wh_dlc01_chs_mon_dragon_ogre",
+          "wh3_main_sla_mon_fiends_of_slaanesh_0",
+          "wh3_main_tze_mon_flamers_0",
+          "wh3_dlc25_nur_inf_plague_ogres",
+          "wh3_dlc25_nur_inf_plague_ogres_great_weapons",
+          "wh3_dlc26_kho_mon_slaughterbrute",
+          "wh3_main_kho_mon_spawn_of_khorne_0",
+          "wh3_main_nur_mon_spawn_of_nurgle_0_warriors",
+          "wh3_main_sla_mon_spawn_of_slaanesh_0",
+          "wh3_main_tze_mon_spawn_of_tzeentch_0"
+        },
+        war_beast = {
+          "wh_main_chs_mon_chaos_warhounds_0",
+          "wh_main_chs_mon_chaos_warhounds_1",
+          "wh3_main_kho_inf_flesh_hounds_of_khorne_0"
+        },
+        war_machine = {
+          "wh_main_chs_art_hellcannon"
+        }
+      }
+    },
+    wh_main_dwf_dwarfs = {
+      name = "Dwarfs",
+      culture = "wh_main_dwf_dwarfs",
+      military_groups = {
+        "wh_main_group_dwarfs"
+      },
+      unit_count = 39,
+      units = {
+        {
+          unit_key = "wh3_dlc25_dwf_inf_doomseekers",
+          land_unit_key = "wh3_dlc25_dwf_inf_doomseekers",
+          name = "Doomseekers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_dwarf_warrior_0",
+          land_unit_key = "wh_main_dwf_inf_dwarf_warrior_0",
+          name = "Dwarf Warriors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_dwarf_warrior_1",
+          land_unit_key = "wh_main_dwf_inf_dwarf_warrior_1",
+          name = "Dwarf Warriors (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh2_dlc10_dwf_inf_giant_slayers",
+          land_unit_key = "wh2_dlc10_dwf_inf_giant_slayers",
+          name = "Giant Slayers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_hammerers",
+          land_unit_key = "wh_main_dwf_inf_hammerers",
+          name = "Hammerers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_hammerers_grudge_reward",
+          land_unit_key = "wh3_dlc25_dwf_inf_hammerers_grudge_unit",
+          name = "Hammerers (Grudge Settlers)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_ironbreakers",
+          land_unit_key = "wh_main_dwf_inf_ironbreakers",
+          name = "Ironbreakers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_longbeards",
+          land_unit_key = "wh_main_dwf_inf_longbeards",
+          name = "Longbeards",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_longbeards_1_grudge_reward",
+          land_unit_key = "wh3_dlc25_dwf_inf_longbeards_1_grudge_unit",
+          name = "Longbeards (Great Weapons – Grudge Settlers)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_longbeards_1",
+          land_unit_key = "wh_main_dwf_inf_longbeards_1",
+          name = "Longbeards (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_miners_0",
+          land_unit_key = "wh_main_dwf_inf_miners_0",
+          name = "Miners",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_miners_1",
+          land_unit_key = "wh_main_dwf_inf_miners_1",
+          name = "Miners (Blasting Charges)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_slayers",
+          land_unit_key = "wh_main_dwf_inf_slayers",
+          name = "Slayers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_slayers_grudge_reward",
+          land_unit_key = "wh3_dlc25_dwf_inf_slayers_grudge_unit",
+          name = "Slayers (Grudge Settlers)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc06_dwf_inf_bugmans_rangers_0",
+          land_unit_key = "wh_dlc06_dwf_inf_bugmans_rangers_0",
+          name = "Bugman's Rangers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_irondrakes_0",
+          land_unit_key = "wh_main_dwf_inf_irondrakes_0",
+          name = "Irondrakes",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_irondrakes_0_grudge_reward",
+          land_unit_key = "wh3_dlc25_dwf_inf_irondrakes_0_grudge_unit",
+          name = "Irondrakes (Grudge Settlers)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_irondrakes_2",
+          land_unit_key = "wh_main_dwf_inf_irondrakes_2",
+          name = "Irondrakes (Trollhammer Torpedoes)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_quarrellers_0",
+          land_unit_key = "wh_main_dwf_inf_quarrellers_0",
+          name = "Quarrellers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_quarrellers_1_grudge_reward",
+          land_unit_key = "wh3_dlc25_dwf_inf_quarrellers_1_grudge_unit",
+          name = "Quarrellers (Great Weapons – Grudge Settlers)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_quarrellers_1",
+          land_unit_key = "wh_main_dwf_inf_quarrellers_1",
+          name = "Quarrellers (Great Weapons)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc06_dwf_inf_rangers_0",
+          land_unit_key = "wh_dlc06_dwf_inf_rangers_0",
+          name = "Rangers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc06_dwf_inf_rangers_1",
+          land_unit_key = "wh_dlc06_dwf_inf_rangers_1",
+          name = "Rangers (Great Weapons)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_dwf_inf_slayer_pirates",
+          land_unit_key = "wh3_dlc25_dwf_inf_slayer_pirates",
+          name = "Slayer Pirates",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_dwf_inf_thunderers_0",
+          land_unit_key = "wh_main_dwf_inf_thunderers_0",
+          name = "Thunderers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_dwf_inf_thunderers_grudge_rakers",
+          land_unit_key = "wh3_dlc25_dwf_inf_thunderers_grudge_rakers",
+          name = "Thunderers (Grudge-Rakers)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc06_dwf_art_bolt_thrower_0",
+          land_unit_key = "wh_dlc06_dwf_art_bolt_thrower_0",
+          name = "Bolt Throwers",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_dwf_art_cannon",
+          land_unit_key = "wh_main_dwf_art_cannon",
+          name = "Cannons",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_dwf_art_flame_cannon",
+          land_unit_key = "wh_main_dwf_art_flame_cannon",
+          name = "Flame Cannons",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_dwf_art_flame_cannon_grudge_reward",
+          land_unit_key = "wh3_dlc25_dwf_art_flame_cannon_grudge_unit",
+          name = "Flame Cannons (Grudge Settlers)",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_dlc25_dwf_art_goblin_hewer",
+          land_unit_key = "wh3_dlc25_dwf_art_goblin_hewer",
+          name = "Goblin Hewers",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_dwf_art_grudge_thrower",
+          land_unit_key = "wh_main_dwf_art_grudge_thrower",
+          name = "Grudge Throwers",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_dlc25_dwf_art_grudge_thrower_grudge_reward",
+          land_unit_key = "wh3_dlc25_dwf_art_grudge_thrower_grudge_unit",
+          name = "Grudge Throwers (Grudge Settlers)",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_dwf_veh_gyrobomber",
+          land_unit_key = "wh_main_dwf_veh_gyrobomber",
+          name = "Gyrobombers",
+          category = "war_machine",
+          category_raw = "inf_ranged",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_dwf_veh_gyrocopter_0",
+          land_unit_key = "wh_main_dwf_veh_gyrocopter_0",
+          name = "Gyrocopters",
+          category = "war_machine",
+          category_raw = "inf_ranged",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_dwf_veh_gyrocopter_1",
+          land_unit_key = "wh_main_dwf_veh_gyrocopter_1",
+          name = "Gyrocopters (Brimstone Guns)",
+          category = "war_machine",
+          category_raw = "inf_ranged",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_dwf_veh_gyrocopter_1_grudge_reward",
+          land_unit_key = "wh3_dlc25_dwf_veh_gyrocopter_1_grudge_unit",
+          name = "Gyrocopters (Trollhammers – Grudge Settlers)",
+          category = "war_machine",
+          category_raw = "inf_ranged",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_dwf_art_organ_gun",
+          land_unit_key = "wh_main_dwf_art_organ_gun",
+          name = "Organ Guns",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_dlc25_dwf_veh_thunderbarge",
+          land_unit_key = "wh3_dlc25_dwf_veh_thunderbarge",
+          name = "Thunderbarge",
+          category = "war_machine",
+          category_raw = "war_beast",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        melee_infantry = {
+          "wh3_dlc25_dwf_inf_doomseekers",
+          "wh_main_dwf_inf_dwarf_warrior_0",
+          "wh_main_dwf_inf_dwarf_warrior_1",
+          "wh2_dlc10_dwf_inf_giant_slayers",
+          "wh_main_dwf_inf_hammerers",
+          "wh_main_dwf_inf_hammerers_grudge_reward",
+          "wh_main_dwf_inf_ironbreakers",
+          "wh_main_dwf_inf_longbeards",
+          "wh_main_dwf_inf_longbeards_1_grudge_reward",
+          "wh_main_dwf_inf_longbeards_1",
+          "wh_main_dwf_inf_miners_0",
+          "wh_main_dwf_inf_miners_1",
+          "wh_main_dwf_inf_slayers",
+          "wh_main_dwf_inf_slayers_grudge_reward"
+        },
+        missile_infantry = {
+          "wh_dlc06_dwf_inf_bugmans_rangers_0",
+          "wh_main_dwf_inf_irondrakes_0",
+          "wh_main_dwf_inf_irondrakes_0_grudge_reward",
+          "wh_main_dwf_inf_irondrakes_2",
+          "wh_main_dwf_inf_quarrellers_0",
+          "wh_main_dwf_inf_quarrellers_1_grudge_reward",
+          "wh_main_dwf_inf_quarrellers_1",
+          "wh_dlc06_dwf_inf_rangers_0",
+          "wh_dlc06_dwf_inf_rangers_1",
+          "wh3_dlc25_dwf_inf_slayer_pirates",
+          "wh_main_dwf_inf_thunderers_0",
+          "wh3_dlc25_dwf_inf_thunderers_grudge_rakers"
+        },
+        war_machine = {
+          "wh_dlc06_dwf_art_bolt_thrower_0",
+          "wh_main_dwf_art_cannon",
+          "wh_main_dwf_art_flame_cannon",
+          "wh_main_dwf_art_flame_cannon_grudge_reward",
+          "wh3_dlc25_dwf_art_goblin_hewer",
+          "wh_main_dwf_art_grudge_thrower",
+          "wh3_dlc25_dwf_art_grudge_thrower_grudge_reward",
+          "wh_main_dwf_veh_gyrobomber",
+          "wh_main_dwf_veh_gyrocopter_0",
+          "wh_main_dwf_veh_gyrocopter_1",
+          "wh_main_dwf_veh_gyrocopter_1_grudge_reward",
+          "wh_main_dwf_art_organ_gun",
+          "wh3_dlc25_dwf_veh_thunderbarge"
+        }
+      }
+    },
+    wh_main_emp_empire = {
+      name = "The Empire",
+      culture = "wh_main_emp_empire",
+      military_groups = {
+        "wh3_dlc25_group_elspeth",
+        "wh_main_group_empire_golden_order",
+        "wh_main_group_empire_reikland",
+        "wh_main_group_teb"
+      },
+      unit_count = 37,
+      units = {
+        {
+          unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship_morr",
+          land_unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship_morr",
+          name = "Amethyst Land Ship",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship",
+          land_unit_key = "wh3_dlc25_emp_veh_marienburg_land_ship",
+          name = "Land Ship",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_main_emp_veh_luminark_of_hysh_0",
+          land_unit_key = "wh_main_emp_veh_luminark_of_hysh_0",
+          name = "Luminark of Hysh",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_main_emp_veh_steam_tank",
+          land_unit_key = "wh_main_emp_veh_steam_tank_driver",
+          name = "Steam Tank",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc25_emp_veh_steam_tank_volley_gun",
+          land_unit_key = "wh3_dlc25_emp_veh_steam_tank_volley_gun",
+          name = "Steam Tank (Volley Gun)",
+          category = "artillery",
+          category_raw = "artillery",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc25_emp_cav_outriders_morr",
+          land_unit_key = "wh3_dlc25_emp_cav_outriders_morr",
+          name = "Amethyst Outriders",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_emp_cav_empire_knights",
+          land_unit_key = "wh_main_emp_cav_empire_knights",
+          name = "Empire Knights",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
+          land_unit_key = "wh3_dlc25_emp_cav_knights_of_the_black_rose",
+          name = "Knights of the Black Rose",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_dlc04_emp_cav_knights_blazing_sun_0",
+          land_unit_key = "wh_dlc04_emp_cav_knights_blazing_sun_0",
+          name = "Knights of the Blazing Sun",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_emp_cav_reiksguard",
+          land_unit_key = "wh_main_emp_cav_reiksguard",
+          name = "Reiksguard",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_dlc04_emp_inf_flagellants_0",
+          land_unit_key = "wh_dlc04_emp_inf_flagellants_0",
+          name = "Flagellants",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_emp_inf_greatswords",
+          land_unit_key = "wh_main_emp_inf_greatswords",
+          name = "Greatswords",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_emp_inf_halberdiers",
+          land_unit_key = "wh_main_emp_inf_halberdiers",
+          name = "Halberdiers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_emp_inf_spearmen_0",
+          land_unit_key = "wh_main_emp_inf_spearmen_0",
+          name = "Spearmen",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_emp_inf_spearmen_1",
+          land_unit_key = "wh_main_emp_inf_spearmen_1",
+          name = "Spearmen (Shields)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_emp_inf_swordsmen",
+          land_unit_key = "wh_main_emp_inf_swordsmen",
+          name = "Swordsmen",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_emp_cav_outriders_0",
+          land_unit_key = "wh_main_emp_cav_outriders_0",
+          name = "Outriders",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_main_emp_cav_outriders_1",
+          land_unit_key = "wh_main_emp_cav_outriders_1",
+          name = "Outriders (Grenade Launchers)",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_main_emp_cav_pistoliers_1",
+          land_unit_key = "wh_main_emp_cav_pistoliers_1",
+          name = "Pistoliers",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc13_emp_veh_war_wagon_0",
+          land_unit_key = "wh2_dlc13_emp_veh_war_wagon_0",
+          name = "War Wagons",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc13_emp_veh_war_wagon_1",
+          land_unit_key = "wh2_dlc13_emp_veh_war_wagon_1",
+          name = "War Wagons (Mortars)",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh3_dlc25_emp_inf_nuln_ironsides_morr",
+          land_unit_key = "wh3_dlc25_emp_inf_nuln_ironsides_morr",
+          name = "Amethyst Ironsides",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc13_emp_inf_archers_0",
+          land_unit_key = "wh2_dlc13_emp_inf_archers_0",
+          name = "Archers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_emp_inf_crossbowmen",
+          land_unit_key = "wh_main_emp_inf_crossbowmen",
+          name = "Crossbowmen",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_dlc04_emp_inf_free_company_militia_0",
+          land_unit_key = "wh_dlc04_emp_inf_free_company_militia_0",
+          name = "Free Company Militia",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_emp_inf_handgunners",
+          land_unit_key = "wh_main_emp_inf_handgunners",
+          name = "Handgunners",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
+          land_unit_key = "wh3_dlc25_emp_inf_hochland_long_rifles",
+          name = "Hochland Long Rifles",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh2_dlc13_emp_inf_huntsmen_0",
+          land_unit_key = "wh2_dlc13_emp_inf_huntsmen_0",
+          name = "Huntsmen",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
+          land_unit_key = "wh3_dlc25_emp_inf_nuln_ironsides",
+          name = "Nuln Ironsides",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_emp_cav_demigryph_knights_0",
+          land_unit_key = "wh_main_emp_cav_demigryph_knights_0",
+          name = "Demigryph Knights",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh_main_emp_cav_demigryph_knights_1",
+          land_unit_key = "wh_main_emp_cav_demigryph_knights_1",
+          name = "Demigryph Knights (Halberds)",
+          category = "monstrous_cavalry",
+          category_raw = "cavalry",
+          caste = "monstrous_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc25_emp_art_helstorm_rocket_battery_morr",
+          land_unit_key = "wh3_dlc25_emp_art_helstorm_rocket_battery_morr",
+          name = "Amethyst Helstorm Rocket Battery",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_emp_art_great_cannon",
+          land_unit_key = "wh_main_emp_art_great_cannon",
+          name = "Great Cannons",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_emp_art_helblaster_volley_gun",
+          land_unit_key = "wh_main_emp_art_helblaster_volley_gun",
+          name = "Helblaster Volley Guns",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_emp_art_helstorm_rocket_battery",
+          land_unit_key = "wh_main_emp_art_helstorm_rocket_battery",
+          name = "Helstorm Rocket Battery",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_emp_art_mortar",
+          land_unit_key = "wh_main_emp_art_mortar",
+          name = "Mortars",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0",
+          land_unit_key = "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0",
+          name = "Obsinite Gyrocopters",
+          category = "war_machine",
+          category_raw = "inf_ranged",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        artillery = {
+          "wh3_dlc25_emp_veh_marienburg_land_ship_morr",
+          "wh3_dlc25_emp_veh_marienburg_land_ship",
+          "wh_main_emp_veh_luminark_of_hysh_0",
+          "wh_main_emp_veh_steam_tank",
+          "wh3_dlc25_emp_veh_steam_tank_volley_gun"
+        },
+        melee_cavalry = {
+          "wh3_dlc25_emp_cav_outriders_morr",
+          "wh_main_emp_cav_empire_knights",
+          "wh3_dlc25_emp_cav_knights_of_the_black_rose",
+          "wh_dlc04_emp_cav_knights_blazing_sun_0",
+          "wh_main_emp_cav_reiksguard"
+        },
+        melee_infantry = {
+          "wh_dlc04_emp_inf_flagellants_0",
+          "wh_main_emp_inf_greatswords",
+          "wh_main_emp_inf_halberdiers",
+          "wh_main_emp_inf_spearmen_0",
+          "wh_main_emp_inf_spearmen_1",
+          "wh_main_emp_inf_swordsmen"
+        },
+        missile_cavalry = {
+          "wh_main_emp_cav_outriders_0",
+          "wh_main_emp_cav_outriders_1",
+          "wh_main_emp_cav_pistoliers_1"
+        },
+        missile_chariot = {
+          "wh2_dlc13_emp_veh_war_wagon_0",
+          "wh2_dlc13_emp_veh_war_wagon_1"
+        },
+        missile_infantry = {
+          "wh3_dlc25_emp_inf_nuln_ironsides_morr",
+          "wh2_dlc13_emp_inf_archers_0",
+          "wh_main_emp_inf_crossbowmen",
+          "wh_dlc04_emp_inf_free_company_militia_0",
+          "wh_main_emp_inf_handgunners",
+          "wh3_dlc25_emp_inf_hochland_long_rifles",
+          "wh2_dlc13_emp_inf_huntsmen_0",
+          "wh3_dlc25_emp_inf_nuln_ironsides"
+        },
+        monstrous_cavalry = {
+          "wh_main_emp_cav_demigryph_knights_0",
+          "wh_main_emp_cav_demigryph_knights_1"
+        },
+        war_machine = {
+          "wh3_dlc25_emp_art_helstorm_rocket_battery_morr",
+          "wh_main_emp_art_great_cannon",
+          "wh_main_emp_art_helblaster_volley_gun",
+          "wh_main_emp_art_helstorm_rocket_battery",
+          "wh_main_emp_art_mortar",
+          "wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0"
+        }
+      }
+    },
+    wh_main_grn_greenskins = {
+      name = "Greenskins",
+      culture = "wh_main_grn_greenskins",
+      military_groups = {
+        "wh2_dlc12_grn_leaf_cutterz_tribe",
+        "wh3_dlc24_group_labourer_rebels",
+        "wh3_dlc25_rogue_da_mad_howlerz",
+        "wh_main_group_greenskins",
+        "wh_main_group_savage_orcs"
+      },
+      unit_count = 59,
+      units = {
+        {
+          unit_key = "wh_main_grn_cav_orc_boar_chariot",
+          land_unit_key = "wh_main_grn_cav_orc_boar_chariot",
+          name = "Orc Boar Chariots",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_0",
+          land_unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_0",
+          name = "Snotling Pump Wagons",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_flappas_0",
+          land_unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_flappas_0",
+          name = "Snotling Pump Wagons (Flappas)",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_roller_0",
+          land_unit_key = "wh2_dlc15_grn_veh_snotling_pump_wagon_roller_0",
+          name = "Snotling Pump Wagons (Spiky Rollers)",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh2_dlc15_grn_cav_squig_hoppers_waaagh_0",
+          land_unit_key = "wh2_dlc15_grn_cav_squig_hoppers_waaagh_0",
+          name = "Armoured Squig Hoppers",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_0",
+          land_unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_0",
+          name = "Forest Goblin Spider Riders",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_grn_cav_goblin_wolf_riders_0",
+          land_unit_key = "wh_main_grn_cav_goblin_wolf_riders_0",
+          name = "Goblin Wolf Riders",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows",
+          land_unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows",
+          name = "Hobgoblin Wolf Raiders (Bows)",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears",
+          land_unit_key = "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears",
+          name = "Hobgoblin Wolf Raiders (Spears)",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_dlc06_grn_cav_squig_hoppers_0",
+          land_unit_key = "wh_dlc06_grn_cav_squig_hoppers_0",
+          name = "Night Goblin Squig Hoppers",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_grn_cav_orc_boar_boy_big_uns",
+          land_unit_key = "wh_main_grn_cav_orc_boar_boy_big_uns",
+          name = "Orc Boar Boy Big 'Uns",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_grn_cav_orc_boar_boyz",
+          land_unit_key = "wh_main_grn_cav_orc_boar_boyz",
+          name = "Orc Boar Boyz",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
+          land_unit_key = "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
+          name = "Savage Orc Boar Boy Big 'Uns",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_grn_cav_savage_orc_boar_boyz",
+          land_unit_key = "wh_main_grn_cav_savage_orc_boar_boyz",
+          name = "Savage Orc Boar Boyz",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_dlc26_grn_inf_black_orcs_shield",
+          land_unit_key = "wh3_dlc26_grn_inf_black_orcs_shield",
+          name = "Black Orcs",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_black_orcs",
+          land_unit_key = "wh_main_grn_inf_black_orcs",
+          name = "Black Orcs (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_goblin_labourers",
+          land_unit_key = "wh3_dlc23_chd_inf_goblin_labourers",
+          name = "Goblin Labourers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_grn_inf_goblins_sword_shield",
+          land_unit_key = "wh3_main_grn_inf_goblins_sword_shield",
+          name = "Goblins",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_goblin_spearmen",
+          land_unit_key = "wh_main_grn_inf_goblin_spearmen",
+          name = "Goblins (Spears)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_hobgoblin_cutthroats",
+          land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_cutthroats",
+          name = "Hobgoblin Cutthroats",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_hobgoblin_sneaky_gits",
+          land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_sneaky_gits",
+          name = "Hobgoblin Sneaky Gits",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_dlc06_grn_inf_nasty_skulkers_0",
+          land_unit_key = "wh_dlc06_grn_inf_nasty_skulkers_0",
+          name = "Nasty Skulkers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_night_goblins",
+          land_unit_key = "wh_main_grn_inf_night_goblins",
+          name = "Night Goblins",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_night_goblin_fanatics",
+          land_unit_key = "wh_main_grn_inf_night_goblin_fanatics",
+          name = "Night Goblins (Fanatics)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_orc_big_uns",
+          land_unit_key = "wh_main_grn_inf_orc_big_uns",
+          name = "Orc Big 'Uns",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_orc_boyz",
+          land_unit_key = "wh_main_grn_inf_orc_boyz",
+          name = "Orc Boyz",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_grn_inf_orc_boyz_spear_shield",
+          land_unit_key = "wh3_main_grn_inf_orc_boyz_spear_shield",
+          name = "Orc Boyz (Spears)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_orc_labourers",
+          land_unit_key = "wh3_dlc23_chd_inf_orc_labourers",
+          name = "Orc Labourers",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_savage_orc_big_uns",
+          land_unit_key = "wh_main_grn_inf_savage_orc_big_uns",
+          name = "Savage Orc Big 'Uns",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_savage_orcs",
+          land_unit_key = "wh_main_grn_inf_savage_orcs",
+          name = "Savage Orcs",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_1",
+          land_unit_key = "wh_main_grn_cav_forest_goblin_spider_riders_1",
+          name = "Forest Goblin Spider Rider Archers",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_main_grn_cav_goblin_wolf_riders_1",
+          land_unit_key = "wh_main_grn_cav_goblin_wolf_riders_1",
+          name = "Goblin Wolf Rider Archers",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh2_dlc15_grn_cav_forest_goblin_spider_riders_waaagh_0",
+          land_unit_key = "wh2_dlc15_grn_cav_forest_goblin_spider_riders_waaagh_0",
+          name = "Lava Spider Rider Archers",
+          category = "missile_cavalry",
+          category_raw = "cavalry",
+          caste = "missile_cavalry"
+        },
+        {
+          unit_key = "wh_main_grn_cav_goblin_wolf_chariot",
+          land_unit_key = "wh_main_grn_cav_goblin_wolf_chariot",
+          name = "Goblin Wolf Chariots",
+          category = "missile_chariot",
+          category_raw = "skirmish",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_main_grn_inf_goblin_archers",
+          land_unit_key = "wh_main_grn_inf_goblin_archers",
+          name = "Goblin Archers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh3_dlc23_chd_inf_hobgoblin_archers",
+          land_unit_key = "wh3_dlc23_chd_inf_hobgoblin_archers",
+          name = "Hobgoblin Archers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_night_goblin_archers",
+          land_unit_key = "wh_main_grn_inf_night_goblin_archers",
+          name = "Night Goblin Archers",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_night_goblin_fanatics_1",
+          land_unit_key = "wh_main_grn_inf_night_goblin_fanatics_1",
+          name = "Night Goblin Archers (Fanatics)",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_orc_arrer_boyz",
+          land_unit_key = "wh_main_grn_inf_orc_arrer_boyz",
+          name = "Orc Arrer Boyz",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_inf_savage_orc_arrer_boyz",
+          land_unit_key = "wh_main_grn_inf_savage_orc_arrer_boyz",
+          name = "Savage Orc Arrer Boyz",
+          category = "missile_infantry",
+          category_raw = "inf_ranged",
+          caste = "missile_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_mon_arachnarok_spider_0",
+          land_unit_key = "wh_main_grn_mon_arachnarok_spider_0",
+          name = "Arachnarok Spider",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc26_grn_mon_arachnarok_spider_flinger",
+          land_unit_key = "wh3_dlc26_grn_mon_arachnarok_spider_flinger",
+          name = "Arachnarok Spider (Flinger)",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc26_grn_mon_colossal_squig",
+          land_unit_key = "wh3_dlc26_grn_mon_colossal_squig",
+          name = "Colossal Squig",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc15_grn_mon_feral_hydra_waaagh_0",
+          land_unit_key = "wh2_dlc15_grn_mon_feral_hydra_waaagh_0",
+          name = "Feral Hydra",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc15_grn_mon_wyvern_waaagh_0",
+          land_unit_key = "wh2_dlc15_grn_mon_wyvern_waaagh_0",
+          name = "Feral Wyvern",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_main_grn_mon_giant",
+          land_unit_key = "wh_main_grn_mon_giant",
+          name = "Giant",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_dlc15_grn_mon_arachnarok_spider_waaagh_0",
+          land_unit_key = "wh2_dlc15_grn_mon_arachnarok_spider_waaagh_0",
+          name = "Lava Arachnarok Spider",
+          category = "monster",
+          category_raw = "war_beast",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh3_dlc26_grn_cav_mangler_squig",
+          land_unit_key = "wh3_dlc26_grn_cav_mangler_squig",
+          name = "Mangler Squigs",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc15_grn_mon_rogue_idol_0",
+          land_unit_key = "wh2_dlc15_grn_mon_rogue_idol_0",
+          name = "Rogue Idol",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh2_dlc15_grn_mon_river_trolls_0",
+          land_unit_key = "wh2_dlc15_grn_mon_river_trolls_0",
+          name = "River Trolls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc15_grn_mon_stone_trolls_0",
+          land_unit_key = "wh2_dlc15_grn_mon_stone_trolls_0",
+          name = "Stone Trolls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_main_grn_mon_trolls",
+          land_unit_key = "wh_main_grn_mon_trolls",
+          name = "Trolls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_dlc06_grn_inf_squig_explosive_0",
+          land_unit_key = "wh_dlc06_grn_inf_squig_explosive_0",
+          name = "Soopa-Squig!",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh2_dlc16_wef_mon_spider_hatchlings_0",
+          land_unit_key = "wh2_dlc16_wef_mon_spider_hatchlings_0",
+          name = "Spider Hatchlings",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh_dlc06_grn_mon_spider_hatchlings_0",
+          land_unit_key = "wh_dlc06_grn_mon_spider_hatchlings_0",
+          name = "Spider Hatchlings",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh_dlc06_grn_inf_squig_herd_0",
+          land_unit_key = "wh_dlc06_grn_inf_squig_herd_0",
+          name = "Squig Herd",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh_main_grn_art_doom_diver_catapult",
+          land_unit_key = "wh_main_grn_art_doom_diver_catapult",
+          name = "Doom Diver Catapults",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh3_dlc26_grn_art_bolt_throwa",
+          land_unit_key = "wh3_dlc26_grn_art_bolt_throwa",
+          name = "Goblin Bolt Throwa",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        },
+        {
+          unit_key = "wh_main_grn_art_goblin_rock_lobber",
+          land_unit_key = "wh_main_grn_art_goblin_rock_lobber",
+          name = "Goblin Rock Lobbers",
+          category = "war_machine",
+          category_raw = "artillery",
+          caste = "warmachine"
+        }
+      },
+      units_by_category = {
+        chariot = {
+          "wh_main_grn_cav_orc_boar_chariot",
+          "wh2_dlc15_grn_veh_snotling_pump_wagon_0",
+          "wh2_dlc15_grn_veh_snotling_pump_wagon_flappas_0",
+          "wh2_dlc15_grn_veh_snotling_pump_wagon_roller_0"
+        },
+        melee_cavalry = {
+          "wh2_dlc15_grn_cav_squig_hoppers_waaagh_0",
+          "wh_main_grn_cav_forest_goblin_spider_riders_0",
+          "wh_main_grn_cav_goblin_wolf_riders_0",
+          "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows",
+          "wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears",
+          "wh_dlc06_grn_cav_squig_hoppers_0",
+          "wh_main_grn_cav_orc_boar_boy_big_uns",
+          "wh_main_grn_cav_orc_boar_boyz",
+          "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
+          "wh_main_grn_cav_savage_orc_boar_boyz"
+        },
+        melee_infantry = {
+          "wh3_dlc26_grn_inf_black_orcs_shield",
+          "wh_main_grn_inf_black_orcs",
+          "wh3_dlc23_chd_inf_goblin_labourers",
+          "wh3_main_grn_inf_goblins_sword_shield",
+          "wh_main_grn_inf_goblin_spearmen",
+          "wh3_dlc23_chd_inf_hobgoblin_cutthroats",
+          "wh3_dlc23_chd_inf_hobgoblin_sneaky_gits",
+          "wh_dlc06_grn_inf_nasty_skulkers_0",
+          "wh_main_grn_inf_night_goblins",
+          "wh_main_grn_inf_night_goblin_fanatics",
+          "wh_main_grn_inf_orc_big_uns",
+          "wh_main_grn_inf_orc_boyz",
+          "wh3_main_grn_inf_orc_boyz_spear_shield",
+          "wh3_dlc23_chd_inf_orc_labourers",
+          "wh_main_grn_inf_savage_orc_big_uns",
+          "wh_main_grn_inf_savage_orcs"
+        },
+        missile_cavalry = {
+          "wh_main_grn_cav_forest_goblin_spider_riders_1",
+          "wh_main_grn_cav_goblin_wolf_riders_1",
+          "wh2_dlc15_grn_cav_forest_goblin_spider_riders_waaagh_0"
+        },
+        missile_chariot = {
+          "wh_main_grn_cav_goblin_wolf_chariot"
+        },
+        missile_infantry = {
+          "wh_main_grn_inf_goblin_archers",
+          "wh3_dlc23_chd_inf_hobgoblin_archers",
+          "wh_main_grn_inf_night_goblin_archers",
+          "wh_main_grn_inf_night_goblin_fanatics_1",
+          "wh_main_grn_inf_orc_arrer_boyz",
+          "wh_main_grn_inf_savage_orc_arrer_boyz"
+        },
+        monster = {
+          "wh_main_grn_mon_arachnarok_spider_0",
+          "wh3_dlc26_grn_mon_arachnarok_spider_flinger",
+          "wh3_dlc26_grn_mon_colossal_squig",
+          "wh2_dlc15_grn_mon_feral_hydra_waaagh_0",
+          "wh2_dlc15_grn_mon_wyvern_waaagh_0",
+          "wh_main_grn_mon_giant",
+          "wh_dlc15_grn_mon_arachnarok_spider_waaagh_0",
+          "wh3_dlc26_grn_cav_mangler_squig",
+          "wh2_dlc15_grn_mon_rogue_idol_0"
+        },
+        monstrous_infantry = {
+          "wh2_dlc15_grn_mon_river_trolls_0",
+          "wh2_dlc15_grn_mon_stone_trolls_0",
+          "wh_main_grn_mon_trolls"
+        },
+        war_beast = {
+          "wh_dlc06_grn_inf_squig_explosive_0",
+          "wh2_dlc16_wef_mon_spider_hatchlings_0",
+          "wh_dlc06_grn_mon_spider_hatchlings_0",
+          "wh_dlc06_grn_inf_squig_herd_0"
+        },
+        war_machine = {
+          "wh_main_grn_art_doom_diver_catapult",
+          "wh3_dlc26_grn_art_bolt_throwa",
+          "wh_main_grn_art_goblin_rock_lobber"
+        }
+      }
+    },
+    wh_main_vmp_vampire_counts = {
+      name = "Vampire Counts",
+      culture = "wh_main_vmp_vampire_counts",
+      military_groups = {
+        "wh_main_group_vampire_counts"
+      },
+      unit_count = 25,
+      units = {
+        {
+          unit_key = "wh_main_vmp_veh_black_coach",
+          land_unit_key = "wh_main_vmp_veh_black_coach",
+          name = "Black Coach",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_dlc04_vmp_veh_corpse_cart_0",
+          land_unit_key = "wh_dlc04_vmp_veh_corpse_cart_0",
+          name = "Corpse Cart",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_dlc04_vmp_veh_corpse_cart_1",
+          land_unit_key = "wh_dlc04_vmp_veh_corpse_cart_1",
+          name = "Corpse Cart (Balefire)",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_dlc04_vmp_veh_corpse_cart_2",
+          land_unit_key = "wh_dlc04_vmp_veh_corpse_cart_2",
+          name = "Corpse Cart (Unholy Lodestone)",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_dlc04_vmp_veh_mortis_engine_0",
+          land_unit_key = "wh_dlc04_vmp_veh_mortis_engine_0",
+          name = "Mortis Engine",
+          category = "chariot",
+          category_raw = "melee",
+          caste = "chariot"
+        },
+        {
+          unit_key = "wh_main_vmp_cav_black_knights_0",
+          land_unit_key = "wh_main_vmp_cav_black_knights_0",
+          name = "Black Knights",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_vmp_cav_black_knights_3",
+          land_unit_key = "wh_main_vmp_cav_black_knights_3",
+          name = "Black Knights (Lances & Barding)",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh3_main_vmp_blood_knights_sword_shield",
+          land_unit_key = "wh3_main_vmp_blood_knights_sword_shield",
+          name = "Blood Knights",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_dlc02_vmp_cav_blood_knights_0",
+          land_unit_key = "wh_dlc02_vmp_cav_blood_knights_0",
+          name = "Blood Knights (Lances)",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_vmp_cav_hexwraiths",
+          land_unit_key = "wh_main_vmp_cav_hexwraiths",
+          name = "Hexwraiths",
+          category = "melee_cavalry",
+          category_raw = "cavalry",
+          caste = "melee_cavalry"
+        },
+        {
+          unit_key = "wh_main_vmp_inf_cairn_wraiths",
+          land_unit_key = "wh_main_vmp_inf_cairn_wraiths",
+          name = "Cairn Wraiths",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_vmp_inf_crypt_ghouls",
+          land_unit_key = "wh_main_vmp_inf_crypt_ghouls",
+          name = "Crypt Ghouls",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_vmp_inf_grave_guard_0",
+          land_unit_key = "wh_main_vmp_inf_grave_guard_0",
+          name = "Grave Guard",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_vmp_inf_grave_guard_1",
+          land_unit_key = "wh_main_vmp_inf_grave_guard_1",
+          name = "Grave Guard (Great Weapons)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh3_main_vmp_inf_grave_guard_2",
+          land_unit_key = "wh3_main_vmp_inf_grave_guard_2",
+          name = "Grave Guard (Halberds)",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_vmp_inf_skeleton_warriors_1",
+          land_unit_key = "wh_main_vmp_inf_skeleton_warriors_1",
+          name = "Skeleton Spearmen",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_vmp_inf_skeleton_warriors_0",
+          land_unit_key = "wh_main_vmp_inf_skeleton_warriors_0",
+          name = "Skeleton Warriors",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_vmp_inf_zombie",
+          land_unit_key = "wh_main_vmp_inf_zombie",
+          name = "Zombies",
+          category = "melee_infantry",
+          category_raw = "inf_melee",
+          caste = "melee_infantry"
+        },
+        {
+          unit_key = "wh_main_vmp_mon_terrorgheist",
+          land_unit_key = "wh_main_vmp_mon_terrorgheist",
+          name = "Terrorgheist",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_main_vmp_mon_varghulf",
+          land_unit_key = "wh_main_vmp_mon_varghulf",
+          name = "Varghulf",
+          category = "monster",
+          category_raw = "inf_melee",
+          caste = "monster"
+        },
+        {
+          unit_key = "wh_main_vmp_mon_crypt_horrors",
+          land_unit_key = "wh_main_vmp_mon_crypt_horrors",
+          name = "Crypt Horrors",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_mon_mournguls_0",
+          land_unit_key = "wh2_dlc11_cst_mon_mournguls_0",
+          name = "Mournguls",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_main_vmp_mon_vargheists",
+          land_unit_key = "wh_main_vmp_mon_vargheists",
+          name = "Vargheists",
+          category = "monstrous_infantry",
+          category_raw = "inf_melee",
+          caste = "monstrous_infantry"
+        },
+        {
+          unit_key = "wh_main_vmp_mon_dire_wolves",
+          land_unit_key = "wh_main_vmp_mon_dire_wolves",
+          name = "Dire Wolves",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        },
+        {
+          unit_key = "wh_main_vmp_mon_fell_bats",
+          land_unit_key = "wh_main_vmp_mon_fell_bats",
+          name = "Fell Bats",
+          category = "war_beast",
+          category_raw = "inf_melee",
+          caste = "war_beast"
+        }
+      },
+      units_by_category = {
+        chariot = {
+          "wh_main_vmp_veh_black_coach",
+          "wh_dlc04_vmp_veh_corpse_cart_0",
+          "wh_dlc04_vmp_veh_corpse_cart_1",
+          "wh_dlc04_vmp_veh_corpse_cart_2",
+          "wh_dlc04_vmp_veh_mortis_engine_0"
+        },
+        melee_cavalry = {
+          "wh_main_vmp_cav_black_knights_0",
+          "wh_main_vmp_cav_black_knights_3",
+          "wh3_main_vmp_blood_knights_sword_shield",
+          "wh_dlc02_vmp_cav_blood_knights_0",
+          "wh_main_vmp_cav_hexwraiths"
+        },
+        melee_infantry = {
+          "wh_main_vmp_inf_cairn_wraiths",
+          "wh_main_vmp_inf_crypt_ghouls",
+          "wh_main_vmp_inf_grave_guard_0",
+          "wh_main_vmp_inf_grave_guard_1",
+          "wh3_main_vmp_inf_grave_guard_2",
+          "wh_main_vmp_inf_skeleton_warriors_1",
+          "wh_main_vmp_inf_skeleton_warriors_0",
+          "wh_main_vmp_inf_zombie"
+        },
+        monster = {
+          "wh_main_vmp_mon_terrorgheist",
+          "wh_main_vmp_mon_varghulf"
+        },
+        monstrous_infantry = {
+          "wh_main_vmp_mon_crypt_horrors",
+          "wh2_dlc11_cst_mon_mournguls_0",
+          "wh_main_vmp_mon_vargheists"
+        },
+        war_beast = {
+          "wh_main_vmp_mon_dire_wolves",
+          "wh_main_vmp_mon_fell_bats"
+        }
+      }
+    }
+  }
+}
