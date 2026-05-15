@@ -188,6 +188,37 @@ def main() -> int:
         if row.get("key")
     }
 
+    unique_agent_subtypes = {
+        row["agent_subtype"]
+        for row in read_tsv(DB_DIR / "unique_agents_tables" / "data__.tsv")
+        if row.get("agent_subtype")
+    }
+
+    valid_runtime_character_units: set[str] = set()
+    for row in read_tsv(DB_DIR / "agent_subtypes_tables" / "data__.tsv"):
+        unit_key = row.get("associated_unit_override", "").strip()
+        if not unit_key:
+            continue
+
+        subtype_key = row.get("key", "").strip()
+        if subtype_key in unique_agent_subtypes:
+            continue
+
+        recruitment_category = row.get("recruitment_category", "").strip()
+        if recruitment_category in {"legendary_lords", "legendary_heroes"}:
+            continue
+
+        if row.get("auto_generate", "").strip().lower() != "true":
+            continue
+        if row.get("show_in_ui", "").strip().lower() != "true":
+            continue
+        if row.get("recruitable", "").strip().lower() != "true":
+            continue
+        if row.get("contributes_to_agent_cap", "").strip().lower() != "true":
+            continue
+
+        valid_runtime_character_units.add(unit_key)
+
     units_by_culture: dict[str, dict[str, UnitRecord]] = defaultdict(dict)
     military_groups_by_culture: dict[str, set[str]] = defaultdict(set)
 
@@ -209,6 +240,8 @@ def main() -> int:
 
         caste = main_unit.get("caste", "").strip()
         if not args.include_characters and caste in {"lord", "hero"}:
+            continue
+        if caste in {"lord", "hero"} and unit_key not in valid_runtime_character_units:
             continue
 
         is_naval = main_unit.get("is_naval", "").strip().lower() == "true"

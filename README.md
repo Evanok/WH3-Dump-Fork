@@ -22,6 +22,7 @@ Purpose:
 - groups recruitable units by race/culture
 - excludes Regiments of Renown
 - can include or exclude characters
+- when characters are included for runtime use, excludes legendary lords, legendary heroes, and unique named characters
 - writes JSON and Lua outputs
 
 Important outputs:
@@ -30,6 +31,8 @@ Important outputs:
 - [script/_lib/mod/army_template_unit_data.lua](/home/soundskrit/work/WH3-Dump/script/_lib/mod/army_template_unit_data.lua:1)
 
 The Lua dataset in `script/_lib/mod/` is the one intended to be `require()`-ed later by the mod.
+
+For runtime generation, this means the character pools are restricted to generic or safely repeatable lords and heroes, so spawning multiple armies does not create collisions with legendary or unique named characters.
 
 
 ### 2. Runtime Lua generator bridge
@@ -230,4 +233,3 @@ The direct `force_list` path is usually simpler.
 - add race-specific composition overrides
 - generate “themes” such as infantry-heavy, cavalry-heavy, monster-heavy, siege-heavy
 - add a CLI mode that outputs only `lord_key` and `force_list`
-
