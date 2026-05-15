@@ -177,7 +177,8 @@ def main() -> int:
         print("Category counts:", dict(sorted(counts.items())))
         print("Fallback/source breakdown:", army["source_breakdown"])
         print("Force list:")
-        print(army["force_list"])
+        for unit in army["units"]:
+            print(f"[{unit['category']}] {unit['unit_key']}")
         if index + 1 < args.count:
             print()
 
