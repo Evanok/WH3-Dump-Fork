@@ -3,13 +3,13 @@
 --
 --	Runtime Army Template Generator
 --
---	Consumes the generated army_template_units_with_characters.lua dataset and produces:
+--	Consumes the generated runtime roster dataset and produces:
 --	- a lord unit key (spawned separately)
 --	- a 19-unit force list for campaign spawning
 --	- an optional random_army_manager force containing the generated 19-unit stack
 --
 --	Expected input dataset shape:
---		local data = require("script._lib.mod.army_template_unit_data")
+--		local data = require("script._lib.mod.runtime_roster_unit_data")
 --
 
 runtime_army_template_generator = {
@@ -191,43 +191,59 @@ function runtime_army_template_generator:_build_generation_plan(composition)
 end;
 
 
-function runtime_army_template_generator:get_race_data(dataset, race_key)
-	if not dataset or not dataset.races then
-		script_error("runtime_army_template_generator:get_race_data() called without a valid dataset");
+function runtime_army_template_generator:get_roster_data_by_military_group(dataset, military_group_key)
+	if not dataset or not dataset.military_groups then
+		script_error("runtime_army_template_generator:get_roster_data_by_military_group() called without a valid dataset");
 		return false;
 	end;
 
-	local race_data = dataset.races[race_key];
-	if not race_data then
-		script_error("runtime_army_template_generator:get_race_data() could not find race [" .. tostring(race_key) .. "]");
+	local roster_data = dataset.military_groups[military_group_key];
+	if not roster_data then
+		script_error("runtime_army_template_generator:get_roster_data_by_military_group() could not find military group [" .. tostring(military_group_key) .. "]");
 		return false;
 	end;
 
-	return race_data;
+	return roster_data;
 end;
 
 
-function runtime_army_template_generator:generate_army(dataset, race_key, options)
+function runtime_army_template_generator:get_roster_data_by_faction(dataset, faction_key)
+	if not dataset or not dataset.factions then
+		script_error("runtime_army_template_generator:get_roster_data_by_faction() called without a valid dataset");
+		return false;
+	end;
+
+	local faction_data = dataset.factions[faction_key];
+	if not faction_data then
+		script_error("runtime_army_template_generator:get_roster_data_by_faction() could not find faction [" .. tostring(faction_key) .. "]");
+		return false;
+	end;
+
+	return self:get_roster_data_by_military_group(dataset, faction_data.military_group), faction_data;
+end;
+
+
+function runtime_army_template_generator:generate_army_from_military_group(dataset, military_group_key, options)
 	options = options or {};
 
-	local race_data = self:get_race_data(dataset, race_key);
-	if not race_data then
+	local roster_data = self:get_roster_data_by_military_group(dataset, military_group_key);
+	if not roster_data then
 		return false;
 	end;
 
 	local composition = options.composition or self.default_composition;
-	local pools = self:_build_pools(race_data);
+	local pools = self:_build_pools(roster_data);
 	local usage = {};
 	local picks = {};
 	local source_breakdown = {};
 
 	if #pools.character_lord == 0 then
-		script_error("runtime_army_template_generator:generate_army() race [" .. race_key .. "] has no lords");
+		script_error("runtime_army_template_generator:generate_army_from_military_group() roster [" .. military_group_key .. "] has no lords");
 		return false;
 	end;
 
 	if #pools.character_hero == 0 then
-		script_error("runtime_army_template_generator:generate_army() race [" .. race_key .. "] has no heroes");
+		script_error("runtime_army_template_generator:generate_army_from_military_group() roster [" .. military_group_key .. "] has no heroes");
 		return false;
 	end;
 
@@ -238,7 +254,7 @@ function runtime_army_template_generator:generate_army(dataset, race_key, option
 		local slot_key = plan[i];
 		local pool, source = self:_get_slot_pool(slot_key, pools);
 		if #pool == 0 then
-			script_error("runtime_army_template_generator:generate_army() race [" .. race_key .. "] has no valid pool for slot [" .. slot_key .. "]");
+			script_error("runtime_army_template_generator:generate_army_from_military_group() roster [" .. military_group_key .. "] has no valid pool for slot [" .. slot_key .. "]");
 			return false;
 		end;
 
@@ -259,14 +275,37 @@ function runtime_army_template_generator:generate_army(dataset, race_key, option
 	end;
 
 	return {
-		race_key = race_key,
-		race_name = race_data.name,
+		military_group_key = military_group_key,
+		roster_name = military_group_key,
 		lord = lord,
 		units = picks,
 		unit_keys = unit_keys,
 		force_list = table.concat(unit_keys, ","),
 		source_breakdown = source_breakdown
 	};
+end;
+
+
+function runtime_army_template_generator:generate_army_from_faction(dataset, faction_key, options)
+	local roster_data, faction_data = self:get_roster_data_by_faction(dataset, faction_key);
+	if not roster_data or not faction_data then
+		return false;
+	end;
+
+	local generated_army = self:generate_army_from_military_group(dataset, faction_data.military_group, options);
+	if not generated_army then
+		return false;
+	end;
+
+	generated_army.faction_key = faction_key;
+	generated_army.faction_name = faction_data.name;
+	generated_army.roster_name = faction_data.name;
+	return generated_army;
+end;
+
+
+function runtime_army_template_generator:generate_army(dataset, roster_key, options)
+	return self:generate_army_from_military_group(dataset, roster_key, options);
 end;
 
 
@@ -292,8 +331,8 @@ function runtime_army_template_generator:register_force_with_random_army_manager
 end;
 
 
-function runtime_army_template_generator:generate_and_register_force(dataset, race_key, force_key, options)
-	local generated_army = self:generate_army(dataset, race_key, options);
+function runtime_army_template_generator:generate_and_register_force(dataset, roster_key, force_key, options)
+	local generated_army = self:generate_army_from_military_group(dataset, roster_key, options);
 	if not generated_army then
 		return false;
 	end;
@@ -303,8 +342,8 @@ function runtime_army_template_generator:generate_and_register_force(dataset, ra
 end;
 
 
-function runtime_army_template_generator:get_force_list(dataset, race_key, options)
-	local generated_army = self:generate_army(dataset, race_key, options);
+function runtime_army_template_generator:get_force_list(dataset, roster_key, options)
+	local generated_army = self:generate_army_from_military_group(dataset, roster_key, options);
 	if not generated_army then
 		return false;
 	end;
@@ -312,3 +351,12 @@ function runtime_army_template_generator:get_force_list(dataset, race_key, optio
 	return generated_army.lord.unit_key, generated_army.force_list, generated_army;
 end;
 
+
+function runtime_army_template_generator:get_force_list_for_faction(dataset, faction_key, options)
+	local generated_army = self:generate_army_from_faction(dataset, faction_key, options);
+	if not generated_army then
+		return false;
+	end;
+
+	return generated_army.lord.unit_key, generated_army.force_list, generated_army;
+end;

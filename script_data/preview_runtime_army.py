@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Preview runtime-generated armies from the generated WH3 unit dataset.
+Preview runtime-generated armies from the generated WH3 runtime roster dataset.
 
 This mirrors the Lua runtime generator behavior:
 - 1 lord selected separately
@@ -18,7 +18,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_INPUT = ROOT / "script_data" / "external_json_files" / "army_template_units_with_characters.json"
+DEFAULT_INPUT = ROOT / "script_data" / "external_json_files" / "runtime_roster_unit_data.json"
 
 COMPOSITION = {
     "character_hero": 1,
@@ -42,11 +42,14 @@ CATEGORY_GROUPS = {
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("race", nargs="?", help="Race/culture key, e.g. wh3_main_kho_khorne")
+    parser.add_argument("target", nargs="?", help="Faction key or military group key")
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT, help="Input dataset JSON")
     parser.add_argument("--seed", type=int, default=1337, help="Random seed")
     parser.add_argument("--count", type=int, default=1, help="How many armies to preview")
-    parser.add_argument("--list-races", action="store_true", help="List available race keys and exit")
+    parser.add_argument("--faction", action="store_true", help="Interpret target as a faction key")
+    parser.add_argument("--military-group", action="store_true", help="Interpret target as a military group key")
+    parser.add_argument("--list-factions", action="store_true", help="List available faction keys and exit")
+    parser.add_argument("--list-military-groups", action="store_true", help="List available military group keys and exit")
     return parser.parse_args()
 
 
@@ -103,16 +106,16 @@ def slot_pool(
     return [], "missing"
 
 
-def generate_army(race_key: str, race: dict[str, Any], rng: random.Random) -> dict[str, Any]:
-    units = race["units"]
+def generate_army(roster_key: str, roster_name: str, roster: dict[str, Any], rng: random.Random) -> dict[str, Any]:
+    units = roster["units"]
     pools = build_pools(units)
     non_character_units = [unit for unit in units if not unit["category"].startswith("character_")]
     usage: Counter[str] = Counter()
 
     if not pools.get("character_lord"):
-        raise ValueError(f"{race_key} has no lord candidates")
+        raise ValueError(f"{roster_key} has no lord candidates")
     if not pools.get("character_hero"):
-        raise ValueError(f"{race_key} has no hero candidates")
+        raise ValueError(f"{roster_key} has no hero candidates")
 
     lord = select_unit(pools["character_lord"], usage, rng)
     picks: list[dict[str, Any]] = []
@@ -122,7 +125,7 @@ def generate_army(race_key: str, race: dict[str, Any], rng: random.Random) -> di
         for _ in range(count):
             pool, source = slot_pool(slot, pools, non_character_units)
             if not pool:
-                raise ValueError(f"{race_key} has no pool for slot {slot}")
+                raise ValueError(f"{roster_key} has no pool for slot {slot}")
             unit = select_unit(pool, usage, rng)
             picks.append(
                 {
@@ -136,8 +139,8 @@ def generate_army(race_key: str, race: dict[str, Any], rng: random.Random) -> di
             source_breakdown[source] += 1
 
     return {
-        "race_key": race_key,
-        "race_name": race["name"],
+        "roster_key": roster_key,
+        "roster_name": roster_name,
         "lord": lord,
         "units": picks,
         "force_list": ",".join(pick["unit_key"] for pick in picks),
@@ -145,28 +148,66 @@ def generate_army(race_key: str, race: dict[str, Any], rng: random.Random) -> di
     }
 
 
+def resolve_target(data: dict[str, Any], args: argparse.Namespace) -> tuple[str, str, dict[str, Any]]:
+    if args.target is None:
+        raise SystemExit("target argument required unless --list-factions or --list-military-groups is used")
+
+    if args.faction and args.military_group:
+        raise SystemExit("use either --faction or --military-group, not both")
+
+    if args.faction:
+        faction = data["factions"].get(args.target)
+        if not faction:
+            raise SystemExit(f"unknown faction: {args.target}")
+        group_key = faction["military_group"]
+        group = data["military_groups"].get(group_key)
+        if not group:
+            raise SystemExit(f"faction {args.target} maps to missing military group: {group_key}")
+        return group_key, f"{faction['name']} [{args.target}]", group
+
+    if args.military_group:
+        group = data["military_groups"].get(args.target)
+        if not group:
+            raise SystemExit(f"unknown military group: {args.target}")
+        return args.target, args.target, group
+
+    faction = data["factions"].get(args.target)
+    if faction:
+        group_key = faction["military_group"]
+        group = data["military_groups"].get(group_key)
+        if not group:
+            raise SystemExit(f"faction {args.target} maps to missing military group: {group_key}")
+        return group_key, f"{faction['name']} [{args.target}]", group
+
+    group = data["military_groups"].get(args.target)
+    if group:
+        return args.target, args.target, group
+
+    raise SystemExit(f"unknown target: {args.target}")
+
+
 def main() -> int:
     args = parse_args()
     data = json.loads(args.input.read_text(encoding="utf-8"))
 
-    if args.list_races:
-        for race_key, race in sorted(data["races"].items()):
-            print(f"{race_key}\t{race['name']}")
+    if args.list_factions:
+        for faction_key, faction in sorted(data["factions"].items()):
+            print(f"{faction_key}\t{faction['name']}\t{faction['military_group']}")
         return 0
 
-    if not args.race:
-        raise SystemExit("race argument required unless --list-races is used")
+    if args.list_military_groups:
+        for group_key, group in sorted(data["military_groups"].items()):
+            print(f"{group_key}\tunits={group['unit_count']}\tfactions={len(group['faction_keys'])}")
+        return 0
 
-    race = data["races"].get(args.race)
-    if not race:
-        raise SystemExit(f"unknown race: {args.race}")
+    roster_key, roster_name, roster = resolve_target(data, args)
 
     rng = random.Random(args.seed)
     for index in range(args.count):
-        army = generate_army(args.race, race, rng)
+        army = generate_army(roster_key, roster_name, roster, rng)
         counts = Counter(unit["category"] for unit in army["units"])
 
-        print(f"Army {index + 1}: {army['race_name']} ({army['race_key']})")
+        print(f"Army {index + 1}: {army['roster_name']} ({army['roster_key']})")
         print(f"Lord: {army['lord']['unit_key']} | {army['lord']['name']} | {army['lord']['category']}")
         print("Units:")
         for slot_index, unit in enumerate(army["units"], start=1):

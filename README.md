@@ -1,18 +1,20 @@
 # Runtime Army Generation Notes
 
-This repository now contains a small toolchain to build and test runtime-generated Warhammer 3 armies by race.
+This repository now contains a small toolchain to build and test runtime-generated Warhammer 3 armies from database-driven roster permissions.
 
 The goal is:
-- extract a clean unit dataset from the dumped DB tables
-- keep unit pools grouped by race and category
-- include `lord` and `hero` candidates
+- extract a clean runtime roster dataset from the dumped DB tables
+- derive roster overlap dynamically from `military_group` permissions instead of hardcoding special cases
+- keep unit pools grouped by `military_group`
+- map `faction -> military_group`
+- include only generic or safely repeatable `lord` and `hero` candidates
 - generate armies at runtime in Lua using explicit composition rules and fallbacks
 - preview the results offline from a CLI before integrating into the actual mod repo
 
 
 ## What Was Added
 
-### 1. Unit dataset generator
+### 1. Legacy unit dataset generator
 
 File:
 - [script_data/generate_army_template_data.py](/home/soundskrit/work/WH3-Dump/script_data/generate_army_template_data.py:1)
@@ -30,19 +32,44 @@ Important outputs:
 - [script_data/external_json_files/army_template_units_with_characters.json](/home/soundskrit/work/WH3-Dump/script_data/external_json_files/army_template_units_with_characters.json:1)
 - [script/_lib/mod/army_template_unit_data.lua](/home/soundskrit/work/WH3-Dump/script/_lib/mod/army_template_unit_data.lua:1)
 
-The Lua dataset in `script/_lib/mod/` is the one intended to be `require()`-ed later by the mod.
+Status:
+- still useful for quick inspection
+- no longer the preferred runtime source
 
-For runtime generation, this means the character pools are restricted to generic or safely repeatable lords and heroes, so spawning multiple armies does not create collisions with legendary or unique named characters.
+For runtime generation, the preferred source is now the `military_group` dataset described below.
+
+The legacy character-inclusive dataset also filters out legendary lords, legendary heroes, and unique named characters so that repeated runtime spawning does not create character collisions.
 
 
-### 2. Runtime Lua generator bridge
+### 2. Runtime roster dataset generator
+
+File:
+- [script_data/generate_runtime_roster_data.py](/home/soundskrit/work/WH3-Dump/script_data/generate_runtime_roster_data.py:1)
+
+Purpose:
+- builds the actual runtime dataset used by the current workflow
+- groups units by `military_group`
+- builds a `faction -> military_group` mapping
+- derives roster overlap dynamically from CA's own permissions tables
+- filters out legendary, unique, and named characters that should not be duplicated
+- deduplicates technical `main` / `pro` / similar character variants by display name
+
+Important outputs:
+- [script_data/external_json_files/runtime_roster_unit_data.json](/home/soundskrit/work/WH3-Dump/script_data/external_json_files/runtime_roster_unit_data.json:1)
+- [script/_lib/mod/runtime_roster_unit_data.lua](/home/soundskrit/work/WH3-Dump/script/_lib/mod/runtime_roster_unit_data.lua:1)
+
+This is now the recommended dataset for runtime generation.
+
+
+### 3. Runtime Lua generator bridge
 
 File:
 - [script/_lib/mod/lib_runtime_army_template_generator.lua](/home/soundskrit/work/WH3-Dump/script/_lib/mod/lib_runtime_army_template_generator.lua:1)
 
 Purpose:
-- consumes the generated Lua dataset
-- builds army pools by race and category
+- consumes the generated runtime roster Lua dataset
+- builds army pools by `military_group`
+- can also resolve a roster dynamically from a faction key
 - selects a `lord` separately
 - produces the remaining `19` units as a campaign force list
 - can register the generated stack into CA's existing [`random_army_manager`](/home/soundskrit/work/WH3-Dump/script/_lib/lib_campaign_random_army.lua:1)
@@ -53,17 +80,18 @@ Why `19` units and not `20`:
 - full army = `1 lord + 19 units`
 
 
-### 3. Offline preview CLI
+### 4. Offline preview CLI
 
 File:
 - [script_data/preview_runtime_army.py](/home/soundskrit/work/WH3-Dump/script_data/preview_runtime_army.py:1)
 
 Purpose:
 - simulates the same runtime logic as the Lua helper
-- lets you test races and inspect generated armies without touching the actual mod repo
+- lets you test rosters from a faction key or a `military_group`
+- lets you inspect generated armies without touching the actual mod repo
 
 
-### 4. Optional offline template generator
+### 5. Optional offline template generator
 
 File:
 - [script_data/generate_army_templates.py](/home/soundskrit/work/WH3-Dump/script_data/generate_army_templates.py:1)
@@ -74,6 +102,41 @@ Purpose:
 Status:
 - optional only
 - not needed for the current runtime-first approach
+
+
+## Why Military Groups Matter
+
+The important design change is that runtime army generation is no longer based primarily on `culture` or a hand-maintained notion of "race roster".
+
+It is now based on CA's own:
+- `faction -> military_group`
+- `unit -> military_group permissions`
+
+This is important because many Warhammer 3 rosters overlap:
+- monogod factions may receive marked Chaos units
+- marked Warriors of Chaos factions may receive daemon-side or god-marked units
+- some factions share partial roster access without sharing a full culture roster
+
+Examples:
+- monogod Khorne and Valkia do not use the exact same roster
+- Valkia can access some Khorne-marked Chaos units and some Khorne-side units
+- generic Warriors of Chaos do not automatically get the full daemon rosters of all four gods
+
+By using `military_group`, roster overlap is no longer hardcoded in the tools. It is inherited directly from the DB export.
+
+
+## Why This Produces Better Variety
+
+Using `military_group` improves army generation quality in several ways:
+- roster overlap is preserved automatically when CA grants it in the DB
+- different factions that share a culture but not the same actual recruitment permissions can now generate different armies
+- marked Warriors of Chaos factions can feel distinct from monogod factions
+- future patch changes in unit permissions are picked up by data regeneration instead of requiring manual maintenance
+- the generated armies reflect the real recruitable pool more closely, which increases variety without inventing fake access rules
+
+In short:
+- `culture` is too coarse for some WH3 use cases
+- `military_group` is the correct runtime roster abstraction
 
 
 ## Runtime Composition Rules
@@ -120,7 +183,13 @@ This is designed to cover races such as Khorne or other races with weak or missi
 
 ## How To Regenerate The Data
 
-Generate the character-inclusive JSON plus the Lua dataset used by the runtime generator:
+Generate the current runtime roster JSON plus the Lua dataset used by the runtime generator:
+
+```bash
+python3 script_data/generate_runtime_roster_data.py
+```
+
+Generate the legacy character-inclusive dataset:
 
 ```bash
 python3 script_data/generate_army_template_data.py \
@@ -129,7 +198,7 @@ python3 script_data/generate_army_template_data.py \
   --json-out script_data/external_json_files/army_template_units_with_characters.json
 ```
 
-Generate the non-character dataset:
+Generate the legacy non-character dataset:
 
 ```bash
 python3 script_data/generate_army_template_data.py
@@ -138,28 +207,40 @@ python3 script_data/generate_army_template_data.py
 
 ## How To Test With The CLI
 
-List available races:
+List available factions:
 
 ```bash
-python3 script_data/preview_runtime_army.py --list-races
+python3 script_data/preview_runtime_army.py --list-factions
 ```
 
-Preview one army:
+List available military groups:
 
 ```bash
-python3 script_data/preview_runtime_army.py wh3_main_kho_khorne
+python3 script_data/preview_runtime_army.py --list-military-groups
 ```
 
-Preview a race with a fixed seed:
+Preview one army from a faction:
 
 ```bash
-python3 script_data/preview_runtime_army.py wh_main_emp_empire --seed 7
+python3 script_data/preview_runtime_army.py --faction wh3_main_kho_khorne
 ```
 
-Preview multiple armies for the same race:
+Preview one army directly from a military group:
 
 ```bash
-python3 script_data/preview_runtime_army.py wh3_main_sla_slaanesh --count 3
+python3 script_data/preview_runtime_army.py --military-group wh3_main_kho
+```
+
+Preview a faction with a fixed seed:
+
+```bash
+python3 script_data/preview_runtime_army.py --faction wh3_dlc20_chs_valkia --seed 7
+```
+
+Preview multiple armies for the same faction:
+
+```bash
+python3 script_data/preview_runtime_army.py --faction wh3_main_kho_khorne --count 3
 ```
 
 What the CLI prints:
@@ -174,12 +255,14 @@ What the CLI prints:
 ## Expected Testing Workflow
 
 Recommended validation steps:
-- run `--list-races` and confirm the race key you want
-- preview 5 to 20 armies for the same race using different seeds
+- run `--list-factions` or `--list-military-groups`
+- confirm whether you want to test by faction or directly by military group
+- preview 5 to 20 armies for the same target using different seeds
 - check whether category balance looks coherent
-- inspect fallback-heavy races such as Khorne
+- compare overlapping rosters such as monogod Khorne vs Valkia
+- inspect fallback-heavy targets such as Khorne
 - check whether some races produce too many duplicates
-- decide whether some category mappings need refinement
+- decide whether some category mappings or character deduping rules need refinement
 
 
 ## Remaining Work In The Actual Mod Repo
@@ -187,29 +270,34 @@ Recommended validation steps:
 This repo is now only the preparation and test environment. Final integration still needs to be done in your mod repo.
 
 What remains:
-- copy or mirror [script/_lib/mod/army_template_unit_data.lua](/home/soundskrit/work/WH3-Dump/script/_lib/mod/army_template_unit_data.lua:1) into the mod repo
+- copy or mirror [script/_lib/mod/runtime_roster_unit_data.lua](/home/soundskrit/work/WH3-Dump/script/_lib/mod/runtime_roster_unit_data.lua:1) into the mod repo
 - copy or mirror [script/_lib/mod/lib_runtime_army_template_generator.lua](/home/soundskrit/work/WH3-Dump/script/_lib/mod/lib_runtime_army_template_generator.lua:1) into the mod repo
 - load both files from your campaign bootstrap
-- call the generator with a target race key
+- call the generator with either a faction key or a military group key
 - spawn the selected `lord` separately
 - pass the generated `force_list` to your chosen campaign spawning API
 
 Typical runtime flow in the mod:
 1. `require()` the generated dataset
 2. `require()` the runtime generator helper
-3. call `get_force_list(dataset, race_key)`
+3. call either:
+   - `get_force_list(dataset, military_group_key)`
+   - `get_force_list_for_faction(dataset, faction_key)`
 4. receive `lord_key`, `force_list`, and the full generated metadata
 5. spawn the army in campaign using `lord_key` + `force_list`
 
 
 ## Integration Notes
 
-The current Lua helper supports two patterns:
+The current Lua helper supports three useful patterns:
 
-1. Direct force list generation
+1. Direct force list generation from a military group
 - best if your mod already knows how to create a force from `lord_key` + `force_list`
 
-2. Registration into `random_army_manager`
+2. Direct force list generation from a faction key
+- best if you want roster overlap to follow the faction's actual `military_group`
+
+3. Registration into `random_army_manager`
 - useful if you want to reuse CA's existing random army infrastructure
 - in this case the helper fills the generated `19` units as mandatory entries
 
@@ -223,6 +311,7 @@ The direct `force_list` path is usually simpler.
 - no Lua parser (`luac`) was available in this environment for syntax checking
 - duplicate unit picks are allowed by design when a category pool is small
 - weights, tier filtering, and elite/basic balancing are not implemented yet
+- some faction rosters may still deserve faction-specific weighting later, even if the overlap source is now fully dynamic
 
 
 ## Possible Next Improvements
