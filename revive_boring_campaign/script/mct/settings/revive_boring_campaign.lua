@@ -45,7 +45,7 @@ local function force_all_checkboxes_false()
     end
 end
 
-mod:set_author("User")
+mod:set_author("Evanok")
 mod:set_title("Revive Boring Campaign")
 mod:set_description("Kill, revive, buff or debuff factions to make your campaign more interesting!\n\n" ..
     "Features:\n" ..
