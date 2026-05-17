@@ -233,8 +233,8 @@ local major_factions = {
     -- Vampire Counts
     {"wh_main_vmp_vampire_counts", "Vampire Counts (Mannfred)"},
     {"wh_main_vmp_schwartzhafen", "Vlad von Carstein"},
-    {"wh2_dlc11_vmp_the_barrow_legion", "Helman Ghorst"},
-    {"wh3_main_vmp_caravan_of_blue_roses", "Blue Roses (Isabella)"},
+    {"wh2_dlc11_vmp_the_barrow_legion", "The Barrow Legion (Heinrich Kemmler)"},
+    {"wh3_main_vmp_caravan_of_blue_roses", "Caravan of Blue Roses (Helman Ghorst)"},
 
     -- High Elves
     {"wh2_main_hef_eataine", "Eataine (Tyrion)"},

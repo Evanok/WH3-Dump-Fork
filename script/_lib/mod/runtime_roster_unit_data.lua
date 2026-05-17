@@ -1,5 +1,5 @@
 return {
-  generated_at_utc = "2026-05-17T13:19:58+00:00",
+  generated_at_utc = "2026-05-17T13:38:31+00:00",
   source = {
     repo_root = "C:\\Users\\User\\work\\mode_warhammer3\\WH3-Dump-Fork",
     tables = {
@@ -24,6 +24,30 @@ return {
       wh2_dlc09_tmb_cha_tomb_king_0 = {
         "wh2_dlc09_tomb_kings",
         "wh2_dlc09_tomb_kings_arkhan"
+      },
+      wh2_dlc11_cst_cha_vampire_fleet_admiral_0 = {
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa"
+      },
+      wh2_dlc11_cst_cha_vampire_fleet_admiral_death_0 = {
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa"
+      },
+      wh2_dlc11_cst_cha_vampire_fleet_admiral_deeps_0 = {
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa"
+      },
+      wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0 = {
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa"
+      },
+      wh2_dlc11_cst_cha_vampire_fleet_admiral_female_death_0 = {
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa"
+      },
+      wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0 = {
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa"
       }
     }
   },
@@ -5975,7 +5999,7 @@ return {
       culture_names = {
         "Vampire Coast"
       },
-      unit_count = 28,
+      unit_count = 34,
       units = {
         {
           unit_key = "wh2_dlc11_cst_cha_gunnery_wight_0",
@@ -6003,6 +6027,60 @@ return {
           category = "character_hero",
           category_raw = "inf_melee",
           caste = "hero"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_death_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_death_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_fem_death",
+          name = "Vampire Fleet Admiral (Pistol – Death)",
+          category = "character_lord",
+          category_raw = "inf_ranged",
+          caste = "lord"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_fem_deep",
+          name = "Vampire Fleet Admiral (Pistol – Deep)",
+          category = "character_lord",
+          category_raw = "inf_ranged",
+          caste = "lord"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_fem_vampires",
+          name = "Vampire Fleet Admiral (Pistol – Vampires)",
+          category = "character_lord",
+          category_raw = "inf_ranged",
+          caste = "lord"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_death_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_death_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_death",
+          name = "Vampire Fleet Admiral (Polearms – Death)",
+          category = "character_lord",
+          category_raw = "inf_melee",
+          caste = "lord"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_deeps_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_deeps_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_deep",
+          name = "Vampire Fleet Admiral (Polearms – Deep)",
+          category = "character_lord",
+          category_raw = "inf_melee",
+          caste = "lord"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_vampires",
+          name = "Vampire Fleet Admiral (Polearms – Vampires)",
+          category = "character_lord",
+          category_raw = "inf_melee",
+          caste = "lord"
         },
         {
           unit_key = "wh2_dlc11_cst_inf_depth_guard_0",
@@ -6236,6 +6314,14 @@ return {
           "wh2_dlc11_cst_cha_mourngul_haunter",
           "wh2_dlc11_cst_cha_vampire_fleet_captain_0"
         },
+        character_lord = {
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_death_0",
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0",
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0",
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_death_0",
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_deeps_0",
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_0"
+        },
         melee_infantry = {
           "wh2_dlc11_cst_inf_depth_guard_0",
           "wh2_dlc11_cst_inf_depth_guard_1",
@@ -6286,7 +6372,7 @@ return {
       culture_names = {
         "Vampire Coast"
       },
-      unit_count = 32,
+      unit_count = 38,
       units = {
         {
           unit_key = "wh2_dlc11_cst_cha_gunnery_wight_0",
@@ -6314,6 +6400,60 @@ return {
           category = "character_hero",
           category_raw = "inf_melee",
           caste = "hero"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_death_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_death_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_fem_death",
+          name = "Vampire Fleet Admiral (Pistol – Death)",
+          category = "character_lord",
+          category_raw = "inf_ranged",
+          caste = "lord"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_fem_deep",
+          name = "Vampire Fleet Admiral (Pistol – Deep)",
+          category = "character_lord",
+          category_raw = "inf_ranged",
+          caste = "lord"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_fem_vampires",
+          name = "Vampire Fleet Admiral (Pistol – Vampires)",
+          category = "character_lord",
+          category_raw = "inf_ranged",
+          caste = "lord"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_death_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_death_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_death",
+          name = "Vampire Fleet Admiral (Polearms – Death)",
+          category = "character_lord",
+          category_raw = "inf_melee",
+          caste = "lord"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_deeps_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_deeps_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_deep",
+          name = "Vampire Fleet Admiral (Polearms – Deep)",
+          category = "character_lord",
+          category_raw = "inf_melee",
+          caste = "lord"
+        },
+        {
+          unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_0",
+          land_unit_key = "wh2_dlc11_cst_cha_vampire_fleet_admiral_0",
+          agent_subtype = "wh2_dlc11_cst_admiral_vampires",
+          name = "Vampire Fleet Admiral (Polearms – Vampires)",
+          category = "character_lord",
+          category_raw = "inf_melee",
+          caste = "lord"
         },
         {
           unit_key = "wh2_dlc11_cst_inf_depth_guard_0",
@@ -6582,6 +6722,14 @@ return {
           "wh2_dlc11_cst_cha_gunnery_wight_0",
           "wh2_dlc11_cst_cha_mourngul_haunter",
           "wh2_dlc11_cst_cha_vampire_fleet_captain_0"
+        },
+        character_lord = {
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_death_0",
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0",
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0",
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_death_0",
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_deeps_0",
+          "wh2_dlc11_cst_cha_vampire_fleet_admiral_0"
         },
         melee_infantry = {
           "wh2_dlc11_cst_inf_depth_guard_0",

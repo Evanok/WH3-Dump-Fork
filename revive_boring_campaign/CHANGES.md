@@ -5,6 +5,9 @@
 - Fixed Tomb Kings runtime army generation for Khemri and Arkhan-related Tomb Kings rosters.
 - Added the missing generic Tomb King lord (`wh2_dlc09_tmb_cha_tomb_king_0`) to the Tomb Kings runtime roster supplements.
 - Khemri should now use the runtime generator path with `create_force_with_general` instead of falling back to the deprecated subculture template.
+- Fixed Vampire Coast runtime army generation for Noctilus and Sartosa military groups.
+- Added missing generic Vampire Fleet Admiral lord units to the Vampire Coast runtime roster supplements.
+- Fixed Vampire Counts MCT labels: The Barrow Legion is Heinrich Kemmler, and Caravan of Blue Roses is Helman Ghorst.
 - Updated campaign log prefix to `v1.0.1` to match the visible MCT version while this work is being validated.
 
 ## v1.0.1

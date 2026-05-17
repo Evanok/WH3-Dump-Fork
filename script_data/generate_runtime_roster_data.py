@@ -31,6 +31,30 @@ CHARACTER_UNIT_MILITARY_GROUP_SUPPLEMENTS = {
         "wh2_dlc09_tomb_kings",
         "wh2_dlc09_tomb_kings_arkhan",
     ],
+    "wh2_dlc11_cst_cha_vampire_fleet_admiral_0": [
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa",
+    ],
+    "wh2_dlc11_cst_cha_vampire_fleet_admiral_death_0": [
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa",
+    ],
+    "wh2_dlc11_cst_cha_vampire_fleet_admiral_deeps_0": [
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa",
+    ],
+    "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0": [
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa",
+    ],
+    "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_death_0": [
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa",
+    ],
+    "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0": [
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa",
+    ],
 }
 
 

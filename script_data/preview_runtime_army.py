@@ -50,6 +50,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--military-group", action="store_true", help="Interpret target as a military group key")
     parser.add_argument("--list-factions", action="store_true", help="List available faction keys and exit")
     parser.add_argument("--list-military-groups", action="store_true", help="List available military group keys and exit")
+    parser.add_argument("--validate-all", action="store_true", help="Generate one army for every military group and report failures")
     return parser.parse_args()
 
 
@@ -198,6 +199,28 @@ def main() -> int:
     if args.list_military_groups:
         for group_key, group in sorted(data["military_groups"].items()):
             print(f"{group_key}\tunits={group['unit_count']}\tfactions={len(group['faction_keys'])}")
+        return 0
+
+    if args.validate_all:
+        failures = []
+        rng = random.Random(args.seed)
+        for group_key, group in sorted(data["military_groups"].items()):
+            try:
+                army = generate_army(group_key, group_key, group, rng)
+            except ValueError as exc:
+                failures.append((group_key, str(exc)))
+                continue
+            print(f"OK\t{group_key}\tlord={army['lord']['unit_key']}\tunits={len(army['units'])}")
+
+        if failures:
+            print()
+            print("Failures:")
+            for group_key, message in failures:
+                print(f"FAIL\t{group_key}\t{message}")
+            return 1
+
+        print()
+        print(f"Validated {len(data['military_groups'])} military groups with no failures.")
         return 0
 
     roster_key, roster_name, roster = resolve_target(data, args)
