@@ -23,6 +23,16 @@ TEXT_DB_DIR = ROOT / "text" / "db"
 DEFAULT_JSON_OUTPUT = ROOT / "script_data" / "external_json_files" / "runtime_roster_unit_data.json"
 DEFAULT_LUA_OUTPUT = ROOT / "script" / "_lib" / "mod" / "runtime_roster_unit_data.lua"
 
+# Some recruitable character units are not listed in military permissions because their
+# recruitment is governed by faction-specific systems. Add them here so runtime army
+# generation can still use a valid create_force_with_general subtype.
+CHARACTER_UNIT_MILITARY_GROUP_SUPPLEMENTS = {
+    "wh2_dlc09_tmb_cha_tomb_king_0": [
+        "wh2_dlc09_tomb_kings",
+        "wh2_dlc09_tomb_kings_arkhan",
+    ],
+}
+
 
 @dataclass(frozen=True)
 class UnitRecord:
@@ -120,6 +130,29 @@ def character_dedupe_score(record: UnitRecord) -> tuple[int, int, str]:
     if "_spawned_" in key:
         penalty += 100
     return (penalty, len(key), key)
+
+
+def build_unit_record(
+    unit_key: str,
+    main_unit: dict[str, str],
+    land_units: dict[str, dict[str, str]],
+    unit_names: dict[str, str],
+    character_unit_to_agent_subtype: dict[str, str],
+) -> UnitRecord:
+    land_unit_key = main_unit.get("land_unit", "").strip()
+    land_unit = land_units.get(land_unit_key)
+    category, category_raw = normalize_category(main_unit, land_unit)
+    return UnitRecord(
+        unit_key=unit_key,
+        land_unit_key=land_unit_key,
+        agent_subtype=character_unit_to_agent_subtype.get(unit_key, ""),
+        name=unit_names.get(land_unit_key, unit_key),
+        category=category,
+        category_raw=category_raw,
+        caste=main_unit.get("caste", "").strip(),
+        is_ror=main_unit.get("is_renown", "").strip().lower() == "true",
+        is_naval=main_unit.get("is_naval", "").strip().lower() == "true",
+    )
 
 
 def to_lua(value: Any, indent: int = 0) -> str:
@@ -244,21 +277,19 @@ def main() -> int:
         if caste in {"lord", "hero"} and unit_key not in valid_runtime_character_units:
             continue
 
-        land_unit_key = main_unit.get("land_unit", "").strip()
-        land_unit = land_units.get(land_unit_key)
-        category, category_raw = normalize_category(main_unit, land_unit)
-        record = UnitRecord(
-            unit_key=unit_key,
-            land_unit_key=land_unit_key,
-            agent_subtype=character_unit_to_agent_subtype.get(unit_key, ""),
-            name=unit_names.get(land_unit_key, unit_key),
-            category=category,
-            category_raw=category_raw,
-            caste=caste,
-            is_ror=is_ror,
-            is_naval=main_unit.get("is_naval", "").strip().lower() == "true",
-        )
+        record = build_unit_record(unit_key, main_unit, land_units, unit_names, character_unit_to_agent_subtype)
         units_by_military_group[military_group][unit_key] = record
+
+    for unit_key, military_groups in CHARACTER_UNIT_MILITARY_GROUP_SUPPLEMENTS.items():
+        main_unit = main_units.get(unit_key)
+        if not main_unit or main_unit.get("is_renown", "").strip().lower() == "true":
+            continue
+        if unit_key not in valid_runtime_character_units:
+            continue
+        record = build_unit_record(unit_key, main_unit, land_units, unit_names, character_unit_to_agent_subtype)
+        for military_group in military_groups:
+            if military_group:
+                units_by_military_group[military_group].setdefault(unit_key, record)
 
     military_groups_payload: dict[str, Any] = {}
     for military_group in sorted(units_by_military_group):
@@ -326,6 +357,7 @@ def main() -> int:
             "exclude_legendary_and_unique_characters": True,
             "exclude_rogue_culture": not args.include_rogue,
             "dedupe_character_variants_by_name": True,
+            "character_unit_military_group_supplements": CHARACTER_UNIT_MILITARY_GROUP_SUPPLEMENTS,
         },
         "faction_count": len(factions_payload),
         "military_group_count": len(military_groups_payload),

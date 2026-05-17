@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-15T22:37:36+00:00",
+  "generated_at_utc": "2026-05-17T13:19:58+00:00",
   "source": {
     "repo_root": "C:\\Users\\User\\work\\mode_warhammer3\\WH3-Dump-Fork",
     "tables": [
@@ -19,7 +19,13 @@
     "exclude_ror": true,
     "exclude_legendary_and_unique_characters": true,
     "exclude_rogue_culture": true,
-    "dedupe_character_variants_by_name": true
+    "dedupe_character_variants_by_name": true,
+    "character_unit_military_group_supplements": {
+      "wh2_dlc09_tmb_cha_tomb_king_0": [
+        "wh2_dlc09_tomb_kings",
+        "wh2_dlc09_tomb_kings_arkhan"
+      ]
+    }
   },
   "faction_count": 639,
   "military_group_count": 48,
@@ -5181,7 +5187,7 @@
       "culture_names": [
         "Tomb Kings"
       ],
-      "unit_count": 30,
+      "unit_count": 31,
       "units": [
         {
           "unit_key": "wh2_dlc09_tmb_art_casket_of_souls_0",
@@ -5245,6 +5251,15 @@
           "category": "character_hero",
           "category_raw": "inf_melee",
           "caste": "hero"
+        },
+        {
+          "unit_key": "wh2_dlc09_tmb_cha_tomb_king_0",
+          "land_unit_key": "wh2_dlc09_tmb_cha_tomb_king_0",
+          "agent_subtype": "wh2_dlc09_tmb_tomb_king",
+          "name": "Tomb King",
+          "category": "character_lord",
+          "category_raw": "inf_melee",
+          "caste": "lord"
         },
         {
           "unit_key": "wh2_dlc09_tmb_veh_skeleton_chariot_0",
@@ -5466,6 +5481,9 @@
           "wh2_dlc09_tmb_cha_necrotect_0",
           "wh2_dlc09_tmb_cha_tomb_prince_0"
         ],
+        "character_lord": [
+          "wh2_dlc09_tmb_cha_tomb_king_0"
+        ],
         "chariot": [
           "wh2_dlc09_tmb_veh_skeleton_chariot_0"
         ],
@@ -5526,7 +5544,7 @@
       "culture_names": [
         "Tomb Kings"
       ],
-      "unit_count": 34,
+      "unit_count": 35,
       "units": [
         {
           "unit_key": "wh2_dlc09_tmb_art_casket_of_souls_0",
@@ -5590,6 +5608,15 @@
           "category": "character_hero",
           "category_raw": "inf_melee",
           "caste": "hero"
+        },
+        {
+          "unit_key": "wh2_dlc09_tmb_cha_tomb_king_0",
+          "land_unit_key": "wh2_dlc09_tmb_cha_tomb_king_0",
+          "agent_subtype": "wh2_dlc09_tmb_tomb_king",
+          "name": "Tomb King",
+          "category": "character_lord",
+          "category_raw": "inf_melee",
+          "caste": "lord"
         },
         {
           "unit_key": "wh2_dlc09_tmb_veh_skeleton_chariot_0",
@@ -5846,6 +5873,9 @@
           "wh2_dlc09_tmb_cha_liche_priest_shadow_0",
           "wh2_dlc09_tmb_cha_necrotect_0",
           "wh2_dlc09_tmb_cha_tomb_prince_0"
+        ],
+        "character_lord": [
+          "wh2_dlc09_tmb_cha_tomb_king_0"
         ],
         "chariot": [
           "wh2_dlc09_tmb_veh_skeleton_chariot_0"
