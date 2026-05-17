@@ -18,8 +18,8 @@ revive_boring_campaign = {
         pending_revive = nil,    -- Faction key to revive
     },
 
-    -- Fallback rebel faction per subculture for Anarchy Kill.
-    -- If a rebel faction does not exist in the active campaign, Anarchy Kill falls back to ruins.
+    -- Preferred rebel factions per subculture for Anarchy Kill.
+    -- Not every rebel key exists in every campaign, so Anarchy Kill also scans same-subculture candidates at runtime.
     rebel_factions_by_subculture = {
         ["wh_dlc03_sc_bst_beastmen"] = "wh_dlc03_bst_beastmen_rebels",
         ["wh_dlc05_sc_wef_wood_elves"] = "wh_dlc05_wef_wood_elves_rebels",
@@ -45,6 +45,15 @@ revive_boring_campaign = {
         ["wh3_main_sc_ogr_ogre_kingdoms"] = "wh3_main_ogr_ogre_rebels",
         ["wh3_main_sc_sla_slaanesh"] = "wh3_main_sla_slaanesh_rebels",
         ["wh3_main_sc_tze_tzeentch"] = "wh3_main_tze_tzeentch_rebels",
+    },
+
+    anarchy_candidate_factions_by_subculture = {
+        ["wh_main_sc_vmp_vampire_counts"] = {
+            "wh3_dlc25_vmp_vampire_counts_invasion",
+            "wh3_dlc21_vmp_jiangshi_rebels",
+            "wh_main_vmp_waldenhof",
+            "wh_main_vmp_rival_sylvanian_vamps",
+        },
     },
 
     -- Faction to capital region mapping
@@ -500,6 +509,112 @@ function revive_boring_campaign:get_all_factions()
 end
 
 --[[-------------------------------------------------------------------------------------------------------------
+    Find a usable off-map Anarchy Kill transfer target.
+    Prefer explicit rebel/invasion faction keys, then same-subculture rebel/separatist/invasion factions present
+    in the active campaign. On-map candidates are rejected so Anarchy Kill does not merge regions into an
+    already-active faction elsewhere.
+]]---------------------------------------------------------------------------------------------------------------
+function revive_boring_campaign:get_anarchy_transfer_target(target_faction_key, subculture)
+    local function is_usable_candidate(candidate_key)
+        if not candidate_key or candidate_key == "" or candidate_key == target_faction_key then
+            return false
+        end
+
+        local candidate = cm:get_faction(candidate_key)
+        if not candidate or candidate:is_null_interface() or candidate:is_human() then
+            return false
+        end
+
+        if candidate:subculture() ~= subculture then
+            return false
+        end
+
+        local region_count = candidate:region_list():num_items()
+        local force_count = candidate:military_force_list():num_items()
+        if region_count > 0 or force_count > 0 then
+            self:log(
+                "Anarchy candidate already on map: " .. candidate_key ..
+                " (regions=" .. region_count .. ", forces=" .. force_count .. ")"
+            )
+            return false
+        end
+
+        return true
+    end
+
+    local preferred_candidates = {}
+    local default_rebel_key = self.rebel_factions_by_subculture[subculture]
+    if default_rebel_key then
+        table.insert(preferred_candidates, default_rebel_key)
+    end
+
+    local extra_candidates = self.anarchy_candidate_factions_by_subculture[subculture] or {}
+    for _, candidate_key in ipairs(extra_candidates) do
+        table.insert(preferred_candidates, candidate_key)
+    end
+
+    for _, candidate_key in ipairs(preferred_candidates) do
+        if is_usable_candidate(candidate_key) then
+            return candidate_key
+        end
+        self:log("Anarchy candidate unavailable: " .. tostring(candidate_key))
+    end
+
+    local faction_list = cm:model():world():faction_list()
+    for i = 0, faction_list:num_items() - 1 do
+        local candidate = faction_list:item_at(i)
+        if candidate and not candidate:is_null_interface() then
+            local candidate_key = candidate:name()
+            local looks_rebel =
+                string.find(candidate_key, "rebel") or
+                string.find(candidate_key, "separatist") or
+                string.find(candidate_key, "invasion")
+
+            if looks_rebel and is_usable_candidate(candidate_key) then
+                return candidate_key
+            end
+        end
+    end
+
+    return false
+end
+
+--[[-------------------------------------------------------------------------------------------------------------
+    Make a newly revived Anarchy rebel faction hostile to every active faction.
+    This keeps the transfer temporary: nearby major factions should be able to destroy the rebels and resettle.
+]]---------------------------------------------------------------------------------------------------------------
+function revive_boring_campaign:make_anarchy_rebels_world_hostile(rebel_faction_key)
+    if not rebel_faction_key then
+        return 0
+    end
+
+    local rebel_faction = cm:get_faction(rebel_faction_key)
+    if not rebel_faction or rebel_faction:is_null_interface() then
+        self:log("WARNING: Cannot set Anarchy wars; rebel faction not found: " .. tostring(rebel_faction_key))
+        return 0
+    end
+
+    local wars_declared = 0
+    local faction_list = cm:model():world():faction_list()
+
+    cm:disable_event_feed_events(true, "", "", "diplomacy_war_declared")
+    for i = 0, faction_list:num_items() - 1 do
+        local other_faction = faction_list:item_at(i)
+        if other_faction and not other_faction:is_null_interface() then
+            local other_key = other_faction:name()
+            if other_key ~= rebel_faction_key and not other_faction:is_dead() and not rebel_faction:at_war_with(other_faction) then
+                cm:force_declare_war(rebel_faction_key, other_key, false, false)
+                wars_declared = wars_declared + 1
+            end
+        end
+    end
+    cm:callback(function() cm:disable_event_feed_events(false, "", "", "diplomacy_war_declared") end, 0.2)
+
+    self:log("Anarchy rebels " .. rebel_faction_key .. " set hostile to " .. wars_declared .. " active factions")
+    return wars_declared
+end
+
+--[[-------------------------------------------------------------------------------------------------------------
     Get army composition for a faction.
     Preferred path uses CA military_group roster permissions generated from WH3-Dump-Fork.
     Falls back to old subculture templates if the generated dataset cannot resolve a faction.
@@ -853,9 +968,8 @@ function revive_boring_campaign:anarchy_kill_faction(faction_key)
     end
 
     local subculture = faction:subculture()
-    local rebel_faction_key = self.rebel_factions_by_subculture[subculture]
-    local rebel_faction = rebel_faction_key and cm:get_faction(rebel_faction_key) or false
-    local can_transfer_to_rebels = rebel_faction and not rebel_faction:is_null_interface() and not rebel_faction:is_human()
+    local rebel_faction_key = self:get_anarchy_transfer_target(faction_key, subculture)
+    local can_transfer_to_rebels = rebel_faction_key ~= false
 
     if can_transfer_to_rebels then
         self:log("Anarchy kill rebel target for " .. faction_key .. ": " .. rebel_faction_key .. " (subculture " .. tostring(subculture) .. ")")
@@ -885,6 +999,7 @@ function revive_boring_campaign:anarchy_kill_faction(faction_key)
 
     local transferred_regions = 0
     local abandoned_regions = 0
+    local wars_declared = 0
     for _, region_key in ipairs(regions_to_process) do
         if can_transfer_to_rebels then
             self:log("Anarchy transferring region " .. region_key .. " to " .. rebel_faction_key)
@@ -897,6 +1012,10 @@ function revive_boring_campaign:anarchy_kill_faction(faction_key)
         end
     end
 
+    if transferred_regions > 0 then
+        wars_declared = self:make_anarchy_rebels_world_hostile(rebel_faction_key)
+    end
+
     for _, cqi in ipairs(characters_to_kill) do
         self:log("Anarchy killing character CQI: " .. cqi)
         cm:kill_character_and_commanded_unit(cm:char_lookup_str(cqi), true, true)
@@ -906,6 +1025,7 @@ function revive_boring_campaign:anarchy_kill_faction(faction_key)
         "Anarchy kill completed for " .. faction_key ..
         ": transferred_regions=" .. transferred_regions ..
         ", abandoned_regions=" .. abandoned_regions ..
+        ", wars_declared=" .. wars_declared ..
         ", killed_characters=" .. #characters_to_kill
     )
     return true

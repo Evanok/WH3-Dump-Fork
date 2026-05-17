@@ -9,6 +9,10 @@
 - Added missing generic Vampire Fleet Admiral lord units to the Vampire Coast runtime roster supplements.
 - Fixed additional runtime roster gaps for Lizardmen, Leaf-Cutterz, Savage Orcs, Prologue Kislev, and TEB.
 - Added a validation mode to the runtime army preview script and verified all 48 generated military groups can produce complete armies.
+- Fixed Anarchy Kill fallback behavior when CA's generic rebel faction key is not available in the active campaign.
+- Anarchy Kill now tries explicit rebel/invasion candidates and then scans same-subculture rebel/separatist/invasion factions before falling back to ruins.
+- Anarchy Kill now rejects rebel candidates that already have regions or armies on the campaign map.
+- Anarchy Kill now forces transferred rebel factions into war with every active faction so they can be cleared and resettled naturally.
 - Fixed Vampire Counts MCT labels: The Barrow Legion is Heinrich Kemmler, and Caravan of Blue Roses is Helman Ghorst.
 - Updated campaign log prefix to `v1.0.1` to match the visible MCT version while this work is being validated.
 
