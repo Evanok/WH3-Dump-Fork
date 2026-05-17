@@ -10,11 +10,41 @@
 -- Module definition
 revive_boring_campaign = {
     name = "revive_boring_campaign",
+    log_prefix = "[RBC_DEBUG][campaign][v1.0]",
 
     -- State tracking (will be saved)
     settings = {
         pending_kill = nil,      -- Faction key to kill
         pending_revive = nil,    -- Faction key to revive
+    },
+
+    -- Fallback rebel faction per subculture for Anarchy Kill.
+    -- If a rebel faction does not exist in the active campaign, Anarchy Kill falls back to ruins.
+    rebel_factions_by_subculture = {
+        ["wh_dlc03_sc_bst_beastmen"] = "wh_dlc03_bst_beastmen_rebels",
+        ["wh_dlc05_sc_wef_wood_elves"] = "wh_dlc05_wef_wood_elves_rebels",
+        ["wh_dlc08_sc_nor_norsca"] = "wh_main_nor_norsca_rebels",
+        ["wh_main_sc_brt_bretonnia"] = "wh_main_brt_bretonnia_rebels",
+        ["wh_main_sc_chs_chaos"] = "wh_main_chs_chaos_rebels",
+        ["wh_main_sc_dwf_dwarfs"] = "wh_main_dwf_dwarf_rebels",
+        ["wh_main_sc_emp_empire"] = "wh_main_emp_empire_rebels",
+        ["wh_main_sc_grn_greenskins"] = "wh_main_grn_greenskins_rebels",
+        ["wh_main_sc_vmp_vampire_counts"] = "wh_main_vmp_vampire_rebels",
+        ["wh2_dlc09_sc_tmb_tomb_kings"] = "wh2_dlc09_tmb_tomb_kings_rebels",
+        ["wh2_dlc11_sc_cst_vampire_coast"] = "wh2_dlc11_cst_vampire_coast_rebellion_rebels",
+        ["wh2_main_sc_def_dark_elves"] = "wh2_main_def_dark_elves_rebels",
+        ["wh2_main_sc_hef_high_elves"] = "wh2_main_hef_high_elves_rebels",
+        ["wh2_main_sc_lzd_lizardmen"] = "wh2_main_lzd_lizardmen_rebels",
+        ["wh2_main_sc_skv_skaven"] = "wh2_main_skv_skaven_rebels",
+        ["wh3_dlc23_sc_chd_chaos_dwarfs"] = "wh3_dlc23_chd_chaos_dwarfs_rebels",
+        ["wh3_main_sc_cth_cathay"] = "wh3_main_cth_cathay_rebels",
+        ["wh3_main_sc_dae_daemons"] = "wh_main_chs_chaos_rebels",
+        ["wh3_main_sc_kho_khorne"] = "wh3_main_kho_khorne_rebels",
+        ["wh3_main_sc_ksl_kislev"] = "wh3_main_ksl_kislev_rebels",
+        ["wh3_main_sc_nur_nurgle"] = "wh3_main_nur_nurgle_rebels",
+        ["wh3_main_sc_ogr_ogre_kingdoms"] = "wh3_main_ogr_ogre_rebels",
+        ["wh3_main_sc_sla_slaanesh"] = "wh3_main_sla_slaanesh_rebels",
+        ["wh3_main_sc_tze_tzeentch"] = "wh3_main_tze_tzeentch_rebels",
     },
 
     -- Faction to capital region mapping
@@ -424,10 +454,13 @@ local deprecated_army_templates = require("script._lib.mod.deprecated_army_templ
 require("script._lib.mod.lib_runtime_army_template_generator")
 
 --[[-------------------------------------------------------------------------------------------------------------
-    Logging helper - uses ModLog if available, otherwise out()
+    Logging helper.
+
+    Search for [RBC_DEBUG] in lua_mod_log.txt:
+    Total War WARHAMMER III/lua_mod_log.txt
 ]]---------------------------------------------------------------------------------------------------------------
 function revive_boring_campaign:log(message)
-    local msg = "ReviveBoringCampaign: " .. tostring(message)
+    local msg = self.log_prefix .. " " .. tostring(message)
 
     -- Use ModLog if available (from glib or other logging frameworks)
     if ModLog then
@@ -795,6 +828,90 @@ function revive_boring_campaign:kill_faction(faction_key)
 end
 
 --[[-------------------------------------------------------------------------------------------------------------
+    ANARCHY KILL FACTION
+
+    Transfers all regions to a matching rebel faction, then kills all target faction characters.
+    If no usable rebel faction exists in this campaign, regions fall back to ruins.
+]]---------------------------------------------------------------------------------------------------------------
+function revive_boring_campaign:anarchy_kill_faction(faction_key)
+    self:log("Attempting anarchy kill on faction: " .. tostring(faction_key))
+
+    local faction = cm:get_faction(faction_key)
+    if not faction or faction:is_null_interface() then
+        self:log("ERROR: Faction not found for anarchy kill: " .. tostring(faction_key))
+        return false
+    end
+
+    if faction:is_human() then
+        self:log("ERROR: Cannot anarchy kill player faction!")
+        return false
+    end
+
+    if faction:is_dead() then
+        self:log("Faction is already dead, cannot anarchy kill: " .. faction_key)
+        return false
+    end
+
+    local subculture = faction:subculture()
+    local rebel_faction_key = self.rebel_factions_by_subculture[subculture]
+    local rebel_faction = rebel_faction_key and cm:get_faction(rebel_faction_key) or false
+    local can_transfer_to_rebels = rebel_faction and not rebel_faction:is_null_interface() and not rebel_faction:is_human()
+
+    if can_transfer_to_rebels then
+        self:log("Anarchy kill rebel target for " .. faction_key .. ": " .. rebel_faction_key .. " (subculture " .. tostring(subculture) .. ")")
+    else
+        self:log("WARNING: No usable rebel target for " .. faction_key .. " (subculture " .. tostring(subculture) .. "), falling back to ruins")
+    end
+
+    local region_list = faction:region_list()
+    local regions_to_process = {}
+    for i = 0, region_list:num_items() - 1 do
+        local region = region_list:item_at(i)
+        if region and not region:is_null_interface() then
+            table.insert(regions_to_process, region:name())
+        end
+    end
+
+    local char_list = faction:character_list()
+    local characters_to_kill = {}
+    for i = 0, char_list:num_items() - 1 do
+        local character = char_list:item_at(i)
+        if character and not character:is_null_interface() then
+            table.insert(characters_to_kill, character:cqi())
+        end
+    end
+
+    self:log("Anarchy kill found " .. #regions_to_process .. " regions and " .. #characters_to_kill .. " characters")
+
+    local transferred_regions = 0
+    local abandoned_regions = 0
+    for _, region_key in ipairs(regions_to_process) do
+        if can_transfer_to_rebels then
+            self:log("Anarchy transferring region " .. region_key .. " to " .. rebel_faction_key)
+            cm:transfer_region_to_faction(region_key, rebel_faction_key)
+            transferred_regions = transferred_regions + 1
+        else
+            self:log("Anarchy fallback abandoning region: " .. region_key)
+            cm:set_region_abandoned(region_key)
+            abandoned_regions = abandoned_regions + 1
+        end
+    end
+
+    for _, cqi in ipairs(characters_to_kill) do
+        self:log("Anarchy killing character CQI: " .. cqi)
+        cm:kill_character_and_commanded_unit(cm:char_lookup_str(cqi), true, true)
+    end
+
+    self:log(
+        "Anarchy kill completed for " .. faction_key ..
+        ": transferred_regions=" .. transferred_regions ..
+        ", abandoned_regions=" .. abandoned_regions ..
+        ", killed_characters=" .. #characters_to_kill
+    )
+    return true
+end
+
+--[[-------------------------------------------------------------------------------------------------------------
     REVIVE FACTION
 
     Gives the faction a region and spawns armies.
@@ -1148,6 +1265,14 @@ function revive_boring_campaign:process_pending_kill(faction_key)
     end
 end
 
+function revive_boring_campaign:process_pending_anarchy_kill(faction_key)
+    if faction_key and faction_key ~= "" then
+        cm:callback(function()
+            self:anarchy_kill_faction(faction_key)
+        end, 0.5)
+    end
+end
+
 function revive_boring_campaign:process_pending_revive(faction_key)
     if faction_key and faction_key ~= "" then
         cm:callback(function()
@@ -1194,4 +1319,4 @@ cm:add_first_tick_callback(function()
     revive_boring_campaign:initialize()
 end)
 
-out("ReviveBoringCampaign: Script loaded successfully")
+revive_boring_campaign:log("Script loaded successfully")

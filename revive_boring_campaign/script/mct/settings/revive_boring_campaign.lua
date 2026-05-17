@@ -8,8 +8,19 @@
 ]]---------------------------------------------------------------------------------------------------------------
 
 local mct = get_mct()
+local mod_version = "1.0.1"
+local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
+
+local function rbc_mct_log(message)
+    local msg = rbc_mct_log_prefix .. " " .. tostring(message)
+    if ModLog then
+        ModLog(msg)
+    end
+    out(msg)
+end
+
 if not mct then
-    out("ReviveBoringCampaign MCT: MCT not found, skipping UI setup")
+    rbc_mct_log("MCT not found, skipping UI setup")
     return
 end
 
@@ -17,6 +28,7 @@ local mod = mct:register_mod("revive_boring_campaign")
 
 local checkbox_option_keys = {
     "kill_execute",
+    "anarchy_kill_execute",
     "revive_execute",
     "boost_unlock_tech",
     "boost_free_upkeep",
@@ -46,10 +58,12 @@ local function force_all_checkboxes_false()
 end
 
 mod:set_author("Evanok")
-mod:set_title("Revive Boring Campaign")
-mod:set_description("Kill, revive, buff or debuff factions to make your campaign more interesting!\n\n" ..
+mod:set_title("Revive Boring Campaign v" .. mod_version)
+mod:set_description("Version: " .. mod_version .. "\n\n" ..
+    "Kill, revive, buff or debuff factions to make your campaign more interesting!\n\n" ..
     "Features:\n" ..
     "- Kill Faction: Destroy the faction leader\n" ..
+    "- Anarchy Kill: Destroy a faction and hand its regions to same-culture rebels\n" ..
     "- Revive Faction: Bring back a dead faction with armies\n" ..
     "- Buff Faction: Unlock techs, free upkeep, gold, spawn armies\n" ..
     "- Debuff Faction: Drain treasury, morale penalty, kill armies\n\n" ..
@@ -60,7 +74,7 @@ mod:set_description("Kill, revive, buff or debuff factions to make your campaign
 
 if mct.get_version and (mct:get_version() == "0.9-beta" or mct:get_version() == "0.9") then
     mod:set_workshop_id("0000000000") -- Update when published
-    mod:set_version("1.0")
+    mod:set_version(mod_version)
 end
 
 --[[-------------------------------------------------------------------------------------------------------------
@@ -291,10 +305,6 @@ local major_factions = {
     {"wh2_dlc17_bst_taurox", "Taurox"},
 }
 
-table.sort(major_factions, function(a, b)
-    return string.lower(a[2]) < string.lower(b[2])
-end)
-
 -- Add dropdown values
 kill_faction_dropdown:add_dropdown_value("", "-- Select Faction --", "Select a faction from the list")
 for _, faction_data in ipairs(major_factions) do
@@ -306,6 +316,12 @@ local kill_execute = mod:add_new_option("kill_execute", "checkbox")
 kill_execute:set_text("Kill")
 kill_execute:set_tooltip_text("Check this box to kill the selected faction. All their settlements will become ruins. The checkbox will reset after execution.")
 kill_execute:set_default_value(false)
+
+-- Checkbox to execute anarchy kill
+local anarchy_kill_execute = mod:add_new_option("anarchy_kill_execute", "checkbox")
+anarchy_kill_execute:set_text("Anarchy Kill")
+anarchy_kill_execute:set_tooltip_text("Check this box to destroy the selected faction and transfer its settlements to matching rebel factions instead of ruins. The checkbox will reset after execution.")
+anarchy_kill_execute:set_default_value(false)
 
 --[[-------------------------------------------------------------------------------------------------------------
     SECTION: Revive Faction
@@ -432,7 +448,7 @@ core:add_listener(
     "MctInitialized",
     true,
     function(context)
-        out("ReviveBoringCampaign MCT: MCT Initialized")
+        rbc_mct_log("MCT Initialized")
         force_all_checkboxes_false()
 
         -- Listener for Kill execution
@@ -451,17 +467,49 @@ core:add_listener(
                     local faction_key = dropdown:get_selected_setting()
 
                     if faction_key and faction_key ~= "" then
-                        out("ReviveBoringCampaign MCT: Executing kill on " .. faction_key)
+                        rbc_mct_log("Executing kill on " .. faction_key)
 
                         -- Execute kill through main script
                         if revive_boring_campaign then
                             revive_boring_campaign:process_pending_kill(faction_key)
                         end
                     else
-                        out("ReviveBoringCampaign MCT: No faction selected for kill")
+                        rbc_mct_log("No faction selected for kill")
                     end
 
                     -- Reset checkbox after a short delay
+                    cm:callback(function()
+                        context:option():set_selected_setting(false)
+                    end, 1)
+                end
+            end,
+            true
+        )
+
+        -- Listener for Anarchy Kill execution
+        core:add_listener(
+            "ReviveBoringCampaign_Anarchy_Kill_Execute",
+            "MctOptionSelectedSettingSet",
+            function(context)
+                return context:option():get_key() == "anarchy_kill_execute"
+            end,
+            function(context)
+                local value = context:option():get_selected_setting()
+                if value == true then
+                    local mct_mod = mct:get_mod_by_key("revive_boring_campaign")
+                    local dropdown = mct_mod:get_option_by_key("kill_faction_select")
+                    local faction_key = dropdown:get_selected_setting()
+
+                    if faction_key and faction_key ~= "" then
+                        rbc_mct_log("Executing anarchy kill on " .. faction_key)
+
+                        if revive_boring_campaign then
+                            revive_boring_campaign:process_pending_anarchy_kill(faction_key)
+                        end
+                    else
+                        rbc_mct_log("No faction selected for anarchy kill")
+                    end
+
                     cm:callback(function()
                         context:option():set_selected_setting(false)
                     end, 1)
@@ -486,14 +534,14 @@ core:add_listener(
                     local faction_key = dropdown:get_selected_setting()
 
                     if faction_key and faction_key ~= "" then
-                        out("ReviveBoringCampaign MCT: Executing revive on " .. faction_key)
+                        rbc_mct_log("Executing revive on " .. faction_key)
 
                         -- Execute revive through main script
                         if revive_boring_campaign then
                             revive_boring_campaign:process_pending_revive(faction_key)
                         end
                     else
-                        out("ReviveBoringCampaign MCT: No faction selected for revive")
+                        rbc_mct_log("No faction selected for revive")
                     end
 
                     -- Reset checkbox after a short delay
@@ -527,7 +575,7 @@ core:add_listener(
                         local give_gold = mct_mod:get_option_by_key("boost_give_gold"):get_selected_setting()
                         local spawn_armies = mct_mod:get_option_by_key("boost_spawn_armies"):get_selected_setting()
 
-                        out("ReviveBoringCampaign MCT: Executing boost on " .. faction_key)
+                        rbc_mct_log("Executing boost on " .. faction_key)
 
                         -- Execute boost through main script
                         if revive_boring_campaign then
@@ -539,7 +587,7 @@ core:add_listener(
                             })
                         end
                     else
-                        out("ReviveBoringCampaign MCT: No faction selected for boost")
+                        rbc_mct_log("No faction selected for boost")
                     end
 
                     -- Reset ALL checkboxes after a short delay
@@ -576,7 +624,7 @@ core:add_listener(
                         local drain_treasury = mct_mod:get_option_by_key("nerf_drain_treasury"):get_selected_setting()
                         local kill_armies = mct_mod:get_option_by_key("nerf_kill_armies"):get_selected_setting()
 
-                        out("ReviveBoringCampaign MCT: Executing nerf on " .. faction_key)
+                        rbc_mct_log("Executing nerf on " .. faction_key)
 
                         -- Execute nerf through main script
                         if revive_boring_campaign then
@@ -586,7 +634,7 @@ core:add_listener(
                             })
                         end
                     else
-                        out("ReviveBoringCampaign MCT: No faction selected for nerf")
+                        rbc_mct_log("No faction selected for nerf")
                     end
 
                     -- Reset ALL checkboxes after a short delay
@@ -601,9 +649,9 @@ core:add_listener(
             true
         )
 
-        out("ReviveBoringCampaign MCT: Listeners registered")
+        rbc_mct_log("Listeners registered")
     end,
     true
 )
 
-out("ReviveBoringCampaign MCT: Settings script loaded")
+rbc_mct_log("Settings script loaded")

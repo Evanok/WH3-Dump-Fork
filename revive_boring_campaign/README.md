@@ -27,6 +27,7 @@ A mod to revive boring mid/late-game campaigns by allowing players to kill, resu
 | Faction dropdown (~80 factions) | `[DONE]` | All playable factions included |
 | Kill checkbox trigger | `[DONE]` | Kills faction leader |
 | Checkbox auto-reset | `[DONE]` | Resets after execution |
+| Anarchy Kill / Eshin-style kill | `[TO TEST]` | Alternative kill mode: destroy the faction but transfer its regions to same-subculture rebel factions instead of razing them |
 
 ### Revive Faction
 | Feature | Status | Notes |
@@ -145,9 +146,43 @@ cp "./revive_boring_campaign.pack" "/c/Program Files (x86)/Steam/steamapps/commo
 
 - **Effect bundles for armies**: Use `cm:apply_effect_bundle_to_characters_force()` NOT `cm:apply_effect_bundle()`. The latter applies to factions, not individual armies.
 - **Spawn location fallback**: If `find_valid_spawn_location_for_character_from_settlement()` fails, use settlement coordinates directly.
-- **Logging**: `out()` only outputs to in-game console. `io.open()` is sandboxed.
+- **Logging**: Search for `[RBC_DEBUG]` in `lua_mod_log.txt` after launching the game. `out()` writes there when script logging is enabled; `io.open()` is sandboxed in WH3 scripts.
 - **Hot reload does NOT work** - pack file required, must restart game
 - **MCT cache**: Delete `mct_registry.lua` if UI changes don't appear
+
+---
+
+## Resources
+
+### External References
+
+| Resource | URL | Notes |
+|----------|-----|-------|
+| TW Autogen | https://github.com/chadvandy/tw_autogen | Generated Total War scripting/API reference source. |
+| Total War Modding Wiki | https://tw-modding.com/index.php/Main_Page | General Total War modding documentation and guides. |
+| TW Modding Resources | https://chadvandy.github.io/tw_modding_resources/index.html | Chadvandy's Total War modding resources and generated docs. |
+
+### Logs
+
+| Resource | Location | Notes |
+|----------|----------|-------|
+| Lua mod log | `C:\Program Files (x86)\Steam\steamapps\common\Total War WARHAMMER III\lua_mod_log.txt` | Main file to check. Search for `ReviveBoringCampaign` or `[RBC_DEBUG]`. |
+| Game logs folder | `%APPDATA%\The Creative Assembly\Warhammer3\logs\` | Contains general WH3 logs like `modified.log`, `gfx.log.txt`, and `mp_log.txt`. |
+
+### Script Copies / Cache
+
+| Resource | Location | Notes |
+|----------|----------|-------|
+| Campaign loose script copy | `%APPDATA%\The Creative Assembly\Warhammer3\scripts\campaign\mod\revive_boring_campaign.lua` | Can contain an old copied version of the mod script. Check this if logs do not match source code. |
+| MCT loose script copy | `%APPDATA%\The Creative Assembly\Warhammer3\scripts\mct\settings\revive_boring_campaign.lua` | Can contain an old copied version of the MCT settings. |
+| MCT registry | `%APPDATA%\The Creative Assembly\Warhammer3\scripts\mct_registry.lua` | Delete if MCT UI changes do not appear. |
+
+### Installed Pack
+
+| Resource | Location | Notes |
+|----------|----------|-------|
+| Source pack build | `C:\Users\User\work\mode_warhammer3\revive_boring_campaign.pack` | Local rebuilt pack. |
+| Installed game pack | `C:\Program Files (x86)\Steam\steamapps\common\Total War WARHAMMER III\data\revive_boring_campaign.pack` | WH3 loads this file. Close the game/launcher before replacing it because it can be locked. |
 
 ---
 
