@@ -1,6 +1,6 @@
 # Changes
 
-## v1.0.2 - In progress
+## v1.0.2
 
 - Fixed Tomb Kings runtime army generation for Khemri and Arkhan-related Tomb Kings rosters.
 - Added the missing generic Tomb King lord (`wh2_dlc09_tmb_cha_tomb_king_0`) to the Tomb Kings runtime roster supplements.
@@ -14,7 +14,7 @@
 - Anarchy Kill now rejects rebel candidates that already have regions or armies on the campaign map.
 - Anarchy Kill now forces transferred rebel factions into war with every active faction so they can be cleared and resettled naturally.
 - Fixed Vampire Counts MCT labels: The Barrow Legion is Heinrich Kemmler, and Caravan of Blue Roses is Helman Ghorst.
-- Updated campaign log prefix to `v1.0.1` to match the visible MCT version while this work is being validated.
+- Updated MCT and campaign log version labels to `v1.0.2`.
 
 ## v1.0.1
 
