@@ -31,6 +31,21 @@ CHARACTER_UNIT_MILITARY_GROUP_SUPPLEMENTS = {
         "wh2_dlc09_tomb_kings",
         "wh2_dlc09_tomb_kings_arkhan",
     ],
+    "wh2_main_lzd_cha_saurus_old_blood_0": [
+        "wh2_main_lzd",
+    ],
+    "wh_main_grn_cha_goblin_great_shaman_0": [
+        "wh2_dlc12_grn_leaf_cutterz_tribe",
+    ],
+    "wh_main_grn_cha_goblin_big_boss_0": [
+        "wh2_dlc12_grn_leaf_cutterz_tribe",
+    ],
+    "wh_main_grn_cha_orc_shaman_0": [
+        "wh_main_group_savage_orcs",
+    ],
+    "wh3_dlc26_grn_cha_savage_orc_great_shaman": [
+        "wh_main_group_savage_orcs",
+    ],
     "wh2_dlc11_cst_cha_vampire_fleet_admiral_0": [
         "wh2_dlc11_group_vampire_coast",
         "wh2_dlc11_group_vampire_coast_sartosa",
@@ -54,6 +69,15 @@ CHARACTER_UNIT_MILITARY_GROUP_SUPPLEMENTS = {
     "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0": [
         "wh2_dlc11_group_vampire_coast",
         "wh2_dlc11_group_vampire_coast_sartosa",
+    ],
+    "wh3_main_pro_ksl_cha_boyar_0": [
+        "wh3_main_pro_ksl",
+    ],
+    "wh3_main_ksl_cha_patriarch_0": [
+        "wh3_main_pro_ksl",
+    ],
+    "wh_main_emp_cha_general_0": [
+        "wh_main_group_teb",
     ],
 }
 

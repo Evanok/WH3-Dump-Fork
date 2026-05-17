@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-17T13:38:31+00:00",
+  "generated_at_utc": "2026-05-17T13:45:50+00:00",
   "source": {
     "repo_root": "C:\\Users\\User\\work\\mode_warhammer3\\WH3-Dump-Fork",
     "tables": [
@@ -25,6 +25,21 @@
         "wh2_dlc09_tomb_kings",
         "wh2_dlc09_tomb_kings_arkhan"
       ],
+      "wh2_main_lzd_cha_saurus_old_blood_0": [
+        "wh2_main_lzd"
+      ],
+      "wh_main_grn_cha_goblin_great_shaman_0": [
+        "wh2_dlc12_grn_leaf_cutterz_tribe"
+      ],
+      "wh_main_grn_cha_goblin_big_boss_0": [
+        "wh2_dlc12_grn_leaf_cutterz_tribe"
+      ],
+      "wh_main_grn_cha_orc_shaman_0": [
+        "wh_main_group_savage_orcs"
+      ],
+      "wh3_dlc26_grn_cha_savage_orc_great_shaman": [
+        "wh_main_group_savage_orcs"
+      ],
       "wh2_dlc11_cst_cha_vampire_fleet_admiral_0": [
         "wh2_dlc11_group_vampire_coast",
         "wh2_dlc11_group_vampire_coast_sartosa"
@@ -48,6 +63,15 @@
       "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0": [
         "wh2_dlc11_group_vampire_coast",
         "wh2_dlc11_group_vampire_coast_sartosa"
+      ],
+      "wh3_main_pro_ksl_cha_boyar_0": [
+        "wh3_main_pro_ksl"
+      ],
+      "wh3_main_ksl_cha_patriarch_0": [
+        "wh3_main_pro_ksl"
+      ],
+      "wh_main_emp_cha_general_0": [
+        "wh_main_group_teb"
       ]
     }
   },
@@ -6787,8 +6811,26 @@
       "culture_names": [
         "Greenskins"
       ],
-      "unit_count": 27,
+      "unit_count": 29,
       "units": [
+        {
+          "unit_key": "wh_main_grn_cha_goblin_big_boss_0",
+          "land_unit_key": "wh_main_grn_cha_goblin_big_boss_0",
+          "agent_subtype": "wh_main_grn_goblin_big_boss",
+          "name": "Goblin Big Boss",
+          "category": "character_hero",
+          "category_raw": "inf_melee",
+          "caste": "hero"
+        },
+        {
+          "unit_key": "wh_main_grn_cha_goblin_great_shaman_0",
+          "land_unit_key": "wh_main_grn_cha_goblin_great_shaman_0",
+          "agent_subtype": "wh_main_grn_goblin_great_shaman",
+          "name": "Goblin Great Shaman",
+          "category": "character_lord",
+          "category_raw": "inf_melee",
+          "caste": "lord"
+        },
         {
           "unit_key": "wh_main_grn_cav_orc_boar_chariot",
           "land_unit_key": "wh_main_grn_cav_orc_boar_chariot",
@@ -7034,6 +7076,12 @@
         }
       ],
       "units_by_category": {
+        "character_hero": [
+          "wh_main_grn_cha_goblin_big_boss_0"
+        ],
+        "character_lord": [
+          "wh_main_grn_cha_goblin_great_shaman_0"
+        ],
         "chariot": [
           "wh_main_grn_cav_orc_boar_chariot"
         ],
@@ -9164,7 +9212,7 @@
       "culture_names": [
         "Lizardmen"
       ],
-      "unit_count": 69,
+      "unit_count": 70,
       "units": [
         {
           "unit_key": "wh2_main_lzd_cha_saurus_scar_veteran_0",
@@ -9210,6 +9258,15 @@
           "category": "character_hero",
           "category_raw": "inf_melee",
           "caste": "hero"
+        },
+        {
+          "unit_key": "wh2_main_lzd_cha_saurus_old_blood_0",
+          "land_unit_key": "wh2_main_lzd_cha_saurus_old_blood_0",
+          "agent_subtype": "wh2_dlc13_lzd_saurus_old_blood_horde",
+          "name": "Saurus Oldblood",
+          "category": "character_lord",
+          "category_raw": "inf_melee",
+          "caste": "lord"
         },
         {
           "unit_key": "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
@@ -9795,6 +9852,9 @@
           "wh2_dlc17_lzd_cha_skink_oracle_troglodon_0",
           "wh2_main_lzd_cha_skink_priest_beasts_0",
           "wh2_main_lzd_cha_skink_priest_heavens_0"
+        ],
+        "character_lord": [
+          "wh2_main_lzd_cha_saurus_old_blood_0"
         ],
         "melee_cavalry": [
           "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
@@ -21042,7 +21102,7 @@
       "culture_names": [
         "Kislev"
       ],
-      "unit_count": 17,
+      "unit_count": 19,
       "units": [
         {
           "unit_key": "wh3_main_pro_ksl_veh_little_grom_0",
@@ -21052,6 +21112,24 @@
           "category": "artillery",
           "category_raw": "artillery",
           "caste": "chariot"
+        },
+        {
+          "unit_key": "wh3_main_ksl_cha_patriarch_0",
+          "land_unit_key": "wh3_main_ksl_cha_patriarch_0",
+          "agent_subtype": "wh3_main_ksl_patriarch",
+          "name": "Patriarch",
+          "category": "character_hero",
+          "category_raw": "inf_melee",
+          "caste": "hero"
+        },
+        {
+          "unit_key": "wh3_main_pro_ksl_cha_boyar_0",
+          "land_unit_key": "wh3_main_pro_ksl_cha_boyar_0",
+          "agent_subtype": "wh3_main_pro_ksl_boyar",
+          "name": "Boyar",
+          "category": "character_lord",
+          "category_raw": "inf_melee",
+          "caste": "lord"
         },
         {
           "unit_key": "wh3_main_pro_ksl_cav_gryphon_legion_ror_0",
@@ -21201,6 +21279,12 @@
       "units_by_category": {
         "artillery": [
           "wh3_main_pro_ksl_veh_little_grom_0"
+        ],
+        "character_hero": [
+          "wh3_main_ksl_cha_patriarch_0"
+        ],
+        "character_lord": [
+          "wh3_main_pro_ksl_cha_boyar_0"
         ],
         "melee_cavalry": [
           "wh3_main_pro_ksl_cav_gryphon_legion_ror_0",
@@ -29244,8 +29328,26 @@
       "culture_names": [
         "Greenskins"
       ],
-      "unit_count": 6,
+      "unit_count": 8,
       "units": [
+        {
+          "unit_key": "wh_main_grn_cha_orc_shaman_0",
+          "land_unit_key": "wh_main_grn_cha_orc_shaman_0",
+          "agent_subtype": "wh_main_grn_orc_shaman",
+          "name": "Orc Shaman",
+          "category": "character_hero",
+          "category_raw": "inf_melee",
+          "caste": "hero"
+        },
+        {
+          "unit_key": "wh3_dlc26_grn_cha_savage_orc_great_shaman",
+          "land_unit_key": "wh3_dlc26_grn_cha_savage_orc_great_shaman",
+          "agent_subtype": "wh3_dlc26_grn_savage_orc_great_shaman",
+          "name": "Savage Orc Great Shaman",
+          "category": "character_lord",
+          "category_raw": "inf_melee",
+          "caste": "lord"
+        },
         {
           "unit_key": "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
           "land_unit_key": "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
@@ -29302,6 +29404,12 @@
         }
       ],
       "units_by_category": {
+        "character_hero": [
+          "wh_main_grn_cha_orc_shaman_0"
+        ],
+        "character_lord": [
+          "wh3_dlc26_grn_cha_savage_orc_great_shaman"
+        ],
         "melee_cavalry": [
           "wh_main_grn_cav_savage_orc_boar_boy_big_uns",
           "wh_main_grn_cav_savage_orc_boar_boyz"
@@ -29345,7 +29453,7 @@
       "culture_names": [
         "The Empire"
       ],
-      "unit_count": 17,
+      "unit_count": 18,
       "units": [
         {
           "unit_key": "wh_main_teb_cha_wizard_0",
@@ -29364,6 +29472,15 @@
           "category": "character_hero",
           "category_raw": "inf_melee",
           "caste": "hero"
+        },
+        {
+          "unit_key": "wh_main_emp_cha_general_0",
+          "land_unit_key": "wh_main_emp_cha_general_0",
+          "agent_subtype": "wh_main_emp_lord",
+          "name": "General of the Empire",
+          "category": "character_lord",
+          "category_raw": "inf_melee",
+          "caste": "lord"
         },
         {
           "unit_key": "wh_main_emp_cav_empire_knights",
@@ -29505,6 +29622,9 @@
         "character_hero": [
           "wh_main_teb_cha_wizard_0",
           "wh_main_teb_cha_captain_0"
+        ],
+        "character_lord": [
+          "wh_main_emp_cha_general_0"
         ],
         "melee_cavalry": [
           "wh_main_emp_cav_empire_knights",

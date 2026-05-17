@@ -7,6 +7,8 @@
 - Khemri should now use the runtime generator path with `create_force_with_general` instead of falling back to the deprecated subculture template.
 - Fixed Vampire Coast runtime army generation for Noctilus and Sartosa military groups.
 - Added missing generic Vampire Fleet Admiral lord units to the Vampire Coast runtime roster supplements.
+- Fixed additional runtime roster gaps for Lizardmen, Leaf-Cutterz, Savage Orcs, Prologue Kislev, and TEB.
+- Added a validation mode to the runtime army preview script and verified all 48 generated military groups can produce complete armies.
 - Fixed Vampire Counts MCT labels: The Barrow Legion is Heinrich Kemmler, and Caravan of Blue Roses is Helman Ghorst.
 - Updated campaign log prefix to `v1.0.1` to match the visible MCT version while this work is being validated.
 
