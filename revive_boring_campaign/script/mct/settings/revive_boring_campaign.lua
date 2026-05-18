@@ -206,10 +206,9 @@ local major_factions = {
 
     -- Empire
     {"wh_main_emp_empire", "Reikland (Karl Franz)"},
-    {"wh_main_emp_wissenland", "Wissenland"},
+    {"wh_main_emp_wissenland", "Wissenland & Nuln (Elspeth)"},
     {"wh_main_emp_averland", "Averland"},
     {"wh_main_emp_middenland", "Middenland (Boris Todbringer)"},
-    {"wh3_dlc25_emp_elspeth", "Elspeth von Draken"},
     {"wh2_dlc13_emp_the_huntmarshals_expedition", "Markus Wulfhart"},
     {"wh2_dlc13_emp_golden_order", "Golden Order (Gelt)"},
     {"wh3_main_emp_cult_of_sigmar", "Volkmar"},
