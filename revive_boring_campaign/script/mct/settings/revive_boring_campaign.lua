@@ -29,6 +29,7 @@ local mod = mct:register_mod("revive_boring_campaign")
 local checkbox_option_keys = {
     "kill_execute",
     "anarchy_kill_execute",
+    "validation_test_execute",
     "revive_execute",
     "boost_unlock_tech",
     "boost_free_upkeep",
@@ -304,9 +305,103 @@ local major_factions = {
     {"wh2_dlc17_bst_taurox", "Taurox"},
 }
 
+local extended_major_factions = {
+    {"cr_kho_servants_of_the_blood_nagas", "Servants of the Blood Nagas"},
+    {"cr_nur_tide_of_pestilence", "Tide of Pestilence"},
+    {"cr_sla_loeshs_indulgence", "Loesh's Indulgence"},
+    {"cr_tze_cult_of_tsien_tsin", "Cult of Tsien-Tsin"},
+    {"cr_tze_sliding_terror", "Sliding Terror"},
+    {"cr_ksl_rota_of_the_dawn", "Rota of the Dawn"},
+    {"cr_ogr_deathtoll", "Deathtoll"},
+    {"cr_ogr_snakebiter_tribe", "Snakebiter Tribe"},
+    {"cr_ogr_suneaters", "Suneaters"},
+    {"cr_ogr_shellcrackers", "Shellcrackers"},
+    {"cr_cth_okumoto_clan", "Okumoto Clan"},
+    {"cr_cth_sanyo_clan", "Sanyo Clan"},
+    {"cr_cth_the_chosen", "The Chosen"},
+    {"cr_cth_agents_of_the_moon", "Agents of the Moon"},
+    {"cr_hef_gate_guards", "Gate Guards"},
+    {"cr_hef_tor_elithis", "Tor Elithis"},
+    {"cr_hef_the_starguided", "The Starguided"},
+    {"cr_lzd_scions_of_xholankhas", "Scions of Xholankha"},
+    {"cr_lzd_one_hundred_thousand", "One Hundred Thousand"},
+    {"cr_def_corsairs_of_spite", "Corsairs of Spite"},
+    {"cr_def_harbingers_of_pain", "Harbingers of Pain"},
+    {"cr_def_cult_of_anath_raema", "Cult of Anath Raema"},
+    {"cr_skv_eshin_clan_nest", "Eshin Clan Nest"},
+    {"cr_skv_clan_rikek", "Clan Rikek"},
+    {"cr_skv_clan_festerlingus", "Clan Festerlingus"},
+    {"cr_skv_clan_crooktail", "Clan Crooktail"},
+    {"cr_tmb_sons_of_ptra", "Sons of Ptra"},
+    {"cr_cst_rotten_knot", "Rotten Knot"},
+    {"cr_emp_guests_of_the_raja", "Guests of the Raja"},
+    {"cr_dwf_firebeards_excavators", "Firebeards Excavators"},
+    {"cr_grn_speaking_trees", "Speaking Trees"},
+    {"cr_grn_nag_rippers", "Nag Rippers"},
+    {"cr_grn_grag_a_mugar_clan", "Grag A Mugar Clan"},
+    {"cr_grn_blackwolf_clan", "Blackwolf Clan"},
+    {"cr_grn_withered_eye_tribe", "Withered Eye Tribe"},
+    {"rhox_vmp_the_everliving", "The Everliving"},
+    {"cr_chs_po_hai", "Po Hai"},
+    {"cr_chs_the_scourgeborn", "The Scourgeborn"},
+    {"cr_chs_tsavags", "Tsavags"},
+    {"rhox_chs_the_deathswords", "The Deathswords"},
+    {"cr_chs_iron_wolves", "Iron Wolves"},
+    {"cr_chs_death_eaters", "Death Eaters"},
+    {"cr_bst_apehorn", "Apehorn"},
+    {"cr_bst_warherd_of_kug", "Warherd of Kug"},
+    {"cr_bst_orobagor_warherd", "Orobagor Warherd"},
+    {"cr_bst_skullfest_warherd", "Skullfest Warherd"},
+    {"cr_wef_lotus_flower", "Lotus Flower"},
+    {"rhox_wef_far_away_forest", "Far Away Forest"},
+    {"cr_brt_leofrics_fellowship", "Leofric's Fellowship"},
+    {"rhox_brt_reveller_of_domance", "Reveller of Domance"},
+    {"cr_chd_slaves_of_the_black_dwarf", "Slaves of the Black Dwarf"},
+    {"cr_chd_skullstack", "Skullstack"},
+    {"cr_nor_tokmars", "Tokmars"},
+    {"rhox_nor_khazags", "Khazags"},
+    {"cr_nor_wei_tu", "Wei Tu"},
+    {"cr_nor_stormravens", "Stormravens"},
+    {"rhox_nor_ravenblessed", "Ravenblessed"},
+}
+
+local function faction_exists_in_campaign(faction_key)
+    if not cm or not cm.get_faction then
+        return false
+    end
+
+    local ok, faction = pcall(function()
+        return cm:get_faction(faction_key)
+    end)
+
+    return ok and faction and not faction:is_null_interface()
+end
+
+local function build_available_major_factions()
+    local available_factions = {}
+
+    for _, faction_data in ipairs(major_factions) do
+        table.insert(available_factions, faction_data)
+    end
+
+    local extended_added = 0
+    for _, faction_data in ipairs(extended_major_factions) do
+        if faction_exists_in_campaign(faction_data[1]) then
+            table.insert(available_factions, faction_data)
+            extended_added = extended_added + 1
+        end
+    end
+
+    rbc_mct_log("Faction dropdown list built: vanilla=" .. #major_factions .. ", extended=" .. extended_added)
+
+    return available_factions
+end
+
+local available_major_factions = build_available_major_factions()
+
 -- Add dropdown values
 kill_faction_dropdown:add_dropdown_value("", "-- Select Faction --", "Select a faction from the list")
-for _, faction_data in ipairs(major_factions) do
+for _, faction_data in ipairs(available_major_factions) do
     kill_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Kill " .. faction_data[2])
 end
 
@@ -321,6 +416,11 @@ local anarchy_kill_execute = mod:add_new_option("anarchy_kill_execute", "checkbo
 anarchy_kill_execute:set_text("Anarchy Kill")
 anarchy_kill_execute:set_tooltip_text("Check this box to destroy the selected faction and transfer its settlements to matching rebel factions instead of ruins. The checkbox will reset after execution.")
 anarchy_kill_execute:set_default_value(false)
+
+local validation_test_execute = mod:add_new_option("validation_test_execute", "checkbox")
+validation_test_execute:set_text("Validation Test")
+validation_test_execute:set_tooltip_text("Destructive test mode. Runs Kill, Revive, then Anarchy Kill for every faction in this dropdown using the real feature code.")
+validation_test_execute:set_default_value(false)
 
 --[[-------------------------------------------------------------------------------------------------------------
     SECTION: Revive Faction
@@ -339,7 +439,7 @@ revive_faction_dropdown:set_tooltip_text("Choose which faction you want to bring
 
 -- Use same faction list (will only work on dead factions in practice)
 revive_faction_dropdown:add_dropdown_value("", "-- Select Faction --", "Select a dead faction to revive")
-for _, faction_data in ipairs(major_factions) do
+for _, faction_data in ipairs(available_major_factions) do
     revive_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Revive " .. faction_data[2])
 end
 
@@ -366,7 +466,7 @@ boost_faction_dropdown:set_tooltip_text("Choose which faction you want to buff."
 
 -- Use same faction list
 boost_faction_dropdown:add_dropdown_value("", "-- Select Faction --", "Select a faction")
-for _, faction_data in ipairs(major_factions) do
+for _, faction_data in ipairs(available_major_factions) do
     boost_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
 end
 
@@ -414,7 +514,7 @@ nerf_faction_dropdown:set_tooltip_text("Choose which faction you want to debuff.
 
 -- Use same faction list
 nerf_faction_dropdown:add_dropdown_value("", "-- Select Faction --", "Select a faction")
-for _, faction_data in ipairs(major_factions) do
+for _, faction_data in ipairs(available_major_factions) do
     nerf_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
 end
 
@@ -507,6 +607,34 @@ core:add_listener(
                         end
                     else
                         rbc_mct_log("No faction selected for anarchy kill")
+                    end
+
+                    cm:callback(function()
+                        context:option():set_selected_setting(false)
+                    end, 1)
+                end
+            end,
+            true
+        )
+
+        core:add_listener(
+            "ReviveBoringCampaign_Validation_Test_Execute",
+            "MctOptionSelectedSettingSet",
+            function(context)
+                return context:option():get_key() == "validation_test_execute"
+            end,
+            function(context)
+                local value = context:option():get_selected_setting()
+                if value == true then
+                    local faction_keys = {}
+                    for _, faction_data in ipairs(available_major_factions) do
+                        table.insert(faction_keys, faction_data[1])
+                    end
+
+                    rbc_mct_log("Executing validation test for " .. #faction_keys .. " factions")
+
+                    if revive_boring_campaign then
+                        revive_boring_campaign:process_pending_validation_test(faction_keys)
                     end
 
                     cm:callback(function()

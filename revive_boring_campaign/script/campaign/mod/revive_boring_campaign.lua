@@ -1394,6 +1394,44 @@ function revive_boring_campaign:process_pending_anarchy_kill(faction_key)
     end
 end
 
+function revive_boring_campaign:process_pending_validation_test(faction_keys)
+    if not faction_keys or #faction_keys == 0 then
+        self:log("Validation test skipped: no factions provided")
+        return
+    end
+
+    self:log("Validation test scheduled for " .. #faction_keys .. " factions")
+
+    local delay = 0
+    for i = 1, #faction_keys do
+        local test_index = i
+        local faction_key = faction_keys[i]
+        local faction_count = #faction_keys
+
+        cm:callback(function()
+            self:log("VALIDATION_TEST [" .. test_index .. "/" .. faction_count .. "] kill " .. faction_key)
+            self:kill_faction(faction_key)
+        end, delay)
+        delay = delay + 1.5
+
+        cm:callback(function()
+            self:log("VALIDATION_TEST [" .. test_index .. "/" .. faction_count .. "] revive " .. faction_key)
+            self:revive_faction(faction_key, 5)
+        end, delay)
+        delay = delay + 2.5
+
+        cm:callback(function()
+            self:log("VALIDATION_TEST [" .. test_index .. "/" .. faction_count .. "] anarchy kill " .. faction_key)
+            self:anarchy_kill_faction(faction_key)
+        end, delay)
+        delay = delay + 2.5
+    end
+
+    cm:callback(function()
+        self:log("Validation test completed scheduled sequence for " .. #faction_keys .. " factions")
+    end, delay)
+end
+
 function revive_boring_campaign:process_pending_revive(faction_key)
     if faction_key and faction_key ~= "" then
         cm:callback(function()
