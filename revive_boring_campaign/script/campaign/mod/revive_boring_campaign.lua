@@ -21,6 +21,13 @@ revive_boring_campaign = {
     anarchy_rebel_sink_faction = "wh2_main_skv_clan_eshin_separatists",
     anarchy_rebel_sink_effect_bundle = "rbc_anarchy_sink_lock",
 
+    -- These factions should be revived around an anchor region without trying to own or upgrade it.
+    -- Nakai uses a horde flow and the Changeling uses foreign slots/hidden settlements instead of normal ownership.
+    regionless_revive_factions = {
+        ["wh2_dlc13_lzd_spirits_of_the_jungle"] = true,
+        ["wh3_dlc24_tze_the_deceivers"] = true,
+    },
+
     -- Preferred rebel factions per subculture for Anarchy Kill.
     -- Not every rebel key exists in every campaign, so Anarchy Kill also scans same-subculture candidates at runtime.
     rebel_factions_by_subculture = {
@@ -790,6 +797,47 @@ function revive_boring_campaign:upgrade_province_capital_to_max(target_region, f
     return building
 end
 
+function revive_boring_campaign:is_regionless_revive_faction(faction_key)
+    return self.regionless_revive_factions[faction_key] == true
+end
+
+function revive_boring_campaign:remove_faction_foreign_slots(faction)
+    if not faction or faction:is_null_interface() then
+        self:log("ERROR: remove_faction_foreign_slots() called without a valid faction")
+        return 0
+    end
+
+    local faction_cqi = faction:command_queue_index()
+    local foreign_slot_managers = faction:foreign_slot_managers()
+    if not foreign_slot_managers then
+        self:log("Foreign slot manager list unavailable for " .. faction:name())
+        return 0
+    end
+
+    local regions_to_clear = {}
+    for i = 0, foreign_slot_managers:num_items() - 1 do
+        local manager = foreign_slot_managers:item_at(i)
+        if manager and not manager:is_null_interface() then
+            local region = manager:region()
+            if region and not region:is_null_interface() then
+                table.insert(regions_to_clear, {
+                    key = region:name(),
+                    cqi = region:cqi()
+                })
+            end
+        end
+    end
+
+    self:log("Found " .. #regions_to_clear .. " foreign slot regions to clear for " .. faction:name())
+
+    for _, region_data in ipairs(regions_to_clear) do
+        self:log("Removing foreign slots for " .. faction:name() .. " in region " .. region_data.key)
+        cm:remove_faction_foreign_slots_from_region(faction_cqi, region_data.cqi)
+    end
+
+    return #regions_to_clear
+end
+
 --[[-------------------------------------------------------------------------------------------------------------
     Find a spawn point near a settlement and avoid stacking scripted armies on the same pixel.
 ]]---------------------------------------------------------------------------------------------------------------
@@ -891,6 +939,8 @@ function revive_boring_campaign:kill_faction(faction_key)
         cm:set_region_abandoned(region_key)
     end
 
+    local removed_foreign_slots = self:remove_faction_foreign_slots(faction)
+
     -- Kill all characters/armies of this faction
     local char_list = faction:character_list()
     local characters_to_kill = {}
@@ -910,7 +960,7 @@ function revive_boring_campaign:kill_faction(faction_key)
         cm:kill_character_and_commanded_unit(cm:char_lookup_str(cqi), true, true)
     end
 
-    self:log("Faction killed successfully: " .. faction_key)
+    self:log("Faction killed successfully: " .. faction_key .. " (removed_foreign_slot_regions=" .. removed_foreign_slots .. ")")
     return true
 end
 
@@ -972,6 +1022,7 @@ function revive_boring_campaign:anarchy_kill_faction(faction_key)
     local transferred_regions = 0
     local abandoned_regions = 0
     local wars_declared = 0
+    local removed_foreign_slots = self:remove_faction_foreign_slots(faction)
     for _, region_key in ipairs(regions_to_process) do
         if can_transfer_to_rebels then
             self:log("Anarchy transferring region " .. region_key .. " to " .. rebel_faction_key)
@@ -999,6 +1050,7 @@ function revive_boring_campaign:anarchy_kill_faction(faction_key)
         ": transferred_regions=" .. transferred_regions ..
         ", abandoned_regions=" .. abandoned_regions ..
         ", wars_declared=" .. wars_declared ..
+        ", removed_foreign_slot_regions=" .. removed_foreign_slots ..
         ", killed_characters=" .. #characters_to_kill
     )
     return true
@@ -1044,10 +1096,15 @@ function revive_boring_campaign:revive_faction(faction_key, num_armies)
         return false
     end
 
-    -- Transfer the whole province when possible, without taking regions from the player.
-    self:log("Transferring revive province around " .. target_region_key .. " to " .. faction_key)
-    local transferred_regions = self:transfer_province_to_faction(region, faction_key)
-    self:upgrade_province_capital_to_max(region, faction_key)
+    local transferred_regions = 0
+    if self:is_regionless_revive_faction(faction_key) then
+        self:log("Regionless revive anchor for " .. faction_key .. ": " .. target_region_key .. " (skipping province transfer and settlement upgrade)")
+    else
+        -- Transfer the whole province when possible, without taking regions from the player.
+        self:log("Transferring revive province around " .. target_region_key .. " to " .. faction_key)
+        transferred_regions = self:transfer_province_to_faction(region, faction_key)
+        self:upgrade_province_capital_to_max(region, faction_key)
+    end
 
     local revive_treasury = 50000
     self:log("Giving revive treasury support: " .. revive_treasury .. " gold to " .. faction_key)
@@ -1057,7 +1114,7 @@ function revive_boring_campaign:revive_faction(faction_key, num_armies)
     cm:show_message_event(
         cm:get_local_faction_name(true),
         "event_feed_strings_text_debug_title",
-        "REVIVE DEBUG: Province transferred to " .. faction_key,
+        "REVIVE DEBUG: Reviving " .. faction_key,
         "Transferred " .. transferred_regions .. " regions. Now spawning " .. num_armies .. " armies at " .. target_region_key,
         true,
         1
