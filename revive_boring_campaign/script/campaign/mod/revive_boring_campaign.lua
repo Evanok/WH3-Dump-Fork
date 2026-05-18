@@ -18,6 +18,9 @@ revive_boring_campaign = {
         pending_revive = nil,    -- Faction key to revive
     },
 
+    anarchy_rebel_sink_faction = "wh2_main_skv_clan_eshin_separatists",
+    anarchy_rebel_sink_effect_bundle = "rbc_anarchy_sink_lock",
+
     -- Preferred rebel factions per subculture for Anarchy Kill.
     -- Not every rebel key exists in every campaign, so Anarchy Kill also scans same-subculture candidates at runtime.
     rebel_factions_by_subculture = {
@@ -510,74 +513,42 @@ function revive_boring_campaign:get_all_factions()
 end
 
 --[[-------------------------------------------------------------------------------------------------------------
-    Find a usable off-map Anarchy Kill transfer target.
-    Prefer explicit rebel/invasion faction keys, then same-subculture rebel/separatist/invasion factions present
-    in the active campaign. On-map candidates are rejected so Anarchy Kill does not merge regions into an
-    already-active faction elsewhere.
+    Find the single Anarchy Kill transfer target.
+    We intentionally use one stable sink faction instead of culture-specific rebel factions. The sink gets a
+    permanent crippling economy bundle and is forced into war with every active faction after each transfer.
 ]]---------------------------------------------------------------------------------------------------------------
 function revive_boring_campaign:get_anarchy_transfer_target(target_faction_key, subculture)
-    local function is_usable_candidate(candidate_key)
-        if not candidate_key or candidate_key == "" or candidate_key == target_faction_key then
-            return false
-        end
-
-        local candidate = cm:get_faction(candidate_key)
-        if not candidate or candidate:is_null_interface() or candidate:is_human() then
-            return false
-        end
-
-        if candidate:subculture() ~= subculture then
-            return false
-        end
-
-        local region_count = candidate:region_list():num_items()
-        local force_count = candidate:military_force_list():num_items()
-        if region_count > 0 or force_count > 0 then
-            self:log(
-                "Anarchy candidate already on map: " .. candidate_key ..
-                " (regions=" .. region_count .. ", forces=" .. force_count .. ")"
-            )
-            return false
-        end
-
-        return true
+    local candidate_key = self.anarchy_rebel_sink_faction
+    if not candidate_key or candidate_key == "" or candidate_key == target_faction_key then
+        return false
     end
 
-    local preferred_candidates = {}
-    local default_rebel_key = self.rebel_factions_by_subculture[subculture]
-    if default_rebel_key then
-        table.insert(preferred_candidates, default_rebel_key)
+    local candidate = cm:get_faction(candidate_key)
+    if not candidate or candidate:is_null_interface() then
+        self:log("Anarchy sink faction unavailable: " .. tostring(candidate_key))
+        return false
     end
 
-    local extra_candidates = self.anarchy_candidate_factions_by_subculture[subculture] or {}
-    for _, candidate_key in ipairs(extra_candidates) do
-        table.insert(preferred_candidates, candidate_key)
+    if candidate:is_human() then
+        self:log("Anarchy sink faction is human, refusing transfer: " .. candidate_key)
+        return false
     end
 
-    for _, candidate_key in ipairs(preferred_candidates) do
-        if is_usable_candidate(candidate_key) then
-            return candidate_key
-        end
-        self:log("Anarchy candidate unavailable: " .. tostring(candidate_key))
+    return candidate_key
+end
+
+function revive_boring_campaign:apply_anarchy_rebel_sink_lock(rebel_faction_key)
+    if not rebel_faction_key or rebel_faction_key == "" then
+        return
     end
 
-    local faction_list = cm:model():world():faction_list()
-    for i = 0, faction_list:num_items() - 1 do
-        local candidate = faction_list:item_at(i)
-        if candidate and not candidate:is_null_interface() then
-            local candidate_key = candidate:name()
-            local looks_rebel =
-                string.find(candidate_key, "rebel") or
-                string.find(candidate_key, "separatist") or
-                string.find(candidate_key, "invasion")
-
-            if looks_rebel and is_usable_candidate(candidate_key) then
-                return candidate_key
-            end
-        end
-    end
-
-    return false
+    self:log(
+        "Applying Anarchy sink lock bundle " ..
+        self.anarchy_rebel_sink_effect_bundle ..
+        " to " ..
+        rebel_faction_key
+    )
+    cm:apply_effect_bundle(self.anarchy_rebel_sink_effect_bundle, rebel_faction_key, 0)
 end
 
 --[[-------------------------------------------------------------------------------------------------------------
@@ -1014,6 +985,7 @@ function revive_boring_campaign:anarchy_kill_faction(faction_key)
     end
 
     if transferred_regions > 0 then
+        self:apply_anarchy_rebel_sink_lock(rebel_faction_key)
         wars_declared = self:make_anarchy_rebels_world_hostile(rebel_faction_key)
     end
 
