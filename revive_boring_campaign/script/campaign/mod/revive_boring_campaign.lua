@@ -266,6 +266,7 @@ revive_boring_campaign = {
 
         -- VAMPIRE COAST
         ["wh2_dlc11_cst_vampire_coast"] = "wh3_main_combi_region_the_awakening",
+        ["wh2_dlc11_cst_noctilus"] = "wh3_main_combi_region_the_galleons_graveyard",
         ["wh2_dlc11_cst_the_drowned"] = "wh3_main_combi_region_the_twisted_glade",
         ["wh2_dlc11_cst_pirates_of_sartosa"] = "wh3_main_combi_region_luccini",
         ["wh3_dlc21_cst_dead_flag_fleet"] = "wh3_main_combi_region_beichai",
