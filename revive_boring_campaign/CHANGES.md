@@ -1,5 +1,14 @@
 # Changes
 
+## v1.0.3
+
+- Anarchy Kill now transfers regions to a single Eshin separatist sink faction and applies severe growth, income, and upkeep penalties to keep that rebel holder inert.
+- Fixed kill and Anarchy Kill for factions with hidden/foreign-slot settlements, including the Changeling, by removing their foreign slots before killing characters.
+- Fixed revive handling for regionless factions, including Nakai and the Changeling, by spawning armies around an anchor region without forcing province ownership or settlement upgrades.
+- Added a hidden MCT validation test action that runs Kill, Revive, and Anarchy Kill across the available faction combo list.
+- Filtered Extended-only factions out of the MCT faction list unless those faction keys exist in the active campaign.
+- Updated MCT and campaign log version labels to `v1.0.3`.
+
 ## v1.0.2
 
 - Fixed Tomb Kings runtime army generation for Khemri and Arkhan-related Tomb Kings rosters.
