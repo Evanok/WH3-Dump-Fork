@@ -18,8 +18,7 @@ revive_boring_campaign = {
         pending_revive = nil,    -- Faction key to revive
     },
 
-    anarchy_rebel_sink_faction = "wh2_main_skv_clan_eshin_separatists",
-    anarchy_rebel_sink_effect_bundle = "rbc_anarchy_sink_lock",
+    anarchy_rebel_sink_faction = "wh2_main_def_hag_graef_separatists",
 
     -- These factions should be revived around an anchor region without trying to own or upgrade it.
     -- Nakai uses a horde flow and the Changeling uses foreign slots/hidden settlements instead of normal ownership.
@@ -531,13 +530,14 @@ function revive_boring_campaign:get_anarchy_transfer_target(target_faction_key, 
     end
 
     local candidate = cm:get_faction(candidate_key)
-    if not candidate or candidate:is_null_interface() then
-        self:log("Anarchy sink faction unavailable: " .. tostring(candidate_key))
+    -- nil = key not registered in this campaign at all
+    if not candidate then
+        self:log("Anarchy sink faction not registered in this campaign: " .. tostring(candidate_key))
         return false
     end
-
-    if candidate:is_human() then
-        self:log("Anarchy sink faction is human, refusing transfer: " .. candidate_key)
+    -- is_null_interface = dead rebel faction; cm:transfer_region_to_faction still works on them
+    if not candidate:is_null_interface() and candidate:is_human() then
+        self:log("Anarchy sink faction is human, refusing: " .. candidate_key)
         return false
     end
 
@@ -549,13 +549,40 @@ function revive_boring_campaign:apply_anarchy_rebel_sink_lock(rebel_faction_key)
         return
     end
 
-    self:log(
-        "Applying Anarchy sink lock bundle " ..
-        self.anarchy_rebel_sink_effect_bundle ..
-        " to " ..
-        rebel_faction_key
-    )
-    cm:apply_effect_bundle(self.anarchy_rebel_sink_effect_bundle, rebel_faction_key, 0)
+    -- Reduce army capacity using existing game bundles (persistent, no DB required)
+    local sink_bundles = {
+        -- army cap -1 each (x8 = -8 total, prevents recruitment)
+        "wh2_dlc09_decrease_army_cap_1",
+        "wh2_dlc09_decrease_army_cap_2",
+        "wh2_dlc09_decrease_army_cap_3",
+        "wh2_dlc09_decrease_army_cap_4",
+        "wh2_dlc09_decrease_army_cap_5",
+        "wh2_dlc09_decrease_army_cap_6",
+        "wh2_dlc09_decrease_army_cap_7",
+        "wh2_dlc09_decrease_army_cap_8",
+        -- growth penalties (prevents settlement upgrades)
+        "wh2_main_payload_growth_negative_all_province",   -- -10 growth
+        "wh2_dlc13_bundle_imperial_authority_2",           -- -5 growth
+        "wh2_dlc13_wulfhart_growth_decrease",              -- -3 growth
+        -- income penalty (keeps faction broke)
+        "wh2_main_incident_all_gdp_down",                  -- -10% income
+        -- construction cost penalty (discourages building)
+        "wh2_main_incident_all_construction_cost_up",      -- +15% construction cost
+    }
+    for _, bundle in ipairs(sink_bundles) do
+        cm:apply_effect_bundle(bundle, rebel_faction_key, 0)
+    end
+
+    -- Drain treasury immediately so they cannot recruit on the first turn
+    local faction = cm:get_faction(rebel_faction_key)
+    if faction and not faction:is_null_interface() then
+        local t = faction:treasury()
+        if t > 0 then
+            cm:treasury_mod(rebel_faction_key, -t)
+        end
+    end
+
+    self:log("Applied sink lock to " .. rebel_faction_key)
 end
 
 --[[-------------------------------------------------------------------------------------------------------------
@@ -797,6 +824,27 @@ function revive_boring_campaign:upgrade_province_capital_to_max(target_region, f
     return building
 end
 
+function revive_boring_campaign:downgrade_regions_to_level(region_keys, faction_key, target_level)
+    cm:callback(function()
+        for _, region_key in ipairs(region_keys) do
+            local region = cm:get_region(region_key)
+            if not region or region:is_null_interface() then goto continue end
+            if region:is_abandoned() then goto continue end
+
+            local owner = region:owning_faction()
+            if not owner or owner:is_null_interface() or owner:name() ~= faction_key then goto continue end
+
+            local settlement = region:settlement()
+            if not settlement or settlement:is_null_interface() then goto continue end
+
+            cm:instantly_set_settlement_primary_slot_level(settlement, target_level)
+            self:log("Downgraded region " .. region_key .. " primary slot to level " .. target_level)
+
+            ::continue::
+        end
+    end, 0.5)
+end
+
 function revive_boring_campaign:is_regionless_revive_faction(faction_key)
     return self.regionless_revive_factions[faction_key] == true
 end
@@ -1036,6 +1084,7 @@ function revive_boring_campaign:anarchy_kill_faction(faction_key)
     end
 
     if transferred_regions > 0 then
+        self:downgrade_regions_to_level(regions_to_process, rebel_faction_key, 2)
         self:apply_anarchy_rebel_sink_lock(rebel_faction_key)
         wars_declared = self:make_anarchy_rebels_world_hostile(rebel_faction_key)
     end

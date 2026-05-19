@@ -2,10 +2,14 @@
 
 ## v1.0.3
 
-- Anarchy Kill now transfers regions to a single Eshin separatist sink faction and applies severe growth, income, and upkeep penalties to keep that rebel holder inert.
+- Anarchy Kill now uses `wh2_main_def_hag_graef_separatists` as the universal rebel sink, which is reliably registered in Immortal Empires campaigns.
+- Fixed Anarchy Kill sink faction detection: dead/inactive rebel factions (is_null_interface) are now accepted as valid transfer targets.
+- Anarchy Kill now downgrades all transferred regions to settlement level 2 after the transfer.
+- Anarchy Kill sink lock now applies permanent growth, income, and construction cost penalties using existing game effect bundles (no DB modifications).
+- Hidden the Validation Test MCT button before public release (code preserved, button commented out).
+- Fixed pack build to always source scripts from `WH3-Dump-Fork/` to avoid packaging stale copies.
 - Fixed kill and Anarchy Kill for factions with hidden/foreign-slot settlements, including the Changeling, by removing their foreign slots before killing characters.
 - Fixed revive handling for regionless factions, including Nakai and the Changeling, by spawning armies around an anchor region without forcing province ownership or settlement upgrades.
-- Added a hidden MCT validation test action that runs Kill, Revive, and Anarchy Kill across the available faction combo list.
 - Filtered Extended-only factions out of the MCT faction list unless those faction keys exist in the active campaign.
 - Updated MCT and campaign log version labels to `v1.0.3`.
 

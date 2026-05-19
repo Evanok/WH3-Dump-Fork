@@ -417,10 +417,11 @@ anarchy_kill_execute:set_text("Anarchy Kill")
 anarchy_kill_execute:set_tooltip_text("Check this box to destroy the selected faction and transfer its settlements to matching rebel factions instead of ruins. The checkbox will reset after execution.")
 anarchy_kill_execute:set_default_value(false)
 
-local validation_test_execute = mod:add_new_option("validation_test_execute", "checkbox")
-validation_test_execute:set_text("Validation Test")
-validation_test_execute:set_tooltip_text("Destructive test mode. Runs Kill, Revive, then Anarchy Kill for every faction in this dropdown using the real feature code.")
-validation_test_execute:set_default_value(false)
+-- HIDDEN before release: uncomment to re-enable the Validation Test button
+-- local validation_test_execute = mod:add_new_option("validation_test_execute", "checkbox")
+-- validation_test_execute:set_text("Validation Test")
+-- validation_test_execute:set_tooltip_text("Destructive test mode. Runs Kill, Revive, then Anarchy Kill for every faction in this dropdown using the real feature code.")
+-- validation_test_execute:set_default_value(false)
 
 --[[-------------------------------------------------------------------------------------------------------------
     SECTION: Revive Faction
