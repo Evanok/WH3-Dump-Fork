@@ -10,7 +10,7 @@
 -- Module definition
 revive_boring_campaign = {
     name = "revive_boring_campaign",
-    log_prefix = "[RBC_DEBUG][campaign][v1.0.3]",
+    log_prefix = "[RBC_DEBUG][campaign][v1.0.4]",
 
     -- State tracking (will be saved)
     settings = {

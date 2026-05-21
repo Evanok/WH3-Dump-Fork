@@ -8,7 +8,7 @@
 ]]---------------------------------------------------------------------------------------------------------------
 
 local mct = get_mct()
-local mod_version = "1.0.3"
+local mod_version = "1.0.4"
 local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
 
 local function rbc_mct_log(message)

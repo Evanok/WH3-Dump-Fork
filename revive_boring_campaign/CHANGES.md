@@ -1,5 +1,12 @@
 # Changes
 
+## v1.0.4
+
+- Added Tiger Warriors (`wh3_cp1_cth_tiger_warriors`) faction from patch 8.0 / Bhashiva Content Pack — starts at `vale_of_titans`.
+- Added Aislinn (`wh3_dlc27_hef_aislinn`) High Elf faction missing from DLC27 — treated as regionless revive (no region ownership, army spawned near anchor).
+- Fixed Blood Guzzlers starting region: `fire_mouth` → `vale_of_titans` following patch 8.0 Cathay rework repositioning.
+- Updated MCT and campaign log version labels to `v1.0.4`.
+
 ## v1.0.3
 
 - Anarchy Kill now uses `wh2_main_def_hag_graef_separatists` as the universal rebel sink, which is reliably registered in Immortal Empires campaigns.
