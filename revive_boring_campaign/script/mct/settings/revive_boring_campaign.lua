@@ -194,6 +194,7 @@ local major_factions = {
     {"wh3_main_cth_the_northern_provinces", "Northern Provinces (Miao Ying)"},
     {"wh3_main_cth_the_western_provinces", "Western Provinces (Zhao Ming)"},
     {"wh3_dlc24_cth_the_celestial_court", "Yuan Bo"},
+    {"wh3_cp1_cth_tiger_warriors", "Tiger Warriors"},
 
     -- Ogre Kingdoms
     {"wh3_main_ogr_goldtooth", "Goldtooth (Greasus)"},
@@ -243,6 +244,7 @@ local major_factions = {
     {"wh2_main_hef_yvresse", "Yvresse (Eltharion)"},
     {"wh2_main_hef_order_of_loremasters", "Teclis"},
     {"wh2_dlc15_hef_imrik", "Imrik"},
+    {"wh3_dlc27_hef_aislinn", "Aislinn"},
 
     -- Dark Elves
     {"wh2_main_def_naggarond", "Naggarond (Malekith)"},

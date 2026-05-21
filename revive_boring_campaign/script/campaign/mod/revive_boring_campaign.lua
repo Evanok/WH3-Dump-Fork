@@ -25,6 +25,7 @@ revive_boring_campaign = {
     regionless_revive_factions = {
         ["wh2_dlc13_lzd_spirits_of_the_jungle"] = true,
         ["wh3_dlc24_tze_the_deceivers"] = true,
+        ["wh3_dlc27_hef_aislinn"] = true,
     },
 
     -- Preferred rebel factions per subculture for Anarchy Kill.
@@ -168,6 +169,7 @@ revive_boring_campaign = {
         ["wh3_main_cth_the_northern_provinces"] = "wh3_main_combi_region_nan_gau",
         ["wh3_main_cth_the_western_provinces"] = "wh3_main_combi_region_qiang",
         ["wh3_dlc24_cth_the_celestial_court"] = "wh3_main_combi_region_isle_of_the_crimson_skull",
+        ["wh3_cp1_cth_tiger_warriors"] = "wh3_main_combi_region_vale_of_titans",
         ["wh3_main_cth_burning_wind_nomads"] = "wh3_main_combi_region_temple_of_elemental_winds",
         ["wh3_main_cth_celestial_loyalists"] = "wh3_main_combi_region_wei_jin",
         ["wh3_main_cth_dissenter_lords_of_jinshen"] = "wh3_main_combi_region_shang_yang",
@@ -181,6 +183,7 @@ revive_boring_campaign = {
 
         -- HIGH ELVES
         ["wh2_main_hef_eataine"] = "wh3_main_combi_region_lothern",
+        ["wh3_dlc27_hef_aislinn"] = "wh3_main_combi_region_tor_koruali",
         ["wh2_main_hef_order_of_loremasters"] = "wh3_main_combi_region_dawns_light",
         ["wh2_main_hef_avelorn"] = "wh3_main_combi_region_gaean_vale",
         ["wh2_main_hef_nagarythe"] = "wh3_main_combi_region_the_monoliths",
