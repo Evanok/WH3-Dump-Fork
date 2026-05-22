@@ -831,19 +831,16 @@ function revive_boring_campaign:downgrade_regions_to_level(region_keys, faction_
     cm:callback(function()
         for _, region_key in ipairs(region_keys) do
             local region = cm:get_region(region_key)
-            if not region or region:is_null_interface() then goto continue end
-            if region:is_abandoned() then goto continue end
-
-            local owner = region:owning_faction()
-            if not owner or owner:is_null_interface() or owner:name() ~= faction_key then goto continue end
-
-            local settlement = region:settlement()
-            if not settlement or settlement:is_null_interface() then goto continue end
-
-            cm:instantly_set_settlement_primary_slot_level(settlement, target_level)
-            self:log("Downgraded region " .. region_key .. " primary slot to level " .. target_level)
-
-            ::continue::
+            if region and not region:is_null_interface() and not region:is_abandoned() then
+                local owner = region:owning_faction()
+                if owner and not owner:is_null_interface() and owner:name() == faction_key then
+                    local settlement = region:settlement()
+                    if settlement and not settlement:is_null_interface() then
+                        cm:instantly_set_settlement_primary_slot_level(settlement, target_level)
+                        self:log("Downgraded region " .. region_key .. " primary slot to level " .. target_level)
+                    end
+                end
+            end
         end
     end, 0.5)
 end
