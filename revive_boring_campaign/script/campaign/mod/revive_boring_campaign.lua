@@ -474,6 +474,7 @@ revive_boring_campaign = {
 local runtime_roster_unit_data = require("script._lib.mod.runtime_roster_unit_data")
 local deprecated_army_templates = require("script._lib.mod.deprecated_army_templates")
 require("script._lib.mod.lib_runtime_army_template_generator")
+pcall(require, "script.campaign.mod.revive_boring_campaign_oldworld_capitals")
 
 --[[-------------------------------------------------------------------------------------------------------------
     Logging helper.
@@ -491,6 +492,40 @@ function revive_boring_campaign:log(message)
 
     -- Always use out()
     out(msg)
+end
+
+--[[-------------------------------------------------------------------------------------------------------------
+    Campaign-aware capital table resolution.
+]]---------------------------------------------------------------------------------------------------------------
+function revive_boring_campaign:get_campaign_name()
+    if self.current_campaign_name then
+        return self.current_campaign_name
+    end
+
+    if cm and cm.get_campaign_name then
+        return cm:get_campaign_name()
+    end
+
+    return nil
+end
+
+function revive_boring_campaign:get_active_faction_capitals()
+    local campaign_name = self:get_campaign_name()
+
+    if campaign_name == "cr_oldworld" and revive_boring_campaign_oldworld_faction_capitals then
+        return revive_boring_campaign_oldworld_faction_capitals
+    end
+
+    return self.faction_capitals
+end
+
+function revive_boring_campaign:get_faction_capital_region_key(faction_key)
+    local active_faction_capitals = self:get_active_faction_capitals()
+    if not active_faction_capitals then
+        return nil
+    end
+
+    return active_faction_capitals[faction_key]
 end
 
 --[[-------------------------------------------------------------------------------------------------------------
@@ -1220,7 +1255,7 @@ end
 ]]---------------------------------------------------------------------------------------------------------------
 function revive_boring_campaign:find_region_for_revive(faction_key)
     -- Step 1: Try hardcoded capital
-    local capital_key = self.faction_capitals[faction_key]
+    local capital_key = self:get_faction_capital_region_key(faction_key)
     if capital_key then
         local capital = cm:get_region(capital_key)
         if capital and not capital:is_null_interface() then
@@ -1333,12 +1368,13 @@ function revive_boring_campaign:boost_faction(faction_key, options)
         local capital_region_key = capital_region:name()
 
         -- Try to use their actual capital from our table
-        if self.faction_capitals[faction_key] then
-            local mapped_capital = cm:get_region(self.faction_capitals[faction_key])
+        local mapped_capital_key = self:get_faction_capital_region_key(faction_key)
+        if mapped_capital_key then
+            local mapped_capital = cm:get_region(mapped_capital_key)
             if mapped_capital and not mapped_capital:is_null_interface() then
                 local owner = mapped_capital:owning_faction()
                 if owner and owner:name() == faction_key then
-                    capital_region_key = self.faction_capitals[faction_key]
+                    capital_region_key = mapped_capital_key
                 end
             end
         end
@@ -1544,6 +1580,18 @@ function revive_boring_campaign:initialize()
     if not cm:get_campaign_name() then
         self:log("Not in campaign, skipping initialization")
         return
+    end
+
+    self.current_campaign_name = cm:get_campaign_name()
+
+    if self.current_campaign_name == "cr_oldworld" then
+        if revive_boring_campaign_oldworld_faction_capitals then
+            self:log("Using Old World capital table for campaign: " .. self.current_campaign_name)
+        else
+            self:log("WARNING: Old World capital table missing, falling back to default capital table")
+        end
+    else
+        self:log("Using default capital table for campaign: " .. tostring(self.current_campaign_name))
     end
 
     self:log("Mod initialized successfully!")

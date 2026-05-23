@@ -25,6 +25,7 @@ if not mct then
 end
 
 local mod = mct:register_mod("revive_boring_campaign")
+pcall(require, "script.campaign.mod.revive_boring_campaign_oldworld_capitals")
 
 local checkbox_option_keys = {
     "kill_execute",
@@ -367,6 +368,14 @@ local extended_major_factions = {
     {"rhox_nor_ravenblessed", "Ravenblessed"},
 }
 
+local known_faction_labels = {}
+for _, faction_data in ipairs(major_factions) do
+    known_faction_labels[faction_data[1]] = faction_data[2]
+end
+for _, faction_data in ipairs(extended_major_factions) do
+    known_faction_labels[faction_data[1]] = faction_data[2]
+end
+
 local function faction_exists_in_campaign(faction_key)
     if not cm or not cm.get_faction then
         return false
@@ -379,7 +388,47 @@ local function faction_exists_in_campaign(faction_key)
     return ok and faction and not faction:is_null_interface()
 end
 
+local function get_faction_display_name(faction_key)
+    if known_faction_labels[faction_key] then
+        return known_faction_labels[faction_key]
+    end
+
+    if common and common.get_localised_string then
+        local loc_key = "factions_screen_name_" .. faction_key
+        local ok, localised_name = pcall(function()
+            return common.get_localised_string(loc_key)
+        end)
+
+        if ok and localised_name and localised_name ~= "" and localised_name ~= loc_key then
+            return localised_name
+        end
+    end
+
+    return faction_key
+end
+
 local function build_available_major_factions()
+    if cm and cm:get_campaign_name() == "cr_oldworld" and revive_boring_campaign_oldworld_faction_capitals then
+        local available_factions = {}
+
+        for faction_key, _ in pairs(revive_boring_campaign_oldworld_faction_capitals) do
+            table.insert(available_factions, {
+                faction_key,
+                get_faction_display_name(faction_key)
+            })
+        end
+
+        table.sort(available_factions, function(a, b)
+            if a[2] == b[2] then
+                return a[1] < b[1]
+            end
+            return a[2] < b[2]
+        end)
+
+        rbc_mct_log("Faction dropdown list built for campaign cr_oldworld: count=" .. tostring(#available_factions))
+        return available_factions
+    end
+
     local available_factions = {}
 
     for _, faction_data in ipairs(major_factions) do
