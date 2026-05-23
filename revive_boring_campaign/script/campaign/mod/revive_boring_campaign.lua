@@ -474,6 +474,7 @@ revive_boring_campaign = {
 local runtime_roster_unit_data = require("script._lib.mod.runtime_roster_unit_data")
 local deprecated_army_templates = require("script._lib.mod.deprecated_army_templates")
 require("script._lib.mod.lib_runtime_army_template_generator")
+pcall(require, "script.campaign.mod.revive_boring_campaign_vanilla_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_oldworld_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_oldworldclassic_capitals")
 
@@ -510,6 +511,34 @@ function revive_boring_campaign:get_campaign_name()
     return nil
 end
 
+function revive_boring_campaign:is_iee_campaign()
+    if self.cached_is_iee_campaign ~= nil then
+        return self.cached_is_iee_campaign
+    end
+
+    if not cm then
+        return false
+    end
+
+    local sentinel_faction_key = "cr_kho_servants_of_the_blood_nagas"
+    local sentinel_region_key = "cr_combi_region_soglap"
+
+    local is_iee = false
+    local sentinel_faction = cm:get_faction(sentinel_faction_key)
+    if sentinel_faction then
+        is_iee = true
+    elseif cm.get_region then
+        local ok, sentinel_region = pcall(function()
+            return cm:get_region(sentinel_region_key)
+        end)
+        is_iee = ok and sentinel_region and not sentinel_region:is_null_interface()
+    end
+
+    self.cached_is_iee_campaign = is_iee
+    self:log("main_warhammer campaign variant detected: " .. (is_iee and "IEE" or "vanilla"))
+    return is_iee
+end
+
 function revive_boring_campaign:get_active_faction_capitals()
     local campaign_name = self:get_campaign_name()
 
@@ -519,6 +548,16 @@ function revive_boring_campaign:get_active_faction_capitals()
 
     if campaign_name == "cr_oldworldclassic" and revive_boring_campaign_oldworldclassic_faction_capitals then
         return revive_boring_campaign_oldworldclassic_faction_capitals
+    end
+
+    if campaign_name == "main_warhammer" then
+        if self:is_iee_campaign() then
+            return self.faction_capitals
+        end
+
+        if revive_boring_campaign_vanilla_faction_capitals then
+            return revive_boring_campaign_vanilla_faction_capitals
+        end
     end
 
     return self.faction_capitals

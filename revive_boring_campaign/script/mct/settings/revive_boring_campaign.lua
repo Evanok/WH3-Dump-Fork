@@ -10,6 +10,7 @@
 local mct = get_mct()
 local mod_version = "1.1.0"
 local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
+pcall(require, "script.campaign.mod.revive_boring_campaign_vanilla_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_iee_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_oldworld_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_oldworldclassic_capitals")
@@ -435,6 +436,36 @@ local function faction_exists_in_campaign(faction_key)
     return ok and faction and not faction:is_null_interface()
 end
 
+local cached_is_iee_campaign = nil
+
+local function is_iee_campaign()
+    if cached_is_iee_campaign ~= nil then
+        return cached_is_iee_campaign
+    end
+
+    if not cm then
+        return false
+    end
+
+    local sentinel_faction_key = "cr_kho_servants_of_the_blood_nagas"
+    local sentinel_region_key = "cr_combi_region_soglap"
+
+    local sentinel_faction = cm:get_faction(sentinel_faction_key)
+    if sentinel_faction then
+        cached_is_iee_campaign = true
+    elseif cm.get_region then
+        local ok, sentinel_region = pcall(function()
+            return cm:get_region(sentinel_region_key)
+        end)
+        cached_is_iee_campaign = ok and sentinel_region and not sentinel_region:is_null_interface()
+    else
+        cached_is_iee_campaign = false
+    end
+
+    rbc_mct_log("main_warhammer campaign variant detected: " .. (cached_is_iee_campaign and "IEE" or "vanilla"))
+    return cached_is_iee_campaign
+end
+
 local function get_faction_display_name(faction_key)
     local loc_key = "factions_screen_name_" .. faction_key
 
@@ -517,7 +548,7 @@ local function build_available_major_factions()
         return available_factions
     end
 
-    if cm and cm:get_campaign_name() == "main_warhammer" and revive_boring_campaign_iee_faction_capitals then
+    if cm and cm:get_campaign_name() == "main_warhammer" and is_iee_campaign() and revive_boring_campaign_iee_faction_capitals then
         local available_factions = {}
 
         for faction_key, _ in pairs(revive_boring_campaign_iee_faction_capitals) do
@@ -535,6 +566,27 @@ local function build_available_major_factions()
         end)
 
         rbc_mct_log("Faction dropdown list built for campaign main_warhammer: count=" .. tostring(#available_factions))
+        return available_factions
+    end
+
+    if cm and cm:get_campaign_name() == "main_warhammer" and revive_boring_campaign_vanilla_faction_capitals then
+        local available_factions = {}
+
+        for faction_key, _ in pairs(revive_boring_campaign_vanilla_faction_capitals) do
+            table.insert(available_factions, {
+                faction_key,
+                get_faction_display_name(faction_key)
+            })
+        end
+
+        table.sort(available_factions, function(a, b)
+            if a[2] == b[2] then
+                return a[1] < b[1]
+            end
+            return a[2] < b[2]
+        end)
+
+        rbc_mct_log("Faction dropdown list built for campaign main_warhammer (vanilla): count=" .. tostring(#available_factions))
         return available_factions
     end
 
