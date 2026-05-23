@@ -389,10 +389,6 @@ local function faction_exists_in_campaign(faction_key)
 end
 
 local function get_faction_display_name(faction_key)
-    if known_faction_labels[faction_key] then
-        return known_faction_labels[faction_key]
-    end
-
     if common and common.get_localised_string then
         local loc_key = "factions_screen_name_" .. faction_key
         local ok, localised_name = pcall(function()
@@ -402,6 +398,10 @@ local function get_faction_display_name(faction_key)
         if ok and localised_name and localised_name ~= "" and localised_name ~= loc_key then
             return localised_name
         end
+    end
+
+    if known_faction_labels[faction_key] then
+        return known_faction_labels[faction_key]
     end
 
     return faction_key
@@ -432,16 +432,29 @@ local function build_available_major_factions()
     local available_factions = {}
 
     for _, faction_data in ipairs(major_factions) do
-        table.insert(available_factions, faction_data)
+        table.insert(available_factions, {
+            faction_data[1],
+            get_faction_display_name(faction_data[1])
+        })
     end
 
     local extended_added = 0
     for _, faction_data in ipairs(extended_major_factions) do
         if faction_exists_in_campaign(faction_data[1]) then
-            table.insert(available_factions, faction_data)
+            table.insert(available_factions, {
+                faction_data[1],
+                get_faction_display_name(faction_data[1])
+            })
             extended_added = extended_added + 1
         end
     end
+
+    table.sort(available_factions, function(a, b)
+        if a[2] == b[2] then
+            return a[1] < b[1]
+        end
+        return a[2] < b[2]
+    end)
 
     rbc_mct_log("Faction dropdown list built: vanilla=" .. #major_factions .. ", extended=" .. extended_added)
 
