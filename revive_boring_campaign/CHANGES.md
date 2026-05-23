@@ -4,8 +4,15 @@
 
 - Added campaign-aware capital table selection using `cm:get_campaign_name()`.
 - Added a dedicated `cr_oldworld` faction-to-start-region table generated from the in-game dump.
+- Added a dedicated `cr_oldworldclassic` faction-to-start-region table generated from the in-game dump.
+- Added a dedicated `main_warhammer` vanilla faction-to-start-region table generated from the in-game dump.
+- Added `main_warhammer` vanilla vs `IEE` runtime detection using Extended-only sentinels, because both campaigns share the same campaign key.
+- `main_warhammer` now uses the IEE table when Extended content is present, otherwise it falls back to the vanilla table.
 - Revive and boost capital lookups now use the active campaign table instead of assuming Immortal Empires keys.
 - Added `The Old World` MCT faction list support by building the dropdown from the dedicated `cr_oldworld` capital table.
+- Added `The Old World Classic` MCT faction list support by building the dropdown from the dedicated `cr_oldworldclassic` capital table.
+- Added `main_warhammer` MCT campaign-variant detection so vanilla and IEE use different dropdown sources.
+- MCT faction dropdowns now prefer localized faction names instead of mixed hardcoded labels.
 - Updated MCT and campaign log version labels to `v1.1.0`.
 
 ## v1.0.4

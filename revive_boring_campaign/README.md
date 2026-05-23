@@ -72,7 +72,10 @@ A mod to revive boring mid/late-game campaigns by allowing players to kill, resu
 
 - **MCT v0.9 Beta** (Mod Configuration Tool) - Must be installed
 - **Compatible with existing saves** - Not just new campaigns
-- Works on **Immortal Empires** campaign
+- Works on **Immortal Empires / main_warhammer**
+- Works on **Immortal Empires Extended** with runtime detection
+- Works on **The Old World** (`cr_oldworld`)
+- Works on **The Old World Classic** (`cr_oldworldclassic`)
 
 ---
 
@@ -149,6 +152,11 @@ cp "./revive_boring_campaign.pack" "/c/Program Files (x86)/Steam/steamapps/commo
 - **Logging**: Search for `[RBC_DEBUG]` in `lua_mod_log.txt` after launching the game. `out()` writes there when script logging is enabled; `io.open()` is sandboxed in WH3 scripts.
 - **Hot reload does NOT work** - pack file required, must restart game
 - **MCT cache**: Delete `mct_registry.lua` if UI changes don't appear
+- **Campaign table selection**:
+  - `cr_oldworld` uses the dedicated Old World dump table
+  - `cr_oldworldclassic` uses the dedicated Old World Classic dump table
+  - `main_warhammer` is split at runtime between vanilla and IEE because both share the same campaign key
+- **IEE detection**: the mod detects Immortal Empires Extended by checking for Extended-only faction/region sentinels, then selects the IEE capital table and MCT dropdown source
 
 ---
 
@@ -168,6 +176,7 @@ cp "./revive_boring_campaign.pack" "/c/Program Files (x86)/Steam/steamapps/commo
 |----------|----------|-------|
 | Lua mod log | `C:\Program Files (x86)\Steam\steamapps\common\Total War WARHAMMER III\lua_mod_log.txt` | Main file to check. Search for `ReviveBoringCampaign` or `[RBC_DEBUG]`. |
 | Game logs folder | `%APPDATA%\The Creative Assembly\Warhammer3\logs\` | Contains general WH3 logs like `modified.log`, `gfx.log.txt`, and `mp_log.txt`. |
+| Faction capital dumps | `C:\Program Files (x86)\Steam\steamapps\common\Total War WARHAMMER III\` | The dump helper writes files like `faction_capitals_dump.txt` in the game root, not in AppData. |
 
 ### Script Copies / Cache
 
