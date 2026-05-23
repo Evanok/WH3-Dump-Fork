@@ -475,6 +475,7 @@ local runtime_roster_unit_data = require("script._lib.mod.runtime_roster_unit_da
 local deprecated_army_templates = require("script._lib.mod.deprecated_army_templates")
 require("script._lib.mod.lib_runtime_army_template_generator")
 pcall(require, "script.campaign.mod.revive_boring_campaign_oldworld_capitals")
+pcall(require, "script.campaign.mod.revive_boring_campaign_oldworldclassic_capitals")
 
 --[[-------------------------------------------------------------------------------------------------------------
     Logging helper.
@@ -514,6 +515,10 @@ function revive_boring_campaign:get_active_faction_capitals()
 
     if campaign_name == "cr_oldworld" and revive_boring_campaign_oldworld_faction_capitals then
         return revive_boring_campaign_oldworld_faction_capitals
+    end
+
+    if campaign_name == "cr_oldworldclassic" and revive_boring_campaign_oldworldclassic_faction_capitals then
+        return revive_boring_campaign_oldworldclassic_faction_capitals
     end
 
     return self.faction_capitals
@@ -1589,6 +1594,12 @@ function revive_boring_campaign:initialize()
             self:log("Using Old World capital table for campaign: " .. self.current_campaign_name)
         else
             self:log("WARNING: Old World capital table missing, falling back to default capital table")
+        end
+    elseif self.current_campaign_name == "cr_oldworldclassic" then
+        if revive_boring_campaign_oldworldclassic_faction_capitals then
+            self:log("Using Old World Classic capital table for campaign: " .. self.current_campaign_name)
+        else
+            self:log("WARNING: Old World Classic capital table missing, falling back to default capital table")
         end
     else
         self:log("Using default capital table for campaign: " .. tostring(self.current_campaign_name))

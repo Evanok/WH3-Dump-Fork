@@ -12,6 +12,7 @@ local mod_version = "1.1.0"
 local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
 pcall(require, "script.campaign.mod.revive_boring_campaign_iee_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_oldworld_capitals")
+pcall(require, "script.campaign.mod.revive_boring_campaign_oldworldclassic_capitals")
 
 local function rbc_mct_log(message)
     local msg = rbc_mct_log_prefix .. " " .. tostring(message)
@@ -492,6 +493,27 @@ local function build_available_major_factions()
         end)
 
         rbc_mct_log("Faction dropdown list built for campaign cr_oldworld: count=" .. tostring(#available_factions))
+        return available_factions
+    end
+
+    if cm and cm:get_campaign_name() == "cr_oldworldclassic" and revive_boring_campaign_oldworldclassic_faction_capitals then
+        local available_factions = {}
+
+        for faction_key, _ in pairs(revive_boring_campaign_oldworldclassic_faction_capitals) do
+            table.insert(available_factions, {
+                faction_key,
+                get_faction_display_name(faction_key)
+            })
+        end
+
+        table.sort(available_factions, function(a, b)
+            if a[2] == b[2] then
+                return a[1] < b[1]
+            end
+            return a[2] < b[2]
+        end)
+
+        rbc_mct_log("Faction dropdown list built for campaign cr_oldworldclassic: count=" .. tostring(#available_factions))
         return available_factions
     end
 
