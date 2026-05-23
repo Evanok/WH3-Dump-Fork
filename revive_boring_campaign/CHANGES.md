@@ -1,5 +1,13 @@
 # Changes
 
+## v1.1.0
+
+- Added campaign-aware capital table selection using `cm:get_campaign_name()`.
+- Added a dedicated `cr_oldworld` faction-to-start-region table generated from the in-game dump.
+- Revive and boost capital lookups now use the active campaign table instead of assuming Immortal Empires keys.
+- Added `The Old World` MCT faction list support by building the dropdown from the dedicated `cr_oldworld` capital table.
+- Updated MCT and campaign log version labels to `v1.1.0`.
+
 ## v1.0.4
 
 - Added Tiger Warriors (`wh3_cp1_cth_tiger_warriors`) faction from patch 8.0 / Bhashiva Content Pack — starts at `vale_of_titans`.
