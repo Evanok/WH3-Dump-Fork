@@ -376,6 +376,51 @@ for _, faction_data in ipairs(extended_major_factions) do
     known_faction_labels[faction_data[1]] = faction_data[2]
 end
 
+local faction_label_debug_logged = {}
+local faction_label_debug_total = 0
+local watched_faction_label_keys = {
+    ["wh3_main_kho_exiles_of_khorne"] = true,
+    ["wh3_main_ksl_the_ice_court"] = true,
+    ["wh_main_emp_empire"] = true,
+    ["wh2_dlc16_wef_sisters_of_twilight"] = true,
+}
+
+local function should_log_faction_label_resolution(faction_key, source)
+    if watched_faction_label_keys[faction_key] then
+        return true
+    end
+
+    if source ~= "common_loc" and source ~= "effect_loc" then
+        return true
+    end
+
+    if faction_label_debug_total < 20 and not faction_label_debug_logged[faction_key] then
+        return true
+    end
+
+    return false
+end
+
+local function log_faction_label_resolution(faction_key, source, value)
+    if not should_log_faction_label_resolution(faction_key, source) then
+        return
+    end
+
+    faction_label_debug_logged[faction_key] = true
+    faction_label_debug_total = faction_label_debug_total + 1
+    rbc_mct_log("Faction label resolution [" .. source .. "] " .. faction_key .. " -> " .. tostring(value))
+end
+
+local function prettify_faction_key(faction_key)
+    local label = faction_key or ""
+    label = string.gsub(label, "^.-_", "")
+    label = string.gsub(label, "_", " ")
+    label = string.gsub(label, "(%a)([%w_']*)", function(first, rest)
+        return string.upper(first) .. string.lower(rest)
+    end)
+    return label
+end
+
 local function faction_exists_in_campaign(faction_key)
     if not cm or not cm.get_faction then
         return false
@@ -389,22 +434,42 @@ local function faction_exists_in_campaign(faction_key)
 end
 
 local function get_faction_display_name(faction_key)
+    local loc_key = "factions_screen_name_" .. faction_key
+
     if common and common.get_localised_string then
-        local loc_key = "factions_screen_name_" .. faction_key
         local ok, localised_name = pcall(function()
             return common.get_localised_string(loc_key)
         end)
 
         if ok and localised_name and localised_name ~= "" and localised_name ~= loc_key then
+            log_faction_label_resolution(faction_key, "common_loc", localised_name)
             return localised_name
         end
+
+        log_faction_label_resolution(faction_key, "common_loc_failed", ok and localised_name or "pcall_failed")
+    end
+
+    if effect and effect.get_localised_string then
+        local ok, localised_name = pcall(function()
+            return effect.get_localised_string(loc_key)
+        end)
+
+        if ok and localised_name and localised_name ~= "" and localised_name ~= loc_key then
+            log_faction_label_resolution(faction_key, "effect_loc", localised_name)
+            return localised_name
+        end
+
+        log_faction_label_resolution(faction_key, "effect_loc_failed", ok and localised_name or "pcall_failed")
     end
 
     if known_faction_labels[faction_key] then
+        log_faction_label_resolution(faction_key, "known_label_fallback", known_faction_labels[faction_key])
         return known_faction_labels[faction_key]
     end
 
-    return faction_key
+    local fallback_label = prettify_faction_key(faction_key)
+    log_faction_label_resolution(faction_key, "prettified_key_fallback", fallback_label)
+    return fallback_label
 end
 
 local function build_available_major_factions()
@@ -461,13 +526,8 @@ local function build_available_major_factions()
     return available_factions
 end
 
-local available_major_factions = build_available_major_factions()
-
 -- Add dropdown values
 kill_faction_dropdown:add_dropdown_value("", "-- Select Faction --", "Select a faction from the list")
-for _, faction_data in ipairs(available_major_factions) do
-    kill_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Kill " .. faction_data[2])
-end
 
 -- Checkbox to execute kill
 local kill_execute = mod:add_new_option("kill_execute", "checkbox")
@@ -504,9 +564,6 @@ revive_faction_dropdown:set_tooltip_text("Choose which faction you want to bring
 
 -- Use same faction list (will only work on dead factions in practice)
 revive_faction_dropdown:add_dropdown_value("", "-- Select Faction --", "Select a dead faction to revive")
-for _, faction_data in ipairs(available_major_factions) do
-    revive_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Revive " .. faction_data[2])
-end
 
 -- Checkbox to execute revive
 local revive_execute = mod:add_new_option("revive_execute", "checkbox")
@@ -531,9 +588,6 @@ boost_faction_dropdown:set_tooltip_text("Choose which faction you want to buff."
 
 -- Use same faction list
 boost_faction_dropdown:add_dropdown_value("", "-- Select Faction --", "Select a faction")
-for _, faction_data in ipairs(available_major_factions) do
-    boost_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
-end
 
 -- Option checkboxes
 local boost_unlock_tech = mod:add_new_option("boost_unlock_tech", "checkbox")
@@ -579,9 +633,6 @@ nerf_faction_dropdown:set_tooltip_text("Choose which faction you want to debuff.
 
 -- Use same faction list
 nerf_faction_dropdown:add_dropdown_value("", "-- Select Faction --", "Select a faction")
-for _, faction_data in ipairs(available_major_factions) do
-    nerf_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
-end
 
 -- Option checkboxes
 local nerf_drain_treasury = mod:add_new_option("nerf_drain_treasury", "checkbox")
@@ -600,6 +651,26 @@ nerf_execute:set_text("Execute Debuff")
 nerf_execute:set_tooltip_text("Check this box to apply the selected debuffs to the faction.")
 nerf_execute:set_default_value(false)
 
+local dropdowns_populated = false
+
+local function populate_faction_dropdowns()
+    if dropdowns_populated then
+        return
+    end
+
+    local available_major_factions = build_available_major_factions()
+
+    for _, faction_data in ipairs(available_major_factions) do
+        kill_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Kill " .. faction_data[2])
+        revive_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Revive " .. faction_data[2])
+        boost_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
+        nerf_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
+    end
+
+    dropdowns_populated = true
+    rbc_mct_log("Faction dropdown values populated: count=" .. tostring(#available_major_factions))
+end
+
 force_all_checkboxes_false()
 
 --[[-------------------------------------------------------------------------------------------------------------
@@ -614,6 +685,14 @@ core:add_listener(
     function(context)
         rbc_mct_log("MCT Initialized")
         force_all_checkboxes_false()
+
+        if cm and cm:get_campaign_name() then
+            cm:add_first_tick_callback(function()
+                populate_faction_dropdowns()
+            end)
+        else
+            populate_faction_dropdowns()
+        end
 
         -- Listener for Kill execution
         core:add_listener(
