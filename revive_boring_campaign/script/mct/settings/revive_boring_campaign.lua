@@ -10,6 +10,8 @@
 local mct = get_mct()
 local mod_version = "1.1.0"
 local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
+pcall(require, "script.campaign.mod.revive_boring_campaign_iee_capitals")
+pcall(require, "script.campaign.mod.revive_boring_campaign_oldworld_capitals")
 
 local function rbc_mct_log(message)
     local msg = rbc_mct_log_prefix .. " " .. tostring(message)
@@ -25,7 +27,6 @@ if not mct then
 end
 
 local mod = mct:register_mod("revive_boring_campaign")
-pcall(require, "script.campaign.mod.revive_boring_campaign_oldworld_capitals")
 
 local checkbox_option_keys = {
     "kill_execute",
@@ -491,6 +492,27 @@ local function build_available_major_factions()
         end)
 
         rbc_mct_log("Faction dropdown list built for campaign cr_oldworld: count=" .. tostring(#available_factions))
+        return available_factions
+    end
+
+    if cm and cm:get_campaign_name() == "main_warhammer" and revive_boring_campaign_iee_faction_capitals then
+        local available_factions = {}
+
+        for faction_key, _ in pairs(revive_boring_campaign_iee_faction_capitals) do
+            table.insert(available_factions, {
+                faction_key,
+                get_faction_display_name(faction_key)
+            })
+        end
+
+        table.sort(available_factions, function(a, b)
+            if a[2] == b[2] then
+                return a[1] < b[1]
+            end
+            return a[2] < b[2]
+        end)
+
+        rbc_mct_log("Faction dropdown list built for campaign main_warhammer: count=" .. tostring(#available_factions))
         return available_factions
     end
 
