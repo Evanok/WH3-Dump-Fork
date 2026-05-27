@@ -1,5 +1,10 @@
 # Changes
 
+## v1.2.0
+
+- Reviving a confederated faction is now blocked with a clear error message. Previously, the faction would receive regions and armies but remain invisible in diplomacy due to an engine-level confederation-dead flag that no Lua API can reset (confirmed from Dynamic Disasters source). The check uses `faction:was_confederated()`.
+- Removed the `is_dead()` early-return guard from `kill_faction` so it can clean up confederation-dead factions that still have regions or characters.
+
 ## v1.1.0
 
 - Added campaign-aware capital table selection using `cm:get_campaign_name()`.

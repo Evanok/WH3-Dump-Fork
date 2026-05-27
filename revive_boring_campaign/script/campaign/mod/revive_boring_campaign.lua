@@ -10,13 +10,14 @@
 -- Module definition
 revive_boring_campaign = {
     name = "revive_boring_campaign",
-    log_prefix = "[RBC_DEBUG][campaign][v1.1.0]",
+    log_prefix = "[RBC_DEBUG][campaign][v1.2.0]",
 
     -- State tracking (will be saved)
     settings = {
         pending_kill = nil,      -- Faction key to kill
         pending_revive = nil,    -- Faction key to revive
     },
+
 
     anarchy_rebel_sink_faction = "wh2_main_def_hag_graef_separatists",
 
@@ -1042,11 +1043,6 @@ function revive_boring_campaign:kill_faction(faction_key)
         return false
     end
 
-    if faction:is_dead() then
-        self:log("Faction is already dead: " .. faction_key)
-        return false
-    end
-
     -- Get all regions owned by this faction
     local region_list = faction:region_list()
     local regions_to_abandon = {}
@@ -1207,6 +1203,14 @@ function revive_boring_campaign:revive_faction(faction_key, num_armies)
     -- Check if faction is already alive
     if not faction:is_dead() then
         self:log("Faction is already alive: " .. faction_key .. " (has " .. faction:region_list():num_items() .. " regions)")
+        return false
+    end
+
+    -- Confederated factions cannot be properly revived: transfer_region_to_faction does not reset
+    -- the confederation-dead flag, leaving the faction with armies and regions but invisible in diplomacy.
+    -- No CA API exists to de-confederate a faction (confirmed from Dynamic Disasters source).
+    if faction:was_confederated() then
+        self:log("ERROR: Cannot revive confederated faction (diplomacy ghost bug): " .. faction_key)
         return false
     end
 
@@ -1589,6 +1593,7 @@ function revive_boring_campaign:process_pending_validation_test(faction_keys)
         self:log("Validation test completed scheduled sequence for " .. #faction_keys .. " factions")
     end, delay)
 end
+
 
 function revive_boring_campaign:process_pending_revive(faction_key)
     if faction_key and faction_key ~= "" then

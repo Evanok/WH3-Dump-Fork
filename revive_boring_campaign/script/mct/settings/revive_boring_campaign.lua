@@ -8,7 +8,7 @@
 ]]---------------------------------------------------------------------------------------------------------------
 
 local mct = get_mct()
-local mod_version = "1.1.0"
+local mod_version = "1.2.0"
 local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
 pcall(require, "script.campaign.mod.revive_boring_campaign_vanilla_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_iee_capitals")
@@ -42,7 +42,7 @@ local checkbox_option_keys = {
     "boost_execute",
     "nerf_drain_treasury",
     "nerf_kill_armies",
-    "nerf_execute"
+    "nerf_execute",
 }
 
 local function force_all_checkboxes_false()
