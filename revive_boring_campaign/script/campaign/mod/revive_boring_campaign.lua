@@ -797,6 +797,188 @@ function revive_boring_campaign:spawn_force(faction_key, unit_list, region_key, 
     )
 end
 
+function revive_boring_campaign:was_faction_confederated(faction)
+    if not faction or faction:is_null_interface() then
+        return false, nil
+    end
+
+    local ok, confederator = pcall(function()
+        return faction:was_confederated()
+    end)
+
+    if not ok or not confederator then
+        return false, nil
+    end
+
+    if type(confederator) == "boolean" then
+        return confederator, nil
+    end
+
+    local null_ok, is_null = pcall(function()
+        return confederator:is_null_interface()
+    end)
+
+    if null_ok and is_null then
+        return false, nil
+    end
+
+    return true, confederator
+end
+
+function revive_boring_campaign:is_confederation_dummy_candidate(faction, revived_faction_key, revived_subculture, require_same_subculture)
+    if not faction or faction:is_null_interface() then
+        return false
+    end
+
+    local faction_key = faction:name()
+    if faction_key == revived_faction_key then
+        return false
+    end
+
+    if string.find(faction_key, "rebel") or string.find(faction_key, "qb_") or string.find(faction_key, "wh3_main_rogue") then
+        return false
+    end
+
+    local is_rebel_ok, is_rebel = pcall(function()
+        return faction:is_rebel()
+    end)
+    if is_rebel_ok and is_rebel then
+        return false
+    end
+
+    local can_be_human_ok, can_be_human = pcall(function()
+        return faction:can_be_human()
+    end)
+    if can_be_human_ok and can_be_human then
+        return false
+    end
+
+    if not faction:is_dead() or faction:is_human() then
+        return false
+    end
+
+    local was_confederated = self:was_faction_confederated(faction)
+    if was_confederated then
+        return false
+    end
+
+    if require_same_subculture and faction:subculture() ~= revived_subculture then
+        return false
+    end
+
+    return true
+end
+
+function revive_boring_campaign:find_confederation_revival_dummy_faction(revived_faction_key)
+    local revived_faction = cm:get_faction(revived_faction_key)
+    if not revived_faction or revived_faction:is_null_interface() then
+        return nil
+    end
+
+    local revived_subculture = revived_faction:subculture()
+    local faction_list = cm:model():world():faction_list()
+
+    for pass = 1, 2 do
+        local require_same_subculture = pass == 1
+        for i = 0, faction_list:num_items() - 1 do
+            local candidate = faction_list:item_at(i)
+            if self:is_confederation_dummy_candidate(candidate, revived_faction_key, revived_subculture, require_same_subculture) then
+                self:log(
+                    "Confederation revive dummy selected for " .. revived_faction_key .. ": " .. candidate:name() ..
+                    " (same_subculture=" .. tostring(require_same_subculture) .. ")"
+                )
+                return candidate:name()
+            end
+        end
+    end
+
+    self:log("WARNING: No usable confederation revive dummy found for " .. revived_faction_key)
+    return nil
+end
+
+function revive_boring_campaign:kill_character_cqi_if_present(cqi, reason)
+    if not cqi then
+        return false
+    end
+
+    self:log("Killing character CQI " .. tostring(cqi) .. " (" .. tostring(reason) .. ")")
+    cm:kill_character_and_commanded_unit(cm:char_lookup_str(cqi), true, true)
+    return true
+end
+
+function revive_boring_campaign:apply_confederation_revival_workaround(revived_faction_key, anchor_region_key, base_x, base_y)
+    local dummy_faction_key = self:find_confederation_revival_dummy_faction(revived_faction_key)
+    if not dummy_faction_key then
+        self:log("ERROR: Confederation revive workaround failed; no dummy faction for " .. revived_faction_key)
+        return false
+    end
+
+    local dummy_unit_list, _, dummy_generated_army = self:get_army_for_faction(dummy_faction_key)
+    local dummy_x, dummy_y = self:get_spawn_location_near_settlement(
+        dummy_faction_key,
+        anchor_region_key,
+        base_x,
+        base_y,
+        99,
+        {}
+    )
+
+    self:log(
+        "Confederation revive workaround: spawning dummy " .. dummy_faction_key ..
+        " at " .. anchor_region_key .. " near " .. tostring(dummy_x) .. ", " .. tostring(dummy_y)
+    )
+
+    cm:disable_event_feed_events(true, "", "", "diplomacy_faction_destroyed")
+    cm:disable_event_feed_events(true, "", "", "diplomacy_confederation")
+    cm:callback(function()
+        cm:disable_event_feed_events(false, "", "", "diplomacy_faction_destroyed")
+        cm:disable_event_feed_events(false, "", "", "diplomacy_confederation")
+    end, 5)
+
+    self:spawn_force(
+        dummy_faction_key,
+        dummy_unit_list,
+        anchor_region_key,
+        dummy_x,
+        dummy_y,
+        dummy_generated_army,
+        function(dummy_character_cqi)
+            self:log(
+                "Confederation revive workaround: dummy army spawned for " .. dummy_faction_key ..
+                " with CQI " .. tostring(dummy_character_cqi)
+            )
+
+            cm:callback(function()
+                self:log("Confederation revive workaround: forcing " .. revived_faction_key .. " to confederate " .. dummy_faction_key)
+                local confed_ok, confed_err = pcall(function()
+                    cm:force_confederation(revived_faction_key, dummy_faction_key)
+                end)
+                if not confed_ok then
+                    self:log("ERROR: force_confederation failed for " .. revived_faction_key .. " <- " .. dummy_faction_key .. ": " .. tostring(confed_err))
+                end
+
+                cm:callback(function()
+                    self:kill_character_cqi_if_present(dummy_character_cqi, "cleanup inherited dummy army after confederation revive")
+                    cm:disable_event_feed_events(false, "", "", "diplomacy_faction_destroyed")
+                    cm:disable_event_feed_events(false, "", "", "diplomacy_confederation")
+
+                    local revived_faction = cm:get_faction(revived_faction_key)
+                    if revived_faction and not revived_faction:is_null_interface() then
+                        local still_confederated = self:was_faction_confederated(revived_faction)
+                        self:log(
+                            "Confederation revive workaround completed for " .. revived_faction_key ..
+                            "; is_dead=" .. tostring(revived_faction:is_dead()) ..
+                            "; was_confederated=" .. tostring(still_confederated)
+                        )
+                    end
+                end, 0.5)
+            end, 0.2)
+        end
+    )
+
+    return true
+end
+
 --[[-------------------------------------------------------------------------------------------------------------
     Transfer the target region's province to a revived faction.
     Player-owned regions are left untouched; abandoned and AI-owned regions are transferred.
@@ -1206,12 +1388,9 @@ function revive_boring_campaign:revive_faction(faction_key, num_armies)
         return false
     end
 
-    -- Confederated factions cannot be properly revived: transfer_region_to_faction does not reset
-    -- the confederation-dead flag, leaving the faction with armies and regions but invisible in diplomacy.
-    -- No CA API exists to de-confederate a faction (confirmed from Dynamic Disasters source).
-    if faction:was_confederated() then
-        self:log("ERROR: Cannot revive confederated faction (diplomacy ghost bug): " .. faction_key)
-        return false
+    local was_confederated = self:was_faction_confederated(faction)
+    if was_confederated then
+        self:log("Faction was confederated; revive will try experimental dummy-confederation workaround: " .. faction_key)
     end
 
     -- Find a suitable region for the faction
@@ -1288,6 +1467,10 @@ function revive_boring_campaign:revive_faction(faction_key, num_armies)
                 self:log("Army " .. i .. " spawned with CQI " .. tostring(cqi))
             end
         )
+    end
+
+    if was_confederated then
+        self:apply_confederation_revival_workaround(faction_key, target_region_key, base_x, base_y)
     end
 
     self:log("Faction revive initiated: " .. faction_key)
