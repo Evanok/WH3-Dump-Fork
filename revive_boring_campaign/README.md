@@ -47,6 +47,8 @@ A mod to revive boring mid/late-game campaigns by allowing players to kill, resu
 | Free Upkeep (25 turns) | `[DONE]` | Uses effect bundle on army CQI |
 | Give 50,000 Gold | `[DONE]` | |
 | Spawn 5 Armies | `[DONE]` | Runtime roster generator + 25-turn free upkeep support |
+| Confederate All Same Subculture | `[DONE]` | Forces all living AI factions of the same subculture to confederate into the selected faction |
+| Confederate Specific Faction | `[DONE]` | Force-absorbs any single faction regardless of race/subculture; shows OK/KO result field |
 | Execute Buff button | `[DONE]` | |
 | All checkboxes auto-reset | `[DONE]` | |
 
@@ -65,6 +67,7 @@ A mod to revive boring mid/late-game campaigns by allowing players to kill, resu
 | MCT integration | `[DONE]` | 4 collapsible sections |
 | Instructions in description | `[DONE]` | |
 | Checkbox initial state reset | `[DONE]` | All MCT checkboxes forced false on UI load/init |
+| Confederate result feedback | `[DONE]` | Text field in Buff section shows OK or KO after confederation attempt |
 
 ---
 
