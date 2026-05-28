@@ -906,17 +906,97 @@ function revive_boring_campaign:kill_character_cqi_if_present(cqi, reason)
     return true
 end
 
+function revive_boring_campaign:log_faction_state(label, faction_key)
+    local faction = cm:get_faction(faction_key)
+    if not faction or faction:is_null_interface() then
+        self:log(label .. " [" .. faction_key .. "]: NOT FOUND / null interface")
+        return
+    end
+
+    local is_dead = tostring(faction:is_dead())
+    local is_human = tostring(faction:is_human())
+    local can_be_human = tostring(pcall(function() return faction:can_be_human() end) and faction:can_be_human())
+    local is_alive_cm = tostring(cm.faction_is_alive and cm:faction_is_alive(faction_key) or "N/A")
+    local subculture = tostring(faction:subculture())
+    local region_count = tostring(faction:region_list():num_items())
+
+    local is_in_confederation = "N/A"
+    local ok, val = pcall(function() return faction:is_in_confederation() end)
+    if ok then is_in_confederation = tostring(val) end
+
+    local was_confed = tostring(self:was_faction_confederated(faction))
+
+    self:log(
+        label .. " [" .. faction_key .. "]:" ..
+        " is_dead=" .. is_dead ..
+        " is_human=" .. is_human ..
+        " can_be_human=" .. can_be_human ..
+        " faction_is_alive=" .. is_alive_cm ..
+        " is_in_confederation=" .. is_in_confederation ..
+        " was_confederated=" .. was_confed ..
+        " regions=" .. region_count ..
+        " subculture=" .. subculture
+    )
+end
+
+-- Find a non-capital province region owned by the revived faction to give the dummy temporarily.
+-- Avoids touching the capital (where armies just spawned) and falls back to any AI region.
+function revive_boring_campaign:find_dummy_spawn_region(revived_faction_key, anchor_region_key)
+    local revived_faction = cm:get_faction(revived_faction_key)
+    if revived_faction and not revived_faction:is_null_interface() then
+        local region_list = revived_faction:region_list()
+        for i = 0, region_list:num_items() - 1 do
+            local region = region_list:item_at(i)
+            if region and not region:is_null_interface() then
+                local key = region:name()
+                if key ~= anchor_region_key and not region:is_province_capital() then
+                    self:log("WORKAROUND: using secondary province region for dummy: " .. key)
+                    return key
+                end
+            end
+        end
+        -- Fallback: use any region of the revived faction (including capital)
+        if region_list:num_items() > 0 then
+            self:log("WORKAROUND: no secondary region found, falling back to anchor region")
+            return anchor_region_key
+        end
+    end
+
+    -- Last resort: find any AI-owned region not in the revived faction's territory
+    local world_regions = cm:model():world():region_manager():region_list()
+    for i = 0, world_regions:num_items() - 1 do
+        local region = world_regions:item_at(i)
+        if region and not region:is_null_interface() and not region:is_abandoned() then
+            local owner = region:owning_faction()
+            if owner and not owner:is_null_interface() and not owner:is_human() and owner:name() ~= revived_faction_key then
+                self:log("WORKAROUND: using remote AI region for dummy: " .. region:name())
+                return region:name()
+            end
+        end
+    end
+
+    self:log("WORKAROUND: could not find dummy region, falling back to anchor")
+    return anchor_region_key
+end
+
 function revive_boring_campaign:apply_confederation_revival_workaround(revived_faction_key, anchor_region_key, base_x, base_y)
+    self:log("=== CONFEDERATION WORKAROUND START for " .. revived_faction_key .. " ===")
+    self:log_faction_state("WORKAROUND pre-spawn revived faction", revived_faction_key)
+
     local dummy_faction_key = self:find_confederation_revival_dummy_faction(revived_faction_key)
     if not dummy_faction_key then
         self:log("ERROR: Confederation revive workaround failed; no dummy faction for " .. revived_faction_key)
         return false
     end
 
+    self:log_faction_state("WORKAROUND dummy faction pre-spawn", dummy_faction_key)
+
     local dummy_unit_list, _, dummy_generated_army = self:get_army_for_faction(dummy_faction_key)
+    local dummy_region_key = self:find_dummy_spawn_region(revived_faction_key, anchor_region_key)
+
     local dummy_x, dummy_y = self:get_spawn_location_near_settlement(
         dummy_faction_key,
-        anchor_region_key,
+        dummy_region_key,
         base_x,
         base_y,
         99,
@@ -925,57 +1005,88 @@ function revive_boring_campaign:apply_confederation_revival_workaround(revived_f
 
     self:log(
         "Confederation revive workaround: spawning dummy " .. dummy_faction_key ..
-        " at " .. anchor_region_key .. " near " .. tostring(dummy_x) .. ", " .. tostring(dummy_y)
+        " at " .. dummy_region_key .. " near " .. tostring(dummy_x) .. ", " .. tostring(dummy_y)
     )
+    self:log("Dummy unit list: " .. tostring(dummy_unit_list))
 
     cm:disable_event_feed_events(true, "", "", "diplomacy_faction_destroyed")
     cm:disable_event_feed_events(true, "", "", "diplomacy_confederation")
     cm:callback(function()
         cm:disable_event_feed_events(false, "", "", "diplomacy_faction_destroyed")
         cm:disable_event_feed_events(false, "", "", "diplomacy_confederation")
+        self:log("WORKAROUND safety timeout: re-enabled diplomacy events after 5s")
     end, 5)
 
-    self:spawn_force(
+    -- create_force fails silently for a dead faction with no regions.
+    -- Give the dummy a secondary province region (not the capital) so spawn works,
+    -- then let the ghost confederate it. Confederation transfers the region back automatically.
+    self:log("WORKAROUND: transferring region " .. tostring(dummy_region_key) .. " to dummy " .. dummy_faction_key)
+    cm:transfer_region_to_faction(dummy_region_key, dummy_faction_key)
+
+    self:log("WORKAROUND: dispatching spawn_force for dummy " .. dummy_faction_key)
+    cm:create_force(
         dummy_faction_key,
         dummy_unit_list,
-        anchor_region_key,
+        dummy_region_key,
         dummy_x,
         dummy_y,
-        dummy_generated_army,
+        false,
         function(dummy_character_cqi)
-            self:log(
-                "Confederation revive workaround: dummy army spawned for " .. dummy_faction_key ..
-                " with CQI " .. tostring(dummy_character_cqi)
-            )
-
-            cm:callback(function()
-                self:log("Confederation revive workaround: forcing " .. revived_faction_key .. " to confederate " .. dummy_faction_key)
-                local confed_ok, confed_err = pcall(function()
-                    cm:force_confederation(revived_faction_key, dummy_faction_key)
-                end)
-                if not confed_ok then
-                    self:log("ERROR: force_confederation failed for " .. revived_faction_key .. " <- " .. dummy_faction_key .. ": " .. tostring(confed_err))
-                end
-
-                cm:callback(function()
-                    self:kill_character_cqi_if_present(dummy_character_cqi, "cleanup inherited dummy army after confederation revive")
-                    cm:disable_event_feed_events(false, "", "", "diplomacy_faction_destroyed")
-                    cm:disable_event_feed_events(false, "", "", "diplomacy_confederation")
-
-                    local revived_faction = cm:get_faction(revived_faction_key)
-                    if revived_faction and not revived_faction:is_null_interface() then
-                        local still_confederated = self:was_faction_confederated(revived_faction)
-                        self:log(
-                            "Confederation revive workaround completed for " .. revived_faction_key ..
-                            "; is_dead=" .. tostring(revived_faction:is_dead()) ..
-                            "; was_confederated=" .. tostring(still_confederated)
-                        )
-                    end
-                end, 0.5)
-            end, 0.2)
+            self:log("WORKAROUND CALLBACK FIRED: dummy CQI " .. tostring(dummy_character_cqi))
         end
     )
 
+    self:log("WORKAROUND: spawn dispatched, scheduling confederation in 1.5s")
+    cm:callback(function()
+        self:log_faction_state("WORKAROUND pre-confederation revived", revived_faction_key)
+        self:log_faction_state("WORKAROUND pre-confederation dummy", dummy_faction_key)
+
+        local dummy_character_cqi = nil
+        local dummy_faction = cm:get_faction(dummy_faction_key)
+        if dummy_faction and not dummy_faction:is_null_interface() then
+            local char_list = dummy_faction:character_list()
+            if char_list:num_items() > 0 then
+                dummy_character_cqi = char_list:item_at(0):cqi()
+                self:log("WORKAROUND: found dummy army CQI " .. tostring(dummy_character_cqi))
+            else
+                self:log("WORKAROUND WARNING: dummy still has no characters after region transfer + spawn")
+            end
+        end
+
+        self:log("WORKAROUND: calling force_confederation(" .. revived_faction_key .. ", " .. dummy_faction_key .. ")")
+        local confed_ok, confed_err = pcall(function()
+            cm:force_confederation(revived_faction_key, dummy_faction_key)
+        end)
+        if confed_ok then
+            self:log("WORKAROUND: force_confederation call completed (no Lua error)")
+        else
+            self:log("ERROR: force_confederation threw Lua error: " .. tostring(confed_err))
+        end
+
+        cm:callback(function()
+            self:log_faction_state("WORKAROUND post-confederation revived", revived_faction_key)
+            self:log_faction_state("WORKAROUND post-confederation dummy", dummy_faction_key)
+
+            if dummy_character_cqi then
+                self:kill_character_cqi_if_present(dummy_character_cqi, "cleanup dummy army after confederation revive")
+            end
+
+            -- If dummy region didn't transfer back via confederation, reclaim it manually
+            local dummy_region = cm:get_region(dummy_region_key)
+            if dummy_region and not dummy_region:is_null_interface() then
+                local owner = dummy_region:owning_faction()
+                if owner and not owner:is_null_interface() and owner:name() == dummy_faction_key then
+                    self:log("WORKAROUND: dummy region still on dummy after confederation, reclaiming for " .. revived_faction_key)
+                    cm:transfer_region_to_faction(dummy_region_key, revived_faction_key)
+                end
+            end
+
+            cm:disable_event_feed_events(false, "", "", "diplomacy_faction_destroyed")
+            cm:disable_event_feed_events(false, "", "", "diplomacy_confederation")
+
+            self:log("=== CONFEDERATION WORKAROUND END for " .. revived_faction_key .. " ===")
+        end, 0.5)
+    end, 1.5)
     return true
 end
 
@@ -1392,6 +1503,7 @@ function revive_boring_campaign:revive_faction(faction_key, num_armies)
     if was_confederated then
         self:log("Faction was confederated; revive will try experimental dummy-confederation workaround: " .. faction_key)
     end
+    self:log_faction_state("revive_faction pre-revive state", faction_key)
 
     -- Find a suitable region for the faction
     local target_region_key = self:find_region_for_revive(faction_key)
