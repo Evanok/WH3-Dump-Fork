@@ -10,7 +10,7 @@
 -- Module definition
 revive_boring_campaign = {
     name = "revive_boring_campaign",
-    log_prefix = "[RBC_DEBUG][campaign][v1.2.0]",
+    log_prefix = "[RBC_DEBUG][campaign][v1.3.0]",
 
     -- State tracking (will be saved)
     settings = {
@@ -1755,6 +1755,47 @@ function revive_boring_campaign:boost_faction(faction_key, options)
         end
     end
 
+    -- 5. Confederate all same-subculture factions into this one
+    if options.confederate_subculture then
+        self:log("Confederating all same-subculture factions into " .. faction_key)
+        local target_subculture = faction:subculture()
+        local faction_list = cm:model():world():faction_list()
+        local confederated = 0
+        for i = 0, faction_list:num_items() - 1 do
+            local candidate = faction_list:item_at(i)
+            if candidate and not candidate:is_null_interface() and not candidate:is_dead() then
+                local ckey = candidate:name()
+                if ckey ~= faction_key and not candidate:is_human() and candidate:subculture() == target_subculture then
+                    self:log("Confederating " .. ckey .. " into " .. faction_key)
+                    local ok, err = pcall(function() cm:force_confederation(faction_key, ckey) end)
+                    if ok then
+                        confederated = confederated + 1
+                    else
+                        self:log("WARNING: force_confederation failed for " .. ckey .. ": " .. tostring(err))
+                    end
+                end
+            end
+        end
+        self:log("Confederate subculture done: " .. confederated .. " factions absorbed")
+    end
+
+    -- 6. Confederate a specific faction into this one
+    if options.confederate_target then
+        local target_key = options.confederate_target
+        self:log("Confederating specific faction " .. target_key .. " into " .. faction_key)
+        local ok, err = pcall(function() cm:force_confederation(faction_key, target_key) end)
+        local status = ok and "OK" or ("KO: " .. tostring(err))
+        self:log("Confederate specific result: " .. status)
+        local mct_obj = get_mct and get_mct()
+        if mct_obj then
+            local mct_mod = mct_obj:get_mod_by_key("revive_boring_campaign")
+            if mct_mod then
+                local opt = mct_mod:get_option_by_key("boost_confederate_status")
+                if opt then opt:set_selected_setting(status) end
+            end
+        end
+    end
+
     self:log("Faction boosted successfully: " .. faction_key)
     return true
 end
@@ -1902,6 +1943,32 @@ function revive_boring_campaign:process_pending_boost(faction_key, options)
     if faction_key and faction_key ~= "" then
         cm:callback(function()
             self:boost_faction(faction_key, options)
+        end, 0.5)
+    end
+end
+
+function revive_boring_campaign:process_pending_confederate(absorbing_key, target_key)
+    if absorbing_key and absorbing_key ~= "" and target_key and target_key ~= "" then
+        cm:callback(function()
+            self:log("Confederating " .. target_key .. " into " .. absorbing_key)
+            local ok, err = pcall(function() cm:force_confederation(absorbing_key, target_key) end)
+            local status
+            if ok then
+                status = "OK"
+                self:log("Confederate done: " .. target_key .. " absorbed by " .. absorbing_key)
+            else
+                status = "KO: " .. tostring(err)
+                self:log("ERROR: force_confederation failed: " .. tostring(err))
+            end
+            -- Update MCT result field
+            local mct_obj = get_mct and get_mct()
+            if mct_obj then
+                local mct_mod = mct_obj:get_mod_by_key("revive_boring_campaign")
+                if mct_mod then
+                    local opt = mct_mod:get_option_by_key("confederate_status")
+                    if opt then opt:set_selected_setting(status) end
+                end
+            end
         end, 0.5)
     end
 end

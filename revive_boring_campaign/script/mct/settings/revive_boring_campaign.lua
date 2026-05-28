@@ -8,7 +8,7 @@
 ]]---------------------------------------------------------------------------------------------------------------
 
 local mct = get_mct()
-local mod_version = "1.2.0"
+local mod_version = "1.3.0"
 local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
 pcall(require, "script.campaign.mod.revive_boring_campaign_vanilla_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_iee_capitals")
@@ -39,6 +39,7 @@ local checkbox_option_keys = {
     "boost_free_upkeep",
     "boost_give_gold",
     "boost_spawn_armies",
+    "boost_confederate_subculture",
     "boost_execute",
     "nerf_drain_treasury",
     "nerf_kill_armies",
@@ -706,6 +707,16 @@ boost_spawn_armies:set_text("Spawn 5 Armies")
 boost_spawn_armies:set_tooltip_text("Spawn 5 full armies at the faction's capital.")
 boost_spawn_armies:set_default_value(false)
 
+local boost_confederate_subculture = mod:add_new_option("boost_confederate_subculture", "checkbox")
+boost_confederate_subculture:set_text("Confederate All Same Subculture")
+boost_confederate_subculture:set_tooltip_text("Force all living AI factions of the same subculture to confederate into this faction.")
+boost_confederate_subculture:set_default_value(false)
+
+local boost_confederate_target = mod:add_new_option("boost_confederate_target_select", "dropdown")
+boost_confederate_target:set_text("Confederate Specific Faction")
+boost_confederate_target:set_tooltip_text("Absorb this specific faction into the selected faction. Leave blank to skip.")
+boost_confederate_target:add_dropdown_value("", "-- None --", "No specific confederation")
+
 -- Checkbox to execute boost
 local boost_execute = mod:add_new_option("boost_execute", "checkbox")
 boost_execute:set_text("Execute Buff")
@@ -747,6 +758,10 @@ nerf_execute:set_text("Execute Debuff")
 nerf_execute:set_tooltip_text("Check this box to apply the selected debuffs to the faction.")
 nerf_execute:set_default_value(false)
 
+local boost_confederate_status = mod:add_new_option("boost_confederate_status", "text_input")
+boost_confederate_status:set_text("Confederate Result")
+boost_confederate_status:set_default_value("--")
+
 local dropdowns_populated = false
 
 local function populate_faction_dropdowns()
@@ -760,6 +775,7 @@ local function populate_faction_dropdowns()
         kill_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Kill " .. faction_data[2])
         revive_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Revive " .. faction_data[2])
         boost_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
+        boost_confederate_target:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
         nerf_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
     end
 
@@ -941,16 +957,19 @@ core:add_listener(
                         local free_upkeep = mct_mod:get_option_by_key("boost_free_upkeep"):get_selected_setting()
                         local give_gold = mct_mod:get_option_by_key("boost_give_gold"):get_selected_setting()
                         local spawn_armies = mct_mod:get_option_by_key("boost_spawn_armies"):get_selected_setting()
+                        local confederate_subculture = mct_mod:get_option_by_key("boost_confederate_subculture"):get_selected_setting()
+                        local confederate_target = mct_mod:get_option_by_key("boost_confederate_target_select"):get_selected_setting()
 
                         rbc_mct_log("Executing boost on " .. faction_key)
 
-                        -- Execute boost through main script
                         if revive_boring_campaign then
                             revive_boring_campaign:process_pending_boost(faction_key, {
                                 unlock_tech = unlock_tech,
                                 free_upkeep = free_upkeep,
                                 give_gold = give_gold,
-                                spawn_armies = spawn_armies
+                                spawn_armies = spawn_armies,
+                                confederate_subculture = confederate_subculture,
+                                confederate_target = (confederate_target ~= "" and confederate_target or nil)
                             })
                         end
                     else
@@ -965,6 +984,8 @@ core:add_listener(
                         mct_mod:get_option_by_key("boost_free_upkeep"):set_selected_setting(false)
                         mct_mod:get_option_by_key("boost_give_gold"):set_selected_setting(false)
                         mct_mod:get_option_by_key("boost_spawn_armies"):set_selected_setting(false)
+                        mct_mod:get_option_by_key("boost_confederate_subculture"):set_selected_setting(false)
+                        mct_mod:get_option_by_key("boost_confederate_target_select"):set_selected_setting("")
                     end, 1)
                 end
             end,
