@@ -10,12 +10,13 @@
 -- Module definition
 revive_boring_campaign = {
     name = "revive_boring_campaign",
-    log_prefix = "[RBC_DEBUG][campaign][v1.3.1]",
+    log_prefix = "[RBC_DEBUG][campaign][v1.4.0]",
 
     -- State tracking (will be saved)
     settings = {
         pending_kill = nil,      -- Faction key to kill
         pending_revive = nil,    -- Faction key to revive
+        nemesis_faction_key = nil,  -- Faction key for the nemesis feature
     },
 
 
@@ -184,7 +185,7 @@ revive_boring_campaign = {
 
         -- HIGH ELVES
         ["wh2_main_hef_eataine"] = "wh3_main_combi_region_lothern",
-        ["wh3_dlc27_hef_aislinn"] = "wh3_main_combi_region_tor_koruali",
+        ["wh3_dlc27_hef_aislinn"] = "wh3_main_combi_region_tower_of_the_stars",
         ["wh2_main_hef_order_of_loremasters"] = "wh3_main_combi_region_dawns_light",
         ["wh2_main_hef_avelorn"] = "wh3_main_combi_region_gaean_vale",
         ["wh2_main_hef_nagarythe"] = "wh3_main_combi_region_the_monoliths",
@@ -192,6 +193,7 @@ revive_boring_campaign = {
         ["wh2_dlc15_hef_imrik"] = "wh3_main_combi_region_the_bone_gulch",
         ["wh2_main_hef_chrace"] = "wh3_main_combi_region_tor_achare",
         ["wh2_main_hef_citadel_of_dusk"] = "wh3_main_combi_region_citadel_of_dusk",
+        ["wh2_main_hef_caledor"] = "wh3_main_combi_region_the_fortress_of_vorag",
         ["wh2_main_hef_cothique"] = "wh3_main_combi_region_tor_koruali",
         ["wh2_main_hef_ellyrion"] = "wh3_main_combi_region_tor_elyr",
         ["wh2_main_hef_saphery"] = "wh3_main_combi_region_white_tower_of_hoeth",
@@ -456,6 +458,7 @@ revive_boring_campaign = {
         ["wh_main_nor_sarl"] = "wh3_main_combi_region_sarl_encampment",
         ["wh_dlc08_nor_vanaheimlings"] = "wh3_main_combi_region_isle_of_wights",
         ["wh_main_nor_varg"] = "wh3_main_combi_region_varg_camp",
+        ["wh2_main_nor_skeggi"] = "wh3_main_combi_region_skeggi",
         ["wh3_dlc21_nor_wyrmkins"] = "wh3_main_combi_region_tower_of_ashung",
         ["wh3_dlc20_nor_yusak"] = "wh3_main_combi_region_foundry_of_bones",
         ["wh3_dlc27_nor_avags"] = "wh3_main_combi_region_desolation_ridge",
@@ -1982,6 +1985,228 @@ function revive_boring_campaign:process_pending_nerf(faction_key, options)
 end
 
 --[[-------------------------------------------------------------------------------------------------------------
+    NEMESIS
+
+    Set or clear the nemesis faction (called from MCT when player changes dropdown).
+    On selection: revive if dead, unlock techs, give 50k gold, spawn 5 armies.
+    Every 10 turns: revive if dead, or boost with 50k + 5 armies if not in top 10.
+    Every 25 turns: confederate the largest same-subculture faction into the nemesis.
+]]---------------------------------------------------------------------------------------------------------------
+function revive_boring_campaign:set_nemesis(faction_key)
+    if not faction_key or faction_key == "" then
+        self.settings.nemesis_faction_key = nil
+        self:log("Nemesis cleared")
+        self:nemesis_update_info_display()
+        return
+    end
+
+    self.settings.nemesis_faction_key = faction_key
+    self:log("Nemesis set to: " .. faction_key)
+
+    if not cm or not cm:get_campaign_name() then
+        return
+    end
+
+    cm:callback(function()
+        self:activate_nemesis_initial(faction_key)
+    end, 0.5)
+end
+
+function revive_boring_campaign:activate_nemesis_initial(faction_key)
+    self:log("Nemesis initial activation: " .. tostring(faction_key))
+
+    local faction = cm:get_faction(faction_key)
+    if not faction or faction:is_null_interface() then
+        self:log("ERROR: Nemesis faction not found: " .. tostring(faction_key))
+        return
+    end
+
+    if faction:is_dead() then
+        self:revive_faction(faction_key, 5)
+        cm:callback(function()
+            self:boost_faction(faction_key, {
+                unlock_tech = true,
+                give_gold = true,
+            })
+            self:nemesis_update_info_display()
+        end, 2.0)
+    else
+        self:boost_faction(faction_key, {
+            unlock_tech = true,
+            give_gold = true,
+            spawn_armies = true,
+        })
+        self:nemesis_update_info_display()
+    end
+end
+
+function revive_boring_campaign:nemesis_get_rank(faction_key)
+    local faction_scores = {}
+    local faction_list = cm:model():world():faction_list()
+
+    for i = 0, faction_list:num_items() - 1 do
+        local faction = faction_list:item_at(i)
+        if faction and not faction:is_null_interface() and not faction:is_dead() then
+            local fkey = faction:name()
+            if not string.find(fkey, "rebel") and
+               not string.find(fkey, "qb_") and
+               not string.find(fkey, "wh3_main_rogue") then
+                table.insert(faction_scores, {
+                    key = fkey,
+                    regions = faction:region_list():num_items()
+                })
+            end
+        end
+    end
+
+    table.sort(faction_scores, function(a, b) return a.regions > b.regions end)
+
+    for i = 1, #faction_scores do
+        if faction_scores[i].key == faction_key then
+            return i, #faction_scores
+        end
+    end
+
+    return nil, #faction_scores
+end
+
+function revive_boring_campaign:nemesis_is_top10(faction_key)
+    local rank, total = self:nemesis_get_rank(faction_key)
+    if rank then
+        self:log("Nemesis " .. faction_key .. " is rank #" .. rank .. " of " .. total)
+        return rank <= 10
+    end
+    self:log("Nemesis " .. faction_key .. " not found in faction rankings")
+    return false
+end
+
+function revive_boring_campaign:nemesis_update_info_display()
+    local mct_obj = get_mct and get_mct()
+    if not mct_obj then return end
+    local mct_mod = mct_obj:get_mod_by_key("revive_boring_campaign")
+    if not mct_mod then return end
+    local opt_territories = mct_mod:get_option_by_key("nemesis_info_territories")
+    local opt_rank = mct_mod:get_option_by_key("nemesis_info_rank")
+    if not opt_territories or not opt_rank then return end
+
+    local function set_display(opt, value)
+        opt:set_selected_setting(value)
+        if opt.set_finalized_setting then
+            opt:set_finalized_setting(value)
+        end
+    end
+
+    local faction_key = self.settings.nemesis_faction_key
+    if not faction_key or faction_key == "" then
+        set_display(opt_territories, "--")
+        set_display(opt_rank, "--")
+        return
+    end
+
+    local faction = cm:get_faction(faction_key)
+    if not faction or faction:is_null_interface() or faction:is_dead() then
+        set_display(opt_territories, "Dead")
+        set_display(opt_rank, "Dead")
+        return
+    end
+
+    local territories = faction:region_list():num_items()
+    local rank, total = self:nemesis_get_rank(faction_key)
+    set_display(opt_territories, tostring(territories))
+    set_display(opt_rank, rank and ("#" .. rank .. " / " .. total) or "unranked")
+end
+
+function revive_boring_campaign:nemesis_confederate_one(faction_key)
+    local faction = cm:get_faction(faction_key)
+    if not faction or faction:is_null_interface() or faction:is_dead() then
+        return
+    end
+
+    local nemesis_subculture = faction:subculture()
+    local faction_list = cm:model():world():faction_list()
+    local candidates = {}
+
+    for i = 0, faction_list:num_items() - 1 do
+        local candidate = faction_list:item_at(i)
+        if candidate and not candidate:is_null_interface() and not candidate:is_dead() then
+            local ckey = candidate:name()
+            if ckey ~= faction_key and
+               not candidate:is_human() and
+               candidate:subculture() == nemesis_subculture and
+               not string.find(ckey, "rebel") and
+               not string.find(ckey, "qb_") and
+               not string.find(ckey, "wh3_main_rogue") then
+                table.insert(candidates, {
+                    key = ckey,
+                    regions = candidate:region_list():num_items()
+                })
+            end
+        end
+    end
+
+    if #candidates == 0 then
+        self:log("Nemesis confederation: no same-subculture candidates for " .. faction_key)
+        return
+    end
+
+    table.sort(candidates, function(a, b) return a.regions > b.regions end)
+    local target_key = candidates[1].key
+
+    self:log("Nemesis confederating " .. target_key .. " into " .. faction_key)
+    local ok, err = pcall(function()
+        cm:force_confederation(faction_key, target_key)
+    end)
+
+    if ok then
+        self:log("Nemesis confederation: " .. target_key .. " absorbed by " .. faction_key)
+    else
+        self:log("WARNING: Nemesis confederation failed for " .. target_key .. ": " .. tostring(err))
+    end
+end
+
+function revive_boring_campaign:nemesis_periodic_check()
+    local faction_key = self.settings.nemesis_faction_key
+    if not faction_key or faction_key == "" then
+        return
+    end
+
+    local turn = cm:model():turn_number()
+
+    if turn % 10 == 0 then
+        self:log("Nemesis check at turn " .. turn .. " for " .. faction_key)
+
+        local faction = cm:get_faction(faction_key)
+        if not faction or faction:is_null_interface() then
+            self:log("ERROR: Nemesis faction not found: " .. faction_key)
+            return
+        end
+
+        if faction:is_dead() then
+            self:log("Nemesis is dead at turn " .. turn .. ", reviving")
+            self:revive_faction(faction_key, 5)
+            cm:callback(function()
+                self:boost_faction(faction_key, { give_gold = true })
+            end, 2.0)
+        else
+            if not self:nemesis_is_top10(faction_key) then
+                self:log("Nemesis not in top 10 at turn " .. turn .. ", boosting")
+                self:boost_faction(faction_key, {
+                    give_gold = true,
+                    spawn_armies = true,
+                })
+            end
+        end
+    end
+
+    if turn % 25 == 0 then
+        self:log("Nemesis confederation check at turn " .. turn)
+        self:nemesis_confederate_one(faction_key)
+    end
+
+    self:nemesis_update_info_display()
+end
+
+--[[-------------------------------------------------------------------------------------------------------------
     Initialize the mod
 ]]---------------------------------------------------------------------------------------------------------------
 function revive_boring_campaign:initialize()
@@ -2010,6 +2235,37 @@ function revive_boring_campaign:initialize()
     else
         self:log("Using default capital table for campaign: " .. tostring(self.current_campaign_name))
     end
+
+    -- Restore nemesis from MCT settings after a short delay.
+    -- populate_faction_dropdowns() runs on the same first tick and MCT may reject
+    -- the saved value if dropdown options haven't been added yet.
+    cm:callback(function()
+        local mct_obj = get_mct and get_mct()
+        if not mct_obj then return end
+        local mct_mod = mct_obj:get_mod_by_key("revive_boring_campaign")
+        if not mct_mod then return end
+        local opt = mct_mod:get_option_by_key("nemesis_faction_select")
+        if not opt then return end
+        local saved_nemesis = opt:get_selected_setting()
+        if saved_nemesis and saved_nemesis ~= "" then
+            self.settings.nemesis_faction_key = saved_nemesis
+            self:log("Nemesis restored from MCT (delayed): " .. saved_nemesis)
+            self:nemesis_update_info_display()
+        end
+    end, 1.0)
+
+    -- Register nemesis periodic turn listener
+    core:add_listener(
+        "ReviveBoringCampaign_Nemesis_TurnEnd",
+        "FactionTurnEnd",
+        function(context)
+            return context:faction():is_human()
+        end,
+        function(context)
+            revive_boring_campaign:nemesis_periodic_check()
+        end,
+        true
+    )
 
     self:log("Mod initialized successfully!")
 end

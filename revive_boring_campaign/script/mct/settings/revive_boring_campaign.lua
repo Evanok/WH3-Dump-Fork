@@ -8,7 +8,7 @@
 ]]---------------------------------------------------------------------------------------------------------------
 
 local mct = get_mct()
-local mod_version = "1.3.1"
+local mod_version = "1.4.0"
 local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
 pcall(require, "script.campaign.mod.revive_boring_campaign_vanilla_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_iee_capitals")
@@ -72,11 +72,13 @@ mod:set_description("Version: " .. mod_version .. "\n\n" ..
     "- Anarchy Kill: Destroy a faction and hand its regions to same-culture rebels\n" ..
     "- Revive Faction: Bring back a dead faction with armies\n" ..
     "- Buff Faction: Unlock techs, free upkeep, gold, spawn armies\n" ..
-    "- Debuff Faction: Drain treasury, morale penalty, kill armies\n\n" ..
+    "- Debuff Faction: Drain treasury, morale penalty, kill armies\n" ..
+    "- Nemesis: Pick a faction to become a persistent nemesis. They will be boosted on selection and kept competitive throughout the campaign.\n\n" ..
     "Instructions:\n" ..
     "1. Select a faction from the dropdown\n" ..
     "2. Check the options you want\n" ..
-    "3. Check Apply to execute (all checkboxes will reset)")
+    "3. Check Apply to execute (all checkboxes will reset)\n" ..
+    "4. For Nemesis: simply select a faction in the dropdown - no Apply needed.")
 
 if mct.get_version and (mct:get_version() == "0.9-beta" or mct:get_version() == "0.9") then
     mod:set_workshop_id("0000000000") -- Update when published
@@ -762,6 +764,44 @@ local boost_confederate_status = mod:add_new_option("boost_confederate_status", 
 boost_confederate_status:set_text("Confederate Result")
 boost_confederate_status:set_default_value("--")
 
+--[[-------------------------------------------------------------------------------------------------------------
+    SECTION: Nemesis
+]]---------------------------------------------------------------------------------------------------------------
+
+local nemesis_section = mod:add_new_section("nemesis_faction_section", "Nemesis")
+if mct.get_version and (mct:get_version() == "0.9-beta" or mct:get_version() == "0.9") then
+    nemesis_section:set_is_collapsible(true)
+    nemesis_section:set_visibility(true)
+end
+
+local nemesis_faction_dropdown = mod:add_new_option("nemesis_faction_select", "dropdown")
+nemesis_faction_dropdown:set_text("Nemesis Faction")
+nemesis_faction_dropdown:set_tooltip_text(
+    "Select a faction to become the nemesis. No Apply needed - takes effect immediately.\n\n" ..
+    "On selection:\n" ..
+    "- Revived if dead\n" ..
+    "- All technologies unlocked\n" ..
+    "- 50,000 gold added\n" ..
+    "- 5 armies spawned\n\n" ..
+    "Every 10 turns:\n" ..
+    "- Revived if dead (e.g. after confederation)\n" ..
+    "- If not in top 10 factions by territory: +50,000 gold and 5 new armies\n\n" ..
+    "Every 25 turns:\n" ..
+    "- Confederates the largest same-subculture faction into the nemesis"
+)
+nemesis_faction_dropdown:add_dropdown_value("", "-- None --", "No nemesis faction")
+nemesis_faction_dropdown:set_default_value("")
+
+local nemesis_info_territories = mod:add_new_option("nemesis_info_territories", "text_input")
+nemesis_info_territories:set_text("Territories")
+nemesis_info_territories:set_tooltip_text("Number of territories owned by the nemesis faction. Updated every turn.")
+nemesis_info_territories:set_default_value("--")
+
+local nemesis_info_rank = mod:add_new_option("nemesis_info_rank", "text_input")
+nemesis_info_rank:set_text("Rank")
+nemesis_info_rank:set_tooltip_text("Nemesis rank among all factions by territory count. Updated every turn.")
+nemesis_info_rank:set_default_value("--")
+
 local dropdowns_populated = false
 
 local function populate_faction_dropdowns()
@@ -777,6 +817,18 @@ local function populate_faction_dropdowns()
         boost_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
         boost_confederate_target:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
         nerf_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
+
+        -- Nemesis: skip the player's own faction
+        local is_player_faction = false
+        if cm and cm.get_faction then
+            local ok, f = pcall(function() return cm:get_faction(faction_data[1]) end)
+            if ok and f and not f:is_null_interface() and f:is_human() then
+                is_player_faction = true
+            end
+        end
+        if not is_player_faction then
+            nemesis_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Nemesis: " .. faction_data[2])
+        end
     end
 
     dropdowns_populated = true
@@ -1032,6 +1084,23 @@ core:add_listener(
                         mct_mod:get_option_by_key("nerf_drain_treasury"):set_selected_setting(false)
                         mct_mod:get_option_by_key("nerf_kill_armies"):set_selected_setting(false)
                     end, 1)
+                end
+            end,
+            true
+        )
+
+        -- Listener for Nemesis faction selection
+        core:add_listener(
+            "ReviveBoringCampaign_Nemesis_Select",
+            "MctOptionSelectedSettingSet",
+            function(context)
+                return context:option():get_key() == "nemesis_faction_select"
+            end,
+            function(context)
+                local faction_key = context:option():get_selected_setting()
+                rbc_mct_log("Nemesis faction changed to: " .. tostring(faction_key))
+                if revive_boring_campaign then
+                    revive_boring_campaign:set_nemesis(faction_key)
                 end
             end,
             true
