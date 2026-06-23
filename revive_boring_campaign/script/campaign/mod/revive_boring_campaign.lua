@@ -458,6 +458,7 @@ revive_boring_campaign = {
         ["wh_main_nor_sarl"] = "wh3_main_combi_region_sarl_encampment",
         ["wh_dlc08_nor_vanaheimlings"] = "wh3_main_combi_region_isle_of_wights",
         ["wh_main_nor_varg"] = "wh3_main_combi_region_varg_camp",
+        ["wh_main_nor_skaeling"] = "wh3_main_combi_region_doomkeep",
         ["wh2_main_nor_skeggi"] = "wh3_main_combi_region_skeggi",
         ["wh3_dlc21_nor_wyrmkins"] = "wh3_main_combi_region_tower_of_ashung",
         ["wh3_dlc20_nor_yusak"] = "wh3_main_combi_region_foundry_of_bones",
