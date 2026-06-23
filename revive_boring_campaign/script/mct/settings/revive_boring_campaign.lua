@@ -1098,6 +1098,12 @@ core:add_listener(
             end,
             function(context)
                 local faction_key = context:option():get_selected_setting()
+                if not faction_key or faction_key == "" then return end
+                -- Skip if the nemesis is already set to this faction (MCT fires on save restore too).
+                if revive_boring_campaign and revive_boring_campaign.settings.nemesis_faction_key == faction_key then
+                    rbc_mct_log("Nemesis MCT event skipped (already set to " .. faction_key .. ")")
+                    return
+                end
                 rbc_mct_log("Nemesis faction changed to: " .. tostring(faction_key))
                 if revive_boring_campaign then
                     revive_boring_campaign:set_nemesis(faction_key)

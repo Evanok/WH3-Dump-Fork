@@ -1997,6 +1997,9 @@ function revive_boring_campaign:set_nemesis(faction_key)
     if not faction_key or faction_key == "" then
         self.settings.nemesis_faction_key = nil
         self:log("Nemesis cleared")
+        if cm and cm:get_campaign_name() then
+            cm:set_saved_value("rbc_nemesis_faction_key", "")
+        end
         self:nemesis_update_info_display()
         return
     end
@@ -2007,6 +2010,8 @@ function revive_boring_campaign:set_nemesis(faction_key)
     if not cm or not cm:get_campaign_name() then
         return
     end
+
+    cm:set_saved_value("rbc_nemesis_faction_key", faction_key)
 
     cm:callback(function()
         self:activate_nemesis_initial(faction_key)
@@ -2237,21 +2242,32 @@ function revive_boring_campaign:initialize()
         self:log("Using default capital table for campaign: " .. tostring(self.current_campaign_name))
     end
 
-    -- Restore nemesis from MCT settings after a short delay.
-    -- populate_faction_dropdowns() runs on the same first tick and MCT may reject
-    -- the saved value if dropdown options haven't been added yet.
+    -- Restore nemesis from campaign save file only.
+    -- New campaigns have no saved value → nemesis starts as None (intended).
+    -- MCT registry is NOT used as fallback: it persists across campaigns and would
+    -- incorrectly re-activate the nemesis when starting a new campaign.
     cm:callback(function()
-        local mct_obj = get_mct and get_mct()
-        if not mct_obj then return end
-        local mct_mod = mct_obj:get_mod_by_key("revive_boring_campaign")
-        if not mct_mod then return end
-        local opt = mct_mod:get_option_by_key("nemesis_faction_select")
-        if not opt then return end
-        local saved_nemesis = opt:get_selected_setting()
+        local saved_nemesis = cm:get_saved_value("rbc_nemesis_faction_key")
         if saved_nemesis and saved_nemesis ~= "" then
             self.settings.nemesis_faction_key = saved_nemesis
-            self:log("Nemesis restored from MCT (delayed): " .. saved_nemesis)
+            self:log("Nemesis restored from save: " .. saved_nemesis)
+            -- Sync MCT dropdown to match the saved value (MCT does not persist this across sessions).
+            local mct_obj = get_mct and get_mct()
+            if mct_obj then
+                local mct_mod = mct_obj:get_mod_by_key("revive_boring_campaign")
+                if mct_mod then
+                    local opt = mct_mod:get_option_by_key("nemesis_faction_select")
+                    if opt then
+                        opt:set_selected_setting(saved_nemesis)
+                        if opt.set_finalized_setting then
+                            opt:set_finalized_setting(saved_nemesis)
+                        end
+                    end
+                end
+            end
             self:nemesis_update_info_display()
+        else
+            self:log("No nemesis saved value found, starting with no nemesis")
         end
     end, 1.0)
 
