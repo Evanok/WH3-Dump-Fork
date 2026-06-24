@@ -1,5 +1,24 @@
 # Changes
 
+## v1.4.0
+
+- Added Nemesis feature: select a persistent faction to keep competitive throughout the campaign.
+  - Initial activation (on selection): revives if dead, unlocks all technologies, gives 50k gold, spawns 5 armies.
+  - Periodic boost every 10 turns: revives if dead; if not in top 10 factions by territory, gives 50k gold and spawns 5 armies.
+  - Periodic confederation every 25 turns: confederates the largest same-subculture AI faction into the nemesis.
+  - War declaration if at peace: on selection and every 10 turns, declares war on the weakest (fewest regions) adjacent faction with diplomatic attitude ≤ -50 towards the nemesis.
+  - MCT info display shows nemesis territory count and rank, updated every turn.
+  - Nemesis persists across save/reload via `cm:set_saved_value`; MCT dropdown synced on restore.
+  - Nemesis starts as None on new campaigns (MCT registry not used as fallback).
+- Fixed revive and capital lookup issues for Skeggi, Aislinn, Noctilus, and Caledor factions.
+- Fixed capital lookup issue for the Skaeling faction.
+
+## v1.3.0
+
+- Added "Confederate All Same Subculture" buff option: forces all living AI factions of the same subculture to confederate into the selected faction.
+- Added "Confederate Specific Faction" buff option: force-absorbs any single specific AI faction into the selected faction regardless of subculture.
+- Added Confederate result feedback text field in MCT showing OK or KO after confederation attempt.
+
 ## v1.2.0
 
 - Reviving a confederated faction now runs an experimental dummy-confederation workaround instead of hard-blocking: after the normal revive, the faction spawns and immediately confederates a temporary dead AI faction, then the inherited dummy army is killed.
