@@ -59,7 +59,7 @@ A mod to revive boring mid/late-game campaigns by allowing players to kill, resu
 | Initial activation (on selection) | `[DONE]` | Revives if dead, unlocks all techs, gives 50k gold, spawns 5 armies |
 | Periodic boost (every 10 turns) | `[DONE]` | Revives if dead; if not in top 10 by territory: +50k gold + 5 armies |
 | Periodic confederation (every 25 turns) | `[DONE]` | Confederates the largest same-subculture AI faction into the nemesis |
-| War declaration if at peace | `[DONE]` | On selection and every 10 turns: if nemesis is at peace, finds an adjacent faction with attitude ≤ -100, picks the one with fewest regions, declares war |
+| War declaration if at peace | `[DONE]` | On selection and every 10 turns: if nemesis is at peace, finds an adjacent faction with attitude ≤ -50, picks the one with fewest regions, declares war |
 | Nemesis info display (territories, rank) | `[DONE]` | MCT text fields updated every turn |
 | Persist across save/reload | `[DONE]` | Saved via `cm:set_saved_value`; MCT dropdown synced on restore |
 | Reset on new campaign | `[DONE]` | No MCT fallback — nemesis starts as None on new campaigns |
