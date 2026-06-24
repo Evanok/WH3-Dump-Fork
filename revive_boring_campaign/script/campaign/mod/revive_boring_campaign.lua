@@ -2222,7 +2222,7 @@ function revive_boring_campaign:nemesis_find_war_target(faction_key)
                             end)
                             local attitude_val = (ok and attitude) and attitude or 0
                             self:log("  Adjacent: " .. owner_key .. " attitude=" .. tostring(attitude_val) .. " regions=" .. owner:region_list():num_items())
-                            if ok and attitude and attitude <= -100 then
+                            if ok and attitude and attitude <= -50 then
                                 table.insert(candidates, {
                                     key = owner_key,
                                     regions = owner:region_list():num_items(),
