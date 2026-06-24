@@ -2034,6 +2034,7 @@ function revive_boring_campaign:activate_nemesis_initial(faction_key)
                 unlock_tech = true,
                 give_gold = true,
             })
+            self:nemesis_declare_war_if_at_peace(faction_key)
             self:nemesis_update_info_display()
         end, 2.0)
     else
@@ -2042,6 +2043,7 @@ function revive_boring_campaign:activate_nemesis_initial(faction_key)
             give_gold = true,
             spawn_armies = true,
         })
+        self:nemesis_declare_war_if_at_peace(faction_key)
         self:nemesis_update_info_display()
     end
 end
@@ -2170,6 +2172,97 @@ function revive_boring_campaign:nemesis_confederate_one(faction_key)
     end
 end
 
+--[[-------------------------------------------------------------------------------------------------------------
+    NEMESIS - WAR DECLARATION
+
+    If the nemesis is at peace with everyone, find an adjacent faction with attitude <= -100 towards the nemesis,
+    pick the one with the fewest regions, and declare war.
+]]---------------------------------------------------------------------------------------------------------------
+function revive_boring_campaign:nemesis_find_war_target(faction_key)
+    local nemesis_faction = cm:get_faction(faction_key)
+    if not nemesis_faction or nemesis_faction:is_null_interface() or nemesis_faction:is_dead() then
+        return nil
+    end
+
+    -- Skip if nemesis is already at war with anyone
+    local faction_list = cm:model():world():faction_list()
+    for i = 0, faction_list:num_items() - 1 do
+        local other = faction_list:item_at(i)
+        if other and not other:is_null_interface() and not other:is_dead() and other:name() ~= faction_key then
+            if nemesis_faction:at_war_with(other) then
+                self:log("Nemesis " .. faction_key .. " already at war with " .. other:name() .. ", skipping war declaration")
+                return nil
+            end
+        end
+    end
+
+    -- Find adjacent factions with attitude <= -100
+    local candidates = {}
+    local seen = {}
+    local adjacent_count = 0
+    local region_list = nemesis_faction:region_list()
+
+    self:log("Nemesis war check for " .. faction_key .. " (" .. region_list:num_items() .. " regions)")
+
+    for i = 0, region_list:num_items() - 1 do
+        local region = region_list:item_at(i)
+        if region and not region:is_null_interface() then
+            local adj_list = region:adjacent_region_list()
+            for j = 0, adj_list:num_items() - 1 do
+                local adj = adj_list:item_at(j)
+                if adj and not adj:is_null_interface() and not adj:is_abandoned() then
+                    local owner = adj:owning_faction()
+                    if owner and not owner:is_null_interface() and not owner:is_dead() then
+                        local owner_key = owner:name()
+                        if owner_key ~= faction_key and not owner:is_human() and not seen[owner_key] then
+                            seen[owner_key] = true
+                            adjacent_count = adjacent_count + 1
+                            local ok, attitude = pcall(function()
+                                return nemesis_faction:diplomatic_attitude_towards(owner_key)
+                            end)
+                            local attitude_val = (ok and attitude) and attitude or 0
+                            self:log("  Adjacent: " .. owner_key .. " attitude=" .. tostring(attitude_val) .. " regions=" .. owner:region_list():num_items())
+                            if ok and attitude and attitude <= -100 then
+                                table.insert(candidates, {
+                                    key = owner_key,
+                                    regions = owner:region_list():num_items(),
+                                    attitude = attitude,
+                                })
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    self:log("Nemesis war check: " .. adjacent_count .. " adjacent factions, " .. #candidates .. " candidates with attitude <= -100")
+
+    if #candidates == 0 then
+        return nil
+    end
+
+    table.sort(candidates, function(a, b) return a.regions < b.regions end)
+    local target = candidates[1]
+    self:log("Nemesis war target selected: " .. target.key .. " (attitude=" .. target.attitude .. ", regions=" .. target.regions .. ")")
+    return target.key
+end
+
+function revive_boring_campaign:nemesis_declare_war_if_at_peace(faction_key)
+    local target_key = self:nemesis_find_war_target(faction_key)
+    if not target_key then
+        return false
+    end
+
+    self:log("Nemesis " .. faction_key .. " declaring war on " .. target_key)
+    cm:disable_event_feed_events(true, "", "", "diplomacy_war_declared")
+    cm:force_declare_war(faction_key, target_key, false, false)
+    cm:callback(function()
+        cm:disable_event_feed_events(false, "", "", "diplomacy_war_declared")
+    end, 0.2)
+    return true
+end
+
 function revive_boring_campaign:nemesis_periodic_check()
     local faction_key = self.settings.nemesis_faction_key
     if not faction_key or faction_key == "" then
@@ -2192,6 +2285,7 @@ function revive_boring_campaign:nemesis_periodic_check()
             self:revive_faction(faction_key, 5)
             cm:callback(function()
                 self:boost_faction(faction_key, { give_gold = true })
+                self:nemesis_declare_war_if_at_peace(faction_key)
             end, 2.0)
         else
             if not self:nemesis_is_top10(faction_key) then
@@ -2201,6 +2295,7 @@ function revive_boring_campaign:nemesis_periodic_check()
                     spawn_armies = true,
                 })
             end
+            self:nemesis_declare_war_if_at_peace(faction_key)
         end
     end
 
