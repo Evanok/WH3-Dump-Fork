@@ -1,5 +1,10 @@
 # Changes
 
+## v1.4.1
+
+- Rebuilt pack for compatibility with the latest Total War: Warhammer 3 game update. No functional changes.
+- Updated MCT and campaign log version labels to `v1.4.1`.
+
 ## v1.4.0
 
 - Added Nemesis feature: select a persistent faction to keep competitive throughout the campaign.

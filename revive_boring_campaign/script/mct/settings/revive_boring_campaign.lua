@@ -8,7 +8,7 @@
 ]]---------------------------------------------------------------------------------------------------------------
 
 local mct = get_mct()
-local mod_version = "1.4.0"
+local mod_version = "1.4.1"
 local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
 pcall(require, "script.campaign.mod.revive_boring_campaign_vanilla_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_iee_capitals")
