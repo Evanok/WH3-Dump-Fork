@@ -8,7 +8,7 @@
 ]]---------------------------------------------------------------------------------------------------------------
 
 local mct = get_mct()
-local mod_version = "1.4.1"
+local mod_version = "1.5.0"
 local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
 pcall(require, "script.campaign.mod.revive_boring_campaign_vanilla_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_iee_capitals")
@@ -508,15 +508,47 @@ local function get_faction_display_name(faction_key)
     return fallback_label
 end
 
+-- Systemic / script-only factions that must never show up in the dropdowns.
+-- These exist in the campaign faction list (and therefore in the generated capital tables)
+-- but are owned by game scripts: endgame hosts, vassal owners, summon pools, rebels, quest battles.
+local excluded_faction_key_patterns = {
+    "_vassal_owner",
+    "_confederation_owner",
+    "_separatists",
+    "_rebels",
+    "summoned_verminlord",
+    "thanquol_machinations",
+    "vmp_vampire_lairs",
+    "vmp_remnants",
+    "_qb%d*$",
+    "_qb_",
+}
+
+local function is_excluded_faction_key(faction_key)
+    if not faction_key or faction_key == "" then
+        return true
+    end
+
+    for _, pattern in ipairs(excluded_faction_key_patterns) do
+        if string.find(faction_key, pattern) then
+            return true
+        end
+    end
+
+    return false
+end
+
 local function build_available_major_factions()
     if cm and cm:get_campaign_name() == "cr_oldworld" and revive_boring_campaign_oldworld_faction_capitals then
         local available_factions = {}
 
         for faction_key, _ in pairs(revive_boring_campaign_oldworld_faction_capitals) do
-            table.insert(available_factions, {
-                faction_key,
-                get_faction_display_name(faction_key)
-            })
+            if not is_excluded_faction_key(faction_key) then
+                table.insert(available_factions, {
+                    faction_key,
+                    get_faction_display_name(faction_key)
+                })
+            end
         end
 
         table.sort(available_factions, function(a, b)
@@ -534,10 +566,12 @@ local function build_available_major_factions()
         local available_factions = {}
 
         for faction_key, _ in pairs(revive_boring_campaign_oldworldclassic_faction_capitals) do
-            table.insert(available_factions, {
-                faction_key,
-                get_faction_display_name(faction_key)
-            })
+            if not is_excluded_faction_key(faction_key) then
+                table.insert(available_factions, {
+                    faction_key,
+                    get_faction_display_name(faction_key)
+                })
+            end
         end
 
         table.sort(available_factions, function(a, b)
@@ -555,10 +589,12 @@ local function build_available_major_factions()
         local available_factions = {}
 
         for faction_key, _ in pairs(revive_boring_campaign_iee_faction_capitals) do
-            table.insert(available_factions, {
-                faction_key,
-                get_faction_display_name(faction_key)
-            })
+            if not is_excluded_faction_key(faction_key) then
+                table.insert(available_factions, {
+                    faction_key,
+                    get_faction_display_name(faction_key)
+                })
+            end
         end
 
         table.sort(available_factions, function(a, b)
@@ -576,10 +612,12 @@ local function build_available_major_factions()
         local available_factions = {}
 
         for faction_key, _ in pairs(revive_boring_campaign_vanilla_faction_capitals) do
-            table.insert(available_factions, {
-                faction_key,
-                get_faction_display_name(faction_key)
-            })
+            if not is_excluded_faction_key(faction_key) then
+                table.insert(available_factions, {
+                    faction_key,
+                    get_faction_display_name(faction_key)
+                })
+            end
         end
 
         table.sort(available_factions, function(a, b)

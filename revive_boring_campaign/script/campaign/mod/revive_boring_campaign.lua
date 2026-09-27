@@ -10,7 +10,7 @@
 -- Module definition
 revive_boring_campaign = {
     name = "revive_boring_campaign",
-    log_prefix = "[RBC_DEBUG][campaign][v1.4.1]",
+    log_prefix = "[RBC_DEBUG][campaign][v1.5.0]",
 
     -- State tracking (will be saved)
     settings = {
@@ -49,6 +49,8 @@ revive_boring_campaign = {
         ["wh2_main_sc_lzd_lizardmen"] = "wh2_main_lzd_lizardmen_rebels",
         ["wh2_main_sc_skv_skaven"] = "wh2_main_skv_skaven_rebels",
         ["wh3_dlc23_sc_chd_chaos_dwarfs"] = "wh3_dlc23_chd_chaos_dwarfs_rebels",
+        -- DLC29 Undead Legions (Nagash) has no dedicated rebel faction, reuse the vampire rebels.
+        ["wh3_dlc29_sc_nag_undead_legions"] = "wh_main_vmp_vampire_rebels",
         ["wh3_main_sc_cth_cathay"] = "wh3_main_cth_cathay_rebels",
         ["wh3_main_sc_dae_daemons"] = "wh_main_chs_chaos_rebels",
         ["wh3_main_sc_kho_khorne"] = "wh3_main_kho_khorne_rebels",
