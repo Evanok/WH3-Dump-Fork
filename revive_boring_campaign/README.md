@@ -98,14 +98,22 @@ A mod to revive boring mid/late-game campaigns by allowing players to kill, resu
 
 ```
 revive_boring_campaign/
-├── CLAUDE.md                              # This file
+├── CLAUDE.md                          # Architecture notes for contributors
+├── CHANGES.md                         # Changelog
+├── README.md                          # This file
 └── script/
-    ├── campaign/
-    │   └── mod/
-    │       └── revive_boring_campaign.lua # Main logic
-    └── mct/
-        └── settings/
-            └── revive_boring_campaign.lua # MCT UI definition
+    ├── _lib/mod/
+    │   ├── runtime_roster_unit_data.lua            # Generated roster dataset
+    │   ├── lib_runtime_army_template_generator.lua # Lord + 19-unit force builder
+    │   └── fallback_army_templates.lua             # Last-resort templates by subculture
+    ├── campaign/mod/
+    │   ├── revive_boring_campaign.lua              # Main logic
+    │   ├── revive_boring_campaign_vanilla_capitals.lua
+    │   ├── revive_boring_campaign_iee_capitals.lua
+    │   ├── revive_boring_campaign_oldworld_capitals.lua
+    │   └── revive_boring_campaign_oldworldclassic_capitals.lua
+    └── mct/settings/
+        └── revive_boring_campaign.lua              # MCT UI definition
 ```
 
 ---
@@ -164,13 +172,14 @@ cp "./revive_boring_campaign.pack" "/c/Program Files (x86)/Steam/steamapps/commo
 
 - **Effect bundles for armies**: Use `cm:apply_effect_bundle_to_characters_force()` NOT `cm:apply_effect_bundle()`. The latter applies to factions, not individual armies.
 - **Spawn location fallback**: If `find_valid_spawn_location_for_character_from_settlement()` fails, use settlement coordinates directly.
-- **Logging**: Search for `[RBC_DEBUG]` in `lua_mod_log.txt` after launching the game. `out()` writes there when script logging is enabled; `io.open()` is sandboxed in WH3 scripts.
+- **Logging**: Search for `[RBC_DEBUG]` in `lua_mod_log.txt` after launching the game. `out()` writes there when script logging is enabled. `io.open()` does work, but only with a relative path, and the file lands in the game install directory rather than AppData.
 - **Hot reload does NOT work** - pack file required, must restart game
 - **MCT cache**: Delete `mct_registry.lua` if UI changes don't appear
 - **Campaign table selection**:
   - `cr_oldworld` uses the dedicated Old World dump table
   - `cr_oldworldclassic` uses the dedicated Old World Classic dump table
   - `main_warhammer` is split at runtime between vanilla and IEE because both share the same campaign key
+- **Capital dumps**: the capture helper reads `faction:home_region()` (the real capital). Entries tagged `-- (leader_position)` come from a fallback and mean the faction owns nothing at turn 1, typically a horde. Always take the dump on a **new campaign at turn 1**, otherwise capitals reflect conquests.
 - **IEE detection**: the mod detects Immortal Empires Extended by checking for Extended-only faction/region sentinels, then selects the IEE capital table and MCT dropdown source
 
 ---

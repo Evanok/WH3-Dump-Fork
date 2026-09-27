@@ -5,7 +5,7 @@ Configuration Tool) UI: kill, anarchy-kill, revive, buff, debuff, and set a
 persistent "nemesis" faction.
 
 - **Author:** Evanok
-- **Current version:** 1.4.1 (see `CHANGES.md` for the full changelog)
+- **Current version:** 1.5.0 (see `CHANGES.md` for the full changelog)
 - **Requires:** MCT v0.9 Beta or later
 
 ---
@@ -168,6 +168,46 @@ cm:set_saved_value(key, value) / cm:get_saved_value(key)
 
 ---
 
+## Regenerating the generated data
+
+Two datasets in this mod are generated, never hand-edited. Both generators live in
+the parent dump repo under `WH3-Dump-Fork/script_data/`.
+
+### Runtime roster (`script/_lib/mod/runtime_roster_unit_data.lua`)
+
+Run after every game patch, once the dump repo's `db/` and `text/` tables are synced
+from upstream (`Shazbot/WH3-Dump`):
+
+```bash
+cd WH3-Dump-Fork/script_data
+python generate_runtime_roster_data.py          # writes the .lua and .json
+python preview_runtime_army.py --validate-all   # must report 0 failures
+python preview_runtime_army.py <faction_key> --faction   # inspect one roster
+```
+
+The generator writes to `WH3-Dump-Fork/script/_lib/mod/`; copy the result into this
+mod's `script/_lib/mod/`.
+
+### Capital tables (`script/campaign/mod/*_capitals.lua`)
+
+Start a **new campaign at turn 1** with `faction_capture.pack` enabled, then:
+
+```bash
+python generate_capital_tables.py   --dump "…/Total War WARHAMMER III/faction_capitals_dump.txt"   --variant vanilla     # or iee / oldworld / oldworldclassic
+```
+
+The capture script reads `faction:home_region()` first — the authoritative capital.
+Entries tagged `-- (leader_position)` or `-- (region_list)` come from a fallback and
+are hordes or factions owning nothing at turn 1; they are expected, not errors. The
+generator warns if the dump was not taken at turn 1, because capitals would then
+reflect conquests rather than start positions.
+
+The IE Extended table exists twice: `revive_boring_campaign_iee_capitals.lua` and an
+inline `faction_capitals` copy in the campaign script used as fallback. Keep both in
+sync when regenerating.
+
+---
+
 ## Building the pack
 
 Uses the RPFM CLI (`../rpfm-v4.7.4-x86_64-pc-windows-msvc/rpfm_cli.exe`, relative
@@ -197,7 +237,9 @@ cp "./revive_boring_campaign.pack" \
   `.pack` is required. Rebuild the pack and restart the game for any code change.
 - **Logging:** `out()` writes to both the in-game console and
   `…/Total War WARHAMMER III/lua_mod_log.txt`. Filter on `[RBC_DEBUG]`. The log is
-  overwritten on each launch. `io.open()` is blocked by the game sandbox.
+  overwritten on each launch. `io.open()` does work from campaign scripts, but only
+  with a relative path: the file lands in the game install directory, not in AppData
+  (that is where `faction_capitals_dump.txt` is written).
 - **MCT cache:** if UI changes don't appear, close the game and delete
   `%APPDATA%\The Creative Assembly\Warhammer3\scripts\mct_registry.lua`, then
   rebuild/reinstall and restart.

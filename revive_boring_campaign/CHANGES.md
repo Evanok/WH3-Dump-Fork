@@ -1,5 +1,39 @@
 # Changes
 
+## v1.5.0
+
+- Added support for the 9.0 / DLC29 factions: Host of Nagash (`wh3_dlc29_nag_host_of_nagash`),
+  The Lahmian Sisterhood / Neferata (`wh3_dlc29_vmp_neferata`), Clan Scruten / Thanquol
+  (`wh3_dlc29_skv_clan_scruten`) and Host of the Triplets / Glottkin
+  (`wh3_dlc29_chs_host_of_the_triplets`), in the vanilla Immortal Empires and IE Extended tables.
+- Regenerated the runtime roster dataset from the 9.0 database dump. The new Undead Legions
+  subculture (`wh3_dlc29_sc_nag_undead_legions`) resolves its own military group, so Nagash
+  spawns armies mixing Tomb Kings, Vampire Counts, Vampire Coast and DLC29-exclusive units
+  (Morghast Archai/Harbingers, Khemric Titan, Lahmian Handmaidens, Spirit Host, Coven Throne).
+  All 53 military groups validate with no failures.
+- Added a fallback army template and an Anarchy Kill rebel mapping for the Undead Legions subculture.
+- Fixed faction capital capture: the dump helper recorded the faction leader's current position
+  instead of the faction capital, which was wrong for any leader standing outside its own
+  settlement. It now reads `faction:home_region()` first and tags every entry that falls back to
+  leader position or owned-region order.
+- Corrected 95 capitals in the vanilla Immortal Empires table and 86 in the IE Extended tables as a
+  result, including Kislev (`zavastra` -> `kislev`), Naggarond (`har_kaldra` -> `naggarond`),
+  Clan Skryre (`tobaro` -> `skavenblight`), Bretonnia (`languille` -> `couronne`),
+  Middenland (`carroburg` -> `middenheim`) and Neferata (`blasted_expanse` -> `silver_pinnacle`).
+  Regions claimed by more than one faction dropped from 48 to 15, all of them hordes camped on
+  another faction's territory.
+- Script-owned factions are now filtered out of the MCT dropdowns: vassal owners, confederation
+  owners, separatists, summoned pools, quest-battle factions and the 206 `mixer_*` factions
+  added in 9.0.
+- IE Extended campaigns now read the generated IEE capital table instead of the inline copy in the
+  campaign script, so the dropdown and the revive logic can no longer disagree. The inline table
+  remains as a fallback.
+- Campaign start-up logs now name the capital table in use (vanilla or IE Extended) instead of
+  reporting "default".
+- Renamed `deprecated_army_templates.lua` to `fallback_army_templates.lua`: the file is still on
+  the live fallback path, the old name suggested it was dead code.
+- Updated MCT and campaign log version labels to `v1.5.0`.
+
 ## v1.4.1
 
 - Rebuilt pack for compatibility with the latest Total War: Warhammer 3 game update. No functional changes.
