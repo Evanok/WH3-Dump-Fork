@@ -1,4 +1,4 @@
-﻿-- Auto-generated from dump_vanilla_v4.txt for campaign main_warhammer (vanilla)
+-- Auto-generated from dump_vanilla_v4.txt for campaign main_warhammer (vanilla)
 -- Source campaign key: main_warhammer, turn: 1
 revive_boring_campaign_vanilla_faction_capitals = {
     ["wh3_dlc29_nag_host_of_nagash"] = "wh3_main_combi_region_black_pyramid_of_nagash",

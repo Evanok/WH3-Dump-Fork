@@ -32,6 +32,10 @@
   reporting "default".
 - Renamed `deprecated_army_templates.lua` to `fallback_army_templates.lua`: the file is still on
   the live fallback path, the old name suggested it was dead code.
+- Fixed the vanilla Immortal Empires capital table never loading. The file carried a UTF-8 BOM,
+  which the game's Lua loader rejects (`unexpected symbol near '<BOM>'`), so the table had been
+  silently absent since v1.1.0: vanilla IE campaigns fell back to the inline IE Extended table and
+  the MCT dropdowns were built from the 107-entry hardcoded list instead of the 297-entry table.
 - Updated MCT and campaign log version labels to `v1.5.0`.
 
 ## v1.4.1

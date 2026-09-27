@@ -102,7 +102,9 @@ def main() -> int:
         lines.append(f'    ["{key}"] = "{region}",')
     lines.append("}")
 
-    body = "\ufeff" + "\r\n".join(lines) + "\r\n"
+    # No BOM: the game's Lua loader rejects it with
+    # "unexpected symbol near '<BOM>'" and the table silently never loads.
+    body = "\r\n".join(lines) + "\r\n"
     out_path.write_bytes(body.encode("utf-8"))
 
     by_source = defaultdict(int)
