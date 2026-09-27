@@ -27,18 +27,18 @@ MINOR_CULT_LIST = {
 	{key = "mc_ogre_mercs", cult = nil},
 	{key = "mc_unearthed_tomb", cult = nil},
 	{key = "mc_spawning_pool", cult = nil},
-	{key = "mc_crimson_plague", cult = nil, shared_state_key = "endgame_minor_cult_crimson_plague"},
+	{key = "mc_crimson_plague", cult = nil, shared_state_key = "minor_cult_crimson_plague"},
 	{key = "mc_sartosan_vault", cult = nil},
 	{key = "mc_cathayan_caravan", cult = nil},
 	{key = "mc_peg_street_pawnshop", cult = nil},
-	{key = "mc_purple_hand", cult = nil, shared_state_key = "endgame_minor_cult_purple_hand"},
+	{key = "mc_purple_hand", cult = nil, shared_state_key = "minor_cult_purple_hand"},
 	{key = "mc_underworld_sea", cult = nil},
-	{key = "mc_doomsphere", cult = nil, shared_state_key = "endgame_minor_cult_doomsphere"},
+	{key = "mc_doomsphere", cult = nil, shared_state_key = "minor_cult_doomsphere"},
 	{key = "mc_dark_gift", cult = nil},
-	{key = "mc_chaos_portal", cult = nil, shared_state_key = "endgame_minor_cult_chaos_portal"},
-	{key = "mc_crimson_skull", cult = nil, shared_state_key = "endgame_minor_cult_crimson_skull"},
+	{key = "mc_chaos_portal", cult = nil, shared_state_key = "minor_cult_chaos_portal"},
+	{key = "mc_crimson_skull", cult = nil, shared_state_key = "minor_cult_crimson_skull"},
 	{key = "mc_cult_of_pleasure", cult = nil},
-	{key = "mc_the_cabal", cult = nil, shared_state_key = "endgame_minor_cult_cabal", disable_in_MP = true},
+	{key = "mc_the_cabal", cult = nil, shared_state_key = "minor_cult_cabal", disable_in_MP = true},
 	{key = "mc_elven_enclave", cult = nil}
 };
 local status_to_string = {
@@ -53,7 +53,7 @@ local minor_cult_faction_key = "wh3_main_rogue_minor_cults";
 local spawn_cult_per_turn_chance = 8;
 local allow_ai_cults = false; -- WIP, don't enable yet
 local cult_last_turn = false;
-local cult_debug_output = true;
+local cult_debug_output = false;
 
 function add_minor_cults_listeners()
 	out("#### Adding Minor Cults Listeners ####");
@@ -294,6 +294,11 @@ function add_minor_cults_listeners()
 				local region_key = region:name();
 				
 				if MINOR_CULT_REGIONS[region_key] ~= nil then
+					if string.find(MINOR_CULT_REGIONS[region_key], "_extra") then
+						local faction = cm:model():world():faction_by_key(minor_cult_faction_key);
+						cm:remove_faction_foreign_slots_from_region(faction:command_queue_index(), region:cqi());
+						return
+					end
 					for i = 1, #MINOR_CULT_LIST do
 						if MINOR_CULT_LIST[i].cult.saved_data.region_key == region_key then
 							local faction = cm:model():world():faction_by_key(minor_cult_faction_key);
