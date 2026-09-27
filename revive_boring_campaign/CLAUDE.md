@@ -27,7 +27,7 @@ revive_boring_campaign/
     ├── _lib/mod/
     │   ├── runtime_roster_unit_data.lua              -- generated roster dataset (from WH3 dump tables)
     │   ├── lib_runtime_army_template_generator.lua   -- builds lord + 19-unit force from the dataset
-    │   └── deprecated_army_templates.lua             -- fallback army templates by subculture
+    │   └── fallback_army_templates.lua               -- fallback army templates by subculture
     ├── campaign/mod/
     │   ├── revive_boring_campaign.lua                -- main mod logic (~2400 lines)
     │   ├── revive_boring_campaign_vanilla_capitals.lua        -- main_warhammer vanilla IE capitals
@@ -121,7 +121,7 @@ never taken.
 `get_army_for_faction()` first asks `runtime_army_template_generator` (fed by the
 generated `runtime_roster_unit_data`) for a lord subtype + 19-unit force built
 from CA military-group roster permissions. If that can't resolve a faction, it
-falls back to `deprecated_army_templates[subculture]`, then to a default. Armies
+falls back to `fallback_army_templates[subculture]`, then to a default. Armies
 spawned by the mod get 25 turns of free upkeep so revived/buffed AI don't instantly
 go bankrupt.
 

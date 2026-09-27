@@ -77,66 +77,72 @@ revive_boring_campaign = {
     -- Note: Extended-only regions are validated at runtime - if not found,
     -- the mod falls back to finding abandoned or AI-owned regions
     faction_capitals = {
+        -- DLC29 (Nagash, Neferata, Thanquol, Glottkin) - vanilla IE regions,
+        -- captured from a vanilla dump: IE Extended does not relocate them.
+        ["wh3_dlc29_nag_host_of_nagash"] = "wh3_main_combi_region_black_pyramid_of_nagash",
+        ["wh3_dlc29_vmp_neferata"] = "wh3_main_combi_region_silver_pinnacle",
+        ["wh3_dlc29_skv_clan_scruten"] = "wh3_main_combi_region_karag_dromar",
+        ["wh3_dlc29_chs_host_of_the_triplets"] = "wh3_main_combi_region_the_monolith_of_katam",
         -- DAEMON PRINCE
         ["wh3_main_dae_daemon_prince"] = "wh3_main_combi_region_volcanos_heart",
 
         -- KHORNE
-        ["wh3_main_kho_exiles_of_khorne"] = "wh3_main_combi_region_agrul_migdhal",
+        ["wh3_main_kho_exiles_of_khorne"] = "wh3_main_combi_region_deff_gorge",
         ["wh3_dlc26_kho_skulltaker"] = "wh3_main_combi_region_hualotal",
-        ["wh3_dlc26_kho_arbaal"] = "wh3_main_combi_region_pillar_of_skulls",
-        ["wh3_main_kho_bloody_sword"] = "wh3_main_combi_region_the_tower_of_torment",
-        ["wh3_main_kho_brazen_throne"] = "wh3_main_combi_region_the_never_ending_chasm",
-        ["wh3_main_kho_crimson_skull"] = "wh3_main_combi_region_infernius",
+        ["wh3_dlc26_kho_arbaal"] = "wh3_main_combi_region_stormvrack_mount",
+        ["wh3_main_kho_bloody_sword"] = "wh3_main_combi_region_the_howling_citadel",
+        ["wh3_main_kho_brazen_throne"] = "wh3_main_combi_region_mount_athull",
+        ["wh3_main_kho_crimson_skull"] = "wh3_main_combi_region_the_silvered_tower_of_sorcerers",
         ["cr_kho_servants_of_the_blood_nagas"] = "cr_combi_region_soglap",
         ["wh3_main_kho_karneths_sons"] = "cr_combi_region_ihan_3_3",
 
         -- NURGLE
-        ["wh3_main_nur_poxmakers_of_nurgle"] = "wh3_main_combi_region_shattered_stone_isle",
+        ["wh3_main_nur_poxmakers_of_nurgle"] = "wh3_main_combi_region_dragon_fang_mount",
         ["wh3_dlc25_nur_tamurkhan"] = "wh3_main_combi_region_zanbaijin",
-        ["wh3_dlc25_nur_epidemius"] = "wh3_main_combi_region_bilious_cliffs",
-        ["wh3_main_nur_bubonic_swarm"] = "wh3_main_combi_region_the_lost_palace",
-        ["wh3_main_nur_maggoth_kin"] = "wh3_main_combi_region_kraka_drak",
-        ["wh3_dlc20_nur_pallid_nurslings"] = "wh3_main_combi_region_quetza",
+        ["wh3_dlc25_nur_epidemius"] = "wh3_main_combi_region_the_forest_of_decay",
+        ["wh3_main_nur_bubonic_swarm"] = "wh3_main_combi_region_the_skull_carvers_abode",
+        ["wh3_main_nur_maggoth_kin"] = "wh3_main_combi_region_khazid_bordkarag",
+        ["wh3_dlc20_nur_pallid_nurslings"] = "wh3_main_combi_region_xhotl",
         ["cr_nur_tide_of_pestilence"] = "cr_combi_region_chi_an_encampment",
 
         -- SLAANESH
-        ["wh3_main_sla_seducers_of_slaanesh"] = "wh3_main_combi_region_tor_achare",
+        ["wh3_main_sla_seducers_of_slaanesh"] = "wh3_main_combi_region_shrine_of_kurnous",
         ["wh3_dlc27_sla_the_tormentors"] = "wh3_main_combi_region_hidden_landing",
         ["wh3_main_sla_exquisite_pain"] = "wh3_main_combi_region_the_writhing_fortress",
         ["wh3_main_sla_rapturous_excess"] = "wh3_main_combi_region_okkams_forever_maze",
         ["wh3_main_sla_subtle_torture"] = "wh3_main_combi_region_the_twisted_towers",
         ["wh3_dlc20_sla_keepers_of_bliss"] = "wh3_main_combi_region_macu_peaks",
         ["cr_sla_loeshs_indulgence"] = "cr_combi_region_santiaogou",
-        ["wh3_dlc27_sla_masque_of_slaanesh"] = "wh3_main_combi_region_pillars_of_unseen_constellations",
+        ["wh3_dlc27_sla_masque_of_slaanesh"] = "wh3_main_combi_region_the_blood_hall",
 
         -- TZEENTCH
-        ["wh3_main_tze_oracles_of_tzeentch"] = "wh3_main_combi_region_the_lost_palace",
+        ["wh3_main_tze_oracles_of_tzeentch"] = "wh3_main_combi_region_fateweavers_crevasse",
         ["wh3_dlc24_tze_the_deceivers"] = "wh3_main_combi_region_niedling",
         ["wh3_main_tze_all_seeing_eye"] = "wh3_main_combi_region_the_crystal_spires",
-        ["wh3_main_tze_broken_wheel"] = "wh3_main_combi_region_cliff_of_beasts",
+        ["wh3_main_tze_broken_wheel"] = "wh3_main_combi_region_black_rock",
         ["wh3_main_tze_flaming_scribes"] = "wh3_main_combi_region_daemons_gate",
         ["wh3_dlc20_tze_the_sightless"] = "wh3_main_combi_region_konquata",
         ["wh3_dlc20_tze_apostles_of_change"] = "wh3_main_combi_region_chaqua",
-        ["wh3_main_tze_sarthoraels_watchers"] = "wh3_main_combi_region_dawns_light",
+        ["wh3_main_tze_sarthoraels_watchers"] = "wh3_main_combi_region_tor_surpindar",
         ["cr_tze_cult_of_tsien_tsin"] = "cr_combi_region_nippon_2_1",
         ["cr_tze_sliding_terror"] = "cr_combi_region_lantern_of_lies",
 
         -- KISLEV
-        ["wh3_main_ksl_the_ice_court"] = "wh3_main_combi_region_zavastra",
+        ["wh3_main_ksl_the_ice_court"] = "wh3_main_combi_region_kislev",
         ["wh3_main_ksl_the_great_orthodoxy"] = "wh3_main_combi_region_erengrad",
         ["wh3_main_ksl_ursun_revivalists"] = "wh3_main_combi_region_the_tower_of_torment",
         ["wh3_dlc24_ksl_daughters_of_the_forest"] = "wh3_main_combi_region_bleak_hold_fortress",
         ["wh3_main_ksl_ropsmenn_clan"] = "wh3_main_combi_region_praag",
         ["wh3_main_ksl_brotherhood_of_the_bear"] = "wh3_main_combi_region_the_tower_of_khrakk",
-        ["wh3_main_ksl_druzhina_enclave"] = "wh3_main_combi_region_fort_straghov",
+        ["wh3_main_ksl_druzhina_enclave"] = "wh3_main_combi_region_fort_ostrosk",
         ["wh3_main_ksl_ungol_kindred"] = "wh3_main_combi_region_zoishenk",
         ["cr_ksl_rota_of_the_dawn"] = "cr_combi_region_great_rasputia",
 
         -- OGRE KINGDOMS
         ["wh3_main_ogr_goldtooth"] = "wh3_main_combi_region_great_hall_of_greasus",
-        ["wh3_main_ogr_disciples_of_the_maw"] = "wh3_main_combi_region_matorca",
+        ["wh3_main_ogr_disciples_of_the_maw"] = "wh3_main_combi_region_karak_angazhar",
         ["wh3_dlc26_ogr_golgfag"] = "wh3_main_combi_region_norden",
-        ["wh3_main_ogr_blood_guzzlers"] = "wh3_main_combi_region_vale_of_titans",
+        ["wh3_main_ogr_blood_guzzlers"] = "wh3_main_combi_region_bloodpeak",
         ["wh3_main_ogr_bloodmaw"] = "wh3_main_combi_region_temple_avenue_of_gold",
         ["wh3_main_ogr_crossed_clubs"] = "wh3_main_combi_region_the_maw_gate",
         ["wh3_main_ogr_eyebiter"] = "wh3_main_combi_region_the_sentinels",
@@ -146,8 +152,8 @@ revive_boring_campaign = {
         ["wh3_main_ogre_the_famished"] = "wh3_main_combi_region_great_desert_of_araby",
         ["wh3_main_ogr_feastmaster"] = "wh3_main_combi_region_bitterstone_mine",
         ["wh3_main_ogr_fleshgreeders"] = "wh3_main_combi_region_the_challenge_stone",
-        ["wh3_main_ogr_fulg"] = "wh3_main_combi_region_gorger_rock",
-        ["wh3_main_ogr_lazarghs"] = "wh3_main_combi_region_pillar_of_skulls",
+        ["wh3_main_ogr_fulg"] = "wh3_main_combi_region_karak_vrag",
+        ["wh3_main_ogr_lazarghs"] = "wh3_main_combi_region_karak_dum",
         ["wh3_main_ogr_loose_tooth"] = "wh3_main_combi_region_zhanshi",
         ["wh3_main_ogr_mountaineaters"] = "wh3_main_combi_region_yhetee_peak",
         ["wh3_main_ogr_rock_skulls"] = "wh3_main_combi_region_karak_ungor",
@@ -163,7 +169,7 @@ revive_boring_campaign = {
         -- CHAOS DWARFS
         ["wh3_dlc23_chd_astragoth"] = "wh3_main_combi_region_uzkulak",
         ["wh3_dlc23_chd_legion_of_azgorh"] = "wh3_main_combi_region_black_fortress",
-        ["wh3_dlc23_chd_zhatan"] = "wh3_main_combi_region_fortress_of_eyes",
+        ["wh3_dlc23_chd_zhatan"] = "wh3_main_combi_region_the_volary",
         ["wh3_dlc23_chd_conclave"] = "wh3_main_combi_region_zharr_naggrund",
         ["wh3_dlc23_chd_minor_faction"] = "wh3_main_combi_region_tower_of_gorgoth",
         ["cr_chd_slaves_of_the_black_dwarf"] = "cr_combi_region_gahhuks_encampment",
@@ -172,13 +178,13 @@ revive_boring_campaign = {
         -- GRAND CATHAY
         ["wh3_main_cth_the_northern_provinces"] = "wh3_main_combi_region_nan_gau",
         ["wh3_main_cth_the_western_provinces"] = "wh3_main_combi_region_qiang",
-        ["wh3_dlc24_cth_the_celestial_court"] = "wh3_main_combi_region_isle_of_the_crimson_skull",
+        ["wh3_dlc24_cth_the_celestial_court"] = "wh3_main_combi_region_floating_pyramid",
         ["wh3_cp1_cth_tiger_warriors"] = "wh3_main_combi_region_vale_of_titans",
-        ["wh3_main_cth_burning_wind_nomads"] = "wh3_main_combi_region_temple_of_elemental_winds",
+        ["wh3_main_cth_burning_wind_nomads"] = "wh3_main_combi_region_village_of_the_tigermen",
         ["wh3_main_cth_celestial_loyalists"] = "wh3_main_combi_region_wei_jin",
         ["wh3_main_cth_dissenter_lords_of_jinshen"] = "wh3_main_combi_region_shang_yang",
-        ["wh3_main_cth_eastern_river_lords"] = "wh3_main_combi_region_li_zhu",
-        ["wh3_main_cth_imperial_wardens"] = "wh3_main_combi_region_red_fortress",
+        ["wh3_main_cth_eastern_river_lords"] = "wh3_main_combi_region_shi_wu",
+        ["wh3_main_cth_imperial_wardens"] = "wh3_main_combi_region_dragon_gate",
         ["wh3_main_cth_the_jade_custodians"] = "wh3_main_combi_region_zhanshi",
         ["cr_cth_okumoto_clan"] = "cr_combi_region_nippon_3_1",
         ["cr_cth_sanyo_clan"] = "cr_combi_region_nippon_4_2",
@@ -188,17 +194,17 @@ revive_boring_campaign = {
         -- HIGH ELVES
         ["wh2_main_hef_eataine"] = "wh3_main_combi_region_lothern",
         ["wh3_dlc27_hef_aislinn"] = "wh3_main_combi_region_tower_of_the_stars",
-        ["wh2_main_hef_order_of_loremasters"] = "wh3_main_combi_region_dawns_light",
+        ["wh2_main_hef_order_of_loremasters"] = "wh3_main_combi_region_fortress_of_dawn",
         ["wh2_main_hef_avelorn"] = "wh3_main_combi_region_gaean_vale",
         ["wh2_main_hef_nagarythe"] = "wh3_main_combi_region_the_monoliths",
         ["wh2_main_hef_yvresse"] = "wh3_main_combi_region_tor_yvresse",
-        ["wh2_dlc15_hef_imrik"] = "wh3_main_combi_region_the_bone_gulch",
+        ["wh2_dlc15_hef_imrik"] = "wh3_main_combi_region_the_fortress_of_vorag",
         ["wh2_main_hef_chrace"] = "wh3_main_combi_region_tor_achare",
         ["wh2_main_hef_citadel_of_dusk"] = "wh3_main_combi_region_citadel_of_dusk",
         ["wh2_main_hef_caledor"] = "wh3_main_combi_region_the_fortress_of_vorag",
         ["wh2_main_hef_cothique"] = "wh3_main_combi_region_tor_koruali",
         ["wh2_main_hef_ellyrion"] = "wh3_main_combi_region_tor_elyr",
-        ["wh2_main_hef_saphery"] = "wh3_main_combi_region_white_tower_of_hoeth",
+        ["wh2_main_hef_saphery"] = "wh3_main_combi_region_tor_finu",
         ["wh2_main_hef_tiranoc"] = "wh3_main_combi_region_tor_anroc",
         ["cr_hef_gate_guards"] = "cr_combi_region_gates_of_calith_1",
         ["cr_hef_tor_elithis"] = "cr_combi_region_elithis_1_1",
@@ -207,15 +213,15 @@ revive_boring_campaign = {
         -- LIZARDMEN
         ["wh2_dlc17_lzd_oxyotl"] = "wh3_main_combi_region_the_godless_crater",
         ["wh2_main_lzd_hexoatl"] = "wh3_main_combi_region_hexoatl",
-        ["wh2_main_lzd_last_defenders"] = "wh3_main_combi_region_teotiqua",
-        ["wh2_dlc12_lzd_cult_of_sotek"] = "wh3_main_combi_region_kaiax",
-        ["wh2_main_lzd_tlaqua"] = "wh3_main_combi_region_deaths_head_monoliths",
+        ["wh2_main_lzd_last_defenders"] = "wh3_main_combi_region_the_golden_tower",
+        ["wh2_dlc12_lzd_cult_of_sotek"] = "wh3_main_combi_region_xlanzec",
+        ["wh2_main_lzd_tlaqua"] = "wh3_main_combi_region_tlaqua",
         ["wh2_dlc13_lzd_spirits_of_the_jungle"] = "wh3_main_combi_region_tower_of_ashung",
         ["wh2_main_lzd_itza"] = "wh3_main_combi_region_itza",
         ["wh2_main_lzd_sentinels_of_xeti"] = "wh3_main_combi_region_sentinels_of_xeti",
-        ["wh2_main_lzd_southern_sentinels"] = "wh3_main_combi_region_mangrove_coast",
-        ["wh3_main_lzd_tepoks_spawn"] = "wh3_main_combi_region_shattered_cove",
-        ["wh2_main_lzd_tlaxtlan"] = "wh3_main_combi_region_temple_of_tlencan",
+        ["wh2_main_lzd_southern_sentinels"] = "wh3_main_combi_region_the_southern_sentinels",
+        ["wh3_main_lzd_tepoks_spawn"] = "wh3_main_combi_region_dread_rock",
+        ["wh2_main_lzd_tlaxtlan"] = "wh3_main_combi_region_tlaxtlan",
         ["wh2_dlc16_lzd_wardens_of_the_living_pools"] = "wh3_main_combi_region_the_sacred_pools",
         ["wh2_main_lzd_xlanhuapec"] = "wh3_main_combi_region_xlanhuapec",
         ["wh2_main_lzd_zlatan"] = "wh3_main_combi_region_zlatlan",
@@ -223,21 +229,21 @@ revive_boring_campaign = {
         ["cr_lzd_one_hundred_thousand"] = "cr_combi_region_temple_of_brahmir",
 
         -- DARK ELVES
-        ["wh2_main_def_naggarond"] = "wh3_main_combi_region_har_kaldra",
+        ["wh2_main_def_naggarond"] = "wh3_main_combi_region_naggarond",
         ["wh2_main_def_cult_of_pleasure"] = "wh3_main_combi_region_ancient_city_of_quintex",
         ["wh2_main_def_har_ganeth"] = "wh3_main_combi_region_har_ganeth",
-        ["wh2_dlc11_def_the_blessed_dread"] = "wh3_main_combi_region_zhizhu",
+        ["wh2_dlc11_def_the_blessed_dread"] = "wh3_main_combi_region_haichai",
         ["wh2_main_def_hag_graef"] = "wh3_main_combi_region_black_rock",
         ["wh2_twa03_def_rakarth"] = "wh3_main_combi_region_great_turtle_isle",
         ["wh2_main_def_bleak_holds"] = "wh3_main_combi_region_arnheim",
-        ["wh2_main_def_blood_hall_coven"] = "wh3_main_combi_region_pillars_of_unseen_constellations",
-        ["wh2_main_def_clar_karond"] = "wh3_main_combi_region_circle_of_destruction",
+        ["wh2_main_def_blood_hall_coven"] = "wh3_main_combi_region_wellsprings_of_eternity",
+        ["wh2_main_def_clar_karond"] = "wh3_main_combi_region_clar_karond",
         ["wh2_main_def_cult_of_excess"] = "wh3_main_combi_region_shrine_of_asuryan",
-        ["wh2_main_def_deadwood_sentinels"] = "wh3_main_combi_region_fortress_of_the_damned",
-        ["wh2_main_def_ghrond"] = "wh3_main_combi_region_dagraks_end",
+        ["wh2_main_def_deadwood_sentinels"] = "wh3_main_combi_region_the_frozen_city",
+        ["wh2_main_def_ghrond"] = "wh3_main_combi_region_ghrond",
         ["wh2_main_def_karond_kar"] = "wh3_main_combi_region_karond_kar",
         ["wh2_main_def_scourge_of_khaine"] = "wh3_main_combi_region_tor_anlec",
-        ["wh2_main_def_ssildra_tor"] = "wh3_main_combi_region_petrified_forest",
+        ["wh2_main_def_ssildra_tor"] = "wh3_main_combi_region_ssildra_tor",
         ["wh2_main_def_drackla_coven"] = "wh3_main_combi_region_hag_hall",
         ["wh2_main_def_the_forgebound"] = "wh3_main_combi_region_the_black_forests",
         ["cr_def_corsairs_of_spite"] = "cr_combi_region_pubjiwanpur",
@@ -245,25 +251,25 @@ revive_boring_campaign = {
         ["cr_def_cult_of_anath_raema"] = "cr_combi_region_shrine_of_ellinill",
 
         -- SKAVEN
-        ["wh2_main_skv_clan_mors"] = "wh3_main_combi_region_kradtommen",
+        ["wh2_main_skv_clan_mors"] = "wh3_main_combi_region_misty_mountain",
         ["wh2_main_skv_clan_pestilens"] = "wh3_main_combi_region_oyxl",
         ["wh2_dlc09_skv_clan_rictus"] = "wh3_main_combi_region_crookback_mountain",
-        ["wh2_main_skv_clan_skryre"] = "wh3_main_combi_region_tobaro",
+        ["wh2_main_skv_clan_skryre"] = "wh3_main_combi_region_skavenblight",
         ["wh2_main_skv_clan_moulder"] = "wh3_main_combi_region_hell_pit",
-        ["wh2_main_skv_clan_eshin"] = "wh3_main_combi_region_village_of_the_moon",
+        ["wh2_main_skv_clan_eshin"] = "wh3_main_combi_region_xing_po",
         ["wh3_main_skv_clan_carrion"] = "wh3_main_combi_region_nagashizzar",
         ["wh2_dlc16_skv_clan_gritus"] = "wh3_main_combi_region_tyrant_peak",
         ["wh2_dlc15_skv_clan_kreepus"] = "wh3_main_combi_region_mordheim",
         ["wh3_main_skv_clan_krizzor"] = "wh3_main_combi_region_xen_wu",
-        ["wh2_dlc12_skv_clan_mange"] = "wh3_main_combi_region_monument_of_izzatal",
+        ["wh2_dlc12_skv_clan_mange"] = "wh3_main_combi_region_spektazuma",
         ["wh3_main_skv_clan_morbidus"] = "wh3_main_combi_region_temple_avenue_of_gold",
         ["wh2_main_skv_clan_mordkin"] = "wh3_main_combi_region_temple_of_skulls",
-        ["wh2_main_skv_clan_septik"] = "wh3_main_combi_region_rackdo_gorge",
+        ["wh2_main_skv_clan_septik"] = "wh3_main_combi_region_altar_of_ultimate_darkness",
         ["wh3_main_skv_clan_skrat"] = "wh3_main_combi_region_kaiax",
         ["wh2_main_skv_clan_spittel"] = "wh3_main_combi_region_altar_of_the_horned_rat",
-        ["wh3_main_skv_clan_verms"] = "wh3_main_combi_region_dragonhorn_mines",
+        ["wh3_main_skv_clan_verms"] = "wh3_main_combi_region_stonemine_tower",
         ["wh2_dlc15_skv_clan_volkn"] = "wh3_main_combi_region_spitepeak",
-        ["wh3_main_skv_clan_treecherik"] = "wh3_main_combi_region_gnobbly_gorge",
+        ["wh3_main_skv_clan_treecherik"] = "wh3_main_combi_region_flayed_rock",
         ["cr_skv_eshin_clan_nest"] = "cr_combi_region_nippon_2_3",
         ["cr_skv_clan_rikek"] = "cr_combi_region_kasar",
         ["cr_skv_clan_festerlingus"] = "cr_combi_region_pituhiccha",
@@ -273,7 +279,7 @@ revive_boring_campaign = {
         ["wh2_dlc09_tmb_khemri"] = "wh3_main_combi_region_khemri",
         ["wh2_dlc09_tmb_lybaras"] = "wh3_main_combi_region_lybaras",
         ["wh2_dlc09_tmb_exiles_of_nehek"] = "wh3_main_combi_region_clarak_spire",
-        ["wh2_dlc09_tmb_followers_of_nagash"] = "wh3_main_combi_region_lashiek",
+        ["wh2_dlc09_tmb_followers_of_nagash"] = "wh3_main_combi_region_wizard_caliphs_palace",
         ["wh3_main_tmb_deserters_of_khatep"] = "wh3_main_combi_region_the_golden_colossus",
         ["wh2_dlc09_tmb_dune_kingdoms"] = "wh3_main_combi_region_bhagar",
         ["wh2_dlc09_tmb_numas"] = "wh3_main_combi_region_numas",
@@ -285,8 +291,8 @@ revive_boring_campaign = {
         ["wh2_dlc11_cst_vampire_coast"] = "wh3_main_combi_region_the_awakening",
         ["wh2_dlc11_cst_noctilus"] = "wh3_main_combi_region_the_galleons_graveyard",
         ["wh2_dlc11_cst_the_drowned"] = "wh3_main_combi_region_the_twisted_glade",
-        ["wh2_dlc11_cst_pirates_of_sartosa"] = "wh3_main_combi_region_luccini",
-        ["wh3_dlc21_cst_dead_flag_fleet"] = "wh3_main_combi_region_beichai",
+        ["wh2_dlc11_cst_pirates_of_sartosa"] = "wh3_main_combi_region_sartosa",
+        ["wh3_dlc21_cst_dead_flag_fleet"] = "wh3_main_combi_region_fu_chow",
         ["cr_cst_rotten_knot"] = "cr_combi_region_sanmal",
 
         -- EMPIRE
@@ -310,13 +316,13 @@ revive_boring_campaign = {
         -- DWARFS
         ["wh_main_dwf_dwarfs"] = "wh3_main_combi_region_karaz_a_karak",
         ["wh_main_dwf_karak_kadrin"] = "wh3_main_combi_region_karak_kadrin",
-        ["wh_main_dwf_karak_izor"] = "wh3_main_combi_region_karak_bhufdar",
+        ["wh_main_dwf_karak_izor"] = "wh3_main_combi_region_zarakzil",
         ["wh3_main_dwf_the_ancestral_throng"] = "wh3_main_combi_region_drackla_spire",
         ["wh2_dlc17_dwf_thorek_ironbrow"] = "wh3_main_combi_region_karak_zorn",
         ["wh3_dlc25_dwf_malakai"] = "wh3_main_combi_region_kraka_drak",
         ["wh_main_dwf_barak_varr"] = "wh3_main_combi_region_barak_varr",
-        ["wh2_dlc15_dwf_clan_helhein"] = "wh3_main_combi_region_the_bone_gulch",
-        ["wh2_main_dwf_greybeards_prospectors"] = "wh3_main_combi_region_eye_of_the_panther",
+        ["wh2_dlc15_dwf_clan_helhein"] = "wh3_main_combi_region_ash_ridge_mountains",
+        ["wh2_main_dwf_greybeards_prospectors"] = "wh3_main_combi_region_vulture_mountain",
         ["wh3_main_dwf_karak_azorn"] = "wh3_main_combi_region_karak_azorn",
         ["wh_main_dwf_karak_azul"] = "wh3_main_combi_region_karak_azul",
         ["wh_main_dwf_karak_hirn"] = "wh3_main_combi_region_karak_hirn",
@@ -330,36 +336,36 @@ revive_boring_campaign = {
         ["wh_main_grn_greenskins"] = "wh3_main_combi_region_eagle_eyries",
         ["wh_main_grn_crooked_moon"] = "wh3_main_combi_region_mount_gunbad",
         ["wh2_dlc15_grn_bonerattlaz"] = "wh3_main_combi_region_khazid_irkulaz",
-        ["wh_main_grn_orcs_of_the_bloody_hand"] = "wh3_main_combi_region_sun_tree_glades",
-        ["wh2_dlc15_grn_broken_axe"] = "wh3_main_combi_region_quenelles",
-        ["wh3_dlc26_grn_gorbad_ironclaw"] = "wh3_main_combi_region_iron_rock",
-        ["wh2_main_grn_arachnos"] = "wh3_main_combi_region_lost_plateau",
+        ["wh_main_grn_orcs_of_the_bloody_hand"] = "wh3_main_combi_region_cuexotl",
+        ["wh2_dlc15_grn_broken_axe"] = "wh3_main_combi_region_massif_orcal",
+        ["wh3_dlc26_grn_gorbad_ironclaw"] = "wh3_main_combi_region_black_crag",
+        ["wh2_main_grn_arachnos"] = "wh3_main_combi_region_mount_arachnos",
         ["wh_main_grn_black_venom"] = "wh3_main_combi_region_steingart",
-        ["wh_main_grn_bloody_spearz"] = "wh3_main_combi_region_karaz_a_karak",
-        ["wh2_main_grn_blue_vipers"] = "wh3_main_combi_region_pahuax",
+        ["wh_main_grn_bloody_spearz"] = "wh3_main_combi_region_mount_squighorn",
+        ["wh2_main_grn_blue_vipers"] = "wh3_main_combi_region_shrine_of_sotek",
         ["wh2_dlc16_grn_naggaroth_orcs"] = "wh3_main_combi_region_rothkar_spire",
         ["wh_main_grn_broken_nose"] = "wh3_main_combi_region_karak_bhufdar",
         ["wh2_dlc16_grn_creeping_death"] = "wh3_main_combi_region_forest_of_gloom",
-        ["wh3_dlc26_grn_cluster_eye_tribe"] = "wh3_main_combi_region_gateway_to_khuresh",
+        ["wh3_dlc26_grn_cluster_eye_tribe"] = "wh3_main_combi_region_southern_outpost",
         ["wh_main_grn_necksnappers"] = "wh3_main_combi_region_karak_eight_peaks",
         ["wh3_main_grn_da_cage_breakaz"] = "wh3_main_combi_region_nagrar",
-        ["wh3_main_grn_dark_land_orcs"] = "wh3_main_combi_region_the_sentinels",
+        ["wh3_main_grn_dark_land_orcs"] = "wh3_main_combi_region_darkhold",
         ["wh3_main_grn_dimned_sun"] = "wh3_main_combi_region_kunlan",
         ["wh3_main_grn_drippin_fangs"] = "wh3_main_combi_region_howling_rock",
-        ["wh2_dlc12_grn_leaf_cutterz_tribe"] = "wh3_main_combi_region_deaths_head_monoliths",
-        ["wh3_main_grn_moon_howlerz"] = "wh3_main_combi_region_mount_silverspear",
-        ["wh2_dlc14_grn_red_cloud"] = "wh3_main_combi_region_castle_carcassonne",
-        ["wh_main_grn_red_eye"] = "wh3_main_combi_region_fallen_king_mountain",
+        ["wh2_dlc12_grn_leaf_cutterz_tribe"] = "wh3_main_combi_region_nahuontl",
+        ["wh3_main_grn_moon_howlerz"] = "wh3_main_combi_region_mount_grey_hag",
+        ["wh2_dlc14_grn_red_cloud"] = "wh3_main_combi_region_brionne",
+        ["wh_main_grn_red_eye"] = "wh3_main_combi_region_grom_peak",
         ["wh_main_grn_red_fangs"] = "wh3_main_combi_region_crooked_fang_fort",
         ["wh_main_grn_scabby_eye"] = "wh3_main_combi_region_dok_karaz",
         ["wh_main_grn_skull-takerz"] = "wh3_main_combi_region_fort_soll",
-        ["wh2_dlc15_grn_skull_crag"] = "wh3_main_combi_region_tralinia",
+        ["wh2_dlc15_grn_skull_crag"] = "wh3_main_combi_region_shrine_of_loec",
         ["wh_main_grn_skullsmasherz"] = "wh3_main_combi_region_grung_zint",
-        ["wh3_main_grn_slaves_of_zharr"] = "wh3_main_combi_region_great_skull_lakes",
+        ["wh3_main_grn_slaves_of_zharr"] = "wh3_dlc23_combi_region_fort_dorznye_vort",
         ["wh_main_grn_teef_snatchaz"] = "wh3_main_combi_region_ekrund",
         ["wh_dlc03_grn_black_pit"] = "wh3_main_combi_region_the_black_pit",
-        ["wh_main_grn_top_knotz"] = "wh3_main_combi_region_stormhenge",
-        ["wh3_main_grn_tusked_sunz"] = "wh3_main_combi_region_blizzardpeak",
+        ["wh_main_grn_top_knotz"] = "wh3_main_combi_region_galbaraz",
+        ["wh3_main_grn_tusked_sunz"] = "wh3_main_combi_region_icespewer",
         ["cr_grn_speaking_trees"] = "cr_combi_region_skon_basin",
         ["cr_grn_nag_rippers"] = "cr_combi_region_monolith_of_uzelek",
         ["cr_grn_grag_a_mugar_clan"] = "cr_combi_region_hobhome",
@@ -369,16 +375,16 @@ revive_boring_campaign = {
         -- VAMPIRE COUNTS
         ["wh_main_vmp_vampire_counts"] = "wh3_main_combi_region_ka_sabar",
         ["wh2_dlc11_vmp_the_barrow_legion"] = "wh3_main_combi_region_blackstone_post",
-        ["wh3_main_vmp_caravan_of_blue_roses"] = "wh3_main_combi_region_gnobbly_gorge",
+        ["wh3_main_vmp_caravan_of_blue_roses"] = "wh3_main_combi_region_the_haunted_forest",
         ["wh_main_vmp_schwartzhafen"] = "wh3_main_combi_region_castle_drakenhof",
         ["wh3_main_vmp_lahmian_sisterhood"] = "wh3_main_combi_region_silver_pinnacle",
         ["wh_main_vmp_mousillon"] = "wh3_main_combi_region_mousillon",
         ["wh2_main_vmp_necrarch_brotherhood"] = "wh3_main_combi_region_springs_of_eternal_life",
         ["wh3_main_ie_vmp_sires_of_mourkain"] = "wh3_main_combi_region_morgheim",
-        ["wh2_main_vmp_strygos_empire"] = "wh3_main_combi_region_copher",
+        ["wh2_main_vmp_strygos_empire"] = "wh3_main_combi_region_al_haikk",
         ["wh_main_vmp_rival_sylvanian_vamps"] = "wh3_main_combi_region_castle_templehof",
         ["wh2_main_vmp_the_silver_host"] = "wh3_main_combi_region_lahmia",
-        ["wh3_dlc25_vmp_the_court_of_night"] = "wh3_main_combi_region_dotternbach",
+        ["wh3_dlc25_vmp_the_court_of_night"] = "wh3_main_combi_region_pfeildorf",
         ["rhox_vmp_the_everliving"] = "cr_combi_region_tarangnagar",
 
         -- WARRIORS OF CHAOS
@@ -386,7 +392,7 @@ revive_boring_campaign = {
         ["wh3_dlc20_chs_kholek"] = "wh3_main_combi_region_the_challenge_stone",
         ["wh3_dlc20_chs_sigvald"] = "wh3_main_combi_region_fortress_of_the_damned",
         ["wh3_dlc20_chs_azazel"] = "wh3_main_combi_region_bay_of_blades",
-        ["wh3_dlc20_chs_festus"] = "wh3_main_combi_region_hergig",
+        ["wh3_dlc20_chs_festus"] = "wh3_main_combi_region_brass_keep",
         ["wh3_dlc20_chs_valkia"] = "wh3_main_combi_region_dagraks_end",
         ["wh3_dlc20_chs_vilitch"] = "wh3_main_combi_region_red_fortress",
         ["wh3_main_chs_shadow_legion"] = "wh3_main_combi_region_isle_of_wights",
@@ -415,9 +421,9 @@ revive_boring_campaign = {
 
         -- WOOD ELVES
         ["wh_dlc05_wef_wood_elves"] = "wh3_main_combi_region_kings_glade",
-        ["wh_dlc05_wef_argwylon"] = "wh3_main_combi_region_karak_norn",
+        ["wh_dlc05_wef_argwylon"] = "wh3_main_combi_region_waterfall_palace",
         ["wh2_dlc16_wef_sisters_of_twilight"] = "wh3_main_combi_region_the_witchwood",
-        ["wh2_dlc16_wef_drycha"] = "wh3_main_combi_region_mordheim",
+        ["wh2_dlc16_wef_drycha"] = "wh3_main_combi_region_gryphon_wood",
         ["wh2_main_wef_bowmen_of_oreon"] = "wh3_main_combi_region_oreons_camp",
         ["wh3_main_wef_laurelorn"] = "wh3_main_combi_region_laurelorn_forest",
         ["wh3_dlc21_wef_spirits_of_shanlin"] = "wh3_main_combi_region_jungles_of_chian",
@@ -427,35 +433,35 @@ revive_boring_campaign = {
         ["rhox_wef_far_away_forest"] = "cr_combi_region_elithis_2_1",
 
         -- BRETONNIA
-        ["wh_main_brt_bretonnia"] = "wh3_main_combi_region_languille",
+        ["wh_main_brt_bretonnia"] = "wh3_main_combi_region_couronne",
         ["wh_main_brt_carcassonne"] = "wh3_main_combi_region_castle_carcassonne",
         ["wh_main_brt_bordeleaux"] = "wh3_main_combi_region_temple_of_tlencan",
         ["wh2_dlc14_brt_chevaliers_de_lyonesse"] = "wh3_main_combi_region_copher",
-        ["wh_main_brt_artois"] = "wh3_main_combi_region_gisoreux",
+        ["wh_main_brt_artois"] = "wh3_main_combi_region_castle_artois",
         ["wh_main_brt_bastonne"] = "wh3_main_combi_region_castle_bastonne",
         ["wh3_main_brt_aquitaine"] = "wh3_main_combi_region_aquitaine",
         ["wh2_main_brt_knights_of_origo"] = "wh3_main_combi_region_zandri",
         ["wh2_main_brt_knights_of_the_flame"] = "wh3_main_combi_region_lashiek",
         ["wh_main_brt_lyonesse"] = "wh3_main_combi_region_lyonesse",
-        ["wh_main_brt_parravon"] = "wh3_main_combi_region_castle_carcassonne",
+        ["wh_main_brt_parravon"] = "wh3_main_combi_region_parravon",
         ["wh2_main_brt_thegans_crusaders"] = "wh3_main_combi_region_martek",
         ["cr_brt_leofrics_fellowship"] = "cr_combi_region_junkselon",
         ["rhox_brt_reveller_of_domance"] = "cr_combi_region_suryapuri",
 
         -- NORSCA
-        ["wh_dlc08_nor_norsca"] = "wh3_main_combi_region_monolith_of_borkill_the_bloody_handed",
-        ["wh_dlc08_nor_wintertooth"] = "wh3_main_combi_region_altar_of_spawns",
+        ["wh_dlc08_nor_norsca"] = "wh3_main_combi_region_troll_fjord",
+        ["wh_dlc08_nor_wintertooth"] = "wh3_main_combi_region_monolith_of_flesh",
         ["wh3_dlc27_nor_sayl"] = "wh3_main_combi_region_dark_tower",
-        ["wh_main_nor_aesling"] = "wh3_main_combi_region_altar_of_spawns",
+        ["wh_main_nor_aesling"] = "wh3_main_combi_region_the_forbidden_citadel",
         ["wh2_main_nor_aghol"] = "wh3_main_combi_region_shard_bastion",
         ["wh_main_nor_baersonling"] = "wh3_main_combi_region_fort_jakova",
         ["wh_main_nor_bjornling"] = "wh3_main_combi_region_monolith_of_borkill_the_bloody_handed",
-        ["wh3_dlc27_the_narj"] = "wh3_main_combi_region_the_gallows_tree",
+        ["wh3_dlc27_the_narj"] = "wh3_dlc20_combi_region_dragons_death",
         ["wh_dlc08_nor_goromadny_tribe"] = "wh3_main_combi_region_karak_vlag",
         ["wh_main_nor_graeling"] = "wh3_main_combi_region_graeling_moot",
         ["wh3_dlc20_nor_kuj"] = "cr_combi_region_kuj_encampment",
         ["wh3_dlc20_nor_kul"] = "wh3_main_combi_region_the_bleeding_spire",
-        ["wh2_main_nor_mung"] = "wh3_dlc20_combi_region_glacier_encampment",
+        ["wh2_main_nor_mung"] = "wh3_main_combi_region_ironfrost",
         ["wh_dlc08_nor_naglfarlings"] = "wh3_main_combi_region_naglfari_plain",
         ["wh_main_nor_sarl"] = "wh3_main_combi_region_sarl_encampment",
         ["wh_dlc08_nor_vanaheimlings"] = "wh3_main_combi_region_isle_of_wights",
@@ -472,16 +478,17 @@ revive_boring_campaign = {
         ["rhox_nor_ravenblessed"] = "cr_combi_region_muhaks_encampment",
 
         -- SOUTHERN REALMS / BORDER PRINCES
-        ["wh_main_teb_border_princes"] = "wh3_main_combi_region_zvorak",
+        ["wh_main_teb_border_princes"] = "wh3_main_combi_region_myrmidens",
         ["wh_main_teb_estalia"] = "wh3_main_combi_region_magritta",
         ["wh_main_teb_tilea"] = "wh3_main_combi_region_miragliano",
     },
 }
 
 local runtime_roster_unit_data = require("script._lib.mod.runtime_roster_unit_data")
-local deprecated_army_templates = require("script._lib.mod.deprecated_army_templates")
+local fallback_army_templates = require("script._lib.mod.fallback_army_templates")
 require("script._lib.mod.lib_runtime_army_template_generator")
 pcall(require, "script.campaign.mod.revive_boring_campaign_vanilla_capitals")
+pcall(require, "script.campaign.mod.revive_boring_campaign_iee_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_oldworld_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_oldworldclassic_capitals")
 
@@ -559,6 +566,12 @@ function revive_boring_campaign:get_active_faction_capitals()
 
     if campaign_name == "main_warhammer" then
         if self:is_iee_campaign() then
+            -- Generated IEE table first: it is the one the MCT dropdown is built from,
+            -- so revive and the dropdown always agree. Inline table stays as fallback.
+            if revive_boring_campaign_iee_faction_capitals then
+                return revive_boring_campaign_iee_faction_capitals
+            end
+
             return self.faction_capitals
         end
 
@@ -731,17 +744,17 @@ function revive_boring_campaign:get_army_for_faction(faction_key)
 
     local faction = cm:get_faction(faction_key)
     if not faction or faction:is_null_interface() then
-        return deprecated_army_templates.default, false, nil
+        return fallback_army_templates.default, false, nil
     end
 
     local subculture = faction:subculture()
-    if deprecated_army_templates[subculture] then
+    if fallback_army_templates[subculture] then
         self:log("Using fallback subculture army template for " .. faction_key .. ": " .. tostring(subculture))
-        return deprecated_army_templates[subculture], false, nil
+        return fallback_army_templates[subculture], false, nil
     end
 
     self:log("Using default fallback army template for " .. faction_key)
-    return deprecated_army_templates.default, false, nil
+    return fallback_army_templates.default, false, nil
 end
 
 --[[-------------------------------------------------------------------------------------------------------------
@@ -2334,6 +2347,18 @@ function revive_boring_campaign:initialize()
             self:log("Using Old World Classic capital table for campaign: " .. self.current_campaign_name)
         else
             self:log("WARNING: Old World Classic capital table missing, falling back to default capital table")
+        end
+    elseif self.current_campaign_name == "main_warhammer" then
+        if self:is_iee_campaign() then
+            if revive_boring_campaign_iee_faction_capitals then
+                self:log("Using IE Extended capital table for campaign: main_warhammer")
+            else
+                self:log("WARNING: IE Extended capital table missing, falling back to inline capital table")
+            end
+        elseif revive_boring_campaign_vanilla_faction_capitals then
+            self:log("Using vanilla Immortal Empires capital table for campaign: main_warhammer")
+        else
+            self:log("WARNING: vanilla capital table missing, falling back to inline capital table")
         end
     else
         self:log("Using default capital table for campaign: " .. tostring(self.current_campaign_name))

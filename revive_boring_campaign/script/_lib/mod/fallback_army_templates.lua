@@ -1,6 +1,9 @@
--- Deprecated hardcoded fallback army templates.
--- Runtime spawning should use runtime_roster_unit_data.lua + lib_runtime_army_template_generator.lua.
--- Keep this file only as a last-resort fallback if generated military_group data cannot resolve a faction.
+-- Hardcoded fallback army templates, one 15-unit stack per subculture.
+-- Runtime spawning uses runtime_roster_unit_data.lua + lib_runtime_army_template_generator.lua,
+-- which builds a lord + 19 units from CA military_group roster permissions.
+-- This file is only reached when the generated dataset cannot resolve a faction:
+-- a third-party faction absent from the dataset, or a pack shipped without
+-- regenerating it after a game patch. Stacks here carry no lord.
 
 return {
     -- Empire
@@ -75,8 +78,9 @@ return {
     -- Daemons of Chaos (undivided)
     wh3_main_sc_dae_daemons = "wh3_main_kho_bloodletters,wh3_main_kho_bloodletters,wh3_main_nur_plaguebearers,wh3_main_nur_plaguebearers,wh3_main_sla_daemonettes,wh3_main_sla_daemonettes,wh3_main_tze_pink_horrors,wh3_main_tze_pink_horrors,wh3_main_kho_flesh_hounds_of_khorne,wh3_main_nur_beasts_of_nurgle,wh3_main_sla_seekers,wh3_main_tze_screamers,wh3_main_kho_soul_grinder_of_khorne,wh3_main_nur_soul_grinder_of_nurgle,wh3_main_sla_soul_grinder_of_slaanesh",
 
-    -- Undead Legions (Nagash, DLC29)
-    wh3_dlc29_sc_nag_undead_legions = "wh2_dlc09_tmb_inf_skeleton_warriors_0,wh2_dlc09_tmb_inf_skeleton_warriors_0,wh_main_vmp_inf_grave_guard_0,wh_main_vmp_inf_grave_guard_1,wh2_dlc09_tmb_inf_tomb_guard_0,wh2_dlc09_tmb_inf_tomb_guard_1,wh3_dlc29_vmp_inf_spirit_host,wh3_dlc29_vmp_mon_morghast_harbingers,wh3_dlc29_vmp_mon_morghast_archai,wh_main_vmp_cav_black_knights_0,wh2_dlc09_tmb_cav_necropolis_knights_0,wh2_dlc09_tmb_art_screaming_skull_catapult_0,wh2_dlc09_tmb_art_casket_of_souls_0,wh_main_vmp_mon_terrorgheist,wh3_dlc29_tmb_mon_khemric_titan",
+    -- Undead Legions (Nagash, DLC29) - mixes Tomb Kings, Vampire Counts,
+    -- Vampire Coast and DLC29-exclusive units, like the real roster does.
+    wh3_dlc29_sc_nag_undead_legions = "wh2_dlc09_tmb_inf_skeleton_warriors_0,wh2_dlc09_tmb_inf_tomb_guard_0,wh2_dlc09_tmb_inf_tomb_guard_1,wh_main_vmp_inf_grave_guard_0,wh2_dlc11_cst_inf_depth_guard_0,wh3_dlc29_vmp_inf_lahmian_handmaidens_death,wh3_dlc29_vmp_inf_spirit_host,wh3_dlc29_vmp_mon_morghast_harbingers,wh3_dlc29_vmp_mon_morghast_archai,wh_main_vmp_cav_black_knights_0,wh2_dlc09_tmb_cav_necropolis_knights_0,wh2_dlc09_tmb_art_screaming_skull_catapult_0,wh2_dlc11_cst_art_mortar,wh2_dlc11_cst_mon_necrofex_colossus_0,wh3_dlc29_tmb_mon_khemric_titan",
 
     -- Default fallback
     default = "wh_main_chs_chaos_warriors,wh_main_chs_chaos_warriors,wh_main_chs_chaos_warriors,wh_main_chs_chaos_warriors,wh_main_chs_chosen,wh_main_chs_chosen,wh_main_chs_chaos_knights,wh_main_chs_chaos_knights,wh_main_chs_forsaken,wh_main_chs_forsaken,wh_main_chs_dragon_ogres,wh_main_chs_chaos_spawn,wh_main_chs_hellcannon,wh_main_chs_gorebeast_chariot,wh3_main_chs_chaos_warshrine",
