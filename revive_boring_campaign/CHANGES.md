@@ -1,5 +1,11 @@
 # Changes
 
+## v1.6.0
+
+- Buff Faction: "Spawn Armies" now lets you choose how many armies to spawn (1 to 5) through a new
+  "Number of Armies" dropdown. Defaults to 5; the choice is kept between executions.
+- Updated MCT and campaign log version labels to `v1.6.0`.
+
 ## v1.5.0
 
 - Added support for the 9.0 / DLC29 factions: Host of Nagash (`wh3_dlc29_nag_host_of_nagash`),

@@ -46,7 +46,7 @@ A mod to revive boring mid/late-game campaigns by allowing players to kill, resu
 | Unlock All Technologies | `[DONE]` | |
 | Free Upkeep (25 turns) | `[DONE]` | Uses effect bundle on army CQI |
 | Give 50,000 Gold | `[DONE]` | |
-| Spawn 5 Armies | `[DONE]` | Runtime roster generator + 25-turn free upkeep support |
+| Spawn Armies (1-5) | `[DONE]` | Count picked in the "Number of Armies" dropdown; runtime roster generator + 25-turn free upkeep support |
 | Confederate All Same Subculture | `[DONE]` | Forces all living AI factions of the same subculture to confederate into the selected faction |
 | Confederate Specific Faction | `[DONE]` | Force-absorbs any single faction regardless of race/subculture; shows OK/KO result field |
 | Execute Buff button | `[DONE]` | |

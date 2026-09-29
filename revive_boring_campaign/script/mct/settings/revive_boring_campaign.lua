@@ -8,7 +8,7 @@
 ]]---------------------------------------------------------------------------------------------------------------
 
 local mct = get_mct()
-local mod_version = "1.5.0"
+local mod_version = "1.6.0"
 local rbc_mct_log_prefix = "[RBC_DEBUG][mct][v" .. mod_version .. "]"
 pcall(require, "script.campaign.mod.revive_boring_campaign_vanilla_capitals")
 pcall(require, "script.campaign.mod.revive_boring_campaign_iee_capitals")
@@ -743,9 +743,17 @@ boost_give_gold:set_tooltip_text("Add 50,000 gold to faction treasury.")
 boost_give_gold:set_default_value(false)
 
 local boost_spawn_armies = mod:add_new_option("boost_spawn_armies", "checkbox")
-boost_spawn_armies:set_text("Spawn 5 Armies")
-boost_spawn_armies:set_tooltip_text("Spawn 5 full armies at the faction's capital.")
+boost_spawn_armies:set_text("Spawn Armies")
+boost_spawn_armies:set_tooltip_text("Spawn full armies at the faction's capital. Pick how many in 'Number of Armies'.")
 boost_spawn_armies:set_default_value(false)
+
+local boost_num_armies = mod:add_new_option("boost_num_armies", "dropdown")
+boost_num_armies:set_text("Number of Armies")
+boost_num_armies:set_tooltip_text("How many armies 'Spawn Armies' creates (1 to 5).")
+for i = 1, 5 do
+    boost_num_armies:add_dropdown_value(tostring(i), tostring(i), "Spawn " .. i .. " arm" .. (i == 1 and "y" or "ies"))
+end
+boost_num_armies:set_default_value("5")
 
 local boost_confederate_subculture = mod:add_new_option("boost_confederate_subculture", "checkbox")
 boost_confederate_subculture:set_text("Confederate All Same Subculture")
@@ -1047,6 +1055,7 @@ core:add_listener(
                         local free_upkeep = mct_mod:get_option_by_key("boost_free_upkeep"):get_selected_setting()
                         local give_gold = mct_mod:get_option_by_key("boost_give_gold"):get_selected_setting()
                         local spawn_armies = mct_mod:get_option_by_key("boost_spawn_armies"):get_selected_setting()
+                        local num_armies = tonumber(mct_mod:get_option_by_key("boost_num_armies"):get_selected_setting()) or 5
                         local confederate_subculture = mct_mod:get_option_by_key("boost_confederate_subculture"):get_selected_setting()
                         local confederate_target = mct_mod:get_option_by_key("boost_confederate_target_select"):get_selected_setting()
 
@@ -1058,6 +1067,7 @@ core:add_listener(
                                 free_upkeep = free_upkeep,
                                 give_gold = give_gold,
                                 spawn_armies = spawn_armies,
+                                num_armies = num_armies,
                                 confederate_subculture = confederate_subculture,
                                 confederate_target = (confederate_target ~= "" and confederate_target or nil)
                             })

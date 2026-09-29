@@ -5,7 +5,7 @@ Configuration Tool) UI: kill, anarchy-kill, revive, buff, debuff, and set a
 persistent "nemesis" faction.
 
 - **Author:** Evanok
-- **Current version:** 1.5.0 (see `CHANGES.md` for the full changelog)
+- **Current version:** 1.6.0 (see `CHANGES.md` for the full changelog)
 - **Requires:** MCT v0.9 Beta or later
 
 ---
@@ -71,7 +71,8 @@ Dropdown + option checkboxes → **Execute Buff**. `boost_faction(faction, optio
 - **Unlock All Technologies** — `cm:instantly_research_all_technologies()`
 - **Free Upkeep (25 turns)** — per-army `apply_effect_bundle_to_characters_force`
 - **Give 50,000 Gold** — `cm:treasury_mod()`
-- **Spawn 5 Armies** at the faction capital
+- **Spawn Armies** at the faction capital — count (1–5, default 5) picked in the
+  **Number of Armies** dropdown (`boost_num_armies`, not reset after execution)
 - **Confederate All Same Subculture** — force-confederates every living
   same-subculture AI faction into the target
 - **Confederate Specific Faction** — dropdown to absorb one named faction;

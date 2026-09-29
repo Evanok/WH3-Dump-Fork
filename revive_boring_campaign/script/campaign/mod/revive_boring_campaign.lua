@@ -10,7 +10,7 @@
 -- Module definition
 revive_boring_campaign = {
     name = "revive_boring_campaign",
-    log_prefix = "[RBC_DEBUG][campaign][v1.5.0]",
+    log_prefix = "[RBC_DEBUG][campaign][v1.6.0]",
 
     -- State tracking (will be saved)
     settings = {
@@ -1677,7 +1677,7 @@ end
     Gives a faction major advantages:
     - Unlock all technologies
     - Free upkeep for 25 turns
-    - Spawn 5 armies at capital
+    - Spawn 1-5 armies at capital (options.num_armies, default 5)
 ]]---------------------------------------------------------------------------------------------------------------
 function revive_boring_campaign:boost_faction(faction_key, options)
     self:log("Attempting to boost faction: " .. tostring(faction_key))
@@ -1725,7 +1725,7 @@ function revive_boring_campaign:boost_faction(faction_key, options)
 
     -- 4. Spawn armies at capital (if faction has regions)
     if options.spawn_armies and faction:region_list():num_items() > 0 then
-        local num_armies = 5
+        local num_armies = math.max(1, math.min(5, math.floor(tonumber(options.num_armies) or 5)))
         local capital_region = faction:region_list():item_at(0)
         local capital_region_key = capital_region:name()
 
