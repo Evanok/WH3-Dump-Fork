@@ -73,10 +73,18 @@ Dropdown + option checkboxes → **Execute Buff**. `boost_faction(faction, optio
 - **Give 50,000 Gold** — `cm:treasury_mod()`
 - **Spawn Armies** at the faction capital — count (1–5, default 5) picked in the
   **Number of Armies** dropdown (`boost_num_armies`, not reset after execution)
+  (a faction with no region, e.g. The Chaos Invasion, spawns next to its leader's army or any of its
+  armies instead — `get_spawn_anchor_character` / `get_spawn_location_near_position`)
+  Spawn region order: `faction:home_region()` → capital table → first owned region.
 - **Confederate All Same Subculture** — force-confederates every living
   same-subculture AI faction into the target
 - **Confederate Specific Faction** — dropdown to absorb one named faction;
   result reported in the "Confederate Result" text field
+
+The Buff and Debuff dropdowns also list the End Times invasion factions
+(`wh3_dlc29_chaos_invasion_confederation_owner`, `wh3_dlc29_vermintide_confederation_owner`) as a
+hardcoded exception to the `_confederation_owner` exclusion (`end_times_invasion_factions` in the MCT
+script). Once the scenario starts, Archaon and every AI Chaos/Skaven faction are confederated into them.
 
 ### 4. Debuff Faction
 Dropdown + option checkboxes → **Execute Debuff**. `nerf_faction(faction, options)`:

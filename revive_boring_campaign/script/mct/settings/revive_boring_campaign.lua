@@ -524,6 +524,15 @@ local excluded_faction_key_patterns = {
     "_qb_",
 }
 
+-- Hardcoded exceptions to the exclusion list: End Times invasion hosts. When the Chaos Invasion or
+-- the Vermintide starts, the game confederates every AI faction of that side (Archaon included)
+-- into one of these, so they become the only way to buff/debuff the invasion.
+-- Buff/Debuff dropdowns only: Kill does not hold (the episode keeps spawning armies) and they have no capital to revive.
+local end_times_invasion_factions = {
+    "wh3_dlc29_chaos_invasion_confederation_owner",
+    "wh3_dlc29_vermintide_confederation_owner",
+}
+
 local function is_excluded_faction_key(faction_key)
     if not faction_key or faction_key == "" then
         return true
@@ -857,12 +866,33 @@ local function populate_faction_dropdowns()
 
     local available_major_factions = build_available_major_factions()
 
+    -- Buff/Debuff also list the End Times invasion factions, sorted in with everything else
+    local buff_nerf_factions = {}
+    for _, faction_data in ipairs(available_major_factions) do
+        table.insert(buff_nerf_factions, faction_data)
+    end
+    for _, faction_key in ipairs(end_times_invasion_factions) do
+        if faction_exists_in_campaign(faction_key) then
+            table.insert(buff_nerf_factions, {faction_key, get_faction_display_name(faction_key) .. " (End Times)"})
+            rbc_mct_log("Added End Times invasion faction to buff/debuff dropdowns: " .. faction_key)
+        end
+    end
+    table.sort(buff_nerf_factions, function(a, b)
+        if a[2] == b[2] then
+            return a[1] < b[1]
+        end
+        return a[2] < b[2]
+    end)
+
+    for _, faction_data in ipairs(buff_nerf_factions) do
+        boost_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
+        nerf_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
+    end
+
     for _, faction_data in ipairs(available_major_factions) do
         kill_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Kill " .. faction_data[2])
         revive_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], "Revive " .. faction_data[2])
-        boost_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
         boost_confederate_target:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
-        nerf_faction_dropdown:add_dropdown_value(faction_data[1], faction_data[2], faction_data[2])
 
         -- Nemesis: skip the player's own faction
         local is_player_faction = false

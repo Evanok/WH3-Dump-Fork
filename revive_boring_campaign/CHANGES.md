@@ -4,6 +4,16 @@
 
 - Buff Faction: "Spawn Armies" now lets you choose how many armies to spawn (1 to 5) through a new
   "Number of Armies" dropdown. Defaults to 5; the choice is kept between executions.
+- Buff/Debuff Faction: the End Times invasion factions (The Chaos Invasion, The Vermintide) are now
+  selectable, tagged "(End Times)". When those scenarios start, the game confederates Archaon and the
+  other Chaos/Skaven AI factions into them, so the original factions can no longer be buffed. They
+  stay out of Kill, Revive and Nemesis.
+- Buff Faction: "Spawn Armies" now works for factions that own no region, such as The Chaos Invasion
+  (armies and camped Dark Fortresses only): the armies spawn next to the faction leader's army, or
+  next to any of its armies. Before, it was silently skipped.
+- Buff Faction: "Spawn Armies" now picks its region from the faction's in-game capital (`home_region`)
+  first, then the capital table, then its first owned region. Factions missing from the capital tables,
+  such as The Vermintide, used to spawn around whichever region the game listed first.
 - Updated MCT and campaign log version labels to `v1.6.0`.
 
 ## v1.5.0

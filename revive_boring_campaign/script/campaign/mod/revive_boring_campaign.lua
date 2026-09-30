@@ -1337,6 +1337,88 @@ function revive_boring_campaign:get_spawn_location_near_settlement(faction_key, 
 end
 
 --[[-------------------------------------------------------------------------------------------------------------
+    Pick an army to spawn next to when the faction owns no region: the faction leader if it leads an army,
+    otherwise the first real army (garrisons excluded).
+]]---------------------------------------------------------------------------------------------------------------
+function revive_boring_campaign:get_spawn_anchor_character(faction)
+    local function is_field_army_general(character)
+        return character and not character:is_null_interface()
+            and character:has_military_force()
+            and not character:military_force():is_armed_citizenry()
+    end
+
+    if faction:has_faction_leader() then
+        local leader = faction:faction_leader()
+        if is_field_army_general(leader) then
+            return leader
+        end
+    end
+
+    local char_list = faction:character_list()
+    for i = 0, char_list:num_items() - 1 do
+        local character = char_list:item_at(i)
+        if is_field_army_general(character) then
+            return character
+        end
+    end
+
+    return nil
+end
+
+--[[-------------------------------------------------------------------------------------------------------------
+    Same as get_spawn_location_near_settlement, but around a map position (used when the faction has no region).
+]]---------------------------------------------------------------------------------------------------------------
+function revive_boring_campaign:get_spawn_location_near_position(faction_key, base_x, base_y, army_index, used_positions)
+    local function position_key(x, y)
+        return tostring(x) .. ":" .. tostring(y)
+    end
+
+    local offsets = {
+        {0, 0},
+        {6, 0},
+        {-6, 0},
+        {0, 6},
+        {0, -6},
+        {6, 6},
+        {-6, 6},
+        {6, -6},
+        {-6, -6},
+        {12, 0},
+        {-12, 0},
+        {0, 12},
+        {0, -12}
+    }
+
+    -- Start from this army's own offset so each army searches from a different point
+    for n = 0, #offsets - 1 do
+        local offset = offsets[((army_index - 1 + n) % #offsets) + 1]
+        local pos_x, pos_y = cm:find_valid_spawn_location_for_character_from_position(
+            faction_key,
+            base_x + offset[1],
+            base_y + offset[2],
+            false
+        )
+
+        if pos_x and pos_y and pos_x ~= -1 and pos_y ~= -1 then
+            local key = position_key(pos_x, pos_y)
+            if not used_positions[key] then
+                used_positions[key] = true
+                self:log("Found valid spawn location near position: " .. pos_x .. ", " .. pos_y)
+                return pos_x, pos_y
+            end
+        end
+    end
+
+    local offset = offsets[((army_index - 1) % #offsets) + 1]
+    local fallback_x = base_x + offset[1]
+    local fallback_y = base_y + offset[2]
+    used_positions[position_key(fallback_x, fallback_y)] = true
+
+    self:log("find_valid_spawn near position failed or returned duplicate, using offset fallback: " .. fallback_x .. ", " .. fallback_y)
+    return fallback_x, fallback_y
+end
+
+--[[-------------------------------------------------------------------------------------------------------------
     KILL FACTION
 
     Abandons all regions and kills all armies, completely destroying the faction.
@@ -1726,19 +1808,30 @@ function revive_boring_campaign:boost_faction(faction_key, options)
     -- 4. Spawn armies at capital (if faction has regions)
     if options.spawn_armies and faction:region_list():num_items() > 0 then
         local num_armies = math.max(1, math.min(5, math.floor(tonumber(options.num_armies) or 5)))
-        local capital_region = faction:region_list():item_at(0)
-        local capital_region_key = capital_region:name()
+        -- Spawn region priority: the game's own capital (home_region) → our capital table → first owned region.
+        -- home_region matters for factions missing from the capital tables, e.g. the End Times Vermintide.
+        local capital_region_key = nil
 
-        -- Try to use their actual capital from our table
-        local mapped_capital_key = self:get_faction_capital_region_key(faction_key)
+        if faction:has_home_region() then
+            capital_region_key = faction:home_region():name()
+            self:log("Spawn region from home_region: " .. capital_region_key)
+        end
+
+        local mapped_capital_key = not capital_region_key and self:get_faction_capital_region_key(faction_key)
         if mapped_capital_key then
             local mapped_capital = cm:get_region(mapped_capital_key)
             if mapped_capital and not mapped_capital:is_null_interface() then
                 local owner = mapped_capital:owning_faction()
                 if owner and owner:name() == faction_key then
                     capital_region_key = mapped_capital_key
+                    self:log("Spawn region from capital table: " .. capital_region_key)
                 end
             end
+        end
+
+        if not capital_region_key then
+            capital_region_key = faction:region_list():item_at(0):name()
+            self:log("Spawn region from first owned region: " .. capital_region_key)
         end
 
         local unit_list, lord_key, generated_army = self:get_army_for_faction(faction_key)
@@ -1771,6 +1864,41 @@ function revive_boring_campaign:boost_faction(faction_key, options)
                     self:log("Army " .. i .. " spawned successfully")
                 end
             )
+        end
+    elseif options.spawn_armies then
+        -- No regions (e.g. the End Times Chaos Invasion, which only owns armies and camped Dark
+        -- Fortresses): spawn next to one of the faction's existing armies instead.
+        local num_armies = math.max(1, math.min(5, math.floor(tonumber(options.num_armies) or 5)))
+        local anchor = self:get_spawn_anchor_character(faction)
+
+        if not anchor then
+            self:log("WARNING: " .. faction_key .. " has no region and no army to spawn next to; skipping army spawn")
+        else
+            local base_x = anchor:logical_position_x()
+            local base_y = anchor:logical_position_y()
+            self:log("No region for " .. faction_key .. "; spawning " .. num_armies .. " armies next to army CQI " .. anchor:command_queue_index() .. " at " .. base_x .. ", " .. base_y)
+
+            local unit_list, lord_key, generated_army = self:get_army_for_faction(faction_key)
+            local used_spawn_positions = {}
+            for i = 1, num_armies do
+                self:log("Spawning army " .. i .. " of " .. num_armies)
+
+                local pos_x, pos_y = self:get_spawn_location_near_position(faction_key, base_x, base_y, i, used_spawn_positions)
+                local region_data = cm:get_region_data_at_position(pos_x, pos_y)
+                local region_key = region_data and not region_data:is_null_interface() and region_data:key() or ""
+
+                self:spawn_force(
+                    faction_key,
+                    unit_list,
+                    region_key,
+                    pos_x,
+                    pos_y,
+                    generated_army,
+                    function(cqi)
+                        self:log("Army " .. i .. " spawned successfully")
+                    end
+                )
+            end
         end
     end
 
